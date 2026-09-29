@@ -1,0 +1,299 @@
+{
+  "user_id": "user_032",
+  "explicit_preferences": {
+    "user_profile": "一位有天赋的运动员，希望提升技能并在国际比赛中获得曝光",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Amina Kiprop",
+        "age": 24,
+        "gender": "女性",
+        "location": "肯尼亚内罗毕",
+        "languages": [
+          "英语",
+          "斯瓦希里语"
+        ],
+        "education_level": "运动科学学士学位",
+        "occupation": "职业短跑运动员",
+        "industry": "专业体育",
+        "seniority": "新兴运动员",
+        "household": "单身，独自居住",
+        "life_stage": "青年"
+      },
+      "physical_profile": {
+        "height_cm": 168,
+        "general_appearance": "精瘦结实的体型，典型的短跑运动员；短发自然，运动姿态",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "高度自律且好胜，但乐于学习与合作。渴望在国际舞台上脱颖而出。",
+        "big_five": {
+          "openness": 70,
+          "conscientiousness": 90,
+          "extraversion": 60,
+          "agreeableness": 50,
+          "neuroticism": 30
+        },
+        "strengths": [
+          "自律",
+          "学习能力强",
+          "压力下坚韧",
+          "团队合作者"
+        ],
+        "weaknesses": [
+          "对进展缓慢缺乏耐心",
+          "偶尔过度训练",
+          "重大比赛前紧张"
+        ],
+        "values": [
+          "卓越",
+          "正直",
+          "毅力",
+          "社区支持"
+        ],
+        "motivations": [
+          "代表肯尼亚参加国际比赛",
+          "打破个人纪录",
+          "指导年轻运动员"
+        ],
+        "stress_triggers": [
+          "受伤",
+          "最后一刻的日程变更",
+          "不支持自己的教练团队"
+        ]
+      },
+      "background": {
+        "hometown": "肯尼亚埃尔多雷特",
+        "family_background": "在中产阶级家庭长大；父母是教师；有两个仰慕她的弟弟妹妹",
+        "significant_life_events": [
+          "12岁时在学校比赛中开始跑步",
+          "16岁赢得全国青少年冠军",
+          "因体育奖学金进入内罗毕大学"
+        ],
+        "education_and_career_path": "获得体育科学学位；大学毕业后转为职业运动员；与当地田径俱乐部签约",
+        "current_situation": "全职训练备战即将到来的非洲锦标赛；寻求接触国际赞助商和比赛的机会"
+      },
+      "lifestyle": {
+        "daily_routine": "凌晨5:00起床，早间训练（跑道训练），早餐，休息/学习体育科学，下午健身房训练，晚间恢复（拉伸、按摩理疗），晚餐，轻度阅读，22:00前睡觉",
+        "health_and_wellness": "遵循严格的营养师定制的膳食计划（高蛋白、均衡碳水化合物）；定期接受物理治疗；注重预防伤病",
+        "social_life": "与关系紧密的运动员伙伴们在一起；偶尔去休闲餐厅或电影之夜；在Instagram上分享训练进展",
+        "work_life_balance": "在训练、休息和偶尔指导年轻运动员之间保持结构化平衡",
+        "financial_status": "俱乐部薪水和少量赞助带来中等收入；精打细算以负担国际旅行和装备费用"
+      },
+      "interests": {
+        "hobbies": [
+          "阅读著名运动员传记",
+          "轻度徒步",
+          "烹饪健康餐食",
+          "听非洲流行音乐"
+        ],
+        "sports_and_fitness": "田径（短跑、接力）、力量训练、瑜伽以提升柔韧性",
+        "entertainment": "观看田径纪录片，喜欢浪漫喜剧，听励志播客",
+        "cultural_interests": "对肯尼亚历史和传统音乐感兴趣",
+        "intellectual_pursuits": "研读体育科学期刊，学习生物力学，探索运动心理学",
+        "other_interests": "在当地青少年体育训练营做志愿者"
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "主题：田径训练技巧、运动营养、伤病恢复方法、心理韧性技巧",
+          "格式：短视频（2-5分钟）、信息图、播客、科学文章",
+          "内容必须匹配此用户独特的工作模式：精英短跑运动员模式——直接、注重身体反馈、以比赛日程为先",
+          "拒绝泛化的助手设定：不要过度医疗化恢复或掩盖训练线索"
+        ],
+        "product_preferences": [
+          "品牌：耐克、佳得乐、Whoop（健身追踪器）、Theragun",
+          "特点：轻量抓地跑鞋、高可见度训练装备、植物蛋白粉",
+          "避免：未经证实的补充剂、无明显益处的昂贵装备",
+          "产品应通过用户自身的权衡视角选择：训练课、强度上限、停止信号、恢复检查、下一步进展"
+        ],
+        "service_preferences": [
+          "类型：个性化运动教练（线上或线下）、运动按摩疗法、比赛旅行预订",
+          "标准：与精英运动员合作的 proven 记录、灵活排期、新兴运动员可负担的价格",
+          "仅在保留决策优先级的情况下接受服务：腘绳肌安全、速度质量和经济性优先于理想设施"
+        ],
+        "learning_preferences": {
+          "subjects": [
+            "高级短跑技术",
+            "运动心理学",
+            "反兴奋剂教育"
+          ],
+          "methods": [
+            "带视频反馈的互动在线课程",
+            "一对一指导",
+            "包含实操训练的研讨会"
+          ]
+        },
+        "travel_preferences": {
+          "destinations": [
+            "田径项目强大的国家（美国、牙买加、英国）",
+            "拥有高原训练营的城市"
+          ],
+          "accommodation": [
+            "经济实惠、干净且靠近训练跑道的住所",
+            "偏好青旅或运动员宿舍"
+          ],
+          "transportation": [
+            "可靠的公共交通或拼车"
+          ]
+        },
+        "food_preferences": {
+          "diet": "高碳水、适量蛋白质、低脂肪；喜欢乌伽黎和苏库玛维基等本地肯尼亚菜肴，但也愿意尝试国际美食换口味",
+          "restrictions": "无乳制品（乳糖不耐受）",
+          "snacks": [
+            "水果（香蕉、芒果）",
+            "坚果酱",
+            "成分天然的能量棒"
+          ]
+        },
+        "entertainment_preferences": {
+          "movies": [
+            "体育剧情片（如《烈火战车》）",
+            "喜剧片",
+            "关于非洲运动员的纪录片"
+          ],
+          "music": [
+            "非洲流行音乐（如Sauti Sol、Burna Boy）",
+            "励志嘻哈音乐"
+          ],
+          "books": [
+            "运动员自传",
+            "自我提升类书籍"
+          ]
+        },
+        "technology_preferences": {
+          "devices": [
+            "智能手机（安卓）",
+            "GPS跑步手表（佳明Forerunner）",
+            "用于学习的笔记本电脑"
+          ],
+          "software": [
+            "训练计划应用（TrainingPeaks）",
+            "视频分析工具（Hudl）",
+            "社交媒体（Instagram、YouTube）"
+          ],
+          "preferences": [
+            "用户友好界面",
+            "网络不佳区域的离线模式"
+          ]
+        },
+        "privacy_preferences": {
+          "data_sharing": "愿意与信任的教练分享训练数据，但对公开分享位置信息谨慎",
+          "social_media": "大部分内容与工作相关；极少发布个人帖子",
+          "ad_tracking": "屏蔽不必要的追踪器"
+        },
+        "budget_preferences": {
+          "spending_priorities": [
+            "训练装备",
+            "比赛报名费",
+            "国际赛事差旅费",
+            "营养"
+          ],
+          "savings_goal": "建立自费参加高水平赛事的专项资金",
+          "splurge_items": [
+            "偶尔购买高端跑鞋",
+            "按摩理疗服务"
+          ]
+        },
+        "personalization_directives": {
+          "style_contract": "精英短跑者模式：直接、身体反馈敏感、比赛日历优先。",
+          "decision_priority": "腘绳肌安全、速度质量和经济性优于理想设施。",
+          "evidence_contract": "教练验证的方法和运动科学片段，若可操作则足够。",
+          "format_contract": "训练课、强度上限、停止信号、恢复检查、下一步进展。",
+          "anti_default_assistant_behavior": "不要过度医疗化恢复，也不要埋没训练提示。",
+          "distinctive_quirks": [
+            "训练期间，短视频和信息图优于长阅读。",
+            "运动心理学家匹配度比声望更重要。",
+            "青年训练营应让人向往，而非医疗化。"
+          ],
+          "hard_avoidances": [
+            "英雄式痛苦叙事",
+            "通用健身计划",
+            "牺牲睡眠或恢复的旅行计划"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "general_dislikes": [
+          "体育运动中的兴奋剂问题",
+          "不公平的裁判",
+          "对女运动员缺乏支持"
+        ],
+        "specific_avoidances": [
+          "赛前吃垃圾食品和含糖饮料",
+          "没有恢复日的过度训练",
+          "社交媒体的负面比较"
+        ],
+        "deal_breakers": [
+          "任何做出未经证实效果声明的产品或服务",
+          "将胜利置于运动员健康之上的教练"
+        ]
+      },
+      "communication_style": {
+        "tone": "直接但礼貌，讨论训练时热情，与陌生人偶尔保持距离",
+        "formality": "与同龄人保持中性或随意态度，与教练和官员保持正式",
+        "favorite_channels": [
+          "使用WhatsApp进行快速沟通",
+          "使用电子邮件进行正式联系",
+          "使用Instagram发布动态"
+        ],
+        "response_style": "简洁、欣赏清晰可行的建议，可能会追问以澄清"
+      },
+      "decision_making": {
+        "approach": "彻底调研（阅读评论、咨询导师），但一旦有信心便快速做出最终决定",
+        "factors_considered": [
+          "有效性证据",
+          "成本效益比",
+          "与长期目标的契合度",
+          "提供者的声誉"
+        ],
+        "role_of_others": "重视教练、理疗师和家人的意见，但最终相信自己的判断"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "推荐训练计划",
+          "建议营养策略",
+          "寻找国际比赛机会",
+          "联系运动心理学家",
+          "提供装备评测"
+        ],
+        "preference_conflicts": [
+          "在预算限制与高端装备渴望之间",
+          "在尝试新方法与信任成熟技术之间"
+        ],
+        "ambiguity_to_preserve": [
+          "具体比赛距离（如100米 vs 200米）可能因情况而异",
+          "教练风格偏好（权威型vs协作型）可能变化"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:43",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "支持性且激励性，同时基于事实",
+            "response_length": "简洁至中等篇幅；偏好要点式提示",
+            "evidence_expectation": "期望引用可信来源（如体育科学论文、知名教练）",
+            "formatting": "清晰标题和短段落；避免过多表情符号",
+            "proactive_behavior": "可主动提醒即将到来的比赛或训练建议，但不过度打扰",
+            "things_to_avoid": [
+              "未经证实的声明",
+              "过度推广性语言",
+              "询问个人财务细节"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "为腘绳肌拉伤后规划恢复周",
+            "计划去牙买加高原训练营的经济旅行",
+            "寻找运动心理学家并组织青年田径训练营"
+          ]
+        }
+      }
+    }
+  }
+}

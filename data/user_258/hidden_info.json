@@ -1,0 +1,491 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_258",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:59:35",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_009",
+      "hidden_indirect_015",
+      "hidden_indirect_019"
+    ],
+    "content": [
+      "hidden_indirect_004",
+      "hidden_indirect_013"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_016"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_007",
+      "hidden_indirect_017",
+      "hidden_indirect_021"
+    ],
+    "entertainment": [
+      "hidden_indirect_014"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_011",
+      "hidden_indirect_018"
+    ],
+    "food": [
+      "hidden_indirect_008",
+      "hidden_indirect_020"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_004",
+      "hidden_indirect_017"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_010",
+      "hidden_indirect_020"
+    ],
+    "learning": [
+      "hidden_indirect_013"
+    ],
+    "privacy": [
+      "hidden_indirect_006",
+      "hidden_indirect_012",
+      "hidden_indirect_021"
+    ],
+    "product": [
+      "hidden_indirect_011"
+    ],
+    "role_context": [
+      "hidden_indirect_015"
+    ],
+    "service": [
+      "hidden_indirect_007",
+      "hidden_indirect_012",
+      "hidden_indirect_016"
+    ],
+    "technology": [
+      "hidden_indirect_002",
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "travel": [
+      "hidden_indirect_003",
+      "hidden_indirect_014",
+      "hidden_indirect_019"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "感应灯用了两周忽明忽暗，拆开发现电池仓卡扣断了一个，退货还得自己掏运费寄回去。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成电池仓可单独拆换的型号，虽然贵12000韩元，但配件能买得到，不用整灯退换。"
+        }
+      ],
+      "implicit_signal": "可靠性优先于低价，愿意为有维护方案的选项多付"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你线上会议间隙发来智能插座对比，没写测试时的室温，我怀疑耗电数据不准，没敢下单。"
+        },
+        {
+          "role": "assistant",
+          "content": "补发同一评测者的拆机截图，标了24°C和80%负载条件；插座选支持本地API的，日志可以直接拉到你笔记里核对。"
+        }
+      ],
+      "implicit_signal": "需要可验证来源，不接受无测试条件的推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次老人住处检查路线你只列了景点顺序，订的民宿没电梯，我扛工具爬了三层楼，膝盖疼了一周。"
+        },
+        {
+          "role": "assistant",
+          "content": "重写：目标——两处维修点；约束——无电梯、石阶、雨天可能；方案——首选地面层、自备折叠拉车；检查——出发前确认入口坡道和天气。"
+        }
+      ],
+      "implicit_signal": "要求结构化风险评估，不接受仅列建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那篇居家改造指南没提墙体检测，我按标记钻孔才发现是混凝土墙，钻不动，整面墙得补腻子重刷。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次每步后面加一行：如果这一步失败，跳转到备选步骤；钻墙前先给敲击法和电源探测器流程，确认墙体类型。"
+        }
+      ],
+      "implicit_signal": "内容需包含失败回退路径"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个试用账号每次登录都要验证码，上周换手机后所有项目重新绑定一遍，花了28分钟一个一个输验证码。"
+        },
+        {
+          "role": "assistant",
+          "content": "换支持设备信任的密码管理器——首登验证后同账号免二次验证；迁移时导出加密包直接恢复，不用逐项手动重绑。"
+        }
+      ],
+      "implicit_signal": "低摩擦工具偏好，拒绝重复录入"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "物业的估价App要求开放全部相册权限，我拒绝了，他们就说没法提供线上报价，只能上门。"
+        },
+        {
+          "role": "assistant",
+          "content": "改找另一家只允许拍摄指定区域图片的服务，你拍完手动上传；报价单里地址只写到区，姓名用姓氏加首字母。"
+        }
+      ],
+      "implicit_signal": "对敏感权限保持边界，要求最小信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次搬家服务清单没写谁提供工具，当天师傅说螺丝刀要自己带，他等了十分钟我去便利店买。"
+        },
+        {
+          "role": "assistant",
+          "content": "方案表里工具行加一列【未确认：由谁提供】，合同签前你先勾选确认；工具没写就是自备，提前准备。"
+        }
+      ],
+      "implicit_signal": "方案中需标出未确认项"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "活动散场后按评分去了附近最高分的店，队伍排到街口，同行有人不能吃辣，菜单却没标注辣度等级。"
+        },
+        {
+          "role": "assistant",
+          "content": "先确认同行饮食限制和等待时间上限；只推两种：能预约且标注辣度等级的餐厅，或自带食物去附近公园。"
+        }
+      ],
+      "implicit_signal": "拒绝只看评分的推荐，需匹配实际限制"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "居家安防方案写全包价，签完发现多了安装调试费、监控费和押金三项，总价超预算38%。"
+        },
+        {
+          "role": "assistant",
+          "content": "换一家——报价单必须分一次性费用和月费；押金单独标为可推迟项，14天内不满意退还的条件写进备忘录。"
+        }
+      ],
+      "implicit_signal": "排斥隐藏费用，需区分必需和可推迟支出"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个记录仪用三个月后原厂充电器停产，非原厂的插上就过热，每次充电得在旁边盯着怕起火。"
+        },
+        {
+          "role": "assistant",
+          "content": "前提加一条：配件需符合通用标准，至少支持USB-C；非原厂替换件可得且通过兼容测试；避开绑定专用底座的型号。"
+        }
+      ],
+      "implicit_signal": "不选维护成本被忽略的设备"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推荐的韩英翻译器没写语言对覆盖率和离线准确率，我装完发现专有名词全翻错，重新自己翻了半小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "换用公开测试集准确率报告的工具；你拿三条不同领域的测试句先跑一遍，人工对比后通过再接正式任务。"
+        }
+      ],
+      "implicit_signal": "产品选型需有可复现的准确率数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月用清洁服务试点，注册留了手机号和地址，取消后还得打两次电话才停扣，地址一直没删。"
+        },
+        {
+          "role": "assistant",
+          "content": "要求条款注明取消后7天内删除个人数据；支付用一次性虚拟卡号，取消后卡号自动失效，不用再打电话沟通。"
+        }
+      ],
+      "implicit_signal": "取消规则和数据删除必须明确"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个线上课只给了视频和链接，没有练习题，也没有答案标准，我学完不知道哪些地方理解错了。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成每节后有3道情景题的版本，题后附评分标准和出错诊断指南；你做完把答案填进笔记，逐条对照诊断，30分钟可走完一节。"
+        }
+      ],
+      "implicit_signal": "学习材料需有练习题和可对照标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周末去了市集，人挤得手机没信号，出来已经下午四点，当天剩下的购物和晚饭全推到第二天。"
+        },
+        {
+          "role": "assistant",
+          "content": "先查历史人流峰值曲线，确认28号上午九点前到场；活动限2小时内结束，之后至少留1小时缓冲再接下一项。"
+        }
+      ],
+      "implicit_signal": "娱乐活动需评估拥挤度和对后续计划的影响"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "街道改造两家报价：连锁公司便宜但保修一年，本地注册十年的施工队保修三年且材料本地采购。"
+        },
+        {
+          "role": "assistant",
+          "content": "选本地施工队——保修条款更可靠；预算里把街道税收抵扣项单列，保修响应时间写进合同，确认后再调账付款。"
+        }
+      ],
+      "implicit_signal": "支持本地服务商，愿意为可靠本地选项合理安排预算"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "试用账号的自动预约，我选了下午两点，系统却改成晚上七点，说算法觉得晚上时段效率更高。"
+        },
+        {
+          "role": "assistant",
+          "content": "关掉自动预约功能，换成固定时段锁定；每次送单前你手动确认一次时间；新算法功能不可靠，不选保时间段方案。"
+        }
+      ],
+      "implicit_signal": "时间边界优先于新奇功能"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你给的采购清单没写物品净重，超市结账时瓶装调味料和袋子加起来超重，付了额外超重费，购物车里的生鲜只能放下次。"
+        },
+        {
+          "role": "assistant",
+          "content": "清单每项后加【未确认项：净重/体积】列；采购前先称随身包空重，预留28公斤限额；超重的先放购物车改为第二天取。"
+        }
+      ],
+      "implicit_signal": "方案需标注未确认项以防止遗漏"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推荐的笔记同步工具，迁移时发现导出格式是私有的，打开后标题和标签全乱，我手工整理了38条才恢复。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后只推支持markdown导出且导出字段可预览的工具；迁移前先用一条笔记测导出，确认标题/标签/附件路径正确后，再批量迁移。"
+        }
+      ],
+      "implicit_signal": "需要可验证导出格式，迁移前需先行测试"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去仁川计划没留堵车缓冲，过桥费到现场才收，花了一笔计划外的8000韩元，房间当天不可取消。"
+        },
+        {
+          "role": "assistant",
+          "content": "路线加30分钟缓冲段；住宿必须选免费取消版；过路费和停车费单列进预算，抵达前2小时还可调行程。"
+        }
+      ],
+      "implicit_signal": "路线需有缓冲和可取消选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推荐的热门炸鸡店排队到街上，套餐量大到吃不完，剩下的带到第二天已经软掉，口感全变了。"
+        },
+        {
+          "role": "assistant",
+          "content": "之后只推周中非高峰时段可点半份的定食店，份量标注在菜单前；排队超过20分钟就换备用地址，避免拖垮当天安排。"
+        }
+      ],
+      "implicit_signal": "拒绝只看热度无匹配的推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在线预约维修时网页要求填出生年份和具体住址门牌号，我填了区后就卡住不让提交了。"
+        },
+        {
+          "role": "assistant",
+          "content": "换一个只要求姓氏加区名和联系电话的预约系统；如果必须填详细地址，用路边便利店作为收件点，不暴露实际住宅。"
+        }
+      ],
+      "implicit_signal": "拒绝注册时非必要信息收集"
+    }
+  ]
+}

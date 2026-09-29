@@ -1,0 +1,449 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_101",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:46:31",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 19,
+  "composition": {
+    "episodic_preference_trace": 19
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_009",
+      "hidden_indirect_018"
+    ],
+    "content": [
+      "hidden_indirect_005",
+      "hidden_indirect_018"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_010",
+      "hidden_indirect_012"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_006",
+      "hidden_indirect_008",
+      "hidden_indirect_011",
+      "hidden_indirect_015"
+    ],
+    "entertainment": [
+      "hidden_indirect_013"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_004",
+      "hidden_indirect_013"
+    ],
+    "food": [
+      "hidden_indirect_010"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_005",
+      "hidden_indirect_017"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_007",
+      "hidden_indirect_009",
+      "hidden_indirect_016"
+    ],
+    "learning": [
+      "hidden_indirect_008",
+      "hidden_indirect_017"
+    ],
+    "privacy": [
+      "hidden_indirect_007",
+      "hidden_indirect_016"
+    ],
+    "product": [
+      "hidden_indirect_014"
+    ],
+    "role_context": [
+      "hidden_indirect_002",
+      "hidden_indirect_019"
+    ],
+    "service": [
+      "hidden_indirect_011",
+      "hidden_indirect_015"
+    ],
+    "technology": [
+      "hidden_indirect_006",
+      "hidden_indirect_014"
+    ],
+    "travel": [
+      "hidden_indirect_012",
+      "hidden_indirect_019"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次申请更换公共路灯，选了最便宜的方案；三个月后线路发热频繁跳闸，维修费反而多花了45澳元。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次申请加装人行道护栏，我先列出两档供应商的五年材料费与维护预估，首期投入多30%但年维护成本降一半。"
+        }
+      ],
+      "implicit_signal": "愿意为正面实际效果支付一定费用，但总额不能失控"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周做社区垃圾站迁移申请，一个承包商报了“约3000澳元”，没写是否含拆除和运输。最后多花600。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我找了三家报价，每家都要求拆开材料、人工、设备租赁三条；我会按最接近27周前那次低价但含齐项目的方案再议。"
+        }
+      ],
+      "implicit_signal": "需要明确假设条件与价格范围，接受保守估算"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你只给了报名流程文字，我没法快速看出哪个环节必须现在付钱。错过了早鸟价。"
+        },
+        {
+          "role": "assistant",
+          "content": "我现在把社区花园申办步骤做成四列表：必要项/费用/可推迟项/风险日；43天后的续期提醒已标红。"
+        }
+      ],
+      "implicit_signal": "输出必须包含成本项与可推迟项，保持克制表格风格"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次办旧物交换许可，对方说“你到时候再补一点就行”，结果场地费多收了45澳元没有票据。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次申请复活节巡游封路许可，我已要求每家报价必须列明补交条件和取消扣费比例，缺项的直接筛掉。"
+        }
+      ],
+      "implicit_signal": "拒绝含糊价格承诺，要求透明明细"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周你给了一份“十大社区活动点子”，一半不适合我们乡镇，浪费翻页时间。"
+        },
+        {
+          "role": "assistant",
+          "content": "我重做一张筛选表：只保留步行20分钟内、容纳80人以下、需自备保险的三项，每项附前次类似活动出席数据。"
+        }
+      ],
+      "implicit_signal": "偏好有依据的结论，拒绝通用榜单"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次对比五款线路登记工具，每个都有试用期但只有两款能离线导出。地铁换乘时没信号，白记了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我先把候选压到两款：都支持离线副本和7天免费试用，我试过其中一个在发热降频后仍能存草稿。"
+        }
+      ],
+      "implicit_signal": "喜欢保守估算，愿意多比较但不想无限选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次注册社区志愿系统，要求填家庭详细地址才允许报名；我只想参加不涉密的环境清扫。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找到另一个活动平台，只需要选区编号和联系方式；提交前你核对一下隐私权限，避免信息被用于活动以外的推广。"
+        }
+      ],
+      "implicit_signal": "反对强制提供非必要个人信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月学垃圾分类督导流程，你给了PDF手册和链接，但我看完还是不知道第一天该带什么。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把第一天任务拆成核对表：8点取手套/9点检查分拣站/每30分钟记录一次常见错误；周日晚上你再过一遍。"
+        }
+      ],
+      "implicit_signal": "需要可复盘的标准和短反馈"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次申请社区节日基金，你建议“如果贷款总能赚回来”，我的预算里利息风险根本没算进去。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我把基金用途锁定在一次性采购物资，按现有余额规划；预算表最后一行标注“不可使用信用资金”。"
+        }
+      ],
+      "implicit_signal": "拒绝超前消费建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次为邻居筹备社区聚餐，你建议直接订熟食外卖；结果每人份17澳元还多一次性餐具，加总超预算。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次改菜谱为家庭式大锅菜，自备容器；按总量买食材只需11澳元每人，且没有额外包装费。"
+        }
+      ],
+      "implicit_signal": "总成本与长期负担优先于短期便利"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次订阅社区事件通知服务，取消入口藏在设置第三级；我漏掉了取消入口，多扣一个月费用。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次选用另一家服务，必须先截图展示“一步取消”按钮才注册；我已经把操作路径存入笔记备查。"
+        }
+      ],
+      "implicit_signal": "需要明确取消规则和响应速度"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去市区递交申请，你说坐45分钟电车直达；但那天线路维护，晚到43分钟导致窗口关闭。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我计划提前一班车，同时标注出替代公交线；住宿方面选了可免费取消的旅馆，如果申请不过能退全额。"
+        }
+      ],
+      "implicit_signal": "路线留出缓冲，住宿考虑可取消"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次参加乡镇电影夜，一半时间是本地公司广告；而且座位只有八十个，很多人站后面。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次社区音乐会我选露天小舞台，主办方承诺中间不插商业环节；我会确认容量不超过60人且可自带坐垫。"
+        }
+      ],
+      "implicit_signal": "避免过度拥挤和强营销活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买活动登记平板，销售推荐新款带人脸识别，但我要的只是签到的功能，旧款还便宜27澳元。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只用基本款；我已经核查过该型号两年后仍能获取安全补丁，且支持导出CSV到任何管理系统。"
+        }
+      ],
+      "implicit_signal": "产品选择需考虑长期使用与替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次申请社区保险，需要先注册会员然后跳转到另外两个网站填表；平台之间数据不连通。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我找到一家支持一站式填写的保险方，不用额外注册；你只需提供任务类别和预估人数即可生成报价单。"
+        }
+      ],
+      "implicit_signal": "偏好少注册少中转"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次申请社区准入卡，表格要求填写配偶职业和孩子学校，明明只用于核实住址。"
+        },
+        {
+          "role": "assistant",
+          "content": "我帮你把申请范围限制在“仅住址验证”，删除非必填栏；同时用邮政信箱作为通信地址。"
+        }
+      ],
+      "implicit_signal": "对家庭住址保持谨慎"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次学垃圾分类标准，助手发了三个视频，但现场遇到混杂材质时没有判断例子。"
+        },
+        {
+          "role": "assistant",
+          "content": "我收集了乡镇最常见的十类混杂垃圾照片，标出正确投放点和常见错误；每次培训后你可用它做自测。"
+        }
+      ],
+      "implicit_signal": "需要示例与可复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次采购社区清洁工具，预算表中“消毒液”和“备用拖把头”没分开，最后只能买一半数量。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把本次采购分成必需品（垃圾袋、手套）和可推迟项（警示牌、收纳箱），优先保证前者数量；推迟项下月再看库存。"
+        }
+      ],
+      "implicit_signal": "必须区分必须与可推迟花费"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去隔壁镇上开会，你推荐的主干道旅馆便宜但临街，凌晨货车吵得我第二天开会迟到。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次从地图筛选背街旅馆，要求评分不低于4.0且注明“双层玻璃”；房型选可免费取消标准间，附上两个备选床铺。"
+        }
+      ],
+      "implicit_signal": "优先考虑安全安静与可取消性"
+    }
+  ]
+}

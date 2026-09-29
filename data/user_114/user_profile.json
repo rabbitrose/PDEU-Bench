@@ -1,0 +1,347 @@
+{
+  "user_id": "user_114",
+  "explicit_preferences": {
+    "user_profile": "一位变得对行业奖项有些愤世嫉俗的资深广告高管",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Marcus Whitfield",
+        "age": 58,
+        "gender": "男性",
+        "location": "New York, NY, USA",
+        "languages": [
+          "英语",
+          "法语"
+        ],
+        "education_level": "营销学硕士学位",
+        "occupation": "首席创意官",
+        "industry": "广告",
+        "seniority": "高管",
+        "household": "已婚，两个成年孩子（已离家），一只金毛猎犬",
+        "life_stage": "空巢老人，考虑半退休"
+      },
+      "physical_profile": {
+        "height_cm": 183,
+        "general_appearance": "高挑瘦削，银发，常穿利落低调的西装，戴老花镜",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "一位经验丰富、略带厌倦的广告主管，重视真实性和效果，胜过花哨潮流和颁奖秀。直接、务实、观察敏锐。",
+        "big_five": {
+          "openness": 4,
+          "conscientiousness": 5,
+          "extraversion": 3,
+          "agreeableness": 2,
+          "neuroticism": 2
+        },
+        "strengths": [
+          "战略思维",
+          "创造性解决问题",
+          "深谙行业知识",
+          "指导年轻人才"
+        ],
+        "weaknesses": [
+          "对新趋势持怀疑态度",
+          "对浮夸内容不耐烦",
+          "沟通直率",
+          "不愿改变经证有效的方法"
+        ],
+        "values": [
+          "真实性",
+          "效果",
+          "长期关系",
+          "工艺"
+        ],
+        "motivations": [
+          "创作真正打动人心的作品",
+          "证明数据与创意可以共存",
+          "帮助客户实现真实的业务成果"
+        ],
+        "stress_triggers": [
+          "空洞的流行词",
+          "奖项被优先于结果",
+          "微观管理",
+          "领导无力"
+        ]
+      },
+      "background": {
+        "upbringing": "在芝加哥长大，父亲是印刷工，母亲是教师，自幼懂得勤奋和精确的价值。",
+        "education": "伊利诺伊大学英语学士，西北大学市场营销硕士。",
+        "career_history": "起初在一家小广告公司做文案，后转至大公司，35岁成为创意总监，45岁成为首席创意官。曾为汽车、奢侈品和快速消费品品牌打造标志性广告活动。",
+        "significant_life_events": "职业生涯早期赢得戛纳金狮奖，后来对行业政治感到幻灭；指导过几位现在知名的创意人；2008年经济衰退期间考虑过离开行业但留了下来。",
+        "current_status": "仍在一家中型独立广告公司管理创意部门，但更多时间用于咨询和撰写一本关于广告神话的书。"
+      },
+      "lifestyle": {
+        "daily_routine": "早上5:30起床，阅读行业新闻和报纸，遛狗，8:30到办公室，审阅工作，参加关键会议，下午6:30离开，与妻子共进晚餐，阅读或看电影，晚上10:30就寝。",
+        "work_environment": "角落办公室，挂有复古广告海报，白板墙，还有一台唱片机。更喜欢面对面会议，但也能适应视频通话。",
+        "social_life": "小圈子由行业资深人士和艺术家组成。定期参加画廊开幕式和爵士俱乐部。偶尔为创意人士举办晚宴。",
+        "hobbies": [
+          "爵士吉他",
+          "复古广告纪念品",
+          "木工",
+          "骑行"
+        ],
+        "health_and_fitness": "天气允许时骑车上班，每周两次瑜伽，不吸烟，偶尔喝威士忌。"
+      },
+      "interests": {
+        "topics": [
+          "广告史",
+          "说服心理学",
+          "排版",
+          "现代艺术",
+          "爵士乐",
+          "黑色电影"
+        ],
+        "pastimes": [
+          "收藏复古广告",
+          "在周末乐队弹吉他",
+          "写短篇小说",
+          "前往不那么旅游化的城市"
+        ],
+        "media_consumption": "订阅Adweek、The New Yorker、Harper's，收听Radiolab和99% Invisible，观看经典电影和限定剧集。"
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "阅读：商业、心理学或文化类非虚构作品，调研深入的长篇新闻，创意先驱传记",
+          "音频：独立摇滚、爵士、古典音乐，深度探索想法的播客，作者亲述的有声书",
+          "视频：纪录片，尤其是关于设计或历史的，剧本扎实的剧情片，避免真人秀及大部分喜剧",
+          "内容必须匹配用户独特的工作模式：反俗套创意总监模式：敏锐、品味驱动、反对安全创意。",
+          "拒绝通用助手框架：不要头脑风暴明显的奢侈品陈词滥调或颁奖典礼语言。"
+        ],
+        "product_preferences": [
+          "服装：重质不重量，经典品牌的定制西装，经久耐用的皮具",
+          "电子产品：苹果生态系统图其简约，高端耳机用于听音乐，极简设计",
+          "家居：复古家具，复古音响设备，装满精选藏书的书架",
+          "产品应通过用户自己的权衡视角选择：消除陈词滥调，更锐利的角度，感官证明，值得承担的风险。"
+        ],
+        "service_preferences": [
+          "旅行：精品酒店而非连锁，直飞航班避免转机，长途旅行租车优于拼车",
+          "饮食：从农场到餐桌的餐厅，知识渊博的侍酒师，避免网红打卡地",
+          "职业：尊重我经验的顾问，无需培训即可上手的工具，理解“少即是多”的机构",
+          "服务只有在保留此决策优先级时才可接受：原创性、张力和文化特异性胜过客户舒适度。"
+        ],
+        "learning_preferences": {
+          "style": [
+            "阅读案例研究",
+            "动手实践工作坊",
+            "指导会议（给予和接受）"
+          ],
+          "format": [
+            "书籍和长文章",
+            "面对面讲座或小型研讨会",
+            "避免带有测验的电子学习模块"
+          ]
+        },
+        "travel_preferences": {
+          "destination_type": [
+            "有历史和文化底蕴的城市",
+            "人迹罕至的地点",
+            "避免全包式度假村"
+          ],
+          "accommodation": [
+            "有特色的精品酒店",
+            "带书房的度假出租屋",
+            "偏好安静的社区"
+          ],
+          "activities": [
+            "参观博物馆",
+            "建筑之旅",
+            "当地爵士俱乐部",
+            "与当地人一起上烹饪课"
+          ]
+        },
+        "food_preferences": {
+          "cuisine": [
+            "法语",
+            "意大利语",
+            "日本料理（尤其是omakase）",
+            "美式地方菜"
+          ],
+          "dining_style": [
+            "长时间的、以对话为主的餐食",
+            "知识渊博的服务员",
+            "避免自助餐和快餐休闲"
+          ],
+          "restrictions": [
+            "无，但偏好有机和可持续食材"
+          ]
+        },
+        "entertainment_preferences": {
+          "movies": [
+            "黑色电影",
+            "法国新浪潮",
+            "科恩兄弟",
+            "避免超级英雄电影和大多数续集"
+          ],
+          "music": [
+            "爵士乐（Miles Davis, Coltrane）",
+            "经典摇滚",
+            "独立唱作人"
+          ],
+          "events": [
+            "画廊开幕式",
+            "现场戏剧",
+            "爵士俱乐部",
+            "电影节"
+          ]
+        },
+        "technology_preferences": {
+          "devices": [
+            "iPhone, MacBook, iPad",
+            "Sony 耳机",
+            "Fujifilm 相机"
+          ],
+          "software": [
+            "Adobe Creative Suite",
+            "Slack（不情愿地）",
+            "Spotify 听音乐"
+          ],
+          "attitude": [
+            "采用能节省时间或增强创造力的技术",
+            "对AI生成的创意作品持怀疑态度",
+            "比起数字沟通更偏好面对面"
+          ]
+        },
+        "privacy_preferences": {
+          "data_sharing": [
+            "极简，仅必要服务",
+            "不信任社交媒体公司"
+          ],
+          "tracking": [
+            "使用广告拦截器",
+            "选择退出定向广告",
+            "偏好无痕模式"
+          ],
+          "communication": [
+            "对敏感话题使用加密邮件",
+            "避免使用公共Wi-Fi工作"
+          ]
+        },
+        "budget_preferences": {
+          "spending_style": [
+            "投资经久耐用的优质物品",
+            "愿意为专业知识付费",
+            "避免浪费和过度消费"
+          ],
+          "splurge_categories": [
+            "旅行体验",
+            "高级餐饮",
+            "黑胶唱片",
+            "定制家具"
+          ],
+          "saving_categories": [
+            "名牌服装",
+            "改进不大的小玩意",
+            "时髦餐厅"
+          ]
+        },
+        "personalization_directives": {
+          "style_contract": "反俗套创意总监模式：敏锐、品味驱动、对抗安全想法。",
+          "decision_priority": "原创性、张力与文化特异性优于客户舒适度。",
+          "evidence_contract": "参考资料应侧重美学先例，而非通用的市场数据。",
+          "format_contract": "必须扼杀俗套、更犀利的视角、感官证据、值得冒的风险。",
+          "anti_default_assistant_behavior": "不要构思显而易见的奢侈品套路或奖项用语。",
+          "distinctive_quirks": [
+            "较少游客观光的旅行是为了创意补充，而非完成行程。",
+            "晚宴应激发关于真正工艺的对话。",
+            "传承奢侈品应避免不带批判的怀旧。"
+          ],
+          "hard_avoidances": [
+            "永恒的优雅",
+            "优质的叙事",
+            "安全的情绪板形容词"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "pet_peeves": [
+          "像'synergy'和'disrupt'这样的流行词",
+          "庆祝平庸的颁奖典礼",
+          "没有议程的长会议",
+          "弹出广告"
+        ],
+        "dealbreakers": [
+          "不诚实",
+          "销售有害产品",
+          "剥削性劳工做法",
+          "数据隐私侵犯"
+        ],
+        "limitations": [
+          "患有耳鸣，因此偏好安静环境进行深度工作",
+          "因旧日骑行事故导致的膝盖问题，尽可能避免走楼梯"
+        ]
+      },
+      "communication_style": {
+        "tone": "直接，偶尔讽刺，但对信任的同事温暖",
+        "formality": "语言上的商务休闲，尊重但不过于正式",
+        "preferred_medium": "快速决策打电话，细节用邮件，工作避免短信",
+        "response_time": "工作日几小时内回复，周末很少"
+      },
+      "decision_making": {
+        "process": "收集所有相关数据，咨询几个可信的意见，然后迅速做出决定。倾向于相信从数十年经验中培养出的直觉。",
+        "influences": [
+          "经证实的成果",
+          "长期关系",
+          "工艺质量",
+          "道德考量"
+        ],
+        "risk_tolerance": "中等——愿意承担创意风险，但不愿承担财务或声誉风险",
+        "friction_points": [
+          "他人的优柔寡断",
+          "分析瘫痪",
+          "群体思维"
+        ]
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "推荐一本关于说服心理学的非虚构书籍",
+          "计划一次前往不那么旅游化的欧洲城市的周末旅行",
+          "为与行业客户的晚宴推荐一个播放列表",
+          "为最近的广告活动写一篇批评性但建设性的评论",
+          "帮忙起草一篇行业会议演讲稿，挑战奖项文化",
+          "找一块符合他风格的古董手表"
+        ],
+        "preference_conflicts": [
+          "重视真实性，但工作在常被批评为肤浅的行业",
+          "喜欢指导他人，但对天真缺乏耐心",
+          "欣赏数据，但更相信直觉"
+        ],
+        "ambiguity_to_preserve": [
+          "愤世嫉俗的程度——可能仍暗自享受奖项",
+          "政治倾向——未明确表态，可从价值观推断",
+          "广告中的具体品牌偏好——模糊处理以允许泛化"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:45",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "专业、简洁，必要时可稍显非正式。欣赏机智但反感轻浮。",
+            "response_length": "短篇到中篇，除非要求深度分析。避免冗长废话。",
+            "evidence_expectation": "期望在适用时提供数据支持的主张，但尊重经验中的轶事智慧。",
+            "formatting": "复杂信息使用清晰标题和要点。纯文本中避免过多表情符号或标记语法。",
+            "proactive_behavior": "欣赏助手提供相关见解或捕捉错误，但不喜欢对创意工作主动提出建议。",
+            "things_to_avoid": [
+              "过于热情的语气",
+              "空话套话",
+              "不问就假定他的偏好",
+              "过度手把手指导"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "为传承奢侈品牌制定一个不依赖行业套路的提案",
+            "和妻子规划一个前往欧洲小众城市的周末游",
+            "举办一场行业同行的晚宴，在庆祝真正创意时挑战奖项文化"
+          ]
+        }
+      }
+    }
+  }
+}

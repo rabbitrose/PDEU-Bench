@@ -1,0 +1,478 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_207",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:14:42",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_009",
+      "hidden_indirect_016"
+    ],
+    "content": [
+      "hidden_indirect_007",
+      "hidden_indirect_017"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_013",
+      "hidden_indirect_016"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_014",
+      "hidden_indirect_018",
+      "hidden_indirect_019"
+    ],
+    "entertainment": [
+      "hidden_indirect_004",
+      "hidden_indirect_011",
+      "hidden_indirect_019"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_007",
+      "hidden_indirect_012",
+      "hidden_indirect_017"
+    ],
+    "food": [
+      "hidden_indirect_001",
+      "hidden_indirect_013"
+    ],
+    "format_contract": [
+      "hidden_indirect_006",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_003",
+      "hidden_indirect_011",
+      "hidden_indirect_013",
+      "hidden_indirect_019"
+    ],
+    "learning": [
+      "hidden_indirect_006",
+      "hidden_indirect_020"
+    ],
+    "privacy": [
+      "hidden_indirect_005",
+      "hidden_indirect_010"
+    ],
+    "product": [
+      "hidden_indirect_008",
+      "hidden_indirect_017"
+    ],
+    "role_context": [
+      "hidden_indirect_014"
+    ],
+    "service": [
+      "hidden_indirect_002",
+      "hidden_indirect_015"
+    ],
+    "technology": [
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "travel": [
+      "hidden_indirect_003",
+      "hidden_indirect_012"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周跟朋友去那家新开的中东餐厅，排了40分钟，结果酱汁太油，下午一直犯困，整晚计划都乱了。现在要选个明天的晚饭地点，可以独处一会儿。"
+        },
+        {
+          "role": "assistant",
+          "content": "那排除商业区高油分热门店。附近巷子里那家越南米粉店，晚上人少，可以坐角落，汤底清淡，预算35雷亚尔内，不用预约。"
+        }
+      ],
+      "implicit_signal": "低预算、可取消、安静优先于规模和网红度"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天订了一间民宿，到页面才发现取消政策在最底下用小字写48小时前才免费，我订完就收到确认邮件，但没提退款流程。这种不透明让我不想住了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那取消这笔预订，换去另一家有明确标注“入住当天18点前免费取消”的公寓，价格高15雷亚尔，但避免了临时扣款风险。"
+        }
+      ],
+      "implicit_signal": "要求取消规则明确，拒绝隐藏费用"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上回按推荐去了那个山顶观景台，结果全是旅行团和自拍杆，根本没法安静看日落。下次想去个本地人待的地方。"
+        },
+        {
+          "role": "assistant",
+          "content": "那避开所有在社交媒体标“必去”的地点。次日清晨去南区小公园，只有晨跑的人，有长椅能坐一小时，回来不耽误工作。"
+        }
+      ],
+      "implicit_signal": "避开热门景点和营销引导"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周六去了一个市集，摊位太多，每家都推销会员，逛完什么也没记住。这周末想找个能停留、出点内容的地方。"
+        },
+        {
+          "role": "assistant",
+          "content": "那去老城区那家独立唱片店，周六下午有常客带唱片来放，店主不推销，可以坐靠窗位记笔记或拍照，氛围安静。"
+        }
+      ],
+      "implicit_signal": "小型场所、创作素材导向"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下了一个活动日历App，注册时要求读通讯录和位置权限，被我拒绝了。但我还是想看本地独立音乐演出信息。"
+        },
+        {
+          "role": "assistant",
+          "content": "那换一个网页端聚合页面，无需注册，只标记社区中心和文化馆的免费演出。你把链接收藏到浏览器，手动筛选离你近的活动。"
+        }
+      ],
+      "implicit_signal": "最小权限、可导出数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我想学一点基础的葡萄牙语歌词写作，但网上教程全是语法术语，没有实际歌词拆解。我上次自学三天就放弃了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那从一首你喜欢的巴西MPB歌曲开始，我先把第一段每句的主谓宾标出来，再写出和英语对应的直译。你对照着写四行自己的版本，今晚我们检查。"
+        }
+      ],
+      "implicit_signal": "需要示例和复盘标准，不堆链接"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前那份推荐的周末活动清单，都是艺术展和美食节，我住在工业区，过去要转两次车，到了也只剩半小时。能不能只说我步行能到的？"
+        },
+        {
+          "role": "assistant",
+          "content": "那就缩小范围：你那街区周三晚上的即兴戏剧工作坊，步行8分钟，费用捐帽子，不要求表演经验，之前去的人说氛围轻松。"
+        }
+      ],
+      "implicit_signal": "场景贴合而非榜单"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买一个能跨平台同步笔记的工具，但我不想绑定信用卡试用。上个月试了一个，忘了取消，扣了月费才想起。"
+        },
+        {
+          "role": "assistant",
+          "content": "那选开源软件Joplin，本地文件存你的云盘，无订阅，支持Markdown和标签。如果要导出为PDF，装一个免费插件就行。"
+        }
+      ],
+      "implicit_signal": "长期使用成本及替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "月底账上只剩200雷亚尔娱乐费，但我想参加一个周末手作市集的摊位费50块，不确定值不值得。"
+        },
+        {
+          "role": "assistant",
+          "content": "手作市集摊位费属于“可推迟花费”。这周先用免费去处：周六公园有社区交换活动，零成本，回来再决定是否报名下个月那场。"
+        }
+      ],
+      "implicit_signal": "保守预算、可推迟花费优先区分"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "今天收到一个新活动App的推送，说要上传定位才能显示附近活动。我不想暴露具体住址。"
+        },
+        {
+          "role": "assistant",
+          "content": "拒绝定位权限，手动在设置里输入你所在的街区名称即可。该App的搜索栏支持邮编范围，你不用点允许位置。"
+        }
+      ],
+      "implicit_signal": "默认开启隐私保护"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友发了一个露台影院活动的链接，广告语写“全城最火打卡地”，我点进去发现票价含强制鸡尾酒套餐。不想为氛围付溢价。"
+        },
+        {
+          "role": "assistant",
+          "content": "那别去。但我知道文化中心后天有免费露天电影，不放广告，只放一部70年代巴西公路片，自带坐垫就行。"
+        }
+      ],
+      "implicit_signal": "拒绝营销腔和过度商业化"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去那个瀑布路线，攻略写只要两小时，结果都是阶梯而且标识不清，多绕了一次路。下次只看本地人写的短评。"
+        },
+        {
+          "role": "assistant",
+          "content": "那看Google Maps上评论数少于50条但评分4.5以上的“隐藏步道”，筛选条件加“交通可达但无旅游大巴”。城南那条河畔小道符合，往返1.5小时。"
+        }
+      ],
+      "implicit_signal": "需要真实样例避开预包装推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "hard_avoidance",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想找个能坐下看书吃简餐的地方，上次去了连锁面包房，人多到没座位，而且面包是工厂货。想吃手工做的。"
+        },
+        {
+          "role": "assistant",
+          "content": "去街角那家意大利老夫妻开的咖啡店，只有三张小桌，手工佛卡夏每天限量，中午前到有位置，氛围像私人客厅。"
+        }
+      ],
+      "implicit_signal": "质感优先于规模"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "今天是工作日，下午连着三场会议，没有休息时间。晚上需要一段完全不沟通的活动，但也不想花太多钱。"
+        },
+        {
+          "role": "assistant",
+          "content": "下班后去社区图书馆二楼阅读区，开到22点，手机静音。你可以翻本地杂志或带自己的书，零消费，离开时不需和人说话。"
+        }
+      ],
+      "implicit_signal": "同意独处恢复需求"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我找瑜伽课，网站只列了时间表和价格，没写老师风格和人数上限。我怕去了像健身房销售现场。"
+        },
+        {
+          "role": "assistant",
+          "content": "那是销售页。我给你另一家工作室的资讯格式：氛围-专注呼吸；人数-最多6人；成本-单次35雷亚尔或月卡140雷亚尔；安静备选-周末有冥想课，不需言语交流。"
+        }
+      ],
+      "implicit_signal": "用自然小标题代替标准模板"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友推荐一个大型书店，说有讲座和咖啡区，但我去过，人多到像集市，而且咖啡贵。想找小型独立书店。"
+        },
+        {
+          "role": "assistant",
+          "content": "那去独立书店“Beco da Leitura”，只有20平米，有二手诗集和店主手工咖啡（5雷亚尔），周末下午有诗歌共读，不强制消费。"
+        }
+      ],
+      "implicit_signal": "质感优先于规模，预算敏感"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "product",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "很久没看电影，Netflix推荐页全是热门剧，我不想花时间试错。你有看过什么冷门但扎实的纪录片？"
+        },
+        {
+          "role": "assistant",
+          "content": "上周我重看了一部1994年的《A Hora da Estrela》纪录片版，64分钟，拍的是圣保罗一个小作家和她的打字机的日常，黑白画面，氛围沉静。YouTube上有，不用注册。"
+        }
+      ],
+      "implicit_signal": "拒绝缺乏依据的通用推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我把超市购物清单存在手机备忘录里，但最近换了手机，之前写的丢失了。想找个能跨设备且能导出txt的工具。"
+        },
+        {
+          "role": "assistant",
+          "content": "用Google Keep，每个清单都可导出为Google Docs或直接复制文本，免费且登录即可同步。你上次的购物车内容我记得几个关键词：大米、黑豆、橄榄油、酸橙。"
+        }
+      ],
+      "implicit_signal": "默认导出数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "hard_avoidance",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友拉我去参加一个街头派对，但我知道会有四万人，还要强制买手环。我更喜欢能真正聊点什么的活动。"
+        },
+        {
+          "role": "assistant",
+          "content": "那别去。但下周三晚上有个民间故事分享会在社区中心，免费入场，大概15个人围坐，每人讲一个5分钟的故事。结束早，不影响第二天节奏。"
+        }
+      ],
+      "implicit_signal": "小型真实活动，避免过度拥挤"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我之前试过一个写日记的应用，但只记了三天就停了，因为每天不知道写什么。想找个能让我坚持的方法。"
+        },
+        {
+          "role": "assistant",
+          "content": "每晚安之前用三句话复盘：1今天做了一件什么事？2这件事让我有什么感觉？3明天想做一件什么事？不需要长篇，写在手机里，一周后回头看你自然知道哪些日期记得清。"
+        }
+      ],
+      "implicit_signal": "用复盘标准代替材料堆砌"
+    }
+  ]
+}

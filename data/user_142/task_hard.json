@@ -1,0 +1,100 @@
+{
+  "user_id": "user_142",
+  "task": {
+    "task_id": "task_hard",
+    "title": "准备东南亚合资企业的法律风险评估",
+    "daily_life_domain": "work",
+    "scenario": "TurpCo Industries 正在远程评估与越南制造合作伙伴的合资可能性。修订后任务聚焦两周内的初步董事会风险备忘录，只覆盖监管合规、知识产权、劳动法和争议解决四个风险面，并给出是否需要外部律师的门槛判断，不再要求完整尽调或当地执行方案。",
+    "user_goal": "交付一份可供董事会初筛的 3-5 页风险备忘录，明确高风险事项、缺口和外部律师是否必要。",
+    "why_complex": "仍需处理跨境法律风险、保密和远程信息不足，但任务范围从完整合资尽调降为初步风险筛查。",
+    "constraints": [
+      "两周内完成初步备忘录。",
+      "外部律师预算上限 50,000 美元，本轮只需给出是否触发聘请门槛。",
+      "必须纳入 CFO 和国际运营副总裁的输入。",
+      "不进行越南现场访问，只使用远程材料和安全渠道。",
+      "敏感文件必须通过 VPN 和 NDA 流转。"
+    ],
+    "required_reasoning_steps": [
+      "抽取合资交易的四类核心风险：监管、知识产权、劳动、争议解决。",
+      "列出每类风险需要向业务方确认的 1-2 个关键问题。",
+      "比较内部远程评估与外部律师介入的成本收益和触发条件。",
+      "把现有信息按高/中/低风险矩阵组织，而不是展开完整法律研究。",
+      "用 source_info 候选记录校准远程协作、旅行不可行性或安全工具成本等背景约束。",
+      "形成董事会可读的初步建议和后续尽调清单。",
+      "明确哪些结论必须标注为条件性判断。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "合资伙伴的基本公司、制造和合同资料清单。",
+      "CFO 对预算、税务和现金流关注点的输入。",
+      "国际运营副总裁对供应链和劳动安排的输入。",
+      "外部律师预计费用范围和触发条件。",
+      "与远程审查、数据安全或差旅限制相关的 source_info 候选记录。"
+    ],
+    "expected_deliverable": "3-5 页初步风险备忘录：执行摘要、四项风险矩阵、缺口问题、外部律师触发门槛和条件性建议。",
+    "success_criteria": [
+      "覆盖监管、知识产权、劳动法和争议解决四类风险。",
+      "每类风险至少给出一个待确认问题。",
+      "外部律师建议与 50,000 美元预算直接关联。",
+      "清楚标注远程评估的证据缺口。",
+      "最终方案至少引用 2 条 SandboxDB/source_info 真实候选记录。"
+    ],
+    "potential_failure_modes": [
+      "把初筛写成完整尽调，超出两周范围。",
+      "没有明确条件性结论，导致董事会误解确定性。",
+      "忽视安全传输和 NDA 边界。",
+      "外部律师建议缺乏成本触发条件。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 5,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 8,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=7",
+        "constraints_capped=5",
+        "decision_points_capped=3",
+        "information_items_capped=5",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=27.15",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Alexandra Chen",
+      "age": 42,
+      "gender": "女性"
+    }
+  }
+}

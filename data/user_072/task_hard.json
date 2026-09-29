@@ -1,0 +1,105 @@
+{
+  "user_id": "user_072",
+  "task": {
+    "task_id": "task_hard",
+    "title": "提高团队在Sprint计划中的估算准确性",
+    "daily_life_domain": "work",
+    "scenario": "亚历克斯的团队一直苦于持续低估故事点，导致冲刺目标未达成和加班。作为极限编程倡导者，亚历克斯希望引入基于证据的估算技术，同时不破坏团队的自组织。团队分布在不同的时区，下一次冲刺规划会议就在一周后。",
+    "user_goal": "实施一种新的估算方法，在保持团队士气和极限编程原则的同时提高准确性。",
+    "why_complex": "需要分析历史数据，选择一种方法（例如#NoEstimates、亲和估算或概率预测），管理团队阻力，并将其整合到现有的极限编程实践中，避免官僚负担。",
+    "constraints": [
+      "时间：一周内为下次冲刺规划做准备",
+      "团队自主权：必须尊重极限编程的自组织团队原则",
+      "文化：避免强制推行自上而下的变革",
+      "工具：团队使用Jira，必须兼容",
+      "远程：适应分布式团队的异步协作"
+    ],
+    "required_reasoning_steps": [
+      "通过分析过去冲刺数据（速度、故事点与实际工时）诊断估算错误的根本原因。",
+      "研究极限编程兼容的估算技术：例如基于证据的调度、蒙特卡洛模拟或亲和估算。",
+      "评估每种方法对团队规模、分布和文化契合度的影响。",
+      "设计最小开销的试点方案：建议在下一次冲刺进行试验，并设定明确的成功指标。",
+      "计划如何使用有说服力但协作的沟通风格向团队介绍这个想法。",
+      "概述团队拒绝或结果更差时的回滚计划。",
+      "考虑工具集成：配置Jira字段或脚本以自动为所选方法收集数据。",
+      "准备一份简洁的演示文稿或Slack消息，列出要点供团队讨论。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "团队当前的估算流程细节（例如，计划扑克、T恤尺码）。",
+      "历史冲刺数据：故事数量、故事点、实际工时或交付价值。",
+      "团队对当前估算的感受（通过匿名调查）。",
+      "时区差异：同步估算的重叠时间。",
+      "团队已尝试过的任何现有实验或工具。",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "关于试点估算改进的分步提案，包括方法选择理由、实施计划、成功标准（例如，偏差减少20%）和团队沟通脚本。",
+    "success_criteria": [
+      "提案包含支持所选方法的过往冲刺证据。",
+      "计划尊重团队自主性和XP价值观。",
+      "明确的时间表和最小化干扰。",
+      "经过一个冲刺后评估成功的定义指标。",
+      "在失败情况下确定替代方法。",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "提出一种增加太多开销的方法，违反了XP的简单性原则。",
+      "忽视团队现有的估算满意度并导致抵触情绪。",
+      "未考虑同步估算中的时区挑战。",
+      "没有适当的团队培训就过度使用统计技术。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 10,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 9,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=11",
+        "constraints_capped=5",
+        "decision_points_capped=4",
+        "information_items_capped=7",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=32.9",
+        "hard_revision: 内容负载较高，保留少量 9 轮作为上尾",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Alex Thompson",
+      "age": 38,
+      "gender": "男性"
+    }
+  }
+}

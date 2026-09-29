@@ -1,0 +1,449 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_216",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:14:56",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 19,
+  "composition": {
+    "episodic_preference_trace": 19
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_005",
+      "hidden_indirect_014"
+    ],
+    "content": [
+      "hidden_indirect_007",
+      "hidden_indirect_016"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_009",
+      "hidden_indirect_015"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_009",
+      "hidden_indirect_013"
+    ],
+    "entertainment": [
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_010"
+    ],
+    "food": [
+      "hidden_indirect_005",
+      "hidden_indirect_016"
+    ],
+    "format_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_011"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_008",
+      "hidden_indirect_012",
+      "hidden_indirect_019"
+    ],
+    "learning": [
+      "hidden_indirect_002",
+      "hidden_indirect_013"
+    ],
+    "privacy": [
+      "hidden_indirect_006",
+      "hidden_indirect_012"
+    ],
+    "product": [
+      "hidden_indirect_006",
+      "hidden_indirect_017"
+    ],
+    "role_context": [
+      "hidden_indirect_007",
+      "hidden_indirect_018"
+    ],
+    "service": [
+      "hidden_indirect_001",
+      "hidden_indirect_014",
+      "hidden_indirect_019"
+    ],
+    "technology": [
+      "hidden_indirect_004",
+      "hidden_indirect_015"
+    ],
+    "travel": [
+      "hidden_indirect_008",
+      "hidden_indirect_011",
+      "hidden_indirect_017"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次预约清洁服务，选了第一家，结果取消要48小时通知，临时有事扣了费。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次查一下取消规则，找24小时内可免费取消的选项再推荐。"
+        }
+      ],
+      "implicit_signal": "选服务时安全与取消条件优先于速度"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "跟着园艺教程学嫁接，视频太长，试了两天才发现关键步骤没给特写。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我整理一段三分钟要点加两张前后对比图，看完你能直接试。"
+        }
+      ],
+      "implicit_signal": "学习需要简短反馈和可复盘示范"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次开会材料发得太晚，我在现场只能听，没法提前想问题。"
+        },
+        {
+          "role": "assistant",
+          "content": "明天下午两点前发你一份短信长度的要点，至少今晚能看一眼。"
+        }
+      ],
+      "implicit_signal": "需要提前准备、短信式摘要"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个笔记应用用了半年，想导出数据时发现只能一次复制一页，费了两小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次选工具前先确认有没有批量导出，本地留一份离线副本。"
+        }
+      ],
+      "implicit_signal": "避免锁定在单一平台"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周试了推荐的那家印度餐厅，结账时发现每道菜加价18%，菜单没写服务费。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后先看完整价格，我找一家标价含税含服务费的本地小店。"
+        }
+      ],
+      "implicit_signal": "预算敏感，优先本地小店"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个植物识别APP要我开定位和相册才能用，我只是想认查路边一棵树。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成离线识别的工具，只传照片，不要求权限。"
+        }
+      ],
+      "implicit_signal": "只提供必要信息，默认最小权限"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你推荐了一份空气净化植物榜单，大部分是室内绿植，没法用在印度污染区。"
+        },
+        {
+          "role": "assistant",
+          "content": "改找印度本土文献里的耐污染品种清单，附上每种的耐受数据和引文。"
+        }
+      ],
+      "implicit_signal": "内容须贴合植物学研究场景"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "出发前你只说那条路线很好，其实最后一个换乘点要走20分钟露天，同行老人走不了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次先查站内换乘是否有电梯或无障碍通道，预留30分钟缓冲。"
+        }
+      ],
+      "implicit_signal": "避免制造焦虑和忽略照护者时间"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "以前用快速排序法清邮箱，结果误删了一封带附件的重要邮件，恢复没用。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后手动分三批处理，先标记再归档，虽然慢但不会丢东西。"
+        }
+      ],
+      "implicit_signal": "愿意为稳定牺牲效率"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次推荐那个小众音乐节，说人少，结果现场排了两小时队买票。"
+        },
+        {
+          "role": "assistant",
+          "content": "先查预约制和每日限流数据，不到三成满场才推荐，加上预计排队时间。"
+        }
+      ],
+      "implicit_signal": "推荐需要依据和不确定点"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去植物园那条路没写哪个门进出，多绕了半小时，同行的孩子开始不耐烦。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次直接标注哪个门离目标区最近，地铁口步行几分，加一条下雨备选路线。"
+        }
+      ],
+      "implicit_signal": "路线要列出受谁影响、时间分布和备选"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个社区平台注册时要填手机号和家庭地址，才能预约共享工具。"
+        },
+        {
+          "role": "assistant",
+          "content": "换一个只留邮箱和昵称就能用的平台，或者看本地图书馆有没有自助借用。"
+        }
+      ],
+      "implicit_signal": "拒绝复杂术语和强迫信息公开"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周的在线讲座回放一个半小时，我只想确认其中三种植物在印度的分布记录。"
+        },
+        {
+          "role": "assistant",
+          "content": "我截取那三段共六分钟内容，做成带时间戳的文字摘要，今晚能发你。"
+        }
+      ],
+      "implicit_signal": "需要短信式总结和提前准备"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那个GIS订阅，年付99美元，结果只用了两个功能，其他根本没用。"
+        },
+        {
+          "role": "assistant",
+          "content": "先找免费替代方案，确认需要的功能后再选按月支付。"
+        }
+      ],
+      "implicit_signal": "必须区分可推迟与必须花费"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "新买的植物记录App同步很快，但每次打开都要重新登录，我忘了三四次密码。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成支持生物识别登录的本地优先应用，免维护账户负担。"
+        }
+      ],
+      "implicit_signal": "情绪负担和可达性优先于效率"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推荐的那个做饭APP，菜谱全是创意料理，我工作日晚上只有34分钟做饭。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成25分钟内能做完的一锅出菜谱，食材在小区超市都能买到。"
+        }
+      ],
+      "implicit_signal": "内容必须贴合工作模式"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去年买了个便携植物生长灯，用了两个月就发热降效，现在基本废了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次优先看散热设计和用户长期测评，选价格稍高但保两年的型号。"
+        }
+      ],
+      "implicit_signal": "产品选择要说明长期使用成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个城市自然节，摊位全是卖手工艺品的，真的植物科普只有三个。"
+        },
+        {
+          "role": "assistant",
+          "content": "查一下下周末有没有标本制作或本土植物识别的小型工作坊。"
+        }
+      ],
+      "implicit_signal": "活动密度和内容匹配植物学场景"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次推荐的线上课程注册后，说要等48小时才能登录，而且课程内容全是英文植物学词根。"
+        },
+        {
+          "role": "assistant",
+          "content": "改找即时激活、带中文注释的入门短期班，不用等审核。"
+        }
+      ],
+      "implicit_signal": "避免忽略照护者时间和复杂术语"
+    }
+  ]
+}

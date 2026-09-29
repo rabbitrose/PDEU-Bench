@@ -1,0 +1,445 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_091",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:33:08",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 19,
+  "composition": {
+    "episodic_preference_trace": 19
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_003",
+      "hidden_indirect_015",
+      "hidden_indirect_018"
+    ],
+    "content": [
+      "hidden_indirect_011",
+      "hidden_indirect_014"
+    ],
+    "decision_priority": [
+      "hidden_indirect_002",
+      "hidden_indirect_003"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_001",
+      "hidden_indirect_006",
+      "hidden_indirect_007",
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_010"
+    ],
+    "entertainment": [
+      "hidden_indirect_019"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_004",
+      "hidden_indirect_005"
+    ],
+    "food": [
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "format_contract": [
+      "hidden_indirect_006",
+      "hidden_indirect_007"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_011",
+      "hidden_indirect_012",
+      "hidden_indirect_013"
+    ],
+    "learning": [
+      "hidden_indirect_008",
+      "hidden_indirect_016"
+    ],
+    "privacy": [
+      "hidden_indirect_013"
+    ],
+    "product": [
+      "hidden_indirect_012"
+    ],
+    "role_context": [
+      "hidden_indirect_001"
+    ],
+    "service": [
+      "hidden_indirect_015"
+    ],
+    "technology": [
+      "hidden_indirect_002",
+      "hidden_indirect_014",
+      "hidden_indirect_019"
+    ],
+    "travel": [
+      "hidden_indirect_009",
+      "hidden_indirect_017"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚收到客户回复前，发现今早那条管道的测试记录里缺了变体调用的参数版本。"
+        },
+        {
+          "role": "assistant",
+          "content": "我马上补上参数版本和对应运行日志，确保下次能精确复现。"
+        }
+      ],
+      "implicit_signal": "在客户回复前坚持补全测试记录，强调可复现性"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天手动配置的环境跑出了不同的结果，浪费了三天调试。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用固定版本的Docker镜像吧，锁定所有依赖，避免环境差异。"
+        }
+      ],
+      "implicit_signal": "优先选择Docker镜像而非手动环境以保证可重复性"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月因为CI环境随机失败多付了一笔加班费，划不来。"
+        },
+        {
+          "role": "assistant",
+          "content": "迁到付费的GitHub Actions计划吧，固定运行器版本，减少不确定性。"
+        }
+      ],
+      "implicit_signal": "为CI可靠性选择更高价但稳定的服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有人推荐用新工具加速变异分析，但在广告页看到关键信息，没找到正式文档。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会先查官方文档和已有测试用例，没证据前不引入任何新依赖。"
+        }
+      ],
+      "implicit_signal": "拒绝未经测试的建议，要求官方文档链接"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那份测试报告只写了成功场景，边界情况和失败案例全没有。"
+        },
+        {
+          "role": "assistant",
+          "content": "补上边界输入和预期异常，这样才能确认异常处理是否可靠。"
+        }
+      ],
+      "implicit_signal": "要求失败案例而非仅成功路径"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚才那份需求文档只有一句话描述，没法写具体测例。"
+        },
+        {
+          "role": "assistant",
+          "content": "请补充场景、预期输出和边界值，否则测试覆盖不足。"
+        }
+      ],
+      "implicit_signal": "坚持测试文档必须包含场景、预期结果、边界情况"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次部署后没有自动触发回归测试，结果漏了一个关键bug。"
+        },
+        {
+          "role": "assistant",
+          "content": "在CI配置里加一个测试自动化钩子，每次PR都自动跑并贴证据链接。"
+        }
+      ],
+      "implicit_signal": "强调自动化钩子和证据链接"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚学了门变异分析课，但讲师完全没提如何保证输出质量。"
+        },
+        {
+          "role": "assistant",
+          "content": "把课程里的分析流程配上我们的测试用例，验证准确性后再上线。"
+        }
+      ],
+      "implicit_signal": "生物信息学课程必须与流程质量关联"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "会议后计划去优胜美地徒步，但同行的人临时退出，时间变紧。"
+        },
+        {
+          "role": "assistant",
+          "content": "调整徒步路线为短途环线，确保不会错过晚间的项目讨论。"
+        }
+      ],
+      "implicit_signal": "会议旅行包括徒步但需日程风险可控"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周去外地参会，酒店餐厅没有素食选项，只能饿着。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次订酒店前先查附近素食餐厅，或者自带备用的坚果和黑巧克力。"
+        }
+      ],
+      "implicit_signal": "旅行素食餐物流很重要"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "博客里建议用X算法优化，但没提供任何测试数据。"
+        },
+        {
+          "role": "assistant",
+          "content": "先跑一下我们的基准测试集，对比后再决定是否采用。"
+        }
+      ],
+      "implicit_signal": "拒绝未经测试的建议，坚持有数据支撑"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "每次上线前手动点一遍界面，太容易漏了。"
+        },
+        {
+          "role": "assistant",
+          "content": "补写自动化的E2E测试覆盖关键流程，不依赖手动检查。"
+        }
+      ],
+      "implicit_signal": "避免手动QA作为模糊后备"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有人提议把样本数据传到公开平台做分析，未加密。"
+        },
+        {
+          "role": "assistant",
+          "content": "必须使用内部加密管道，绝对不能泄露患者基因信息。"
+        }
+      ],
+      "implicit_signal": "忽略基因组数据敏感性不可接受"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚读到一篇关于Playwright的博客，附了完整的测试代码片段。"
+        },
+        {
+          "role": "assistant",
+          "content": "把里面的并行执行模式用到我们管道的冒烟测试中试试。"
+        }
+      ],
+      "implicit_signal": "偏好有实际测试案例的技术博客"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在超市结账前比较了AWS和Azure的账单，AWS历史运行更稳。"
+        },
+        {
+          "role": "assistant",
+          "content": "继续用AWS，但把预留实例调低10%以匹配实际用量。"
+        }
+      ],
+      "implicit_signal": "服务选择基于成本和可靠性证据"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "跑完这门Coursera课程需要21小时，全是视频没有练习。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成Udemy的互动实验室课程，周末花23小时边做边学。"
+        }
+      ],
+      "implicit_signal": "晚上图书馆闭馆前学习，强调互动实践"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在回家路上用Strava收藏了一条新跑步路线，但坡度太大。"
+        },
+        {
+          "role": "assistant",
+          "content": "保存到备选列表，等周末无会议时再去试，不影响工作日状态。"
+        }
+      ],
+      "implicit_signal": "路线收藏体现规划习惯"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天超市结账前看了纸质收据，发现有机蔬菜比普通贵了25元。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次改买普通蔬菜，把钱省下来买更好的厨房秤。"
+        }
+      ],
+      "implicit_signal": "超市结账前基于收据调整选择"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "试用了一个新的自动化测试工具，账号只有21天，但文档不完整。"
+        },
+        {
+          "role": "assistant",
+          "content": "放弃续费，等官方补全文档后再评估。"
+        }
+      ],
+      "implicit_signal": "试用账号后基于证据决定是否保留"
+    }
+  ]
+}

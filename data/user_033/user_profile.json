@@ -1,0 +1,217 @@
+{
+  "user_id": "user_033",
+  "explicit_preferences": {
+    "user_profile": "一位不喜欢电影中克隆情节的影评人",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Lena Hartwell",
+        "age": 42,
+        "gender": "女性",
+        "location": "纽约州纽约市",
+        "languages": [
+          "英语",
+          "法语"
+        ],
+        "education_level": "电影研究硕士学位",
+        "occupation": "影评人",
+        "industry": "Media & Entertainment",
+        "seniority": "资深",
+        "household": "单身，独自居住",
+        "life_stage": "资深专业人士"
+      },
+      "physical_profile": {
+        "height_cm": 168,
+        "general_appearance": "身材苗条，齐肩棕色头发，常戴眼镜，休闲而时尚的着装",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "善于分析、有洞察力，对叙事充满热情。讨厌陈词滥调，尤其认为克隆叙事懒惰且过度使用。重视电影的原创性和情感真实性。",
+        "big_five": {
+          "openness": 0.9,
+          "conscientiousness": 0.8,
+          "extraversion": 0.4,
+          "agreeableness": 0.6,
+          "neuroticism": 0.5
+        },
+        "strengths": [
+          "批判性思维",
+          "注重细节",
+          "写作技巧"
+        ],
+        "weaknesses": [
+          "可能过于挑剔",
+          "对平庸缺乏耐心",
+          "有时愤世嫉俗"
+        ],
+        "values": [
+          "原创性",
+          "真实性",
+          "知识诚实"
+        ],
+        "motivations": [
+          "发现新的电影声音",
+          "支持被忽视的故事",
+          "塑造电影公共话语"
+        ],
+        "stress_triggers": [
+          "缺乏原创性的情节设计",
+          "角色塑造薄弱",
+          "重粉丝服务轻实质内容"
+        ]
+      },
+      "background": "在纽约州北部小镇长大，从小热爱电影。获得电影研究学位后开始为当地报纸撰稿。后移居纽约市，现为一家主要电影杂志撰稿。拥有大量DVD收藏，并参加世界各地的电影节。",
+      "lifestyle": "住在布鲁克林公寓。大部分时间用于看电影、写评论和参加放映。喜欢安静的夜晚阅读电影理论或观看经典电影。偶尔与其他影评人社交。",
+      "interests": [
+        "独立电影",
+        "国际电影",
+        "电影史",
+        "写作",
+        "摄影",
+        "烹饪"
+      ],
+      "explicit_preferences": {
+        "content_preferences": [
+          "叙事驱动型电影",
+          "角色研究",
+          "与社会相关的主题",
+          "作者驱动作品",
+          "非线性叙事",
+          "内容必须符合该用户独特的工作模式：影评人模式——不感情用事、反共识、重形式轻情节。",
+          "拒绝通用助手框架：不要总结电影或追逐电影节热点。"
+        ],
+        "product_preferences": [
+          "电影相关书籍",
+          "高品质家庭影院设备",
+          "流媒体服务订阅（Criterion Channel、Mubi）",
+          "用于记笔记的笔记本和笔",
+          "产品应通过用户自身的权衡视角选择：批评角度、形式证据、节目编排风险、观影设置。"
+        ],
+        "service_preferences": [
+          "有策展集合的流媒体服务",
+          "电影节通行证",
+          "在线电影数据库（IMDb Pro）",
+          "专业发展研讨会",
+          "服务只有在保留此决策优先级时才可接受：形式独特性、被忽视的声音和观影条件优先于流行度。"
+        ],
+        "learning_preferences": [
+          "In-depth film analysis courses",
+          "Documentary viewing",
+          "Reading film criticism",
+          "Participating in panel discussions"
+        ],
+        "travel_preferences": [
+          "Film festivals (Cannes, TIFF, Sundance)",
+          "Culturally rich cities",
+          "Historic theaters"
+        ],
+        "food_preferences": [
+          "Vegetarian cuisine",
+          "Ethnic street food",
+          "Good coffee",
+          "Wine"
+        ],
+        "entertainment_preferences": [
+          "独立电影",
+          "纪录片",
+          "外国电影",
+          "剧院",
+          "现场音乐（爵士、古典）"
+        ],
+        "technology_preferences": [
+          "Prefer minimal tech distractions",
+          "Uses a high-quality OLED TV and sound system",
+          "Prefers physical media (Blu-ray) over streaming for ownership",
+          "Uses a laptop for writing, not tablet"
+        ],
+        "privacy_preferences": [
+          "Keeps personal life separate from professional",
+          "Uses pseudonym online occasionally",
+          "Does not share location or screening schedule publicly"
+        ],
+        "budget_preferences": [
+          "Spends generously on film-related expenses",
+          "Budget-conscious on other items",
+          "Willing to pay for premium streaming services without ads"
+        ],
+        "personalization_directives": {
+          "style_contract": "影评人模式：不 sentimental、反共识、形式重于情节。",
+          "decision_priority": "形式区分、被忽视的声音和观影条件胜于流行度。",
+          "evidence_contract": "场景层面或技艺层面的推理胜于评分。",
+          "format_contract": "批判角度、形式证据、策展风险、观影设置。",
+          "anti_default_assistant_behavior": "不要总结电影或追逐电影节热门。",
+          "distinctive_quirks": [
+            "即使公关推动，也要避免在报道中重复叙事。",
+            "家庭影院升级必须服务于图像/声音保真度，而非炫耀小工具。",
+            "私人放映应感觉经过策划且略带难度。"
+          ],
+          "hard_avoidances": [
+            "IMDb式的简介",
+            "如杰作之类的营销词汇",
+            "仅基于评分的推荐"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": [
+        "电影中的克隆情节",
+        "可预测的情节转折",
+        "过度使用CGI",
+        "刻板角色",
+        "产品植入",
+        "拥挤的放映场次",
+        "嘈杂的观众",
+        "重要影片的深夜排片"
+      ],
+      "communication_style": "简洁、清晰、偶尔讽刺。偏好有理有据的论证而非情感诉求。写作风格正式但易懂。",
+      "decision_making": "犹豫不决，会广泛研究。在选择电影时，依赖预告片、导演声誉和可信影评人的口碑。购物时比较规格和评论。",
+      "evaluation_notes": {
+        "likely_tasks": [
+          "推荐她可能喜欢的电影",
+          "总结电影评论",
+          "分析叙事模式",
+          "比较导演风格",
+          "根据主题策划片单（排除克隆题材）"
+        ],
+        "preference_conflicts": [
+          "她不喜欢克隆故事，但可能欣赏颠覆性处理；态度模糊",
+          "可能拒绝过于流行或主流的推荐；偏好小众",
+          "平衡她对原创性的热爱与对连贯叙事的需求"
+        ],
+        "ambiguity_to_preserve": [
+          "她的类型品味广泛；并非讨厌所有科幻片，仅针对克隆情节",
+          "如果克隆题材电影处理得特别好，她可能会喜欢，但这种情况罕见；留有余地",
+          "她目前单身，但可能对变化持开放态度"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:45",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "专业、尊重，但不过于正式",
+            "response_length": "简洁；列表使用要点",
+            "evidence_expectation": "高；期望引用或推理",
+            "formatting": "清晰的标题和逻辑结构",
+            "proactive_behavior": "欣赏对冷门电影或文章的推荐",
+            "things_to_avoid": [
+              "过于热情的推荐",
+              "无预警剧透",
+              "对主流大片的泛泛赞美"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "规划电影节报道以避免重复叙事",
+            "升级家庭影院系统以实现最佳观影体验",
+            "组织一场低调国际电影的私人放映"
+          ]
+        }
+      }
+    }
+  }
+}

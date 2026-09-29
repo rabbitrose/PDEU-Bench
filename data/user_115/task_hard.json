@@ -1,0 +1,98 @@
+{
+  "user_id": "user_115",
+  "task": {
+    "task_id": "task_hard",
+    "title": "选择家庭法律律师和调解方式",
+    "daily_life_domain": "family",
+    "scenario": "David正在敲定他的监护权安排，需要在调解和诉讼之间做出选择。他面试了两位律师：一位擅长父亲权利（昂贵，400美元/小时），另一位是普通家庭律师（中等，250美元/小时），但专业知识较少。他也可以选择调解员以减少冲突。他的前妻对调解持开放态度，但偏爱某位David不确定的调解员。David希望尽量减少律师费和压力，同时确保共同监护权的结果公平。",
+    "user_goal": "自信地决定法律途径（调解还是诉讼）以及聘请哪位律师，考虑成本、专业知识和潜在结果。",
+    "why_complex": "涉及成本与专业知识、情感与实际考虑之间的权衡，需要核实资质和过往案件结果。",
+    "constraints": [
+      "预算：律师费总额不得超过10,000美元；David有5,000美元存款，每月可从工资中拨出500美元。",
+      "时间：必须在两周内决定，以避免法庭延误。",
+      "隐私：David非常谨慎，不愿分享个人细节；律师必须有严格的保密实践。",
+      "情感：David对冲突感到焦虑；希望尽可能避免对抗性诉讼。"
+    ],
+    "required_reasoning_steps": [
+      "1. 研究和比较两位律师：他们的经验、监护权案件的成功率、费用结构以及客户评价（重点关注父亲权利）。",
+      "2. 评估调解选项：伊利诺伊州调解的运作方式、平均成本以及与诉讼相比的潜在结果。",
+      "3. 评估前妻提议的调解员：研究其声誉和公正性。",
+      "4. 计算每种路径的总预计成本（律师费+调解费+诉讼费），并与预算比较。",
+      "5. 确定对孩子的情感和实际影响：哪种方法能减少冲突和压力。",
+      "6. 准备一份向每位律师提问的问题清单（例如，沟通风格、隐私保障、预计时间线）。",
+      "7. 将发现综合成决策矩阵，包含加权标准（成本、专业知识、公平监护的可能性、冲突程度）。",
+      "8. 提出最终建议及备用计划。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "两位律师的准确小时费和预付款金额。",
+      "每位律师在库克县代理父亲监护权案件的次数。",
+      "调解员的资质、费用及达成协议的成功率。",
+      "David前妻的底线和妥协意愿。",
+      "提交监护权计划的法庭截止日期。",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "一份结构化的比较报告（电子邮件格式），包含决策矩阵和关于律师选择及调解 vs 诉讼的最终建议，包括建议的下一步时间线。",
+    "success_criteria": [
+      "两周内做出决定。",
+      "David充满信心，并理解其中的权衡。",
+      "总预计法律成本在预算范围内。",
+      "计划包含尽量减少与前配偶冲突的策略。",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "推荐一位不熟悉父亲权利的律师。",
+      "忽略隐藏成本（例如，法庭立案费、专家证人费）。",
+      "忽视David对分享细节的隐私担忧。",
+      "在调解可以减轻压力的情况下推动诉讼。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "navigation",
+        "food",
+        "weather",
+        "shopping"
+      ],
+      "domain_descriptions": {
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 6,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 8,
+      "human_verifier_estimation_basis": [
+        "domain=family",
+        "source_domains_capped=4",
+        "reasoning_steps_capped=11",
+        "constraints_capped=4",
+        "decision_points_capped=3",
+        "information_items_capped=7",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=27.75",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "David Miller",
+      "age": 45,
+      "gender": "男性"
+    }
+  }
+}

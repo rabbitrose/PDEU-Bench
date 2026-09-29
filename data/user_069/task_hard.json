@@ -1,0 +1,100 @@
+{
+  "user_id": "user_069",
+  "task": {
+    "task_id": "task_hard",
+    "title": "计划下一本小说的多平台数字图书发布",
+    "daily_life_domain": "work",
+    "scenario": "Elena 正在准备第三部小说的数字发布。修订后任务聚焦 6 周内的发布准备蓝图：平台取舍、定价、元数据、预购判断和给工程师朋友的轻量任务清单，不再要求完整多平台营销执行和作者网站优化项目。",
+    "user_goal": "形成一份独立出版可执行的 6 周准备计划，保护写作时间并控制推广预算。",
+    "why_complex": "仍需平衡平台分发、版税、预算、元数据和家庭时间，但范围从全渠道发布项目压缩为发布前准备蓝图。",
+    "constraints": [
+      "6 周内发布。",
+      "推广工具预算约 200 美元。",
+      "每天早晨 4-5 小时写作时间不可打断。",
+      "工程师朋友只能晚上协助轻量任务。",
+      "本轮不做完整作者网站改版。"
+    ],
+    "required_reasoning_steps": [
+      "比较聚合分发平台与主要商店直传方案的覆盖、成本、授权和收益差异。",
+      "给出定价和预购的基本决策，不展开复杂促销实验。",
+      "整理元数据清单：标题、副标题、关键词、分类、简介和版权页。",
+      "安排 6 周发布前里程碑，避开早晨写作时间和学校活动。",
+      "给工程师朋友限定 2-3 项晚上可完成的元数据或网页轻量任务。",
+      "用 source_info 的媒体、商品或时间/地点候选记录校准平台素材和推广成本。",
+      "输出推广日历的骨架，而不是逐日社媒运营计划。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "各平台版税、DRM 和分发限制。",
+      "小说类型、关键词和竞品定位。",
+      "工程师朋友晚上可用时间。",
+      "学校活动和写作时间冲突窗口。",
+      "推广素材或工具的低成本候选记录。"
+    ],
+    "expected_deliverable": "6 周发布准备蓝图：平台决策表、定价与预购建议、元数据清单、轻量推广日历和工程师任务清单。",
+    "success_criteria": [
+      "计划不占用 Elena 的早晨写作时间。",
+      "推广预算不超过 200 美元。",
+      "明确聚合分发与商店直传方案的取舍。",
+      "包含完整元数据清单。",
+      "最终方案至少引用 2 条 SandboxDB/source_info 真实候选记录。"
+    ],
+    "potential_failure_modes": [
+      "平台任务过多，影响写作收尾。",
+      "元数据和定价没有连接目标读者。",
+      "工程师任务过重导致无法落地。",
+      "推广预算被过早花在低确定性广告上。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 8,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 8,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=7",
+        "constraints_capped=6",
+        "decision_points_capped=4",
+        "information_items_capped=5",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=28.6",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Elena Vasquez",
+      "age": 45,
+      "gender": "女性"
+    }
+  }
+}

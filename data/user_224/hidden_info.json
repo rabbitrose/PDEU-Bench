@@ -1,0 +1,512 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_224",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:43:34",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 22,
+  "composition": {
+    "episodic_preference_trace": 22
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_006",
+      "hidden_indirect_015"
+    ],
+    "content": [
+      "hidden_indirect_003",
+      "hidden_indirect_011"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_013",
+      "hidden_indirect_019"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_012",
+      "hidden_indirect_020"
+    ],
+    "entertainment": [
+      "hidden_indirect_015"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_009",
+      "hidden_indirect_018"
+    ],
+    "food": [
+      "hidden_indirect_013",
+      "hidden_indirect_021"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_011",
+      "hidden_indirect_019"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_006",
+      "hidden_indirect_007",
+      "hidden_indirect_008",
+      "hidden_indirect_017",
+      "hidden_indirect_022"
+    ],
+    "learning": [
+      "hidden_indirect_007",
+      "hidden_indirect_012",
+      "hidden_indirect_016"
+    ],
+    "privacy": [
+      "hidden_indirect_005",
+      "hidden_indirect_014",
+      "hidden_indirect_020"
+    ],
+    "product": [
+      "hidden_indirect_009",
+      "hidden_indirect_018"
+    ],
+    "role_context": [
+      "hidden_indirect_010",
+      "hidden_indirect_016",
+      "hidden_indirect_021"
+    ],
+    "service": [
+      "hidden_indirect_002",
+      "hidden_indirect_010"
+    ],
+    "technology": [
+      "hidden_indirect_004",
+      "hidden_indirect_014",
+      "hidden_indirect_022"
+    ],
+    "travel": [
+      "hidden_indirect_008",
+      "hidden_indirect_017"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买厨房挂杆，只看样式没问膨胀螺丝规格，结果墙壁打孔后承重不够，挂锅铲第二天整条脱落，白花了安装费。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次先量墙面材质和厚度，只推荐附送匹配螺丝的套装。产品表加入膨胀管最大负荷和安装失败退款条款。"
+        }
+      ],
+      "implicit_signal": "优先选择维护成本低的方案，避免隐性费用"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月续订了云存储年费，发现只能从网页端取消，但页面按钮一直加载失败，客服工单三天没回复。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次先查取消按钮可用性和客服响应时间，再用录屏记录操作步骤。只选支持即时停止续费且退款按天计算的服务。"
+        }
+      ],
+      "implicit_signal": "需要可验证的取消流程和证据留底"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周找书架推荐，满屏“超耐用”“容量大”，但没给层板最大承重和板材厚度，我把实物拿回家才发现层板弯了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次给三款书架列直角表格：层板厚度、每层承重上限、背板固定方式。标注行末用“?”标出需你现场确认的安装高度。"
+        }
+      ],
+      "implicit_signal": "结论必须附带具体数据和未确认标注"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "手动量了三次柜子尺寸，分别记在便签、微信聊天和手机备忘录里，最后整理时发现三份数据有2mm偏差，得重测。"
+        },
+        {
+          "role": "assistant",
+          "content": "用Notion建一个共享清单，你输入后自动同步到桌面端，历史版本可追溯，下次改动只覆盖当前条目，保留旧测量值。"
+        }
+      ],
+      "implicit_signal": "拒绝重复录入相同信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "注册一个家具配送App，必须上传身份证照片才能查看运费。我直接删除应用，打电话给实体店问自提价。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只推荐无需注册即可查询配送费的商家。下单后使用一次性虚拟号码联系快递，不关联你的任何真实身份。"
+        }
+      ],
+      "implicit_signal": "只提供完成任务必要的信息，对个人数据谨慎"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看中一款收纳推车，页面标价89加车费15，结算时发现还要收包装费12和服务费8，总额124完全超出设定。"
+        },
+        {
+          "role": "assistant",
+          "content": "筛选时锁定“一口价包邮”标签，额外包装费和服务费超过5元的店铺直接排除。购物车前显示最终落地价。"
+        }
+      ],
+      "implicit_signal": "预算超支时必须有可行替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看组装视频说“用胶固定更牢固”，但没写胶水型号和固化时间，我涂了普通白胶，三天后还没干透，抽屉卡住。"
+        },
+        {
+          "role": "assistant",
+          "content": "重写步骤：列出三种胶水的耐重、固化时间和适用材质，附上白胶失败的案例图片。每一步用最小可行示例演示。"
+        }
+      ],
+      "implicit_signal": "拒绝空泛指导，需要可复现的标准和失败案例"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "用平台高分筛选了一家民宿，实际靠近工地，早上七点打桩，我连睡两晚没超过5小时，开会时频繁走神。"
+        },
+        {
+          "role": "assistant",
+          "content": "下一单之前，要求民宿提供周边48小时噪音监测记录或窗户隔音等级。备选连锁酒店带免费取消，原计划不变。"
+        }
+      ],
+      "implicit_signal": "住宿优先考虑安静、安全和可取消性"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "买过一个304不锈钢碗架，半年后开始生锈，客服说“得避免酸性食物残留”，但页面没写任何保养限制。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只推荐附带腐蚀测试报告或同款使用三年以上的实拍图。产品表末尾列明保养频率和替代材料（如纯钛）的年支出差。"
+        }
+      ],
+      "implicit_signal": "选择产品需要可验证的长期支出和替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "约维修师傅上门，提前一周约好，当天早上说“工具没带齐”改期，我再打电话给平台协调，浪费2小时会议间隙。"
+        },
+        {
+          "role": "assistant",
+          "content": "只选系统自动派单且承诺迟到赔付的平台。预约时锁定第一时段，系统侧发短信确认工具箱清单，避免临时缺件。"
+        }
+      ],
+      "implicit_signal": "偏好自动化、低接触的服务流程"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "搜索过“小型微波炉”，看到一篇文章列了15个型号、每个都有“颜值高”“销量TOP”，但没人写转盘直径和实际加热均匀性。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只比较三款：转盘直径、最大碗高、最低功率档的温控测试。宣传语全部删除，结论列一个风险点和一个未测试场景。"
+        }
+      ],
+      "implicit_signal": "拒绝无关推荐，只提供影响决策的关键参数"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下载了一个开源图书管理工具，教程全是在Windows下写的，我用macOS一步步跟着做，到数据库配置那步就报错了。"
+        },
+        {
+          "role": "assistant",
+          "content": "重写教程：开头先检测操作系统和Python版本，macOS与Linux用不同代码块标示。每一步报错后的回滚命令也写上。"
+        }
+      ],
+      "implicit_signal": "教程需要标出未兼容的环境"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "前天午餐点了麻辣拌，下午胃不舒服，工作到一半去洗手间，耽误了线上会议；另外忽略了同事对花生的过敏。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次先备注“不要辣椒和花生”，点清炒时蔬或蒸菜。下单前生成一个饮食限制检查摘要，你确认后再提交。"
+        }
+      ],
+      "implicit_signal": "饮食选择需满足精力稳定和饮食限制"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "买了个Wi-Fi智能摄像头，安装好发现它每10分钟向服务器发送一次快照，我没找到关闭选项，直接退货了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只选支持RTSP本地流、无需云端注册的摄像头。初次开机即要求你设置管理员密码，并默认关闭所有远程访问。"
+        }
+      ],
+      "implicit_signal": "设备数据仅保存在本地，默认禁用远程上报"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周末去了人挤人的密室逃脱，排队1小时后被告知“今日场次已满”，白花40分钟交通和30元停车费。"
+        },
+        {
+          "role": "assistant",
+          "content": "下一活动选可以提前在线锁定时段的小剧场，入场前24小时可免费取消。预算只包含入场费和来回公交，标出时间区间。"
+        }
+      ],
+      "implicit_signal": "娱乐安排需可控时间和费用"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "报了一个Python线上课，学了两个章节后示例代码依赖的库大版本更新，所有函数调用都失效，我找不到回滚指南。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用提供容器化环境的课程，每次作业在固定镜像内运行。每章结束设置一个可自动评分的测试题，分数低于80%自动生成错题总结。"
+        }
+      ],
+      "implicit_signal": "学习内容需要短周期反馈和版本可控"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "出差时信了“顺路看个公园花展”，结果导航显示离酒店只有2公里其实是单行道，绕了40分钟，到了发现当天闭园。"
+        },
+        {
+          "role": "assistant",
+          "content": "行程表只安排已电话确认开放的停靠点，每段移动预留20分钟缓冲。主任务和备选任务之间不塞入非必要游览环节。"
+        }
+      ],
+      "implicit_signal": "路线预留缓冲，避免热门推荐干扰"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "买过免钉门后挂钩，重量限制写5kg，实际挂了个背包第二天就脱落了，门板留下两条胶痕，商家拒绝承认。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只推荐附带实验室承重测试视频的挂钩，并附上胶痕去除方法。备选方案为打孔式，提供白色腻子填补孔洞。"
+        }
+      ],
+      "implicit_signal": "产品需提供可验证的质量保证和回退选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看中智能门锁带远程开锁和猫眼抓拍，但客服说换一次电池只能撑两个月，且专用电池停产了。我放弃下单。"
+        },
+        {
+          "role": "assistant",
+          "content": "改为推荐机械密码锁，无电池维护，紧急情况下可用钥匙开。表头列出开锁方式数量、锁芯等级和防盗认证。"
+        }
+      ],
+      "implicit_signal": "可靠性维护优先于功能新奇"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买一个家庭药箱，页面要求填“家庭成员年龄和病史”才能推荐尺寸，我直接点了返回，换了一个按空间大小推荐的。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只根据斗柜深度和高度的尺寸来匹配药箱，不涉及任何个人健康信息。订单备注位置只填“通用家庭使用”。"
+        }
+      ],
+      "implicit_signal": "家庭信息匿名化处理"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天晚上想喝汤，外卖平台一家汤品配送费16元起，到手还是冷的。我花了20分钟用冰箱里的排骨和冬瓜煮了一锅。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次先看冰箱存货，列出可替代的炖汤方案，并预估燃气费用。自制时间低于30分钟的，提供步骤卡。"
+        }
+      ],
+      "implicit_signal": "预算优先，愿意自制替代加价外送"
+    },
+    {
+      "interaction_id": "hidden_indirect_022",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "用某免费Intranet笔记记了半年的购物清单和尺寸，想批量导出成表格发现只能逐条复制，我花了三天手工转移。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用支持一次点击导出为CSV的笔记App，数据存本地SQLite。双向同步通过坚果云WebDAV，不依赖厂商接口。"
+        }
+      ],
+      "implicit_signal": "数据可迁移，不被单一平台锁定"
+    }
+  ]
+}

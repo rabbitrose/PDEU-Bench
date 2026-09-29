@@ -1,0 +1,267 @@
+{
+  "user_id": "user_024",
+  "explicit_preferences": {
+    "user_profile": "一位非常崇拜Sadye L. Logan的年轻社会工作者",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Maya Chen",
+        "age": 28,
+        "gender": "女性",
+        "location": "美国俄勒冈州波特兰",
+        "languages": [
+          "英语",
+          "西班牙语（会话水平）"
+        ],
+        "education_level": "硕士学位（MSW）",
+        "occupation": "临床社会工作者",
+        "industry": "非营利社会服务",
+        "seniority": "入门级（2年经验）",
+        "household": "独居，租住一居室公寓",
+        "life_stage": "职业早期，单身，无子女"
+      },
+      "physical_profile": {
+        "height_cm": 165,
+        "general_appearance": "苗条，齐肩黑发常扎起来，戴眼镜，喜欢休闲舒适的衣服，如开衫和牛仔裤",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "有同理心，理想主义且务实，致力于社会正义和社区赋权。",
+        "big_five": {
+          "openness": 80,
+          "conscientiousness": 85,
+          "extraversion": 55,
+          "agreeableness": 90,
+          "neuroticism": 40
+        },
+        "strengths": [
+          "积极倾听",
+          "同理心",
+          "组织能力",
+          "倡导"
+        ],
+        "weaknesses": [
+          "过度承诺",
+          "自我批评",
+          "有时过于理想主义"
+        ],
+        "values": [
+          "社会正义",
+          "公平",
+          "社区",
+          "赋权",
+          "正直"
+        ],
+        "motivations": [
+          "在客户生活中产生切实的影响",
+          "挑战系统性不平等",
+          "在社会工作理论和实践中持续学习"
+        ],
+        "stress_triggers": [
+          "官僚主义繁文缛节",
+          "目睹不公正",
+          "客户资源匮乏",
+          "他人对社会工作的误解"
+        ]
+      },
+      "background": {
+        "hometown": "明尼苏达州明尼阿波利斯",
+        "family": "与父母和弟弟关系密切；父母是教师",
+        "education": "明尼苏达大学社会学学士，波特兰州立大学社会工作硕士",
+        "career_history": "曾在社区心理健康中心实习，目前在一家为低收入家庭提供咨询的非营利组织工作",
+        "admired_figures": [
+          "Sadye L. Logan",
+          "Jane Addams",
+          "Paulo Freire"
+        ]
+      },
+      "lifestyle": {
+        "daily_routine": "早起，做瑜伽，乘公共交通通勤，见客户，做文档，参加督导，晚上经常阅读或散步，周末在社区花园做志愿者",
+        "social_life": "小圈子密友，主要是学校或工作的同事；喜欢百乐餐和读书会",
+        "health_and_wellness": "练习正念，偶尔接受治疗，素食，定期远足",
+        "financial_situation": "收入适中，生活节俭，优先购买优质且合乎道德的产品，有一小笔应急资金"
+      },
+      "interests": [
+        "社会工作文献与伦理",
+        "社区组织与行动主义",
+        "远足与自然探索",
+        "阅读（非虚构，回忆录）",
+        "纯素和素食烹饪",
+        "独立电影和纪录片",
+        "当地农贸市场"
+      ],
+      "explicit_preferences": {
+        "content_preferences": [
+          "书籍：社会工作理论、伦理与回忆录，关于社会正义的非虚构作品，偶尔的文学小说",
+          "播客：关于系统变革、社会工作和心理健康的播客，活动家和实践者的访谈",
+          "新闻来源：NPR、卫报、ProPublica、《是的！》杂志",
+          "内容必须符合用户独特的工作模式：社会工作要求废除模式：创伤知情，社区权力优先。",
+          "拒绝通用助手框架：不要将结构性不公正粉饰成健康建议。"
+        ],
+        "product_preferences": [
+          "服装：道德和可持续品牌，舒适耐用，避免快时尚",
+          "家居用品：环保、极简，支持本地工匠",
+          "科技：尽可能使用开源软件，耐用笔记本电脑，偏爱Linux或Chromebook",
+          "产品应通过用户自身的权衡视角来选择：权力问题、获取障碍、促进措施、关怀边界。"
+        ],
+        "service_preferences": [
+          "治疗：面对面治疗或经过审核的在线平台，重视具有社会正义取向的治疗师",
+          "银行：信用合作社或社区银行",
+          "杂货：本地合作社、农贸市场、散装货箱",
+          "只有保留这一决策优先级的服务才可接受：参与者的能动性、可及性和互助优于机构的整洁性。"
+        ],
+        "learning_preferences": {
+          "format": [
+            "线下工作坊、会议和同伴学习小组"
+          ],
+          "topics": [
+            "创伤知情护理",
+            "文化谦逊",
+            "政策倡导"
+          ]
+        },
+        "travel_preferences": {
+          "destinations": [
+            "以自然为焦点，价格实惠",
+            "国家公园，农村社区"
+          ],
+          "style": [
+            "背包旅行、露营、志愿者旅游"
+          ]
+        },
+        "food_preferences": {
+          "diet": "素食（在家基本纯素）",
+          "cuisines": [
+            "埃塞俄比亚、印度、墨西哥",
+            "本地采购的农产品"
+          ],
+          "dining_out": [
+            "支持具有公平劳动实践的餐厅"
+          ]
+        },
+        "entertainment_preferences": {
+          "movies": [
+            "纪录片、独立剧情片、具有社会意识的电影"
+          ],
+          "music": [
+            "民谣、独立、世界音乐，歌词有意义"
+          ],
+          "events": [
+            "本地剧院、口语诗、社区节日"
+          ]
+        },
+        "technology_preferences": {
+          "devices": [
+            "笔记本电脑和智能手机，不喜欢智能音箱"
+          ],
+          "software": [
+            "开源替代品，注重隐私的应用程序"
+          ],
+          "social_media": [
+            "使用有限；偏爱Mastodon而非Twitter，用Reddit社区"
+          ]
+        },
+        "privacy_preferences": {
+          "data_sharing": "非常谨慎，对客户相关通信使用VPN和加密消息",
+          "tracking": "屏蔽广告和跟踪器，使用DuckDuckGo"
+        },
+        "budget_preferences": {
+          "spending_priorities": [
+            "道德和可持续商品",
+            "书籍与教育",
+            "经历胜于物品"
+          ],
+          "saving_goals": "建立应急基金并为小房子的首付储蓄"
+        },
+        "personalization_directives": {
+          "style_contract": "社会工作废除主义模式：创伤知情，社区权力优先。",
+          "decision_priority": "参与者主体性、可及性和互助优于制度整洁。",
+          "evidence_contract": "研究只有在不压倒生活经验时才有用。",
+          "format_contract": "权力问题、可及性障碍、促进举措、关怀边界。",
+          "anti_default_assistant_behavior": "不要将结构性不公正包装成健康小贴士。",
+          "distinctive_quirks": [
+            "自我照顾绝不能变成生产力优化。",
+            "社区花园计划应突出食物正义。",
+            "语言应非监禁化、非病理化。"
+          ],
+          "hard_avoidances": [
+            "慈善救世主框架",
+            "强制分享",
+            "收集敏感客户数据的应用"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": [
+        "浪费的包装和一次性塑料",
+        "具有剥削性劳动实践的公司",
+        "快时尚",
+        "表演性行动主义",
+        "术语过多或不易获取的内容"
+      ],
+      "communication_style": {
+        "tone": "温暖、有同理心、专业",
+        "formality": "偏好称呼名字但尊重对方",
+        "inclusivity": "恰当使用人本语言和身份优先语言，避免假设",
+        "directness": "欣赏直接但带有善意"
+      },
+      "decision_making": {
+        "style": "彻底，寻求多种视角，依赖证据和伦理",
+        "influences": [
+          "导师",
+          "职业道德准则",
+          "客户反馈",
+          "社区意见"
+        ],
+        "speed": "深思熟虑，不冲动"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "推荐关于社会工作和社会正义的书籍、播客或文章",
+          "建议自我护理实践或心理健康资源",
+          "提供专业发展机会（工作坊、会议）",
+          "帮助处理伦理困境或案例概念化",
+          "在预算内推荐道德和可持续产品"
+        ],
+        "preference_conflicts": [
+          "在有限的预算内平衡道德消费",
+          "想要支持本地企业同时也需要可负担性",
+          "渴望循证资源同时也重视社区智慧"
+        ],
+        "ambiguity_to_preserve": [
+          "确切政治立场（可能是进步派但未明确）",
+          "具体精神或宗教信仰（可能感兴趣但未定义）",
+          "对治疗中技术的舒适程度（可能谨慎但开放）"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:44",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "尊重、支持、不评判",
+            "response_length": "简洁而信息丰富；列表偏好要点形式",
+            "evidence_expectation": "偏好基于研究或可靠来源的回应",
+            "formatting": "清晰的标题、要点和最少废话",
+            "proactive_behavior": "欣赏主动的资源建议，但不过分强求",
+            "things_to_avoid": [
+              "避免过于商业化或时髦的推荐",
+              "避免假定她有大量可支配收入",
+              "避免将社会工作者刻板化为“圣人”或“行善者”"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "协调客户支持小组",
+            "创建可持续的自我照顾日常",
+            "组织社区花园食物正义工作坊"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,491 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_043",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:21:20",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_006",
+      "hidden_indirect_019"
+    ],
+    "content": [
+      "hidden_indirect_004",
+      "hidden_indirect_021"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_012",
+      "hidden_indirect_016"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_007",
+      "hidden_indirect_013",
+      "hidden_indirect_020"
+    ],
+    "entertainment": [
+      "hidden_indirect_012"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_014",
+      "hidden_indirect_021"
+    ],
+    "food": [
+      "hidden_indirect_009",
+      "hidden_indirect_016"
+    ],
+    "format_contract": [
+      "hidden_indirect_009",
+      "hidden_indirect_015"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_003",
+      "hidden_indirect_005",
+      "hidden_indirect_011",
+      "hidden_indirect_017"
+    ],
+    "learning": [
+      "hidden_indirect_005",
+      "hidden_indirect_014"
+    ],
+    "privacy": [
+      "hidden_indirect_008",
+      "hidden_indirect_018"
+    ],
+    "product": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_013",
+      "hidden_indirect_018",
+      "hidden_indirect_020"
+    ],
+    "role_context": [
+      "hidden_indirect_010"
+    ],
+    "service": [
+      "hidden_indirect_002",
+      "hidden_indirect_006",
+      "hidden_indirect_010",
+      "hidden_indirect_019"
+    ],
+    "technology": [
+      "hidden_indirect_003",
+      "hidden_indirect_008",
+      "hidden_indirect_015"
+    ],
+    "travel": [
+      "hidden_indirect_007",
+      "hidden_indirect_017"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月我试用了一款带触摸屏控制的新牙科椅，但椅面接缝太深，消毒液渗进去很难擦干。最后一个患者离开后我多花了十分钟清洁。"
+        },
+        {
+          "role": "assistant",
+          "content": "那款椅子的椅面材料是什么？我手头有两款候选：一款是无缝模压皮革，另一款是拼接合成革。你会优先试哪个？"
+        }
+      ],
+      "implicit_signal": "在设备选择中优先考虑易清洁性和人体工学，而非价格或功能数量"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次我按一篇博客推荐买了某正畸蜡，结果它在口内融化太快，患者反馈不好。后来还是靠同事推荐的品牌解决问题。"
+        },
+        {
+          "role": "assistant",
+          "content": "那篇博客有作者背景吗？我之后只从同行验证过的渠道筛选耗材，先看五条实际使用评价再考虑数据白皮书。"
+        }
+      ],
+      "implicit_signal": "对健康和服务的决策依赖具体个人经验多于抽象数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "诊所考虑引入一款带数字成像的牙科椅，但销售没提供消毒步骤说明。我就先搁置了，因为没法纳入日常清洁清单。"
+        },
+        {
+          "role": "assistant",
+          "content": "我查了那款椅子的维护手册，只有一句‘用温和清洁剂擦拭’。我会要求厂商出具详细的消毒流程，否则不能推进采购。"
+        }
+      ],
+      "implicit_signal": "回避缺乏明确清洁流程的技术设备"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我正在看一本牙科助理继续教育手册，但它的激光操作说明只有三段文字，没有配图或步骤编号。我读到一半就停下了，感觉根本没法照着练习。"
+        },
+        {
+          "role": "assistant",
+          "content": "我有一份从同行那里拿到的带照片的分步指南，第一页就是安全检查和患者准备。你需要我把它扫描发给你吗？"
+        }
+      ],
+      "implicit_signal": "偏好内容分步清晰、可操作，带患者流程意识"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次我注册了一个在线牙科激光认证课程，但前三周全是理论数据和设备规格表。我中途退出，感觉浪费了时间。"
+        },
+        {
+          "role": "assistant",
+          "content": "我建议你考虑另一门课，强调动手实操和案例复盘。我会找带视频演示和模拟操作模块的版本，跳过理论堆砌的部分。"
+        }
+      ],
+      "implicit_signal": "回避数据密集或缺乏动手环节的学习资源"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我家的牙科保险账单上个月出现一笔不明费用，客服解释不清。我后来发现是自动续订了没用过的远程问诊附加包。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会先看保险单的年度限额和免赔条款，然后帮你联系客服取消附加包，同时要求每月发送明细账单。"
+        }
+      ],
+      "implicit_signal": "在服务选择中，账单透明度优先于附加功能"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "春假我计划带两个孩子去国家公园，但网上说有些步道石头多、容易摔倒。我犹豫了，因为上次带他们去海边礁石区时小女儿擦伤了膝盖，整个下午都在处理伤口。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我们先筛选有平整铺设步道和游客中心的公园，比如部分国家公园的轮道路线。我查好每日气温和洗手间位置再来排行程。"
+        }
+      ],
+      "implicit_signal": "家庭旅行中优先选择耐久性和后勤可预测性高的目的地"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "诊所新装了一款患者管理App，它请求读取我手机联系人以便‘分享复诊提醒’。我拒绝了权限，但同事都同意了。后来我发现它确实上传了通讯录哈希。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我会建议改用诊所内部的短信平台代替App提醒，或者使用一次性验证码邀请患者，不关联个人通讯录。"
+        }
+      ],
+      "implicit_signal": "对健康数据分享持保守态度，要求明确控制权"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "晚餐时家人提议订一家新开的墨西哥餐厅，但菜单上没有标注含哪些过敏原。我看了五分钟页面，最后还是选了常去的那家。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次你可以试试打电话问老板能否发一张带备注的菜单，或者我用APP查一下有没有网友上传过过敏信息。先确认孩子们能吃再下单。"
+        }
+      ],
+      "implicit_signal": "在决策中需要结构化的信息：需求、必备、危险信号、费用"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "午休时我打电话给正畸保险客服，对方念了三分钟免责条款，最后也没说清楚我的年度上限还有多少。我挂了电话后更糊涂了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次你直接问三个问题：年度上限、已用额度、免赔额是否已满。如果对方再用术语，我帮你发邮件要求书面答复，这样你可以在早餐桌上安静看。"
+        }
+      ],
+      "implicit_signal": "在助手角色中要求高效透明的沟通，避免保险术语堆砌"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上季度我试用了一款带内置蓝牙的牙科灯，但灯臂的凹槽无法拆卸清洗，消毒湿巾擦不到内部。我用了一次就放回去了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我有一款候选：无缝隙铝合金灯臂，表面可整体擦拭。我会再确认其消毒认证是否覆盖所有外表面，然后安排样品给你试。"
+        }
+      ],
+      "implicit_signal": "回避清洁流程不透明的设备"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "孩子睡着后我想看一个真实犯罪纪录片，但第一个镜头就是血腥的案发现场。我立刻关掉了，因为大女儿之前看到类似画面做了噩梦。"
+        },
+        {
+          "role": "assistant",
+          "content": "我推荐一档侧重法医推理而非现场画面的播客版纪录片，你可以通勤时听，或者和孩子一起看她能接受的科普类节目。"
+        }
+      ],
+      "implicit_signal": "在娱乐选择中优先家庭共同体验，避免血腥或恐怖内容"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "诊所新到了一张样品椅，头枕可拆卸但需要用螺丝刀才能装回。我试了两次都卡不准位置，最后放弃了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会找厂商要快拆版本，或者确认卡扣式设计是否可选。如果不行，下一个候选品必须通过手拧或一键拆卸认证。"
+        }
+      ],
+      "implicit_signal": "牙科椅必须易于消毒和维护"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我看了一篇关于激光牙周治疗的论文，结论很好，但它引用的样本来自大学实验室，不是日常诊所。我决定等牙科会议上有同行分享真实案例再决定是否培训。"
+        },
+        {
+          "role": "assistant",
+          "content": "三个月后有一场地区牙科助理交流会，我可以提醒你报名。你也可以先和参加过培训的同事聊一下设备实操难度。"
+        }
+      ],
+      "implicit_signal": "优先参考实际诊所经验而非仅理论证据"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你发我的诊所椅对比清单很有用，但最后一行写了‘需额外购买支架’。如果能提前标注为危险信号，我就能直接跳过。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次我把必选项、加分项和硬性排除项分三栏列出，末尾再附上总费用估算和保险报销范围，方便你在早餐桌上快速决策。"
+        }
+      ],
+      "implicit_signal": "需要结构化报告：需求、必备、危险信号、费用/保险"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天做了新菜谱：青柠辣椒虾。结果孩子们觉得太辣，只吃了两口，最后我只好重新煮了意大利面。浪费了食材和时间。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次你可以先做半份，辣酱另放一边。或者我找一份适合孩子的墨西哥菜谱，比如鸡肉奶酪馅饼，你可以周末试做。"
+        }
+      ],
+      "implicit_signal": "在饮食选择中优先家庭健康和安全，避免过辣或高风险食物"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "春假我计划自驾游，但出发前发现目的地有暴风雪预警，旅馆也说不保证退订。我临时取消了，但损失了部分订金。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次我们选可免费取消的住宿，并且只预订直飞航班（如需），减少天气影响。我先筛出有弹性政策的酒店和公园。"
+        }
+      ],
+      "implicit_signal": "旅行中回避后勤不可预测的选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "诊所想采购一款带患者预约的椅旁平板，但它要求患者输入社保号后四位。我问客服能否改用生日验证，他们说不行。我建议不买。"
+        },
+        {
+          "role": "assistant",
+          "content": "那款平板有用户数据存储隐患。我会找另一款只接受预约码或手机号的系统，并确认数据本地存储而非上传云端。"
+        }
+      ],
+      "implicit_signal": "对分享健康数据谨慎，要求产品尊重隐私"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我续签了诊所的消毒用品订阅，但发现新价比单次购买贵了20%。我打电话取消后，客服给了折扣才留下。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次续约前我先算好订阅与单买的差额，如果超过15%就选单次采购。也可以对比另一家供应商，看是否有类似质量的平价替代。"
+        }
+      ],
+      "implicit_signal": "在服务选择中注重成本效益但也愿意为便利付费"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "另一张样品椅的坐垫缝线太密，我试着用牙刷清洁缝隙里的碎屑，十五分钟才弄干净。我不想每天重复这种事。"
+        },
+        {
+          "role": "assistant",
+          "content": "我记下了：取消那张椅子的候选资格。我会找一款全封闭发泡坐垫的型号，表面无缝隙，用湿布一擦就行。"
+        }
+      ],
+      "implicit_signal": "牙科椅必须易于消毒和维护（第二次）"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有个牙科论坛说某种消毒湿巾对椅面有腐蚀性，但我查了制造商的材料安全数据表，发现论坛的案例可能用了错误的稀释比例。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会把制造商的使用说明和论坛报告都标注好，再询问同城诊所的实际使用反馈。最后把三方信息汇总给你，你可以在午休结束前决定。"
+        }
+      ],
+      "implicit_signal": "健康决策中优先真实诊所经验，但也不忽略专业来源"
+    }
+  ]
+}

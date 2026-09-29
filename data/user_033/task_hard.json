@@ -1,0 +1,103 @@
+{
+  "user_id": "user_033",
+  "task": {
+    "task_id": "task_hard",
+    "title": "规划电影节报道以避免重复叙事",
+    "daily_life_domain": "work",
+    "scenario": "Lena is a film critic for a major magazine. She has been assigned to cover the upcoming Sundance Film Festival. The schedule is packed, and she must choose which films to review and attend panels. She wants to prioritize original storytelling and avoid any films that involve clone narratives, which she finds lazy and overused. She also has limited time and needs to balance between reviewing highly anticipated films and discovering hidden gems.",
+    "user_goal": "Curate a personalized festival schedule that maximizes exposure to innovative cinema while avoiding clone storylines, and produce high-quality reviews for her publication.",
+    "why_complex": "Requires researching dozens of films, discerning plot elements from blurbs/trailers, filtering out potential clone themes, prioritizing based on director reputation and themes, and managing time across concurrent screenings and panels.",
+    "constraints": [
+      "Festival runs for 10 days with overlapping screenings",
+      "Must submit at least 5 reviews by deadlines",
+      "Budget for travel and accommodation is fixed",
+      "Cannot skip press conferences or interviews with key directors",
+      "Personal dislike of clone storylines;any film with a clone theme should be avoided unless it's a subversive take (but that's risky)"
+    ],
+    "required_reasoning_steps": [
+      "Step 1: Access the Sundance film catalog and compile a list of all scheduled films, including plot summaries and director info.",
+      "第二步：为每部电影分析剧情简介，寻找是否有提及或暗示克隆、克隆技术或完全相同的复制品。排除明显相关的电影。",
+      "第三步：对于模棱两可的电影，通过预告片、采访和早期评论进一步研究，评估克隆元素是核心还是颠覆性存在。",
+      "第四步：根据导演声誉、前提原创性以及与社会主题的关联性，对剩余电影进行排名。",
+      "第五步：检查时间冲突，制定每日行程，最大化高优先级电影和关键活动的数量。",
+      "第六步：为撰写评论和参加采访/小组讨论预留时间。",
+      "第七步：准备备用方案，以应对取消或临时增加的情况。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "电影节官网上的完整电影剧情简介",
+      "导演的前期作品及其风格",
+      "来自可信评论员的早期口碑",
+      "新闻放映与公众放映的可用性",
+      "场馆位置及交通时间",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "详细的每日行程，包括电影选择、评论截止日期和应急预案。对每部选定电影进行简要理由说明，突出其原创性以及如何避免陈词滥调（特别是克隆）。",
+    "success_criteria": [
+      "没有选定电影包含核心克隆情节（如模棱两可，需明确解释）",
+      "至少按时提交5篇评论",
+      "发现至少2部未被广泛报道的隐藏佳作",
+      "编辑反馈称报道内容深刻且避免俗套",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "误解电影情节（例如，认为影片包含克隆内容而实际没有，或相反的情况）",
+      "因肤浅阅读描述而忽视一部极具原创性的电影",
+      "时间冲突导致错过一部关键电影",
+      "变得过于死板，错过一部可能值得一看的颠覆性克隆电影"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 10,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 8,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=10",
+        "constraints_capped=5",
+        "decision_points_capped=3",
+        "information_items_capped=7",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=31.55",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Lena Hartwell",
+      "age": 42,
+      "gender": "女性"
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "user_id": "user_035",
+  "task": {
+    "task_id": "task_hard",
+    "title": "规划一次前往西雅图的周末技术会议兼喜剧之旅",
+    "daily_life_domain": "travel",
+    "scenario": "下个月西雅图将举办一场大型人工智能会议（例如，周四至周五为期两天的活动）。Alex的老朋友来自旧金山的Mike（喜剧演员）恰好周六在西雅图的一家喜剧俱乐部演出。Alex想参加会议并看Mike的表演，同时探索城市的精酿啤酒和徒步小径。他有一份常规的朝九晚六工作，但可以周五请假。他想最大化体验，同时不超支。",
+    "user_goal": "创建一份详细的周末行程，包括参加会议、Mike的喜剧表演、一次短途徒步和参观几家精酿啤酒厂，所有活动都在合理的预算和时间限制内。",
+    "why_complex": "需要协调会议日程、演出时间、徒步可行性（天气/小径）和朋友的时间；平衡专业发展与个人乐趣；处理旅行后勤（航班、住宿、交通）；预算在奢华与价值之间权衡。",
+    "constraints": [
+      "总预算最高800美元（机票、住宿、餐饮、活动）",
+      "必须周五请假（如可能，当天无会议安排）",
+      "会议时间为周四至周五上午9点至下午5点（Alex只想参加周五，因为周四是工作日）",
+      "Mike的演出是周六晚上8点；Alex需要早点到以便叙旧",
+      "徒步小径必须在距离西雅图1小时车程内，且日落前关闭",
+      "无饮食限制，但喜爱亚洲菜和精酿啤酒"
+    ],
+    "required_reasoning_steps": [
+      "研究会议日期并决定参加哪一天（可能只参加周五）",
+      "查找从旧金山到西雅图的航班（周五早上出发，周日晚上返回）",
+      "在中心社区（国会山或弗里蒙特）搜索靠近酒吧和交通的Airbnb",
+      "确定一条徒步小径（例如响尾蛇岩）及其当前状况和车程",
+      "找到会场和Airbnb附近的精酿啤酒厂",
+      "查看Mike的演出详情并确认他是否有时间参加演出前的晚餐",
+      "制定一份逐日行程表，容纳所有活动，并预留交通缓冲时间",
+      "计算总花费并将其控制在800美元以内",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "确切的会议名称和日程（开始/结束时间、必须出席的要求）",
+      "Mike演出的日期、时间和场地；他前后的空闲时间",
+      "机票价格及最佳出发/返回时间",
+      "目标社区附近的爱彼迎房源列表和评价",
+      "步道状况（开放情况、积雪/天气报告、驾驶路线）",
+      "啤酒厂的营业时间及是否需要预订",
+      "所有项目的费用（机票、住宿、食物、活动）",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "一份全面的周末行程计划，包含时间安排、费用、预订链接/建议以及关键决策的替代方案",
+    "success_criteria": [
+      "总花费控制在800美元以下",
+      "包含会议（周五）、Mike的演出（周六）、一次徒步（周日早上）、两家啤酒厂（周五晚上、周六下午）",
+      "切合实际的时间安排并预留交通缓冲区",
+      "所有预订都可行且符合任务条件（爱彼迎，不追求奢侈）",
+      "计划需考虑天气和步道状况",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "忽略了Mike演出前一起用餐的时间可行性",
+      "忽视了西雅图的交通或徒步时的停车问题",
+      "选择了难度过大或关闭的步道",
+      "未能根据旺季定价调整预算",
+      "未核查会议是否需要提前注册"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "navigation",
+        "travel_flights",
+        "weather",
+        "food"
+      ],
+      "domain_descriptions": {
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 9,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 9,
+      "human_verifier_estimation_basis": [
+        "domain=travel",
+        "source_domains_capped=4",
+        "reasoning_steps_capped=11",
+        "constraints_capped=7",
+        "decision_points_capped=6",
+        "information_items_capped=7",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=33.7",
+        "hard_revision: 内容负载较高，保留少量 9 轮作为上尾",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Alex Chen",
+      "age": 35,
+      "gender": "男性"
+    }
+  }
+}

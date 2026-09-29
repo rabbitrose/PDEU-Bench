@@ -1,0 +1,100 @@
+{
+  "user_id": "user_026",
+  "task": {
+    "task_id": "task_hard",
+    "title": "调查新的EPA排放标准",
+    "daily_life_domain": "work",
+    "scenario": "EPA刚刚发布了工业设施的新排放标准。作为高级记者，你需要在两周内为你的媒体制作一篇深度调查报道。报道必须分析该规则的经济影响、环境效益和潜在漏洞。你在工业界、环保团体和监管机构有广泛的消息来源，但你需要核实相互矛盾的说法，并交叉引用多个官方文档的数据。",
+    "user_goal": "写一篇全面、经过事实核查的文章，向公众提供信息并追究当权者责任，具有平衡视角且无事实错误。",
+    "why_complex": "需要多步骤研究：收集官方文档、采访多位持不同意见的利益相关者、交叉引用经济和环境数据，并在紧迫的截止日期内综合成连贯的叙述。必须避免耸人听闻，保持新闻诚信。",
+    "constraints": [
+      "一周截止日期；高准确性要求；需要保护消息来源机密；部分行业数据获取受限；必须避免依赖未经证实的说法。"
+    ],
+    "required_reasoning_steps": [
+      "1. 确定关键利益相关者群体和潜在消息来源（行业代表、环保非政府组织、EPA官员、经济学家）。",
+      "2. 收集官方文档：EPA规则文本、经济分析、公众意见和先前法规。",
+      "3. 联系至少来自不同方面的3个消息来源进行采访；安排电话/加密通话。",
+      "4. 将采访中的说法与文档和独立分析的数据进行交叉引用。",
+      "5. 分析经济影响：行业成本 vs. 环境健康效益。",
+      "6. 基于专家意见识别潜在漏洞或执法挑战。",
+      "7. 起草具有平衡结构的文章大纲，然后撰写带有内嵌引用的完整文章。",
+      "8. 在提交前，使用一手来源和事实核查数据库核查所有声明。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "规则的确切生效日期和实施时间表。",
+      "具体的减排目标和合规成本。",
+      "受影响行业和关键公司列表。",
+      "之前的EPA声明或法律挑战。",
+      "任何待决的诉讼或国会监督行动。",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "详细的文章大纲，至少包含5个引用来源、关键数据点和一个平衡的论点。最终文章应约2000字，带有行内引用和事实核查日志。",
+    "success_criteria": [
+      "至少引用5个不同来源，代表多种视角。",
+      "事实核查后无误。",
+      "文章在截止日期内发表。",
+      "编辑对深度和平衡性给予积极反馈。",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "过度依赖未经证实的偏见来源。",
+      "由于文档审查不完整而遗漏关键漏洞。",
+      "过度强调某一角度而失去客观性。",
+      "未能保护来源机密性，导致泄露。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 5,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 8,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=11",
+        "constraints_capped=5",
+        "decision_points_capped=3",
+        "information_items_capped=7",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=30.8",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Elena Martinez",
+      "age": 38,
+      "gender": "女性"
+    }
+  }
+}

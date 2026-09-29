@@ -1,0 +1,101 @@
+{
+  "user_id": "user_043",
+  "task": {
+    "task_id": "task_hard",
+    "title": "研究和推荐用于诊所升级的新牙科椅设备",
+    "daily_life_domain": "work",
+    "scenario": "Maria的牙科诊所正在考虑升级诊疗间，采购新的牙科椅单元。牙医请Maria研究选项并提出建议。诊所预算中等但愿意投资质量。Maria希望提出一份充分研究的方案，包含多个选项及其权衡。",
+    "user_goal": "比较并推荐最适合诊所的牙科椅单元，平衡成本、功能、可靠性以及员工/患者满意度。",
+    "why_complex": "此任务需研究多个品牌和型号，评估技术规格，考虑牙科助手的人体工学、感染控制（易清洁表面）、患者舒适度及预算限制。还需收集同事和牙医的意见，并提出明确建议。",
+    "constraints": [
+      "预算：诊所预算中等但非无限。",
+      "时间：Maria有两周时间准备建议。",
+      "可靠性：诊所无法承受频繁故障。",
+      "感染控制：必须符合OSHA和CDC指南。",
+      "人体工学：必须确保Maria及其他助手在长时间操作中舒适。"
+    ],
+    "required_reasoning_steps": [
+      "1. 确定关键需求：列出必备功能（如可编程位置、集成供液系统、椅装灯、易清洁椅套）和非优先功能。",
+      "2. 研究至少3个信誉品牌（如A-dec、Midmark、Pelton & Crane），收集规格、价格及来自牙科论坛和同事的评论。",
+      "3. 如有可能，联系销售代表进行演示或试用。",
+      "4. 根据要求对比各选项，按功能、成本、人体工学和感染控制评分。",
+      "6. 计算总拥有成本，包括安装、保修和维护。",
+      "7. 准备并列对比表和附带理由的口头建议。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "当前诊疗间的尺寸和布局。",
+      "员工对现有椅子的痛点反馈。",
+      "奥斯汀地区服务技术人员的可用性。",
+      "是否有待处理的感染控制审计或即将进行的翻新计划。",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "一份详细的比较报告（2-3页），包含明确建议、优缺点、成本分析及团队意见摘要。报告应易于牙医和员工理解。",
+    "success_criteria": [
+      "建议充分研究并有证据支持。",
+      "所选型号满足所有关键要求（人体工学、感染控制、预算）。",
+      "牙医批准建议并下达采购订单。",
+      "Maria的同事感到他们的意见被采纳。",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "忽略了某个特定程序所需的关键功能。",
+      "未考虑隐藏成本（安装、培训）。",
+      "选择了难以清洁或维护的型号。",
+      "未充分收集员工意见，导致不满。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 10,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 9,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=10",
+        "constraints_capped=5",
+        "decision_points_capped=3",
+        "information_items_capped=7",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=31.55",
+        "hard_revision: 内容负载较高，保留少量 9 轮作为上尾",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Maria Lopez",
+      "age": 34,
+      "gender": "女性"
+    }
+  }
+}

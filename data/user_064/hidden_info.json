@@ -1,0 +1,512 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_064",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:40:50",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 22,
+  "composition": {
+    "episodic_preference_trace": 22
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_002",
+      "hidden_indirect_019"
+    ],
+    "content": [
+      "hidden_indirect_003",
+      "hidden_indirect_013",
+      "hidden_indirect_017"
+    ],
+    "decision_priority": [
+      "hidden_indirect_002",
+      "hidden_indirect_007",
+      "hidden_indirect_012",
+      "hidden_indirect_018"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_010",
+      "hidden_indirect_014",
+      "hidden_indirect_021"
+    ],
+    "entertainment": [
+      "hidden_indirect_010",
+      "hidden_indirect_022"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_009",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "food": [
+      "hidden_indirect_006",
+      "hidden_indirect_021"
+    ],
+    "format_contract": [
+      "hidden_indirect_001",
+      "hidden_indirect_008"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_011",
+      "hidden_indirect_012",
+      "hidden_indirect_017"
+    ],
+    "learning": [
+      "hidden_indirect_009",
+      "hidden_indirect_020"
+    ],
+    "privacy": [
+      "hidden_indirect_007",
+      "hidden_indirect_016"
+    ],
+    "product": [
+      "hidden_indirect_011",
+      "hidden_indirect_019"
+    ],
+    "role_context": [
+      "hidden_indirect_001",
+      "hidden_indirect_013",
+      "hidden_indirect_022"
+    ],
+    "service": [
+      "hidden_indirect_005",
+      "hidden_indirect_015"
+    ],
+    "technology": [
+      "hidden_indirect_008",
+      "hidden_indirect_016",
+      "hidden_indirect_018"
+    ],
+    "travel": [
+      "hidden_indirect_004",
+      "hidden_indirect_014"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周审波兰子公司合同，风险敞口列了15条全用一段文字，没人跟进修改。结果一条争议条款超期未改，对方拒签。"
+        },
+        {
+          "role": "assistant",
+          "content": "重做风险表：每行标红/黄/绿，加负责人和截止日期列。优先跟黄灯项，下周前完成所有绿灯确认。"
+        }
+      ],
+      "implicit_signal": "要求项目文档按红黄绿风险表格式呈现，含负责人和截止日期"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下周伦敦会议订了傍晚航班，但孩子那天有春季演出，之前因加班错过两次了。"
+        },
+        {
+          "role": "assistant",
+          "content": "改签早班直飞，下午3点到。差价从部门培训预算走，我备注紧急家庭原因。"
+        }
+      ],
+      "implicit_signal": "即使额外花费也要调换航班以优先家庭时间边界"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次GDPR整改备忘录，你上来就引Art. 5和Art. 17，但没写我们哪项实践违规。结果合规总监问具体场景，我答不上来。"
+        },
+        {
+          "role": "assistant",
+          "content": "修正：先列三条具体敞口——用户删除请求未自动化、数据保留超5年、授权范围模糊；再对应引Art. 5(1)(e)和Art. 17(1)(a)。"
+        }
+      ],
+      "implicit_signal": "在陈述实际风险后需精确引用法规条款"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "孩子学校发的家庭远足推荐，都是热门观景点，但我看了谷歌地图全景：那条路有段40度陡坡，8岁女儿肯定走不下来，上次试过类似路线她半路哭。"
+        },
+        {
+          "role": "assistant",
+          "content": "改去Potomac Heritage Trail，难度中等，全程平缓有树荫，中途有野餐桌可以午饭。"
+        }
+      ],
+      "implicit_signal": "休闲计划中路线难度比景点更重要"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "IT推的新文档平台，昨天产品演示时说文件修改不保留版本历史。上次我们用类似系统，同事覆盖了最终版合同，花了三天恢复。"
+        },
+        {
+          "role": "assistant",
+          "content": "驳回该平台。要求供应商必须提供至少90天版本历史记录，并支持查看每次修改者。"
+        }
+      ],
+      "implicit_signal": "拒绝没有审计追踪的文档工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周日计划做意式肉酱面，但超市只有干罗勒和罐装番茄。上次用干罗勒做出来的酱没有香气，孩子说不好吃。"
+        },
+        {
+          "role": "assistant",
+          "content": "明早去Union Market买新鲜罗勒和San Marzano番茄，肉馅买本地草饲牛绞肉。下午3点开始熬酱，5点煮面。"
+        }
+      ],
+      "implicit_signal": "休闲活动中餐食准备优先级高，追求新鲜食材"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "内部审计要求调取外部律师邮件，但邮件标题带‘法律特权-保密’标记。上次类似调取后，对方律师威胁动议制裁，称我们放弃了特权。"
+        },
+        {
+          "role": "assistant",
+          "content": "暂停调取，先发邮件给法务长确认特权范围。即使审计报告因此延迟一周，也比丢掉特权保护强。"
+        }
+      ],
+      "implicit_signal": "特权可执行性优先于文档完整性"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "研发部提交的数据流转图只有一张Visio流程图，没有标注数据类型和适用法规。上次因此被监管问询时，我们花了一周补材料。"
+        },
+        {
+          "role": "assistant",
+          "content": "转成风险表：每行一个数据流，标红（含敏感个人数据）/黄（含普通个人数据）/绿（匿名数据），加处理国列，对应GDPR或CCPA。"
+        }
+      ],
+      "implicit_signal": "要求风险表格式：红黄绿+处理国"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周参加加州隐私法研讨会，我把讲师的模板直接贴到内部备忘录里，但没先说明我们处理哪些加州用户数据。合规官看了问适用性，我当场卡住。"
+        },
+        {
+          "role": "assistant",
+          "content": "先统计当前加州用户数量和数据类别，列出数据处理活动，再对应引用CCPA第1798.120节，指出当前同意收集流程的缺口。"
+        }
+      ],
+      "implicit_signal": "培训内容需基于实际项目风险引用"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "同事推荐《继承之战》，说商战真实。我连看三集，觉得里面公司收购流程完全不符合特拉华州公司法，没法看下去。"
+        },
+        {
+          "role": "assistant",
+          "content": "换John Grisham的《The Firm》有声书，里面代理权争斗和证据规则描述比较准，通勤时听30分钟正好。"
+        }
+      ],
+      "implicit_signal": "娱乐偏好法律相关真实情节"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "市场部试用新企业云盘，上个月离职同事的文件全自动归到公用库，原创建者无法回收。我们一份未签署的NDA因此被外部顾问看到。"
+        },
+        {
+          "role": "assistant",
+          "content": "立即停用，要求供应商必须让文件创建者保留终生控制权，审计日志要显示所有访问记录。IT重新评估其他方案。"
+        }
+      ],
+      "implicit_signal": "抗拒没有保留控制的文件工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "亚太总法律顾问临时要求本周六上午开线上会讨论新合规框架。但我已经连续三个周六加班了，上次孩子说‘妈妈周末都不在家’。"
+        },
+        {
+          "role": "assistant",
+          "content": "回复无法参加周六会，改为周一早8点且限时45分钟。提前周五发材料给她预读。"
+        }
+      ],
+      "implicit_signal": "坚决拒绝周末工作计划"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "营销部提交新合作伙伴条款草案，整篇没有定义‘数据控制者’和‘处理者’角色。上次类似遗漏导致我们在GDPR审计中被罚。"
+        },
+        {
+          "role": "assistant",
+          "content": "按备忘录格式：问题（角色未定义）；风险敞口（双重责任风险）；控制文件（新增4.1和4.2条区分双方角色）；下一步：发回营销部修改后我方再审。"
+        }
+      ],
+      "implicit_signal": "以法律顾问备忘录模式输出，含问题、风险、控制、下一步"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "计划去新加坡参加数据隐私论坛。转机航班便宜500美元，但要在迪拜中转等3小时。上次转机时，我在机场咖啡厅改合同，腰疼了一天。"
+        },
+        {
+          "role": "assistant",
+          "content": "选直飞新加坡航班。确保酒店房间有桌子、台灯和舒适椅子。航班上用U型枕和笔记本处理备忘录。"
+        }
+      ],
+      "implicit_signal": "旅行优先直飞，超过8小时航班需足够工作空间"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "律所推荐新云端归档服务，说符合行业标准，但问具体时他们说不出数据存储在哪里、加密密钥谁管。之前有个供应商因此被欧盟罚款。"
+        },
+        {
+          "role": "assistant",
+          "content": "要求对方提供AWS或Azure的具体数据中心位置，以及客户托管密钥选项。否则不签约。"
+        }
+      ],
+      "implicit_signal": "服务需出具数据驻留和加密方案以确保证据链"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "公司新推MDM系统强制所有笔记本安装，但我问IT支持他们能否看到个人文件，答‘通常不会’。这个不明确让我担心。"
+        },
+        {
+          "role": "assistant",
+          "content": "要求IT提供正式书面说明——MDM能看到哪些目录、是否有企业权限查阅个人数据。拿到说明前，公司文档用加密USB存储，不存本地。"
+        }
+      ],
+      "implicit_signal": "仅当访问控制可说明时使用Mac优先和加密"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "外部律所发来的合规差距分析报告，22页从头到尾全是‘鉴于…根据…结合…’，没有小标题和分段，我读了53分钟才找到关键建议。"
+        },
+        {
+          "role": "assistant",
+          "content": "重写：按高/中/低风险分类，每类下用‘现状→问题→建议→下一步’结构。关键法规加脚注，不塞正文。"
+        }
+      ],
+      "implicit_signal": "避免法律术语堆砌，要求分段清晰"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "新合同管理App上线，自动生成摘要很智能，但IT说它不记录谁浏览了正式合同PDF。之前有份合同被竞争对手看到，但查不到是谁下载的。"
+        },
+        {
+          "role": "assistant",
+          "content": "必须在两周内启用用户访问日志，即使影响系统响应速度。同时要求支持按文件查看历史浏览者。"
+        }
+      ],
+      "implicit_signal": "审计追踪优先于系统流畅"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买新通勤双肩包。一款带称重护腰功能的要200美元，另一款普通设计80美元。上次花大钱买的所谓人体工学包背一个月也差不多。"
+        },
+        {
+          "role": "assistant",
+          "content": "买80美元款，足够装15寸MacBook和文件。省下的120美元买一把Logitech人体工学鼠标，日常用更久。"
+        }
+      ],
+      "implicit_signal": "个人用品重预算，专业设备重质量"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "完成巴西LGPD在线课程后，我把培训笔记整段复制进项目风险评估，没联系我们要处理哪些巴西用户数据。结果Regulatory director问‘这个建议依据是什么’，场面尴尬。"
+        },
+        {
+          "role": "assistant",
+          "content": "先统计巴西客户数量和数据类型，列出数据处理活动。再引用LGPD第7条和第11条，指出我们缺少的特定同意机制。每引一条都对应一个实际数据流。"
+        }
+      ],
+      "implicit_signal": "学习成果需基于实际数据处理活动才能引用"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "超市打特价的意大利面酱，三瓶5美元，保质期一年。但一看成分表有柠檬酸和增稠剂。上次用这种酱做千层面，全家都觉得有化学味。"
+        },
+        {
+          "role": "assistant",
+          "content": "不买。周六早市买新鲜番茄、洋葱、胡萝卜和牛至。按经典博洛尼亚酱食谱，熬两小时分装冷冻，下周也能用。"
+        }
+      ],
+      "implicit_signal": "烹饪意菜重视新鲜本地食材，反对加工"
+    },
+    {
+      "interaction_id": "hidden_indirect_022",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "Netflix首页推了一部律政喜剧，发现里面法官当庭开黄腔、律师喝咖啡时签和解协议，这与我工作的联邦法院差太远。看了10分钟就关。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐《The Lincoln Lawyer》第二季，程序正确性经过真实律师审校，且在Netflix，适合周末看一集。"
+        }
+      ],
+      "implicit_signal": "娱乐倾向于法律真实度高的内容"
+    }
+  ]
+}

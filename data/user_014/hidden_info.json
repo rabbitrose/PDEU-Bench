@@ -1,0 +1,512 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_014",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:10:10",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 22,
+  "composition": {
+    "episodic_preference_trace": 22
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_004",
+      "hidden_indirect_010",
+      "hidden_indirect_015",
+      "hidden_indirect_019"
+    ],
+    "content": [
+      "hidden_indirect_009",
+      "hidden_indirect_017",
+      "hidden_indirect_020"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_013",
+      "hidden_indirect_016",
+      "hidden_indirect_022"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_011",
+      "hidden_indirect_012",
+      "hidden_indirect_014",
+      "hidden_indirect_018",
+      "hidden_indirect_020"
+    ],
+    "entertainment": [
+      "hidden_indirect_008"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_009",
+      "hidden_indirect_017"
+    ],
+    "food": [
+      "hidden_indirect_006",
+      "hidden_indirect_014"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_012"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_001",
+      "hidden_indirect_002",
+      "hidden_indirect_008",
+      "hidden_indirect_016",
+      "hidden_indirect_022"
+    ],
+    "learning": [
+      "hidden_indirect_007",
+      "hidden_indirect_021"
+    ],
+    "privacy": [
+      "hidden_indirect_005",
+      "hidden_indirect_019"
+    ],
+    "product": [
+      "hidden_indirect_004"
+    ],
+    "role_context": [
+      "hidden_indirect_010"
+    ],
+    "service": [
+      "hidden_indirect_006",
+      "hidden_indirect_013"
+    ],
+    "technology": [
+      "hidden_indirect_005",
+      "hidden_indirect_015",
+      "hidden_indirect_021"
+    ],
+    "travel": [
+      "hidden_indirect_007",
+      "hidden_indirect_018"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天采访高中生莎拉，她发抖念错台词，剧场只有21人。我删掉了那段‘紧张明显’，剩下温暖细节。可主编说缺锐度。"
+        },
+        {
+          "role": "assistant",
+          "content": "我们改用莎拉排练时自己说的‘每次上台都学到新东西’收尾。既保持真诚，又不曝光她的不安。"
+        }
+      ],
+      "implicit_signal": "她宁愿失去一个引语也不愿用冷嘲热讽来伤害业余演员"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "地方商会发来调查说‘社区演出参与度下降39%’，建议我写批评报道提升话题度。"
+        },
+        {
+          "role": "assistant",
+          "content": "我直接去查了票房电子表和后台签到本，发现那39%是统计口径改了。文章用实际场次和人头数反驳。"
+        }
+      ],
+      "implicit_signal": "拒绝依赖成瘾数据，用第一手资料为演出辩护"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周拍演员们在后台缝戏服的照片，我想加图注说‘展现专业主义精神’，又觉得太像宣传稿。"
+        },
+        {
+          "role": "assistant",
+          "content": "改成‘莉萨正把第二幕的金线袖口缝回原位，旁边放着明天早餐要用的零钱。’一个生活细节抵十个形容词。"
+        }
+      ],
+      "implicit_signal": "坚持用非技术性表达，将演员的努力放在场景里而非标签里"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "面包店在搞五折促销，可那是连锁店，不是本地约翰的小店。多花3美元够孩子一本旧书。"
+        },
+        {
+          "role": "assistant",
+          "content": "买约翰的全麦面包，顺便问他周末社区戏剧节赞助展位的事。这笔钱既是食物也是报道线索。"
+        }
+      ],
+      "implicit_signal": "家庭消费优先支持本地人，即使稍贵"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在候机区里看到镇上剧院的新app可以定位附近戏友，我觉得程序要求读取通讯录太越界。"
+        },
+        {
+          "role": "assistant",
+          "content": "你干脆只用网页版订票，并把app的位置权限设为‘仅使用期间’。隐私不妥协，但不错过本地演讯。"
+        }
+      ],
+      "implicit_signal": "对数据追踪有敏感的底线行动"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "今晚家庭聚餐想点外卖，但镇上唯一做有机农场食材的店周四休息。孩子们嚷着要吃披萨。"
+        },
+        {
+          "role": "assistant",
+          "content": "你选了那家有机店的预制冷冻蔬菜千层面，回家自己烤。配一份本地小餐馆的凯撒沙拉。味道好，也不算将就。"
+        }
+      ],
+      "implicit_signal": "支持可持续和农场直供，即便选择更少"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "春假在历史小镇住家庭旅馆，老板提议免费导览但要多停留一天。原本只计划一晚。"
+        },
+        {
+          "role": "assistant",
+          "content": "你改签了回程，让孩子跟着学如何修复19世纪的戏服纽扣。那晚的见闻后来写成社区报的‘旅途·教室’专栏。"
+        }
+      ],
+      "implicit_signal": "旅行中偏爱能学到本地文化的机会，即使花费时间"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "游乐园请了网红乐队造势，赠票两张。但那是完全商业化的表演，与社区剧团互相挤压。"
+        },
+        {
+          "role": "assistant",
+          "content": "你没要赠票，周末带家人去看了本地高中生改编的《我们的小镇》。园里那场活动之后有观众说‘还是真人的戏动人’。"
+        }
+      ],
+      "implicit_signal": "回避失去真实交流的活动，即便免费"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "写关于新画廊的报道，老板引用了‘著名评论家’的话但我找不到出处，存疑。"
+        },
+        {
+          "role": "assistant",
+          "content": "删除那条引用，改为你自己两周前看到的场景：一位退休木工在画前站了十分钟，对老伴说‘这颜色像我小时候谷仓的门’。"
+        }
+      ],
+      "implicit_signal": "文章引用须有直接观察支撑，而非二手法"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "街区义演缺宣传，我自己掏腰包印了55张传单，总成本刚过预算线。"
+        },
+        {
+          "role": "assistant",
+          "content": "你把传单拍照发在社区群，并附上一句‘这周日，卖柠檬水的摊位将把收入捐给剧团道具组’——让每一分钱都有人情味儿。"
+        }
+      ],
+      "implicit_signal": "身为记者，用有限预算为被忽视的群体创造曝光"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨晚老汤姆的独角戏第三段忘词了，观众尴尬，他僵在台上。我不想提失误但又想如实写。"
+        },
+        {
+          "role": "assistant",
+          "content": "你写‘那一刻剧场静默，但汤姆很快用一句即兴台词把故事拽了回来，那韧性比完美更动人’。诚实，又不残忍。"
+        }
+      ],
+      "implicit_signal": "评论必须让表演者感到被看见，哪怕缺点也要轻婉表达"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "社区剧团庆功派对上，我拍了一大合影想配文‘感谢每一位演员’，太像套话了。"
+        },
+        {
+          "role": "assistant",
+          "content": "改成标注出角落里补灯光的九年级生玛丽和叠节目单的退休会计老鲍勃。让每个人觉得自己被注意。"
+        }
+      ],
+      "implicit_signal": "庆祝时刻必须让个体被看见而不是被泛化"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下周有外地剧团巡演，搜索引擎结果排序把大型售票平台放前面，小镇票务被埋没了。"
+        },
+        {
+          "role": "assistant",
+          "content": "你直接拨打剧院老电话，接线员是兼职大学生，她告诉你‘二楼还留了家族连座’。定了票，还拿到独家后台采访机会。"
+        }
+      ],
+      "implicit_signal": "即使信息更有限，也优先本地渠道而非全网通用"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在下雨回家路上经过两家餐厅：一家评分4.8的网红轻食店，一家破门面的家庭意餐馆。"
+        },
+        {
+          "role": "assistant",
+          "content": "你进了意餐馆，老板记得你上次带孩子来，主动把儿童面换成蝴蝶结形状。那顿饭比评分高的地方更暖。"
+        }
+      ],
+      "implicit_signal": "外食时偏爱有人情味的小馆子，不论评分"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买199刀的灯架拍舞台排练照，但下月有家庭旅行预算已经定死了。"
+        },
+        {
+          "role": "assistant",
+          "content": "你从道具间借来两把旧落地灯，用白布一裹拍出柔光效果。照片刊登后读者还以为你添了新设备。"
+        }
+      ],
+      "implicit_signal": "用免费或低成本替代昂贵解决方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "报社里实习生建议我用‘存在主义解构’分析本地音乐剧，说能提升深度。"
+        },
+        {
+          "role": "assistant",
+          "content": "你回复‘我们在小镇报纸上，不是学术期刊’，改用‘主角在第二幕里想到父亲留下的旧工具’这种普通人都懂的细节。"
+        }
+      ],
+      "implicit_signal": "坚决拒绝精英化引导，即便更易获得认可"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "市议员寄来通稿说本地艺术节‘引发了前所未有的共鸣’，但没数据也没引述。"
+        },
+        {
+          "role": "assistant",
+          "content": "你搁置通稿，去艺术节现场采了21位参与者，最后用义卖摊主说的‘去年卖出37幅画，今年55幅’做事实桩。"
+        }
+      ],
+      "implicit_signal": "不接受没有出处的情感修饰"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "暑假列了两个目的地：大都市博物馆特展，或者山区小镇手工艺节。预算只够一个。"
+        },
+        {
+          "role": "assistant",
+          "content": "你选了小镇，因为那里有仅存的三位传统纺车匠人做现场演示。孩子们每人试着纺了一段线，这比隔着玻璃看文物更真切。"
+        }
+      ],
+      "implicit_signal": "旅途规划首要看是否有与艺术相遇的机会"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "社区卡APP绑信用卡有优惠，但条款里写明会分析消费行为定向推广告。"
+        },
+        {
+          "role": "assistant",
+          "content": "你继续用纸质收据和现金，让店员用手写积分卡。每次盖章都多聊两句后台花絮。省了折扣，多了关系。"
+        }
+      ],
+      "implicit_signal": "宁可用纸质单据也不想授权数据采集"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "写完小镇合唱团报道，结尾草稿是‘这是一场成功的演出’，太干巴了。"
+        },
+        {
+          "role": "assistant",
+          "content": "改成散场后一位老太太对领唱说‘你妈妈要是还在，一定会为你骄傲’。所有苦涩和光荣都在这一句话里。"
+        }
+      ],
+      "implicit_signal": "报道收尾要落在人和情感上，而非空洞赞美"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "报社推荐新的协同写作平台，试用账号有21天。它功能多但界面花哨，我试了三天删了。"
+        },
+        {
+          "role": "assistant",
+          "content": "你退回到旧版Word，配合一个轻量打标文件。操作不用重新学，还能照常把草稿发给共享打印机。新功能不如自己的节奏重要。"
+        }
+      ],
+      "implicit_signal": "选择软件时看重稳定和低学习成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_022",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "筛选‘年度最受喜爱演员’表态稿时，主编希望用‘最佳男主角’这种名号吸引流量。"
+        },
+        {
+          "role": "assistant",
+          "content": "你坚持用了‘今年让观众笑得最多的时刻’代替，并列出五个具体场景与演员姓名，没有排名。让大家被记住而非被分等。"
+        }
+      ],
+      "implicit_signal": "绝不用标签化的方式定义任何参与者"
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "user_id": "user_132",
+  "explicit_preferences": {
+    "user_profile": "一家律师事务所的合伙人，以其对医疗法律的广泛了解而闻名",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Margaret Chen",
+        "age": 52,
+        "gender": "女性",
+        "location": "纽约州纽约市",
+        "languages": [
+          "英语",
+          "普通话（基础）"
+        ],
+        "education_level": "JD（法学博士）",
+        "occupation": "合伙人",
+        "industry": "法律服务",
+        "seniority": "资深",
+        "household": "已婚，有两个孩子（年龄18和21）",
+        "life_stage": "空巢"
+      },
+      "physical_profile": {
+        "height_cm": 165,
+        "general_appearance": "专业、整洁、戴眼镜",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "注重细节、坚定、有道德，对医疗法规有深入了解。重视精确和公平。可能对低效率不耐烦。",
+        "big_five": {
+          "openness": 60,
+          "conscientiousness": 90,
+          "extraversion": 70,
+          "agreeableness": 50,
+          "neuroticism": 40
+        },
+        "strengths": [
+          "医疗法律专家",
+          "强大的谈判技巧",
+          "一丝不苟"
+        ],
+        "weaknesses": [
+          "可能过于挑剔",
+          "难以放手委派",
+          "工作狂倾向"
+        ],
+        "values": [
+          "正义",
+          "正直",
+          "专业知识"
+        ],
+        "motivations": [
+          "确保合规",
+          "保护客户"
+        ],
+        "stress_triggers": [
+          "模糊性",
+          "缺乏准备",
+          "杂乱无章"
+        ]
+      },
+      "background": {
+        "birthplace": "加利福尼亚州旧金山",
+        "education": "哈佛法学院",
+        "career_history": [
+          "华盛顿顶级律所的律师",
+          "纽约一家专门从事医疗法律的律师事务所合伙人"
+        ],
+        "specialization": "制药诉讼、医疗合规"
+      },
+      "lifestyle": {
+        "daily_routine": "忙碌的专业人士，经常出差参加法庭和客户会议。定期锻炼（瑜伽、跑步）。保持严格的日程安排。",
+        "social_life": "偶尔与同事外出就餐，参加法律会议和艺术画廊开幕",
+        "habits": "以咖啡和新闻阅读开始一天"
+      },
+      "interests": [
+        "医疗政策",
+        "法律历史",
+        "品酒",
+        "现代艺术",
+        "马拉松跑步"
+      ],
+      "explicit_preferences": {
+        "content_preferences": [
+          "权威法律期刊",
+          "医疗政策报告",
+          "NPR新闻",
+          "内容必须符合该用户独特的工作模式：高级合伙人模式：压缩、委派、假设高标准。",
+          "拒绝通用助手框架：不要浪费精力在背景或同等选项上。"
+        ],
+        "product_preferences": [
+          "高端商务着装",
+          "苹果设备",
+          "优质咖啡",
+          "产品应通过用户自身的权衡视角选择：任务、委派、风险门槛、升级触发。"
+        ],
+        "service_preferences": [
+          "私人助理",
+          "专业税务顾问",
+          "专职司机",
+          "服务只有在保留此决策优先级时才可接受：监管风险、高管形象和日程安排比个人偏好更重要。"
+        ],
+        "learning_preferences": [
+          "深度研讨会",
+          "继续法律教育课程"
+        ],
+        "travel_preferences": [
+          "商务舱",
+          "有商务中心的酒店"
+        ],
+        "food_preferences": [
+          "高级餐饮",
+          "低碳水选项",
+          "喜欢葡萄酒"
+        ],
+        "entertainment_preferences": [
+          "纪录片",
+          "法律惊悚小说。",
+          "百老汇演出"
+        ],
+        "technology_preferences": [
+          "可靠性优先于新颖性",
+          "MacBook和iPhone",
+          "不喜欢不必要的应用程序"
+        ],
+        "privacy_preferences": "高度保护，避免分享个人信息",
+        "budget_preferences": "愿意为质量和便利花钱，在非必需品上注重成本",
+        "personalization_directives": {
+          "style_contract": "高级合伙人模式：紧凑、授权为主、假定高标准。",
+          "decision_priority": "监管曝光、高管形象和日程生存优先于个人偏好。",
+          "evidence_contract": "合规需要引用，而非常识性后勤。",
+          "format_contract": "授权、委派、风险把关、升级触发。",
+          "anti_default_assistant_behavior": "不要浪费时间介绍背景或同等权重的选项。",
+          "distinctive_quirks": [
+            "浪漫旅行应优雅且低管理成本。",
+            "马拉松计划必须能应对旅行中断。",
+            "个人助理工作流程可接受且是预期的。"
+          ],
+          "hard_avoidances": [
+            "自己动手做一切",
+            "除非被问，否则优先考虑预算",
+            "没有授权点的计划"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": [
+        "非正式沟通",
+        "不守时",
+        "模糊的问题",
+        "垃圾信息",
+        "不可靠的来源"
+      ],
+      "communication_style": "正式、直接，使用精确的法律术语，期望清晰的证据",
+      "decision_making": "数据驱动、规避风险、寻求专家建议、考虑长期影响",
+      "evaluation_notes": {
+        "likely_tasks": [
+          "研究最新的医疗法规",
+          "起草合规备忘录",
+          "分析法律摘要",
+          "准备口头辩论"
+        ],
+        "preference_conflicts": "重视深度但讨厌冗长的回答；想要证据但要快",
+        "ambiguity_to_preserve": "具体案件量和客户细节未定义；对技术的偏好可能略有不同",
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:44",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "专业且尊重",
+            "response_length": "简洁但全面",
+            "evidence_expectation": "高，要求引用",
+            "formatting": "要点清晰，步骤用编号列表",
+            "proactive_behavior": "期望能预见需求并提供更新",
+            "things_to_avoid": [
+              "非正式语言",
+              "假设",
+              "不请自来的意见"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "应对重大医疗合规改革",
+            "为丈夫的里程碑生日计划惊喜周末短途游",
+            "在管理繁重工作旅行计划的同时训练参加纽约市马拉松"
+          ]
+        }
+      }
+    }
+  }
+}

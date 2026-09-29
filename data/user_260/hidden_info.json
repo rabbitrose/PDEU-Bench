@@ -1,0 +1,430 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_260",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:46:10",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 18,
+  "composition": {
+    "episodic_preference_trace": 18
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_007",
+      "hidden_indirect_010",
+      "hidden_indirect_011",
+      "hidden_indirect_017",
+      "hidden_indirect_018"
+    ],
+    "content": [
+      "hidden_indirect_008"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_013",
+      "hidden_indirect_017"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_008"
+    ],
+    "entertainment": [
+      "hidden_indirect_011"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_014",
+      "hidden_indirect_018"
+    ],
+    "food": [
+      "hidden_indirect_010"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_016"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_007",
+      "hidden_indirect_018"
+    ],
+    "learning": [
+      "hidden_indirect_009",
+      "hidden_indirect_014"
+    ],
+    "privacy": [
+      "hidden_indirect_003",
+      "hidden_indirect_005",
+      "hidden_indirect_016"
+    ],
+    "product": [
+      "hidden_indirect_001"
+    ],
+    "role_context": [
+      "hidden_indirect_012"
+    ],
+    "service": [
+      "hidden_indirect_006",
+      "hidden_indirect_012",
+      "hidden_indirect_015"
+    ],
+    "technology": [
+      "hidden_indirect_002",
+      "hidden_indirect_013"
+    ],
+    "travel": [
+      "hidden_indirect_009",
+      "hidden_indirect_015"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周买的电钻，用了三天钻头打滑，才发现换货要自付运费回去检测，光是箱子就要50日元。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次选带免费退换标签的牌子吧。那把备选的B品牌写明了30天内上门取件，我帮你确认了运费全包。再发生相同问题，你只需拍视频上传就行。"
+        }
+      ],
+      "implicit_signal": "购物时优先考虑退换规则和长期维护成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次记便当的App，下载后它居然问我要读取通讯录。我直接卸了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我找到一款离线食谱App，只存本地文件，不需要注册和通讯录权限。这是它的隐私政策链接，只收集崩溃日志，不追踪内容。"
+        }
+      ],
+      "implicit_signal": "需要明确应用收集哪些数据才能决定是否使用"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买抹茶套装，商家非要我填真实全名和门牌号才能发货，我直接把订单取消了。有没有不用实名就能收到的替代方案？"
+        },
+        {
+          "role": "assistant",
+          "content": "附近那家乐天的小店支持便利店取货，收货人可以写昵称和电话后四位。这是取货码，你保留两天之内去拿就行。"
+        }
+      ],
+      "implicit_signal": "只披露完成任务最低限度的信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你在推荐NFC标签时，直接说了三四个测评网站的数据，但那些网站需要登录才能看完整榜单。不确定具体逻辑，我没法信任。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我换成那家店自己页面写的参数和保修期，加上我之前帮另一个用户查到的实际耗电测试截图。这次不通过第三方平台，直接给你原文。"
+        }
+      ],
+      "implicit_signal": "拒绝黑箱推荐和强制性公开信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚才填邮件订阅工具时，它问我职业和公司全称。我并不是很想暴露那部分信息。"
+        },
+        {
+          "role": "assistant",
+          "content": "那把行业改成制造，公司名留空，职位我用‘运营相关’代替吧。这样订阅确认信还是发给你，但你的档案信息对外是模糊的。"
+        }
+      ],
+      "implicit_signal": "默认脱敏处理个人信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月试用收纳盒订阅服务，首月免费，但我忘了在25号之前取消，第二月自动扣了1800日元。合同条款里根本没说自动续订的事。我不太相信这种定义了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次我们选单次配送而不是订阅制。另外，我把这家墨盒店的取消政策存成图片了——全部在线完成取消，不需要电话，且退订后不扣任何费用。"
+        }
+      ],
+      "implicit_signal": "厌恶隐性费用和不明确的取消规则"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个不锈钢收纳架，部件图里没标运费，还非要先注册才能看运费表。我直接退出了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那就看另一套，运费和税直接写在总价下面，满5000免运费，正好在26日内到货。颜色和尺寸一样。"
+        }
+      ],
+      "implicit_signal": "拒绝不能直接查清的超预算替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次想把购物清单分享给室友，但不想让对方看到我的收货地址和银行尾号。直接截屏再裁图太麻烦。能不能保存一个只包括物品和数量的版本？"
+        },
+        {
+          "role": "assistant",
+          "content": "我把清单导成了纯文字TXT，删掉地址和支付信息，只留品名和数量。放到一个候选文件夹里，室友可以手机直接打开，没有登录和同步过程。"
+        }
+      ],
+      "implicit_signal": "偏好本地存储和敏感数据的小心处理"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周去梅田的新展馆，按App路线走的，结果到站后桥封了，只能改道绕远。错过了预约时间。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次去中之岛，我在地图里存了两条步行方案，一条主路和一条河边绕行。每条都添加离线副本，万一没信号也能用。出发时间比预约提前40分钟，中间还能在河边长椅坐下。"
+        }
+      ],
+      "implicit_signal": "学习新路线时偏好有缓冲和离线备份的安排"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨晚想做咖喱，结果发现买一次香料包要1500日元，接近一周午餐预算了。没买成。"
+        },
+        {
+          "role": "assistant",
+          "content": "那今晚可以去楼下小超市买现成的咖喱块，一盒290日元可以用两次。加上洋葱和鸡胸肉，一顿控制在400日元内。味道也不差。"
+        }
+      ],
+      "implicit_signal": "预算敏感，不强迫自己超额买原材料"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周末临时被人拉去环球影城，虽然不错，但日票加快速通花了14000。月底账单一下子紧了不少。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这周五晚上可以去附近的独立书店，会员日有二手书市，入场免费，带一本不超过500日元，还能在楼顶看投影。整晚下来不会超800日元。"
+        }
+      ],
+      "implicit_signal": "周末休闲偏好小范围、预算明确的活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我说要买便携工作灯，你却推荐了直播间明星同款露营灯，光线参数完全不一样。那灯放在工厂里根本不够亮。"
+        },
+        {
+          "role": "assistant",
+          "content": "抱歉，我把工作场景的照度需求忘了。推荐带Cree灯珠的磁吸灯，6500K色温，亮度可调，而且直接贴铁架用。同样支持配件单独购买。"
+        }
+      ],
+      "implicit_signal": "混淆主业和消费角色，需要排除不相关推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前用过一个云笔记记库存数据，后来它更新了就不支持导出成CSV了，所有数据都卡在里面。很不方便。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次用本地Markdown+插件方案，每次更新都自动生成一份纯文本备份。即使换软件，也能拖拽导入Notion或Obsidian。"
+        }
+      ],
+      "implicit_signal": "优先选择能导出数据且不锁平台的工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我打算学用木工基础工具，看到一个小视频教切45°角，但是没讲怎么看刻度，实际切错了三块板子。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我们换一套文字教程，每步都有量尺读数和限位器图片。第一个项目是先切直边，每完成一步旁边就有合格样本对比图。你切完后可以拿照片来这对比。"
+        }
+      ],
+      "implicit_signal": "学习新事物需要示例和可复盘的标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次订温泉旅馆，在线支付后才发现取消要两小时排队打电话才受理，而且取消了还要扣订金。我不太放心。预约确认前，我得确认这个取消规则。"
+        },
+        {
+          "role": "assistant",
+          "content": "这家Agoda上的旅馆标注了免费取消到入住前24小时，并且取消按钮在订单页面直接可用，不需要打电话。我把取消政策和有无隐藏早餐费截图给你看。"
+        }
+      ],
+      "implicit_signal": "旅行服务偏好可取消和数据的清晰边界"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你说那家维修店可以修搅拌机，但一上来就让我拍厨房全景，还要登记住址。授权前我不太接受。那么，用最小信息登记能不能报价？"
+        },
+        {
+          "role": "assistant",
+          "content": "那就只给机器品牌和故障声视频。如果他们看完后坚持需要住址才能报价，那就换成第二家，那家只取型号和邮寄便签就行。回退方案是直接买同型号替换件自己换。"
+        }
+      ],
+      "implicit_signal": "方案结构遵循最小披露→可用方案→风险→回退"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看到打折的日式菜刀，只要7000日元，比我现在的好看很多。但我的刀也就买了一年，还能用。这笔算必须还是可推迟？"
+        },
+        {
+          "role": "assistant",
+          "content": "现在那把刀刀刃还够锋利，如果不是钝了或断柄，可以归到可推迟项。如果你喜欢那把形状，可以收藏等双十一，但不用为了折扣现在就替换。"
+        }
+      ],
+      "implicit_signal": "区分必须花费和可推迟花费，不冲动置换"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "退订之前，能否先查激光墨盒月付的总价？他说分期付款1999/月，但我怀疑总价超过直接买断。"
+        },
+        {
+          "role": "assistant",
+          "content": "我算了，分期12个月总价是23988，而同一款直接买断含税18900，差了5000多。所以我建议直接买断，取消订阅不买服务。如果不急就等下周的折扣。"
+        }
+      ],
+      "implicit_signal": "不接受不能先验查完整费用的方案，坚持有回退选择"
+    }
+  ]
+}

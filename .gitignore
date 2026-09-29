@@ -1,0 +1,23 @@
+/*
+!/.gitignore
+!/.gitattributes
+!/requirements-freeze.txt
+
+# 需要上传的目录
+!/eval/
+!/Prompts/
+!/data/
+
+# runresult / judgeresult 只保留空目录占位
+!/runresult/
+!/judgeresult/
+/runresult/*
+/judgeresult/*
+!/runresult/.gitkeep
+!/judgeresult/.gitkeep
+
+# 通用排除
+__pycache__/
+*.pyc
+*.orig
+.DS_Store

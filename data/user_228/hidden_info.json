@@ -1,0 +1,491 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_228",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:11:59",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_007",
+      "hidden_indirect_014",
+      "hidden_indirect_017",
+      "hidden_indirect_019"
+    ],
+    "content": [
+      "hidden_indirect_005"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_008",
+      "hidden_indirect_015"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_008",
+      "hidden_indirect_010",
+      "hidden_indirect_016",
+      "hidden_indirect_020"
+    ],
+    "entertainment": [
+      "hidden_indirect_012"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_009",
+      "hidden_indirect_019"
+    ],
+    "food": [
+      "hidden_indirect_011"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_010"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_009",
+      "hidden_indirect_012",
+      "hidden_indirect_021"
+    ],
+    "learning": [
+      "hidden_indirect_005",
+      "hidden_indirect_020"
+    ],
+    "privacy": [
+      "hidden_indirect_004",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "product": [
+      "hidden_indirect_006"
+    ],
+    "role_context": [
+      "hidden_indirect_016"
+    ],
+    "service": [
+      "hidden_indirect_006",
+      "hidden_indirect_013",
+      "hidden_indirect_017"
+    ],
+    "technology": [
+      "hidden_indirect_007",
+      "hidden_indirect_018"
+    ],
+    "travel": [
+      "hidden_indirect_002",
+      "hidden_indirect_011",
+      "hidden_indirect_014",
+      "hidden_indirect_015",
+      "hidden_indirect_021"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次订酒店选了预付不可退，结果行程变了，白白损失一晚费用。还剩18分钟就得确认当前这个选项。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次优先看可免费取消的首晚住宿，即使单价高一点，现金流风险更低。列两个选项：可取消4,200日元 vs 预付不可退3,800日元。"
+        }
+      ],
+      "implicit_signal": "优先考虑可取消选项和总成本，牺牲灵活度换取现金流安全"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次说好的退订窗口，实际取消时被收了手续费，规则里小字没提。帮我核对这家酒店的取消政策。"
+        },
+        {
+          "role": "assistant",
+          "content": "已查原始条款：入住前48小时免费，之后收首晚50%。截图附上。可替代方案是隔壁民宿，同样条件但只收30%。"
+        }
+      ],
+      "implicit_signal": "要求明确取消规则和备选方案，不接受笼统推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前用日历记住宿对比，9个标签太乱，最后漏了清洁费。把这次选项整理成一张表，按必要/可推迟列。"
+        },
+        {
+          "role": "assistant",
+          "content": "已按格式：必要项（房费+税+清洁费）、可推迟项（加早、停车）、风险阈值（取消期限与退款比例）。附PDF版本供导出。"
+        }
+      ],
+      "implicit_signal": "偏好列表式成本分解，避免决策碎片化"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次填邮箱查空房，结果收到推销电话，平台用了我的号码。这次别让我注册任何新东西。"
+        },
+        {
+          "role": "assistant",
+          "content": "好，只使用已有账号的酒店直订页面或支持访客结算的渠道。搜索范围排除需要手机验证的第三方。"
+        }
+      ],
+      "implicit_signal": "拒绝需要注册并暴露联系方式的比价方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次查京都住宿推荐，助手给了10篇博客，看完更迷惑。直接告诉我怎样判断民宿是否安静。"
+        },
+        {
+          "role": "assistant",
+          "content": "安静标准：看评论里出现“街道噪音”的次数超3次就排除；距离主路至少一条巷子；优先选2楼以上无电梯老建筑。"
+        }
+      ],
+      "implicit_signal": "需要具体示例和判断标准，而不是一堆链接"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买便携水壶，第3周加热底座就松了，售后要寄回中国，运费比水壶还贵。这次选旅馆时别推荐这种一次性设备。"
+        },
+        {
+          "role": "assistant",
+          "content": "收到。旅馆配备的公用饮水机可替代。若需自备，推荐本地品牌Tiger，大阪有维修点，保修期内免费检测。"
+        }
+      ],
+      "implicit_signal": "看重长期使用成本和维护，而非初期低价"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我一直在用笔记应用记录行程，但换了手机后旧笔记格式乱掉。这次住宿确认信息存成纯文本可导出。"
+        },
+        {
+          "role": "assistant",
+          "content": "确认邮件直接另存为PDF，同时复制到本地.txt文件夹，保留订房编号和取消截止时间。."
+        }
+      ],
+      "implicit_signal": "选择跨平台可导出数据的工具，避免锁定"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次按最低价预估开销，结果现场网络断了，临时买了流量包多花1500。这次把所有可能附加费按上限算。"
+        },
+        {
+          "role": "assistant",
+          "content": "明白。住宿预算按最大可能：房费+清洁费+延时费+附近网络应急包（约¥3000上限），总预算设¥18000，实际可用¥15000。"
+        }
+      ],
+      "implicit_signal": "主导保守估算，宁可多留余地也不冒超支风险"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上回推荐旅馆只说很便宜，到现场发现停车费另算。给我这次每个候选的总价范围和所含项目。"
+        },
+        {
+          "role": "assistant",
+          "content": "已核算：选项A（¥5200-6200含清洁+Wi-Fi，停车另¥800）；选项B（¥4800-5300全包但不可取消）；选项C（¥4400-4900不含停车，可免费取消至入住日）。"
+        }
+      ],
+      "implicit_signal": "不接受没有价格范围和假设条件的建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次定了可取消，但忘了在限期内操作，当天才取消被扣半额。这次把取消截止时间设进日历提醒。"
+        },
+        {
+          "role": "assistant",
+          "content": "已设置：确认后立即创建日历事件，标题含“取消截止日”，提前48小时、24小时各提醒一次。同步到手机和笔记本。"
+        }
+      ],
+      "implicit_signal": "需要提醒取消规则而不是事后补救"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次晚餐选得太油腻，晚上胃不舒服，第二天早上没法按计划出门。这次住宿附近找清淡、快吃的店。"
+        },
+        {
+          "role": "assistant",
+          "content": "住所步行5分钟内筛选结果：乌冬面店（¥600起，营业至21:30）、便利店关东煮（¥300起，24h）、定食屋（含沙拉，¥900）。优先推荐乌冬面，不耽误7:00出发。"
+        }
+      ],
+      "implicit_signal": "饮食安排不破坏第二天行程，且预算敏感"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去热门景点，排队40分钟，里面全是推销纪念品的。这次住宿附近有没有人少、有内容的小型活动？"
+        },
+        {
+          "role": "assistant",
+          "content": "区域内有小博物馆（门票¥400，非假日人少，展品为当地手工艺史）及社区图书馆免费开放。避免推荐人形馆或商业街巡游。"
+        }
+      ],
+      "implicit_signal": "避开过度拥挤及强营销活动，要求小型真实体验"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次用旅游App订旅馆，App自动开启了位置追踪，一天后才发现。这次只通过邮件确认，不要下新应用。"
+        },
+        {
+          "role": "assistant",
+          "content": "全部通过浏览器直接与旅馆前台邮件沟通，不登录第三方平台。位置信息只提供邮政编码范围，不分享精确坐标。"
+        }
+      ],
+      "implicit_signal": "服务必须明确数据边界，不愿被动分享位置信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次旅馆便宜但临街，整晚卡车声。这次多花一点也接受，但必须确认房间不靠主干道。"
+        },
+        {
+          "role": "assistant",
+          "content": "候选A、C已排除临街房。A为内院房（+¥500），C为后侧房（同价无额外）。建议再订前致电确认具体房号方位，费用多出¥0~500在预算内。"
+        }
+      ],
+      "implicit_signal": "住宿前确认安全与安静，愿意为降低风险多付费"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次约了同事一起住，结果他临时退出了，只剩我一人负担双人房。先按单人最优选，同行来再调整。"
+        },
+        {
+          "role": "assistant",
+          "content": "优先单人可取消房型。若同行确认，48小时前可免费换双人房（差价¥2200），否则维持原单人间方案，避免多付。"
+        }
+      ],
+      "implicit_signal": "路线需要留缓冲，防止因同行人变动而陷入被动"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "最近课程论文压着，旅行只能占很少时间。把所有步骤拆成30分钟能完成的小块，从预订开始。"
+        },
+        {
+          "role": "assistant",
+          "content": "分块：①选3个候选（15min）→②对比取消/费用（10min）→③电话确认安静房（5min）→④支付并将确认信息存档（5min）。全程控制45分钟内。"
+        }
+      ],
+      "implicit_signal": "把旅行当作可拆解的任务组合，对每个步骤保持审计思维"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次取消后说3天退款，实际等了8天，信用卡账单差点逾期。这次问清楚退款到账天数。"
+        },
+        {
+          "role": "assistant",
+          "content": "已询问前台：取消后原路退款，信用卡需5-7个工作日，便利店里付费可当场退现金。建议用便利店支付并确认即时退规则。"
+        }
+      ],
+      "implicit_signal": "确认取消规则时同时询问退款周期，避免现金流意外"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次用在线表格写行程，但后来服务商改了导出权限，数据取不出。用本地笔记+云盘手动备份。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐组合：Obsidian本地笔记（免费，纯文本）+ Syncthing自建同步（无服务器），或Google Drive手动上传PDF。确保任何时候都可导出为.md/.pdf。"
+        }
+      ],
+      "implicit_signal": "偏好跨设备同步但能自主导出数据的工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次选了最便宜的，结果没有洗浴用品，又花¥1200买套装。列明细时把这类潜在忽略项标出。"
+        },
+        {
+          "role": "assistant",
+          "content": "更新必要项：房费+税+清洁费+基本洗浴（牙膏毛巾）。注：候选A提供免费洗浴，候选C需自带。省钱方案：自带小瓶装，省¥800。"
+        }
+      ],
+      "implicit_signal": "要求价格范围和假设条件，且区分必要与可推迟"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周用新记账方法统计旅行开销，但月底才发现多算了。这次住宿后隔天做个复盘检查实际开销对比预算。"
+        },
+        {
+          "role": "assistant",
+          "content": "入住次日清晨安排10min复盘：实际房费vs预算；隐藏费用（如有）；取消窗口是否仍有效。结果记入本地笔记，作为下次预估基线。"
+        }
+      ],
+      "implicit_signal": "需要短周期反馈和可复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次就被推荐住景点旁边，结果人潮拥挤，噪音大且吃的贵。这次给我备选，如果首选不行立刻换。"
+        },
+        {
+          "role": "assistant",
+          "content": "备选方案已前置于计划：首选A（街区安静民宿，距车站10分钟步行，可取消至前一天）；备选B（同价位胶囊旅馆，私人舱，24h入住，随时可退）。"
+        }
+      ],
+      "implicit_signal": "避免把热门景点当作默认最佳，且拒绝无备选路径的计划"
+    }
+  ]
+}

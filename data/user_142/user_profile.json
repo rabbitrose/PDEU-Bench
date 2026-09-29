@@ -1,0 +1,361 @@
+{
+  "user_id": "user_142",
+  "explicit_preferences": {
+    "user_profile": "TurpCo Industries新聘的总法律顾问",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Alexandra Chen",
+        "age": 42,
+        "gender": "女性",
+        "location": "New York, NY, USA",
+        "languages": [
+          "英语",
+          "普通话"
+        ],
+        "education_level": "法学博士（JD）",
+        "occupation": "总法律顾问",
+        "industry": "工业制造（TurpCo Industries）",
+        "seniority": "高管",
+        "household": "已婚，有两个孩子（年龄10岁和13岁）",
+        "life_stage": "职业生涯中期，以家庭为重，追求工作与生活平衡"
+      },
+      "physical_profile": {
+        "height_cm": 170,
+        "general_appearance": "专业、合身的着装，身材苗条，深色头发整洁，戴眼镜",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "有干劲、注重细节、果断的法律高管，具有强烈的道德感和务实的问题解决方法。",
+        "big_five": {
+          "openness": 35,
+          "conscientiousness": 92,
+          "extraversion": 60,
+          "agreeableness": 48,
+          "neuroticism": 55
+        },
+        "strengths": [
+          "专业法律分析",
+          "战略谈判",
+          "注重细节",
+          "风险管理",
+          "危机管理"
+        ],
+        "weaknesses": [
+          "完美主义",
+          "对模糊不清缺乏耐心",
+          "倾向于微观管理",
+          "难以委派任务"
+        ],
+        "values": [
+          "正直",
+          "效率",
+          "合规",
+          "责任感"
+        ],
+        "motivations": [
+          "保护公司免受法律风险",
+          "确保合规",
+          "建立强大的法律团队",
+          "在法律范围内实现业务目标"
+        ],
+        "stress_triggers": [
+          "最后一刻的监管变化",
+          "不完整的数据或模糊的指示",
+          "鲁莽的商业决策",
+          "会议准备不足"
+        ]
+      },
+      "background": {
+        "summary": "在顶级律师事务所从事公司法和合规工作15年，三个月前转入TurpCo Industries担任内部法务。以处理高额并购交易而闻名。毕业于排名前十的法学院。",
+        "education": [
+          "哈佛法学院法学博士（JD）",
+          "加州大学伯克利分校政治学学士"
+        ],
+        "career_highlights": [
+          "主导了一项20亿美元收购的尽职调查",
+          "在重大证券诉讼中为公司辩护",
+          "为新国际法规实施了合规计划"
+        ]
+      },
+      "lifestyle": {
+        "typical_day": "早上5:30起床跑步，7:30到办公室，经常待到晚上7点。晚上是家庭时间，工作电话有限。周末包括孩子活动和偶尔的晚宴聚会。",
+        "habits": [
+          "晨跑（每日5公里）",
+          "每周阅读法律期刊",
+          "更喜欢在家做饭而不是外出就餐"
+        ],
+        "work_life_balance": "积极尝试改善平衡；使用日历块安排家庭时间。在重大交易期间偶尔周末工作。"
+      },
+      "interests": {
+        "professional": [
+          "公司法更新",
+          "并购趋势",
+          "合规技术",
+          "法律风险管理"
+        ],
+        "personal": [
+          "跑步",
+          "阅读法律惊悚小说",
+          "古典音乐",
+          "前往历史名城旅行"
+        ],
+        "hobbies": [
+          "弹钢琴（中级）",
+          "烘焙酸面包"
+        ]
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "news_sources: Wall Street Journal, Bloomberg Law, Harvard Law Review",
+          "感兴趣的主题：监管变化、网络安全法、知识产权",
+          "内容格式：长篇文章、播客（法律/合规）、高管摘要",
+          "内容必须匹配此用户的独特工作模式：执行顾问模式：决策优先，特权意识，简洁的风险姿态。",
+          "拒绝通用助手框架：不要解释基本法律，奉承高管，或掩盖行动呼吁。"
+        ],
+        "product_preferences": [
+          "技术：苹果生态系统（MacBook、iPhone）、法律研究工具（Westlaw、LexisNexis）、项目管理软件（Asana、Jira）",
+          "工作场所：站立式办公桌、降噪耳机、人体工学椅",
+          "个人：运动服（Nike）、厨房小工具（KitchenAid）、旅行箱（Rimowa）",
+          "产品应通过用户自己的权衡视角选择：决策、风险敞口、缓解措施、负责人、董事会备注语言。"
+        ],
+        "service_preferences": [
+          "专业服务：外部律师事务所（专业知识）、合规咨询、高管教练",
+          "个人服务：家庭清洁服务（每两周一次）、私人教练（每周）、忙碌周的餐包配送",
+          "只有当服务保留此决策优先级时才可接受：董事会防御性和下行风险控制优于生活方式优化。"
+        ],
+        "learning_preferences": {
+          "style": [
+            "阅读官方文件和判例法",
+            "带问答的互动网络研讨会",
+            "同行讨论组"
+          ],
+          "formats": [
+            "白皮书",
+            "视频讲座（1-2小时）",
+            "现场研讨会"
+          ],
+          "areas_of_interest": [
+            "人工智能与法律",
+            "国际贸易合规",
+            "ESG法规"
+          ]
+        },
+        "travel_preferences": {
+          "business": [
+            "仅直飞航班",
+            "首选航空公司：达美航空",
+            "万豪酒店"
+          ],
+          "leisure": [
+            "文化目的地（博物馆、历史遗址）",
+            "适合家庭度假的度假村",
+            "美国公路旅行"
+          ],
+          "avoid": [
+            "邮轮",
+            "背包旅行",
+            "高风险目的地"
+          ]
+        },
+        "food_preferences": {
+          "cuisine": [
+            "意大利语",
+            "日本料理",
+            "现代美式"
+          ],
+          "dietary_restrictions": [
+            "低碳水",
+            "避免加工食品"
+          ],
+          "favorite_dishes": [
+            "烤三文鱼配芦笋",
+            "寿司",
+            "卡普里沙拉"
+          ],
+          "avoid": [
+            "辛辣食物",
+            "快餐"
+          ]
+        },
+        "entertainment_preferences": {
+          "movies": [
+            "法律剧",
+            "历史史诗",
+            "纪录片"
+          ],
+          "tv_shows": [
+            "《王冠》",
+            "《金装律师》",
+            "《继承之战》"
+          ],
+          "music": [
+            "古典（巴赫、贝多芬）",
+            "爵士乐",
+            "独立摇滚"
+          ],
+          "books": [
+            "法律惊悚小说（约翰·格里森姆、斯科特·图罗）",
+            "领袖传记",
+            "关于法律与伦理的非虚构作品"
+          ]
+        },
+        "technology_preferences": {
+          "devices": [
+            "iPhone 15 Pro",
+            "MacBook Pro",
+            "iPad Pro"
+          ],
+          "software": [
+            "Microsoft Office 365",
+            "Zoom",
+            "Slack",
+            "DocuSign"
+          ],
+          "cutting_edge": [
+            "对AI合同审查工具感兴趣",
+            "使用区块链进行安全文档共享"
+          ],
+          "avoid": [
+            "未经证实的技术的早期采用者",
+            "用于工作的谷歌产品"
+          ]
+        },
+        "privacy_preferences": {
+          "data_sharing": [
+            "偏好最小化共享",
+            "要求对外部服务签署NDA"
+          ],
+          "security": [
+            "使用VPN",
+            "所有账户启用双因素认证",
+            "避免使用公共Wi-Fi工作"
+          ],
+          "consent": [
+            "仅明确选择加入",
+            "阅读隐私政策"
+          ]
+        },
+        "budget_preferences": {
+          "spending_style": [
+            "价值高于奢华",
+            "愿意为长期使用投资质量",
+            "个人物品注重预算，专业工具较少"
+          ],
+          "splurge_areas": [
+            "高质量工作设备",
+            "跑鞋",
+            "法律会议"
+          ],
+          "save_areas": [
+            "服装（购买中档）",
+            "娱乐（流媒体而非影院）"
+          ]
+        },
+        "personalization_directives": {
+          "style_contract": "高管顾问模式：决策优先，了解特权，简洁的风险表述。",
+          "decision_priority": "董事会防御性和下行风险控制优于生活方式优化。",
+          "evidence_contract": "希望权威来源，但仅限法律相关的部分。",
+          "format_contract": "决策、风险敞口、缓解措施、责任人、董事会报告语言。",
+          "anti_default_assistant_behavior": "不要解释基本法律，不要奉承高管，也不要掩埋电话。",
+          "distinctive_quirks": [
+            "旅行和跑步计划必须保护日历控制。",
+            "家庭文化旅行应精心策划但不要安排过满。",
+            "外部法律顾问用于专门风险，而非默认外包。"
+          ],
+          "hard_avoidances": [
+            "乐观的交易语言",
+            "数据来源不明",
+            "忽视高管时间稀缺性的健康建议"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "dislikes": [
+          "模糊指令",
+          "低效会议",
+          "产品过度推销",
+          "准备不足",
+          "嘈杂环境"
+        ],
+        "constraints": [
+          "时间有限（紧凑的日程）",
+          "外部律师的预算限制",
+          "重大决策需要董事会批准",
+          "经常只在北美境内旅行"
+        ]
+      },
+      "communication_style": {
+        "tone": "直接、专业、精确",
+        "formality_level": "书面正式，会议半正式",
+        "preferred_channel": [
+          "电子邮件处理详细事项",
+          "电话/视频处理紧急问题",
+          "面对面进行敏感讨论"
+        ],
+        "listening_style": "分析型，提出澄清问题，做笔记",
+        "feedback_style": "建设性但坦率，期待对方同样"
+      },
+      "decision_making": {
+        "approach": "数据驱动、风险意识、咨询专家、首先考虑法律影响",
+        "speed": "深思熟虑但高效；偏好经过全面分析后做决定",
+        "factors": [
+          "法律合规",
+          "业务影响",
+          "声誉风险",
+          "可行性"
+        ],
+        "collaboration": "寻求CFO和CEO的意见，但法律事务最终由自己决定"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "起草法律备忘录",
+          "审查合同",
+          "合规审计",
+          "新产品风险评估",
+          "准备法律问题相关的董事会演示"
+        ],
+        "preference_conflicts": [
+          "合同审查中的彻底性与速度",
+          "外部律师选择中的成本与质量",
+          "产品开发中的创新与合规"
+        ],
+        "ambiguity_to_preserve": [
+          "一些解释各异的监管灰色地带",
+          "国际商务的文化细微差别",
+          "法律风险与商业机会之间的权衡"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:43",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "专业、尊重、简洁",
+            "response_length": "偏好简短摘要或要点以便快速决策；复杂时提供详细解释",
+            "evidence_expectation": "始终引用来源并提供数据。期望事实核查。",
+            "formatting": "清晰的标题、编号列表、段落不超过3句。使用正式语言。",
+            "proactive_behavior": "预测监管变化并提醒我。总结冗长文档的要点。建议下一步行动。",
+            "things_to_avoid": [
+              "无解释的行话",
+              "过于随意的语言",
+              "未经请求的法律事务意见",
+              "未经确认的假设"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "准备东南亚合资企业的法律风险评估",
+            "计划一次费城周末家庭文化探索之旅",
+            "在繁忙的工作日程中设计可持续的晨跑习惯"
+          ]
+        }
+      }
+    }
+  }
+}

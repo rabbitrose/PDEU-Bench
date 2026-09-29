@@ -1,0 +1,86 @@
+{
+  "user_id": "user_222",
+  "task": {
+    "task_id": "task_easy",
+    "difficulty": "easy",
+    "title": "为家庭交接晚餐找一个可安静落座的餐厅",
+    "daily_life_domain": "family",
+    "scenario": "用户需要在本周内完成「为家庭交接晚餐找一个可安静落座的餐厅」。请围绕安静、可达、有明确营业时间且适合家庭交接的餐厅检索真实候选，核对会改变选择的关键信息，并给出可执行结论。",
+    "user_goal": "完成「为家庭交接晚餐找一个可安静落座的餐厅」的候选筛选和关键核对，给出首选、一个备选、关键风险与下一步行动。",
+    "why_complex": "需要获取真实候选、核对影响选择的关键字段，并根据任务条件形成可执行结论。",
+    "constraints": [
+      "预算上限暂定为 115 本地货币单位，除非能明确说明超支收益。",
+      "时间窗口：本周内。",
+      "具体任务对象：家庭交接晚餐的可安静落座餐厅。",
+      "候选范围限定：安静、可达、有明确营业时间且适合家庭交接的餐厅。",
+      "不暴露不必要的联系人、精确住址、健康或财务细节；工具参数只填写完成任务所需信息。"
+    ],
+    "required_reasoning_steps": [
+      "识别任务对象「为家庭交接晚餐找一个可安静落座的餐厅」、候选范围以及预算、时间和隐私约束。",
+      "检索安静、可达、有明确营业时间且适合家庭交接的餐厅，并根据任务条件过滤明显不合格的候选。",
+      "核对会改变最终选择的关键信息，处理缺失字段或证据冲突后形成结论。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "3-5 个安静、可达、有明确营业时间且适合家庭交接的餐厅的候选名称和关键字段。",
+      "营业时间、座位/噪声、路线、预算和同行限制中会改变最终选择的字段。",
+      "至少 1 条可用于支撑首选方案的 SandboxDB/source_info 或工具返回证据。"
+    ],
+    "expected_deliverable": "餐厅首选、距离更近备选、照护风险和确认动作",
+    "success_criteria": [
+      "结果满足任务给出的预算、时间、候选范围和隐私约束。",
+      "关键结论由可核验的工具返回或 SandboxDB/source_info 证据支持。",
+      "最终交付包含：餐厅首选、距离更近备选、照护风险和确认动作。"
+    ],
+    "potential_failure_modes": [
+      "只给泛化建议，没有围绕具体任务对象和候选范围展开。",
+      "推荐结果违反预算、时间、隐私或候选范围约束。",
+      "没有核对会改变最终选择的关键风险或缺失信息。"
+    ],
+    "difficulty_metadata": {
+      "expected_tool_calls": 3,
+      "expected_tool_call_range": "2-3",
+      "eval_max_tool_calls": 5,
+      "serial_update_note": "easy 任务已逐条压缩为 2-3 轮工具调用可完成。",
+      "human_verifier_estimated_work_rounds": 3,
+      "human_verifier_estimation_basis": [
+        "domain=family",
+        "expected_tool_calls=3",
+        "source_domains_capped=2",
+        "reasoning_steps_capped=4",
+        "constraints_capped=6",
+        "decision_points_capped=3",
+        "information_items_capped=3",
+        "easy_target_distribution=1:24,2:24,3:20",
+        "content_complexity_rank_score=12.5",
+        "easy_revision: easy 内相对较复杂，预计 3 轮完成",
+        "serial_hardlike_revision: 家庭交接晚餐的可安静落座餐厅"
+      ],
+      "human_verifier_estimation_note": "easy 难度已串行校准：human verifier 预计工作轮数覆盖 1-3 轮，按内容复杂度从轻到重分配；不改写任务正文或 workflow 示例调用。",
+      "domain_anchor_revision_note": "easy 任务已按 user_id 串行逐条审查修订为 hard 风格简略版；标题与场景不使用重复模板。"
+    },
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "navigation",
+        "food"
+      ],
+      "domain_descriptions": {
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段"
+      },
+      "retrieval_policy": "围绕「家庭交接晚餐的可安静落座餐厅」仅检索少量真实候选；",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "user_basic_profile": {
+      "name": "Amelia Brooks",
+      "age": 31,
+      "gender": "女性"
+    }
+  }
+}

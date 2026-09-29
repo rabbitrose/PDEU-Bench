@@ -1,0 +1,106 @@
+{
+  "user_id": "user_110",
+  "task": {
+    "task_id": "task_hard",
+    "title": "为支持小组安排嘉宾演讲系列",
+    "daily_life_domain": "work",
+    "scenario": "Maria 协调一个支持小组，希望在接下来的 3 个月内邀请一系列客座演讲者分享多样的康复故事。她的预算有限（每位演讲者 150 美元津贴），需要安排在周一晚上（小组会议时间）进行演讲。她必须选择经历与小组主题（创伤、哀伤、癌症康复）相符的演讲者，并确保他们具有吸引力和同理心。此外，她需要准备场地（社区中心房间）、向成员宣传，并处理外地演讲者的交通和住宿需求。",
+    "user_goal": "为接下来的 3 个月制定一个包含 4 位客座演讲者的日程表，要求鼓舞人心、在后勤上可行，并尊重预算和小组需求。",
+    "why_complex": "需要多步骤推理：识别潜在演讲者、筛选合适人选、协商可用时间、管理预算限制、协调后勤以及与小组沟通。涉及启发价值与成本之间的权衡，以及演讲者可用时间的调度。",
+    "constraints": [
+      "预算：每位演讲者津贴 150 美元，4 位演讲者共计 600 美元。",
+      "日程：会议时间为每周一晚上 7-9 点；需避开节假日。",
+      "场地：社区中心房间可容纳 30 人；需确保可用性。",
+      "多样性：演讲者应覆盖不同主题（创伤、哀伤、康复、韧性）。",
+      "差旅：部分演讲者可能在本地，部分可能需要在预算内报销里程。"
+    ],
+    "required_reasoning_steps": [
+      "步骤 1：识别与小组主题匹配的潜在演讲者来源（本地组织、既往参与者、在线网络）。",
+      "步骤 2：筛选出 6-8 位候选人，核实其演讲风格是否与小组价值观一致（共情、鼓舞、非临床）。",
+      "步骤 3：联系候选人，确认他们在接下来 3 个月内周一晚间的可用性，并讨论津贴和差旅要求。",
+      "步骤 4：最终确定 4 位主题均衡的演讲者，确保没有两位过于相似；确认避免社区中心关闭的日期。",
+      "步骤 5：创建包含主题和简短简介的日程表；为这些日期预订社区中心房间。",
+      "步骤 6：规划差旅报销（仅里程，预算内）和所需材料（投影仪、讲义）。",
+      "步骤 7：起草给小组成员的沟通信息，附上日程和每位演讲者的简短描述。",
+      "步骤 8：在每位演讲者演讲前一周确认所有细节。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "未来 3 个月社区中心的确切可用时间（包括节假日关闭）。",
+      "潜在演讲者候选人名单及其报价。",
+      "外地演讲者的差旅费用（按 IRS 标准报销里程）。",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "一份详细的三个月演讲者日程表，包含日期、主题、演讲者姓名、简介和预算明细；一份面向成员的沟通计划；一份会前任务清单。",
+    "success_criteria": [
+      "日程表包括4位已确认的演讲者，主题多样。",
+      "总费用不超过600美元预算。",
+      "所有周一日期均可使用社区中心。",
+      "成员在第一次演讲前至少两周收到清晰的日程表。",
+      "演讲者的风格与团体价值观一致（通过简短电话面试评估）。",
+      "与主要节假日或团体休息时间无日程冲突。",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "忽视预算限制（超出津贴总额）。",
+      "在未确认社区中心可用性的情况下安排演讲者。",
+      "选择风格过于临床或缺乏敏感性的演讲者。",
+      "未能向成员传达日程变更。",
+      "未考虑旅行成本导致超支。",
+      "未就感兴趣的主题征求团体反馈。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 6,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 9,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=11",
+        "constraints_capped=5",
+        "decision_points_capped=4",
+        "information_items_capped=6",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=32.2",
+        "hard_revision: 内容负载较高，保留少量 9 轮作为上尾",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Maria Rodriguez",
+      "age": 45,
+      "gender": "女性"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "user_id": "user_107",
+  "task": {
+    "task_id": "task_hard",
+    "title": "为科技客户准备创新工作坊提案",
+    "daily_life_domain": "work",
+    "scenario": "一家金融科技领域的潜在客户联系了Marcus，希望他主持一个为期两天的创新工作坊。Marcus需要量身定制一个利用设计思维和开放创新的提案，并包含他过往工作中的案例研究。客户是一家快速发展的初创公司，有50名员工，位于奥斯汀。Marcus有一周时间交付提案，而他现有的客户工作占用了他上午的时间。",
+    "user_goal": "打造一个引人入胜、量身定制的提案，赢得客户的业务",
+    "why_complex": "需要研究金融科技趋势，选择合适的创新框架，平衡定价与感知价值，并将他来自咨询和拳击（纪律、韧性）的独特价值主张整合起来。",
+    "constraints": [
+      "时间：5天；对金融科技了解有限；不能因为现有项目而过度承诺工作时间；定价需有竞争力但仍盈利。"
+    ],
+    "required_reasoning_steps": [
+      "1. 研究客户的金融科技细分领域及近期趋势。",
+      "2. 确定最合适的创新框架（设计思维、精益创业、开放创新）。",
+      "3. 制定为期两天的工作坊议程，包含活动和交付物。",
+      "4. 从他的经验中选取相关案例研究（例如数字化转型）。",
+      "5. 根据市场行情和他的价值（高级顾问）确定定价。",
+      "6. 使用模板起草提案文档，强调投资回报率。",
+      "7. 提交前与一位值得信赖的同行进行审查和完善。",
+      "8. 准备一份简短的推介幻灯片用于后续电话沟通。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "客户的具体创新挑战、时间预期、预算范围、决策者。",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "一份专业的提案文档（包含议程、案例研究、定价和预期成果）以及一份简短的推介幻灯片。",
+    "success_criteria": [
+      "客户积极回应或要求后续会议；提案符合Marcus的价值观和约束条件；按时交付。",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "忽略客户行业的细节；提案过于笼统；定价过高或过低；因其他承诺而错过截止日期。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 8,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 8,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=11",
+        "constraints_capped=4",
+        "decision_points_capped=1",
+        "information_items_capped=3",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=27.25",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Marcus Chen",
+      "age": 34,
+      "gender": "男性"
+    }
+  }
+}

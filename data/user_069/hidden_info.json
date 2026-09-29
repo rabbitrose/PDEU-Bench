@@ -1,0 +1,512 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_069",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:27:37",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 22,
+  "composition": {
+    "episodic_preference_trace": 22
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_002",
+      "hidden_indirect_009",
+      "hidden_indirect_021"
+    ],
+    "content": [
+      "hidden_indirect_003",
+      "hidden_indirect_010",
+      "hidden_indirect_017",
+      "hidden_indirect_022"
+    ],
+    "decision_priority": [
+      "hidden_indirect_002",
+      "hidden_indirect_007",
+      "hidden_indirect_015"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_001",
+      "hidden_indirect_005",
+      "hidden_indirect_008",
+      "hidden_indirect_014",
+      "hidden_indirect_020"
+    ],
+    "entertainment": [
+      "hidden_indirect_012"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_004",
+      "hidden_indirect_008",
+      "hidden_indirect_019"
+    ],
+    "food": [
+      "hidden_indirect_013"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_006",
+      "hidden_indirect_012",
+      "hidden_indirect_016",
+      "hidden_indirect_022"
+    ],
+    "learning": [
+      "hidden_indirect_011"
+    ],
+    "privacy": [
+      "hidden_indirect_007",
+      "hidden_indirect_014"
+    ],
+    "product": [
+      "hidden_indirect_009",
+      "hidden_indirect_021"
+    ],
+    "role_context": [
+      "hidden_indirect_017"
+    ],
+    "service": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_015",
+      "hidden_indirect_016",
+      "hidden_indirect_018"
+    ],
+    "technology": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_020"
+    ],
+    "travel": [
+      "hidden_indirect_005",
+      "hidden_indirect_013",
+      "hidden_indirect_019"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "试用了一个AI写作辅助，它把第二章主角的独白改成了更简练的句子。但我需要那种缓慢的语调来建立情绪——撤回那建议后才知道它不懂我开头铺垫的意图。"
+        },
+        {
+          "role": "assistant",
+          "content": "明白，下次我们试试ProWritingAid纯粹的报告模式，它只标记可选项而不主动改动你的原文，这样你能保留对声音风险的控制。"
+        }
+      ],
+      "implicit_signal": "检查声音风险：AI工具应以评估而非覆盖为导向"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次用免费平台发布一本短篇，虽然省了钱，但亚马逊的算法根本推不到文学读者——有200个下载全是猜谜类点击，浪费了积蓄情绪的作品。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我们这次把Draft2Digital的专业分发达套餐纳入预算，它能定向送到文学小说分类的订阅者，多付$49但渠道匹配度更高。"
+        }
+      ],
+      "implicit_signal": "按读者契合优先于成本：愿意为匹配渠道付费"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次直接把原稿格式上传到KDP，没设定好章节分隔和献给页的元数据，结果在Kindle上读者看到第一章前先跳出技术引用——我得重做。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我们这次先确认这部中篇的创意意图：你希望从哪章切入，献给页是否放独立读者群的名字，然后我按这顺序列出元数据和渠道选择。"
+        }
+      ],
+      "implicit_signal": "发布计划必须从创意意图出发，而非从技术选项列表"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "Reedsy的广告说他们合作作者的基数是35万，但我想知道的是，有没有跟我差不多——文学小说、首印量五百册、自己负责封面——的作者用他们的编辑匹配赚回投入？"
+        },
+        {
+          "role": "assistant",
+          "content": "我可以查Reedsy案例库，过滤文学小说和独立出版标签，找三个具体作者的收支复盘发给你。不看总数字，看案例。"
+        }
+      ],
+      "implicit_signal": "拒绝通用统计数据，要同类型出版案例"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次带全家去新奥尔良过周末，答应自己早起写稿，但酒店Wi-Fi在房间极其慢，最后三天没进文档，回来进度落后两周。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我们规划下一次文学度假时，先查Airbnb的评论里有没有提到网络稳定的，且要包含每天两小时不间断的单独工作间——我帮你挑三个选项后你定。"
+        }
+      ],
+      "implicit_signal": "家庭度假必须预留写作时段否则不出发"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "Box.com推销说他们的成长计划可以使我的读者增长率提高40%，但那个方案附带的是每周给你发优化提示和分享机制，我怕变成另一个营销机器。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我们完全不考虑那个方案，也不用“增长”作为筛选门槛。直接比对各家无推销版本——Google Drive、OneDrive——只按文件稳定性和协作功能选。"
+        }
+      ],
+      "implicit_signal": "拒绝以增长为逻辑的替代建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "Kobo把作者协议的权限写得很宽，说要用作品片段做推荐算法训练。我知道大平台都这么做，但我的角色对话是小说核心资产，不想被后台随便捞走。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我们先排除任何训练条款未明确限定的渠道。Draft2Digital和Smashwords的协议里写明了只用于发行展示，不用于母公司AI训练——优先考虑。"
+        }
+      ],
+      "implicit_signal": "版权控制比便捷重要"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "IngramSpark销售代表说他们的发行网络覆盖7000家图书馆，但我想知道的是有多少家独立书店真的会进货像我这类非类型文学——而不是亚马逊自家上榜书。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找到IngramSpark最近一份第三方报告中列出的文学小说类独立书店文学采购数据：全美约127家书店定期按目录选书，不是入库就自动上架——这对你的案例更有参考性。"
+        }
+      ],
+      "implicit_signal": "要求具体出版实例而非营销数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "试用了一款名片扫描加联系人管理的软件，好用但月费$8。想想我一年才参加三次活动，累积支出超过随时放弃的损失——不如买一次性软件。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我帮你筛选只支持买断的同类工具，比如Evernote的离线版优惠或直接导出到Contacts的功能就行——不再推荐订阅制。"
+        }
+      ],
+      "implicit_signal": "愿意一次付费而非持续订阅"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周你给我的平台对比表挺好，但列出的都是功能点。我实际想知道的是，每个渠道的读者比如Kobo的能够在书评里给出10条以上的深入讨论——这是承诺不是数字。"
+        },
+        {
+          "role": "assistant",
+          "content": "新版本表格：加一列‘读者承诺指标’——基于该平台用户对独立文学类作品的均回复深度和评论字数，最后附‘你的下一步稿行动’建议：今天就为那本书写一个200字的渠道专属简介。"
+        }
+      ],
+      "implicit_signal": "交付物必须包含受众承诺与下一步行动"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看了你推荐那个关于 Epub 元数据设置的 YouTube 教程，四十多分钟，找到一半才发现讲的是老旧版本界面，白花了时间没学会。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次直接给出一篇自制的带截屏 pdf 指南，版本标注在今天最新的 Sigil 界面，每步骤不超过 15 张图，你按纸上看完就能做。"
+        }
+      ],
+      "implicit_signal": "学习方式偏好带截图的书面指南"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友推荐一部热门的音频剧，说风格很像我的小说可以激励我——但我一听就发现它把严肃描写用了喜剧语调，那不是我想要的讲述方式。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我换个方向给你推文学类播客《Otherppl》或者访谈型短剧《The Truth》——保持原有叙事语调，不会为了传播降格。"
+        }
+      ],
+      "implicit_signal": "拒绝降调建议，即使来自评论家"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去纽约开会，两天吃外卖浪费时间又消化不良，回来还闹了胃疼，影响了周末写作——其实住在附近有地中海餐厅的酒店能解决。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次定行程前我会提前用Google Maps标记三公里内的地中海菜馆或健康碗店，然后订酒店时确认早餐提供全麦面包和蔬菜选项。"
+        }
+      ],
+      "implicit_signal": "出门前需要解决饮食稳定习惯"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一个数字发行平台问我住在哪个城市，想给我的书做区域推送。我给了奥斯汀，后来收到他们每周的市场周报，感觉侵犯但也没退订——至少比问到街道安全。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次遇到这类信息填写，我们统一只给县或大城市级，并用一个单独的注册邮箱接收定向图书推荐，不上传到作者简介页。"
+        }
+      ],
+      "implicit_signal": "避免分享具体地址但可接受定向广告"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "Draft2Digital的自动分发覆盖全球20多家商店，听起来很大，但我在管理界面里找不到哪个商店的读者最像我核心读者——分散精力反而消耗热情。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次我们只挑两到三个和你文学小说类目深度匹配的平台，比如Kobo Writing Life和Smashwords，宁可渠道少但要能看到你的书被自然推荐给谁——能量上划算。"
+        }
+      ],
+      "implicit_signal": "可持续创意能量优先于通达规模"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有人推荐我用一个AI封面生成工具，说‘解锁书的视觉无限潜力’，这种措辞让我直接关掉页面——我可以用Canva自己做，即使封面不酷但至少忠于内容。"
+        },
+        {
+          "role": "assistant",
+          "content": "Canva自带的那套文学类模板足够基础且不喧宾夺主，我帮你整理出三个适合你书封色调的模板链接。不做任何AI生成或营销话术建议。"
+        }
+      ],
+      "implicit_signal": "拒绝AI炒作式推销"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "妻子建议我把家庭群消息里我写的一段趣事整理成社交媒体更新稿给公众号，但那样会打乱我在进行的章节逻辑——我不想要片段外泄影响叙事连贯。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这段素材先锁在本地笔记里，等这部小说结束后再单独成一篇小故事。现在不挪用，保持创意的完整性。"
+        }
+      ],
+      "implicit_signal": "小说家-出版商模式：文字把关和渠道管理是本位"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "BookBaby客服推荐套餐时说他们自动把你的封面元数据优化到所有商店，但我发现他们在亚马逊的列表把小说类型标成‘畅销’，那不符合我作品的基调。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我们用Draft2Digital的分发方案，他们允许手动指定每个商店的子分类，且封面不会被压缩重命名——保持你定的元数据控制权和原创封面精度。"
+        }
+      ],
+      "implicit_signal": "选择工具基于声音风险和元数据控制"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "群里有人说伦敦是文学中心建议我去驻地，但我的书受众是北美文学读者，不是大西洋对面。我去年在波特兰一个小驻地跟当地作家聊了四天，反而拿到了两次客座书评机会。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我下次优先推荐Bread Loaf或Austin这样的北美区域驻地，附带一篇你喜欢的作家在那驻地的访谈或结果报道——让你判断匹配度再走流程。"
+        }
+      ],
+      "implicit_signal": "需要出版实例和受众信号而不是城市名气"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推荐的那个AI辅助编辑工具我很喜欢，但我在隐私条款里发现他们保留对上传草稿进行分析改进服务的权利——万一我的对话被作为训练数据泄露就糟了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我换一款，ProWritingAid的商业版明确写了一句‘不上传内容到任何外部训练池’，我们的草稿只在本地加密处理——安全且功能近似。"
+        }
+      ],
+      "implicit_signal": "AI工具必须评估数据权利"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我想替换掉一直用的免费版Grammarly，但是Premium每月$12累计一年比买断的写作用品贵——后来发现Word自带编辑功能足够应付我的起草，不需额外付费。"
+        },
+        {
+          "role": "assistant",
+          "content": "那就用途内置校对加上SpellCheck.net的免费功率，同时如果以后需要深度语法分析我给你找一个写进预算的买断软件比如WhiteSmoke的一次性许可证。"
+        }
+      ],
+      "implicit_signal": "一次性购买优于月订阅"
+    },
+    {
+      "interaction_id": "hidden_indirect_022",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一个营销顾问说我小说的第一章开头太慢，建议从第四章的冲突处开始——这样就破坏了主人公成长的空间，我不接受压缩情感铺垫节奏。"
+        },
+        {
+          "role": "assistant",
+          "content": "没问题，我们保持原章节顺序，如果担心读者流失可以在第一页加一个引子句 — 但那是你写而且只有你想加才加。不做外部降调。"
+        }
+      ],
+      "implicit_signal": "避免外界降低书语调的建议"
+    }
+  ]
+}

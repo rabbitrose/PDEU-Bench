@@ -1,0 +1,438 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_035",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:59:47",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 18,
+  "composition": {
+    "episodic_preference_trace": 18
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_008",
+      "hidden_indirect_010",
+      "hidden_indirect_012"
+    ],
+    "content": [
+      "hidden_indirect_005"
+    ],
+    "decision_priority": [
+      "hidden_indirect_002",
+      "hidden_indirect_007",
+      "hidden_indirect_016"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_005",
+      "hidden_indirect_014",
+      "hidden_indirect_018"
+    ],
+    "entertainment": [
+      "hidden_indirect_001",
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_014",
+      "hidden_indirect_018"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_013"
+    ],
+    "food": [
+      "hidden_indirect_002",
+      "hidden_indirect_010",
+      "hidden_indirect_017"
+    ],
+    "format_contract": [
+      "hidden_indirect_004",
+      "hidden_indirect_017"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_006",
+      "hidden_indirect_015",
+      "hidden_indirect_018"
+    ],
+    "learning": [
+      "hidden_indirect_003",
+      "hidden_indirect_011"
+    ],
+    "privacy": [
+      "hidden_indirect_009"
+    ],
+    "product": [
+      "hidden_indirect_007",
+      "hidden_indirect_016"
+    ],
+    "role_context": [
+      "hidden_indirect_001"
+    ],
+    "service": [
+      "hidden_indirect_008"
+    ],
+    "technology": [
+      "hidden_indirect_003",
+      "hidden_indirect_009",
+      "hidden_indirect_011",
+      "hidden_indirect_012"
+    ],
+    "travel": [
+      "hidden_indirect_001",
+      "hidden_indirect_004",
+      "hidden_indirect_010",
+      "hidden_indirect_013",
+      "hidden_indirect_015"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "travel",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "家庭群消息说Mike下周末在西雅图有场演出，正好我那时也去开会，想一起聚下。"
+        },
+        {
+          "role": "assistant",
+          "content": "那周五晚上去看他，结束还能去附近那家精酿酒吧，上次你们聊得挺好。"
+        }
+      ],
+      "implicit_signal": "朋友Mike的演出优先安排在旅行中"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "超市结账前，看两款新啤酒犹豫不决，想了三分钟还没拿。"
+        },
+        {
+          "role": "assistant",
+          "content": "拿IPA吧，上次买世涛觉得太重了，今晚还有线上会议喝杯清爽的。"
+        }
+      ],
+      "implicit_signal": "基于经验快速选择啤酒"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "线上会议间隙，看到一篇对比前端框架的文章，不知是否值得花二十分钟看完。"
+        },
+        {
+          "role": "assistant",
+          "content": "上次你学Rust只看了一篇入门就上手了，这次直接试个Demo，不用看全文。"
+        }
+      ],
+      "implicit_signal": "无需大量文章，直接上手尝试"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周末西雅图有什么徒步路线，不太远但风景好？"
+        },
+        {
+          "role": "assistant",
+          "content": "Discovery Park Loop Trail，三英里，有悬崖海景人少。备选Rattlesnake Ledge要早去。随时可出发。"
+        }
+      ],
+      "implicit_signal": "给出路线选择、理由、备选和时间细节"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "content",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友推荐《The Daily Show》播客，但我听了一期觉得不犀利，没笑出来。"
+        },
+        {
+          "role": "assistant",
+          "content": "试试《Legion of Skanks》，什么都骂，符合你风格。"
+        }
+      ],
+      "implicit_signal": "偏好尖锐幽默而非温和"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我想到一个笑话：什么东西越洗越脏？水。跟同事说了，他们没笑。"
+        },
+        {
+          "role": "assistant",
+          "content": "别，上周那个‘灯’的笑话已经够冷场了，换个机智点的。"
+        }
+      ],
+      "implicit_signal": "避免老套笑话"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想换无线耳机，Bose和AirPods Pro 2哪个好？看测评越看越乱。"
+        },
+        {
+          "role": "assistant",
+          "content": "你用iPhone，AirPods无缝切换，降噪也够，直接买它。"
+        }
+      ],
+      "implicit_signal": "苹果生态决定购买"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "Spotify要涨价，考虑转Apple Music，但怕播客不好管理。"
+        },
+        {
+          "role": "assistant",
+          "content": "但你的喜剧播客进度跨设备同步，Apple Music没这功能，留着吧。"
+        }
+      ],
+      "implicit_signal": "保留Spotify因为功能符合需求"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "同事推荐用微信工作群，但我总觉得不安全。"
+        },
+        {
+          "role": "assistant",
+          "content": "用Signal吧，微信上聊工作怕被看。工作群可选Slack。"
+        }
+      ],
+      "implicit_signal": "倾向使用注重隐私的通讯工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "travel",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "西雅图周末Airbnb和酒店价格差不多，选哪个？上次住酒店感觉太闷了。"
+        },
+        {
+          "role": "assistant",
+          "content": "上次住酒店太无聊，选Airbnb还能做饭，省晚餐钱。"
+        }
+      ],
+      "implicit_signal": "Airbnb灵活性更符合价值"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想学Pandas，该看教程还是直接做项目？上次看教程三天有点慢。"
+        },
+        {
+          "role": "assistant",
+          "content": "直接找个Kaggle数据集，边查边做，遇到问题再搜。"
+        }
+      ],
+      "implicit_signal": "通过实践学习"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "VS Code和JetBrains哪个写Python好？我看同事用JetBrains但收费。"
+        },
+        {
+          "role": "assistant",
+          "content": "VS Code启动快免费，你之前用过，别折腾。"
+        }
+      ],
+      "implicit_signal": "选择免费且熟悉的工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我看了十篇西雅图攻略，眼花了，不知道该信哪个。"
+        },
+        {
+          "role": "assistant",
+          "content": "上次去奥斯丁只看一篇Reddit帖子就玩得好，挑最近的帖子就行。"
+        }
+      ],
+      "implicit_signal": "少量信息来源足以决策旅行"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "这周末桌游，要准备哪些配件？规则复杂，上次翻了二十分钟规则书。"
+        },
+        {
+          "role": "assistant",
+          "content": "玩久了，大家更在意气氛，规则简单带过，关键是啤酒和好桌子。"
+        }
+      ],
+      "implicit_signal": "桌游更注重气氛而非规则细节"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我做个共享表格，按小时安排西雅图行程？上次洛杉矶按表走，像上班一样累。"
+        },
+        {
+          "role": "assistant",
+          "content": "别，上次洛杉矶按表走，感觉像上班。就列几个必去点，其他随缘。"
+        }
+      ],
+      "implicit_signal": "避免过度规划行程"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "午休结束前，看到机械键盘降价，但不确定轴体，怕选错。"
+        },
+        {
+          "role": "assistant",
+          "content": "上次青轴嫌吵，这次选茶轴，直接下单，别错过折扣。"
+        }
+      ],
+      "implicit_signal": "基于过去经验快速下单"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "回家路上，想点外卖，但不知道吃什么，上次点的那家很一般。"
+        },
+        {
+          "role": "assistant",
+          "content": "那家兰州拉面，第一次送错，第二次量少，但味道还行，可选剁椒面，备选汉堡。半小时送到。"
+        }
+      ],
+      "implicit_signal": "推荐外卖包含理由、备选和送达时间"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "distinctive_quirk",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想听新脱口秀，朋友推荐一个温情喜剧演员，但看简介就觉得很无聊。"
+        },
+        {
+          "role": "assistant",
+          "content": "别，上次那个温馨的听了十分钟就关了。试试Sam Morril，尖锐。"
+        }
+      ],
+      "implicit_signal": "回避温情喜剧，偏好尖锐"
+    }
+  ]
+}

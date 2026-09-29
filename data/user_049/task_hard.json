@@ -1,0 +1,104 @@
+{
+  "user_id": "user_049",
+  "task": {
+    "task_id": "task_hard",
+    "title": "为CEO规划去亚洲的多城市商务旅行",
+    "daily_life_domain": "work",
+    "scenario": "乔丹的老板，一家科技初创公司的首席执行官，需要在10天内访问亚洲的三个城市（东京、新加坡和班加罗尔），与投资者和合作伙伴会面。行程必须安排在未来6周内。乔丹负责所有后勤工作：机票、酒店、地面交通和签证要求。乔丹还必须准备一份包含关键联系人、议程和时差差异的简报文件。CEO有临时更改计划的习惯，因此乔丹需要留出灵活性。",
+    "user_goal": "制定一份全面优化的行程，最大限度提高效率并减少时差影响，同时将机票和酒店预算控制在1.5万美元以内。",
+    "why_complex": "这需要协调多个时区、签证要求和商业文化不同的目的地；平衡成本、便利性和灵活性；研究航班和酒店选项；并为变更准备应急计划。",
+    "constraints": [
+      "预算：机票和酒店1.5万美元（不包括地面交通或餐费）",
+      "时间：行程必须在6周内完成，因此航班和酒店的可用性是因素之一",
+      "签证：CEO持有美国护照；新加坡免签，日本和印度需要签证（必须提前申请）",
+      "效率：CEO在每个城市至少需要两次会面，城市间旅行时间合理",
+      "健康：尽量减少时差影响（例如，西向东路线、中转安排）——CEO 50岁，容易疲劳",
+      "灵活性：必须在每段行程前48小时内允许变更，且无高额罚款"
+    ],
+    "required_reasoning_steps": [
+      "1. 确定最优城市顺序，考虑时区和飞行路线（例如，旧金山 → 东京 → 新加坡 → 班加罗尔 → 旧金山）。",
+      "2. 研究日本和印度的签证要求；估算处理时间，并确保CEO立即申请。",
+      "3. 搜索相邻城市间的直飞航班，比较航空公司、飞行时长和成本；尽可能优先选择直飞。",
+      "5. 制定暂定日程，按时区安排会议，确保旅行日之间有充足休息。",
+      "6. 为潜在变更留出缓冲时间（例如，灵活预定的航班、可退款的房价），并记录罚金费用。",
+      "7. 准备一份简报文件，包含每日议程、关键联系人、文化提示和美国大使馆紧急联系方式。",
+      "8. 将计划提交CEO征求意见，针对主要决策点提供备选方案。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "CEO的具体会议时间（由其人脉网络已确定）——乔丹需要获取这些已确认的日期和时间。",
+      "CEO是否想增加个人日或观光时间？",
+      "当前护照有效期和签证状态（CEO是否已有签证？）。",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "一份共享Google文档中的详细行程，包括航班号、酒店确认信息、会议时间、签证备注、成本分解和应急计划。另附一封包含要点的电子邮件摘要，便于快速参考。",
+    "success_criteria": [
+      "所有航班和酒店预订在预算（1.5万美元）内完成。",
+      "签证申请至少在出发前4周提交。",
+      "行程包含变更缓冲时间（例如，会议间安排2小时缓冲）。",
+      "CEO在24小时内批准计划并提供反馈。",
+      "行程期间没有出现最后一刻的时间冲突。",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "未能考虑时差差异，导致错过会议。",
+      "选择不可退款机票，在CEO变更计划时造成问题。",
+      "忘记印度签证要求，导致延误或取消。",
+      "忽视商务礼仪（例如，日本的名片交换）。",
+      "未包含地面交通的备用选项（例如，班加罗尔的专车服务）。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 5,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 9,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=11",
+        "constraints_capped=7",
+        "decision_points_capped=4",
+        "information_items_capped=7",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=34.75",
+        "hard_revision: 内容负载较高，保留少量 9 轮作为上尾",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Jordan Chen",
+      "age": 34,
+      "gender": "女性"
+    }
+  }
+}

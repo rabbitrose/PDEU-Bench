@@ -1,0 +1,491 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_038",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:23:07",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_007",
+      "hidden_indirect_014",
+      "hidden_indirect_017"
+    ],
+    "content": [
+      "hidden_indirect_004",
+      "hidden_indirect_015",
+      "hidden_indirect_019",
+      "hidden_indirect_021"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_009"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_010"
+    ],
+    "entertainment": [
+      "hidden_indirect_014",
+      "hidden_indirect_019"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_007"
+    ],
+    "food": [
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_008"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_011",
+      "hidden_indirect_012"
+    ],
+    "learning": [
+      "hidden_indirect_009",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "privacy": [
+      "hidden_indirect_006",
+      "hidden_indirect_013"
+    ],
+    "product": [
+      "hidden_indirect_008",
+      "hidden_indirect_017"
+    ],
+    "role_context": [
+      "hidden_indirect_003"
+    ],
+    "service": [
+      "hidden_indirect_005",
+      "hidden_indirect_016",
+      "hidden_indirect_018"
+    ],
+    "technology": [
+      "hidden_indirect_002",
+      "hidden_indirect_012",
+      "hidden_indirect_013",
+      "hidden_indirect_020"
+    ],
+    "travel": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_016",
+      "hidden_indirect_021"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次带学生去海岸线考察，我按教科书先讲沉积岩再观察侵蚀，结果潮汐突然上涨，学生们只能远远看，错过了关键剖面。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次我们把潮汐表作为第一参考，把低潮时段标记为观察窗口，抵达后先确认潮位再分配讲解顺序。"
+        }
+      ],
+      "implicit_signal": "实地安全优先于教科书顺序，在行程安排中已体现"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我刚才查了一家本地旅行社的网站，他们标注的海蚀洞位置比我用GPS实地标的偏了将近一公里。上次用他们的路线数据做教案，学生走到半路才发现不对。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次我把OpenStreetMap上你亲自校正过的坐标嵌入活动地图，并在每种路线上加注一次现场签到，用你的记录覆盖第三方数据。"
+        }
+      ],
+      "implicit_signal": "依赖实时可验证的地理数据而非二手来源"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我们学校只有一台投影仪能用，上次我用在线互动地图上课，结果网络断了，整节课只能干讲。我那个教案废了半节课。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我把关键地图做成离线PDF加本地截图，另备一份压缩包存在你笔记本里，万一断网也能让学生分组传看平板。"
+        }
+      ],
+      "implicit_signal": "适应学校设备不均的环境，要求格式支持离线操作"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次考察回来，有个学生问我海蚀洞的岩石是硬的还是软的，我意识到他们全程都没亲手碰过岩壁——我们只站在路边看。"
+        },
+        {
+          "role": "assistant",
+          "content": "在下一站增加一个停靠点：选一段安全的低崖区，让学生分组用手触摸不同风化程度的岩面，再用草图记录质地差异。"
+        }
+      ],
+      "implicit_signal": "强调学生触摸地形实物而非仅读课本"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有个国际组织发来一份“加勒比可持续考察指南”，里面全是酒店减排承诺和企业合作案例，只字不提本地渔民和社区管理。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这份指南我们不引用。改用安提瓜渔业合作社的潮汐观察点和社区巡护员联系方式，以本地人的日常经验作为可持续依据。"
+        }
+      ],
+      "implicit_signal": "拒绝大陆中心或企业视角的可持续话术"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周我发了一张实地考察的合照，带地理位置标签，结果校长提醒我别暴露未成年人的精确活动范围。"
+        },
+        {
+          "role": "assistant",
+          "content": "今后所有考察照片在校外平台发布前，手动模糊背景中的地标，关掉位置元数据，只用‘北部海岸’这类模糊描述。"
+        }
+      ],
+      "implicit_signal": "在社交平台上避免公开学生具体位置"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次请岛外机构带考察，他们报价低一半，却不熟悉暗礁区水流，差点让学生进入危险游泳区。我之后得多花预算雇本地渔民向导。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次包车预算里单列一笔向导费，直接联系你认识的那位在海岸警卫队做过兼职的渔夫，他清楚所有潮汐流的细节。"
+        }
+      ],
+      "implicit_signal": "优先选择本地向导的证据可靠性，即使更贵"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次发给家长的活动通知只有地点和时间，结果有个小孩私自走到崖边拍照，幸好没出事。我这才发现缺了安全注意事项和应急联系人。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次给每个小组准备一张防水卡片，正面印三处紧急集合点并标注潮汐警报线，背面写社区卫生站号码和你的手机号。"
+        }
+      ],
+      "implicit_signal": "要求考察材料包含安全提示和当地联系人"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "按教学大纲今天应该讲完海滩剖面，但风太大，学生在沙滩上根本站不稳。我犹豫了一下还是继续讲，结果有个孩子被风吹倒擦伤了。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后遇到影响安全的天气直接转入备用室内活动：用之前拍的剖面照片和沙盘模型分析，不冒险完成户外内容。"
+        }
+      ],
+      "implicit_signal": "学生安全和现场证据不可动摇地优先于课程完整性"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次带学生去考察点附近吃饭，我选了旅游区连锁餐厅，结果孩子们问我为什么不吃旁边的家庭厨房——他们说那里飘出来的炖鸡味更香。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次午餐安排改为提前联系考察点附近的三户本地家庭，每家做一道传统炖菜，学生自带碗筷，餐后还能问主人当地环境故事。"
+        }
+      ],
+      "implicit_signal": "支持本地社区小餐桌而非商业旅游餐厅"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我按卫星图计划了一条环岛考察路线，排得满满当当，结果巴士司机说那段路这几天被暴雨冲垮了一半，根本过不去——最后一项没人确认。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后每段路线出发前先给当地运输工会打电话确认路况，并在行程里留至少一个备选点，万一封路就转到内陆的石灰岩溶洞考察。"
+        }
+      ],
+      "implicit_signal": "避开忽视当地交通可靠性的行程设计"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我上周用新版GIS软件编辑了考察地图，结果系统更新后打不开旧文件，版本没法回退，整个路线数据全丢了。"
+        },
+        {
+          "role": "assistant",
+          "content": "今后每次更新前先用通用格式导出副本并存一份离线压缩包到外置硬盘，至少保持两种格式冗余，避免单点故障。"
+        }
+      ],
+      "implicit_signal": "警惕版本回退和数据丢失问题"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次我在机场咖啡厅用公共WiFi登录学校邮箱下载课件，结果第二天邮箱被暴力尝试登录，还好我之前开了两步验证。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后外出前把所有课件先下载到本地，公共WiFi只刷新闻不登录任何工作账户，并在笔记本预装VPN以备不时之需。"
+        }
+      ],
+      "implicit_signal": "在公共场所谨慎使用网络连接"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次有个巡回自然纪录片放映会，票价不便宜，但内容是无人机拍的安提瓜海岸全景，我家孩子看完后一直追问珊瑚礁保护的事。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次如果再有类似活动，我可以帮你从学校社区基金申请一笔文化补贴，这样你带学生去不用自己垫费用。"
+        }
+      ],
+      "implicit_signal": "愿意为本地文化体验支付溢价"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月我让学生做一份关于珊瑚白化的报告，他们全从网上复制大段术语，但没有一个人能说出圣约翰附近哪个湾的珊瑚最严重。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次把报告改成指定三个具体地点，要求必须用手机拍摄现场照片并标注经纬度，再对比去年同期的政府监测数据。"
+        }
+      ],
+      "implicit_signal": "偏爱基于具体地点的动手观察任务"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去年假期我报了个多米尼加生态游，号称小团体，结果大巴来了30个人，向导是首都来的，连当地果树林都叫不出名字。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会从你的路线收藏中筛选那些承诺不超过8人、且领队是当地居民的项目，入住前也请对方发一份手写路线说明确认。"
+        }
+      ],
+      "implicit_signal": "选择由本地人带领的小团体生态行"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前我在超市结账前看到一款打折登山鞋，价格很好，但鞋底不够防滑，我犹豫一下还是没买——学生摔过一次我的心里有阴影。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我会推荐三款通过安全认证的实地考察鞋，在预算范围内优先选鞋底Vibram材质的，即使贵一些也算在安全保障支出里。"
+        }
+      ],
+      "implicit_signal": "对教育类高价值设备可接受较高价格"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周我老婆提了一袋菜回来，是直接从北边农场买的，比超市便宜一半，而且煮出来的味道像小时候父母种的。"
+        },
+        {
+          "role": "assistant",
+          "content": "这周末我帮你整理一份圣约翰附近参与式农场清单，可以组织学生去参观并采购午餐食材，既支持本地农业又教他们认识食物来源。"
+        }
+      ],
+      "implicit_signal": "推荐从农场到餐桌的餐饮模式"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天我找了一部讲加勒比珊瑚礁的纪录片给孩子看，结果发现里面有一半镜头是在巴厘岛拍的，连旁白都没提安提瓜。"
+        },
+        {
+          "role": "assistant",
+          "content": "这部片子可以直接排除。我另外找到一部由本地海洋保护组织拍摄的短片，全程取景于北部暗礁，还附了可下载的课堂习题。"
+        }
+      ],
+      "implicit_signal": "偏爱有地方真实感的自然纪录片"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周我参加了一场线上GIS工作坊，但他们演示用的是最新版ArcGIS，我们学校电脑根本跑不动，全程我只能看他们操作。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次我为你挑选的GIS培训会提前确认学校电脑配置，优先推荐使用Google Earth网页版或QGIS低版本的方法，并提供离线练习数据包。"
+        }
+      ],
+      "implicit_signal": "参考实际设备状况调整GIS课程设计"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次家庭度假我选在圣诞节去巴布达岛，渡轮挤满了人，海滩上垃圾也没人清理，我女儿踩到了碎玻璃。"
+        },
+        {
+          "role": "assistant",
+          "content": "那下次我推荐你在五月底的考试结束后出发，那时游客少，渡轮班次稳定但人流量低，住宿费也降到旺季一半。"
+        }
+      ],
+      "implicit_signal": "选择非旺季出发以节省成本减少拥挤"
+    }
+  ]
+}

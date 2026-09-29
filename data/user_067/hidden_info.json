@@ -1,0 +1,470 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_067",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:32:48",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_010",
+      "hidden_indirect_014",
+      "hidden_indirect_015"
+    ],
+    "content": [
+      "hidden_indirect_002"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_012"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_016",
+      "hidden_indirect_019"
+    ],
+    "entertainment": [
+      "hidden_indirect_007",
+      "hidden_indirect_016"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_011"
+    ],
+    "food": [
+      "hidden_indirect_009",
+      "hidden_indirect_015"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_018"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_007",
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_017"
+    ],
+    "learning": [
+      "hidden_indirect_003",
+      "hidden_indirect_018"
+    ],
+    "privacy": [
+      "hidden_indirect_008",
+      "hidden_indirect_013",
+      "hidden_indirect_020"
+    ],
+    "product": [
+      "hidden_indirect_010"
+    ],
+    "role_context": [
+      "hidden_indirect_014"
+    ],
+    "service": [
+      "hidden_indirect_005",
+      "hidden_indirect_011",
+      "hidden_indirect_020"
+    ],
+    "technology": [
+      "hidden_indirect_004",
+      "hidden_indirect_013",
+      "hidden_indirect_019"
+    ],
+    "travel": [
+      "hidden_indirect_006",
+      "hidden_indirect_012",
+      "hidden_indirect_017"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次订民宿没仔细看取消政策，最后多付了一笔取消费。这次想订一个能免费取消的，预算先按400以内找。"
+        },
+        {
+          "role": "assistant",
+          "content": "好，我过滤出3个可免费取消的选项，价格都在400以下，但位置偏市区一点。先看哪个？"
+        }
+      ],
+      "implicit_signal": "优先排除硬约束，再比价格；多付一次费用后改为保守预算"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前报了摄影课，老师只发链接和概念，我练了半个月也没有反馈点。想换个有明确评分标准和例题的。"
+        },
+        {
+          "role": "assistant",
+          "content": "找到一门含10次作业附评分细则的课程，每单元有练习题和讲师批改反馈。先看大纲还是试听课？"
+        }
+      ],
+      "implicit_signal": "需要可观察进步标准，拒绝泛化建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚学完一个复盘模板，但太长记不住。能不能按学习目标/今日练习/反馈点/下次复盘四个部分列个简化版？"
+        },
+        {
+          "role": "assistant",
+          "content": "已按你的格式整理成卡片：目标写1个，练习写3步，反馈记得分或卡住点，下一次复盘写完成时间。要不要先试一周？"
+        }
+      ],
+      "implicit_signal": "需要短周期里程碑和清单模板"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天想换个笔记软件，对比了6个，列完优缺点反而不知道怎么选了。今天只给我2个最符合我需求的就行。"
+        },
+        {
+          "role": "assistant",
+          "content": "那按你之前提的跨设备同步和导出需求，排除掉绑定平台的两个后，剩Notion和Obsidian。要看对比还是直接选一个试？"
+        }
+      ],
+      "implicit_signal": "容易被选项拖慢，需要快速缩小范围"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前订了一个月健身房试用，第5天就发现设备发热后表现下降，但合同绑到月底。这次找能试用3天就退款的。"
+        },
+        {
+          "role": "assistant",
+          "content": "找到一家支持前3天无理由退款的智能健身馆，离住处步行5分钟。要不要预约明天免费体验？"
+        }
+      ],
+      "implicit_signal": "需要短周期里程碑，避免长时间无反馈"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次短途游排了5个点，结果路上堵车，排到一半才发现不合适，最后两个没去。这次想要一个只有3个点、时间留缓冲的路线。"
+        },
+        {
+          "role": "assistant",
+          "content": "那按你出发时间和交通方式，做单个点预留2小时的方案。第一站定在8点出发，中间留30分钟空档。先看这个模板？"
+        }
+      ],
+      "implicit_signal": "需要清单和模板，路线要留缓冲"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周末朋友推荐了市集，说有很多摊位，结果去了全是重复的小商品，人挤人体验很差。下次推荐活动能先筛掉过度营销的么？"
+        },
+        {
+          "role": "assistant",
+          "content": "明白。那看看这个周末的插画展，限定50人，需要预约。票价30，离地铁站步行8分钟，不影响你第二天行程。"
+        }
+      ],
+      "implicit_signal": "堆资源令人反感"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有个旅行App要填详细家庭住址和紧急联系人才能下载离线副本，我直接退出了。有不需要这些信息也能用的替代吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐Maps.me，只需授予位置权限，可存离线地图，不要求通讯录或家庭信息。要不要试导入你的收藏点？"
+        }
+      ],
+      "implicit_signal": "忽略当前水平造成压力，拒绝强制公开信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次找本地餐厅，有人说要吃地道小馆，但没说哪家、怎么去、预算多少。能不能直接给一个具体店，附上营业时间和人均？"
+        },
+        {
+          "role": "assistant",
+          "content": "找到一家本地面馆，人均28，晚8点关门，距你住处公交3站。需不需要看菜单或帮你查今天排队情况？"
+        }
+      ],
+      "implicit_signal": "只给大道理无法接受"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买了一个多功能锅，用了三次发现加热慢又占地方。这次想买个单一功能、好收纳的，预算别超过200。"
+        },
+        {
+          "role": "assistant",
+          "content": "找到一款1.2L迷你电煮锅，可蒸可煮，不粘内胆，收纳时叠放不占空间。价格178。要不要看用户评价？"
+        }
+      ],
+      "implicit_signal": "区分必须和可推迟花费"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前报的洗衣服务，取消要提前48小时打电话，结果我发邮件没用。这次能找支持在线取消、即时确认退款的吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "选了一个支持App内一键取消、15分钟内退款的洗衣服务。你所在区域有3个服务点，要查离你最近的？"
+        }
+      ],
+      "implicit_signal": "需要明确的取消规则和响应速度"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想去附近古镇，搜到的攻略都推那几个热门景点，但听说节假日人多到走不动。能不能推荐一个人少、能安静逛半天的地方？"
+        },
+        {
+          "role": "assistant",
+          "content": "查到新市古镇，非节假日游客少，小巷可以慢慢走，没有门票。从你这里坐公交54分钟直达。要不要看班次？"
+        }
+      ],
+      "implicit_signal": "练习质量优先于名气"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有天气App要开启常时定位和后台刷新才能用，我拒绝了。有不需要这样权限的替代吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "试试Weather Mate，只要求打开时定位，不存储历史位置，也没有后台刷新。要不要看一下界面截图？"
+        }
+      ],
+      "implicit_signal": "只提供必要信息，对位置谨慎"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "家中长辈要来，想订一个双人房住两晚，但不想超500。超市结账前发现多付了一笔清洁费，这次要确认费用全包。"
+        },
+        {
+          "role": "assistant",
+          "content": "找到一家含免费取消、无隐藏清洁费的民宿，两晚共480，独立卫浴。要预付还是到店付？"
+        }
+      ],
+      "implicit_signal": "预算作为保守假设"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "出去吃饭光点菜就花超了，上次在景区一碗面要35。这次自己带食材，但附近菜场收得早。有开到晚8点后的菜摊吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "查到你家附近有家生鲜超市开到晚10点，绿叶菜和蛋肉都有，步行8分钟。要不要生成一份简单采购清单？"
+        }
+      ],
+      "implicit_signal": "愿意选本地小店或自己做饭"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "被拉去参加了一个音乐节，现场音响差又拥挤，提前走了。周末想找个能坐下来、不吵、还能听人聊聊的活动。"
+        },
+        {
+          "role": "assistant",
+          "content": "有家书店周六晚办小故事分享会，限20人，门票28含一杯饮料。需预约，你方便的话我帮你占位？"
+        }
+      ],
+      "implicit_signal": "小规模、真实、有内容密度"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买了当天的景区联票结果排长队只玩了俩项目，又没退款。这次提前预约时段，能确保到了直接进吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "这个景区支持分时段预约，你选9—11点场，预约确认前会显示当前余票和排队预估。要先看日历空档再约？"
+        }
+      ],
+      "implicit_signal": "避免临时变动和时间失控"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "自学编程时做完习题没有对照答案，不确定对不对。能不能找一个每节有自动判题、错题记录和下次复习提醒的？"
+        },
+        {
+          "role": "assistant",
+          "content": "Codecademy的互动课满足这点，每题有即时反馈和错题保存，第二天推送相似练习。要不要先试免费章节？"
+        }
+      ],
+      "implicit_signal": "需要短周期反馈和可复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "智能家居App只能连自家设备，我又买了个其他牌子的插座，结果两个App切来切去。有统一控制的方案吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "尝试Home Assistant，可以本地部署、跨品牌接入，数据存本地不传云端，支持导出配置。需要看兼容设备列表？"
+        }
+      ],
+      "implicit_signal": "不喜欢被锁定单一平台"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想预约家庭医生体检，但线上表格要填全家人姓名和身份证号才给下一步。我不想输入这些，能直接电话预约吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "这家诊所支持电话预约，只需告知人数和大致年龄，现场核对社保卡。我已查到号码，要拨过去帮你预约吗？"
+        }
+      ],
+      "implicit_signal": "涉及家庭信息时需要匿名化处理"
+    }
+  ]
+}

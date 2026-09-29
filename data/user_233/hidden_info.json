@@ -1,0 +1,455 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_233",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:18:17",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_021"
+    ],
+    "content": [
+      "hidden_indirect_007"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_015"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_005",
+      "hidden_indirect_017",
+      "hidden_indirect_019"
+    ],
+    "entertainment": [
+      "hidden_indirect_012"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_021"
+    ],
+    "food": [
+      "hidden_indirect_011"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_004"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_006",
+      "hidden_indirect_016",
+      "hidden_indirect_018"
+    ],
+    "learning": [
+      "hidden_indirect_009"
+    ],
+    "privacy": [
+      "hidden_indirect_014"
+    ],
+    "product": [
+      "hidden_indirect_008"
+    ],
+    "role_context": [
+      "hidden_indirect_020"
+    ],
+    "service": [
+      "hidden_indirect_002"
+    ],
+    "technology": [
+      "hidden_indirect_013"
+    ],
+    "travel": [
+      "hidden_indirect_010"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次修热水器预算超了35%，材料费最后一项没人确认。这次想先列固定支出上限。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，先排除隐藏费用。候选方案分三档：材料包、工费、应急附加。假设上限 24 万韩元，哪些必须保留？"
+        }
+      ],
+      "implicit_signal": "预算失控后要求固定支出上限"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次健身试用到期后自动扣费，打客服才取消。新服务必须提前明确取消流程。"
+        },
+        {
+          "role": "assistant",
+          "content": "已查该服务：取消需登录官网自助，无隐藏窗口。保存截图到笔记了。"
+        }
+      ],
+      "implicit_signal": "要求可验证的取消条款"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次比较保洁公司时你只说了优缺点。这次请用目标/约束/方案表对比，方便我下一步检查。"
+        },
+        {
+          "role": "assistant",
+          "content": "明白。表格已生成：目标（厨房深度清洁）、约束（预算 19 万韩元、今天预约确认前）、三方案对比表，最后列待确认项。"
+        }
+      ],
+      "implicit_signal": "要求表格对比而非纯文字说明"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你给的空调维修计划没分区，我读完还得自己整理步骤。以后能不能先写目标再列检查点？"
+        },
+        {
+          "role": "assistant",
+          "content": "新格式：目标（提高制冷效率）、约束（不超 50 万韩元、隔天完工）、三方案对比表，最后是维修后的检查清单。"
+        }
+      ],
+      "implicit_signal": "要求结构：目标、约束、方案、下一步检查"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "家庭群消息发来维修报价，我又得手动抄进日历。"
+        },
+        {
+          "role": "assistant",
+          "content": "我提取了关键元素：19号下午、2小时工费、联系电话。已生成日历邀约，你确认后发送。"
+        }
+      ],
+      "implicit_signal": "低摩擦工具偏好：一次录入"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次我说想换窗帘，你说‘很棒的想法’。其实我需要具体尺寸和安装风险。"
+        },
+        {
+          "role": "assistant",
+          "content": "纠正。窗帘杆承重：你的窗户 2.4m 宽，需三支架。安装风险：先确认墙体是否为石膏板。"
+        }
+      ],
+      "implicit_signal": "回避空泛鼓励"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚看到一篇‘最节能热水器榜单’，结论没写测试条件。"
+        },
+        {
+          "role": "assistant",
+          "content": "报告：该榜单来源是某电商推广页，引用的能效标签年份不明。另找到两份认证报告，相差 10%。需你确认实验室环境。"
+        }
+      ],
+      "implicit_signal": "结论必须附带依据和不确定点"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看中一款吸尘器，但过滤网是专用型号，停产就麻烦了。"
+        },
+        {
+          "role": "assistant",
+          "content": "过滤网每 6 个月换一次，官方价 35 元。第三方兼容款有 2 种，评价一般。建议考虑另一个品牌，通用滤网且保修 3 年。"
+        }
+      ],
+      "implicit_signal": "考虑长期维护和替代品"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前报的线上收纳课只堆视频，没有练习反馈。"
+        },
+        {
+          "role": "assistant",
+          "content": "筛选出两门四周课：每周提交照片、助教点评。费用 19 万韩元，符合预算。"
+        }
+      ],
+      "implicit_signal": "短周期反馈,示例和复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去釜山因为堵车错过景点，回程又绕路。"
+        },
+        {
+          "role": "assistant",
+          "content": "新路线：早 0.5h 出发，预留 24 分钟缓冲。住宿已选可免费取消的，若延误可延住。"
+        }
+      ],
+      "implicit_signal": "路线需缓冲,住宿可取消"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次推荐的家常菜馆，我伴侣吃辣后胃不舒服。"
+        },
+        {
+          "role": "assistant",
+          "content": "筛选本地小店 3 家：两家不辣且人均 1.2 万韩元，第三家可要求免辣。同时标注菜单中可能隐藏的辣味成分。"
+        }
+      ],
+      "implicit_signal": "预算敏感、考虑同行限制"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周推荐的周末市集，人太多，体验差。"
+        },
+        {
+          "role": "assistant",
+          "content": "确认。调取实时人流数据，周末上午 10 点前或工作日去。另一选项是小型画廊，预约制，限流。"
+        }
+      ],
+      "implicit_signal": "避免过度拥挤活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "用备忘录记家庭项目，换手机后数据丢了一部分。"
+        },
+        {
+          "role": "assistant",
+          "content": "建议 Notion 或 Obsidian，均支持 Markdown 导出。Obsidian 本地存储，无需注册。我测试了导出流程，确认无锁定。"
+        }
+      ],
+      "implicit_signal": "跨设备同步且可导出"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次在论坛问过敏源方案，不小心透露了家人病史。"
+        },
+        {
+          "role": "assistant",
+          "content": "用‘家人’代替具体关系，无需提年龄。直接问：‘对海鲜过敏，家庭清洁剂成分应注意什么？’"
+        }
+      ],
+      "implicit_signal": "家庭健康信息匿名化"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看到一款智能插座能远程监控电量，但评论说连老路由器会断连。我的路由器用了四年。"
+        },
+        {
+          "role": "assistant",
+          "content": "那款不建议。另一款无 Wi-Fi 依赖，定时机械开关，无需联网但可靠。成本更低，且无数据风险。"
+        }
+      ],
+      "implicit_signal": "可靠性优先于新奇"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次推荐的地板打蜡服务，后续说每三个月要维护，事前不知道。"
+        },
+        {
+          "role": "assistant",
+          "content": "该服务含首次打蜡和两次免费维护。额外维护每次 8 万韩元。已按每年两次测算总持有成本 24 万。"
+        }
+      ],
+      "implicit_signal": "回避忽略维护成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "预约水管工时，平台要求我重新输入地址和电话，明明之前用过。"
+        },
+        {
+          "role": "assistant",
+          "content": "平台保留历史订单，但需手动勾选‘使用上次信息’。我已从上一单复制了，待你确认。"
+        }
+      ],
+      "implicit_signal": "讨厌重复录入信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "同事推荐了一家网红家政，评分 4.8，但我想知道实际服务细节。"
+        },
+        {
+          "role": "assistant",
+          "content": "翻看差评：客户说工具自带清洁剂致木地板变色。建议要求自带产品，或在合同加上免责条款。"
+        }
+      ],
+      "implicit_signal": "回避只看热度推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你给的维修方案表，我忘了确认‘是否含税’，导致最后多付。"
+        },
+        {
+          "role": "assistant",
+          "content": "收到。当前方案表新增‘待确认’列：1. 含税否？2. 支付方式？3. 取消罚则？任何未确认项用红色标注。"
+        }
+      ],
+      "implicit_signal": "需要清楚标出未确认点"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "午休结束前只有 24 分钟，想规划周末清洁的采购清单，别给我长篇分析。"
+        },
+        {
+          "role": "assistant",
+          "content": "清单已按超市动线排序：清洁剂（无漂白）、抹布、垃圾袋。共 6 项，预计 15 分钟买齐。"
+        }
+      ],
+      "implicit_signal": "职业影响：需要可执行步骤"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想要的除湿机超出预算 35%，有没有更便宜但效果差不多的？"
+        },
+        {
+          "role": "assistant",
+          "content": "有两款低预算：A 款日除湿量 12L，噪音略大；B 款 10L，带轮子。两者都在 19 万韩元内，附第三方能效测试链接。"
+        }
+      ],
+      "implicit_signal": "超预算需替代方案"
+    }
+  ]
+}

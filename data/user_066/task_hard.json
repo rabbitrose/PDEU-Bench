@@ -1,0 +1,101 @@
+{
+  "user_id": "user_066",
+  "task": {
+    "task_id": "task_hard",
+    "title": "规划一个关于ACL重建康复的继续医学教育课程",
+    "daily_life_domain": "work",
+    "scenario": "Torres 医生计划在 OrthoColorado 医院组织小型 ACL 重建康复 CME。修订后任务聚焦半天课程的申请草案：学习目标、3 小时议程、2 位候选讲者、预算框架和 CME 办公室材料清单，不再要求完整认证提交包和营销执行。",
+    "user_goal": "形成医院 CME 办公室可预审的半天课程方案。",
+    "why_complex": "仍需结合最新医学证据、讲者安排、预算和认证要求，但范围压缩为申请草案和预审清单。",
+    "constraints": [
+      "Torres 医生 8 周内每周只有 2 小时规划。",
+      "预算上限 5,000 美元。",
+      "场地为 OrthoColorado 医院会议室，最多 30 人。",
+      "课程需符合 AAOS/CME 基本要求。",
+      "本轮只准备半天课程，不规划完整系列。",
+      "需避开 Torres 医生手术日。"
+    ],
+    "required_reasoning_steps": [
+      "把课程范围限定为 ACL 康复证据、重返赛场标准和生物制剂争议三块。",
+      "检索并筛选 3-5 条关键证据来源，避免过度文献综述。",
+      "设计 3 小时半天议程，包含讲座、病例讨论和简短实操。",
+      "列出 2 位候选讲者及其远程/现场可行性。",
+      "生成 CME 办公室预审所需的学习目标、披露和预算项目。",
+      "用 source_info 的地点、餐饮、用品或天气记录校准现场执行细节。",
+      "输出下轮需要医院确认的清单。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "AAOS/CME 预审需要的学习目标和披露字段。",
+      "2 位候选讲者的费用、可用性和远程选项。",
+      "会议室可用时间和视听需求。",
+      "餐饮或材料成本估计。",
+      "3-5 条 ACL 康复关键证据来源。"
+    ],
+    "expected_deliverable": "半天 CME 申请草案：课程标题、学习目标、3 小时议程、讲者短名单、预算框架、CME 预审清单和简版宣传文案。",
+    "success_criteria": [
+      "课程时长控制在半天内。",
+      "预算不超过 5,000 美元。",
+      "至少列出 2 位候选讲者。",
+      "学习目标符合 CME 预审格式。",
+      "最终方案至少引用 2 条 SandboxDB/source_info 真实候选记录。"
+    ],
+    "potential_failure_modes": [
+      "证据范围过大导致课程无法在半天内完成。",
+      "讲者费用挤占全部预算。",
+      "CME 披露和学习目标缺失。",
+      "忽视 Torres 医生手术日安排。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 5,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 8,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=7",
+        "constraints_capped=6",
+        "decision_points_capped=4",
+        "information_items_capped=5",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=28.6",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Dr. Michael Torres",
+      "age": 45,
+      "gender": "男性"
+    }
+  }
+}

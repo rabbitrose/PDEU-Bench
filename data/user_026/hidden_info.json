@@ -1,0 +1,449 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_026",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:59:02",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 19,
+  "composition": {
+    "episodic_preference_trace": 19
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_005",
+      "hidden_indirect_014"
+    ],
+    "content": [
+      "hidden_indirect_007"
+    ],
+    "decision_priority": [
+      "hidden_indirect_005",
+      "hidden_indirect_011"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_006",
+      "hidden_indirect_013"
+    ],
+    "entertainment": [
+      "hidden_indirect_002",
+      "hidden_indirect_018"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_001",
+      "hidden_indirect_003",
+      "hidden_indirect_015"
+    ],
+    "food": [
+      "hidden_indirect_010",
+      "hidden_indirect_015"
+    ],
+    "format_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_012"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_007",
+      "hidden_indirect_010",
+      "hidden_indirect_016"
+    ],
+    "learning": [
+      "hidden_indirect_008",
+      "hidden_indirect_017"
+    ],
+    "privacy": [
+      "hidden_indirect_008",
+      "hidden_indirect_016"
+    ],
+    "product": [
+      "hidden_indirect_009",
+      "hidden_indirect_019"
+    ],
+    "role_context": [
+      "hidden_indirect_012",
+      "hidden_indirect_017"
+    ],
+    "service": [
+      "hidden_indirect_004",
+      "hidden_indirect_009",
+      "hidden_indirect_011"
+    ],
+    "technology": [
+      "hidden_indirect_001",
+      "hidden_indirect_013",
+      "hidden_indirect_019"
+    ],
+    "travel": [
+      "hidden_indirect_006",
+      "hidden_indirect_014",
+      "hidden_indirect_018"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "试用AI助手整理EPA新规草案，输出里有一句‘据分析显示成本下降12%’，但没给引用文件。背景是设备发热后工具表现下降，出错率变高。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这句删掉重写。把草案原文第27页的成本表格截出来，我直接用自己的数据工具算一遍百分比，再附上出处。"
+        }
+      ],
+      "implicit_signal": "依赖可审计来源，对AI生成摘要要求溯源"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天看了一部关于1970年代清洁空气法案辩论的纪录片，里面只谈了环保团体和产业双方，没提国会内部党派的立场演变。"
+        },
+        {
+          "role": "assistant",
+          "content": "我重做一个半页摘要：第一段导语框定争论核心，第二段列利益相关方，第三段标出国会档期中未解答的妥协时点，最后补充两条归档文献链接。"
+        }
+      ],
+      "implicit_signal": "要求结构化输出，包含利益相关方和未解问题"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周整理跨州空气污染数据时，你用了一句‘部分州达标率提升’，这句话来自哪里？当时在候机区里赶工，没时间细查。"
+        },
+        {
+          "role": "assistant",
+          "content": "那来自EPA 2024年度合规报告表3-7，我把那份PDF页码和行号标出来。以后这类概括都配直接引用，你用收据夹子收好纸质收据时也方便回查。"
+        }
+      ],
+      "implicit_signal": "要求所有数字和断言必须对应可追溯来源"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天用那个AI转录服务把听证会录音转成文字，结果版本没法回退，关键一段把‘排放上限’听成了‘排放下限’，发稿前才发现。"
+        },
+        {
+          "role": "assistant",
+          "content": "停掉自动转录功能。以后手动逐句对照原文录音，再交给我核对。采访关键段我直接做笔记，不用这个服务。"
+        }
+      ],
+      "implicit_signal": "拒绝没有来源的AI摘要，坚持编辑室实用性"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那台笔记本电脑在跟踪投票法报道时频繁过热导致系统暂停，维修商说要换散热模组，费用等于两个月的新闻订阅。"
+        },
+        {
+          "role": "assistant",
+          "content": "换散热组。订阅可以暂时砍掉一个非必需流媒体，但不能让机器在截稿日掉链子。你跑立法对比表时需要稳定运算。"
+        }
+      ],
+      "implicit_signal": "优先可靠工具，愿意多花钱保证准确性"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "明天去奥斯汀报报道众议院听证会，现有路线要先到达拉斯转机，到了住处再打车去州议会，预计多绕两次路。"
+        },
+        {
+          "role": "assistant",
+          "content": "改直飞奥斯汀的早班机，换一个离议会步行5分钟以内的酒店。从到达起就能直接开始看文件和踩点采访口。"
+        }
+      ],
+      "implicit_signal": "出差行程只为最大化采访和文件获取数量"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "开头编辑建议加一段‘一位母亲在工厂旁哭泣’来引入EPA违规报道，我试写了一句但感觉偏离了政策分析主线。"
+        },
+        {
+          "role": "assistant",
+          "content": "撤掉那个开头，改回第一段直接陈述新规如何扩大监管范围至中小型设施。报道核心是排放限值的法律修改变迁，不是个人故事。"
+        }
+      ],
+      "implicit_signal": "拒绝煽情描写，坚持政策机制清晰"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "报了个数据新闻线上工作坊，讲师要求把采访录音上传到云协作空间做练习，但里面包含未公开消息源的谈话。"
+        },
+        {
+          "role": "assistant",
+          "content": "退出那个练习模块。用本地加密软件为消息源音频单独转写，只提交匿名脱敏后的文本。你方案里的Signal加密习惯可以套用。"
+        }
+      ],
+      "implicit_signal": "学习时注重数据和媒体法律，保护消息源隐私"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "云存储服务商发邮件说下月起要关闭文件版本历史功能，我用它存了32个版本的立法草案比对记录。"
+        },
+        {
+          "role": "assistant",
+          "content": "本周内把所有版本手动下载到本地，迁移到一个保留版本历史的加密备份服务。不能丢失变更追踪链，写调查时需要对比措辞差异。"
+        }
+      ],
+      "implicit_signal": "产品选择以文件处理可靠性和安全性为首要"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "写完EPA第一稿后去一家正式餐厅吃商务午餐，回来发现过了两小时，下午的三场采访排期被压缩了。"
+        },
+        {
+          "role": "assistant",
+          "content": "改去楼下咖啡馆点一份沙拉和黑咖啡，15分钟吃完回工位。以后饭局约到周末晚上，工作日中午不安排超过三十分钟的餐。"
+        }
+      ],
+      "implicit_signal": "避免丰盛午餐中断工作节奏"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "媒体监控工具昨天突然改界面，收藏夹里的37条过滤规则全部失效，查不到具体的议会待审法案更新了。"
+        },
+        {
+          "role": "assistant",
+          "content": "暂时放弃那个工具，改用共享表格手动追踪法案状态。虽然费时间，但你能在早餐桌边直接看到同事填的最新调整。"
+        }
+      ],
+      "implicit_signal": "编辑部实用性优先，愿意放弃便利换取即时可访问性"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "准备写一篇关于国会两党在EPA执法预算上的分歧，手头有委员会听证记录但缺乏历史拨款对比。"
+        },
+        {
+          "role": "assistant",
+          "content": "我搭个框架：开头导语摆出分歧焦点+利益相关方清单（环保局、产业游说、预算委员会）+近十年拨款曲线图+未解问题（资金来源缺口）+归档路径把原始听证PDF挂在文末。"
+        }
+      ],
+      "implicit_signal": "高级记者模式，需包含导语、利益相关者和归档路径"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "尝试用AI帮我快速扫描一份32页的废气标准修订案，输出里有一段‘该要求与过往判例冲突’但没指出是哪条判例。"
+        },
+        {
+          "role": "assistant",
+          "content": "打开修订案PDF搜索‘prior ruling’关键词，我手动找到引用的加州第九巡回法院2021年案例，标注具体段落和页码后再重写那句。"
+        }
+      ],
+      "implicit_signal": "AI研究助手必须提供可追溯的来源和引文路径"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下周要去亚特兰大采访环境保护组织集会，现有预算只能订隔夜中转航班，但这样会错过第一场提问环节。"
+        },
+        {
+          "role": "assistant",
+          "content": "我自掏订直飞往返，采访报销单后补理由：获取开幕发言内容比省机票值。回程航班选晚上，白天全程留在会场做记录。"
+        }
+      ],
+      "implicit_signal": "差旅预算节俭，但愿意为采访效率增加支出"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在咖啡馆等采访对象时想快速了解一份水资源法案的最新修订，手机上的AI摘要写‘限制放宽’但没出处。"
+        },
+        {
+          "role": "assistant",
+          "content": "拒绝那段摘要。我用手机直接打开立法网站找到最新版§401条款，截图红色修订标记部分，等你回工位再和纸质收据上的委员会笔记核对。"
+        }
+      ],
+      "implicit_signal": "依赖原始文件而非AI生成内容，工作餐时也可处理材料"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个新闻追踪插件自动把报道阅读记录共享到了关联社交媒体，里面包含未公开消息源的搜索词。"
+        },
+        {
+          "role": "assistant",
+          "content": "立刻卸载该插件，并检查浏览器缓存是否留有记录。我用你的加密笔记本重新搜一次，所有查询都用VPN+隐私窗口。"
+        }
+      ],
+      "implicit_signal": "极高隐私要求，避免消息源被追踪"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "报名了一个‘AI辅助调查新闻’在线课程，两节课都在讲如何使用AI生成选题灵感，没有涉及数据验证或公共记录法规。"
+        },
+        {
+          "role": "assistant",
+          "content": "退课，改报数据新闻协会的‘政府数据库获取实务’工作坊。费用从报道培训预算走，不用自掏。"
+        }
+      ],
+      "implicit_signal": "政策分析工作坊应聚焦政府事务和数据新闻实务"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在回家路上想放松一下，点开了记录片频道，推荐页面全是真人秀，没有政治分析类选项。"
+        },
+        {
+          "role": "assistant",
+          "content": "切到CuriosityStream，搜‘立法博弈’系列，下好两集离线版，这样在回家路上不用连网也能看。"
+        }
+      ],
+      "implicit_signal": "休闲时偏好政治分析类内容，与工作主题连贯"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "购物车里有两款降噪耳机：一款便宜但测评说连接不稳定，另一款贵30%但延迟低且支持同时连接三个设备。"
+        },
+        {
+          "role": "assistant",
+          "content": "选贵的那个。采访现场需要同时连手机录音、笔记本看稿、以及备用机查资料，稳定连接比省预算重要。"
+        }
+      ],
+      "implicit_signal": "产品选择倾向高性能、安全及可审计性"
+    }
+  ]
+}

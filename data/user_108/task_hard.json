@@ -1,0 +1,102 @@
+{
+  "user_id": "user_108",
+  "task": {
+    "task_id": "task_hard",
+    "title": "即将来临的冰暴的轮班计划",
+    "daily_life_domain": "work",
+    "scenario": "加拿大环境部已对多伦多发布冬季风暴监测，预测一场严重的冰暴将于周四晚上至周五抵达。作为高级护理人员，Alex需要协调团队的排班安排，确保急救车辆配备防滑链和冬季用品，并调整个人家庭计划（他女儿的 daycare 可能关闭）。他原定周五上午为新招募人员安排的培训可能需要推迟。",
+    "user_goal": "确保冰暴期间最优应急响应覆盖，同时平衡培训职责和家庭后勤。",
+    "why_complex": "需要在多个角色间进行多日规划：与同事协调轮班、与调度沟通、重新安排培训、准备个人装备、安排儿童照料，并实时监测预报更新。",
+    "constraints": [
+      "12小时轮班制；因疲劳规定不能超时工作",
+      "单收入家庭；无法承担临时 daycare 附加费",
+      "恶劣天气期间必须遵守护理服务协议",
+      "家庭因素：女儿的 daycare 可能关闭；妻子是护士，有自己的排班限制"
+    ],
+    "required_reasoning_steps": [
+      "检查最新预报：时间、降水量、温度趋势和风寒指数。",
+      "审查个人排班表，识别如果风暴在高峰期来袭可能出现的覆盖缺口。",
+      "联系团队成员讨论自愿换班或加班以确保足够的人员配备。",
+      "与调度协调确认车辆冬季化检查和防滑链安装状态。",
+      "决定是否推迟周五的训练；如果是，考虑学员可用性寻找替代日期。",
+      "安排托儿服务：考虑到学校停课，探索后备选项（家人、邻居或紧急日托）。",
+      "计划个人睡眠和营养：为暴风雪天准备餐食，确保便携充电器和手电筒准备好。",
+      "将最终计划告知配偶和调度中心，并设置天气警报阈值以获取实时更新。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "同事的可用性和调班意愿。",
+      "重新安排训练时训练室的可使用性。",
+      "日托中心的关闭政策和紧急后备选项。",
+      "服务处安装防滑链的确切阈值。",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "一份详细的48小时行动计划，包括建议的班次安排、训练重新安排建议、家庭应急计划和个人准备清单。",
+    "success_criteria": [
+      "覆盖计划已获调度中心批准。",
+      "训练已重新安排且无冲突。",
+      "暴风雪期间的托儿服务已确定。",
+      "个人应急包已装满所列物品。",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "未经确认就假设同事有空。",
+      "忽视疲劳规定。",
+      "未能核实日托中心的关闭时间。",
+      "忽视预报的不确定性导致计划过于僵化。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 5,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 8,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=11",
+        "constraints_capped=4",
+        "decision_points_capped=3",
+        "information_items_capped=6",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=30.75",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Alex Morgan",
+      "age": 35,
+      "gender": "男性"
+    }
+  }
+}

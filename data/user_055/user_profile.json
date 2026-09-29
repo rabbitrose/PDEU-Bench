@@ -1,0 +1,184 @@
+{
+  "user_id": "user_055",
+  "explicit_preferences": {
+    "user_profile": "一个双语儿童，其语言发展正在被长期监测",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Mateo Garcia",
+        "age": 6,
+        "gender": "男性",
+        "location": "美国加利福尼亚州洛杉矶",
+        "languages": [
+          "英语",
+          "西班牙语"
+        ],
+        "education_level": "幼儿园",
+        "occupation": "学生",
+        "industry": "教育",
+        "seniority": "N/A",
+        "household": "与父母和妹妹同住",
+        "life_stage": "童年"
+      },
+      "physical_profile": {
+        "height_cm": 115,
+        "general_appearance": "瘦身材，黑头发，棕色眼睛，典型的活跃孩子",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "好奇且健谈，但有时在新环境中害羞。英语语言发展略落后于同龄人，但西班牙语很强。",
+        "big_five": {
+          "openness": 4,
+          "conscientiousness": 3,
+          "extraversion": 3,
+          "agreeableness": 4,
+          "neuroticism": 2
+        },
+        "strengths": [
+          "渴望学习",
+          "对他人有同理心"
+        ],
+        "weaknesses": [
+          "当无法表达自己时容易沮丧",
+          "注意力持续时间短"
+        ],
+        "values": [
+          "家庭",
+          "公平",
+          "好奇心"
+        ],
+        "motivations": [
+          "来自父母和老师的表扬",
+          "交朋友"
+        ],
+        "stress_triggers": [
+          "被过于频繁地纠正",
+          "嘈杂环境"
+        ]
+      },
+      "background": "出生于墨西哥城，3岁移居美国。西班牙语是家庭语言，英语在学校和与朋友使用。父母都是专业人士。语言发展由学校语言治疗师和儿科医生监测。",
+      "lifestyle": "上半天幼儿园，然后课后托管。周末家庭出游。屏幕时间限制在教育类app和卡通片。",
+      "interests": [
+        "恐龙",
+        "积木",
+        "画画",
+        "足球",
+        "玩玩具车",
+        "看双语版的《小猪佩奇》"
+      ],
+      "explicit_preferences": {
+        "content_preferences": [
+          "教育类动画片",
+          "互动故事书",
+          "混合英语和西班牙语的双语媒体",
+          "内容必须匹配此用户的独特工作模式：以儿童为中心的简单模式：非常简短、视觉化、耐心。",
+          "拒绝通用助手框架：除非被问及，否则不要写面向成人的教学法。"
+        ],
+        "product_preferences": [
+          "LEGO Duplo",
+          "Crayola可水洗马克笔",
+          "双语玩具",
+          "产品应通过用户自己的权衡视角来选择：小步骤、要说的词、游戏、表扬提示。"
+        ],
+        "service_preferences": [
+          "言语治疗课程",
+          "儿童图书馆活动",
+          "双语辅导",
+          "服务只有在保留此决策优先级时才可接受：言语练习舒适度、双语游戏和家庭轻松胜过完整性。"
+        ],
+        "learning_preferences": [
+          "动手操作活动",
+          "视觉辅助工具",
+          "重复和歌曲"
+        ],
+        "travel_preferences": [
+          "短途公园游玩",
+          "去墨西哥探望祖父母",
+          "避免长途飞行"
+        ],
+        "food_preferences": [
+          "塔可",
+          "水果零食",
+          "芝士通心粉",
+          "温和口味"
+        ],
+        "entertainment_preferences": [
+          "《汪汪队立大功》",
+          "《芝麻街》（双语剧集）",
+          "跟唱视频"
+        ],
+        "technology_preferences": [
+          "带有家长控制的平板电脑",
+          "教育类应用如 ABCmouse",
+          "用于简单问题的语音助手"
+        ],
+        "privacy_preferences": "家长管理所有账户，最小化数据共享",
+        "budget_preferences": "家长注重成本，但愿意在开发工具上花钱",
+        "personalization_directives": {
+          "style_contract": "以儿童为中心的简单模式：非常简短、视觉化、有耐心。",
+          "decision_priority": "语言练习的舒适度、双语玩耍和家庭轻松感优先于完整性。",
+          "evidence_contract": "不引用来源；重视例子和日常惯例。",
+          "format_contract": "小步骤、可说的话、游戏、表扬提示。",
+          "anti_default_assistant_behavior": "除非被问到，不要写面向成人的教学法。",
+          "distinctive_quirks": [
+            "在有用处使用简单的英语/西班牙语。",
+            "故事时间应有趣，而非像上课。",
+            "周末外出需考虑注意力短暂。"
+          ],
+          "hard_avoidances": [
+            "长段落",
+            "临床语言术语",
+            "选项过多"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": [
+        "辛辣食物",
+        "被催促",
+        "过于复杂的指令",
+        "惊喜"
+      ],
+      "communication_style": "说短句，混合语言，有时用手势。可能需要提示来详细说明。",
+      "decision_making": "决定由父母做出，但孩子的意见会被考虑在小选择上，如零食或电视节目。",
+      "evaluation_notes": {
+        "likely_tasks": [
+          "推荐双语学习app",
+          "建议语言治疗练习",
+          "创造语言丰富的活动",
+          "选择合适的电视节目"
+        ],
+        "preference_conflicts": "父母想要教育内容，孩子想要乐趣；双语需求 vs 纯英语选项",
+        "ambiguity_to_preserve": "语言熟练程度未分级；孩子的兴趣可能快速变化",
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:46",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "耐心且鼓励",
+            "response_length": "简短简单的句子",
+            "evidence_expectation": "不需要",
+            "formatting": "偏好视觉元素，指令用项目符号",
+            "proactive_behavior": "提醒日常活动，建议活动",
+            "things_to_avoid": [
+              "行话",
+              "讽刺",
+              "感觉像批评的纠正"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "双语故事时间活动计划",
+            "言语治疗练习日常",
+            "周末家庭出游规划"
+          ]
+        }
+      }
+    }
+  }
+}

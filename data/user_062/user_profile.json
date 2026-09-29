@@ -1,0 +1,228 @@
+{
+  "user_id": "user_062",
+  "explicit_preferences": {
+    "user_profile": "一位退休的戏剧导演，以处理复杂叙事和多层次角色的技巧而闻名",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Julian Marchetti",
+        "age": 68,
+        "gender": "男性",
+        "location": "Boston, Massachusetts, USA",
+        "languages": [
+          "英语",
+          "法语",
+          "意大利语"
+        ],
+        "education_level": "戏剧导演艺术硕士",
+        "occupation": "退休戏剧导演",
+        "industry": "表演艺术",
+        "seniority": "名誉导演",
+        "household": "独居在灯塔山翻新的褐石建筑中",
+        "life_stage": "已退休，作为当地剧院的顾问和客座讲师活跃"
+      },
+      "physical_profile": {
+        "height_cm": 178,
+        "general_appearance": "银发、纤细身材、富有表现力的双手、锐利的蓝眼睛，常穿彩色围巾和粗花呢夹克",
+        "accessibility_needs": "无重大疾病，但阅读剧本和细字时使用老花镜"
+      },
+      "personality": {
+        "concise_summary": "深思熟虑、内省的知识分子，富有戏剧感和深刻的人物洞察力；重视艺术完整性和情感真实性。",
+        "big_five": {
+          "openness": "高",
+          "conscientiousness": "高",
+          "extraversion": "适中",
+          "agreeableness": "适中",
+          "neuroticism": "low"
+        },
+        "strengths": [
+          "叙事理解",
+          "人物分析",
+          "指导年轻演员",
+          "即兴表演技巧"
+        ],
+        "weaknesses": [
+          "对简单化思维不耐烦",
+          "对肤浅作品过于挑剔",
+          "完美主义倾向"
+        ],
+        "values": [
+          "艺术完整性",
+          "知识诚实",
+          "情感真实性",
+          "戏剧传统"
+        ],
+        "motivations": [
+          "保护戏剧传统",
+          "培养新人才",
+          "继续参与复杂故事"
+        ],
+        "stress_triggers": [
+          "对人物的肤浅解读",
+          "不尊重手艺",
+          "合作者缺乏准备"
+        ]
+      },
+      "background": "出生于纽约市意大利移民家庭。在耶鲁大学戏剧学院学习（艺术硕士）。在主要地区剧院和百老汇外执导了50多部戏剧，尤其是莎士比亚、田纳西·威廉姆斯和当代作品。65岁退休，但仍担任顾问，偶尔在波士顿大学客座讲座，并担任当地剧院公司的董事会成员。",
+      "lifestyle": "日常习惯：早晨喝咖啡做填字游戏，下午阅读剧本或传记，晚上观看当地剧院或电影放映。喜欢在波士顿公园散步。每月举办一次戏剧爱好者沙龙。经常烹饪意大利菜。积极参与美国话剧团的社区项目。",
+      "interests": [
+        "古典和当代戏剧",
+        "黑色电影",
+        "歌剧",
+        "文学小说",
+        "国际象棋",
+        "收藏葡萄酒",
+        "艺术画廊",
+        "故事播客"
+      ],
+      "explicit_preferences": {
+        "content_preferences": [
+          "复杂的情节，带有道德模糊性",
+          "历史剧",
+          "心理惊悚片",
+          "关于艺术的纪录片",
+          "以人物为主导的叙事",
+          "内容必须符合用户独特的工作模式：退休戏剧导演模式：文学、犀利、审美上有主见。",
+          "拒绝通用的助手框架：不要将模糊性简化为整洁的教训。"
+        ],
+        "product_preferences": [
+          "用于听戏剧的高质量音频设备",
+          "舒适的阅读椅",
+          "钢笔",
+          "皮面笔记本",
+          "手工咖啡机",
+          "产品应通过用户自身的权衡视角选择：挑衅性、场景锚点、舞台暗示、沙龙问题。"
+        ],
+        "service_preferences": [
+          "来自文学评论家的个性化书籍推荐",
+          "附带教育笔记的精选葡萄酒订阅",
+          "正装定制",
+          "私人剧院导览",
+          "只有当服务保留这一决策优先级时才是可接受的：戏剧张力、道德模糊性和对话优雅胜过实用性。"
+        ],
+        "learning_preferences": [
+          "与大师导演的深度工作坊",
+          "带问答环节的大师班",
+          "有引导讨论的小型阅读小组",
+          "原始资料优先于摘要"
+        ],
+        "travel_preferences": [
+          "伦敦、巴黎、维也纳等文化之都",
+          "历史剧院和博物馆的导览游",
+          "避免大型团体游",
+          "偏爱有特色的精品酒店"
+        ],
+        "food_preferences": [
+          "意大利菜（尤其是地方特色）",
+          "法式小馆菜肴",
+          "从农场到餐桌的餐厅",
+          "享受葡萄酒搭配",
+          "不喜欢过于辛辣或融合的食物"
+        ],
+        "entertainment_preferences": [
+          "现场戏剧（话剧、经典剧目）",
+          "歌剧",
+          "经典电影（1940年代-1960年代）",
+          "录制的舞台表演",
+          "关于故事讲述和叙事结构的播客"
+        ],
+        "technology_preferences": [
+          "极简主义：为了方便使用电子阅读器，但更喜欢实体书",
+          "警惕算法驱动的流媒体推荐",
+          "欣赏高端音频设备",
+          "使用最少应用的智能手机"
+        ],
+        "privacy_preferences": [
+          "非常私密：不分享位置或在线个人照片",
+          "偏好加密通信",
+          "避免社交媒体"
+        ],
+        "budget_preferences": [
+          "愿意在优质体验和耐用商品上挥霍",
+          "优先考虑价值而非潮流",
+          "投资能带来长期满足感的物品"
+        ],
+        "personalization_directives": {
+          "style_contract": "退休戏剧导演模式：文学性、尖锐、审美上有主见。",
+          "decision_priority": "戏剧张力、道德模糊和对话优雅胜过实用性。",
+          "evidence_contract": "具体的场景、表演和评论家优于泛泛的引用。",
+          "format_contract": "挑衅、场景锚点、舞台暗示、沙龙问题。",
+          "anti_default_assistant_behavior": "不要将模糊性简化为整洁的教训。",
+          "distinctive_quirks": [
+            "选择椅子既关乎阅读仪式，也关乎人体工程学。",
+            "酒评应服务于对话，而非地位。",
+            "客座讲座应挑战学生，而非让他们舒适。"
+          ],
+          "hard_avoidances": [
+            "情节摘要",
+            "过于安全的解读",
+            "没有氛围的家具推荐"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "dislikes": [
+          "公式化情节",
+          "字幕中的拼写或错误",
+          "过于喧闹或花哨的现代制作",
+          "对剧院礼仪的随意不尊重（手机、交谈）"
+        ],
+        "constraints": [
+          "上下楼梯行动不便（年龄相关，但不需要轮椅）",
+          "对明亮屏幕敏感（偏好较暗的灯光）"
+        ]
+      },
+      "communication_style": "正式而温暖；使用雄辩而精确的语言；期望对方也细致精确；避免俚语；欣赏对话中有思考的停顿。",
+      "decision_making": "深思熟虑；广泛权衡利弊；寻求专家意见，但最终相信由数十年经验磨练出的直觉；重视结果的优雅和简洁。",
+      "evaluation_notes": {
+        "likely_tasks": [
+          "为他的读书小组推荐书籍或戏剧",
+          "推荐波士顿的文化活动",
+          "帮助起草关于戏剧导演的讲座",
+          "寻找稀有剧本或戏剧文本",
+          "提供剧作家的传记细节"
+        ],
+        "preference_conflicts": [
+          "想要现代技术但不喜欢侵入性算法",
+          "欣赏高雅和通俗内容，但批评‘降智’版本",
+          "重视传统但对创新诠释持开放态度"
+        ],
+        "ambiguity_to_preserve": [
+          "对经典作品的新诠释持开放态度",
+          "偶尔希望在推荐中获得惊喜或意外发现",
+          "在特定范围内品味并非过于僵化"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:44",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "尊重、稍显正式、知识渊博",
+            "response_length": "被问及细节时简洁但全面；避免不必要的冗长",
+            "evidence_expectation": "高；期望推荐或主张有来源、引用或推理",
+            "formatting": "文本干净，除非为清晰特别要求，否则避免过多项目符号",
+            "proactive_behavior": "只有当建议展示出对他品味和偏好的理解时才欢迎；否则更倾向于提示",
+            "things_to_avoid": [
+              "奉承",
+              "过度简化",
+              "未经请求的情感建议",
+              "忽视他在戏剧方面的专业知识"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "策划一场关于田纳西·威廉姆斯《玻璃动物园》的沙龙讨论",
+            "为波士顿大学学生准备一场关于指导复杂角色的客座讲座",
+            "选择并购买一张新的阅读椅用于他的书房"
+          ]
+        }
+      }
+    }
+  }
+}

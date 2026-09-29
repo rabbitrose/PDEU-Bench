@@ -1,0 +1,482 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_142",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:53:20",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_009",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "content": [
+      "hidden_indirect_006",
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_002",
+      "hidden_indirect_012"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_013",
+      "hidden_indirect_020"
+    ],
+    "entertainment": [
+      "hidden_indirect_013"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_001",
+      "hidden_indirect_002",
+      "hidden_indirect_003"
+    ],
+    "food": [
+      "hidden_indirect_005",
+      "hidden_indirect_015"
+    ],
+    "format_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_003"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_007",
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_019"
+    ],
+    "learning": [
+      "hidden_indirect_006",
+      "hidden_indirect_012",
+      "hidden_indirect_018"
+    ],
+    "privacy": [
+      "hidden_indirect_007",
+      "hidden_indirect_017"
+    ],
+    "product": [
+      "hidden_indirect_008",
+      "hidden_indirect_011",
+      "hidden_indirect_014"
+    ],
+    "role_context": [
+      "hidden_indirect_001",
+      "hidden_indirect_019"
+    ],
+    "service": [
+      "hidden_indirect_009",
+      "hidden_indirect_011",
+      "hidden_indirect_017"
+    ],
+    "technology": [
+      "hidden_indirect_010",
+      "hidden_indirect_014",
+      "hidden_indirect_016",
+      "hidden_indirect_020"
+    ],
+    "travel": [
+      "hidden_indirect_004",
+      "hidden_indirect_016"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "decision_priority",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天合资方发来一份意向书，没附最新印尼外商投资法批文。我用旧版清单比对时发现日期对不上。最后多付了一笔尽职调查费。下次你审这类文件，需要引用最新法条而非摘要。"
+        },
+        {
+          "role": "assistant",
+          "content": "明白。这份修订版我会先核验法条出处与批文颁行日期，并在交付件中列出原文章节编号。不会采用非官方译本。"
+        }
+      ],
+      "implicit_signal": "任务中法律风险的优先级高于关系维护；要求引用法条来源"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "evidence_contract",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周的合规报告没有指明每个风险的负责人和缓解时限。我在董事会上被CFO问住，因为报告只列了风险描述。那次预算失控是最后一刻才补责任人。"
+        },
+        {
+          "role": "assistant",
+          "content": "本期风险评估将按风险敞口大小排序，每项后附加责任部门、缓解措施、完成时限，并在末尾给出董事会可投票的下行控制建议。"
+        }
+      ],
+      "implicit_signal": "决策须包含风险敞口量化与缓解措施分配，避免仅陈述事实"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚才会议间隙看到你给我的东南亚市场准入总结，引了一条微博截图当法规依据。这种来源我不能用它做任何决策。发给外部律师重查又多花了三小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "已替换为印尼投资协调委员会官网英文版，并同时在正文脚注标注了原文PDF下载链接。"
+        }
+      ],
+      "implicit_signal": "交付格式要求来源可查，不接受二手数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你建议我把纽约和上海的会议排在同一周，中间不留空档。结果我跑步日程被打乱，孩子学校临时家长会只能取消。日历上没有缓冲，后续什么都调不了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次仅预订直飞航班并固定一晚酒店，会议前后各保留一个空行日（标记为不可取消的私人时间），不会安排任何其他会面。"
+        }
+      ],
+      "implicit_signal": "旅行计划必须保留日历控制权，不可强制安排"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去年感恩节你推荐的费城博物馆路线挤了五个馆，孩子到第三个就发脾气。最后一项没人确认，我自己也没吃上饭。我挤在人群中看手机上的旧版清单，压力很大。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只选两个博物馆加一个日本餐厅（已预订）。下午留出公园自由时间。去程路上放巴赫的勃兰登堡协奏曲作为背景。"
+        }
+      ],
+      "implicit_signal": "家庭文化旅行需要精策划而非行程过密"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次发我的AI与法律白皮书我读了前半部分，但最后三页全是原理案例，没有人问我理解了没。我事后才发现漏掉一个关键点，差点在合规审查出问题。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次我会把材料分成小模块，每段结尾附一个验证理解的三选一问题，完成后才解锁下一段。同时保留原文引用方便你查证。"
+        }
+      ],
+      "implicit_signal": "学习内容须附带问答式交互，而非单向推送"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次推荐一个AI合同审查工具，试用时要求上传公司合同样本到他们的云端。我没有签NDA就直接上传了，后来在内部审计被要求解释为什么外部有副本。"
+        },
+        {
+          "role": "assistant",
+          "content": "已联系该工具供应商签署双向保密协议并索要本地部署选项。试用期间只会使用你手写的脱敏案例，而非公司实际合同。"
+        }
+      ],
+      "implicit_signal": "拒绝在未签订保密协议的情况下分享数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你建议我用某小众法律检索插件，说准确率95%。上周我用它查新加坡公司法，结果存出一条过时修正案。我差一点在合资评估中引用错误条款。以后不要推荐这种未公开验证的工具。"
+        },
+        {
+          "role": "assistant",
+          "content": "不再推荐任何Beta版或来源不明的工具。今后所有法律检索建议将来自Westlaw或LexisNexis，并附带检索截图。"
+        }
+      ],
+      "implicit_signal": "避免数据来源不清的工具，拒绝早期版本"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次建议的外聘律所每小时报价950美元，却没给封顶估算。月底账单失控，我在CFO面前很难看。以后外包前先给预算上限和替代方案。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次外包前我会收集至少三家律所的报价与固定费率方案，并在预算建议中明确标注封顶金额与审批触发条件。"
+        }
+      ],
+      "implicit_signal": "外部服务需要明确预算流程，不可无成本约束"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次说某AI法规监控工具能覆盖东南亚三国，却没说只覆盖英语版本。我的印尼员工看不懂，等于没用。排到一半才发现不合适。下次话别说太满，先给限制清单。"
+        },
+        {
+          "role": "assistant",
+          "content": "已对该工具重新评估，列出其仅涵盖英语和印尼语，且不支持越南语。下周一前会提供一份覆盖越南语与泰语的替代监控方案对比表。"
+        }
+      ],
+      "implicit_signal": "技术建议以实际需求为导向，不接受无上下文的乐观承诺"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "家庭清洁公司之前用的不错，但你后来推荐换了一家需要我自己每周列清单。结果多付了一笔费用还要我逐项确认，省下的时间全耗在写清单上了。"
+        },
+        {
+          "role": "assistant",
+          "content": "已联系原清洁公司恢复旧服务模式。新公司取消。今后对个人服务的建议会优先考察是否需要你手动干预。"
+        }
+      ],
+      "implicit_signal": "服务体验以效率为重，避免造成额外行政负担"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次推了一个国际贸易合规白皮书，但内容全是宏观背景，没有具体东南亚条款分析。我看了两章才意识到没用，浪费了49分钟。时间是很贵的。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次推送前会先提供目录与适用性评估表。本次为你找到一份东盟出口管制指南，每章末尾附有行动清单。"
+        }
+      ],
+      "implicit_signal": "学习以实际决策风险为导向，非理论拓展"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推了一部法律喜剧《金装律师》前两季，我看了三集。但假期只有23分钟一次的路跑时间，每次接不上剧情。最后我干脆删掉了订阅。"
+        },
+        {
+          "role": "assistant",
+          "content": "换为纪录片《The Crime of the Century》每集37分钟，正好匹配你的晚餐准备空隙。第一集聚焦药品合规，可直接关联你下周的业务。"
+        }
+      ],
+      "implicit_signal": "娱乐内容须与法律或历史相关，有深度但可片段消费"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你建议的笔记应用我在MacBook和iPhone之间同步失败三次，会议记录丢失导致我被迫从头找外部律师要文件。后来我换回苹果备忘录，就再没出过问题。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后工作流建议优先使用Apple生态自带工具。如需第三方，会先在你设备上做完整同步测试再推荐。"
+        }
+      ],
+      "implicit_signal": "技术产品优先选择成熟生态，不鼓励分散平台"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周你推的线上食材订阅盒每份32美元，碳水比例高吃了几天血糖飘。我还在超市结账前对比过，算下来不如自己买三文鱼划算。52美元的教训。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐替换为预售的乡村三文鱼和三色蔬菜包，每份20美元，碳净含量标注清晰。下周菜单已包含烤三文鱼配芦笋。"
+        }
+      ],
+      "implicit_signal": "饮食选择偏向自制、健康且预算可控"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "机场休息室WiFi我连过之后，内部系统提示异常登录。你当时没提醒我开VPN。结果我不得不重置所有凭证，在线上会议间隙尴尬地解释。"
+        },
+        {
+          "role": "assistant",
+          "content": "已在你所有设备预装自动VPN规则，连接非家庭或公司网络时强制启动。下一次出发前会生成一个断连清单。"
+        }
+      ],
+      "implicit_signal": "移动办公须保证数据安全，接受公共网络时主动断连"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你劝我用一个法律日历助手扫描我邮件里的案件截止日。结果它把我的合同日期都存到了第三方服务器。我把该账号注销并要求删除备份。"
+        },
+        {
+          "role": "assistant",
+          "content": "停止所有第三方日历同步请求。改用本地Apple日历+提醒事项手动输入，你给出事件正文，我负责手工设置提醒。"
+        }
+      ],
+      "implicit_signal": "个人服务效力优先，不将隐私权作为次要项"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次推的ESG白皮书我读了头两章政策性框架，但其实我需要的是泰国工厂环保合规的具体检查清单。你当时没说这是普适指南。"
+        },
+        {
+          "role": "assistant",
+          "content": "已将内容替换为泰国工业部2024环保合规手册，每项附带现场检查表和举证要求。开头第一行注明只适用于泰国工厂。"
+        }
+      ],
+      "implicit_signal": "学习材料需附带具体应用场景，而非宏观理论"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次写的合资备忘录结尾说‘建议酌情推进’。CEO直接问我‘你建议还是不建议？’我不得不在邮件里重新解释。不要那种模棱两可的收尾。"
+        },
+        {
+          "role": "assistant",
+          "content": "今后所有法律备忘录结尾采用‘建议批准’或‘建议拒绝’并附最多三条决定依据。无灰色表述。"
+        }
+      ],
+      "implicit_signal": "高管沟通需避开放弃行动呼吁的柔性语言"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "budget",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去年你推荐的某个合同审查SaaS，每月收费89美元。我试用后发现预算在最后一步失控：法务部五个账号用了两个月就停掉，因为退款和取消流程花了两周。"
+        },
+        {
+          "role": "assistant",
+          "content": "不再推荐按座席收费的云工具。下一个选项为DocuSign本地版，一次性采购费用并有IT内部部署验证，控制年度总拥有成本。"
+        }
+      ],
+      "implicit_signal": "合同审查工具优先考虑集成本地部署，避免月度订阅成本不断叠加"
+    }
+  ]
+}

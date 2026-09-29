@@ -1,0 +1,514 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_119",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:08:31",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 22,
+  "composition": {
+    "episodic_preference_trace": 22
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_012",
+      "hidden_indirect_016",
+      "hidden_indirect_019",
+      "hidden_indirect_022"
+    ],
+    "content": [
+      "hidden_indirect_006"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_007",
+      "hidden_indirect_011",
+      "hidden_indirect_014",
+      "hidden_indirect_017",
+      "hidden_indirect_022"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "entertainment": [
+      "hidden_indirect_013"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_003",
+      "hidden_indirect_018"
+    ],
+    "food": [
+      "hidden_indirect_012"
+    ],
+    "format_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_009",
+      "hidden_indirect_015"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_017",
+      "hidden_indirect_019",
+      "hidden_indirect_021"
+    ],
+    "learning": [
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "privacy": [
+      "hidden_indirect_008",
+      "hidden_indirect_013",
+      "hidden_indirect_021"
+    ],
+    "product": [
+      "hidden_indirect_007"
+    ],
+    "role_context": [
+      "hidden_indirect_014"
+    ],
+    "service": [
+      "hidden_indirect_005",
+      "hidden_indirect_008",
+      "hidden_indirect_016"
+    ],
+    "technology": [
+      "hidden_indirect_009",
+      "hidden_indirect_020"
+    ],
+    "travel": [
+      "hidden_indirect_011",
+      "hidden_indirect_019"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买的水管接头用了三个月就裂了，当时图便宜没看材质。现在要换新的。附近五金店有两个牌子，一个贵30%但标的铜镍合金。预算单上还有超市要补的洗发水。怎么选？"
+        },
+        {
+          "role": "assistant",
+          "content": "选铜镍合金那个，虽然贵但避免半年内重新拆装。洗发水用普通实惠装压缩到本周预算内，差不了太多。先买接头，换好后再确认洗发水剩余量。来源可靠。"
+        }
+      ],
+      "implicit_signal": "选择低成本替代方案，并强调可靠性优先于新颖功能"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次拆厨房水槽，看了五个视频都说要买S型弯管，结果买回来口径不对。这次换天然气灶的软管，不敢只看视频了。你给个核对方法？"
+        },
+        {
+          "role": "assistant",
+          "content": "拿手机拍照灶具接口型号和说明书参数页，先给供应商确认。列张核对清单：口型、长度、压力参数、密封垫型号。若型号不匹配，提前问好退款条件。来源验证。"
+        }
+      ],
+      "implicit_signal": "要求建议附带具体数字来源和失败回滚路径"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "要查一下燃气软管的历史订单，结果发现记录在旧手机上。那台已经卖了，截图还在云盘但得重新找。不想再输一遍尺寸参数。怎么办？"
+        },
+        {
+          "role": "assistant",
+          "content": "直接导出云盘的照片到便签，用标签标出尺寸字段。下次换件时不用重新输入，只截新图比对差值。避免重复录入，还能看出是否换过规格。工具低摩擦。"
+        }
+      ],
+      "implicit_signal": "厌恶重复录入信息，要求留存截图比对验证"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "修理说明书上写了一些安全警告，但店主说不看也行。你上次直接说‘照着做就行’，我试了漏了密封检测那步，后来返工。这次换列明细吧？"
+        },
+        {
+          "role": "assistant",
+          "content": "好。给你列四步：关闭阀门、拍照连接处、安装后用肥皂水检测冒泡、做好标记等待30分钟。未确认点：你灶台总阀的位置我无法确定，请自己拍照确认后再开始。明确标记。"
+        }
+      ],
+      "implicit_signal": "讨厌空泛鼓励，要求明确标记未确认点"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前买过一个智能插座，说远程控制很方便，但用了半年app就停止更新了。现在考虑买新的，维修成本不清楚。你推荐时会不会也说‘好用’然后不管后续？"
+        },
+        {
+          "role": "assistant",
+          "content": "不会。选那款支持本地局域网控制、固件开源可自行维护的插座。维护成本只需要知道WiFi密码，app坏了自己还能用网页登录。替换成本也低于10雷亚尔。明确依赖项。"
+        }
+      ],
+      "implicit_signal": "忽略维护成本或隐性费用的推荐不可接受"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "翻到一个家电维修攻略，推荐了八个品牌工具，但内容全是广告软文。你上次给列表时也没说适用场景。能不能对比一下我厨房水槽那个？"
+        },
+        {
+          "role": "assistant",
+          "content": "可以。列两个候选：A品牌扳手有防滑手柄、适合湿手；B品牌更轻但扭矩小，你的水槽螺丝锈多不合适。A更符合你每次拧不动就加把的操作。需要自己实测松紧。对比。来源验证。"
+        }
+      ],
+      "implicit_signal": "厌恶通用榜单式内容，需要贴合自身场景的建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "洗衣机排水管有点腐蚀，超市有普通PVC和增强型尼龙两种。普通便宜一半，但上次用过的朋友说一年就变脆。现在买哪种？"
+        },
+        {
+          "role": "assistant",
+          "content": "增强型尼龙。虽然首付高，但按年算成本其实低——普通每两年换一次，增强用五年以上。替代方案：如果用普通，必须每季度检查，你记不勤快。来源可靠。优先可靠性。"
+        }
+      ],
+      "implicit_signal": "产品选择需说明长期使用成本和替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次用了一个线上维修预约平台，试用了免费版，后来忘了取消就扣了三个月月费，而且必须注册手机号才给取消。你推荐别家时能不能把取消规则也说清楚？"
+        },
+        {
+          "role": "assistant",
+          "content": "好。推荐一个本地口碑的小型服务，电话预约、现金支付。取消条件是提前24小时告知不收费。数据边界：店家只记录你地址和电话，不要求注册app。已确认来源。隐私优先。"
+        }
+      ],
+      "implicit_signal": "服务需明确取消规则和数据边界"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前用某笔记软件记录维修时间表，后来不让导出数据。手动搬了56条记录，累。现在要用日历或笔记，必须能导出CSV那种。你推荐哪个？"
+        },
+        {
+          "role": "assistant",
+          "content": "选一个开源的本地日历应用，支持ICS导出。你手机和电脑都能同步，搬家时压缩一次就能迁移。替代方案：用纯文本文件管理任务，也有终端工具。保证导出自由度。"
+        }
+      ],
+      "implicit_signal": "偏好跨平台可导出工具，拒绝锁定在单一平台"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周看了一个教程，又说要参考维修手册又说看论坛，结果80个链接打开一半就累了。只想知道换水龙头手柄的具体步骤。你能给一个实操清单加检测方法？"
+        },
+        {
+          "role": "assistant",
+          "content": "可以。清单：1关总阀；2拆旧把手；3量螺纹直径（你上次用卡尺量过）；4买匹配型号；5装新后用毛巾试漏。检测方法：装后开阀15分钟不漏。复盘对照清单步骤检查。来源示例。"
+        }
+      ],
+      "implicit_signal": "学习过程不接受堆砌链接，需要短周期反馈和复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去坎皮纳斯买零件，选了趟高速公路以为快，结果堵车2小时回来疲惫。下次再去，考虑公交还是火车？"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐坐城际直达火车。班次少但准时，单程1小时能休息；比公交贵10雷亚尔，但不会因为堵车多花时间。若遇延误会免费改签下一班，路上能看笔记复习维修步骤。缓冲预留。"
+        }
+      ],
+      "implicit_signal": "路线需预留缓冲，优先可取消性和安静环境"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "早餐摊边吃牛肉馅饼，上回吃完胃不舒服。今天同桌吃鸡蛋三明治，能换个清淡点、做完上午维修任务不犯困的选项吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "换个本地小店的芝士面包加水果，不油腻还便宜。控制预算10雷亚尔以内。同桌的鸡蛋三明治如果你吃也没问题，但切几块分着吃不易饱。优先清淡、易消化。"
+        }
+      ],
+      "implicit_signal": "预算敏感且考虑同行者限制，选择本地小店"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周末工艺品市集有很多摊位，上次去被拉到家具店注册会员差点买床垫。下午想找个安静的地方听音乐，但不想去体育馆那种热门场馆。推荐什么？"
+        },
+        {
+          "role": "assistant",
+          "content": "附近有个旧仓库改造的小现场，周二、周四有本地乐手演奏经典摇滚，不排长队、不需要注册。门口只收现金10雷亚尔。不会强制推销，且室内安静、适合放空。隐私优先。"
+        }
+      ],
+      "implicit_signal": "避免强营销活动，优先小型真实体验"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "邻居让我帮忙修洗衣机，后面还问到了我们合租的房间布局和月租。不想说太多。给个拒绝时不停在个人话题上的说法？"
+        },
+        {
+          "role": "assistant",
+          "content": "可以说‘我只有下午能帮忙修机器，剩下的没法聊’，然后转移话题到安装指南。不提供房间布局或租金这类与维修无关的信息。保持边界，尊重隐私。"
+        }
+      ],
+      "implicit_signal": "在接受超出范围的任务时保持边界，限制信息暴露"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你给了一家维修店电话和地址，去了发现柜台搬了，没有备份。这次直接给我一张标出地址、营业时间、电话、是否需预约的四列表？"
+        },
+        {
+          "role": "assistant",
+          "content": "好，给出表格：店名（本地五金）、地址（R. 某号）、电话（11-xxxx）、营业时间（周一至周六8-18，需确认周日是否开）、预约要求（零件取件不需要，上门修理需提前一电）。加一行检查项：去前先致电验证。来源可靠。"
+        }
+      ],
+      "implicit_signal": "交付格式以结构化表格加检查项为主，拒绝泛化建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "原本预算150雷亚尔修水龙头，但零件商加急费要加30，总金额超了预算10%。我下午还要去超市，没法等周末优惠。有没有不额外沟通的替换方案？"
+        },
+        {
+          "role": "assistant",
+          "content": "可以用原预算买普通铜制接头，自己用尖嘴钳拧紧，亏30不求人。多出的10%不花。替代方案：去更远的店面自取无加急费，但会多花1小时。建议选第一个，可靠且省沟通。"
+        }
+      ],
+      "implicit_signal": "超预算时必须有替代方案，且服务需减少额外沟通"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "网上有一款热门净水器，都说好，但评价里划痕、水管易松、滤芯一年后停产这些问题很多。你上次说‘不考虑维护成本’，现在一样推这个吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "不会。选另一款通用滤芯的净水器，滤芯五年内断供概率低。虽然首付贵40%，但维护成本只有换芯（每半年90雷亚尔）。放弃那款热门推荐。来源验证替代品。"
+        }
+      ],
+      "implicit_signal": "短期执行与长期维护平衡，避免只看热门推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次学用水平仪，书上只写了‘调平’，但没教怎么判断气泡居中。今天要在墙上打孔挂架，能不能给出判断标准？"
+        },
+        {
+          "role": "assistant",
+          "content": "标准：气泡与两侧黑线对齐，偏移不超过1毫米。判断方法：确保水平仪放在稳定平面，眼睛平视，若气泡在中心线两边摆动稳定即准。打孔前先在废料上测试。复盘标准对照。"
+        }
+      ],
+      "implicit_signal": "学习需要可验证示例和可复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "budget",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下个月要去桑托斯买工具，考虑住一晚。之前订的那种青年旅舍取消要收50%费用，且临街太吵了。这次有什么安静可选又能无风险取消的？"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐本地小旅馆标准间，提前预定可24小时免费取消。价格120雷亚尔，比青年旅舍贵40，但安静且独立卫生间。避免临街房。如果买完工具提前返回，取消无忧。优先可靠。"
+        }
+      ],
+      "implicit_signal": "住宿和交通优先考虑安全、安静和可取消性"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前试了一个家务管理app，要授权存取相册和通讯录才能用。我只想要一个能记录维修时间的日历工具。有免注册或只读日历的吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "用系统日历本地事件，不联网、不需要授权。若需提醒，设置推送但默认不共享位置。要跨设备，用iCloud或谷歌日历只同步日程不共享权限。低摩擦最小权限。"
+        }
+      ],
+      "implicit_signal": "偏好低摩擦、跨设备同步、默认最小权限的工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "维修账单里有银行流水截图，邮件不小心转发给了室友。现在回头看，只想把金额和卡号标记掉再保存。你推荐用什么简单工具快速处理？"
+        },
+        {
+          "role": "assistant",
+          "content": "用手机自带截图编辑的涂鸦功能把数字部分盖住。不需要额外app。若标记后存云盘，开启加密文件夹。保存方式只存回复后截图，不存原图。快速且不暴露敏感信息。"
+        }
+      ],
+      "implicit_signal": "涉及家庭或财务信息必须匿名化概括处理"
+    },
+    {
+      "interaction_id": "hidden_indirect_022",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下个月维修工具表里，断钉钳是必须买，但防滑手套还能用旧款。总预算只剩一半了。怎么分？"
+        },
+        {
+          "role": "assistant",
+          "content": "断钉钳是必须买的，50雷亚尔内就拿下。防滑手套推迟。如果购买后剩余预算少于10，把非紧急的超市购物移到下月。同步更新预算表。必须与推迟区分明确。"
+        }
+      ],
+      "implicit_signal": "默认保守预算，且区分必须花费和可推迟花费"
+    }
+  ]
+}

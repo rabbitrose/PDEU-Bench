@@ -1,0 +1,428 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_080",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T12:47:01",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 18,
+  "composition": {
+    "episodic_preference_trace": 18
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_004",
+      "hidden_indirect_007",
+      "hidden_indirect_017"
+    ],
+    "content": [
+      "hidden_indirect_005",
+      "hidden_indirect_014"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_004",
+      "hidden_indirect_012",
+      "hidden_indirect_018"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_002",
+      "hidden_indirect_003",
+      "hidden_indirect_009",
+      "hidden_indirect_011",
+      "hidden_indirect_016"
+    ],
+    "entertainment": [
+      "hidden_indirect_008"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_001",
+      "hidden_indirect_010",
+      "hidden_indirect_013"
+    ],
+    "food": [
+      "hidden_indirect_007"
+    ],
+    "format_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_012"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_003",
+      "hidden_indirect_008",
+      "hidden_indirect_011",
+      "hidden_indirect_015"
+    ],
+    "learning": [
+      "hidden_indirect_005"
+    ],
+    "privacy": [
+      "hidden_indirect_001",
+      "hidden_indirect_013"
+    ],
+    "product": [
+      "hidden_indirect_004"
+    ],
+    "role_context": [
+      "hidden_indirect_014"
+    ],
+    "service": [
+      "hidden_indirect_006",
+      "hidden_indirect_010",
+      "hidden_indirect_017"
+    ],
+    "technology": [
+      "hidden_indirect_009"
+    ],
+    "travel": [
+      "hidden_indirect_006",
+      "hidden_indirect_018"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "privacy",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次更新系统后装了个记账试用app，付费页面才写会同步通讯录。我直接删了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次选记账工具先查权限列表和离线模式，确认不收集多余数据再装试用版。"
+        }
+      ],
+      "implicit_signal": "因记账app隐藏权限而删除，要求事前确认数据收集范围"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "回家路上看到一家餐厅促销海报，用便签记了电话。到家后发现便签上的数字只写了26，没有店名。"
+        },
+        {
+          "role": "assistant",
+          "content": "把便签拍照存到本地加密笔记，下次写全地址、招牌菜和优惠条件。"
+        }
+      ],
+      "implicit_signal": "便签记录不全导致信息丢失，要求补充关键字段并本地加密"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "客户回复前有段空档，想找本时间旅行小说参考。某书城弹窗说必须注册才能看试读。"
+        },
+        {
+          "role": "assistant",
+          "content": "换到本地图书馆电子资源，用临时借阅卡登录，不填个人手机和邮箱。"
+        }
+      ],
+      "implicit_signal": "因书城要求注册而放弃，倾向临时借阅方式"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在线排了一款订阅制笔记工具，用了两周发现免费层只能导出txt。我取消了续费。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次选工具前先看免费层导出格式是否支持md和pdf，以及是否支持本地备份。"
+        }
+      ],
+      "implicit_signal": "因订阅工具导出限制而取消，要求先检查导出格式"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我妹（书商）评了我新写的一章，指出时间线矛盾。我按她建议重排了段落顺序。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次草稿用版本管理工具记录每次修改，方便回退到上一版对比。"
+        }
+      ],
+      "implicit_signal": "接受妹妹书评建议，调整草稿时用版本管理"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次约好去京都，同行人临时退出，酒店不能免费取消，白亏一晚房费。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次订酒店优先选入住当天18点前可免费取消的选项，并单独留出行程弹性。"
+        }
+      ],
+      "implicit_signal": "因酒店不可取消而亏损，要求可免费取消选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "回家路上常去的那家拉面店涨价了，一碗从800涨到900。我改去旁边的定食屋。"
+        },
+        {
+          "role": "assistant",
+          "content": "下周试试那家定食屋的午餐定食，如果实惠就列入常去清单，顺便看看有没有优惠券。"
+        }
+      ],
+      "implicit_signal": "因常去店涨价而改店，尝试新店并关注优惠"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看到一个演出宣传说“免费入场”，到现场才发现要关注公众号并转发才能进。我直接走了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次查演出时直接看主办方网站或电话确认参与条件，不依赖广告页。"
+        }
+      ],
+      "implicit_signal": "因演出虚假宣传免费实需转发而离场，要求事前确认条件"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "换了新手机后，旧手机上的笔记软件要求重新登录并验证手机号。我改用纯本地app。"
+        },
+        {
+          "role": "assistant",
+          "content": "迁移数据到支持端到端加密的本地笔记app，导出为md文件保存到电脑。"
+        }
+      ],
+      "implicit_signal": "因新手机笔记app要求验证而换用本地app，要求支持导出"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "注册了一个在线日历试用，取消时被要求填写理由和后续计划。我直接删账号不再用。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次用服务前先截图取消页面，确认是否不需要理由就能注销，保留截图证据。"
+        }
+      ],
+      "implicit_signal": "因取消服务需填理由而删账号，要求提前截图取消流程"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "客户发来一个共享文档要求填写个人住址才能查看项目需求。我回复只写区名，不写街道门牌。"
+        },
+        {
+          "role": "assistant",
+          "content": "如果必须提供地址，用工作地址或便利店代收点，并给对方说明这是隐私保护做法。"
+        }
+      ],
+      "implicit_signal": "客户文档要求填住址，用户只提供区名，要求用工作地址"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次做了个理财方案对比表，但忘记列出每项的缺点和备用步骤，自己复盘时发现漏了关键点。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次做财务决策表时先写最小可行方案，再列出每条方案的不足和回退选择。"
+        }
+      ],
+      "implicit_signal": "复盘发现财务方案缺缺点和备用步骤，要求补齐"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "给编辑发小说大纲时夹带了隐私备注，发现后立刻撤回。但对方已读到一半。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后发文件前用临时副本检查是否有隐藏信息，使用仅分享链接并设置过期时间。"
+        }
+      ],
+      "implicit_signal": "因发文件夹带隐私备注而撤回，要求发前用副本检查"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "妹妹说我的历史细节不够准，建议参考某本书。我找到后核对，修正了年代错误。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次写历史背景时留一个来源注释表，方便妹妹快速验核。"
+        }
+      ],
+      "implicit_signal": "妹妹建议参考历史书，用户核对修正，要求留来源注释"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想用一款写作辅助工具，强行要求绑定信用卡才能试免费版。我直接放弃。"
+        },
+        {
+          "role": "assistant",
+          "content": "换用不要求支付信息的开源替代工具，或者用临时虚拟卡注册。"
+        }
+      ],
+      "implicit_signal": "因写作工具强制绑定信用卡而放弃，要求用开源工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "新手机预装了一个健康app，自动推荐周边健身课程且不说明数据来源。我关了权限。"
+        },
+        {
+          "role": "assistant",
+          "content": "手动搜索本地健身房，要求对方先提供课程表、价格和取消政策，再决定是否试课。"
+        }
+      ],
+      "implicit_signal": "因健康app自动推荐课程不说明数据来源而关闭权限，要求手动查"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "订阅了三个月云存储，用了一个月发现限速严重不能备份大文件。剩下两个月浪费了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次先找有免费试用且不限速的服务，试用期内测试大文件传输速度再续费。"
+        }
+      ],
+      "implicit_signal": "因云存储限速浪费订阅费，要求试用期测试大文件"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去岐阜的巴士券买后不能改签，同行者退出导致多花了52分钟等下班车。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次买可变更日期的交通券，如果不行就分两段购票减少沉没成本。"
+        }
+      ],
+      "implicit_signal": "因巴士券不可改签导致多等52分钟，要求可变更日期或分段购票"
+    }
+  ]
+}

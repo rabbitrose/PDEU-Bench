@@ -1,0 +1,512 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_229",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:47:08",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 22,
+  "composition": {
+    "episodic_preference_trace": 22
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_003",
+      "hidden_indirect_008",
+      "hidden_indirect_013",
+      "hidden_indirect_017"
+    ],
+    "content": [
+      "hidden_indirect_004",
+      "hidden_indirect_011",
+      "hidden_indirect_015",
+      "hidden_indirect_021"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_009",
+      "hidden_indirect_016",
+      "hidden_indirect_022"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_007",
+      "hidden_indirect_015"
+    ],
+    "entertainment": [
+      "hidden_indirect_013"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_006",
+      "hidden_indirect_016"
+    ],
+    "food": [
+      "hidden_indirect_008"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_010",
+      "hidden_indirect_021"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_011",
+      "hidden_indirect_014",
+      "hidden_indirect_020"
+    ],
+    "learning": [
+      "hidden_indirect_006",
+      "hidden_indirect_017"
+    ],
+    "privacy": [
+      "hidden_indirect_005",
+      "hidden_indirect_012",
+      "hidden_indirect_020"
+    ],
+    "product": [
+      "hidden_indirect_002",
+      "hidden_indirect_019"
+    ],
+    "role_context": [
+      "hidden_indirect_018"
+    ],
+    "service": [
+      "hidden_indirect_009",
+      "hidden_indirect_012",
+      "hidden_indirect_018"
+    ],
+    "technology": [
+      "hidden_indirect_001",
+      "hidden_indirect_010",
+      "hidden_indirect_019",
+      "hidden_indirect_022"
+    ],
+    "travel": [
+      "hidden_indirect_007",
+      "hidden_indirect_014"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次选的笔记软件，导出只有PDF，想迁移到另一平台全丢失了格式。这次看一个协作工具，它有‘导出为Markdown’选项。"
+        },
+        {
+          "role": "assistant",
+          "content": "我查了该工具的导出说明，支持Markdown和JSON，同时列了已知限制：表格内图片路径会变。先试导出一条测试记录看看？"
+        }
+      ],
+      "implicit_signal": "先查来源与兼容性，不选封闭平台"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "同事推荐了一款日程共享软件，只说‘很多人用’。我没看到任何官方文档说数据存储位置。能找出它服务器在哪吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "看了一遍官网和隐私政策，发现条款只写‘第三方云服务’，未指明区域。另外App Store评论区有用户提到一版本没法回退。建议先拿测试数据试跑两天再决定。冲突点：方便 vs 数据主权。当前判断：暂不推荐，直到取得明确区域说明。"
+        }
+      ],
+      "implicit_signal": "需求来源层级与可验证性"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "回家路上收到软件订阅续费提醒，年付79美元。我记得当初在广告页看到‘月付5美元’才注册的，结果现在找不到取消入口了，只能写邮件。"
+        },
+        {
+          "role": "assistant",
+          "content": "证据：官网常见问题部分写着取消需提前7天邮件申请，退款只按比例折成代金券。冲突点：月付价不对应年付总价。待验证：发邮件后实际到账天数。判断：预算超预期且退出路径模糊，不适合你当前约束。"
+        }
+      ],
+      "implicit_signal": "格式与预算同时约束"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "活动散场后，主办发来总结。我截图里写着参会人数‘230人’，另一份反馈说只有46人签到。我没删任何一张图，把两张都存进备忘录了。"
+        },
+        {
+          "role": "assistant",
+          "content": "已收到两张截图。一个标‘参会总数’，一个标‘签到数’。我保留两个数值，不加平均。整理成：来源 A（注册后台）230 / 来源 B（门禁记录）46。说明：A可能包含未到场名额，B不包含未登记人员。"
+        }
+      ],
+      "implicit_signal": "保留矛盾与原始字段"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "健康打卡App要求读取通讯录才能使用‘紧急联系人’功能。我拒绝授权，但功能灰了。没找到其他设置方式。"
+        },
+        {
+          "role": "assistant",
+          "content": "测试后发现该App的紧急联系人字段强制绑定系统通讯录，无法手动输入号码。来源：App内帮助页无说明，致电客服后对方确认‘必须授权’。判断：违反你的信息最小化原则。替代方案：用本地备忘录存号码再单独设置手机快捷拨号。"
+        }
+      ],
+      "implicit_signal": "拒绝无来源断言，不提供额外个人信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周学用新排版工具，教程只给了43分钟视频，没有分步骤文档。我做到一半找不到‘对齐面板’，得倒回找具体时间点。课后没有能自己复盘的检查表。"
+        },
+        {
+          "role": "assistant",
+          "content": "我截出关键面板名称的中英文对照表，标出在视频第7分、第23分的操作节点。再写一条可复现的步骤记录：选中元素→菜单栏第一项→数值面板第3排。下次避免再看纯视频教程。"
+        }
+      ],
+      "implicit_signal": "偏好短周期反馈与示例"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "客户回复前临时定机票，搜索工具给了‘最便宜选项’，但转机时间只有43分钟，且前一程是廉航没餐食。我上次错过了类似衔接，之后设备发热下一趟没赶上。"
+        },
+        {
+          "role": "assistant",
+          "content": "事实：43分钟转机 + 廉航无餐 + 无免费改签。推断：该转机时间不符合机场最小衔接时间（来源：航司官网值机页标注建议60分钟以上）。判断：选高二档但中转2小时的航班，留出吃饭和缓冲。待验证：起降准点率是否符合发布数据。"
+        }
+      ],
+      "implicit_signal": "要求区分事实和推断，留缓冲"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "活动散场后和同事吃饭，大众点评首页推了评分最高的西餐，人均80美元。同事实在不愿意去太贵的。我手机截图保存了另一家本地小炒店，人均12美元。"
+        },
+        {
+          "role": "assistant",
+          "content": "截图中小炒店评论不多但有实际菜品照片。查了地图距离步行6分钟，无预定要求。冲突点：评分高但超预算 vs 低评分但可现场调节。判断：选小炒店，确认有当天菜单和付款方式。如果同行有饮食限制，提前问清。"
+        }
+      ],
+      "implicit_signal": "预算敏感，考虑同行限制"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周日晚上需要修打印机，网上找到第3个‘一键安装驱动’的链接，但点进去弹出要注册、填手机号。前两个链接直接给了.exe，但我没敢装。"
+        },
+        {
+          "role": "assistant",
+          "content": "第3个链接域名是第三方聚合站，无官方授权声明。冲突点：不用注册但来源不明 vs 注册后才能确认发布者。判断：先关闭。我找到打印机官网技术支持页面，文件有数字签名且下载页无额外要求。慢5分钟但来源可靠。"
+        }
+      ],
+      "implicit_signal": "来源质量优先于速度"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我手机截图共享表格，想同步到电脑修改。工具A只能在线编辑，没离线导出；工具B提供CSV导出但每次要手动重设权限。"
+        },
+        {
+          "role": "assistant",
+          "content": "工具A漏洞：无网络时连查看都不能。工具B导出CSV保留格式但共享设置不继承。冲突点：在线协作 vs 离线备份。判断：日常协作走工具B，重要版本手动导一份CSV到本地。待验证：导出的CSV跨平台打开是否乱码（建议先试一行数据）。"
+        }
+      ],
+      "implicit_signal": "跨设备同步但能导出"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看到一篇‘十大最佳笔记软件’清单，每段只有结论没有数据来源。第3个产品我上月用过一个版本没法回退，它写‘全平台无缝体验’。"
+        },
+        {
+          "role": "assistant",
+          "content": "清单第3个产品已确认为不实（来源：你亲身使用的版本限制记录）。其余9个产品均未附上评测机构、测试设备或采样时段。判断：该清单属于无来源断言。保留原列但标记为‘未验证来源的第三方汇总’，不用于决策。"
+        }
+      ],
+      "implicit_signal": "不掩盖不确定性，不无来源断言"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "客户回复前要传一个压缩包，未注册的转存服务限速200KB/s。另一个服务无需注册，直接上传有加密链接，但有效期只有24小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "第一个服务注册后需提供手机号才能提速，隐私政策未说明号码用途（来源：注册页小字链接）。第二个服务不注册但有效期短。判断：用第二个，文件加密后发送，当天内让客户下载。冲突点：便利 vs 周期可控。待验证：加密后的文件对方能否正常解压。"
+        }
+      ],
+      "implicit_signal": "少注册，少中转，边界清楚"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周日晚上朋友拉我去音乐节，订票页显示‘最后10张’但深夜散场，回家要1小时，明早还要干活。我退出了页面。"
+        },
+        {
+          "role": "assistant",
+          "content": "事实：夜间公共交通班次间隔20分钟，路上+散场步行共约1.5小时。来源：你上次错过末班车的记录。判断：不购票。替代方案：推荐同乐队小型livehouse演出，周六下午场已出票，散场时间21:00。"
+        }
+      ],
+      "implicit_signal": "小规模真实内容，不破坏作息"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "订住宿时平台首页推荐‘评分最高’，但评论区最新一条说半夜有噪音，另一条说退房扣了清洁费。没有中评。"
+        },
+        {
+          "role": "assistant",
+          "content": "平台只显示了综合评分（4.8），未展示差评分布。我从用户评价里提取27条记录，其中6条提到噪音、2条隐藏收费。冲突点：高评分 vs 实际入住风险。判断：不选该房源。推荐同区域另一家评分4.5但所有差评可核实（如‘床偏软’），且入住前可取消。"
+        }
+      ],
+      "implicit_signal": "不把冲突平均掉，不选热门默认"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我手机里存了两张截图，同一天同一友谊赛，一张写着‘胜场23’，一张写着‘胜场43’。赛事官方未更新确保到底哪张追溯是对的。"
+        },
+        {
+          "role": "assistant",
+          "content": "收到两张截图，时间戳相差2小时。保留两数字不合并。记录矛盾日志：来源A（拍摄于16:30）23场；来源B（拍摄于18:45）43场。推断：A可能只计了小组赛，B计了附加赛。待验证：向赛道主办确认最终计分规则。"
+        }
+      ],
+      "implicit_signal": "保留矛盾日志"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "考虑买一部备用机，电商页写‘续航一整天’，但评论区有人提到设备发热后表现下降严重。另外一篇评测根本没测发热场景。"
+        },
+        {
+          "role": "assistant",
+          "content": "来源A：电商自营描述（无测试数据）。来源B：3条评论均提及30分钟后发烫降频。来源C：评测全文未列温度测试。冲突点：营销描述 vs 实际。判断：不采用该型号。给出两款候选，分别来自拆解报告和社区长期测试帖，附温度曲线截图。"
+        }
+      ],
+      "implicit_signal": "先证据后结论"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买一个付费编程课程，原价299。周五有限时折扣价46，但课程大纲没有写更新周期。去年买过同类，买完内容半年没变。"
+        },
+        {
+          "role": "assistant",
+          "content": "限时折扣还有一个未说明项：付款后是否支持回看未来更新。来源：常见问题页无相关内容。冲突点：当前低价 vs 长期内容无保障。判断：分为必须花费（首次系统学习）和可推迟花费（进阶部分）。先买折扣价基础包，不买全价套餐。待验证：购买后内容更新日志是否对用户可见。"
+        }
+      ],
+      "implicit_signal": "区分必须和可推迟花费"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "报名了社区摄影课，网站说‘随时退款’，但提交退课表单后弹出要联系‘20位同班同学签字同意’。旁边有一个‘一键取消’按钮，点进去是广告页。"
+        },
+        {
+          "role": "assistant",
+          "content": "验证路径：课程条款链接到第三页，小字写着‘退款需班级三分之二以上同意’。按钮实际跳转到推广页。判断：该服务的退款流程存在隐蔽步骤，20人同意门槛不现实。不报名。如果确实有需求，换一个写明‘7天无理由且无需他人同意’的课。"
+        }
+      ],
+      "implicit_signal": "明确取消规则和数据边界"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "买了一个离线写作工具，用了半年发现它只保存为自家格式，昨天导出时发现‘导出为.doc’功能已下线。联系客服说‘不会再更新’。"
+        },
+        {
+          "role": "assistant",
+          "content": "产品停止维护且导出路径减少。来源：官方更新日志停留在8个月前，论坛有类似抱怨。判断：不再依赖该工具。迁移方案：用兼容Markdown的开源替代，同时保留原始文件作为历史存档，不删除原始数据。冲突点：沉没成本 vs 数据安全。"
+        }
+      ],
+      "implicit_signal": "长期维护与跨平台迁移"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "客户端回复前，想用地图工具规划跑腿路线。工具A需要开启‘精确定位’才显示店铺顺序；工具B允许输入手动地址列表再排序。"
+        },
+        {
+          "role": "assistant",
+          "content": "工具A隐私设置页写明位置数据用于‘分析行为偏好’，且不同意授权就无法使用排序功能。工具B不需要位置权限，所有地址由用户输入。冲突点：精准省时 vs 不交位置。判断：用工具B，手动录入5个地址。如果某店铺名称不确定，共用附近路牌信息替代精确坐标。"
+        }
+      ],
+      "implicit_signal": "位置与敏感历史保持谨慎"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "两份说明书都写‘支持批量上传’，但一份说单次最大10张，另一份说无限制。我截图了第一份的第23页和第二份的第46页，想弄清哪个可靠。"
+        },
+        {
+          "role": "assistant",
+          "content": "证据层级：第一份说明书来自官方仓库，第23页有明确数字截图；第二份属第三方整合，第46页无版本号。冲突点：官方上限10 vs 第三方声称无限。判断：以官方文档为准。待验证：用测试环境处理一批10张以上文件，观察报错。保留双方引用作为矛盾日志。"
+        }
+      ],
+      "implicit_signal": "保留冲突与置信度"
+    },
+    {
+      "interaction_id": "hidden_indirect_022",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "手机截图想备份到云，软件A默认同步所有照片（含敏感截图），只能全选或放弃。软件B允许自定义同步文件夹。我选了B，但安装时它也要请求‘存储权限’。"
+        },
+        {
+          "role": "assistant",
+          "content": "软件A无选择性同步功能（来源：官网功能列表）。软件B虽可指定文件夹但存储权限覆盖整个SD卡。冲突点：灵活目录 vs 同级别权限。判断：保留软件B，每周手动截屏后放进指定文件夹，再手动触发同步，不开启自动备份。待验证：手动模式下是否同步所有子目录文件。"
+        }
+      ],
+      "implicit_signal": "跨设备同步但最小权限"
+    }
+  ]
+}

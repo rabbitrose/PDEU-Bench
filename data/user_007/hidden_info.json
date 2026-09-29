@@ -1,0 +1,470 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_007",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:10:16",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_009",
+      "hidden_indirect_014",
+      "hidden_indirect_020"
+    ],
+    "content": [
+      "hidden_indirect_004",
+      "hidden_indirect_018"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_008",
+      "hidden_indirect_014"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_002",
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_016"
+    ],
+    "entertainment": [
+      "hidden_indirect_010"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_012",
+      "hidden_indirect_017"
+    ],
+    "food": [
+      "hidden_indirect_009",
+      "hidden_indirect_020"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_011",
+      "hidden_indirect_015"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_002",
+      "hidden_indirect_006",
+      "hidden_indirect_012"
+    ],
+    "learning": [
+      "hidden_indirect_004",
+      "hidden_indirect_015"
+    ],
+    "privacy": [
+      "hidden_indirect_007",
+      "hidden_indirect_013",
+      "hidden_indirect_019"
+    ],
+    "product": [
+      "hidden_indirect_007",
+      "hidden_indirect_017"
+    ],
+    "role_context": [
+      "hidden_indirect_008"
+    ],
+    "service": [
+      "hidden_indirect_006",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "technology": [
+      "hidden_indirect_011",
+      "hidden_indirect_019"
+    ],
+    "travel": [
+      "hidden_indirect_005",
+      "hidden_indirect_016"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月订的家庭保洁套餐，页面显示每月4次，实际只能约出3次，最后一项没人确认。钱扣了但服务缺了一次。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次改选按次预约的清洁公司，取消规则写进账单里，不绑定月付。"
+        }
+      ],
+      "implicit_signal": "质感与预算权衡时优先质感，但要求提供可取消选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "回家路上看到一家新开的咖啡馆，门口排了长队，招牌写着“网红必打卡”。我绕开了。"
+        },
+        {
+          "role": "assistant",
+          "content": "知道你不去凑热闹，我查了一家在附近小院里评分不高的老店，周三人少，适合带上笔记本。"
+        }
+      ],
+      "implicit_signal": "避免营销腔和网红化场所，偏好小型安静空间"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你给我的周末活动清单，列了五个地方，但没告诉我哪个时段人少、有没有安静角落可以回消息，我一个都没去。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次给你推荐会标出氛围和人群密度，比如这周六早上的手艺市集，开市头一小时最空，还有长凳能坐。"
+        }
+      ],
+      "implicit_signal": "需要本地语境细节和氛围描述，而非排行榜"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想学点基础的博茨瓦纳茨瓦纳语短语，上次找的课程材料堆了三十几个链接，我没点开第二个。"
+        },
+        {
+          "role": "assistant",
+          "content": "我从日常场景抽了5句，每句配了一个使用示例和录音，你每天通勤练一句，周末我来测试。"
+        }
+      ],
+      "implicit_signal": "偏好有示例和可复盘标准的短期学习模块"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "这周末打算去郊区农场住一晚。多绕了一次路才发现，推荐的住宿其实在主干道旁边，车流声到凌晨都没停。"
+        },
+        {
+          "role": "assistant",
+          "content": "我换了一家，位置在农场深处的小路尽头，官网写明了安静承诺，且入住前24小时可免费取消。"
+        }
+      ],
+      "implicit_signal": "旅行安排需要留缓冲和可取消性，避免默认热门"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "材料发出去后又撤回，因为那个在线编辑工具要我授权通讯录才能导出PDF。我不想把联系人列表交出去。"
+        },
+        {
+          "role": "assistant",
+          "content": "那用本地版LibreOffice，不联网直接导出，或者我帮你转好发回来。"
+        }
+      ],
+      "implicit_signal": "拒绝需要过多个人数据的服务，明确取消规则"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "买了个智能插座，说明书说必须注册账号才能定时。注册完发现它默认同步能耗数据到云端，关不掉。"
+        },
+        {
+          "role": "assistant",
+          "content": "退了那个，换成手动定时器，不需要联网。或者用Tasmota固件的插座，数据不出本地。"
+        }
+      ],
+      "implicit_signal": "产品选择需说明长期维护成本，避免信息不透明"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想找一个圣保罗本地的小批量包装供应商，在共享表格里看了十几家，不是起订量太高就是运费不透明。"
+        },
+        {
+          "role": "assistant",
+          "content": "我联系了Vila Madalena一家家庭作坊，他们接受50件起订，报价包含送货，你能先试样纸。"
+        }
+      ],
+      "implicit_signal": "作为创业者，决策时优先可行性和社区连接感"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "午休结束前只有25分钟吃饭，上次点的那份炸鸡便当吃完胃里不舒服，下午开会一直分心。"
+        },
+        {
+          "role": "assistant",
+          "content": "转角那家日式定食有烤鲭鱼套餐，没那么油，而且等餐只需8分钟，预算也在25雷亚尔内。"
+        }
+      ],
+      "implicit_signal": "饮食偏好不过度油腻，预算敏感且考虑同行者限制"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有个音乐节的门票在促销，但场地能容纳八千人，我想了想没买。第二天早上还要去供应商那里验货。"
+        },
+        {
+          "role": "assistant",
+          "content": "周六晚上有一场在独立书店的驻唱，限60人，8点半结束。你去听，不耽误周日计划。"
+        }
+      ],
+      "implicit_signal": "休闲安排要小型、真实、有内容密度，不破坏第二天节奏"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "记笔记的App突然被收购，说不再支持导出为纯文本。我写了半年的日记全在里面。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成Obsidian，文件存本地Markdown，手机和电脑用同步盘，收购也不影响你数据。"
+        }
+      ],
+      "implicit_signal": "工具需要跨设备同步并能导出数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "购物车里加了一个除湿器，页面上全是“爆款”“销量第一”，没写适用面积和噪音分贝。"
+        },
+        {
+          "role": "assistant",
+          "content": "我查了一个同价位型号，有用户贴了湿度测试图和夜间档噪音实测，适合你的15平米房间。"
+        }
+      ],
+      "implicit_signal": "拒绝过度商业化，需要真实样例来支撑推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "家庭群消息里有人分享了一个家政App，安装后要求读取通话记录才能预约，我直接删了。"
+        },
+        {
+          "role": "assistant",
+          "content": "用Google日历的预约空档功能，不装额外App，你把可用时段发我，我协调保洁时间。"
+        }
+      ],
+      "implicit_signal": "服务需要明确数据边界和取消规则"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想定制一批环保袋作为品牌赠品，最便宜那家在色差上妥协太大。另一家报价超了预算三成。"
+        },
+        {
+          "role": "assistant",
+          "content": "找了一家本地丝网印工作室，单色印刷的预算符合，而且可以选一种特别的手工染色。"
+        }
+      ],
+      "implicit_signal": "超预算时需要替代方案，且优先个人表达"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "报名了一个线上博茨瓦纳商业环境课，结果前四周只发PDF，没有任何练习或反馈。第二天又重做一遍那个课前问卷但什么都没变。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找了一个迷你课程，每两天有一个情景题，完成后马上给解析，四天就能走完第一组场景。"
+        }
+      ],
+      "implicit_signal": "学习需要短周期反馈，不要仅堆材料链接"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "设备更新后想换个地方工作两天，订了个共享住宿。结果三楼没有电梯，还和五个陌生人共用卫生间。"
+        },
+        {
+          "role": "assistant",
+          "content": "附近有一家带小院子的单间民宿，独立卫浴，步行去图书馆5分钟，明天就能确认空房。"
+        }
+      ],
+      "implicit_signal": "住宿优先考虑安全和安静，备选是独处恢复时间"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想给合租的室友买一个噪音小的风扇，电商平台前几个都是广告，用户评价里很多说声音不低。"
+        },
+        {
+          "role": "assistant",
+          "content": "我在本地论坛看到一个评测，某款塔扇在最低档只有28分贝，而且有人上传了卧室实测视频。"
+        }
+      ],
+      "implicit_signal": "需要真实样例和本地语境，拒绝无依据的推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "订阅了一本电商趋势简报，但每期都讲北美市场，和我做本地零售根本对不上。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成拉美本地博主写的双周newsletter，上一期有一篇关于圣保罗街边店怎么用WhatsApp做复购。"
+        }
+      ],
+      "implicit_signal": "内容应贴合自身场景，不接受通用榜单"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一页便签上记了供应链供应商的联系方式，手机同步到新设备时发现它被传到了第三方服务器上。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后用Standard Notes，端到端加密，联系人信息可以手动同步，不会自动流出。"
+        }
+      ],
+      "implicit_signal": "默认开启最小权限和可导出功能"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "这个月电费账单比预期高出43雷亚尔，翻了下记录，发现是烤箱预热太久。我还经常做了复杂的菜吃不完。"
+        },
+        {
+          "role": "assistant",
+          "content": "周三晚上试一道一锅煮的食谱：番茄炖豆配糙米，材料共18雷亚尔，三十分钟搞定，还不剩菜。"
+        }
+      ],
+      "implicit_signal": "预算敏感但愿意为降低风险付费，饮食要考虑可执行性"
+    }
+  ]
+}

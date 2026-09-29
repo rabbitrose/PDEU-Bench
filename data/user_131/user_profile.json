@@ -1,0 +1,280 @@
+{
+  "user_id": "user_131",
+  "explicit_preferences": {
+    "user_profile": "一位有竞争力的羽毛球教练，以激进的训练方法和注重胜利著称",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "田中健二",
+        "age": 35,
+        "gender": "男性",
+        "location": "日本大阪",
+        "languages": [
+          "日语（母语）",
+          "英语（中级）"
+        ],
+        "education_level": "运动科学学士学位",
+        "occupation": "职业羽毛球教练",
+        "industry": "体育",
+        "seniority": "某竞技羽毛球学院主教练",
+        "household": "独自住在训练中心附近的公寓",
+        "life_stage": "单身、无子女、专注事业"
+      },
+      "physical_profile": {
+        "height_cm": 175,
+        "general_appearance": "运动体型、低体脂、肌肉发达的四肢、短发、目光锐利",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "进取、激进、好胜。要求严苛的教练，重视胜利高于一切。虽急躁但具战略性。",
+        "big_five": {
+          "openness": 60,
+          "conscientiousness": 90,
+          "extraversion": 70,
+          "agreeableness": 30,
+          "neuroticism": 50
+        },
+        "strengths": [
+          "纪律性",
+          "战略思维",
+          "激励技巧",
+          "韧性"
+        ],
+        "weaknesses": [
+          "急躁",
+          "过于挑剔",
+          "难以委派任务",
+          "高压"
+        ],
+        "values": [
+          "获胜",
+          "努力",
+          "忠诚",
+          "持续改进"
+        ],
+        "motivations": [
+          "培养冠军",
+          "获得认可",
+          "精通运动"
+        ],
+        "stress_triggers": [
+          "运动员不全力投入",
+          "连败",
+          "低效率",
+          "不尊重"
+        ]
+      },
+      "background": {
+        "hometown": "日本京都",
+        "family": "中产家庭，父亲是工薪族，母亲是家庭主妇；有一个妹妹",
+        "education": "大阪大学运动科学学士，认证羽毛球教练",
+        "career_history": [
+          "本地俱乐部初级教练（22-27岁）",
+          "国家训练中心助理教练（27-31岁）",
+          "现任学院主教练（31岁至今）"
+        ],
+        "notable_achievements": [
+          "培养了三名青少年全国冠军",
+          "开发了一套独特步法训练系列",
+          "两次获得年度地区最佳教练"
+        ]
+      },
+      "lifestyle": {
+        "daily_routine": "凌晨5点起床，晨跑，6点至中午训练，午餐，下午1-3点视频分析及计划，下午3-6点训练，晚餐，复盘训练数据，晚上10点就寝",
+        "diet": "高蛋白、低碳水、少食多餐；补充剂：乳清蛋白、肌酸、复合维生素",
+        "sleep": "每晚7小时，严格作息",
+        "social_life": "有限，主要与教练和运动员交往；偶尔与同事喝酒",
+        "hobbies": "观看羽毛球比赛、阅读体育传记、轻度力量训练"
+      },
+      "interests": {
+        "sports": [
+          "羽毛球（主要）",
+          "网球（偶尔观看）",
+          "田径（获取训练见解）"
+        ],
+        "media": [
+          "体育纪录片",
+          "训练技术视频",
+          "动作电影"
+        ],
+        "reading": [
+          "运动科学文章",
+          "运动员传记",
+          "策略书籍"
+        ],
+        "food": [
+          "日本料理",
+          "烤肉类",
+          "高蛋白菜肴"
+        ],
+        "music": [
+          "高强度摇滚和电子音乐用于锻炼",
+          "古典音乐用于专注"
+        ]
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "高强度训练计划",
+          "高级技术分析",
+          "运动心理学",
+          "运动营养学",
+          "损伤预防",
+          "内容必须符合此用户独特的工作模式：日本羽毛球教练模式——直接、纪律严明、技术优先。",
+          "拒绝通用助手框架：不要软化反馈或撰写励志空话。"
+        ],
+        "product_preferences": [
+          "Yonex羽毛球装备",
+          "Under Armour压缩衣",
+          "Garmin健身手表",
+          "高品质羽毛球",
+          "恢复工具如泡沫轴",
+          "产品选择需通过用户自身的权衡视角：纠正、训练、负荷、观察提示、合格/不合格阈值。"
+        ],
+        "service_preferences": [
+          "个性化教练软件",
+          "视频分析平台",
+          "表现追踪应用",
+          "运动营养师咨询",
+          "仅在保留此决策优先级时接受服务：运动员状态、可重复技术及比赛后勤优先于舒适度。"
+        ],
+        "learning_preferences": [
+          "带有详细分解的视频教程",
+          "精英选手案例研究",
+          "动手实践工作坊",
+          "循证方法"
+        ],
+        "travel_preferences": [
+          "国际赛事乘坐商务舱",
+          "入住训练设施附近的酒店",
+          "高效行程，最小化空闲时间"
+        ],
+        "food_preferences": [
+          "干净饮食",
+          "高蛋白、适量脂肪、低糖",
+          "日式与西式健康餐",
+          "避免垃圾食品和甜食"
+        ],
+        "entertainment_preferences": [
+          "动作片（例如《疾速追杀》系列）",
+          "体育纪录片",
+          "对虚构剧情剧兴趣不大"
+        ],
+        "technology_preferences": [
+          "最新款健身追踪器",
+          "安装教练应用的智能手机",
+          "用于分析的笔记本电脑",
+          "偏好有线耳机以确保可靠性"
+        ],
+        "privacy_preferences": [
+          "对分享训练方法有所选择",
+          "使用加密消息进行策略沟通",
+          "社交媒体存在感极低"
+        ],
+        "budget_preferences": [
+          "愿意投资高质量设备",
+          "在非必需品上节省",
+          "追求服务的性价比"
+        ],
+        "personalization_directives": {
+          "style_contract": "日本羽毛球教练模式：直率、纪律性强、技术优先。",
+          "decision_priority": "运动员状态、可重复的技术和比赛后勤比舒适更重要。",
+          "evidence_contract": "经过验证的方法和视频分析提示优先于学术引用。",
+          "format_contract": "纠正、训练、负荷、观察提示、通过/失败标准。",
+          "anti_default_assistant_behavior": "不要软化反馈或写激励废话。",
+          "distinctive_quirks": [
+            "在监控运动员的情况下，可以接受计算过的风险。",
+            "营养和旅行应服务于比赛节奏。",
+            "对Yonex熟悉度可以是有效的装备捷径。"
+          ],
+          "hard_avoidances": [
+            "软性的通用鼓励",
+            "未测量的回归比赛进度",
+            "比赛行程中的旅游附加内容"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "dislikes": [
+          "懒惰",
+          "表现不佳的借口",
+          "甜食",
+          "低效沟通",
+          "无结构训练"
+        ],
+        "constraints": [
+          "时间紧凑，空闲有限",
+          "需要可靠网络用于视频分析",
+          "需使用羽毛球设施"
+        ]
+      },
+      "communication_style": {
+        "tone": "直接、果断、务实",
+        "response_length": "简洁明了",
+        "evidence_expectation": "高；期望数据驱动和循证建议",
+        "formatting": "要点、清晰标题、图表等视觉辅助",
+        "proactive_behavior": "欣赏建议但希望掌控决策",
+        "things_to_avoid": [
+          "闲聊",
+          "空话套话",
+          "不请自来的意见",
+          "模糊建议"
+        ]
+      },
+      "decision_making": {
+        "style": "分析型且果断，快速权衡利弊，信任自身经验",
+        "influences": [
+          "过往成功",
+          "数据与指标",
+          "可信来源的专业意见"
+        ],
+        "risk_tolerance": "中等偏高；愿意在训练方法中承担计算过的风险"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "生成每周训练计划",
+          "分析对手优劣势",
+          "提供比赛营养建议",
+          "建议恢复方案",
+          "复盘表现数据"
+        ],
+        "preference_conflicts": [
+          "希望进行确保安全的激进训练",
+          "创新渴望 vs. 依赖成熟方法"
+        ],
+        "ambiguity_to_preserve": [
+          "对新训练技术持开放态度但怀疑",
+          "偏好证据但可能接受可信来源的传闻"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:44",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "专业且直接",
+            "response_length": "短到中等",
+            "evidence_expectation": "必须引用来源或成熟方法",
+            "formatting": "如果有助于理解，使用项目符号、编号列表、表格",
+            "proactive_behavior": "提供选项但让他选择；建议相关内容",
+            "things_to_avoid": [
+              "过于欢快的语气",
+              "模糊的陈述",
+              "未经请求的个人建议"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "为受伤的少年冠军制定回归比赛训练计划",
+            "优化每日营养和补充剂计划以达到最佳表现",
+            "规划前往吉隆坡的6人团队国际比赛行程"
+          ]
+        }
+      }
+    }
+  }
+}

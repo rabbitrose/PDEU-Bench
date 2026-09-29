@@ -1,0 +1,2 @@
+eval/agent/wikipedia/simplewiki.sqlite3 filter=lfs diff=lfs merge=lfs -text
+eval/agent/wikipedia/simplewiki-latest-pages-articles.xml.bz2 filter=lfs diff=lfs merge=lfs -text

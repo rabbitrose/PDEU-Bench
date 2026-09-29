@@ -1,0 +1,470 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_012",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:53:09",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "content": [
+      "hidden_indirect_002",
+      "hidden_indirect_013"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_012",
+      "hidden_indirect_019"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_004",
+      "hidden_indirect_008",
+      "hidden_indirect_015"
+    ],
+    "entertainment": [
+      "hidden_indirect_019"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_007",
+      "hidden_indirect_013",
+      "hidden_indirect_017",
+      "hidden_indirect_020"
+    ],
+    "food": [
+      "hidden_indirect_009",
+      "hidden_indirect_015"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_005",
+      "hidden_indirect_014"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_009",
+      "hidden_indirect_016"
+    ],
+    "learning": [
+      "hidden_indirect_008",
+      "hidden_indirect_014"
+    ],
+    "privacy": [
+      "hidden_indirect_011",
+      "hidden_indirect_017"
+    ],
+    "product": [
+      "hidden_indirect_005",
+      "hidden_indirect_010"
+    ],
+    "role_context": [
+      "hidden_indirect_011"
+    ],
+    "service": [
+      "hidden_indirect_012",
+      "hidden_indirect_018"
+    ],
+    "technology": [
+      "hidden_indirect_007",
+      "hidden_indirect_020"
+    ],
+    "travel": [
+      "hidden_indirect_006",
+      "hidden_indirect_016"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周外采麦克风一笔订单最后超了20刀，因为下单前没算税和运费。今天要买无线备份麦克风，总预算在54以下。"
+        },
+        {
+          "role": "assistant",
+          "content": "好，那款RØDE Wireless GO II单通道套装正好含税48.99，运费上周我记录过是4.99，总和53.98，卡在预算内。直接下单？"
+        }
+      ],
+      "implicit_signal": "忽视预算定上限导致超支，后续决策会提前设定硬性金额限制"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨晚活动散场后我拿到了市长发言的录音，但他说了句‘具体数字下周三公布’。稿子里是否可引用他临时口头估算的那个区间？"
+        },
+        {
+          "role": "assistant",
+          "content": "不行，估算区间只有你的录音里有，未对外公开发布过。只能留到下周拿到正式数字再核，今天稿子只写‘市长承诺下周三公布具体数字’。缺失来源列里记一条‘待官方数字’。"
+        }
+      ],
+      "implicit_signal": "只会引用将要在报道中展示或已采访到的来源"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "这篇关于地铁换乘时发生骚乱的稿子，警方发言人还没回复，但目击者片段已经有了。今天17点截稿，我该先发还是等？"
+        },
+        {
+          "role": "assistant",
+          "content": "先发，但正文最后必须加一个‘缺失来源’栏，注明‘警方回应等待中，将在下一轮更新时补充’。媒体资产里放目击者视频即可。"
+        }
+      ],
+      "implicit_signal": "交付格式中使用‘缺失来源’子标题提醒再核查，而非简单跳过"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "今天临时跟拍跨州采访，从早起到现在只喝了一杯咖啡。路过便利店时，我在犹豫买能量棒还是三明治，但不确定等会拍摄地点有没有微波炉。"
+        },
+        {
+          "role": "assistant",
+          "content": "选三明治，冷食也能吃，比能量棒管饱。把另一个放包里当备餐，这样遇上连续赶场也不至于空腹赶稿。"
+        }
+      ],
+      "implicit_signal": "健康习惯必须能应对不规律的班次，不能假设固定时间安排"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚才剪辑了一段抗议活动的现场视频，但缺少背景B-roll画面。今天截稿前还能补拍街景，不确定是否值得专门跑一趟。"
+        },
+        {
+          "role": "assistant",
+          "content": "跑一趟。把B-roll补进来，然后在素材清单里标‘新增街景’，缺失来源栏写‘等待警方声明’，下次更新时间设为明早8点。缺B-roll的资产在平台上是浪费。"
+        }
+      ],
+      "implicit_signal": "交付结构必须包含媒体素材、缺失来源、下次更新时间，而非只给摘要"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下周报道火灾后续，我想先飞过去再找当地记者合租Airbnb，但往返机票周五前买才能便宜，采访时间还没敲定。"
+        },
+        {
+          "role": "assistant",
+          "content": "先把机票买了锁定价格。Airbnb周五之后选可免费取消的选项，采访时间可以入住后再微调。否则赶不上优惠窗口，后续住宿成本更难控制。"
+        }
+      ],
+      "implicit_signal": "拒绝容易错失提交窗口的时间表"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "客户回复前我收到了对方内部邮件截图，显示他们计划推迟项目。但截图来源匿名，我无法确认是否真实。能否在报道里用‘据知情人士透露’？"
+        },
+        {
+          "role": "assistant",
+          "content": "不行。截图来源只有一个且未核实，不能当作独立证据。等客户正式回复后，用回复内容作为依据。截图最多存在本地便签，不进正文。"
+        }
+      ],
+      "implicit_signal": "只引用经过核实且将在报道中展示的证据"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚看完Tableau公开课，学了个新图表模板，但还没实际套过数据。今晚有两个小时空，该拿旧稿数据练手，还是做采访笔记整理？"
+        },
+        {
+          "role": "assistant",
+          "content": "用旧稿数据快速出张图，当作下次报道可视化资产。这样直接有产出，不是纯练习。如果效果不好，再花一次采访前的间隙调整。"
+        }
+      ],
+      "implicit_signal": "数据新闻学习要快速产出可直接用故事资产，不纯学工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "选题会上编辑给了份35页地方预算报告，说里面有关于教育拨款的争议点。但下午要去现场采访火灾受害者，没法全部读完。"
+        },
+        {
+          "role": "assistant",
+          "content": "搜报告内‘教育拨款’关键词，只读相关章节。把关键数字截屏存进笔记，采访间隙快速浏览。剩下的不读，现场采访优先。"
+        }
+      ],
+      "implicit_signal": "避免冗长来源文章占用采访时间"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "店里两支采访话筒都在打折，一支54带防风罩，另一支48但不含，分开买罩子加运费要12。我站货架前算了一下，总价一样了。"
+        },
+        {
+          "role": "assistant",
+          "content": "拿54那支带罩子的，省去额外订单和运费，而且防震夹结构更好，下次户外报道不必再补配件。多花6块钱买到整合方案。"
+        }
+      ],
+      "implicit_signal": "预算控制适用于装备购置，包括比价和考虑长远使用场景"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "采访对象愿意用WhatsApp发敏感材料给我，但他说不能提供真实姓名。我想存证据，又不希望后续验证时被对方发现。"
+        },
+        {
+          "role": "assistant",
+          "content": "让他在WhatsApp里先发一张手写note的截图（不显示签名），你本地存为证据。笔记本里记一个化名代号，正文里不提及来自他。这样保护来源也不丢链。"
+        }
+      ],
+      "implicit_signal": "记者身份需要在采访过程保护信息来源的可验证性和隐私"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚才收到线人语音留言，说某公司财务报表里有一处可疑调整，但录音有杂音。今天是季度报表截稿日，没时间仔细核。"
+        },
+        {
+          "role": "assistant",
+          "content": "先发核心报表数据，正文不引用线人内容。把录音转文字存进草稿箱‘跟进’文件夹，标为‘待核实’，下个周期优先处理它。"
+        }
+      ],
+      "implicit_signal": "截止日期先于深度处理，但可暂存素材供后续挖掘"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "报道关于学校午餐补贴削减，我手上有家长会会议纪要的PDF，但里面的数字是手写的，不确定是哪位家长的估计。"
+        },
+        {
+          "role": "assistant",
+          "content": "手写数字不能当作官方数字引用。找家长会主席要一份电子版正式稿，或者请他在采访中复述。等回复后再更新正文，今天写‘家长会成员反映削减幅度约为……’来自采访记录。"
+        }
+      ],
+      "implicit_signal": "引用前必须确认来源可以公开验证且已体现在报道中"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "写完第一段但还没配图，现在距离公司截稿还有1小时。我该先写核心段和补充事实还是先修图片？"
+        },
+        {
+          "role": "assistant",
+          "content": "写核心段+验证事实+列缺失来源。图可以用占位符，下次更新时间标‘1小时后补图’。媒体资产里先存视频截图。”"
+        }
+      ],
+      "implicit_signal": "交付结构固定：核心段、验证事实、媒体资产、缺失来源、下次更新时间"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "今天外拍在郊区，午饭只有路边摊饭团。但我随身还带了采访包、三脚架和无线麦克风的收纳盒，拿饭团举着吃很不方便。"
+        },
+        {
+          "role": "assistant",
+          "content": "饭团用包装膜包好后塞进衬衫口袋，边走边吃。麦克风默认绑在相机热靴上，收纳盒放背包夹层。不耽误拍摄，也不让设备在手里互相打架。"
+        }
+      ],
+      "implicit_signal": "设备选择需支持现场采集，包括考虑进食快捷性和便携性"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "明天下午一点有个关于洪水影响的现场连线，但我中午约了朋友聚餐。现在餐厅那边说只能改到12点，不然就取消。"
+        },
+        {
+          "role": "assistant",
+          "content": "把聚餐取消。连线前需要提前一小时到场测试信号、准备提词和补水，12点吃饭来不及。改天约朋友去那家餐厅，连线后我微信发你地址。"
+        }
+      ],
+      "implicit_signal": "避免错过提交窗口，即使旅行安排也以截稿为优先"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "家庭群消息里我舅舅转了一条关于本地水质的帖子，说官方数据已被篡改。他信誓旦旦说从‘内部人’那里听来的，但没有原始文件。"
+        },
+        {
+          "role": "assistant",
+          "content": "不能引用家庭群消息。你直接查州环保署的公开数据页，对比近三年水质报告。如果发现不一致，才能写‘官方数据显示……，但社区一方提出质疑’。否则放弃这个角度。"
+        }
+      ],
+      "implicit_signal": "只引用记者本人能公开验证的原始来源，不愿依赖中转途径"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚刚收到Netflix下月涨价通知，想起我上次打开它还是三周前。同时HBO Max这个月《早间新闻》新季又要上线了。我该保留哪个？"
+        },
+        {
+          "role": "assistant",
+          "content": "保留HBO Max，退掉Netflix。三周没打开说明使用率太低，且HBO新剧是你追的。等Netflix有你想看的新内容再重新订阅一个月，中间不浪费钱。"
+        }
+      ],
+      "implicit_signal": "控制订阅开支，不续订使用频率低的服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "今晚采访完已九点半，我想看一集《王冠》放松，但明早六点要跟拍早市。看一集大概55分钟，加上洗澡半小时，睡觉就不到6小时了。"
+        },
+        {
+          "role": "assistant",
+          "content": "只看25分钟（半集），设个提醒停下。确保11点前能躺下，明天提前半小时喝咖啡，早市跟拍期间注意力靠冷咖啡和场地走路维持。"
+        }
+      ],
+      "implicit_signal": "放松方式与工作时长适配，不因娱乐影响第二天采访准时性"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "某科技公司声明里提到‘新系统已通过审计’，但原文只给了一段话截屏，没有链接和审计机构名称。这个能不能当事实引用？"
+        },
+        {
+          "role": "assistant",
+          "content": "不能。截屏不是可追溯的原始来源。要求对方提供审计机构全称和报告编号，或者至少是官网上的正式声明链接。如果对方拒绝，正文写‘该公司声称……，但未提供审计细节’。放到缺失来源里。"
+        }
+      ],
+      "implicit_signal": "引用技术声明时必须追溯到可查证的原文档，不接受公开摘要"
+    }
+  ]
+}

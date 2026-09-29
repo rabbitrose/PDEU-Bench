@@ -1,0 +1,320 @@
+{
+  "user_id": "user_108",
+  "explicit_preferences": {
+    "user_profile": "一名急救医护人员，感谢准确的天气预报为他们应急响应规划提供信息",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Alex Morgan",
+        "age": 35,
+        "gender": "男性",
+        "location": "Toronto, Ontario, Canada",
+        "languages": [
+          "英语",
+          "French (basic)"
+        ],
+        "education_level": "急救医护文凭",
+        "occupation": "Advanced Care Paramedic",
+        "industry": "紧急医疗服务",
+        "seniority": "资深",
+        "household": "已婚有一个孩子（4岁）",
+        "life_stage": "中年前期"
+      },
+      "physical_profile": {
+        "height_cm": 178,
+        "general_appearance": "运动体型，短发，通常穿制服或休闲运动服",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "冷静，尽责，务实。重视生活中的可靠性和精确性。",
+        "big_five": {
+          "openness": 60,
+          "conscientiousness": 90,
+          "extraversion": 55,
+          "agreeableness": 80,
+          "neuroticism": 25
+        },
+        "strengths": [
+          "在压力下快速决策",
+          "对病人和同事有同理心",
+          "对规程一丝不苟"
+        ],
+        "weaknesses": [
+          "有时过于谨慎",
+          "对模糊或不准确的信息不耐烦",
+          "倾向于过度工作"
+        ],
+        "values": [
+          "可靠性",
+          "准确性",
+          "社区服务",
+          "团队合作",
+          "持续学习"
+        ],
+        "motivations": [
+          "拯救生命",
+          "有效应急响应",
+          "支持同事",
+          "为任何情况做好准备"
+        ],
+        "stress_triggers": [
+          "不准确的天气预报或交通数据",
+          "通话过程中的通信故障",
+          "设备故障"
+        ]
+      },
+      "background": {
+        "hometown": "安大略省密西沙加",
+        "family_background": "父亲曾是消防员，母亲是护士；在重视公共服务的家庭中长大。",
+        "education": "汉博学院急救医护文凭，并拥有高级生命支持和危险品响应的额外认证。",
+        "career_path": "2010年以初级护理急救员身份入职，2015年晋升为高级护理急救员，现为高级急救员并负责培训工作。",
+        "significant_life_events": [
+          "2013年冰暴期间首次重大任务，强化了天气数据的重要性。",
+          "2016年结婚，2020年女儿出生。"
+        ]
+      },
+      "lifestyle": {
+        "daily_routine": "12小时轮班制（昼夜交替），清晨健身房锻炼，下班后晚间家庭时间。",
+        "sleep_schedule": "适应轮班制；使用遮光窗帘和白噪音机。",
+        "diet": "高蛋白、提前备餐以维持能量；上班前避免油腻食物。",
+        "exercise": "每周5次CrossFit和跑步以保持耐力。",
+        "social_life": "关系紧密的急救员朋友圈；偶尔家庭聚会。",
+        "hobbies": [
+          "越野跑",
+          "阅读惊悚小说。",
+          "修理汽车引擎。"
+        ]
+      },
+      "interests": {
+        "general_interests": [
+          "急诊医学。",
+          "天气与灾害应对。",
+          "汽车机械。",
+          "户外探险。"
+        ],
+        "specific_topics": [
+          "创伤护理的进步。",
+          "GPS与导航技术。",
+          "急救人员心理健康支持。"
+        ]
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "类型：医学期刊、天气应用、本地新闻（交通和天气聚焦）、动作纪录片",
+          "格式：通勤时的播客、短视频简报、快速参考信息图",
+          "内容必须符合用户独特的工作模式：急救员事件指挥模式——简洁、安全优先、可操作。",
+          "拒绝通用助手框架：不要弱化危险或添加生活化内容。"
+        ],
+        "product_preferences": [
+          "服装：耐用、防污制服、吸湿排汗打底衫、防水靴",
+          "装备：可靠手电筒、多功能工具、大容量便携手机充电器",
+          "产品选择应基于用户自身的权衡视角：情境、风险、行动、装备、备用方案。"
+        ],
+        "service_preferences": [
+          "紧急服务：偏好与调度系统集成的服务、实时天气警报",
+          "医疗保健：优先选择等待时间短的诊所，支持小问题的远程医疗",
+          "配送：关键物资当日送达，杂货配送以节省时间",
+          "服务仅在保留以下决策优先级时方可接受：团队安全、天气可靠性、耐用装备、家庭风险控制优先于舒适度。"
+        ],
+        "learning_preferences": {
+          "methods": [
+            "实操模拟培训。",
+            "带案例研究的在线模块。",
+            "同行主导的工作坊。"
+          ],
+          "topics": [
+            "高级气道管理。",
+            "事件指挥系统。",
+            "心理韧性培养。"
+          ]
+        },
+        "travel_preferences": {
+          "destinations": [
+            "国内探亲旅行。",
+            "自然风光目的地（如阿冈昆公园）。"
+          ],
+          "mode": [
+            "自驾出行。",
+            "极少乘飞机，长途旅行偏好火车。"
+          ],
+          "accommodations": [
+            "小木屋租赁。",
+            "支持提前入住的高效酒店。"
+          ]
+        },
+        "food_preferences": {
+          "cuisines": [
+            "瘦肉和蔬菜。",
+            "高蛋白沙拉。",
+            "偶尔的浓汤。"
+          ],
+          "meal_habits": [
+            "每周日备餐。",
+            "下午4点后避免咖啡因。"
+          ],
+          "dietary_restrictions": [
+            "轻度乳糖不耐受。"
+          ]
+        },
+        "entertainment_preferences": {
+          "movies": [
+            "动作惊悚片（如《虎胆龙威》）。",
+            "灾难片（如《完美风暴》）。"
+          ],
+          "music": [
+            "摇滚和另类音乐。",
+            "急诊医学播客。"
+          ],
+          "reading": [
+            "非虚构生存故事。",
+            "急救员回忆录。"
+          ]
+        },
+        "technology_preferences": {
+          "devices": [
+            "坚固耐用的智能手机（如三星Galaxy XCover）。",
+            "用于健康追踪的智能手表。",
+            "用于非工作出行的GPS设备。"
+          ],
+          "software": [
+            "天气应用（如Windy、WeatherCAN）。",
+            "导航（Google Maps、Waze）。",
+            "通讯（WhatsApp用于团队联系）。"
+          ],
+          "brands": [
+            "莱泽曼多功能工具。",
+            "巴塔哥尼亚休闲服饰。",
+            "丰田汽车（可靠性优先）。"
+          ]
+        },
+        "privacy_preferences": {
+          "sharing": [
+            "与调度中心和配偶共享位置。",
+            "限制社交媒体曝光。"
+          ],
+          "data_sensitivity": [
+            "关注健康数据隐私。",
+            "在公共Wi-Fi上使用VPN。"
+          ]
+        },
+        "budget_preferences": {
+          "spending_habits": [
+            "投资于耐用的优质装备。",
+            "为女儿教育储蓄。",
+            "设立应急基金。"
+          ],
+          "price_sensitivity": [
+            "愿意为可靠性支付更高价格。",
+            "大额购买前进行广泛调研。"
+          ]
+        },
+        "personalization_directives": {
+          "style_contract": "急救员事件指挥模式：简洁、安全关键、可操作。",
+          "decision_priority": "机组安全、天气可靠性、坚固装备和家庭风险控制胜过舒适。",
+          "evidence_contract": "医疗/安全声明需要可信数据；现场限制仍然主导。",
+          "format_contract": "情况、风险、行动、装备、备用方案。",
+          "anti_default_assistant_behavior": "不要淡化危险或添加生活琐碎。",
+          "distinctive_quirks": [
+            "轮班计划需要疲劳和冰暴应急方案。",
+            "手机必须能承受手套、寒冷和冲击。",
+            "小屋旅行需要疏散/天气计划。"
+          ],
+          "hard_avoidances": [
+            "闲聊式的解释",
+            "被营销为坚固的消费级手机",
+            "没有应急方案的计划"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "general_dislikes": [
+          "模糊的指令。",
+          "不可靠的技术。",
+          "浪费时间。",
+          "无礼的互动。"
+        ],
+        "absolute_dealbreakers": [
+          "误导性的安全信息。",
+          "在压力下失效的产品。",
+          "客户支持差的服务。"
+        ],
+        "constraints": [
+          "轮班制限制实时活动参与。",
+          "因单收入家庭需控制预算。",
+          "体力要求限制久坐爱好。"
+        ]
+      },
+      "communication_style": {
+        "tone": "直接、简洁、专业但平易近人。",
+        "formality": "中等；专业场合使用正式语言，与密友相处时随意。",
+        "preferred_channels": [
+          "短信用于快速更新。",
+          "邮件用于详细简报。",
+          "面对面用于关键讨论。"
+        ],
+        "listening_style": "专注倾听，提出澄清性问题。",
+        "response_style": "简洁且基于事实，书面使用要点列表。"
+      },
+      "decision_making": {
+        "process": "收集所有可用数据，根据过往经验评估选项，必要时咨询可信同事，然后果断行动。",
+        "influences": [
+          "规程和循证指南。",
+          "实时数据（天气、交通）。",
+          "信息来源的可靠性。"
+        ],
+        "risk_tolerance": "安全关键决策中风险容忍度低，培训或设备升级等可控风险中容忍度较高。",
+        "speed": "紧急情况下快速决策，个人购买时更谨慎。",
+        "collaboration_style": "重视团队成员意见，但作为高级急救员愿意做出最终决定。"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "推荐具有超本地预报功能的天气应用。",
+          "建议轮班跟踪和排班工具。",
+          "提供应急装备（手电筒、靴子等）的产品对比。",
+          "整理急诊医学新闻更新。",
+          "生成适合轮班人员的备餐计划。"
+        ],
+        "preference_conflicts": [
+          "追求高质量装备但受预算限制。",
+          "重视循证信息但需要快速易读的格式。",
+          "偏好技术简洁性但依赖工作所需的高级功能。"
+        ],
+        "ambiguity_to_preserve": [
+          "具体收入水平和家庭住址。",
+          "特定政治或宗教信仰。",
+          "真实同事姓名或工作地点。"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:46",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "专业、基于事实、支持性。",
+            "response_length": "简洁；列表和摘要偏好要点形式。",
+            "evidence_expectation": "高；医疗或安全信息需引用或数据来源。",
+            "formatting": "清晰标题、关键点加粗、段落简短。",
+            "proactive_behavior": "欢迎主动推送天气变化、交通事件或轮班提醒；避免未经请求的一般性建议。",
+            "things_to_avoid": [
+              "奉承或过于随意的语言。",
+              "无证据的推测。",
+              "冗长的解释。",
+              "在关键步骤中打断。"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "即将来临的冰暴的轮班计划",
+            "选择新的坚固智能手机和配件",
+            "与家人前往阿冈昆公园的周末小屋之旅"
+          ]
+        }
+      }
+    }
+  }
+}

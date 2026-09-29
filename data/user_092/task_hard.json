@@ -1,0 +1,96 @@
+{
+  "user_id": "user_092",
+  "task": {
+    "task_id": "task_hard",
+    "title": "决定是否支持妻子的新冠加强针",
+    "daily_life_domain": "health",
+    "scenario": "迈克的妻子莎拉正在考虑接种新冠疫苗加强针，因为她的工作场所鼓励这样做。她询问了迈克的意见。迈克对疫苗和医疗机构深表怀疑，但他爱他的妻子，不想显得控制欲强。他需要从自己信任的来源收集信息，以形成平衡的看法。",
+    "user_goal": "帮助迈克在尊重妻子自主权和他自身价值观的前提下，做出明智且有原则的决定，是鼓励还是劝阻妻子接种加强针。",
+    "why_complex": "需要权衡对政府/制药公司的不信任与妻子的健康及职业压力。必须找到可信的替代观点，从怀疑角度理解科学，并处理敏感的家庭对话而不损害信任。",
+    "constraints": [
+      "时间：下班和家庭事务后空闲时间有限",
+      "隐私：不会与当局分享个人医疗决定",
+      "关系：不能疏远妻子或显得控制欲强",
+      "可靠性：需要符合他世界观的信息来源（例如独立医生、崇尚自由的论坛）"
+    ],
+    "required_reasoning_steps": [
+      "识别值得信赖的同伴或论坛（例如志同道合的Facebook群组、同样持强烈观点的同事）",
+      "从他尊重的来源（例如美国前线医生、Substack上的独立研究者）搜索关于新冠加强针的替代观点",
+      "根据这些替代来源评估加强针的风险与收益，注意任何共识或警示信号",
+      "考虑莎拉的具体情况：她的年龄、健康状况以及工作压力",
+      "思考如何与莎拉讨论发现，既不轻蔑也不引发争吵",
+      "决定建议（支持、反对或中立）以及后续步骤计划（例如等待、从当地脊椎按摩师或自然疗法医生那里获取第二意见）",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "莎拉的确切病史以及任何既往疫苗反应",
+      "具体的工作场所要求（是强制要求还是仅仅鼓励？）",
+      "当地同行信任的替代健康从业者的姓名",
+      "独立研究者关于加强针有效性和副作用的最新数据",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "一份简洁的要点式总结，包括来自可信来源的发现、针对莎拉的利弊清单，以及对话建议方案，包括备选方案。",
+    "success_criteria": [
+      "迈克感觉他做出了知情的决定，而非被迫的决定",
+      "无论结果如何，莎拉感觉被倾听和尊重",
+      "该计划避免推荐任何政府强制要求的健康干预措施",
+      "引用的来源来自非主流、非制药公司关联的实体",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "助手否定迈克的怀疑态度或使用居高临下的语言",
+      "助手推荐主流医疗建议，引发不信任",
+      "助手未能提供替代观点，让迈克得不到有用信息",
+      "助手建议违法或谎报疫苗接种状态"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "weather",
+        "food",
+        "navigation",
+        "shopping"
+      ],
+      "domain_descriptions": {
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 7,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 7,
+      "human_verifier_estimation_basis": [
+        "domain=health",
+        "source_domains_capped=4",
+        "reasoning_steps_capped=9",
+        "constraints_capped=4",
+        "decision_points_capped=4",
+        "information_items_capped=6",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=26.6",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "迈克·科瓦尔斯基",
+      "age": 45,
+      "gender": "男性"
+    }
+  }
+}

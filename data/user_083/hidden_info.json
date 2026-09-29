@@ -1,0 +1,491 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_083",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:33:16",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_002",
+      "hidden_indirect_008",
+      "hidden_indirect_017"
+    ],
+    "content": [
+      "hidden_indirect_004",
+      "hidden_indirect_019"
+    ],
+    "decision_priority": [
+      "hidden_indirect_002",
+      "hidden_indirect_008",
+      "hidden_indirect_013",
+      "hidden_indirect_019"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_001",
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_015"
+    ],
+    "entertainment": [
+      "hidden_indirect_010"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_009",
+      "hidden_indirect_018"
+    ],
+    "food": [
+      "hidden_indirect_006",
+      "hidden_indirect_016"
+    ],
+    "format_contract": [
+      "hidden_indirect_004",
+      "hidden_indirect_012"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_006",
+      "hidden_indirect_011",
+      "hidden_indirect_016",
+      "hidden_indirect_021"
+    ],
+    "learning": [
+      "hidden_indirect_003",
+      "hidden_indirect_011",
+      "hidden_indirect_018"
+    ],
+    "privacy": [
+      "hidden_indirect_007",
+      "hidden_indirect_014",
+      "hidden_indirect_020"
+    ],
+    "product": [
+      "hidden_indirect_013"
+    ],
+    "role_context": [
+      "hidden_indirect_001"
+    ],
+    "service": [
+      "hidden_indirect_009",
+      "hidden_indirect_012",
+      "hidden_indirect_017"
+    ],
+    "technology": [
+      "hidden_indirect_007",
+      "hidden_indirect_014",
+      "hidden_indirect_020"
+    ],
+    "travel": [
+      "hidden_indirect_005",
+      "hidden_indirect_015",
+      "hidden_indirect_021"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚换了台备用机，相册里上次排练的测试记录全乱了。我先把旧版清单导出来再同步？"
+        },
+        {
+          "role": "assistant",
+          "content": "先导出旧版清单当底稿，再按文件夹核对。同步前标记未处理的片段，避免重复上传花絮。设备设置里把自动备份关掉，只保留本地版本。"
+        }
+      ],
+      "implicit_signal": "在设备更新后优先检查测试记录以保持淘汰流程可控"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "跟了三个月的健身小班突然涨了30%，而且教练换了。纸质收据上写的是季度付，但那个教练口头说可以按月。我该按哪个来？"
+        },
+        {
+          "role": "assistant",
+          "content": "按纸质收据的季度付走，多付的部分要求退。新教练没有书面承诺，如果季度付结束还没书面调整就换到另一家按次付费的。"
+        }
+      ],
+      "implicit_signal": "当健身小班价格变动且教练更换时，用剩余协议条款决定是否继续而非情感因素"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "线上编舞课老师给了一段60秒的反馈，但里面全是“感觉”“可以试试”之类的词。我听了三遍也没找到具体问题。上课前我交了练习视频，对方应该给评分标准才对。现在要不要重新发邮件要求用分项打分？"
+        },
+        {
+          "role": "assistant",
+          "content": "发邮件要求对方按节奏控制、动作完成度、行程占用三项打分。如果对方不配合，就把这次当作无效反馈，下次不选这位老师的课。你的复盘模板里需要明确评分，避免再次出现这种模糊回复。"
+        }
+      ],
+      "implicit_signal": "需要将外部课程反馈转化为自己的复盘格式，否则不采纳"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周的演出笔记是助理按时间线写的：18:30集合、19:00彩排、21:00演出。但我上台前需要的是按“服装检查→道具确认→站位图→上场顺序”组织的清单。这个版本没法用，能帮我重排一下吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "已按你的模板重排：先服装与道具核对，再站位图中换场标记，最后把上场顺序改成你可以画勾的列表。原时间线放在备注栏，只保留影响到走位的时刻。"
+        }
+      ],
+      "implicit_signal": "只接受按行动块组织的演出笔记，不接受按时间线顺序"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下周末去汉堡跟当地舞团交流，住宿选项里有三个：青年旅社的八人间（便宜可退）、网红酒店（贵且不可退）、私人民宿（便宜但评论说半夜吵）。我早上9点就要排练，晚上需要安静。怎么选？"
+        },
+        {
+          "role": "assistant",
+          "content": "私人民宿pass，评论提到半夜吵会影响排练状态。网红酒店不可退，临时变动会损失预算。选青年旅社八人间，加购一个耳塞和眼罩。入住时要求下铺、远离公共区。"
+        }
+      ],
+      "implicit_signal": "优先确认取消政策和夜间安全，再选住宿；热门选项自动低优先"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "排练间隙只有45分钟吃饭。旁边新开了家越南粉，但需要提前点单，而且没有英文菜单。我用德语问了一下，对方说“等会儿”。还有家土耳其烤肉，直接付钱就拿走。多付了一笔费用的是上周那次排队打乱了下半场热身。"
+        },
+        {
+          "role": "assistant",
+          "content": "选土耳其烤肉，因为付钱即走、不占用额外时间。越南粉虽然口味好但沟通和等待不确定，不适合45分钟的窗口。买完直接在走廊吃，留出10分钟热身。"
+        }
+      ],
+      "implicit_signal": "不接受需要排队或额外沟通成本的用餐方案，以免打破时间块"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前那个编舞笔记应用突然说要停服，限时让我迁移。我用它记了29套走位图和备注。现在候选文件夹里有一个能导出JSON的，还有一个只给PDF。我选导出格式灵活的那个？"
+        },
+        {
+          "role": "assistant",
+          "content": "选能导出JSON的，因为PDF只能看不能编辑或跨软件使用。迁移前先本地下载一份完整JSON到硬盘，再上传到新工具。不要点“一键迁移”，防止服务器间转移时第三方看到你的走位图。"
+        }
+      ],
+      "implicit_signal": "换工具时要求所有数据能本地导出，不接受纯云端存储"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "视频编辑软件年费有两个方案：A直接付129欧，B首年29欧但第二年自动续169欧。细看条款发现B方案取消需提前30天书面通知，否则扣全款。多付了一笔费用的事情我不想再来一次。"
+        },
+        {
+          "role": "assistant",
+          "content": "选A方案129欧付清。B的首年29欧是诱饵，第二年169欧加复杂取消规则实际成本更高。A方案付完后也不会出现自动续费问题，省去后续盯账单的精力。"
+        }
+      ],
+      "implicit_signal": "长期使用成本优先于初期折扣，且不接受隐性费用"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "这个舞者体能训练服务到期了。每月45欧，有线上课和社群，但给我的反馈就是一句“加油”加一个表情。没有速度数据、没有力量对比，我感觉一直在原地练。要不要续？"
+        },
+        {
+          "role": "assistant",
+          "content": "不续。你没有得到可衡量指标，训练效果无法判断。可以把剩下两周的课程用来录制自己的对比视频，然后找一家按周反馈且有记录模板的服务。"
+        }
+      ],
+      "implicit_signal": "只有提供可观察进步指标的服务才值得续约"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "今晚演完有空档，同事推荐了一个新开的沉浸式戏剧，22:00到23:30，但地点在城西。我明天早上7点有跨时区排练，到家已经过了0点。另一个选择是去附近酒吧坐一小时，21:30就能回。"
+        },
+        {
+          "role": "assistant",
+          "content": "选附近酒吧坐一小时。沉浸式戏剧虽然内容密度高但回家太晚会破坏明天排练状态。酒吧可以22点前离开，到家后还能做15分钟拉伸再睡，保证睡眠时长够。"
+        }
+      ],
+      "implicit_signal": "休闲选择必须与第二天任务的时间约束匹配"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想自学期街舞编导，在网上找到一位老师说“可以免费分享学习包”。结果她给了16个网盘链接，里面有几十个视频和文章，完全没标注顺序。只说了句“你按兴趣看”。这我怎么用？"
+        },
+        {
+          "role": "assistant",
+          "content": "先筛选出视频时长在15分钟以内的5个作为第一天素材，再要求对方给出一个推荐观看顺序和每节的练习作业。如果对方说没有，就不用再跟进了。你需要的是结构，不是囤货。"
+        }
+      ],
+      "implicit_signal": "不接受只堆链接和书目的学习方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月订了一个彩排场地自动续费服务，上周末想取消，发了两封邮件都没回复。今天发现被扣了第二个月的钱。关键信息只有广告页提到“可随时取消”。纸质收据上的条款又写得很模糊。现在该怎么办？"
+        },
+        {
+          "role": "assistant",
+          "content": "截图广告页和两封发送记录，联系支付方发起争议扣款。同时用挂号信寄出书面取消通知（地址在场地合同里）。以后选场地时先确认取消响应时间，最好能免预付。"
+        }
+      ],
+      "implicit_signal": "取消规则不透明或响应太慢的服务立即停用，并保留取消证据"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买一个动作捕捉摄像头回来自练。型号A保修2年，配套软件需要订阅，一年45欧。型号B贵130欧但本地软件免费，而且可以导出通用格式。我的预算是300欧以内。"
+        },
+        {
+          "role": "assistant",
+          "content": "选型号B。虽然初始贵130欧元，但本地软件免费且导出通用格式意味着长期不用另外花钱，也无数据锁定风险。总价算下来在预算内，而且你可以把动捕数据直接导入自己的软件里整理。"
+        }
+      ],
+      "implicit_signal": "产品选择需要明确长期维护和替代成本，否则放弃"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想用一款编舞动作分析App，免费版需要填写真实姓名、出生日期和手机号才能用。我编舞不需要实名，只提供艺名行不行？或者干脆换个App？"
+        },
+        {
+          "role": "assistant",
+          "content": "换一个App。这款要求的个人信息与训练无关，属于过度收集。如果你已经有动作视频，可以用浏览器录屏直接分析，或者找无需注册的离线版工具。名字和手机号一旦泄漏会带来骚扰风险。"
+        }
+      ],
+      "implicit_signal": "拒绝提供与训练无关的个人数据，即使对方要求注册"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去慕尼黑参加比赛，自驾路线推荐走A9高速直达，但我查了一下那几天有马拉松封路。导航建议先绕到A99再回来，多绕了一次路。同行的人临时退出不开了，现在只剩我自己。要不要改火车？"
+        },
+        {
+          "role": "assistant",
+          "content": "改火车。一个人开车遇到封路加长时间驾驶疲劳，不如选直达ICE，虽然票价贵一点但时间可控。在车上还能做拉伸和看比赛流程表，到站后直接进场，不留缓冲风险。"
+        }
+      ],
+      "implicit_signal": "路线计划必须有缓冲，拒绝多绕路或临时调整"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "排练完和搭档吃饭，他想去一家新开的炭烤店，但那个店要排队45分钟，而且油烟气很大。我上次在早餐桌边呛到过后来嗓子紧干，影响了一个下午的排练。今天不想再赌。"
+        },
+        {
+          "role": "assistant",
+          "content": "和搭档商量改去旁边清淡的越式简餐，如果他不愿意就分头吃。炭烤店的油烟和排队时间都会影响你下午状态，而且第二天还有排练，不能因为迁就对方而牺牲身体状态。半小时内吃完再去会合。"
+        }
+      ],
+      "implicit_signal": "避免因同行者限制而牺牲自己的饮食和作息节奏"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一个在线简报工具基础版每月8欧，Pro版15欧但加了一个“智能分析”功能。我的需求只是记录动作拆解和标记时间，不需要分析。但Pro版写着“推荐给专业用户”。"
+        },
+        {
+          "role": "assistant",
+          "content": "选基础版8欧。你只需要记录和标记，智能分析是多出来的功能，用不上。专业人士指的是需要数据可视化的教练，而你的角色是记录和复盘，基础版完全满足。省下的7欧可以存起来买排练视频回看。"
+        }
+      ],
+      "implicit_signal": "订服务必须区分可选和必须，不允许混合账单"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "老师说我某个转体动作“不够干净”，但没有给干净的例子。我有16个参考视频，老师说只有第3个是标准动作。我想知道如果按第3个练，其他人和我差在哪里？我自己测不准。"
+        },
+        {
+          "role": "assistant",
+          "content": "要求老师把第3个视频拆解为5个关键帧，并列出每帧的角度和重心位置。然后把自己的动作录下来分别对应到每帧，看哪里偏差。如果老师不提供指标，那这次反馈不可用，下次请对方直接说你脚落地的位置误差几厘米。"
+        }
+      ],
+      "implicit_signal": "需要例题和评分标准作为判断是否出错的依据，不接受主观评价"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周客户要求编一个以柏林地铁为背景的routine，给了一些参考视频链接。我看了发现都是无人机拍的夜景快剪，但我们的演出场地是个地下室，光线很暗。那个素材没法用，我该找什么替代？"
+        },
+        {
+          "role": "assistant",
+          "content": "去实地柏林的U-Bahn站台拍一段自己的走位测试，用手机就行。用站台的瓷砖反射和车厢灯形成自然对比。放弃无人机的宏大视角，专注于车厢内的节奏和空间动态，这更符合地下室的物理限制。"
+        }
+      ],
+      "implicit_signal": "只接受有实际应用场景的创作灵感，不接收空泛列表"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一个排练计时App想读取我的日历权限来“自动安排休息提醒”。我说用不到，但评估说如果不开启就无法生成提醒。自定义设置里也没找到手动输入休息时间的选项。要放弃这个App吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "放弃。不提供日历权限就不能用的App说明它的设计很不灵活，且你的排练时间表比较私人，不想被后台分析。直接用手机自带闹钟或秒表就能手动定休息提醒，无需为了一个功能牺牲隐私。"
+        }
+      ],
+      "implicit_signal": "不公开家庭位置和排练时间表，拒绝能推断生活规律的同步"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下周去多特蒙德参加三天workshop，主办方统一安排了住宿和交通。但我看了一下回程方案只有一趟火车，22:15发车，错过就要住一晚且自费。而且那个时间点我还没吃晚饭。要不要提前一天回来？"
+        },
+        {
+          "role": "assistant",
+          "content": "提前一天回来。三天的workshop第三天下午通常只是总结，若你第三天中午离开可以赶上15点左右的多趟火车，而且能在车站吃个饭。避免耗到21点只有一趟车且无备选。到了家还能整理第二天排练的新动作，不耽误事。"
+        }
+      ],
+      "implicit_signal": "不接受没有备选回程方案的旅行计划"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "user_id": "user_064",
+  "task": {
+    "task_id": "task_hard",
+    "title": "审计不完整的项目文档以进行跨境合规",
+    "daily_life_domain": "work",
+    "scenario": "作为TechInnovate公司的法律顾问，Alexandra负责审查即将推出的软件发布的文档，该软件涉及在欧盟和美国之间传输用户数据。项目经理提交了一份草案，但缺少关于GDPR和CCPA合规的关键条款，且数据处理描述中存在不一致。团队正催促快速批准，以便在3天后满足发布截止日期。",
+    "user_goal": "提供一份全面的审计报告和修订后的文档草稿，以解决所有法律漏洞，确保跨境合规，并降低监管处罚风险。",
+    "why_complex": "需要多步骤推理：理解欧盟和美国的隐私法、评估文档条款与所需条款、评估风险，并在全面性与紧迫的截止日期之间取得平衡。还涉及利益相关者协商和修复工作的优先级排序。",
+    "constraints": [
+      "截止日期：从现在起3天。",
+      "来自项目团队的不完整和模糊的文档。",
+      "必须保持高准确度，并引用法律来源。",
+      "团队快速批准的压力可能与全面性相冲突。",
+      "由于晚上家庭事务，可用时间有限。"
+    ],
+    "required_reasoning_steps": [
+      "逐行审查文档草稿，标记遗漏和不一致之处。",
+      "确定适用的具体GDPR和CCPA要求（例如，数据传输机制、同意条款、违约通知）。",
+      "研究与跨境数据传输相关的最新监管指南或执法行动。",
+      "与公司的数据保护政策和先前合同进行交叉引用。",
+      "起草带有建议修改和法律依据的修订版本。",
+      "根据风险等级（关键的与可有可无的）并考虑截止日期来优先处理修改。",
+      "准备一份备忘录，总结发现、风险及合规时间表。",
+      "安排与项目负责人的简短会议，讨论权衡并争取支持。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "正在传输的用户数据的具体类型和数量。",
+      "当前数据存储位置和服务器架构。",
+      "类似项目的任何先前合规历史或审计。",
+      "公司批准的数据传输机制列表。",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "一份结构化的审计报告，包含发现、风险评级和建议行动，以及带有法律引文的文档修订版本。向项目负责人简要口头总结。",
+    "success_criteria": [
+      "所有关键的GDPR和CCPA差距均已识别并解决。",
+      "备忘录中每个差距至少包含两个监管参考。",
+      "项目团队同意在启动前实施高优先级变更。",
+      "在3天内交付，不牺牲周末家庭时间（即高效利用工作时间）。",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "由于匆忙而遗漏关键合规要求。",
+      "过于批评性的语言导致团队摩擦。",
+      "未平衡彻底性和截止日期，导致过度劳累。",
+      "未引用来源，损害了可信度。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 10,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 8,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=11",
+        "constraints_capped=5",
+        "decision_points_capped=3",
+        "information_items_capped=6",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=31.5",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Alexandra Marchetti",
+      "age": 42,
+      "gender": "女性"
+    }
+  }
+}

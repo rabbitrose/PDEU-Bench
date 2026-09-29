@@ -1,0 +1,491 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_063",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:28:19",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_009",
+      "hidden_indirect_013",
+      "hidden_indirect_019"
+    ],
+    "content": [
+      "hidden_indirect_005",
+      "hidden_indirect_017"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_007",
+      "hidden_indirect_015",
+      "hidden_indirect_018"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_012",
+      "hidden_indirect_017"
+    ],
+    "entertainment": [
+      "hidden_indirect_010"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_008",
+      "hidden_indirect_014",
+      "hidden_indirect_020",
+      "hidden_indirect_021"
+    ],
+    "food": [
+      "hidden_indirect_009"
+    ],
+    "format_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_011",
+      "hidden_indirect_015"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_003",
+      "hidden_indirect_004",
+      "hidden_indirect_013",
+      "hidden_indirect_016"
+    ],
+    "learning": [
+      "hidden_indirect_011",
+      "hidden_indirect_021"
+    ],
+    "privacy": [
+      "hidden_indirect_004",
+      "hidden_indirect_016"
+    ],
+    "product": [
+      "hidden_indirect_006",
+      "hidden_indirect_019"
+    ],
+    "role_context": [
+      "hidden_indirect_012"
+    ],
+    "service": [
+      "hidden_indirect_007",
+      "hidden_indirect_018"
+    ],
+    "technology": [
+      "hidden_indirect_006",
+      "hidden_indirect_014"
+    ],
+    "travel": [
+      "hidden_indirect_008",
+      "hidden_indirect_020"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买了一款便宜狗粮，三个月后狗肠胃不适，兽医药费比粮钱多三倍。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次筛选同类粮时我会标注每袋的实际消化吸收率数据，并附带三年肠胃健康风险成本对比。"
+        }
+      ],
+      "implicit_signal": "优先考虑长期使用成本而非初期低价，且需要清晰的隐性费用说明"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "网上列了十款狗玩具榜单，全是通用文案，没一款适合我家16磅柯基。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会改为提供温哥华本地两家宠物店实拍的使用反馈，附柯基同体型毁坏率记录。"
+        }
+      ],
+      "implicit_signal": "拒绝泛化推荐，要求真实场景和本地案例支撑建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去了号称最大的宠物市集，现场像促销会，噪音大，狗吓到一直躲。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次挑平日、仅10桌以下的工作坊，先确认场地允许安静撤离。"
+        }
+      ],
+      "implicit_signal": "偏好小型场所和真实体验，避免过度商业化和人群拥挤"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一个训练课程网站要填住址、电话才给看大纲，我直接退出了。"
+        },
+        {
+          "role": "assistant",
+          "content": "已筛选出三家只要求邮箱即可获取大纲的机构列表，附取消政策原文。"
+        }
+      ],
+      "implicit_signal": "拒绝强迫注册或公开个人信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周末本打算备一周训练教案，却被拉去热闹早午餐，下午全废了。"
+        },
+        {
+          "role": "assistant",
+          "content": "已把周六上午预设为图书馆闭馆前写作时段，不建议安排任何社交。"
+        }
+      ],
+      "implicit_signal": "重视独处恢复时间，倾向于留出创作素材的安静安排"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "用了一款训练记录App，半年后想导出数据，发现只能付费订阅才能转出CSV。"
+        },
+        {
+          "role": "assistant",
+          "content": "已替换为支持本地备份和通用格式导出的开源软件，离线副本可直接存入笔记。"
+        }
+      ],
+      "implicit_signal": "偏好能导出数据的跨设备工具，避免平台锁定"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一家连锁宠物洗护店活动多但员工流动大，每次服务标准不一。"
+        },
+        {
+          "role": "assistant",
+          "content": "已找到一家家庭式小店，同一人服务、预约时段固定、允许旁看流程。"
+        }
+      ],
+      "implicit_signal": "服务质感、社区感和真实体验优先于规模和流量"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次带狗去公园活动日，现场网络断了，查不到疏散路线，等了很久。"
+        },
+        {
+          "role": "assistant",
+          "content": "出行前已离线保存公园地图与兽医联络方式，并预订可免费取消的顺路住宿。"
+        }
+      ],
+      "implicit_signal": "路线留缓冲，住宿优先可取消和安全安静"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "课间为了快，连吃了三天油腻外卖，下午困到训练走神。"
+        },
+        {
+          "role": "assistant",
+          "content": "已提前备好一周四天本地小店的清淡简餐菜单，单餐控制在8加元内，半小时可取。"
+        }
+      ],
+      "implicit_signal": "预算敏感且偏好不过度油腻、不破坏日程的餐食"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "参加了号称沉浸式狗行为展，实际是人挤人的巨大展厅，什么都看不到。"
+        },
+        {
+          "role": "assistant",
+          "content": "已改选小区图书馆30人名额的训犬纪录片放映会，结束后有10分钟Q&A，准点结束。"
+        }
+      ],
+      "implicit_signal": "偏好小型、密度高的活动，避免破坏第二天节奏"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一个线上课程发来30个PDF链接，说自学，没有作业反馈，感觉像浪费时间。"
+        },
+        {
+          "role": "assistant",
+          "content": "已换为五周直播课，每次布置一个训练视频作业并真人点评，末节复盘常见错误。"
+        }
+      ],
+      "implicit_signal": "需要短反馈和可复盘标准，拒绝只堆链接"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一次工作坊不让录视频，说版权，但回去没法回顾关键手势。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次选择允许拍摄自己操作的工坊，课前沟通确保可保留一页便签的笔记作为素材。"
+        }
+      ],
+      "implicit_signal": "作为训犬师需要能留下创作素材的安排"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "订购训练咬胶时没注意每月自动续订，账单多了两笔没通知的加急费。"
+        },
+        {
+          "role": "assistant",
+          "content": "已选择按次购买、不支持自动续费的渠道，并将提醒设为每月1日检查库存。"
+        }
+      ],
+      "implicit_signal": "避免隐藏费用和含糊承诺"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想比较两个训练管理软件，网评全是五星但没说数据存储位置。"
+        },
+        {
+          "role": "assistant",
+          "content": "已联系两款开发方确认数据仅存加拿大服务器且未分享给第三方，桌面版可用不登陆。"
+        }
+      ],
+      "implicit_signal": "需要真实场景而非排行榜，偏好有隐私保护的工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一家连锁宠物店宣传大促但店里只有货架，没有交流区，买了就走。"
+        },
+        {
+          "role": "assistant",
+          "content": "更换为独立买手店，每月有小型领养故事分享会，物品按场合分架且标有灵感备注。"
+        }
+      ],
+      "implicit_signal": "质感、社区感优先于规模，需要氛围/人群/成本/灵感的格式"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想找附近犬友合买大袋粮，但平台要求公开具体地址才能发起拼单。"
+        },
+        {
+          "role": "assistant",
+          "content": "改为使用仅显示模糊区域的论坛私信拼单，先沟通用量和预算，合意后再约地铁站公共区面交。"
+        }
+      ],
+      "implicit_signal": "涉及位置时保持谨慎"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "收到一份训练手册模板，里面全是通用‘建立服从’段落，没有具体情境。"
+        },
+        {
+          "role": "assistant",
+          "content": "已根据你上次的会议纪要重新组织为‘换乘地铁前’‘线上会议间隙’等5个真实块，每块配一个失败案例复盘。"
+        }
+      ],
+      "implicit_signal": "拒绝通用助手框架，重视真实体验和创作素材"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "预约了一对一咨询，但客服转了三手才确认时间，当天又提前一小时通知改期。"
+        },
+        {
+          "role": "assistant",
+          "content": "下一家服务商拥有直接预约日历，取消提前2小时可全退，全程只与同一个对接人沟通。"
+        }
+      ],
+      "implicit_signal": "取消规则明确、响应快、少中转的服务优先"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想升级牵引绳，被推荐了碳纤维款，价格是普通款三倍但寿命只多一年。"
+        },
+        {
+          "role": "assistant",
+          "content": "已列出尼龙款两年实际磨耗数据，同时给出碳纤维的二手均价替代方案，两者日成本差仅0.03加元。"
+        }
+      ],
+      "implicit_signal": "保守预算并区分必须与可推迟花费"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次按攻略去了一个热门徒步点，停车场排半小时，步道塞满人，完全没法专注遛狗。"
+        },
+        {
+          "role": "assistant",
+          "content": "已检索出三条人流量仅官方数据25%、但风景相似的小径，附上周实拍人流照片和路况备注。"
+        }
+      ],
+      "implicit_signal": "避免把热门当作默认最佳，需要真实样例"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "参加了一个‘七日训狗挑战’，每天只发一条视频链接，没有错误动作分析。"
+        },
+        {
+          "role": "assistant",
+          "content": "改选含每周两次15分钟视频点评、并提供失败动作重试模板的课程，最后一天集体复盘录像。"
+        }
+      ],
+      "implicit_signal": "要求示例和复盘标准，不喜欢只给材料链接"
+    }
+  ]
+}

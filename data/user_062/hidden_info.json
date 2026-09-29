@@ -1,0 +1,470 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_062",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:36:57",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_009",
+      "hidden_indirect_014",
+      "hidden_indirect_020"
+    ],
+    "content": [
+      "hidden_indirect_001",
+      "hidden_indirect_012"
+    ],
+    "decision_priority": [
+      "hidden_indirect_009",
+      "hidden_indirect_012",
+      "hidden_indirect_019"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_002",
+      "hidden_indirect_006",
+      "hidden_indirect_011"
+    ],
+    "entertainment": [
+      "hidden_indirect_007",
+      "hidden_indirect_017"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "food": [
+      "hidden_indirect_006",
+      "hidden_indirect_016"
+    ],
+    "format_contract": [
+      "hidden_indirect_004",
+      "hidden_indirect_010",
+      "hidden_indirect_017"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_001",
+      "hidden_indirect_005",
+      "hidden_indirect_011",
+      "hidden_indirect_016"
+    ],
+    "learning": [
+      "hidden_indirect_004",
+      "hidden_indirect_013"
+    ],
+    "privacy": [
+      "hidden_indirect_008",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "product": [
+      "hidden_indirect_002",
+      "hidden_indirect_014"
+    ],
+    "role_context": [
+      "hidden_indirect_007",
+      "hidden_indirect_013"
+    ],
+    "service": [
+      "hidden_indirect_003",
+      "hidden_indirect_018"
+    ],
+    "technology": [
+      "hidden_indirect_008",
+      "hidden_indirect_019"
+    ],
+    "travel": [
+      "hidden_indirect_005",
+      "hidden_indirect_015"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周沙龙我给了《玻璃动物园》情节摘要，结果年轻演员说‘知道了结局就不想看了’。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次讨论换成角色动机分析，每人选一句台词，不透露剧情转折。"
+        }
+      ],
+      "implicit_signal": "厌恶情节摘要，要求保留文本歧义"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "旧阅读椅扶手塌了，我在网上看了三款人体工学椅，参数差不多但坐着总不太对。"
+        },
+        {
+          "role": "assistant",
+          "content": "建议去店里试坐半小时，感受皮面触感和翻书的角度，静音也重要。"
+        }
+      ],
+      "implicit_signal": "椅子不仅是工具，更是阅读仪式的一部分"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次订阅了一个只说‘精选意大利产区’的葡萄酒服务，结果送来的批次品质很差，简直像醋。"
+        },
+        {
+          "role": "assistant",
+          "content": "换一家提供品酒师笔记和具体年份的订阅商，像之前托斯卡纳那批一样。"
+        }
+      ],
+      "implicit_signal": "服务推荐需要具体场景证据，不接受泛泛推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "波士顿大学请我讲《推销员之死》，学生希望先看一段录像，结果看录像时都在玩手机。"
+        },
+        {
+          "role": "assistant",
+          "content": "不如先发剧本第1幕，课上挑三句对白做即兴练习，再看录像对比。"
+        }
+      ],
+      "implicit_signal": "学习方式倾向原始文本和引导讨论"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友约我去巴黎看剧院建筑，但行程是跟团每天四个景点，结果在歌剧院只待了15分钟。"
+        },
+        {
+          "role": "assistant",
+          "content": "婉拒吧，上次布拉格大团游让你错过了导游介绍的19世纪后台结构。"
+        }
+      ],
+      "implicit_signal": "旅行避开大团，偏爱文化深度游"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "活动散场后，几个人拉我去一家新派融合菜馆，菜单用分子料理标签，结果一整晚都在讨论技术名词。"
+        },
+        {
+          "role": "assistant",
+          "content": "点一份经典意式番茄酱面，看看基本功；融合菜容易消解地域叙事。"
+        }
+      ],
+      "implicit_signal": "在意用餐体验的对话氛围，而非单纯口味"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周观看线上录制的《麦克白》，平台删除了中场休息，结果情感节奏全断了。"
+        },
+        {
+          "role": "assistant",
+          "content": "找NT Live版本，保留幕间和观众咳嗽声才有剧场感。"
+        }
+      ],
+      "implicit_signal": "娱乐选择偏向有叙事深度的历史剧"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周在线会议间隙，我误允许了一个日历App访问，结果它给我所有联系人发了会议链接，造成混乱。"
+        },
+        {
+          "role": "assistant",
+          "content": "立即撤销权限，换用独立密码的本地日历文件。"
+        }
+      ],
+      "implicit_signal": "警惕算法推荐与隐私泄露"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看到一双39美元的皮鞋在打折，但皮料是合成革，结果穿了两次就开胶。"
+        },
+        {
+          "role": "assistant",
+          "content": "等一个月，投资一双200美元的固特异沿条鞋，十年后还能换底。"
+        }
+      ],
+      "implicit_signal": "愿意为长期品质投入，而非短时便宜"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我在准备讲座，但学生只想知道‘三幕剧公式’，觉得旧方法过时，结果讨论特别空洞。"
+        },
+        {
+          "role": "assistant",
+          "content": "用《玻璃动物园》开场独白的调度变化作为案例，比公式更有说服力。"
+        }
+      ],
+      "implicit_signal": "偏好场景锚点而非抽象论点"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次品酒会上，有人带了瓶22年巴罗洛，整晚只谈价格，没人聊酒庄历史，气氛很尴尬。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次主动问产区风土叙事，把话题从炫耀引向感受。"
+        }
+      ],
+      "implicit_signal": "酒评应服务对话，避免炫耀年份"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "董事会选了一部甜腻喜剧，演出后观众反馈缺少深度，上座率下降了20%。"
+        },
+        {
+          "role": "assistant",
+          "content": "建议下次先做剧本朗读会，测试道德张力是否足够。"
+        }
+      ],
+      "implicit_signal": "内容选择以戏剧张力优先于流行度"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次课后有学生说笔记太难，要求我发PPT要点，结果交上来的作业全在复述PPT。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次课前发三篇评论文章，课后留一个即兴题，让他们自己总结。"
+        }
+      ],
+      "implicit_signal": "客座讲座应挑战学生舒适区"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "网上推一款带触控的电子阅读器，能画线做笔记，但屏太亮，结果看了半小时眼睛就酸。"
+        },
+        {
+          "role": "assistant",
+          "content": "不如买无背光的旧款，配一个皮面本子手写笔记，护眼且仪式感强。"
+        }
+      ],
+      "implicit_signal": "产品选择注重质量，不追潮流"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次旅行用App分享实时位置，结果一个陌生人在剧院门口等我，说看了我的签到知道我在哪。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后只手动输入城市，不给位置权限。"
+        }
+      ],
+      "implicit_signal": "旅行避免强制签到和隐私暴露"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周日晚上外卖点了泰式炒河粉，结果辣得说不出话，胃疼了一整夜。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次点法式洋葱汤配意式沙拉，避免酱料过重的东盟菜系。"
+        }
+      ],
+      "implicit_signal": "厌恶过于辛辣或融合的食物"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "YouTube推荐了一段《欲望号街车》电影版剪辑，但去掉了场间暗灯，结果情绪无法连贯。"
+        },
+        {
+          "role": "assistant",
+          "content": "去大都会歌剧院网站找完整录制版，保留幕间休息和观众咳嗽声才有剧场感。"
+        }
+      ],
+      "implicit_signal": "偏爱有现场感的录制舞台表演"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一家私人剧院导览网站说‘沉浸式体验’，但没有任何顾客反馈，结果去了发现只是放录像。"
+        },
+        {
+          "role": "assistant",
+          "content": "找找是否有《剧艺报》或本地论坛的真实游记，上次那种只有自拍就踩雷了。"
+        }
+      ],
+      "implicit_signal": "要求服务提供具体评论家电评，而非宣传语"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "线上会议时画面卡顿，我试用AI降噪功能，结果把演员尾音切了，导致关键台词听不清。"
+        },
+        {
+          "role": "assistant",
+          "content": "关掉AI，改用有线耳麦和固定位置，音画同步比花哨处理重要。"
+        }
+      ],
+      "implicit_signal": "技术工具应以不干扰叙事体验为优先"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想给家里装监控看猫，但免费云服务要求授权人脸识别，结果被推送了很多广告。"
+        },
+        {
+          "role": "assistant",
+          "content": "买一款本地存储的摄像头，加42美元换无广告版，数据不经过第三方。"
+        }
+      ],
+      "implicit_signal": "愿意花钱保护隐私，避免免费数据交换"
+    }
+  ]
+}

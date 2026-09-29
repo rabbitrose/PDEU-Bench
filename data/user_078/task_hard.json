@@ -1,0 +1,104 @@
+{
+  "user_id": "user_078",
+  "task": {
+    "task_id": "task_hard",
+    "title": "评估新功能的文档管理API选项",
+    "daily_life_domain": "work",
+    "scenario": "作为一家企业文档管理公司的高级软件工程师，你的任务是集成一个新API以实现实时协作功能。你的团队使用GitHub、Jira和Figma。你需要选择一个开源解决方案（例如，通过ShareJS的操作转换）和一个专有API（例如，谷歌文档API）。公司重视可靠性和安全性。",
+    "user_goal": "完成「评估新功能的文档管理API选项」，并给出满足约束、证据要求和截止时间的可执行结果。",
+    "why_complex": "需要在技术、法律和运营维度比较多个 API；必须平衡开源理想与企业限制；涉及测试和利益相关者输入。",
+    "constraints": [
+      "必须与现有 AWS 后端集成",
+      "必须处理高并发（每个文档1000+用户）",
+      "符合企业数据隐私要求（GDPR、SOC2）",
+      "时间：需要在2周内完成原型"
+    ],
+    "required_reasoning_steps": [
+      "1. 定义关键评估标准：延迟、吞吐量、安全性、许可证兼容性、集成易用性。",
+      "2. 研究开源选项：ShareJS、操作转换库、CRDT如Yjs。",
+      "3. 研究企业API：Google Docs API、Microsoft Graph API，评估成本和合规性。",
+      "4. 构建顶级候选方案的小型原型（例如Yjs + WebSocket与Google Docs API对比），使用模拟数据测试。",
+      "5. 评估与公司专有代码的许可证兼容性（AGPL vs Apache）。",
+      "6. 评估运营成本：开源托管与API调用定价。",
+      "7. 向团队提出包含权衡和理由的建议。",
+      "8. 规划集成步骤，包括从当前系统迁移。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "当前系统架构细节（例如数据库、同步机制）",
+      "现有技术栈（Node.js、React等）",
+      "团队的实时协作经验",
+      "第三方服务预算上限",
+      "确切合规要求（审计跟踪、数据驻留）",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "一份包含至少三个选项的比较报告、一个展示工作概念验证的原型，以及一个带有风险缓解措施的分阶段集成计划。",
+    "success_criteria": [
+      "选定的API在测试中满足所有标准",
+      "原型可处理10个并发用户无问题（可扩展到1000）",
+      "许可证与公司的开源政策兼容",
+      "建议被团队负责人接受",
+      "集成计划详细且在2周截止日期内可行",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "忽视合规要求导致法律问题",
+      "选择专有API而未充分探索开源替代方案",
+      "低估集成复杂性或部署开销",
+      "未能测试冲突解决等边缘情况"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 6,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 9,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=11",
+        "constraints_capped=5",
+        "decision_points_capped=3",
+        "information_items_capped=7",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=32.2",
+        "hard_revision: 内容负载较高，保留少量 9 轮作为上尾",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Alex Chen",
+      "age": 34,
+      "gender": "男性"
+    }
+  }
+}

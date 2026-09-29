@@ -1,0 +1,512 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_044",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:21:07",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 22,
+  "composition": {
+    "episodic_preference_trace": 22
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_016"
+    ],
+    "content": [
+      "hidden_indirect_011",
+      "hidden_indirect_022"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_010",
+      "hidden_indirect_014",
+      "hidden_indirect_020"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_011",
+      "hidden_indirect_019"
+    ],
+    "entertainment": [
+      "hidden_indirect_007"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_004",
+      "hidden_indirect_013",
+      "hidden_indirect_017"
+    ],
+    "food": [
+      "hidden_indirect_004",
+      "hidden_indirect_016"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_012",
+      "hidden_indirect_021"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_007",
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_015",
+      "hidden_indirect_018",
+      "hidden_indirect_022"
+    ],
+    "learning": [
+      "hidden_indirect_010",
+      "hidden_indirect_017"
+    ],
+    "privacy": [
+      "hidden_indirect_006",
+      "hidden_indirect_015"
+    ],
+    "product": [
+      "hidden_indirect_009",
+      "hidden_indirect_018"
+    ],
+    "role_context": [
+      "hidden_indirect_005",
+      "hidden_indirect_020"
+    ],
+    "service": [
+      "hidden_indirect_003",
+      "hidden_indirect_012",
+      "hidden_indirect_021"
+    ],
+    "technology": [
+      "hidden_indirect_002",
+      "hidden_indirect_013",
+      "hidden_indirect_019"
+    ],
+    "travel": [
+      "hidden_indirect_008",
+      "hidden_indirect_014"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买了那款带心率监测的睡眠耳塞，用了三晚发现监测数据偏差大，而且每次充电要2小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "把耳塞退掉，换回原来的基础款耳塞加一个手环，后者心率准些。充电时间缩短到45分钟。"
+        }
+      ],
+      "implicit_signal": "在预算紧张时优先保证核心功能，放弃次要附加项"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你推的笔记同步软件，我用了发现导出格式是专有的，没法迁移到其他工具。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次改推 Obsidian，纯本地 md 文件，同步靠第三方插件。导出无锁，你可以先导几个文件试跑。"
+        }
+      ],
+      "implicit_signal": "要求可验证来源才采纳推荐，拒绝无依据建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你给的健身房对比方案，前面写了一大段品牌故事，我翻到第三页才看到价格和营业时间。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次直接按：目标（减脂周期）｜约束（晚8点后可用）｜方案A/B对比表（价格/营业/取消规则）｜下一步（试课预约链接）。"
+        }
+      ],
+      "implicit_signal": "偏好清单式、无多余概括的交付格式"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那家轻食外卖，首单减15元很划算，但复购价贵了40%，而且配送范围第二天就变了。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成菜谱订阅+自己采购模式。每周发5道30分钟内菜谱，食材在楼下生鲜店能买齐。算下来月均低25%。"
+        }
+      ],
+      "implicit_signal": "关注长期使用成本，拒绝只看单次低价"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上回约学员场地，每次都要手动输入姓名、电话、时间段，同一人重复三次。"
+        },
+        {
+          "role": "assistant",
+          "content": "建一个预约模板：字段固定为｜学员姓名｜电话｜时段｜备注｜。下次你直接选模板，已填项自动保留。"
+        }
+      ],
+      "implicit_signal": "厌恶重复录入信息，提前结构化减少沟通成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在超市结账前发现会员价需要提供手机号注册，收银员说只会用于积分，但没写取消方式。"
+        },
+        {
+          "role": "assistant",
+          "content": "用现金结账不注册。回头我查这家超市的隐私政策，标出“取消积分需发邮件申请”这个未确认点，你再决定。"
+        }
+      ],
+      "implicit_signal": "需要清楚标出未确认点，避免模糊承诺"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次推荐的周末市集，宣传说「全网爆火」，结果到场全是网红拍照摊位，没有实际可以参与的活动。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次只推有明确活动流程和参与人数上限的小型工作坊。比如周六的手工皮具体验，限10人，先看名单再报名。"
+        }
+      ],
+      "implicit_signal": "拒绝只看热度的推荐，需要个人相关性过滤"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那个旅行背包，防水且轻，但用了4个月拉链就脱线，官网说只能寄回去修，运费自理。"
+        },
+        {
+          "role": "assistant",
+          "content": "换一个本地能修的品牌，采购时先问清楚售后网点和维修周期。预算多50元但能用2年，年均成本更低。"
+        }
+      ],
+      "implicit_signal": "拒绝忽略维护成本，要求考虑长远支出"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次我想学数据分析，你直接回复“你可以的，加油”，然后没了。我需要知道从哪里开始。"
+        },
+        {
+          "role": "assistant",
+          "content": "第一周：装Anaconda，跑完Kaggle上一个入门notebook。第二周：把你自己日常工作数据（如学员出勤）做一张透视表。第三周复盘，改脚本。"
+        }
+      ],
+      "implicit_signal": "拒绝空泛鼓励，需要具体可操作方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你推荐一个AI写训练计划的新工具，界面很炫，但生成计划里动作顺序不符合解剖学，还经常断连。"
+        },
+        {
+          "role": "assistant",
+          "content": "回到老工具：Excel模板+动作库手动组合。花2天把模板固化成下拉菜单，离线也能用，稳定第一。"
+        }
+      ],
+      "implicit_signal": "可靠性优先于新奇功能，拒绝不稳定工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "活动散场后想快速把合影发群里，但照片在相机里，要先传到手机再编辑再发送，花了6分钟。"
+        },
+        {
+          "role": "assistant",
+          "content": "买一个带WiFi的SD卡，拍完直接在手机app下载原图。下次活动前我帮你设置好，2分钟内发出去。"
+        }
+      ],
+      "implicit_signal": "喜欢低摩擦工具，一步到位减少步骤"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "试用账号到期前3天，平台自动续费了年费，但我根本没用够，取消还要打客服电话。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次订阅前，把「取消规则」「自动续费默认关闭」「客服渠道」写入确认清单，你过目后再支付。"
+        }
+      ],
+      "implicit_signal": "需要明确取消规则和信息边界再购买"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你说某云笔记支持离线，结果地铁里打开只看到标题，正文加载不出来。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用Joplin，全量离线，同步靠文件。你先在电脑装好，导出一份测试笔记，关网打开确认正文可见再迁移。"
+        }
+      ],
+      "implicit_signal": "要求明确假设和失败回滚路径"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次出差，你推的航班便宜但中转时间只有40分钟，前一班晚点导致没赶上。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次改选直飞或中转≥2小时的航班，票价高20%但确保当天能到。出发前发你备选火车方案。"
+        }
+      ],
+      "implicit_signal": "时间边界优先，接受限定条件下的最优方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "图书馆闭馆前想线上续借，结果系统要我绑定微信并授权手机通讯录才能操作。"
+        },
+        {
+          "role": "assistant",
+          "content": "直接用浏览器打开网页版续借，只需要读者证号和密码。我在书签里存了那个不跳转的入口链接。"
+        }
+      ],
+      "implicit_signal": "拒绝强迫注册或公开个人信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买菜软件推的有机蔬菜包，价格是普通的两倍，但包装上没写产地和检测报告。"
+        },
+        {
+          "role": "assistant",
+          "content": "本周买普通蔬菜，预算上限80元/周。下周你抽出30分钟去附近菜场看一圈，记录三家价格和品相，再决定是否升级。"
+        }
+      ],
+      "implicit_signal": "区分必须花费和可推迟，用保守预算倒推行动"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你给了5个关于HIIT的论文链接，打开全是英文摘要，我没时间逐篇读。"
+        },
+        {
+          "role": "assistant",
+          "content": "摘出每个论文的一个关键结论和一个适用场景，整理成表。你选一个结论，下节课设计一个15分钟实验，课后对比心率数据。"
+        }
+      ],
+      "implicit_signal": "需要示例和可复盘标准，不接受纯链接"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那个体脂秤，首单半价但需要绑定app并授权健康数据，之后每个月还要付会员费看报告。"
+        },
+        {
+          "role": "assistant",
+          "content": "买普通电子秤+手动记录。每周固定时间测量，记在手机备忘录，不用授权任何数据。成本只要体脂秤的1/5。"
+        }
+      ],
+      "implicit_signal": "拒绝只看首单优惠，要求考虑长期使用成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "换手机后，之前记的100多条训练日志全在旧app里，不能批量导出。逐条复制花了2小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "用Google Sheets做日志模板，手机和电脑都能编辑。本周我帮你把旧数据用OCR批量扫入，以后只维护这一个表。"
+        }
+      ],
+      "implicit_signal": "讨厌重复录入，希望数据能批量迁移"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你把整周的饮食和训练计划全改了，结果第三天就发现碳水不足，下午低血糖。"
+        },
+        {
+          "role": "assistant",
+          "content": "改成周中只改一天，剩四天保持原计划。改的那天记录空腹和训练后血糖，数据达标再扩展。"
+        }
+      ],
+      "implicit_signal": "可靠性优先，用渐进验证代替一次性大改动"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "同行的人临时退出周末徒步，你只说了句‘那换别的活动吧’，但我定金已经付了。"
+        },
+        {
+          "role": "assistant",
+          "content": "列出三个选项：改期（确认退款75%）、转让名额（发群）、转室内攀岩（补差价20元）。每项写明时间和下一步操作，你选后我执行。"
+        }
+      ],
+      "implicit_signal": "需要方案表和下一步检查，而非一个推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_022",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "关键信息只有广告页提到，上次买的蛋白粉瓶身标签和官网成分表不一样，客服说以广告页为准。"
+        },
+        {
+          "role": "assistant",
+          "content": "退掉，换一个把成分表印在瓶身上的品牌。购买前先让你拍瓶身照片，我对比官网再确认。以后每季度查一次该品牌成分变化。"
+        }
+      ],
+      "implicit_signal": "拒绝忽略维护成本，需要定期审查"
+    }
+  ]
+}

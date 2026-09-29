@@ -1,0 +1,470 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_032",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:23:45",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_012",
+      "hidden_indirect_013"
+    ],
+    "content": [
+      "hidden_indirect_002",
+      "hidden_indirect_015"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_005",
+      "hidden_indirect_008",
+      "hidden_indirect_018"
+    ],
+    "entertainment": [
+      "hidden_indirect_004",
+      "hidden_indirect_016"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_011"
+    ],
+    "food": [
+      "hidden_indirect_006",
+      "hidden_indirect_014"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_011"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_009",
+      "hidden_indirect_012",
+      "hidden_indirect_020"
+    ],
+    "learning": [
+      "hidden_indirect_008",
+      "hidden_indirect_015",
+      "hidden_indirect_019"
+    ],
+    "privacy": [
+      "hidden_indirect_010",
+      "hidden_indirect_017"
+    ],
+    "product": [
+      "hidden_indirect_006",
+      "hidden_indirect_014",
+      "hidden_indirect_020"
+    ],
+    "role_context": [
+      "hidden_indirect_007",
+      "hidden_indirect_019"
+    ],
+    "service": [
+      "hidden_indirect_005",
+      "hidden_indirect_017"
+    ],
+    "technology": [
+      "hidden_indirect_009",
+      "hidden_indirect_016"
+    ],
+    "travel": [
+      "hidden_indirect_007",
+      "hidden_indirect_013"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次腘绳肌拉伤后我买了一根15元的泡沫轴，滚了三天痛感没减，外侧反而更紧绷。换了两天热敷也不管用。"
+        },
+        {
+          "role": "assistant",
+          "content": "那笔费用浪费了。明天物理治疗室有一台Theragun空档，免费试用一次，你看看深层放松的效果再决定是否买一台。"
+        }
+      ],
+      "implicit_signal": "恢复中优先腘绳肌安全，愿为有效方法投入，但对价格敏感"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "两周前信了一个朋友分享的“快速提升步频”视频，按里面的方法练了三次，结果步频没提升，腘绳肌在第三天训练时又拉了一下。"
+        },
+        {
+          "role": "assistant",
+          "content": "把那条视频链接发我，我替换成《应用生理学》期刊提取的离心训练步骤，每一步都带肌肉图。"
+        }
+      ],
+      "implicit_signal": "重视可操作训练内容，信息来源需有运动科学依据"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "教练上周给了16页的《恢复期跑姿调整手册》，我读到第4页时被一个图表吸引，但后面内容太多，最终只在训练前看了那个图表。"
+        },
+        {
+          "role": "assistant",
+          "content": "那本手册我拆成了6张信息图，按“强度上限-停止信号-恢复检查”排列，今晚传给你，每张配15秒示范视频。"
+        }
+      ],
+      "implicit_signal": "训练期间偏好短视频或信息图，避免长阅读"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "队友推荐了一部短跑纪录片，主角脚跟骨裂还坚持跑完决赛，赛后直接坐轮椅。我看了十分钟就退了，没再打开，之后再也不看这种影片。"
+        },
+        {
+          "role": "assistant",
+          "content": "那种叙事会让身体信号失灵。今晚我看Sauti Sol在Spotify上有新单曲，配合拉伸放松效果更好。"
+        }
+      ],
+      "implicit_signal": "厌恶英雄式痛苦叙事，拒绝将伤害美化"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周付了3500先令约了一位全国知名的心理专家，四十分钟内他展示了12个客户的感谢信，只给了两条泛泛的建议。后来我没有再去。"
+        },
+        {
+          "role": "assistant",
+          "content": "损失了时间和钱。我联系了一位只服务短跑运动员的年轻心理学家，可以先进行20分钟免费匹配，再决定是否合作。"
+        }
+      ],
+      "implicit_signal": "运动心理学家匹配度比声望更重要"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周在一家健康店看到“爆发力粉”，包装写着“天然配方”，我翻到背面成分表第三条写着“专利混合提取物”无具体比例，当即放回了货架。"
+        },
+        {
+          "role": "assistant",
+          "content": "放下明智。我这里有Allmax豌豆蛋白粉的样品，配料只有豌豆分离蛋白和椰子糖，明天训练后你试一次，观察对胃有没有负担。"
+        }
+      ],
+      "implicit_signal": "要求产品有效且成分透明，避免未证实补充剂"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周带青少年训练营，我按照俱乐部给的课程讲踝关节损伤预防，讲了八分钟就有三个孩子举手问“什么时候能学起跑”。我临时砍掉后面内容直接教起跑。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次改成先展示一次完美起跑（给全场看），然后把他们分成两组，一组玩“髋部激活抢旗”，一组练起跑，轮换。"
+        }
+      ],
+      "implicit_signal": "青年训练营应让人向往，而非医疗化"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "花了两个小时上了一堂“世界级短跑技术直播课”，但老师只播放自己比赛的录像，没有慢放，也没有让我们自己录动作。课后我还是不知道我的前倾角度对不对。"
+        },
+        {
+          "role": "assistant",
+          "content": "那课效果不好。换Hudl平台的“个人技术分析”课程，你花两分钟录一段30米跑上传，老师会在你的画面上画角度线，下周开课。"
+        }
+      ],
+      "implicit_signal": "偏好互动在线课程，带视频反馈"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前用了一个App，每次跑完它弹出“根据炎症模型冰敷15分钟”的大段说明，而我当时只想看表上的心率恢复数据。我已经把那个App从桌面删了，再没用过。"
+        },
+        {
+          "role": "assistant",
+          "content": "那App不适合你。换Whoop，主界面只显示心率变异和静息心率，没有文字说明，你下个版本可以自定义通知。"
+        }
+      ],
+      "implicit_signal": "避免过度医疗化恢复描述，训练提示应直接"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "俱乐部在群里发了一个佳明排行榜链接，所有成员实时位置可见。我点击加入后又退了，因为我不想让大家知道我每天六点前在哪个场地热身。"
+        },
+        {
+          "role": "assistant",
+          "content": "退出正确。只把佳明账号分享给理疗师和我，设置在地图视图时隐藏位置，只看跑量和心率区间。"
+        }
+      ],
+      "implicit_signal": "对数据分享谨慎，但愿意与教练分享训练数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上周给我的恢复计划里有一句“增强腘绳肌离心力量”，但没说是哪几个动作、每组几次。我按猜的做了北欧降，第二天酸痛到没法加速，多绕了一次路才找到替代训练。"
+        },
+        {
+          "role": "assistant",
+          "content": "我的错。现在改成：1）俯卧腿弯举（用弹力带）4组，看到大腿发抖即停；2）单腿RDL 3组，感觉到紧张但无刺痛。每项配一个停止信号图。"
+        }
+      ],
+      "implicit_signal": "教练验证的方法和运动科学片段即可，但要求可操作"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我找到一张去亚的斯亚贝巴高原训练营的廉价机票，凌晨1:30起飞，4:30到，落地就要开始适应性跑。我查了网友说这种安排会让睡眠节律乱三天，所以我退了票，损失了18美元退票费。"
+        },
+        {
+          "role": "assistant",
+          "content": "损失18美元比损失三天训练划算。换成次日上午11点抵达的航班，多花36美元，你可以在机场旅馆先睡到下午，然后参加当堂的慢速适应跑。"
+        }
+      ],
+      "implicit_signal": "避免牺牲睡眠或恢复的旅行计划"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去埃尔多雷特参加越野赛，赛后订房时发现经济酒店已满，只剩豪华酒店，一晚房费等于我两周交通预算。我决定不住宿，赛后坐夜班巴士回内罗毕，在车上睡了五小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次提前两周在Hostelworld订运动员宿舍，距离赛道600米，36美元一晚含早餐，还能遇到其他跑者。"
+        }
+      ],
+      "implicit_signal": "差旅住青年旅社或运动员宿舍，经济实惠"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "比赛补给站提供的蛋白奶昔，我喝了一口看成分表第二位是乳清浓缩蛋白，知道肯定不对，但当时没有别的补给，喝完后第二组间歇果然岔气了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次自带一袋植物蛋白粉，我发你三个无乳清品牌清单，全部标注豌豆或大米蛋白来源，明天拿其中两种的样品给你对比味道。"
+        }
+      ],
+      "implicit_signal": "乳糖不耐受，需无乳制品替代"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一个训练伙伴转来一份兴奋剂禁用清单，说来自某个论坛，里面竟然把咖啡因和布洛芬都列为禁用。我觉得不可信，直接删掉了。"
+        },
+        {
+          "role": "assistant",
+          "content": "删得好。这是WADA官方2026年禁用清单，我把它浓缩成两页表格，突出你可能会遇到的平喘药和利尿剂。打印出来放包里。"
+        }
+      ],
+      "implicit_signal": "反兴奋剂教育需求，资料来源需可靠"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨晚想在YouTube上找些东西看，刷到了很多虚拟短跑游戏画面，很无聊。我还是习惯看真实运动员如何调整节奏，上次那个《大卫·鲁迪沙：一英里》的纪录片我就看了两遍。"
+        },
+        {
+          "role": "assistant",
+          "content": "YouTube上有一个《Allyson Felix：第7块金牌》的幕后短片，24分钟，讲她腘绳肌受伤后的回归路径，非常适合你现在的情况。"
+        }
+      ],
+      "implicit_signal": "关注角色模型，偏好体育纪录片或自传"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我拒绝了理疗师推荐的远程康复App，因为它要求我开启摄像头并且在训练时持续录制，并且把数据上传到研究中心。我不接受那种授权范围，所以没安装。"
+        },
+        {
+          "role": "assistant",
+          "content": "那用TrainingPeaks的私教模式，你只需手动输入RPE和心率，我不需要视频。你理疗师那边也可以用同样的数据来调整计划。"
+        }
+      ],
+      "implicit_signal": "愿意与信任的教练分享数据，但不愿公开"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "附近开了一家新健身房，广告写有水下跑道和冷疗舱，但单次体验价就800先令，够我买一周的香蕉和坚果酱。我试了一次感觉和普通草地跑区别不大，之后没再续。"
+        },
+        {
+          "role": "assistant",
+          "content": "800先令买那一次够了。还是旧跑道性价比高，今天下午做5组30米起跑，我在终点用手机给你拍侧面视频，看髋部前倾角度。"
+        }
+      ],
+      "implicit_signal": "速度质量和经济性优先于理想设施"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次训练营教孩子们起跑，我讲了半个小时的力学要点，结果他们趴在地上摆好姿势后手臂还是左右晃。关键信息只有一张旧海报上的图解能讲清楚，但我没带海报，只能现场比划。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次用弹力带每人套在肩膀上，让他们慢跑中感受“向后拉”的动力，然后拍一张特写贴在休息区墙上。"
+        }
+      ],
+      "implicit_signal": "指导年轻运动员，注重实操"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友推荐了一个“核心力量训练挑战”，每天10分钟平板支撑变式，我试了三天，发现每次平板支撑时拉伤侧的腘绳肌代偿性紧张，反而更酸了。第四天我没再打开那个网页。"
+        },
+        {
+          "role": "assistant",
+          "content": "那种计划不考虑单侧伤病史。换一个针对短跑运动员的恢复期核心方案，每四个动作中包含一个仰卧骨盆卷动，避免代偿。"
+        }
+      ],
+      "implicit_signal": "避免通用健身计划，需要个性化调整"
+    }
+  ]
+}

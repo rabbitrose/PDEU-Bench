@@ -1,0 +1,428 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_130",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:13:17",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 18,
+  "composition": {
+    "episodic_preference_trace": 18
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_004",
+      "hidden_indirect_011",
+      "hidden_indirect_015"
+    ],
+    "content": [
+      "hidden_indirect_003",
+      "hidden_indirect_012",
+      "hidden_indirect_018"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_008",
+      "hidden_indirect_017"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_014"
+    ],
+    "entertainment": [
+      "hidden_indirect_011"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_013"
+    ],
+    "food": [
+      "hidden_indirect_010"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_012"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_007",
+      "hidden_indirect_015"
+    ],
+    "learning": [
+      "hidden_indirect_002",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "privacy": [
+      "hidden_indirect_005",
+      "hidden_indirect_016"
+    ],
+    "product": [
+      "hidden_indirect_007"
+    ],
+    "role_context": [
+      "hidden_indirect_009"
+    ],
+    "service": [
+      "hidden_indirect_006",
+      "hidden_indirect_009",
+      "hidden_indirect_014"
+    ],
+    "technology": [
+      "hidden_indirect_008",
+      "hidden_indirect_016"
+    ],
+    "travel": [
+      "hidden_indirect_010",
+      "hidden_indirect_017"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周日晚上看到社区回收服务有免费上门取件，但需提前注册，我取消了一次，因为注册页面要求填收入区间。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次改用付费预约，只需姓名和住址，多花18元但从长期看省去个人信息外泄的风险。"
+        }
+      ],
+      "implicit_signal": "犹豫是否用稀缺免费名额换取当前便利"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次图书馆闭馆前我用系统查家庭群转发的共享表格，发现一个社区申请模板，但版本没法回退到旧版，导致改了格式后没法用。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次我先下载一份离线备份，再试新模板，确保回滚路径清晰再开始填写。"
+        }
+      ],
+      "implicit_signal": "确认工具可靠性后才投入时间学习"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次给的社区集会方案列了五点，但我地铁换乘时扫了一眼，找不到必要项和可推迟项，感觉像通用指南。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我改成成本表格式：第一栏列出必须现在做的，第二栏列出可推迟到下个月的项目，第三栏注明风险阈值。"
+        }
+      ],
+      "implicit_signal": "偏好可快速阅读的对照式信息而非叙述"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我上次选了一个便宜的打印店输出会议纪要，后来发现他们按页收费但封面也算彩色，多收32元。这次不想再踩这个坑。"
+        },
+        {
+          "role": "assistant",
+          "content": "先用你手机截图里的价格表做个上限估算，然后找一家明码标价包含封面的店。"
+        }
+      ],
+      "implicit_signal": "拒绝隐性费用带来的计划失控"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次家庭群有人分享了一个拼车小程序，我点进去发现要授权读取通讯录，就直接退出了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我找另一个平台，只要求行程信息，不碰敏感权限，你再看看是否接受。"
+        }
+      ],
+      "implicit_signal": "即使麻烦也要先处理数据边界"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前订了一个小型社区工作坊，没注意取消期限，当天同行的人临时退出，费用没退回来。这次不想再赌。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次先确认退改条款：提前48小时免费取消，并且有候补名单，再帮你选座位。"
+        }
+      ],
+      "implicit_signal": "需要明确取消规则的缓冲来降低决策压力"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次看到一个能共享表格的工具，试用后要自动续费，但取消入口藏在三级菜单里。我直接删除了那个绑定卡片的账户。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只选明确标注永久免费或一次性买断的产品，先用免费版测试一个月再决定。"
+        }
+      ],
+      "implicit_signal": "拒绝为不透明的长期承诺付费"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我用笔记记社区规划草稿，但那个app没有导出功能，设备发热后表现下降，文件全丢了。连本地备份都没留下。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次换用支持PDF和Markdown导出的工具，并且每写完一段就手动导出一次到本地文件夹。"
+        }
+      ],
+      "implicit_signal": "跨设备可导出是必须保留的约束"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在家庭群发起的社区散步活动，上次选了一家贵但评价高的咖啡馆集合，结果有人反馈超出当天预算。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次换一家有户外座位且人均不超过15美元的本地小店，同时给每人发当前菜单截图。"
+        }
+      ],
+      "implicit_signal": "作为组织者需对同行者的预算负责"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去社区公园做调研，午餐选了家需要等20分钟的餐车，结果多绕了一次路去找座位，下午任务延迟了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次预订一个提前打包好的便当路线，控制在15分钟内取餐，再用共享表格确认所有人到点时间。"
+        }
+      ],
+      "implicit_signal": "路线缓冲和饮食安排要匹配当天的体力和精力量"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次社区露天电影到晚上10点才结束，加上回家收拾，拖到12点才睡，第二天18点的工作复盘记错了数据。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次选一个下午4点开始的讲解展览，6点前结束，留足缓冲。"
+        }
+      ],
+      "implicit_signal": "休闲活动必须不突破第二天的早起时间"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次回我关于垃圾分类奖励的查询时，直接说‘几个选项’，没给任何比较表格或来源。我不能用了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我把三个方案的申请条件、预估时间和隐性费用做成并列表格，末行写上不确定因素。"
+        }
+      ],
+      "implicit_signal": "不接受没有数据支撑的概括建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你介绍社区项目申请的视频课程只有链接，没有写课程中会用到什么工具、是否有实操示例。我看了简介也判断不了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次先看课程目录，把每节对应的实操案例列出来，再给你前两节试读笔记，确认模式合适再报名。"
+        }
+      ],
+      "implicit_signal": "需要可复盘的示例而非纯理论"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次社区搬家服务公司电话里说免费，但最后收了个‘燃油附加费’，总额打乱了我的预算表。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次先要一份所有附加费清单并截屏存为证据，再按保守估算预留17块钱的杂费空间。"
+        }
+      ],
+      "implicit_signal": "宁愿多花几分钟比较也不愿陷入间接投诉"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前社区义卖租摊位，组织者说‘大概50元’，最后账单加了桌子费、清扫费总共78元。我没盖章就直接拒绝支付了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次先到官网查摊位租金明细，如果包含‘其他’类目就提前问清上限，超过50元不签。"
+        }
+      ],
+      "implicit_signal": "拒绝因模糊预算超支后再找补"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周一个社区打卡app推荐我绑定社交账号用一键登录，我直接关掉了页面，因为我的会议纪要里有家人信息。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次用邮箱注册+手动设置权限，信息只保留在该app本地，不开启任何同步。"
+        }
+      ],
+      "implicit_signal": "主动选择少集成的方案以减少数据暴露面"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "社区老年活动中心选在了一个交通便利但停车费很贵的场馆，每次开会停车成本相当于半个午餐预算，长期受不了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次先列出三个可选地点，用表格比较月均总成本（租金+停车+隐形费用），再决定。"
+        }
+      ],
+      "implicit_signal": "把长期维护成本置于单次便利之上"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你推荐了一篇社区筹款技巧文章，但读了一半发现是面向全国大组织的，跟我这种17人小群体完全不对路。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只找针对性资料：比如本州小团体收会费的低成本案例，再加上你上次的家庭群交流经验作为实战参考。"
+        }
+      ],
+      "implicit_signal": "需要针对自身场景的窄领域信息"
+    }
+  ]
+}

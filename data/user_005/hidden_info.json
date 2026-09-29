@@ -1,0 +1,410 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_005",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:06:05",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 18,
+  "composition": {
+    "episodic_preference_trace": 18
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001"
+    ],
+    "content": [
+      "hidden_indirect_005"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_011"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_015",
+      "hidden_indirect_016",
+      "hidden_indirect_017"
+    ],
+    "entertainment": [
+      "hidden_indirect_005"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_012"
+    ],
+    "food": [
+      "hidden_indirect_009"
+    ],
+    "format_contract": [
+      "hidden_indirect_013",
+      "hidden_indirect_014"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_003",
+      "hidden_indirect_006",
+      "hidden_indirect_010",
+      "hidden_indirect_012",
+      "hidden_indirect_016",
+      "hidden_indirect_017",
+      "hidden_indirect_018"
+    ],
+    "learning": [
+      "hidden_indirect_003"
+    ],
+    "privacy": [
+      "hidden_indirect_007"
+    ],
+    "product": [
+      "hidden_indirect_008"
+    ],
+    "role_context": [
+      "hidden_indirect_010"
+    ],
+    "service": [
+      "hidden_indirect_006"
+    ],
+    "technology": [
+      "hidden_indirect_003"
+    ],
+    "travel": [
+      "hidden_indirect_004"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周燃气灶坏了，维修师傅报价一千五换零件。老公说不如买新的，可冰箱也要修，钱不够。"
+        },
+        {
+          "role": "assistant",
+          "content": "先修燃气灶，毕竟每天要做饭。问问本地小修理铺，或许能便宜点。冰箱可以晚些修。"
+        }
+      ],
+      "implicit_signal": "优先修理每天必需家电，控制支出"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "小儿子又闹肚子，上次私人诊所等45分钟花了一千二。婆婆说喝草药就好，我有点拿不准。"
+        },
+        {
+          "role": "assistant",
+          "content": "先别急着去诊所，问学校老师有没有熟悉的医生。草药不一定对，可以再问问邻居法蒂玛。"
+        }
+      ],
+      "implicit_signal": "信任本地推荐胜过直接去医院"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "technology",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "女儿11岁了，想用手机学英语，但应用全是英文，我看不懂。怕下载错了还要收费。"
+        },
+        {
+          "role": "assistant",
+          "content": "别下载那些，教她用‘乌尔都语儿童乐园’，都是母语，孩子自己就能学，没英文，也没隐藏收费。"
+        }
+      ],
+      "implicit_signal": "选母语应用，避免英文和隐藏收费"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "开斋节想回娘家，老公说油价高，坐公交要换三次。上次换车多绕了一条路，天黑才到，孩子饿哭了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次早点出发，在苏库尔换车时，把时间记在随身笔记上，别错过班次。带些零食路上吃。"
+        }
+      ],
+      "implicit_signal": "提前规划路线，留出余量"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "《Khuda Aur Mohabbat》漏了第12集，网上找不到信德语版。亲戚群也没人回。"
+        },
+        {
+          "role": "assistant",
+          "content": "去YouTube搜‘Khuda Aur Mohabbat 信德语 第12集’，很多频道会上传。也可以在姐妹群里问有没有存。"
+        }
+      ],
+      "implicit_signal": "依赖姐妹分享和免费视频平台"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "婆婆推荐的裁缝做衣服总延误，上次开斋节差点误事。我想换一个，但怕婆婆不高兴。"
+        },
+        {
+          "role": "assistant",
+          "content": "这样，就说这次款式特别，想试试新裁缝，先问问卖布料的店家。要是不满意，再换回原来的。别直接说婆婆的不好。"
+        }
+      ],
+      "implicit_signal": "换人委婉，避免直接否定长辈推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "大女儿想在WhatsApp上发照片给同学，我担心别人乱传。上次表哥家孩子的照片就被传到陌生群了。"
+        },
+        {
+          "role": "assistant",
+          "content": "教她用语音消息，不用真照片。或者只发学校活动的合影，不带脸。你在旁边看着，安全第一。"
+        }
+      ],
+      "implicit_signal": "限制孩子网络照片，偏好语音消息"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "超市结账前看到新牌洗衣粉促销，价格便宜一半。但上次买便宜洗衣粉，衣服洗不白。"
+        },
+        {
+          "role": "assistant",
+          "content": "买最小袋试一次，要是效果好再换。用完旧的再开新的，不浪费。"
+        }
+      ],
+      "implicit_signal": "新产品先小量试用再决定"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "今天买的鸡肉不新鲜，做出来腥味重，一家人都没吃好。婆婆说以后只去清真寺旁边的肉铺。"
+        },
+        {
+          "role": "assistant",
+          "content": "那个肉铺确实可靠。下次买的时候，让他们当面现宰，用袋子装好，回家直接做。"
+        }
+      ],
+      "implicit_signal": "坚持可靠渠道买新鲜食材"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周日晚上想整理屋里杂物，但婆婆喜欢堆东西，上次扔了她一个盒子她生气了。我不知怎么弄。"
+        },
+        {
+          "role": "assistant",
+          "content": "先整理自己的房间和孩子的，公共区域先不动。等婆婆心情好时，问她哪些可以帮忙收拾，别自作主张。"
+        }
+      ],
+      "implicit_signal": "在大家族中维持和谐，不擅自扔长辈物品"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "家里想换个电扇，网上有一个便宜的，老公说可以买。但我不会网购，上次买书多付了运费。"
+        },
+        {
+          "role": "assistant",
+          "content": "不如本地电器店先看看，价格差不多就买，能验货。网上买要选货到付款，问清总价。"
+        }
+      ],
+      "implicit_signal": "不熟悉网购时优先本地购买，避免额外费用"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "亲戚推荐一款咳嗽糖浆，说很管用。但药店老板说那牌子含西药，小孩不能吃。我该信谁？"
+        },
+        {
+          "role": "assistant",
+          "content": "先别吃。打电话问社区女医生，她用简单的话解释哪个成分适合孩子。不是所有亲戚的偏方都可靠。"
+        }
+      ],
+      "implicit_signal": "信赖社区医生的通俗解释胜过亲戚偏方"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "儿子数学题我不会，网上有教程但全是英语。我看不懂，没法教他。"
+        },
+        {
+          "role": "assistant",
+          "content": "我教你：先把视频用乌尔都语记下步骤，写在随身笔记上，然后按笔记一步步教孩子。这样他也能学会。"
+        }
+      ],
+      "implicit_signal": "用母语笔记转化英语视频步骤"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买布料没拿收据，回家发现颜色不对，换不了。这次要买长袍料子，怎么避免？"
+        },
+        {
+          "role": "assistant",
+          "content": "让店家手写一张收据，写明布料尺寸、颜色。当场用随身笔记核对，付钱后收好收据。"
+        }
+      ],
+      "implicit_signal": "需要手写凭据并当场核对"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "厨灶用了很久，想换个新的。市场有好几种，维修师傅说有些牌子零件难找。"
+        },
+        {
+          "role": "assistant",
+          "content": "就选‘派金’那种，灶头能单独换，本地五金店都有配件。安装时让师傅检查管道，安全重要。"
+        }
+      ],
+      "implicit_signal": "燃气灶要选择零件易购的常见品牌"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "孩子让我装教育应用，但全是英文，我不会操作。还要花钱订阅。"
+        },
+        {
+          "role": "assistant",
+          "content": "别装那些。用‘乌尔都语儿童乐园’，它用母语，孩子能独立操作，你也能管理。免费版够用。"
+        }
+      ],
+      "implicit_signal": "选择家长也能轻松管理的母语教育应用"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "老公想装挂机空调，婆婆说挂机漏水不吉利。我也想装，但不想直接反驳婆婆。"
+        },
+        {
+          "role": "assistant",
+          "content": "先问安装师傅，看墙壁能不能排水。如果师傅说没问题，就告诉婆婆装的是新款，有管道不会漏水，让她放心。"
+        }
+      ],
+      "implicit_signal": "先咨询师傅再跟长辈沟通，不直接反驳"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有人上门推销英语课程套餐，说可以分期付款。但之前订阅电视服务时，找不到取消入口，白交了好几个月钱。"
+        },
+        {
+          "role": "assistant",
+          "content": "千万别当场决定。推销的话常有陷阱。告诉他们要跟老公商量。所有收费和取消方法必须白纸黑字写清。"
+        }
+      ],
+      "implicit_signal": "坚决避开分期付款和自动续费陷阱"
+    }
+  ]
+}

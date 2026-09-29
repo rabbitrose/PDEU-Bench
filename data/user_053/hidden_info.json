@@ -1,0 +1,491 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_053",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:24:46",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_003",
+      "hidden_indirect_015",
+      "hidden_indirect_021"
+    ],
+    "content": [
+      "hidden_indirect_006"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_008",
+      "hidden_indirect_021"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_009",
+      "hidden_indirect_012",
+      "hidden_indirect_016",
+      "hidden_indirect_019"
+    ],
+    "entertainment": [
+      "hidden_indirect_009",
+      "hidden_indirect_019"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_010",
+      "hidden_indirect_014",
+      "hidden_indirect_017"
+    ],
+    "food": [
+      "hidden_indirect_005",
+      "hidden_indirect_015"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_012"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_011",
+      "hidden_indirect_013",
+      "hidden_indirect_020"
+    ],
+    "learning": [
+      "hidden_indirect_004",
+      "hidden_indirect_014"
+    ],
+    "privacy": [
+      "hidden_indirect_007",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "product": [
+      "hidden_indirect_002",
+      "hidden_indirect_017"
+    ],
+    "role_context": [
+      "hidden_indirect_006"
+    ],
+    "service": [
+      "hidden_indirect_007",
+      "hidden_indirect_010",
+      "hidden_indirect_020"
+    ],
+    "technology": [
+      "hidden_indirect_011",
+      "hidden_indirect_018"
+    ],
+    "travel": [
+      "hidden_indirect_008",
+      "hidden_indirect_016"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天选手机套餐，签了便宜18欧的，结果隐藏漫游费多付37。"
+        },
+        {
+          "role": "assistant",
+          "content": "把退订邮件标为待办，更换时列明所有附加费项，确认后再操作。"
+        }
+      ],
+      "implicit_signal": "优先长期成本而非初始价格，避免隐性费用"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "找维修零件时，两个卖家差价58%，一个不标翻新。"
+        },
+        {
+          "role": "assistant",
+          "content": "只在共享表格中列出带保修和替换方案的选项，排除无明细的卖家。"
+        }
+      ],
+      "implicit_signal": "需要价格范围和假设条件才能决策"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想换净水器，品牌A报价低但滤芯每季度19欧，B机器贵但滤芯年费37。"
+        },
+        {
+          "role": "assistant",
+          "content": "按必要项（机器）、可推迟（上门安装）、风险（滤芯供应）分三列列出，三年总成本A高。"
+        }
+      ],
+      "implicit_signal": "要求输出成本表和必要/可推迟/风险阈值"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次预算多了100欧，但忘了算连网激活费，最后一步超了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次列出所有一次性启动费，预算预留15%缓冲，逐项确认后签字。"
+        }
+      ],
+      "implicit_signal": "喜欢保守估算，需要短周期反馈"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "中午点沙拉，付款时多出酱汁费2.5，菜单没写。"
+        },
+        {
+          "role": "assistant",
+          "content": "下周午餐只去标全价格的小店，或自己带饭，预算控制在5欧内。"
+        }
+      ],
+      "implicit_signal": "拒绝隐藏费用和含糊预算"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买便携焊台，搜到文章只说功率和热度，没写出周围通风要求。"
+        },
+        {
+          "role": "assistant",
+          "content": "换用工程论坛查使用环境限制，确认尺寸和排风后才能下单。"
+        }
+      ],
+      "implicit_signal": "信息需贴合自身工作场景，拒绝泛化建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "注册路税提醒服务，发现要填家庭住址和车牌后6位才能查看。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用官方网站日历提醒，只需邮箱和车牌前4位，不暴露家庭地址。"
+        }
+      ],
+      "implicit_signal": "只提供必要信息，避免多注册"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次旅行订了不可退民宿，临时出差浪费了37欧。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次只选免费取消选项，住宿预算按保守算，加列替代路线。"
+        }
+      ],
+      "implicit_signal": "路线留缓冲，优先可取消性"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周日晚上去了市集，人挤又吵闹，回来睡不着，第二天效率低。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次选周中下午小型展览，离家步行20分钟内，当晚9点前到家。"
+        }
+      ],
+      "implicit_signal": "避免拥挤和强营销，希望不破坏第二天节奏"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "退订健身app时点击了取消，但次月还是扣了19欧，细则说需邮件确认。"
+        },
+        {
+          "role": "assistant",
+          "content": "把退订流程截屏存入日历，标出需邮件步骤，下次提前两天处理。"
+        }
+      ],
+      "implicit_signal": "需要取消规则和响应速度明确"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "记笔记想用新工具，发现不能导出旧笔记，只能手动复制。"
+        },
+        {
+          "role": "assistant",
+          "content": "只选支持markdown导出的应用，初始试用期内先导入5条测试兼容性。"
+        }
+      ],
+      "implicit_signal": "避免被锁定在单一平台，可导数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "选打印机时开了12个标签页比较，两小时没有结论。"
+        },
+        {
+          "role": "assistant",
+          "content": "用共享表格中筛选出必要功能（双面打印、低成本墨），保留3款再比。"
+        }
+      ],
+      "implicit_signal": "愿意多比较但不陷入无限选择"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "维修预约要求上传设备序列号和家庭地址才能报价。"
+        },
+        {
+          "role": "assistant",
+          "content": "去线下店当面报价，只提供序列号后四位，不留地址记录。"
+        }
+      ],
+      "implicit_signal": "对位置、联系人保持谨慎"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看了一个Excel预算教程，只有公式没有具体场景实例。"
+        },
+        {
+          "role": "assistant",
+          "content": "找带水电费、学费真实案例的教程，按月实录后对照调整自己的表。"
+        }
+      ],
+      "implicit_signal": "需要示例和可复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "外卖一周花了58欧，超出那周食品预算37。"
+        },
+        {
+          "role": "assistant",
+          "content": "周六早餐桌边列下周菜谱，只买必要食材，冷冻分装控制量。"
+        }
+      ],
+      "implicit_signal": "预算敏感，愿意自己做饭"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次小镇游按攻略去六个点，实际赶路错过三个。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只选两个非热门点，路上留出缓冲时间，午休结束前确认下一站。"
+        }
+      ],
+      "implicit_signal": "保守估算，避免热门景点"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "买蓝牙耳机时只看了评测，没发现电池一年后衰减到只能撑37分钟。"
+        },
+        {
+          "role": "assistant",
+          "content": "后续买前查长期评测和官方更换费，在成本表纳入两年后费用。"
+        }
+      ],
+      "implicit_signal": "产品需要长期成本说明"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "路由器推荐app要求读取联系人才能配置网络优化。"
+        },
+        {
+          "role": "assistant",
+          "content": "拒绝授权，手动配置访客网络和限速，不绑定手机权限。"
+        }
+      ],
+      "implicit_signal": "默认开启隐私保护"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周六下午看了一场三个小时电影，晚上睡不着，周日很累。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次选90分钟内纪录片，早上10点前结束，下午做家务不熬夜。"
+        }
+      ],
+      "implicit_signal": "紧凑活动不破坏第二天节奏"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "要取消名片订阅，客服说需先登录再下载表格后邮寄。"
+        },
+        {
+          "role": "assistant",
+          "content": "直接发邮件引用条款要求停止自动续费，不额外注册任何系统。"
+        }
+      ],
+      "implicit_signal": "少中转、少注册"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "本季培训预算有58欧，一门课37，另一门19，但只有一门可报销。"
+        },
+        {
+          "role": "assistant",
+          "content": "选37欧课作为必要支出，19欧课列入可推迟项，等下一季确认后再报。"
+        }
+      ],
+      "implicit_signal": "使用保守预算，区分必要和可推迟"
+    }
+  ]
+}

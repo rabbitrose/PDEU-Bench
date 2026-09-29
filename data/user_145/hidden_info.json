@@ -1,0 +1,428 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_145",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:46:28",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 18,
+  "composition": {
+    "episodic_preference_trace": 18
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_015"
+    ],
+    "content": [
+      "hidden_indirect_012"
+    ],
+    "decision_priority": [
+      "hidden_indirect_002",
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_005",
+      "hidden_indirect_007",
+      "hidden_indirect_009",
+      "hidden_indirect_014"
+    ],
+    "entertainment": [
+      "hidden_indirect_009"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_011",
+      "hidden_indirect_017"
+    ],
+    "food": [
+      "hidden_indirect_005",
+      "hidden_indirect_015"
+    ],
+    "format_contract": [
+      "hidden_indirect_004",
+      "hidden_indirect_010"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_006",
+      "hidden_indirect_008",
+      "hidden_indirect_013"
+    ],
+    "learning": [
+      "hidden_indirect_004",
+      "hidden_indirect_017"
+    ],
+    "privacy": [
+      "hidden_indirect_008"
+    ],
+    "product": [
+      "hidden_indirect_002",
+      "hidden_indirect_014"
+    ],
+    "role_context": [
+      "hidden_indirect_001",
+      "hidden_indirect_012"
+    ],
+    "service": [
+      "hidden_indirect_006",
+      "hidden_indirect_016"
+    ],
+    "technology": [
+      "hidden_indirect_003",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "travel": [
+      "hidden_indirect_007",
+      "hidden_indirect_016"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次活动采购，客户回复前发现预算超了26万，只好取消两样。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次先列出候选文件夹，标出必须项和可替换项再下单。"
+        }
+      ],
+      "implicit_signal": "在采购中优先通过分类清单控制预算"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买便携投影仪，设备发热后表现下降，退了。"
+        },
+        {
+          "role": "assistant",
+          "content": "选购前要求提供散热测试报告，优先低功耗型号。"
+        }
+      ],
+      "implicit_signal": "选择产品时重视散热和低功耗"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "新会议软件试用，离线副本导出限制多，没法离线用。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次要求提供完整功能对照表和导出样例再决定。"
+        }
+      ],
+      "implicit_signal": "对软件功能需证据充分才采用"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买了在线课程，只有视频没有作业反馈，学完不知道哪里弱。"
+        },
+        {
+          "role": "assistant",
+          "content": "选课确认提供阶段测验和错题解析，按学习目标/练习/反馈/复盘结构走。"
+        }
+      ],
+      "implicit_signal": "学习课程需配套测验和反馈才能选用"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "午休结束前还在选外卖，选项太多最后随便点，油大影响下午状态。"
+        },
+        {
+          "role": "assistant",
+          "content": "提前建立两张常去清单，周一和周四固定几家，其他天留空灵活替换。"
+        }
+      ],
+      "implicit_signal": "防止因选择过多而临时仓促决定"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "订了月度乐谱服务，忘记取消自动续费，多付了一笔费用。"
+        },
+        {
+          "role": "assistant",
+          "content": "之后订阅时设置日历提醒在到期前3天，并优先选可随时取消的服务。"
+        }
+      ],
+      "implicit_signal": "避免自动续费等隐藏成本，偏好灵活取消"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去年音乐会出差，酒店选在景点密集区，结果晚睡早出太累。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次选酒店偏安静区域，留出2小时缓冲，不在热门区扎堆。"
+        }
+      ],
+      "implicit_signal": "出行需预留缓冲，避免疲劳行程"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次用记账应用要求读取联系人，我直接拒绝了。"
+        },
+        {
+          "role": "assistant",
+          "content": "确认有离线模式且数据可导出后，再用替代方案。"
+        }
+      ],
+      "implicit_signal": "保护个人敏感信息，拒绝过度授权"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周末想放松，搜到附近音乐市集，但入口排长队，果断转身。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后找活动先看往年视频，确认人流和内容密度再买票。"
+        }
+      ],
+      "implicit_signal": "娱乐活动需事前评估质量与拥挤度"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "按照你上次给的模板比较了两款净水器，但反馈点怎么写我不确定。"
+        },
+        {
+          "role": "assistant",
+          "content": "反馈点填“实际使用一周后水质检测结果”和“每月滤芯成本”。"
+        }
+      ],
+      "implicit_signal": "比较方案时需明确后续反馈点以持续优化"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买划船机，看中一个牌子但官网没有产品评测，只有宣传。"
+        },
+        {
+          "role": "assistant",
+          "content": "要求提供第三方测评数据和保修范围，或选择有14天试用期的渠道。"
+        }
+      ],
+      "implicit_signal": "大额商品需第三方数据支持且可试用"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有场民乐演出需要背景介绍，维基给的太泛，不适用。"
+        },
+        {
+          "role": "assistant",
+          "content": "找当地文化论坛的节目单介绍，或联系主办方要曲目注释。"
+        }
+      ],
+      "implicit_signal": "工作信息需具体、可信的来源"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前用某网盘同步笔记，后来发现会扫描文档内容。"
+        },
+        {
+          "role": "assistant",
+          "content": "选择端到端加密且支持自建服务器的服务，如使用离线笔记。"
+        }
+      ],
+      "implicit_signal": "规避数据扫描风险，倾向加密可导出的方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "候选文件夹里放了五款椅子，比了一个月还没定。"
+        },
+        {
+          "role": "assistant",
+          "content": "按“腰托支撑、网布透气、质保期”三个硬条件筛选，剩下两款试坐后决定。"
+        }
+      ],
+      "implicit_signal": "用硬指标快速缩小选择范围"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "平时午饭平均花28元，但最近小店涨价，想找替代。"
+        },
+        {
+          "role": "assistant",
+          "content": "搜附近小区食堂或连锁社区厨房，或者周一自带便当。"
+        }
+      ],
+      "implicit_signal": "日常餐饮倾向低成本且稳定的方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次音乐会机票因为现场网络断了，没法及时改签，多花了钱。"
+        },
+        {
+          "role": "assistant",
+          "content": "之后买票优先选24小时免费取消和App离线值机的航司。"
+        }
+      ],
+      "implicit_signal": "机票需考虑取消灵活性和离线应急功能"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想提高韩语写作，找了个网课但老师只给评语没有评分标准。"
+        },
+        {
+          "role": "assistant",
+          "content": "要求每篇作文附带评分量表和模型范文才能有效复盘。"
+        }
+      ],
+      "implicit_signal": "语言课程需有评分标准和范例句以评估进步"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买智能灯，但需要装专用网关，怕以后搬家难带走。"
+        },
+        {
+          "role": "assistant",
+          "content": "选择直接支持Zigbee或WiFi直连的品牌，避免锁定在单一平台。"
+        }
+      ],
+      "implicit_signal": "智能设备优选开放标准避免锁定"
+    }
+  ]
+}

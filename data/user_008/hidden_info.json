@@ -1,0 +1,491 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_008",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:08:32",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_002",
+      "hidden_indirect_013",
+      "hidden_indirect_017",
+      "hidden_indirect_021"
+    ],
+    "content": [
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "decision_priority": [
+      "hidden_indirect_002",
+      "hidden_indirect_008",
+      "hidden_indirect_016"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_011"
+    ],
+    "entertainment": [
+      "hidden_indirect_012",
+      "hidden_indirect_020"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_010",
+      "hidden_indirect_019"
+    ],
+    "food": [
+      "hidden_indirect_001",
+      "hidden_indirect_014"
+    ],
+    "format_contract": [
+      "hidden_indirect_004",
+      "hidden_indirect_005"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_007",
+      "hidden_indirect_009",
+      "hidden_indirect_012"
+    ],
+    "learning": [
+      "hidden_indirect_003",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "privacy": [
+      "hidden_indirect_008",
+      "hidden_indirect_015"
+    ],
+    "product": [
+      "hidden_indirect_011",
+      "hidden_indirect_019"
+    ],
+    "role_context": [
+      "hidden_indirect_001"
+    ],
+    "service": [
+      "hidden_indirect_007",
+      "hidden_indirect_014",
+      "hidden_indirect_017",
+      "hidden_indirect_021"
+    ],
+    "technology": [
+      "hidden_indirect_006",
+      "hidden_indirect_015"
+    ],
+    "travel": [
+      "hidden_indirect_009",
+      "hidden_indirect_016",
+      "hidden_indirect_020"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "妈妈昨晚在家庭群说她胃不舒服，我想趁中午两小时空档给她煮点汤，但不确定时间够不够。"
+        },
+        {
+          "role": "assistant",
+          "content": "南瓜小米粥40分钟就能煮好，你中午先淘米切南瓜，煮上之后去办别的事，回来直接盛碗。"
+        }
+      ],
+      "implicit_signal": "在家庭照护角色中选择温和、可行的方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "急救课昨天通知涨价49刀，我原本预算120刀，现在超了快一半，不想直接多交。"
+        },
+        {
+          "role": "assistant",
+          "content": "红会下月有一场免教材费的，95刀，认证一样。我帮你把链接和退旧课截止时间发过来。"
+        }
+      ],
+      "implicit_signal": "预算超支时要求给出完整的替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "营养师那封邮件列了好多指标，我看完一页便签还是不清楚晚饭到底该给爸做什么。"
+        },
+        {
+          "role": "assistant",
+          "content": "只做三样：蒸鲈鱼、白灼菜心、小米粥。鱼蒸12分钟关火再焖3分钟就熟，不用任何调味。"
+        }
+      ],
+      "implicit_signal": "需要专业建议转成普通人能执行的具体步骤"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "奶奶下周三份预约单堆在一起，我理不清楚哪天一科，怕漏又怕撞时间。"
+        },
+        {
+          "role": "assistant",
+          "content": "受影响：你和爸接送。时间：周一9点内科，周四2点眼科。风险：周四可能堵车。备选：周四调成电话问诊。"
+        }
+      ],
+      "implicit_signal": "根据短信式摘要偏好组织信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "社区志愿者排班表改了好几次，我到底哪天去、带什么材料，到现在都没个准信。"
+        },
+        {
+          "role": "assistant",
+          "content": "受影响：你和另一位搭档。时间：周六9-12点。风险：材料可能不够。备选：周五先去站点确认库存再决定带什么。"
+        }
+      ],
+      "implicit_signal": "再次使用短信式摘要处理另一个场景"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次在候机区想查笔记，结果网络断了，版本没法回退，一整个下午等于白费了。"
+        },
+        {
+          "role": "assistant",
+          "content": "今天出门前把三份参考PDF导出离线副本存手机里，断网也能批注，回来再同步。"
+        }
+      ],
+      "implicit_signal": "愿意为稳定牺牲一点效率，提前准备离线副本"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "预约那个清洁服务，对方非要我扫驾照上传才能报价，我只想先问个价，不想拍证件给他们。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成附近一家小店，只给姓氏和电话就能报价。我把之前记的两个号码先打第一个问问看。"
+        }
+      ],
+      "implicit_signal": "拒绝强迫注册或过度公开个人信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "线上问诊平台非要我上传爸的全部住院记录才给开单，我不想把那么细的信息放上去。"
+        },
+        {
+          "role": "assistant",
+          "content": "问客服能不能只传诊断页和处方截图，姓名生日涂黑。不行就预约电话问诊，虽然多等一天但更安全。"
+        }
+      ],
+      "implicit_signal": "在健康信息上坚持匿名化或概括处理"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "姑姑说周末带小孩来玩，非要去那个热门徒步径，但我查了上个月那条路有过山体滑坡，孩子才七岁。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成南岸环湖步道，全程平路有树荫，车停东入口走1.5小时原路返回，出发前看一眼预警就行。"
+        }
+      ],
+      "implicit_signal": "不选择制造焦虑的路线"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那篇科普说每天吃21克膳食纤维能降血压，但完全没写是什么纤维，怕吃错了反而伤胃。"
+        },
+        {
+          "role": "assistant",
+          "content": "它指的是可溶性纤维，燕麦、秋葵、苹果都有。不确定的是你爸胃动力弱，先从半份燕麦试三天再看反应。"
+        }
+      ],
+      "implicit_signal": "要求内容给出依据和不确定性说明"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买的血压仪用了几个月绑带就松了，又没地方修，等于整台废了。"
+        },
+        {
+          "role": "assistant",
+          "content": "换腕式那款，官方单独卖替换绑带。虽然贵12刀，但用两年平均每月不到2刀，而且绑带坏了可以只换配件。"
+        }
+      ],
+      "implicit_signal": "考虑长期维护成本和替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "街头发传单说社区健康讲座免费还抽奖，结果去了要先留手机号，然后全程推销保健品。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后只看图书馆官网公告，那边不挂商业活动。明天有个小型历史展前十人免费，我帮你占两个位。"
+        }
+      ],
+      "implicit_signal": "拒绝强营销且过于拥挤的活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "线上护理课分期要多收21刀手续费，我一次又付不了全部，觉得不划算。"
+        },
+        {
+          "role": "assistant",
+          "content": "先用免费demo学四周，通过考核再用预算报正式课，这样不用分期，也不会让预算在最后一步失控。"
+        }
+      ],
+      "implicit_signal": "区分必须花费和可推迟花费"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "明天爸做透析，我想在医院附近买午饭，但旁边几家店都偏油腻，他不能吃太重口。"
+        },
+        {
+          "role": "assistant",
+          "content": "医院东门斜对面那家粥店有蒸菜套餐，14刀两份。我跟店主确认过可以少油，你出门前电话订好，到了直接拿。"
+        }
+      ],
+      "implicit_signal": "预算敏感且考虑同行饮食限制"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "新装的笔记App一直弹窗要我开放通讯录权限，我只是想写个买菜清单，不想让它碰我联系人。"
+        },
+        {
+          "role": "assistant",
+          "content": "关掉通讯录权限，用纯文本模式先写，内容能导出为md文件。如果后面还被强制要求就卸载，换本地笔记。"
+        }
+      ],
+      "implicit_signal": "默认最小权限且能导出的工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次住那家民宿临主路，整晚车声不断，第二天陪妈体检时整个人没精神。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次订内街那家，噪音不超过50分贝，含免费取消。多出16刀但能保证你休息好，第二天陪诊不犯困。"
+        }
+      ],
+      "implicit_signal": "住宿选安静且可取消的"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "订阅那个配送服务要先注册会员才能下单，取消还要填申请单，我怕忘记后被扣费。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用单体订单模式，每次只留邮箱下单，不绑定支付卡。每单多2刀配送费但不会被自动续费扣款。"
+        }
+      ],
+      "implicit_signal": "少中转少注册，取消规则需透明"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "护理手册写翻身拍背能防肺炎，但没写手法和频率，我试了一次怕弄疼奶奶就没敢再动。"
+        },
+        {
+          "role": "assistant",
+          "content": "每两小时一次，空心掌从下往上拍。明早我发一段30秒示范视频，你跟着做一遍，录下来发给我，我帮你对动作。"
+        }
+      ],
+      "implicit_signal": "需要示例和可复盘的标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买张升降桌，但怕装完不稳，退货运费又贵，犹豫好几天了。"
+        },
+        {
+          "role": "assistant",
+          "content": "受影响：你站着学习的时间。装桌需两小时。风险是调节杆可能松。备选：先买桌腿，用家里旧桌面装起来试一周，不稳就退。"
+        }
+      ],
+      "implicit_signal": "产品决策需列出谁受影响、时间、风险和备选"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友约周五晚上去市中心看演出，但要转两趟车，到家可能快12点，周六早上还要带爸抽血。"
+        },
+        {
+          "role": "assistant",
+          "content": "改看周六下午场，散场早人多但有座位，六点前就能到家。或者周五只待前一个小时，提前搭末班车走。"
+        }
+      ],
+      "implicit_signal": "娱乐活动不破坏第二天节奏"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "家庭护理包月广告写199，签完合同才冒出一笔49刀注册费，感觉自己被套路了。"
+        },
+        {
+          "role": "assistant",
+          "content": "取消那个合同，改按次付费。虽然单次贵一点，但每笔费用在预约时都会列清楚，不会最后才冒出来。"
+        }
+      ],
+      "implicit_signal": "先排除隐藏费用"
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "user_id": "user_117",
+  "explicit_preferences": {
+    "user_profile": "一个好奇的互联网用户，正在考虑度假，并关心数字隐私权利。",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Alex Chen",
+        "age": 28,
+        "gender": "非二元性别",
+        "location": "美国华盛顿州西雅图",
+        "languages": [
+          "英语",
+          "普通话（会话水平）"
+        ],
+        "education_level": "计算机科学学士学位",
+        "occupation": "软件工程师",
+        "industry": "技术",
+        "seniority": "中级",
+        "household": "单身，独居一室公寓",
+        "life_stage": "年轻专业人士，职业生涯早期"
+      },
+      "physical_profile": {
+        "height_cm": 168,
+        "general_appearance": "身材苗条，深色短发，常戴眼镜，偏爱休闲和简约服装",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "善于分析且内省，重视自由和自主权，对新经历充满好奇，但对暴露个人数据持谨慎态度。",
+        "big_five": {
+          "openness": 85,
+          "conscientiousness": 70,
+          "extraversion": 40,
+          "agreeableness": 65,
+          "neuroticism": 50
+        },
+        "strengths": [
+          "批判性思维",
+          "技术熟练度",
+          "适应能力",
+          "足智多谋"
+        ],
+        "weaknesses": [
+          "过度分析导致犹豫不决",
+          "对权威的怀疑",
+          "难以信任新服务"
+        ],
+        "values": [
+          "隐私",
+          "信息自由",
+          "透明",
+          "可持续性",
+          "文化多样性"
+        ],
+        "motivations": [
+          "学习新技术",
+          "探索非主流目的地",
+          "最小化数字足迹",
+          "支持道德企业"
+        ],
+        "stress_triggers": [
+          "不想要的数据收集",
+          "监控资本主义",
+          "拥挤和游客众多的地方",
+          "意外的行程变更"
+        ]
+      },
+      "background": {
+        "hometown": "加利福尼亚州旧金山",
+        "family_background": "父母来自台湾的移民；父亲是工程师，母亲是图书馆员。有一个正在学习平面设计的弟妹。",
+        "education": "华盛顿大学计算机科学学士，辅修哲学。",
+        "career_history": "在一家初创公司做了2年初级开发者，之后加入一家大型科技公司担任软件工程师，工作3年。目前考虑做自由职业以更好地掌控数据。",
+        "notable_life_events": "大学毕业后独自背包游东南亚；参加了一个关注隐私的黑客马拉松；改用注重隐私的替代品，如Signal、ProtonMail。"
+      },
+      "lifestyle": {
+        "daily_routine": "早起通过RSS源查看新闻，在家或共享工作空间办公，傍晚散步，睡前阅读或学习隐私/安全知识。",
+        "social_life": "朋友圈子小，喜欢深入对话而非大型聚会，活跃于线上隐私社区，但避免透露个人细节。",
+        "health_and_wellness": "练习瑜伽和冥想，纯素饮食，使用本地存储数据的健身追踪器。",
+        "financial_habits": "预算谨慎但愿意为优质和道德产品花钱，使用现金或隐私友好的支付方式，避免不必要的订阅。"
+      },
+      "interests": {
+        "technology": [
+          "开源软件",
+          "去中心化网络",
+          "网络安全",
+          "密码学",
+          "极简科技"
+        ],
+        "travel": [
+          "生态旅游",
+          "文化沉浸",
+          "数字游民据点",
+          "离网地点",
+          "慢旅行"
+        ],
+        "hobbies": [
+          "摄影（使用不上传云端的相机）",
+          "阅读推想小说",
+          "远足",
+          "学习新语言",
+          "烹饪素食菜肴"
+        ],
+        "media": [
+          "隐私主题播客（如The Privacy, Security, & OSINT Show）",
+          "关于监控的纪录片",
+          "EFF等科技博客",
+          "悬疑小说"
+        ]
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "新闻：独立新闻、深度分析、技术与隐私新闻",
+          "书籍：反乌托邦主题科幻、哲学、游记",
+          "视频：关于隐私和安全的YouTube频道、自然纪录片、独立电影",
+          "内容必须符合用户独特的工作模式：隐私极简模式——威胁模型优先，低消耗，保持怀疑。",
+          "拒绝通用助手框架：不推荐便利平台或伪环保产品。"
+        ],
+        "product_preferences": [
+          "电子产品：二手、翻新或模块化设备、Fairphone、预装Linux的笔记本电脑",
+          "服装：道德和可持续品牌、二手或升级再造服装",
+          "产品应通过用户自身的权衡视角选择：威胁、数据暴露、更环保的选择、不便成本、决策。"
+        ],
+        "service_preferences": [
+          "电子邮件：ProtonMail或Tutanota",
+          "消息：Signal、Matrix",
+          "云存储：Nextcloud或Syncthing",
+          "搜索引擎：DuckDuckGo或Searx",
+          "服务只有在保持此决策优先级时才可接受：数据最小化、可持续性和可逆性优于功能丰富性。"
+        ],
+        "learning_preferences": [
+          "互动教程",
+          "动手实践工作坊",
+          "自定进度在线课程",
+          "小组同伴学习"
+        ],
+        "travel_preferences": {
+          "destination_type": [
+            "自然保护区",
+            "历史小镇",
+            "隐私法律严格的国家"
+          ],
+          "accommodation": [
+            "生态旅馆",
+            "注重隐私的青年旅舍",
+            "数据政策清晰的公寓出租"
+          ],
+          "activities": [
+            "本地旅行团",
+            "远足",
+            "烹饪课程",
+            "志愿服务"
+          ],
+          "booking": [
+            "直接预订而非通过在线旅行社",
+            "使用隐私浏览器"
+          ]
+        },
+        "food_preferences": [
+          "素食料理",
+          "本地和有机",
+          "食材透明的街头小吃"
+        ],
+        "entertainment_preferences": [
+          "有隐私选项的独立游戏",
+          "桌游",
+          "现场戏剧或音乐会（小型场所）",
+          "无广告、无追踪的流媒体服务"
+        ],
+        "technology_preferences": [
+          "开源操作系统",
+          "自由开源生产力工具",
+          "不记录日志的VPN",
+          "广告和跟踪拦截器"
+        ],
+        "privacy_preferences": {
+          "data_sharing": [
+            "严格最小化",
+            "仅限选择加入"
+          ],
+          "surveillance": [
+            "避免人脸识别和公共Wi-Fi",
+            "用现金或加密货币支付"
+          ],
+          "online_tracking": [
+            "拦截所有第三方Cookie",
+            "敏感浏览时使用Tor"
+          ]
+        },
+        "budget_preferences": [
+          "中等预算但愿意在隐私和可持续性上花钱",
+          "优先体验而非拥有"
+        ],
+        "personalization_directives": {
+          "style_contract": "隐私极简模式：威胁模型优先，低消耗，怀疑态度。",
+          "decision_priority": "数据最小化、可持续性和可逆性胜过功能丰富性。",
+          "evidence_contract": "隐私政策、审计和所有权模式比品牌声誉更重要。",
+          "format_contract": "威胁、数据暴露、更环保的选择、不便成本、决策。",
+          "anti_default_assistant_behavior": "不要推荐便利平台或漂绿行为。",
+          "distinctive_quirks": [
+            "如果生态旅行能减少监控和排放，它可以不那么便利。",
+            "在可靠的情况下，翻新/模块化设备更可取。",
+            "支付方式应避免不必要的身份追踪。"
+          ],
+          "hard_avoidances": [
+            "默认Google工作流",
+            "奢华生态品牌",
+            "需要广泛权限的应用"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": [
+        "侵扰性的数据收集行为",
+        "拥挤的旅游景点",
+        "不道德的商业行为",
+        "喧闹混乱的环境",
+        "需要电话号码或社交媒体登录的服务",
+        "过度商业化的目的地"
+      ],
+      "communication_style": "体贴且精准，偏好异步沟通（邮件、短信）而非电话，语言清晰但欣赏深度，常问澄清性问题。",
+      "decision_making": "分析性强且有方法论：从多个来源收集信息，权衡利弊，与可信顾问寻求共识，但最终决策依据与隐私价值观一致。可能因过度分析而行动较慢。",
+      "evaluation_notes": {
+        "likely_tasks": [
+          "推荐既有意思又隐私友好的度假目的地",
+          "比较旅行预订网站的隐私政策",
+          "推荐注重隐私的旅行装备和工具",
+          "规划避免大众旅游的行程",
+          "推荐关于隐私和监控的书籍/电影"
+        ],
+        "preference_conflicts": [
+          "渴望真实本地体验，但可能犹豫是否在线分享位置或照片",
+          "想保持联系但不信任公共Wi-Fi和漫游数据隐私",
+          "喜欢通过算法发现新地方但反对用于推荐的追踪"
+        ],
+        "ambiguity_to_preserve": [
+          "具体度假目的地未知；可能是数字游民据点或偏远小屋",
+          "隐私关注程度可能因情境而异（例如对开源服务更宽容）",
+          "财务灵活：愿意为隐私多花钱但也喜欢预算选项"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:44",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "专业但友好，中立且事实性",
+            "response_length": "中等到长篇幅，提供背景和推理",
+            "evidence_expectation": "高要求：期望声明有来源或引用，尤其关于隐私政策",
+            "formatting": "清晰的章节，对比用项目符号，如可能避免Markdown，使用带结构的纯文本",
+            "proactive_behavior": "可以接受主动建议，只要相关且尊重隐私（例如不要求个人数据），但偏好由其主动提问",
+            "things_to_avoid": [
+              "除非绝对必要，否则不询问个人信息",
+              "推广隐私记录差的服务",
+              "过分咄咄逼人或推销",
+              "对性别或背景做假设"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "规划一次环保且尊重隐私的假期",
+            "选择注重隐私的电子邮件提供商用于专业用途",
+            "为在线服务选择隐私友好的支付方式"
+          ]
+        }
+      }
+    }
+  }
+}

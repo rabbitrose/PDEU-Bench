@@ -1,0 +1,470 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_112",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:54:42",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_009",
+      "hidden_indirect_014"
+    ],
+    "content": [
+      "hidden_indirect_003"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_013",
+      "hidden_indirect_015"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_007",
+      "hidden_indirect_016"
+    ],
+    "entertainment": [
+      "hidden_indirect_010",
+      "hidden_indirect_017",
+      "hidden_indirect_020"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_010"
+    ],
+    "food": [
+      "hidden_indirect_008",
+      "hidden_indirect_016",
+      "hidden_indirect_019"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_004"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_007",
+      "hidden_indirect_008",
+      "hidden_indirect_017"
+    ],
+    "learning": [
+      "hidden_indirect_012",
+      "hidden_indirect_020"
+    ],
+    "privacy": [
+      "hidden_indirect_011",
+      "hidden_indirect_018"
+    ],
+    "product": [
+      "hidden_indirect_004",
+      "hidden_indirect_014"
+    ],
+    "role_context": [
+      "hidden_indirect_012"
+    ],
+    "service": [
+      "hidden_indirect_009",
+      "hidden_indirect_013",
+      "hidden_indirect_019"
+    ],
+    "technology": [
+      "hidden_indirect_006",
+      "hidden_indirect_011",
+      "hidden_indirect_018"
+    ],
+    "travel": [
+      "hidden_indirect_002",
+      "hidden_indirect_015"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次用了某平台通票，没注意取消时限，自动续费扣了两次。今天只想用当天可取消的方案，不想再为规则折腾。"
+        },
+        {
+          "role": "assistant",
+          "content": "生活博物馆平日票1300円，官网写明当天18点前免费取消，本地评价4.3，比平台便宜且不用注册账号。"
+        }
+      ],
+      "implicit_signal": "优先考虑可取消性和本地口碑，而非低价或流行选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次导航写20分钟车程，实际停车排队40分钟，到门口刚好关门。今天选地方得先明确步行距离和最后入场时限。"
+        },
+        {
+          "role": "assistant",
+          "content": "目标展馆距你步行8分钟，平日16:30最后入场，剩余座位13个，无需预约可现场购票。"
+        }
+      ],
+      "implicit_signal": "需要真实可达性数据，不接受笼统推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你列了五个推荐，两个已搬走，三个票早售罄。今天只要一个现在能去的，不用列选项。具体到某一场馆、某条路线。"
+        },
+        {
+          "role": "assistant",
+          "content": "最佳选择：大阪市立东洋陶瓷美术馆特展。省心理由：距你上次去的咖啡店500米，不用另找路。备选：上方浮世绘馆（注意周二休馆）。到场注意：16点停止入馆，带现金。"
+        }
+      ],
+      "implicit_signal": "内容必须贴合自身场景，拒绝通用榜单"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "帮我看一个便携水壶，别只给型号，上次买的是网上吹的产品，实际漏水还烫手。今天要具体说明使用场景下的表现。"
+        },
+        {
+          "role": "assistant",
+          "content": "最佳选择：虎牌MMP-A020。省心：超轻、单手开盖，实测装60度温水不漏。备选：象印SD-ED20。到场注意：建议在折扣店买，比网价便宜500円。"
+        }
+      ],
+      "implicit_signal": "交付格式要求清晰，满足使用场景"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次周六下午去心斋桥，挤得没法看展，站十分钟就走了。今天周三，但也不想去可能有团体的地方。"
+        },
+        {
+          "role": "assistant",
+          "content": "把行程定在13点开始，目标天神桥筋商店街的迷你画廊，那里平日这个时段几乎没有旅行团。"
+        }
+      ],
+      "implicit_signal": "偏好非拥挤时段，主动避开团体游客"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个展要求下载专用App看导览，我手机存储满了，不想只为了半小时参观装一个。"
+        },
+        {
+          "role": "assistant",
+          "content": "入口有免费纸质导览手册，内容和App一致，不需要安装或注册。"
+        }
+      ],
+      "implicit_signal": "不喜欢被迫下载多个应用"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "预报下午有雨，但不想取消。上次硬去户外集市，淋湿回来晾了两天。要一个雨天能转室内的计划。"
+        },
+        {
+          "role": "assistant",
+          "content": "先安排大阪科学馆，如雨停，步行5分钟有带顶棚的商业街可逛，两处都不需要长时间露天。"
+        }
+      ],
+      "implicit_signal": "喜欢可临时调整的方案，避免无备选"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次推荐那家拉面店排长队全是游客，等了半小时发现是网红店，味道一般价格贵。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐天神桥筋老字号乌冬店，开业33年，本地人常去，不用排队，650円，清淡不油腻。"
+        }
+      ],
+      "implicit_signal": "拒绝游客化路线和过度包装餐饮"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看了演唱会套餐，比单买贵3000円但含大巴和取消保险。上次我自己转车绕路，差点迟到开场。"
+        },
+        {
+          "role": "assistant",
+          "content": "套餐大巴起点距你家7分钟，省一次中转，取消可全额退款。按上次教训，多付的折算成时间和风险值得。"
+        }
+      ],
+      "implicit_signal": "预算敏感，愿为真正降低风险的服务付费"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友推荐小巷爵士酒吧，地图搜不到，也不知道今晚有无演出。上次没确认就跑去了结果没开门。"
+        },
+        {
+          "role": "assistant",
+          "content": "官方公告该酒吧周三休业，今天无法入场。同街另一家Live house有演出，500円入场费，还剩15个座位。"
+        }
+      ],
+      "implicit_signal": "需要确凿可行性证据，不接受模糊推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "报名表要填详细住址和紧急联系人。这只是个讲座，不想泄露家庭信息。"
+        },
+        {
+          "role": "assistant",
+          "content": "可以只填区名和手机号，紧急联系人可留空，主办方不强制，仅用于入场确认。"
+        }
+      ],
+      "implicit_signal": "只提供完成任务必要的个人信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想了解浮世绘，但上次买的在线课太长，听两节就坚持不下去。要一个一次性能学完的。"
+        },
+        {
+          "role": "assistant",
+          "content": "大阪历史博物馆周六下午有浮世绘入门讲座，90分钟，有实物对照和提问环节，一次掌握基础。"
+        }
+      ],
+      "implicit_signal": "适合碎片时间的短周期学习方式"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次在Klook买的票，现场网络断掉，找客服花20分钟才解决。今天直接从官网买，避免第三方。"
+        },
+        {
+          "role": "assistant",
+          "content": "博物馆官网购票，支持Apple Pay，不需要额外注册，二维码直接入场，减少沟通成本。"
+        }
+      ],
+      "implicit_signal": "服务应少中转、少注册、少额外沟通"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看中蓝牙耳机，价格便宜一半，但店家不写电池能否更换。上次图便宜买的半年就废了，第二天又重选，很烦。"
+        },
+        {
+          "role": "assistant",
+          "content": "那款电池不可更换。另一品牌贵2000円但电池可自行更换，官方有替换件，按你每天2小时使用，寿命约2年，长期成本更低。"
+        }
+      ],
+      "implicit_signal": "需说明长期使用成本，不选信息不透明产品"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想去淡路岛，上次去舞洲走导航推荐路线堵了51分钟，到地儿没车位。今天要避开拥堵段。"
+        },
+        {
+          "role": "assistant",
+          "content": "周六7点出发，走第二阪神国道避开高速拥堵，预计9点到有充足停车时间。返程15点前离开避车流。"
+        }
+      ],
+      "implicit_signal": "路线需留缓冲时间，避免热门路线"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "中午想简单吃，别推荐炸物。上次吃炸猪排胃难受一下午，展也没心思逛就回了。"
+        },
+        {
+          "role": "assistant",
+          "content": "展馆隔壁定食店有鲭鱼和蔬菜套餐，880円，清淡出餐快，步行3分钟回展馆。"
+        }
+      ],
+      "implicit_signal": "偏好清淡、稳定的餐食，不影响当天安排"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友约沉浸式体验展，评价说主要卖周边，展览内容少。上次去类似的，发现被营销覆盖了。"
+        },
+        {
+          "role": "assistant",
+          "content": "确认该展以商品销售为主。替代是附近独立艺术空间，无商品区，门票500円，安静且内容密集。"
+        }
+      ],
+      "implicit_signal": "避免过度拥挤和强营销活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前用日程App不能导出数据，换手机时没了。今天的规划内容能不能给成文本？"
+        },
+        {
+          "role": "assistant",
+          "content": "可以，给你文本格式的方案，包含时间、地点、费用、备选路径，方便复制到任何笔记或日历。"
+        }
+      ],
+      "implicit_signal": "偏好能导出数据的工具，不被锁定在单一平台"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看完展6点，不想花大钱吃正式晚餐，但饿到回家再做也受不了。上次便利店便当不好吃。"
+        },
+        {
+          "role": "assistant",
+          "content": "展馆附近面包店开到19点，三明治350-450円，用本地食材，比便利店新鲜，买两个边走边吃，回家补水果。"
+        }
+      ],
+      "implicit_signal": "预算敏感，愿选本地小店或简易方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "明早有个汇报，今晚不能太晚。上次听爵士到凌晨一点，第二天没精神。"
+        },
+        {
+          "role": "assistant",
+          "content": "安排天神桥小型落语表演，19-20点，走路回家12分钟，不影响洗漱和准备材料。"
+        }
+      ],
+      "implicit_signal": "休闲不破坏第二天节奏，避免过晚活动"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "user_id": "user_011",
+  "task": {
+    "task_id": "task_hard",
+    "title": "策划霍乱预防健康外展宣传活动",
+    "daily_life_domain": "work",
+    "scenario": "卡库马营地邻近区域报告了霍乱疫情。作为现场协调员，阿马拉必须迅速组织针对最脆弱地区的预防活动，包括社区健康讲座、分发氯片以及培训当地志愿者制备口服补液盐（ORS）。雨季即将开始，这会恶化卫生条件。她预算有限，必须与营地的卫生合作伙伴和社区领袖协调。",
+    "user_goal": "设计一个详细的为期两周的外展计划，最大限度地扩大覆盖范围，最小化资源浪费，尊重文化规范，同时遵守安全协议。",
+    "why_complex": "需要多层次的后勤：绘制高风险区域地图、安排卫生工作者、采购物资、与社区守门人谈判、培训志愿者——所有这些都在时间压力和预算限制下进行。还必须整合先前疫情的经验。",
+    "constraints": [
+      "加班和额外物资的预算有限。",
+      "不可预测的天气可能导致某些道路无法通行。",
+      "必须获得营地当局和当地领袖的许可。",
+      "天黑后的安全限制。",
+      "志愿者在部署前需要基本培训。"
+    ],
+    "required_reasoning_steps": [
+      "1. 识别最脆弱的区域，并根据人口密度、水源和近期病例确定优先顺序。",
+      "2. 确定社区健康讲座的最佳时间表，确保不与营地其他活动或宗教时间冲突。",
+      "3. 估算每个区域所需的氯片、ORS和肥皂数量，考虑当前库存和交货时间。",
+      "4. 招募并简要介绍当地志愿者，利用现有社区网络选择受尊敬的人。",
+      "5. 与营地诊所协调转诊路径和数据报告。",
+      "6. 设计一个简单的监控系统，使用ODK跟踪分发和反馈。",
+      "7. 为潜在的安全事件或供应链中断准备风险缓解计划。",
+      "8. 起草一份面向捐助者的简要情况报告，概述计划和资源缺口。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "每个区域报告的霍乱病例确切数量。",
+      "营地仓库中氯片和ORS的当前库存水平。",
+      "运输车辆和燃油的可用性。",
+      "愿意支持该活动的社区领袖名单。",
+      "未来两周的天气预报。",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "一份书面的两周外展计划，包含每日时间表、资源分配表、志愿者培训议程和监控框架。还包括简要的风险评估和所需批准清单。",
+    "success_criteria": [
+      "计划覆盖至少80%的高风险家庭。",
+      "首次外展前完成至少20名志愿者的培训。",
+      "物资已订购并确认在3天内交付。",
+      "社区领袖批准所有计划的讲座。",
+      "每周收集监控数据并与卫生合作伙伴共享。",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "低估社区接受所需的时间。",
+      "忽视安全宵禁导致访问不完整。",
+      "订购过多易过期的物资。",
+      "未将意外运输延误的预算纳入考虑。",
+      "未对培训材料进行语言障碍预测试。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 10,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 9,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=11",
+        "constraints_capped=5",
+        "decision_points_capped=3",
+        "information_items_capped=7",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=32.2",
+        "hard_revision: 内容负载较高，保留少量 9 轮作为上尾",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Amara Osei",
+      "age": 34,
+      "gender": "女性"
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "user_id": "user_012",
+  "task": {
+    "task_id": "task_hard",
+    "title": "以专家寻源和事实核查调查一个正在发展的故事",
+    "daily_life_domain": "work",
+    "scenario": "Elena被分配了一个关于可能影响布鲁克林可负担住房的新城市政策的突发新闻。她有严格的4小时截止时间，下午5点现场直播。她需要快速收集背景信息，识别可信的本地专家（如住房倡导者、城市官员），核实双方的说法，并准备简洁的谈话要点。她还希望加入一个关于住房趋势的数据可视化，但她不是数据新闻工具的专家。",
+    "user_goal": "制作一个来源可靠、准确、视觉上引人入胜的片段，在不简化复杂问题的情况下告知观众，同时满足截止时间。",
+    "why_complex": "需要快速研究、多源核实、平衡对立观点、整合数据分析，并在时间压力下管理任务——同时保持CNN的编辑标准。",
+    "constraints": [
+      "截止时间：4小时",
+      "必须仅使用经过验证的可靠来源",
+      "不得有推测性说法",
+      "片段时长：2-3分钟",
+      "必须包含数据可视化（但Elena的数据技能有限）"
+    ],
+    "required_reasoning_steps": [
+      "1. 识别政策中的关键主张和潜在反驳论点。",
+      "2. 搜索关于该政策的最新新闻、报告和官方文件。",
+      "3. 编制相关专家名单（学者、倡导者、官员）并附联系方式。",
+      "4. 评估每个来源的可信度，优先选择有直接了解情况的来源。",
+      "5. 规划片段结构：背景、政策细节、专家引述、数据可视化。",
+      "6. 查找或创建简单的数据可视化（例如使用Flourish或Google Data Studio），显示布鲁克林住房成本趋势。",
+      "7. 撰写谈话要点和脚本，确保每个主张都有来源依据。",
+      "8. 检查平衡性和清晰度，根据编辑反馈进行调整。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "政策的具体细节（官方文本或摘要）",
+      "利益相关者的反应（例如租户工会、房地产游说团体）",
+      "布鲁克林近期住房数据（例如五年内租金中位数变化）",
+      "专家能否快速置评",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "一份详细的准备表，包括：关键事实、有来源依据的脚本、经审核的专家名单及引述、数据可视化草稿（或工具链接），以及接下来4小时的时间表。",
+    "success_criteria": [
+      "片段准时播出，无事实错误",
+      "每个主要主张至少有两个独立来源",
+      "数据可视化准确且易于观众理解",
+      "Elena收到编辑对来源深度的正面反馈",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "依赖单一偏颇来源",
+      "未能核实数据来源，导致图表误导",
+      "因时间压力而跳过事实核查",
+      "选择的专家无法置评，浪费时间"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 9,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 8,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=11",
+        "constraints_capped=5",
+        "decision_points_capped=3",
+        "information_items_capped=6",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=31.5",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Elena Vasquez",
+      "age": 29,
+      "gender": "女性"
+    }
+  }
+}

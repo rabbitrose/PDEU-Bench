@@ -1,0 +1,240 @@
+{
+  "user_id": "user_025",
+  "explicit_preferences": {
+    "user_profile": "一位是祭司的堂兄弟，协助在Mata Vaishno Devi圣地举行宗教仪式。",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "拉维·香卡·潘迪",
+        "age": 35,
+        "gender": "男性",
+        "location": "印度查谟和克什米尔卡特拉",
+        "languages": [
+          "印地语",
+          "梵文",
+          "英语"
+        ],
+        "education_level": "梵语和宗教研究学士学位",
+        "occupation": "祭司（Pujari）",
+        "industry": "宗教服务",
+        "seniority": "中级（主持主要仪式并协助高级祭司）",
+        "household": "已婚有两个孩子",
+        "life_stage": "中年人，以家庭为重"
+      },
+      "physical_profile": {
+        "height_cm": 170,
+        "general_appearance": "中等身材，面部干净剃须，前额有传统提拉克，穿多蒂-库尔塔和圣线，神态平静安详。",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "虔诚、服务导向、传统、冷静，在宗教事务上有权威。",
+        "big_five": {
+          "openness": 40,
+          "conscientiousness": 85,
+          "extraversion": 55,
+          "agreeableness": 80,
+          "neuroticism": 25
+        },
+        "strengths": [
+          "深谙经文",
+          "对信徒有耐心",
+          "在仪式上出色的公众演讲能力",
+          "在压力下保持冷静的能力"
+        ],
+        "weaknesses": [
+          "不愿采用现代技术",
+          "在遵循传统方面有些僵化",
+          "可能对非印度教徒显得令人生畏"
+        ],
+        "values": [
+          "对Mata Vaishno Devi的虔诚",
+          "服务朝圣者",
+          "家庭",
+          "传统和仪式纯洁",
+          "慈悲"
+        ],
+        "motivations": [
+          "为信徒提供精神体验",
+          "保存古老习俗",
+          "为家庭积福"
+        ],
+        "stress_triggers": [
+          "对圣地或仪式的不敬",
+          "人群管理不善或混乱",
+          "助手缺乏纪律",
+          "仪式中的现代干扰"
+        ]
+      },
+      "background": {
+        "birthplace": "印度北方邦瓦拉纳西",
+        "family_background": "出生在一个有着悠久祭司血统的婆罗门家庭；父亲是寺庙祭司，母亲是家庭主妇。",
+        "education": "曾在传统梵语学校（Gurukul）学习，然后在一所大学获得宗教学学士学位。",
+        "career_path": "18岁时在圣地做志愿者，25岁成为初级祭司，现在是一名负责主要仪式的高级祭司。",
+        "major_life_events": "28岁结婚，有两个孩子（儿子6岁，女儿4岁）。"
+      },
+      "lifestyle": {
+        "daily_routine": "凌晨4点起床进行晨浴和祈祷；在圣地主持晨间aarti；全天协助信徒；主持晚间aarti；晚上与家人在一起并诵读经文。",
+        "habits": "严格的素食主义者，不喝酒不抽烟，在吉祥日斋戒，每天阅读宗教文本。",
+        "social_life": "主要与其他祭司、寺庙工作人员和信徒互动；偶尔在节日时拜访大家庭。",
+        "work_life_balance": "工作和灵性深度融合；在寺庙职责之后优先考虑家庭时间。"
+      },
+      "interests": [
+        "阅读古代印度教经典（吠陀经、奥义书、往世书）",
+        "听虔诚音乐（bhajans、kirtans）",
+        "冥想和瑜伽",
+        "研究寺庙建筑",
+        "烹饪和食用萨提克素食",
+        "观看神话电视剧（如《罗摩衍那》、《摩诃婆罗多》）",
+        "前往印度其他朝圣地"
+      ],
+      "explicit_preferences": {
+        "content_preferences": [
+          "类型：宗教、精神、 devotional、神话",
+          "主题：印度教仪式、经文解释、朝圣指南、冥想技巧",
+          "形式：书籍（精装首选）、咒语录音、寺庙纪录片",
+          "内容必须匹配此用户的独特工作模式：Pujari模式：虔诚、懂梵语/印地语、仪式顺序优先。",
+          "拒绝通用助手框架：不要将仪式世俗化为事件后勤。"
+        ],
+        "product_preferences": [
+          "服装：传统dhoti-kurta、棉质、大地色",
+          "宗教物品：香（尤其是檀香）、酥油灯、rudraksha念珠、圣河圣水",
+          "家居：简单、符合Vastu、有专用祈祷室",
+          "产品应通过用户自己的权衡视角来选择：Sankalp/目的、仪式顺序、纯洁规则、人群/家庭责任。"
+        ],
+        "service_preferences": [
+          "旅行：专注于朝圣之旅（yatra套餐）的旅行社",
+          "食物：纯素食餐厅，尤其是提供萨特维克食物的",
+          "金融：支持捐款给寺庙的服务、传统银行",
+          "服务只有在保持以下决策优先级时才可接受：仪式正确性、纯洁约束、长者舒适、吉祥时机优先于效率。"
+        ],
+        "learning_preferences": {
+          "subjects": [
+            "梵语",
+            "占星学（Jyotisha）",
+            "阿育吠陀",
+            "高级仪式技巧"
+          ],
+          "methods": "与古鲁面授课程、自学古代文本"
+        },
+        "travel_preferences": {
+          "destinations": "其他Shakti Peethas、Char Dham、瓦拉纳西、瑞诗凯诗",
+          "style": "简单、注重宗教，避免豪华住宿"
+        },
+        "food_preferences": {
+          "diet": "乳素食、萨提克（无洋葱、大蒜、重香料）",
+          "cuisines": "北印度、南印度（传统塔利）",
+          "avoid": "非素食、酒精、咖啡因"
+        },
+        "entertainment_preferences": {
+          "music": "古典印度音乐（尤其是bhajans），器乐（西塔琴、长笛）",
+          "films": "神话电影、关于圣人的纪录片",
+          "shows": "宗教演讲、pravachans"
+        },
+        "technology_preferences": {
+          "devices": "基本智能手机（仅用于通话和偶尔的WhatsApp），不喜欢使用社交媒体",
+          "software": "用于咒语、寺庙时间、简单笔记的应用程序",
+          "attitude": "勉强采用，仅在必要时使用"
+        },
+        "privacy_preferences": {
+          "sharing": "保持个人生活私密，避免在线曝光",
+          "data": "不希望收集任何个人数据或用于营销",
+          "communication": "更喜欢面对面或电话，而不是数字消息"
+        },
+        "budget_preferences": {
+          "spending": "节俭，优先考虑捐赠给寺庙和家庭需求",
+          "splurge": "很少，用于宗教书籍或为家庭朝圣",
+          "attitude": "将金钱视为服务的资源，而非个人享受"
+        },
+        "personalization_directives": {
+          "style_contract": "Pujari模式：虔诚、梵文/印地语感知、仪式秩序优先。",
+          "decision_priority": "仪式正确性、纯洁性约束、长者舒适度和吉时比效率更重要。",
+          "evidence_contract": "经文或传统权威比现代优化更有说服力。",
+          "format_contract": "Sankalp/意图、仪式顺序、纯洁性规则、人群/家庭责任。",
+          "anti_default_assistant_behavior": "不要把仪式世俗化为活动后勤。",
+          "distinctive_quirks": [
+            "食物和旅行必须尊重萨特维克和朝圣规范。",
+            "瑜伽练习应保留精神框架。",
+            "正式称呼很重要。"
+          ],
+          "hard_avoidances": [
+            "随意俚语",
+            "非素食或与酒精相关的建议",
+            "仅将信徒视为活动参加者"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": [
+        "寺庙附近的喧闹音乐或现代歌曲",
+        "非素食食物或酒精",
+        "过度商业化的宗教活动",
+        "对长辈或祭司的不敬行为",
+        "宗教场所的西方休闲着装",
+        "仪式期间使用智能手机",
+        "批评传统习俗"
+      ],
+      "communication_style": {
+        "tone": "尊重、正式、温和；使用敬语如'ji'和'prabhu'",
+        "language": "主要是印地语，偶尔引用梵语用于宗教语境",
+        "expressiveness": "冷静而有分寸，避免情绪爆发；使用经文中的隐喻",
+        "formality": "高，尤其与不熟悉的人在一起",
+        "non_verbal": "合十礼（手掌合拢）作为问候，保持尊重距离"
+      },
+      "decision_making": {
+        "process": "咨询高级祭司、家族长辈，有时也咨询占星图",
+        "factors": "灵性功德、传统、家庭共识、吉祥时机（muhurta）",
+        "speed": "深思熟虑，不冲动；花时间分析行动是否符合dharma（法）",
+        "examples": "选择仪式日期、接受新角色、购买宗教物品"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "根据日期和预算推荐朝圣行程",
+          "解释某一特定仪式（例如，哈万、阿尔蒂）的意义",
+          "建议用于冥想的虔诚音乐",
+          "提供禁食日的萨特维克食谱",
+          "就宗教仪式的座位安排提供建议"
+        ],
+        "preference_conflicts": [
+          "对真实性的渴望与时间和金钱等实际限制之间的权衡",
+          "传统方法与现代便利（例如在线捐赠 vs. 面对面供奉）",
+          "隐私与社区参与需求"
+        ],
+        "ambiguity_to_preserve": [
+          "他参加仪式的具体可用时间（可能随寺庙日程变化）",
+          "他认为是权威的特定经典（不应假定特定教派）",
+          "对跨宗教对话的开放程度（仍有一些模糊性）"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:45",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "尊重，使用正式称呼（例如'古鲁吉'或'潘迪特吉'），避免俚语",
+            "response_length": "中等至长篇；偏好详细解释而非简短回答",
+            "evidence_expectation": "高度；期望引用经典或权威来源",
+            "formatting": "纯文本，偶尔加粗关键点；避免表情符号",
+            "proactive_behavior": "建议相关仪式、日常祈祷和即将到来的宗教活动；询问是否需要更深入的经典解释",
+            "things_to_avoid": [
+              "像'嘿'或'怎么了'这样的随意问候",
+              "现代或幽默的引用",
+              "建议任何与传统印度教实践相悖的内容",
+              "打听个人信息",
+              "使用缩写或俚语"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "组织一场特别的那瓦拉特里阿尔提并管理人群",
+            "计划在学校假期期间的家庭四大圣地朝圣之旅",
+            "建立早晨瑜伽和冥想习惯以增强体力和健康"
+          ]
+        }
+      }
+    }
+  }
+}

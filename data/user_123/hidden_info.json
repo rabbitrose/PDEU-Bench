@@ -1,0 +1,491 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_123",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:37:32",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_002",
+      "hidden_indirect_015"
+    ],
+    "content": [
+      "hidden_indirect_003",
+      "hidden_indirect_013",
+      "hidden_indirect_021"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_012"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_007",
+      "hidden_indirect_019"
+    ],
+    "entertainment": [
+      "hidden_indirect_010",
+      "hidden_indirect_017"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_011"
+    ],
+    "food": [
+      "hidden_indirect_012",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_004"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_010"
+    ],
+    "learning": [
+      "hidden_indirect_011",
+      "hidden_indirect_016",
+      "hidden_indirect_021"
+    ],
+    "privacy": [
+      "hidden_indirect_007",
+      "hidden_indirect_018"
+    ],
+    "product": [
+      "hidden_indirect_005",
+      "hidden_indirect_014"
+    ],
+    "role_context": [
+      "hidden_indirect_001"
+    ],
+    "service": [
+      "hidden_indirect_008",
+      "hidden_indirect_014",
+      "hidden_indirect_018",
+      "hidden_indirect_020"
+    ],
+    "technology": [
+      "hidden_indirect_006",
+      "hidden_indirect_013",
+      "hidden_indirect_019"
+    ],
+    "travel": [
+      "hidden_indirect_009",
+      "hidden_indirect_016",
+      "hidden_indirect_017"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "活动散场后我加了夜跑，第二天完全没恢复过来，训练全乱了。以后晚上不排高强度运动。"
+        },
+        {
+          "role": "assistant",
+          "content": "周计划修改：晨跑固定，晚上只做拉伸。冲突点：少一次燃脂，但保证睡眠。来源：你的恢复日志。待验证：连续两周评估。"
+        }
+      ],
+      "implicit_signal": "在健康与娱乐冲突中，优先选择可执行且不破坏休息的方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买线上课预算在最后一步失控，多花55欧买了一大堆用不上的模块。这次先列出所有费用。"
+        },
+        {
+          "role": "assistant",
+          "content": "两档：基础42欧含21课，高级多6课贵一倍。冲突点：基础够用但怕后续想补。判断：先基础，一个月后再评估。待验证：看课量是否真不够。"
+        }
+      ],
+      "implicit_signal": "购买前要求列出价格上限与取消路径"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "图书馆闭馆前刷到一篇营养文章，作者是博主无引用。我不太敢信，帮我查有没有靠谱版本。"
+        },
+        {
+          "role": "assistant",
+          "content": "找到一篇DOI文献，结果有一项与博主矛盾。判断：采信论文，博主标记未验证。待验证：需再找一篇2024年研究确认。"
+        }
+      ],
+      "implicit_signal": "要求回答保留证据层级和不确定性标记"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看两份训练计划，一个说空腹有氧好，另一个说要先吃。别帮我合成，只列矛盾点。"
+        },
+        {
+          "role": "assistant",
+          "content": "矛盾1：前者要求完全空腹至少42分钟，后者建议吃半根香蕉。矛盾2：空腹派引2021年小试验，后者引2024综述。冲突点：试验质量低但直接。判断：无定论，两源发你。待验证：试两周空腹记录反应。"
+        }
+      ],
+      "implicit_signal": "拒绝为流畅合成而抹除矛盾信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "换了新笔记软件，导入后标签层级全压平了。需要保留父标签和创建时间，不要自动合并。"
+        },
+        {
+          "role": "assistant",
+          "content": "已关闭自动合并，保留parent_tag、created_utc、source。冲突点：列表变长但可过滤。判断：这样可回溯。待验证：按来源检索一次看是否卡顿。"
+        }
+      ],
+      "implicit_signal": "需保留原始字段以便回溯"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "设备更新后心率飘，有几段跳到180但当时在走路。帮我标出哪段是推测而非原始值。"
+        },
+        {
+          "role": "assistant",
+          "content": "三条记录（10:42、11:03、11:46）为算法平滑推测，非原始传感器。冲突点：快速变化时误差大。判断：这几段不宜用于分析，可删除或另存。待验证：下次更新后重新校准。"
+        }
+      ],
+      "implicit_signal": "要求区分事实与推断"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "共享表格里有人填了体重腰围，但没写谁填的。加一列记录数据来源是自报还是第三方测量。"
+        },
+        {
+          "role": "assistant",
+          "content": "已加data_source（self_report/third_party）和confidence（高/中/低）。冲突点：自报可能不准但不违法。判断：保留原始值不修改，只标注来源。待验证：下月看自报与测量差异趋势。"
+        }
+      ],
+      "implicit_signal": "强制区分个人数据与推断数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你之前说品牌A蛋白粉比B好，但无任何来源。撤回，我不接受无来源断言。"
+        },
+        {
+          "role": "assistant",
+          "content": "撤回。来源：A第三方报告含量超标10%，B有独立评测。冲突点：A便宜但质量不稳。判断：有检测需求时优先B。待验证：可申请A样品自测。"
+        }
+      ],
+      "implicit_signal": "拒绝无来源断言"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推荐马赛路线时只说街区有氛围，我上次排到一半才发现不合适。必须标注安全隐患。"
+        },
+        {
+          "role": "assistant",
+          "content": "改正：该街区21点后抢劫+42%（来源：马赛警局2024数据）。冲突点：白天安全。判断：建议日落前离开。待验证：出发前查当周报告。"
+        }
+      ],
+      "implicit_signal": "拒绝为流畅掩盖不确定性"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推荐的拳赛纪录片说忠实还原，但Reddit上选手家属批评扭曲事实。别说什么都有争议，直接列矛盾。"
+        },
+        {
+          "role": "assistant",
+          "content": "矛盾：影片说裁判偏哨，家属说选手赛前受伤。冲突点：两方均无完整影像。判断：影片单一叙述，家属间接证词，均不做唯一来源。待验证：观后对比原始比赛录像。"
+        }
+      ],
+      "implicit_signal": "拒绝平均化冲突"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周日晚上想学营养学，找到两门课：医生开的和健身网红的。哪个来源层级更可靠？"
+        },
+        {
+          "role": "assistant",
+          "content": "医生课引同行评审（三级证据），网红课为个人经验（零级）。冲突点：医生课贵46欧。判断：从可复核性选医生课。待验证：先看试讲再付款。"
+        }
+      ],
+      "implicit_signal": "每个关键判断需说明来源层级"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "超市新上高蛋白麦片，包装写每百克30g但没写添加糖。你帮我找独立检测。"
+        },
+        {
+          "role": "assistant",
+          "content": "Labdoor报告：实测蛋白28g，添加糖11g。冲突点：包装夸大蛋白且隐藏糖量。判断：不按零糖预期购买。待验证：联系厂家要详细营养表。"
+        }
+      ],
+      "implicit_signal": "优先保留可复核性和不确定性"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一篇饮食计划建议所有人早餐吃燕麦，但我晨训早，需要能提前一晚准备的。"
+        },
+        {
+          "role": "assistant",
+          "content": "前夜将燕麦和奇亚籽混合放冰箱，早晨直接装包。冲突点：口感冷但省时。判断：适合你7点出门。待验证：试三天看胃是否适应。"
+        }
+      ],
+      "implicit_signal": "内容必须贴合自身场景"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想用体脂秤，但都要注册App且数据默认上传。帮我找一个能完全离线用的。"
+        },
+        {
+          "role": "assistant",
+          "content": "有款支持SD卡本地存储，无App强制注册。冲突点：手动记录麻烦但数据不共享。判断：适合你的隐私边界。待验证：问客服能否导出CSV，有用户反馈格式兼容问题。"
+        }
+      ],
+      "implicit_signal": "需要明确长期成本与可替代性"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "午餐食堂最近涨2欧还油大，想带饭但怕晚上太累不想备菜。"
+        },
+        {
+          "role": "assistant",
+          "content": "周末一次备料冷冻：煮一锅豆类分装，工作日只加热加蔬菜。成本每餐约1.5欧，比食堂省很多。冲突点：周末花1小时。判断：适合你节奏。待验证：先试一周看冰箱空间。"
+        }
+      ],
+      "implicit_signal": "预算敏感，偏好自制"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下月出行，想这周学几句急救用语。上次学语言堆了链接没看完，这次要短周期能练的。"
+        },
+        {
+          "role": "assistant",
+          "content": "每早3句睡前语音自测，第5天测前15句准确率。冲突点：量少但可闭环。判断：完成率更好。待验证：第5天抽测3句看反应。"
+        }
+      ],
+      "implicit_signal": "偏好短周期反馈、有复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "同事推荐啤酒节，但路线45分钟且现场网络断了，散场后怕找不到车。再想想。"
+        },
+        {
+          "role": "assistant",
+          "content": "替代：周六早本地拳击馆开放日（免票、小场地、有Wi-Fi）。冲突点：氛围不同但安静。判断：距你1站地铁可取消。待验证：确认开放日是否需预约。"
+        }
+      ],
+      "implicit_signal": "避免过度拥挤，偏好小型活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "健身App要访问电话和通讯录才能用全功能，我只想记录组数，不想给那么多权限。"
+        },
+        {
+          "role": "assistant",
+          "content": "另一App最小权限模式只访问日历，关闭后仍可记录组数。冲突点：日历需开一次后可关。判断：满足你的边界。待验证：检查权限列表是否有静默位置读取。"
+        }
+      ],
+      "implicit_signal": "拒绝过多注册或个人信息披露"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "运动App更新后历史曲线被平滑了，我需要原版带锯齿数据的图表，能不能恢复？"
+        },
+        {
+          "role": "assistant",
+          "content": "找到备份：上月原始CSV包含未平滑数据。冲突点：以后需手动保留副本。判断：导出原版曲线存为Json，不依赖App。待验证：下次更新前提醒导出一次。"
+        }
+      ],
+      "implicit_signal": "保留原始版本便于对比"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "附近蛋白质配餐服务合同写最少订一个月且取消需提前14天，不好吃就套牢了。"
+        },
+        {
+          "role": "assistant",
+          "content": "另一家支持周订随时取消，价格高10%。冲突点：日单价高但滚动风险低。判断：选可取消先试一周。待验证：试吃一次看口味是否稳定。"
+        }
+      ],
+      "implicit_signal": "偏好取消规则明确的服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你昨天发我的拉伸YouTube视频，虽然有用但没讲什么肌肉在发力，我做完不知道对不对。"
+        },
+        {
+          "role": "assistant",
+          "content": "另一Physio视频在每个角度标出目标肌群和常见错误。冲突点：前一个省时，这个慢2分钟。判断：有复盘标准更重要。待验证：做三次后自己评估正确率。"
+        }
+      ],
+      "implicit_signal": "内容需有可复盘标准"
+    }
+  ]
+}

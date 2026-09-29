@@ -1,0 +1,449 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_146",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:07:35",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 19,
+  "composition": {
+    "episodic_preference_trace": 19
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_014"
+    ],
+    "content": [
+      "hidden_indirect_008",
+      "hidden_indirect_019"
+    ],
+    "decision_priority": [
+      "hidden_indirect_002",
+      "hidden_indirect_011"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_007",
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_016",
+      "hidden_indirect_019"
+    ],
+    "entertainment": [
+      "hidden_indirect_009",
+      "hidden_indirect_016"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_004",
+      "hidden_indirect_018"
+    ],
+    "food": [
+      "hidden_indirect_006",
+      "hidden_indirect_015"
+    ],
+    "format_contract": [
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_013"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_010",
+      "hidden_indirect_011",
+      "hidden_indirect_012",
+      "hidden_indirect_015"
+    ],
+    "learning": [
+      "hidden_indirect_007",
+      "hidden_indirect_012"
+    ],
+    "privacy": [
+      "hidden_indirect_010",
+      "hidden_indirect_017"
+    ],
+    "product": [
+      "hidden_indirect_003",
+      "hidden_indirect_018"
+    ],
+    "role_context": [
+      "hidden_indirect_001"
+    ],
+    "service": [
+      "hidden_indirect_002",
+      "hidden_indirect_013"
+    ],
+    "technology": [
+      "hidden_indirect_004",
+      "hidden_indirect_017"
+    ],
+    "travel": [
+      "hidden_indirect_005",
+      "hidden_indirect_014"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周在超市结账前发现多付了一笔费用，因为没注意打折标签过期。今天要买洗发水和纸巾，预算200以内。"
+        },
+        {
+          "role": "assistant",
+          "content": "先核对每个商品的折扣有效期，结账前重新计算总额，如果超过195就替换为小包装。"
+        }
+      ],
+      "implicit_signal": "在购物前事先锁定预算，避免冲动超额"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前用某云笔记，取消订阅要等30天，很不方便。现在想换一个能导出纯文本的，每月30元以内。"
+        },
+        {
+          "role": "assistant",
+          "content": "对比两个：Standard Notes（端到端加密，取消即时，导出纯文本）和 Obsidian（免费，本地存储，但同步需手动）。"
+        }
+      ],
+      "implicit_signal": "优先选择取消灵活、数据可迁移的服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买一个保温杯装咖啡，但上回买的用了两个月内胆就掉涂层。有没有316不锈钢、容量350ml左右、能放进包里不漏的？"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐象印SM-SD35（316不锈钢，真空隔热，密封垫可拆洗，用了三年没漏），或Montbell Thermo Mug（更轻，但涂层不如象印耐酸）。"
+        }
+      ],
+      "implicit_signal": "要求产品选择有具体使用场景和长期成本说明"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买个降噪耳机在地铁上听播客，但上次买的头戴式太重，戴半小时耳朵疼。预算800以内，要轻便、佩戴稳定。"
+        },
+        {
+          "role": "assistant",
+          "content": "索尼WF-1000XM5（6克一只，降噪好，但耳塞尺寸要试）或Anker Soundcore Space A40（更轻4.3克，续航长，降噪略弱但通勤够用）。"
+        }
+      ],
+      "implicit_signal": "需要真实的本地案例而非通用榜单"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周末想去绍兴逛一天，上次赶到鲁迅故里全是旅行团，什么都没看上。这次不想去热门景点，能找到一个安静的小巷和书店吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "考虑书圣故里（游客少，有老街区、本地人开的茶馆），中午在府山直街吃面，下午去荒原书店（二楼可以坐着看书，窗外是河）。"
+        }
+      ],
+      "implicit_signal": "旅行方案需包含氛围、人群、成本、灵感价值、安静备选"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "明天中午和一位吃素的同事约饭，对方不能吃辣。我预算50以内，在西湖银泰附近，不想太油腻。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐素食自助“素满香”（38元/人，菜品清淡有汤，非网红店，12点前人少），备选是庆春里的生煎包店（有素馅，但不保证座位）。"
+        }
+      ],
+      "implicit_signal": "餐食推荐需符合场景、预算和同行约束"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在学Python做数据分析，但网课光讲概念，没有作业批改。我上周写了一个脚本跑不出来，隔了三天才发现是缩进错误。有没有能快速反馈的练习？"
+        },
+        {
+          "role": "assistant",
+          "content": "试试LeetCode「简单」数组题（每题有测试用例实时报错），或DataCamp的Python分析项目（每步验证，自动提示语法问题）。"
+        }
+      ],
+      "implicit_signal": "偏好短周期反馈、可复盘标准的学习材料"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想订阅一个时事通讯，但很多号只会发标题式摘要。我想看到作者对数据的判断依据和不确定点，每周一篇，免费最好。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐《经济机器》（分析宏观数据时会标注置信区间和来源），或《科技早知道》（每期末尾有编辑的保留意见）。"
+        }
+      ],
+      "implicit_signal": "内容需有真实体验和不确定性说明"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周六下午想去看展，但上次去浙江美术馆排了40分钟队，里面又吵。有没有门票不超过50、不需要预约、展品扎实的小型展览？"
+        },
+        {
+          "role": "assistant",
+          "content": "西湖边的“中国美术学院象山校区”三楼常设展（免费，人少，有当代版画和手稿），或“单向空间”书店二楼每周末有独立摄影师小展（不收费）。"
+        }
+      ],
+      "implicit_signal": "偏爱小型、真实、有内容密度的活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看到一个购物App要求注册时填真实地址、生日、职业才能领优惠券，我觉得太多个人信息了。有没有不需要这些就能下单的？"
+        },
+        {
+          "role": "assistant",
+          "content": "可以用拼多多网页版（仅需手机号），或淘宝匿名购买（填虚拟姓名，地址写到自提柜编号即可）。"
+        }
+      ],
+      "implicit_signal": "避免提供不必要的个人信息，拒绝隐藏条件"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友推荐了一家人均300的融合餐厅，说拍照好看，但网上评价全是“适合约会”，没有一个人讲菜好不好吃。"
+        },
+        {
+          "role": "assistant",
+          "content": "不选那家。换到屏风街的“小面馆”（人均22元，专做手擀拌面，12年店，没营销词条，只做午市）。"
+        }
+      ],
+      "implicit_signal": "拒绝网红化、流量导向的推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "网上有门免费Excel课，但只是把100多个函数挨个贴了一遍，没有练习数据。我上一节就困了。"
+        },
+        {
+          "role": "assistant",
+          "content": "跳过那个。可以用ExcelJet的“VLOOKUP+数据透视表”15分钟交互教程（自带表格，每步有结果对比）。"
+        }
+      ],
+      "implicit_signal": "拒绝只有材料堆叠、没有反馈的学习资源"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "需要找一个翻译服务翻译行业报告，但上次用的平台中途换了译员，质量下降还没退钱。想找能指定专人、取消不扣费的。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐“译客”（2小时内响应，可先试译300字指定译员，取消按字数退费），备选Fiverr（看评价选人，但取消规则需确认）。"
+        }
+      ],
+      "implicit_signal": "服务推荐需包含氛围、可取消性、响应速度"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下个月要去重庆出差两天，预算住宿每晚200以内，希望离地铁近、隔音好。上次住青年旅舍下铺，半夜被吵醒三回。"
+        },
+        {
+          "role": "assistant",
+          "content": "考虑汉庭解放碑店（步行至较场口站5分钟，双人床200元，有隔音窗，取消规则灵活）或7天连锁（更便宜但隔音一般）。"
+        }
+      ],
+      "implicit_signal": "旅行中住宿优先安全、安静和可取消"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下午两点有个线上会议，中午想快速吃一口不油腻的。但上次吃了牛肉面后腹胀，开会一直走神。"
+        },
+        {
+          "role": "assistant",
+          "content": "选附近的社区食堂（蒸菜窗口：一份蒸蛋+半碗米饭，15元，无油无辣，15分钟吃完）或便利店饭团+无糖豆浆。"
+        }
+      ],
+      "implicit_signal": "避开过度油腻、影响当天节奏的餐食"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周五晚上想看电影，但上次选了晚场，到家凌晨1点，第二天全天没精神。有没有6点半左右、时长不超过两小时的文艺片？"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐浙影时代影城（武林店）的19:31场《完美的日子》（日影，无激烈情节，102分钟），附近有地铁，散场后22:00前可到家。"
+        }
+      ],
+      "implicit_signal": "希望休闲活动不破坏第二天的作息"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想用手机记录跑步路线，但很多App会读取通讯录和相册。能不能只给位置权限、不允许其他访问？"
+        },
+        {
+          "role": "assistant",
+          "content": "用「Strava」免费版（可设置仅启用定位，关闭联系人同步），或安装「OpenTracks」（完全离线，不请求任何敏感权限，数据自己导出）。"
+        }
+      ],
+      "implicit_signal": "默认开启隐私保护和最小权限"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买一台家用投影仪，预算1500以内，但之前买的杂牌三个月就卡顿。希望系统流畅、后续不绑定付费。“"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐极米Play特别版（自带Android TV，不强制会员，维护成本低）或当贝C2（更轻便但流明低，保修12个月，可免费刷系统）。"
+        }
+      ],
+      "implicit_signal": "选品需说明长期成本、维护和替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周日下午想去一个能拍点东西、能写笔记的地方，但不想去网红书店。上次去猫空全是拍照的人，连坐的地方都没。"
+        },
+        {
+          "role": "assistant",
+          "content": "去拱墅区“单向空间”（三楼有长桌和电源，人少，窗边可写字），或者浙大西溪校区的“晓风书屋”（老校区里，安静，可以拍旧书细节）。"
+        }
+      ],
+      "implicit_signal": "喜欢能留下创作素材的安排"
+    }
+  ]
+}

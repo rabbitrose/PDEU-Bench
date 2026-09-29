@@ -1,0 +1,240 @@
+{
+  "user_id": "user_122",
+  "explicit_preferences": {
+    "user_profile": "来自Bowmans的律师Fabian，被推荐者。",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "法比安·范德默维",
+        "age": 42,
+        "gender": "男性",
+        "location": "南非约翰内斯堡",
+        "languages": [
+          "英语",
+          "南非荷兰语",
+          "基础祖鲁语"
+        ],
+        "education_level": "法律硕士（LLM）",
+        "occupation": "合伙人",
+        "industry": "法律服务",
+        "seniority": "合伙人",
+        "household": "已婚，有两个孩子（年龄8岁和12岁）",
+        "life_stage": "成熟的职业人士，平衡事业与家庭"
+      },
+      "physical_profile": {
+        "height_cm": 183,
+        "general_appearance": "仪表整洁，运动型身材，通常穿着定制西装和眼镜",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "自信、细致、有说服力，有强烈的正义感和责任感。",
+        "big_five": {
+          "openness": 75,
+          "conscientiousness": 90,
+          "extraversion": 60,
+          "agreeableness": 70,
+          "neuroticism": 30
+        },
+        "strengths": [
+          "分析性思维",
+          "有说服力的沟通",
+          "注重细节",
+          "组织能力"
+        ],
+        "weaknesses": [
+          "对自我和他人过于挑剔",
+          "工作狂倾向",
+          "对效率不耐烦"
+        ],
+        "values": [
+          "正义",
+          "正直",
+          "效率",
+          "家庭"
+        ],
+        "motivations": [
+          "职业卓越",
+          "客户成功",
+          "财务安全。"
+        ],
+        "stress_triggers": [
+          "紧迫的截止日期",
+          "准备不足",
+          "与同行冲突"
+        ]
+      },
+      "background": {
+        "hometown": "南非，比勒陀利亚",
+        "family_background": "父母均为教育工作者；一个兄弟姐妹是医生。",
+        "education": [
+          "法律文学士（比勒陀利亚大学）",
+          "公司法法律硕士（开普敦大学）"
+        ],
+        "career_history": [
+          "精品律师事务所助理（2005-2010）",
+          "Bowmans高级助理（2010-2016）",
+          "Bowmans合伙人（2016至今）"
+        ],
+        "notable_life_events": [
+          "在法学院遇到配偶",
+          "在2018年领导了一起里程碑式的并购案"
+        ]
+      },
+      "lifestyle": {
+        "daily_routine": "早上6点起床，锻炼，早餐时审阅案件文件，8:30到办公室，经常工作到很晚，晚上8点左右与家人共进晚餐，睡前阅读。",
+        "social_life": "定期与法学院朋友共进晚餐，偶尔打高尔夫，参加行业会议。",
+        "health_and_wellness": "每周跑步三次，注意饮食，每年体检。",
+        "financial_habits": "保守投资，使用财务顾问，优先考虑子女教育基金。"
+      },
+      "interests": {
+        "hobbies": [
+          "收藏葡萄酒",
+          "高尔夫",
+          "阅读历史传记"
+        ],
+        "sports": [
+          "跑步",
+          "高尔夫"
+        ],
+        "arts_and_culture": [
+          "戏剧",
+          "古典音乐会"
+        ],
+        "current_affairs_engagement": "密切关注法律和政治新闻，订阅《经济学人》和《金融时报》。"
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "新闻来源：《商业日报》、《金融时报》、BBC世界",
+          "话题：公司法、并购、政治、经济学",
+          "内容必须匹配此用户独特的工作模式：高地位合伙人在预算压力下的模式——高效、注重地位、对家庭敏感。",
+          "拒绝通用的助手框架：不要对奢侈品偏好进行道德说教，也不要假装预算不是约束条件。"
+        ],
+        "product_preferences": [
+          "服装：高端西装（Hugo Boss、Ermenegildo Zegna）、手表（Rolex Omega）、皮具",
+          "科技：iPhone、MacBook Pro、降噪耳机",
+          "家居：智能恒温器、自动化照明",
+          "产品应通过用户自身的权衡视角选择：优先级、不可妥协项、成本权衡、预订/行动。"
+        ],
+        "service_preferences": [
+          "旅行：商务舱、私人接送",
+          "餐饮：高级餐饮、顶级餐厅预订",
+          "礼宾：Priority Pass、私人助理",
+          "服务仅在接受这种决策优先级时才是可接受的：专业形象、对女儿的承诺、受控支出优于最便宜选择。"
+        ],
+        "learning_preferences": {
+          "format": "在线课程、网络研讨会、专业研讨会",
+          "topics": "领导力、谈判、新法律技术"
+        },
+        "travel_preferences": {
+          "destinations": "伦敦、纽约、开普敦",
+          "accommodation": "豪华酒店或服务式公寓",
+          "activities": "品酒、历史之旅"
+        },
+        "food_preferences": {
+          "cuisine": "法国菜、意大利菜、南非烤肉",
+          "dietary_restrictions": "无",
+          "preferred_beverages": "红葡萄酒（波尔多、皮诺塔吉）、单一麦芽威士忌"
+        },
+        "entertainment_preferences": {
+          "movies": "惊悚片、法律剧",
+          "series": "《金装律师》、《纸牌屋》、《王冠》",
+          "music": "古典、爵士"
+        },
+        "technology_preferences": {
+          "devices": "最新款iPhone、iPad Pro、MacBook",
+          "software": "Microsoft Office, LexisNexis, Westlaw",
+          "platforms": "苹果生态系统，云存储"
+        },
+        "privacy_preferences": {
+          "data_sharing": "最小化，通信首选端到端加密",
+          "ad_tracking": "拒绝所有非必要cookies",
+          "social_media_presence": "仅使用LinkedIn，很少发布"
+        },
+        "budget_preferences": {
+          "spending_style": "重质不重量，愿意为可靠性支付溢价",
+          "saving_goals": "子女大学基金、退休",
+          "financial_products": "带奖励的信用卡、旅行保险"
+        },
+        "personalization_directives": {
+          "style_contract": "预算压力模式下的高地位伴侣：高效、注重地位、对家庭敏感。",
+          "decision_priority": "职业形象、女儿责任和受控支出胜过最便宜的选择。",
+          "evidence_contract": "重要时使用法律/事实来源；否则基于实际判断。",
+          "format_contract": "优先级、不可协商、成本权衡、预订/行动。",
+          "anti_default_assistant_behavior": "不要对奢侈偏好进行道德评判，或假装预算不是约束。",
+          "distinctive_quirks": [
+            "学校演出可以优先于工作便利。",
+            "慈善半程马拉松应保持声誉和家庭时间。",
+            "预算旅行仍需体面的接触点。"
+          ],
+          "hard_avoidances": [
+            "背包客式的省钱方式",
+            "奢侈羞辱",
+            "让他错过家庭里程碑的计划"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "content": "点击诱饵、煽动性新闻、未经核实的法律建议",
+        "products": "劣质产品、偷工减料的品牌",
+        "services": "态度差的客服、隐藏费用",
+        "communication": "垃圾邮件、专业场合过于随意的语言"
+      },
+      "communication_style": {
+        "tone": "礼貌但直接",
+        "formality": "写作时正式，言谈中适度正式",
+        "directness": "偏好清晰简洁，但欣赏细微差别",
+        "emotional_expression": "矜持，但与密友相处时热情"
+      },
+      "decision_making": {
+        "approach": "分析型，数据驱动，定稿前多方征求意见",
+        "speed": "审慎，但在掌握关键信息时行动迅速",
+        "risk_tolerance": "低到中等；更偏好成熟方案而非新奇事物",
+        "role_of_emotion": "承认情感，但优先考虑逻辑"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "起草合同和法律备忘录",
+          "研究判例法和法规",
+          "安排客户会议和出庭",
+          "生成法律文件摘要",
+          "推荐商务差旅安排"
+        ],
+        "preference_conflicts": [
+          "工作与生活平衡的愿望与较高的职业抱负",
+          "对高端服务的偏好与对长期储蓄的成本意识",
+          "交付成果中追求全面与追求速度的价值"
+        ],
+        "ambiguity_to_preserve": [
+          "委托任务的意愿或直接参与的需求",
+          "接受人工智能辅助与依赖人类专业知识的权衡",
+          "个人与职业场合中的正式程度"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:46",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "专业且尊重",
+            "response_length": "简洁；仅在请求时提供细节",
+            "evidence_expectation": "为法律或事实主张引用来源",
+            "formatting": "多项内容使用要点或编号列表",
+            "proactive_behavior": "提供截止日期和会议的提醒；建议高效的工作流程",
+            "things_to_avoid": "俚语、过于随意的表情符号、未经请求的个人建议或玩笑"
+          },
+          "task_titles_used_for_context": [
+            "管理商务旅行和女儿的学校演出",
+            "规划慈善半程马拉松训练和筹款",
+            "规划家庭假日去伦敦和巴黎并控制预算"
+          ]
+        }
+      }
+    }
+  }
+}

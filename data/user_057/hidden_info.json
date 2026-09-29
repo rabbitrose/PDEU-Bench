@@ -1,0 +1,470 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_057",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:31:24",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_013",
+      "hidden_indirect_019"
+    ],
+    "content": [
+      "hidden_indirect_003",
+      "hidden_indirect_018"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_002",
+      "hidden_indirect_012",
+      "hidden_indirect_018"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_007",
+      "hidden_indirect_017"
+    ],
+    "entertainment": [
+      "hidden_indirect_007",
+      "hidden_indirect_019"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_004",
+      "hidden_indirect_015"
+    ],
+    "food": [
+      "hidden_indirect_013"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_004",
+      "hidden_indirect_016"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_020"
+    ],
+    "learning": [
+      "hidden_indirect_010",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "privacy": [
+      "hidden_indirect_008",
+      "hidden_indirect_014"
+    ],
+    "product": [
+      "hidden_indirect_011"
+    ],
+    "role_context": [
+      "hidden_indirect_010"
+    ],
+    "service": [
+      "hidden_indirect_006",
+      "hidden_indirect_014"
+    ],
+    "technology": [
+      "hidden_indirect_009",
+      "hidden_indirect_017"
+    ],
+    "travel": [
+      "hidden_indirect_012",
+      "hidden_indirect_016"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次在圣保罗买了个铁质书架，结果三个月焊点就开始晃。安装师傅说是材料批次问题，但当时只看了照片没问清楚。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次选架子我优先找本地有现货、能现场检查焊点的店。先发三家带地址的，你下班绕过去看一眼。"
+        }
+      ],
+      "implicit_signal": "用户愿意为节省成本而放弃外观匹配，体现预算优先于质感"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周日晚上查咖啡豆，看见一个推荐榜写了十几种，但没说明哪款适合手冲、哪款酸度高。浪费了半小时筛选。"
+        },
+        {
+          "role": "assistant",
+          "content": "明白。这次我直接按你合租房里的小容量手冲壶推荐3款豆子，分别标注烘焙日期、酸度等级和价格区间，不带无关信息。"
+        }
+      ],
+      "implicit_signal": "用户拒绝笼统排行，要求具体场景和依据"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前找周末市集，助手直接推了最热门的三个，结果人挤人、小摊全是流水线商品，完全不是想要的那种感觉。"
+        },
+        {
+          "role": "assistant",
+          "content": "重新来。按氛围（安静社区）、人群（本地手作人）、成本（免费入场）、灵感价值（可拍照记录）、安静备选列两家独立摊位市集，各自开放时间已附。"
+        }
+      ],
+      "implicit_signal": "用户要求按氛围/人群/成本/灵感价值/安静备选的结构提供内容"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次找维修工，平台只显示评分没写上次接单时间，结果约了三次都爽约。事后才发现那人早已不活跃。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我筛选出本周有订单记录、距离你住处3公里内的两名师傅，附上他们最近一次完成的工作照片和客户简评。"
+        }
+      ],
+      "implicit_signal": "用户要求提供可验证的本地语境样例，而非通用说法"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那个烤肉店，网上写着“ins风必打卡”，到了发现灯光刺眼、音乐吵，肉还烤焦了。发出去的照片我根本没存。"
+        },
+        {
+          "role": "assistant",
+          "content": "记下了。这次推荐两家居民区巷子里的小烤肉店，一家用炭火一家用木柴，老板自己腌肉，已确认晚8点后人少。"
+        }
+      ],
+      "implicit_signal": "用户反感网红化表达，偏爱小型真实场所"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月报了周末陶艺课，老师说分组合作，结果全程要聊天，根本没时间自己捏。回家后比上班还累。"
+        },
+        {
+          "role": "assistant",
+          "content": "那下次找独立工位、可预约非高峰时段的工作坊。先锁定一家周二下午单人体验课，工具全含、无强制互动。"
+        }
+      ],
+      "implicit_signal": "用户重视独处恢复时间，拒绝过度社交"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周日一个人去了植物园，光看花没带相机，回来翻手机一张像样的照片都没有，感觉白去了一趟。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次出发前提醒你带小相机，顺便查好早上光线最好的玻璃温室位置。已在你日历空档标记了拍照路线。"
+        }
+      ],
+      "implicit_signal": "用户偏好能留下创作素材的安排"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次想订清洁服务，平台一上来就要绑定社交账号、填家庭地址，我直接关掉了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这家新平台只需提供邮编和期望时间段，取消规则写在了订单第一行，没有额外注册。你要看看条款吗？"
+        }
+      ],
+      "implicit_signal": "用户拒绝营销腔和过度数据收集"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周搜笔记软件，出来一堆广告说“AI增强”、“年度最佳”，点进去基础功能都要付费。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐两款：Obsidian（本地存储，免费，可导出MD）和Logseq（开源，大纲式）。都不强制账号，你可以在图书馆闭馆前离线用。"
+        }
+      ],
+      "implicit_signal": "用户拒绝商业化过度推销"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前跟网上课程学做表格，看了6节视频还没讲到公式，进度太慢，放弃了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次找1小时能完成的小项目，比如用Google Sheets做家庭开支追踪，每一步都有截图和结束核对标准。明天早餐桌边就能试。"
+        }
+      ],
+      "implicit_signal": "用户职业特性影响学习偏好，要求短周期反馈"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买台二手打印机，上次看中一台但运费占总价40%，预算在最后一步失控了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次筛选本地自取、200雷亚尔以内的激光打印机，已确认鼓粉可单独换。另列一个加油站附近的取货点。"
+        }
+      ],
+      "implicit_signal": "用户预算敏感且需要替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去里约订了海滩边的旅舍，半夜街道噪音没停过，头像被针扎一样疼。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只推远离主干道、24小时前台且有免费取消的民宿。已用手机截图标记两栋带隔音窗的选项。"
+        }
+      ],
+      "implicit_signal": "用户旅宿优先安全安静和可取消，而非热门"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次聚餐点了炸鸡拼盘，吃完下午昏沉沉的，当天剩下的材料整理全部搁置。"
+        },
+        {
+          "role": "assistant",
+          "content": "今天推荐两样本地小店午餐：一份烤鸡胸配藜麦沙拉（22雷亚尔），一份鱼汤配木薯饼（18雷亚尔），都附当日营业时间。"
+        }
+      ],
+      "implicit_signal": "用户优先预算和稳定执行，不过度油腻"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前订搬家服务，说好提前一天可取消，结果真取消时扣了一半费用。条款小字写的。"
+        },
+        {
+          "role": "assistant",
+          "content": "这家服务在订单页面首句写明“取消费用0，只需在约定时间2小时前发消息”，响应记录也公开可见。"
+        }
+      ],
+      "implicit_signal": "用户要求服务商明确取消规则和响应速度"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次学换水龙头，教程只说步骤没讲怎么判断拧紧程度，结果材料发出去后又撤回，又漏了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次找的视频附带扳手扭矩指示卡，看完后可以在水槽用废接头练习。完成后你把照片发我，我帮你核对密封状态。"
+        }
+      ],
+      "implicit_signal": "用户需要示例和可复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去登山，向导把时间排满，最后一项没人确认就出发，结果下山天黑了，差点迷路。"
+        },
+        {
+          "role": "assistant",
+          "content": "新路线只安排上午主峰、下午自由行动，留出2小时缓冲。已标出沿途三个庇护所位置和手机信号点。"
+        }
+      ],
+      "implicit_signal": "用户要求路线留缓冲、按氛围/人群/成本/灵感价值/安静备选排列"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前用某个笔记软件，换了手机后旧数据导不出来，版本没法回退，写了一年的记录全没了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次用Joplin，全平台同步且每月自动导出一次ZIP。你可以存到本地硬盘和云盘各一份，我设好了下周日晚上的备份提醒。"
+        }
+      ],
+      "implicit_signal": "用户偏好能导出数据且跨设备同步的工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次搜“居家收纳”，结果全是别墅大户型方案，放合租房根本用不了。"
+        },
+        {
+          "role": "assistant",
+          "content": "按你的户型出了三个方案：厨房挂杆（15雷亚尔）、床底抽屉（二手价30雷亚尔）、门后背钩（免钉）。每一件都附安装图和租客退租可恢复说明。"
+        }
+      ],
+      "implicit_signal": "用户要求内容贴合自身场景，拒绝通用榜单"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去电影展，加购导览手册和周边，超了当月娱乐预算，后面两周连公交卡都不敢多充。"
+        },
+        {
+          "role": "assistant",
+          "content": "周末有巴西独立纪录片免费放映，时长90分钟，地点在社区文化中心。不需要额外消费，18点结束不影响第二天安排。"
+        }
+      ],
+      "implicit_signal": "用户娱乐不破坏节奏且预算合理"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次搜索如何保养木地板，助手甩了7个网页链接，打开全是重复内容，翻完更不知道怎么选蜡。"
+        },
+        {
+          "role": "assistant",
+          "content": "这里只用一条5分钟视频，实测三种蜡在巴西潮湿环境下的效果。我已截图把关键步骤和购买判断点标好，不看视频也能懂。"
+        }
+      ],
+      "implicit_signal": "用户拒绝堆材料链接的助手行为"
+    }
+  ]
+}

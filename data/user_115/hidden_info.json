@@ -1,0 +1,428 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_115",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:08:19",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 18,
+  "composition": {
+    "episodic_preference_trace": 18
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_004",
+      "hidden_indirect_013",
+      "hidden_indirect_017"
+    ],
+    "content": [
+      "hidden_indirect_005",
+      "hidden_indirect_015"
+    ],
+    "decision_priority": [
+      "hidden_indirect_002",
+      "hidden_indirect_014"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_018"
+    ],
+    "entertainment": [
+      "hidden_indirect_009"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_007",
+      "hidden_indirect_012",
+      "hidden_indirect_018"
+    ],
+    "food": [
+      "hidden_indirect_013"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_012"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_011"
+    ],
+    "learning": [
+      "hidden_indirect_007",
+      "hidden_indirect_017"
+    ],
+    "privacy": [
+      "hidden_indirect_010",
+      "hidden_indirect_016"
+    ],
+    "product": [
+      "hidden_indirect_008"
+    ],
+    "role_context": [
+      "hidden_indirect_001",
+      "hidden_indirect_015"
+    ],
+    "service": [
+      "hidden_indirect_001",
+      "hidden_indirect_011"
+    ],
+    "technology": [
+      "hidden_indirect_003",
+      "hidden_indirect_010",
+      "hidden_indirect_016"
+    ],
+    "travel": [
+      "hidden_indirect_006",
+      "hidden_indirect_014"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周约见第二位律师，她说会把调价协议草案放共享表格，但我等两天都没收到链接。"
+        },
+        {
+          "role": "assistant",
+          "content": "我现在直接把链接发您，附一份明文PDF副本。您打开后检查一下第38条里的时间节点。上次那位律师也是同样问题，这次我提前补了。"
+        }
+      ],
+      "implicit_signal": "需要律师在线文档共享，但对方平台未发链接"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前有个调解员说自己处理过两百件案子，但上次他牵头的案子判下来还是按对方方案走，我查了法院记录。"
+        },
+        {
+          "role": "assistant",
+          "content": "那按照他之前申辩策略的文本，我发现他在财产分割上重口头协议轻书面签章。我们这次的证据链里有13封邮件，必须选对此类证据有强制执行力的律师。"
+        }
+      ],
+      "implicit_signal": "拒绝按情感关系判断律师能力，而根据具体辩护失败案例和文件证据做选择"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周律师用Google Docs共享监护时间表，但我改了一版后发现同步覆盖没了，版本没法回退。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我用项目看板加坚果云协作，每个修改自动生成历史快照，您改的地方我标黄。另外我导出离线版存本地，避免现场网络断了打不开。"
+        }
+      ],
+      "implicit_signal": "要求文件格式可版本对比，避免回退问题"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月律师费超预算2000，我本想停掉孩子周六天文馆年卡，但想了又换成压缩线上咨询次数。"
+        },
+        {
+          "role": "assistant",
+          "content": "天文馆年卡对三人共用价格包已经低于单次票，不应取消。下次咨询改成每两周一次，中间用我审过的模板文件沟通。这样每月省下800，不伤孩子日程。"
+        }
+      ],
+      "implicit_signal": "预算削减优先约谈压缩，而非减少孩子天文活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "律师给调解对方写作文开头写“作为父亲我感情破裂”，我觉得不妥，但他说这样更能打动调解专员。"
+        },
+        {
+          "role": "assistant",
+          "content": "以“共同监护首要目标在于维持儿童日常作息稳定”作为开头更具法律可辩性，不带情感。我重写并拿掉涉案细节。"
+        }
+      ],
+      "implicit_signal": "抵制情感化描述或悲情叙事"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "这家法律事务所宣传材料写着“陪父亲走过开庭全程，解决父亲焦虑”，我觉得怪怪的。"
+        },
+        {
+          "role": "assistant",
+          "content": "那是瞄准没有父亲参与经验的律师。我筛选的三位全部拒绝麻烦的陪同情绪支援，只处理文书和策略。我们选那个40岁有自己孩子的，他的出面费低而且不搞感情牌。"
+        }
+      ],
+      "implicit_signal": "拒绝认为父亲开庭会时陪同是必需服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "网上课程里说伊利诺伊州默认50/50监护，但法典26条实务里有例外情况，关键信息只有广告页提到。"
+        },
+        {
+          "role": "assistant",
+          "content": "广告页对应的判例是2018年上诉案，我检索了原判决附注，其中13条明确指出一方有更多日常照顾记录则按实际比例，不适用僵化平分。谈策略时会拿这个当主论述点。"
+        }
+      ],
+      "implicit_signal": "自学法律时按真实判例判断，不盲从理论"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次出庭前手机突然关机，我发现是电池鼓包。同行的律师劝我直接换最新款iPhone，但我还是想换能换电池的中端安卓。"
+        },
+        {
+          "role": "assistant",
+          "content": "我推荐三星Galaxy A54 5G，电池可换，支持eSIM双卡，保修两年。它不贵，而且足够跑法律文件应用和加密通讯。"
+        }
+      ],
+      "implicit_signal": "选用中端安卓，可靠性与可换电池而非高端设计"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周末本打算全家看一部剧，孩子选了新上映的超级英雄片，我发现里面有父母离婚场景，而且打斗场面很多。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成《森林王子》重制片，共识为PG级，主题关于归属。你们可以在周五下午五点开始的场次，票价成人14儿童10，我查到影院有家庭套票。"
+        }
+      ],
+      "implicit_signal": "家庭电影夜避免暴力复杂情节"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上一家律所用Dropbox共享敏感监护视频，但我觉得风险太大，那里没有端到端加密。"
+        },
+        {
+          "role": "assistant",
+          "content": "迁移到Cryptpad并启用无日志收发。我设了一周自毁规则，每次您下载后我会撤销我方的访问密钥。另外把视频里面孩子脸部局部模糊后才传。"
+        }
+      ],
+      "implicit_signal": "只允许加密存储和匿名化传输证据"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有组织推出“父亲维权顾问”，前两次免费，我试了一次，对方建议我直接联系法官情感陈述。"
+        },
+        {
+          "role": "assistant",
+          "content": "停止使用。其背景非执业律师，其建议在法庭上无证据效力。我现在起草一份单页，列出哪些信息来源来自已认证家事律师，您对照后再决定下一步。"
+        }
+      ],
+      "implicit_signal": "拒绝认为父亲顾问项目能替代专业法律意见"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "律师推荐一套调解程序，但只说了总费用和成功率，我想知道如果调解失败再诉讼，额外增加多少成本以及时间敞口。"
+        },
+        {
+          "role": "assistant",
+          "content": "我今天做了阶梯式费用推演：调解成功总费约3800；失败转入诉讼额外加8200，期间孩子监护安排维持原状。推演表格我在您共享表格里建了一个新页签，上面有每个阶段的截止日和处理期限。"
+        }
+      ],
+      "implicit_signal": "要求推荐前先提供折现成本敞口计算"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "这个月法律支出多了，我想减少外卖，试了两次备餐送餐服务，发现其中一家第三份含辣调料，孩子不碰，浪费了26美元。"
+        },
+        {
+          "role": "assistant",
+          "content": "换Healthy Tiffin预算版，月套餐每份9.8，可选意式番茄酱或无香料版。我查了它的过敏声明，所有食谱写清辣度0-3，选0-1的搭配。一周可以省45。"
+        }
+      ],
+      "implicit_signal": "备餐在预算内保证健康但不辣，符合孩子口味"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "调解专员说若下周能完成协商，可以赶在庭审之前，但下周正好是孩子春假游计划的日期。我在想要不要取消。"
+        },
+        {
+          "role": "assistant",
+          "content": "不取消。孩子稳定性优先，我已经和对方调解员协商将日程后延一周。春假你照常带孩子去大峡谷，回来后精力充沛再处理条款。这次调整不需要额外费用。"
+        }
+      ],
+      "implicit_signal": "否决提升调解优先级到影响孩子春假旅行"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "订阅的家庭法资讯这个月连续三封讲的是夫妻修复技巧，跟我的情况无关。我退订了。"
+        },
+        {
+          "role": "assistant",
+          "content": "替代来源：我筛选了三个专注于离异父亲共同监护实务实操的RSS源，内容全是实际文件模板、费用明细和法院提醒。推送到您随身笔记单独标签页。"
+        }
+      ],
+      "implicit_signal": "只关注单亲爸爸实际工作模式类内容"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "律师要求我开放Google Calendar只读权限以协助排期，但那样会暴露我所有医疗预约。"
+        },
+        {
+          "role": "assistant",
+          "content": "建一个专属共享日历，只放与监护法律相关的13个时间块，其余设为不可见。我可以用虚拟事件屏蔽敏感行程。另外请启用二步验证。"
+        }
+      ],
+      "implicit_signal": "拒绝律师使用共享日历显示全部行踪"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "当地大学有一个儿童监护证书项目，但费用1200而且持续8周，我每晚只有半小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "那不如参加伊利诺伊州法律自助中心周六的2小时线上论坛，50美元，重点讲共同监护新规，会后有录播。我把讲义下载了放在您的项目看板里。性价比高很多。"
+        }
+      ],
+      "implicit_signal": "选短时法律讲座而非长期课程"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "第一次调解时，对方三人一组，我只有一人，感觉对话中途对方主导争议节奏。"
+        },
+        {
+          "role": "assistant",
+          "content": "确认下次调解前发送一份流程控制协议：双方各限一位代表，不允许团队旁听。休息间设置独立出入，避免在大厅尴尬碰面。"
+        }
+      ],
+      "implicit_signal": "选择调解时默认为避免权力不平衡的座次和流程"
+    }
+  ]
+}

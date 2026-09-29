@@ -1,0 +1,451 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_056",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:47:23",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 19,
+  "composition": {
+    "episodic_preference_trace": 19
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_002",
+      "hidden_indirect_011",
+      "hidden_indirect_012",
+      "hidden_indirect_013",
+      "hidden_indirect_018",
+      "hidden_indirect_019"
+    ],
+    "content": [
+      "hidden_indirect_004",
+      "hidden_indirect_017"
+    ],
+    "decision_priority": [
+      "hidden_indirect_002",
+      "hidden_indirect_015",
+      "hidden_indirect_019"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_006",
+      "hidden_indirect_007",
+      "hidden_indirect_008"
+    ],
+    "entertainment": [
+      "hidden_indirect_013"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_001",
+      "hidden_indirect_003",
+      "hidden_indirect_016",
+      "hidden_indirect_017"
+    ],
+    "food": [
+      "hidden_indirect_012"
+    ],
+    "format_contract": [
+      "hidden_indirect_004",
+      "hidden_indirect_005"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_009",
+      "hidden_indirect_010"
+    ],
+    "learning": [
+      "hidden_indirect_007",
+      "hidden_indirect_016"
+    ],
+    "privacy": [
+      "hidden_indirect_003",
+      "hidden_indirect_014",
+      "hidden_indirect_015"
+    ],
+    "product": [
+      "hidden_indirect_008"
+    ],
+    "role_context": [
+      "hidden_indirect_001"
+    ],
+    "service": [
+      "hidden_indirect_009",
+      "hidden_indirect_018"
+    ],
+    "technology": [
+      "hidden_indirect_010",
+      "hidden_indirect_014"
+    ],
+    "travel": [
+      "hidden_indirect_011",
+      "hidden_indirect_019"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次我赶着定睡眠追踪器，只看了一篇评测就下单，结果发现它不支持导出原始数据，无法做二次分析。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我会先检查产品官网的数据导出说明，以及是否有第三方验证报告。确认后再比较型号。"
+        }
+      ],
+      "implicit_signal": "基于研究角色要求验证信息来源"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "买白噪音机时预算在最后一步失控——结账发现运费加税多出37欧，超出月零花限额。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次列候选表时，我会先在两家店算总价含运费，再按总花费排序。初始预算要留至少15%余量。"
+        }
+      ],
+      "implicit_signal": "预算超支导致调整决策优先级"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次用免费冥想App，注册后才发现它要求访问通讯录。我直接删了，个人信息不值得换一个放松功能。"
+        },
+        {
+          "role": "assistant",
+          "content": "评估新App时，我会在官网或隐私政策里查它声明收集哪些数据。若未明确列出，自动移出候选。"
+        }
+      ],
+      "implicit_signal": "拒绝未说明数据用途的工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上回读一篇褪黑素对比文章，它把所有说法混在一起，我分不清哪些是专家观点哪些只是厂商自述。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会把结论拆成：证据层级（随机对照试验 vs 个案报告）、冲突点（剂量争议）、判断（适合短期倒时差）、待验证项（长期副作用）。"
+        }
+      ],
+      "implicit_signal": "要求证据分层输出"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有人推荐晨跑能提认知，但没说样本量有多大、持续几周。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会查找元分析论文，注明来源（PMID或期刊名），再说明置信度：支持效果，但效果量中等，对睡眠剥夺者可能不适用。"
+        }
+      ],
+      "implicit_signal": "避免无来源断言"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上月的睡眠日志里，咖啡因戒断日入睡快了29分钟，但深度睡眠反而缩短16分钟。"
+        },
+        {
+          "role": "assistant",
+          "content": "我将在日志中新增一列记录这种矛盾——不强行解释，仅标记为‘待观察，可能与压力日期重叠’。保持原始字段可追溯。"
+        }
+      ],
+      "implicit_signal": "保留矛盾日志"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上一堂冥想课，老师说‘前额叶激活’就代表专注力提升，没有给出实测数据。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会帮你查fMRI研究区分：事实是冥想后前额叶血氧上升，推断是‘代表专注力提升’——前者有文献支持，后者待验证。"
+        }
+      ],
+      "implicit_signal": "要求区分事实和推断"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我撤销了智能手环的心率区间推送，因为算法把数据平滑掉了很多原始波动，周一早晨错失一次异常提醒。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会调整设置：保留原始心率序列（每30秒一次），先用未平滑值触发告警，后续再按原始波动做手动分析。"
+        }
+      ],
+      "implicit_signal": "保留原始字段用于对比"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在线问诊医生只给了营养建议，说‘大部分人都有效’，却没说个体差异和可能副作用。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会拒绝这种概括建议。下次需要明确服务条款是否包含个体化评估，以及是否有退出退款选项。"
+        }
+      ],
+      "implicit_signal": "避免为了流畅掩盖不确定性"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月用笔记软件存了16条睡时记录，后来发现它无法导出为CSV，迁移数据得逐条复制。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会筛选支持标准导出（如Markdown或JSON）的工具。初始阶段就在共享表格里留一个离线副本，确保所有权在我。"
+        }
+      ],
+      "implicit_signal": "避免被锁定在单一平台"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次订Airbnb选时没注意取消政策，结果行程变动多付了一笔费用，超出预算29欧。"
+        },
+        {
+          "role": "assistant",
+          "content": "第二次预订时，我把筛选条件设为‘免费取消’和‘部分退款截至24小时前’。预算上限先扣掉不可退押金再算余量。"
+        }
+      ],
+      "implicit_signal": "旅行计划需要缓冲和可取消性"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "前一天晚上吃太油腻，导致第二天晨跑时反胃，睡眠数据也受影响。"
+        },
+        {
+          "role": "assistant",
+          "content": "晚餐优先选蒸煮类，预估热量在600千卡以内。如果约了人，提前查好菜单有无清淡选项，避免临时妥协。"
+        }
+      ],
+      "implicit_signal": "预算敏感且要求不破坏后续计划"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周日晚上参加了一场即兴喜剧，到家已凌晨一点，次日早课完全没精神。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会固定‘截止时间原则’：周日娱乐最晚21:30结束。优先选离住处步行可达的活动，减少通勤时间开销。"
+        }
+      ],
+      "implicit_signal": "休闲安排不破坏第二天节奏"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "试用了一个睡眠分析平台，注册阶段就要求填生日、体重和手机号，却没有说明数据存储位置。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会找它的隐私政策或DPR声明。若未明确服务器所在地与数据保留期限，视为不满足基本边界，放弃使用。"
+        }
+      ],
+      "implicit_signal": "强调数据可导出和最小权限"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一个健康社群发邮件说‘可能分享您的数据给合作伙伴’，点进去才发现是默认勾选同意。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次注册前先截图条款页，明确是否有opt-out选项。若不同意就不能用功能，就放弃这个社群。边界比便利更重要。"
+        }
+      ],
+      "implicit_signal": "拒绝模糊承诺"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去年买过一门睡眠线上课，老师说‘6周见效’，但结束没有评估工具，无法判断有效与否。"
+        },
+        {
+          "role": "assistant",
+          "content": "选课时要求提供前测后测对比，比如睡眠潜伏期或主观得分变化。若平台不出具反馈报告，默认效果不可信。"
+        }
+      ],
+      "implicit_signal": "需要短周期反馈"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "搜‘最佳午睡时长’时，很多文章直接给20分钟，却没有区分年龄段或睡眠债水平。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会找含亚组分析的文献，标记：年轻人短睡(≤30min)效果一致，年长者可能需调整。保留两篇冲突论文供交叉验证。"
+        }
+      ],
+      "implicit_signal": "拒绝通用榜单"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "健康餐订阅服务看起来很值，但第三周发现配送费占账单30%，相当于多付了一笔费用。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次我会把配送费单独列出计入总账，要求服务商提供‘含运费’的月度总价表，否则按月均19欧以内估算。"
+        }
+      ],
+      "implicit_signal": "隐性成本导致放弃"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "budget",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "订回巴西的机票时，廉价票便宜37欧但是不可退，结果因签证延迟作废。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后选票时加一道筛选：虽然贵15-20%，但支持灵活改签或24小时无损失取消。行程越复杂越优先可撤销选项。"
+        }
+      ],
+      "implicit_signal": "预算与可取消性冲突时优先预算弹性"
+    }
+  ]
+}

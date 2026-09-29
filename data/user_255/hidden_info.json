@@ -1,0 +1,428 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_255",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:55:15",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 18,
+  "composition": {
+    "episodic_preference_trace": 18
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_006",
+      "hidden_indirect_016"
+    ],
+    "content": [
+      "hidden_indirect_008"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_009"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_008",
+      "hidden_indirect_013"
+    ],
+    "entertainment": [
+      "hidden_indirect_001",
+      "hidden_indirect_013"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_011"
+    ],
+    "food": [
+      "hidden_indirect_002",
+      "hidden_indirect_011"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_010"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_012",
+      "hidden_indirect_014"
+    ],
+    "learning": [
+      "hidden_indirect_006",
+      "hidden_indirect_015"
+    ],
+    "privacy": [
+      "hidden_indirect_007",
+      "hidden_indirect_017"
+    ],
+    "product": [
+      "hidden_indirect_009",
+      "hidden_indirect_016"
+    ],
+    "role_context": [
+      "hidden_indirect_015",
+      "hidden_indirect_018"
+    ],
+    "service": [
+      "hidden_indirect_003",
+      "hidden_indirect_007",
+      "hidden_indirect_012",
+      "hidden_indirect_017"
+    ],
+    "technology": [
+      "hidden_indirect_005",
+      "hidden_indirect_014"
+    ],
+    "travel": [
+      "hidden_indirect_004",
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周六按你推荐的排行榜去了那个‘最受欢迎’咖啡馆，结果排队太久，内部又吵，根本没法放松。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这处新筛选的替代场地：内部限流、有安静角落，且周中下午人少。氛围更适合独处恢复。"
+        }
+      ],
+      "implicit_signal": "质感与独处环境优先于热门度"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你说‘附近有家不错的本地小吃’，但我去了发现只收现金，而且座位少得要靠墙站。没提前说明。"
+        },
+        {
+          "role": "assistant",
+          "content": "明白。这家店的支付方式、座位数和典型等候时间已核实，任何线下限制都会在推荐时写明。"
+        }
+      ],
+      "implicit_signal": "需要具体场景细节而非抽象排名"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月用你推荐的那个活动报名平台，取消时藏得很深，最后多付了一笔费用。退款入口在哪都找不到。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后会只推取消政策透明的选项，并直接给出取消路径截图。这次需要我帮你联系客服追回那笔费用吗？"
+        }
+      ],
+      "implicit_signal": "服务推荐必须附带取消规则"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去那个植物园虽然漂亮，但像个网红打卡地，到处都是举手机直播的人，根本没法安静逛。"
+        },
+        {
+          "role": "assistant",
+          "content": "我留意到你是想找能留下创作素材但人少的地方。柏林南边有个社区花园，平日开放，很适合散步随手拍，不会有直播团。"
+        }
+      ],
+      "implicit_signal": "偏爱小型、可拍的场所"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那篇推荐‘柏林最潮联合办公空间’的文章，一进去就弹窗要手机号预约，每个选项都连绑定付费，没写清楚基础价格。"
+        },
+        {
+          "role": "assistant",
+          "content": "这类入口我不会再推荐。有一家成员制空间只需邮件登记、前台可见完整价目表，且无隐形购买。"
+        }
+      ],
+      "implicit_signal": "拒绝营销腔和过度商业化"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那个绘画体验课，一节课58欧，结果材料自费，课后也没给作品点评，感觉性价比很低。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐一个43欧的全包工作坊，时长两小时，老师会当堂逐人给出改进建议。适合你那种想要明确反馈和预算控制的需求。"
+        }
+      ],
+      "implicit_signal": "预算与短反馈优先"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚才那个电影票App注册时，非要授权联系人和相册权限才能用优惠价。我只想周中看一场，不需要给那么多信息。"
+        },
+        {
+          "role": "assistant",
+          "content": "那不用那个。试试Kino Klein，预约只需邮箱，线下买无附加权限，并且周中有特价时段。"
+        }
+      ],
+      "implicit_signal": "不愿为便利牺牲个人数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那个书店路线，逛完只有打卡照，没拍出任何能用的素材。照明太亮，书架密集，角度别扭。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找到一家旧式阅览室：暖光、自然木架、允许静物拍摄。附近有个桥景也适合散步记录。"
+        }
+      ],
+      "implicit_signal": "偏好能留下素材的安排"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你之前推荐的那个耳机品牌，我看评测说功能多但外壳塑料质感差，而且客服是机器人。"
+        },
+        {
+          "role": "assistant",
+          "content": "设备发热后表现下降的问题也有用户反馈过。推荐Beyerdynamic的Free Byrd，材质耐用、支持本地维修，售后有真人客服。"
+        }
+      ],
+      "implicit_signal": "质感优先于流量"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你给我那条去波茨坦的路线，换乘只留了4分钟，结果前一班晚点，后半程全乱套，多花了47欧打车。"
+        },
+        {
+          "role": "assistant",
+          "content": "之后所有行程都会标注缓冲段和备用连接。去波茨坦另有区域火车直达，每半小时一班，虽慢一点但不会因为一次晚点而失控。"
+        }
+      ],
+      "implicit_signal": "路线需要缓冲时间"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你说那家越南粉‘很地道’，但我去了发现汤底是粉包冲的，而且菜单只有德文没图片，随便点了个辣的。"
+        },
+        {
+          "role": "assistant",
+          "content": "失误。以后会附上实际菜单照片、自己试过的推荐菜和内部环境描述。找到另一家老板娘自熬汤头的，周日休息去正合适。"
+        }
+      ],
+      "implicit_signal": "需要真实场景细节，避免抽象描述"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个月度清洁服务，说好的全包价，第一次来就要收额外材料费，条款里根本没写。"
+        },
+        {
+          "role": "assistant",
+          "content": "已经移除推荐。以后只列出全额报价、含哪些耗材，以及退订邮件模板。有一家叫Cleanr本地平台，分项单价透明无附加费。"
+        }
+      ],
+      "implicit_signal": "拒绝隐藏费用和不透明条款"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周那个音乐活动虽然气氛好，但结束后大家又去酒吧续摊，我觉得太累想早点回去休息。"
+        },
+        {
+          "role": "assistant",
+          "content": "明白。下次优先推有明确结束时间的小型活动，比如18点收场的民歌现场或独立电影放映，预留回家路上那段独处恢复时间。"
+        }
+      ],
+      "implicit_signal": "重视独处恢复时间"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个在线笔记App用起来顺手，但导入后才发现导不出去，所有笔记都锁在它家格式里。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后再推荐工具会优先支持Markdown导出或开放API。你目前的笔记可以用第三方脚本转存到Obsidian，需要帮你找可用的转换路径吗？"
+        }
+      ],
+      "implicit_signal": "避免被锁定在单一平台"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次训练班加训到晚上9点，第二天早起评估完全没精神。我想找一个能在本区快速完成、不影响第二天工作的放松项目。"
+        },
+        {
+          "role": "assistant",
+          "content": "以你作息倒推，推荐离训练馆步行10分钟的社区桑拿，晚7点前入场有特价，45分钟循环后8点半可到家。"
+        }
+      ],
+      "implicit_signal": "教练身份影响学习安排"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月买那个筋膜枪花了80欧，结果就用两次就没电还发热。我觉得该买个好的但预算有限。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐Theragun Mini的翻新版（120欧，带两年保），可以分期。你训练后用得上，比买低价但易坏的产品更省长期成本。"
+        }
+      ],
+      "implicit_signal": "区分必须与可推迟花费"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个拼车App，注册就要查看通讯录好友，我不想让同事知道我的行程。有没有不需要社交链接的拼车方案？"
+        },
+        {
+          "role": "assistant",
+          "content": "用Blablacar Lite版可仅用邮箱注册，不读取联系人。也有一条直达城际大巴线路，比拼车贵3欧但无需共享信息。"
+        }
+      ],
+      "implicit_signal": "位置与联系人信息需谨慎"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周日想去郊外放松，但地铁换乘时被临时改线困了40分钟，错过预约确认前的时间窗口。那天计划全乱了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次安排会提前备两条路线，标注施工日和Rail替代。这一处目的地也适合周末早间开车去，避开换乘风险，停车免费。"
+        }
+      ],
+      "implicit_signal": "职业节奏影响旅行安排"
+    }
+  ]
+}

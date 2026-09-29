@@ -1,0 +1,512 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_219",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T12:46:22",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 22,
+  "composition": {
+    "episodic_preference_trace": 22
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_006",
+      "hidden_indirect_009",
+      "hidden_indirect_016",
+      "hidden_indirect_022"
+    ],
+    "content": [
+      "hidden_indirect_002",
+      "hidden_indirect_014"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_020"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_012",
+      "hidden_indirect_017"
+    ],
+    "entertainment": [
+      "hidden_indirect_010",
+      "hidden_indirect_022"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_007",
+      "hidden_indirect_015"
+    ],
+    "food": [
+      "hidden_indirect_009",
+      "hidden_indirect_017"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_012",
+      "hidden_indirect_021"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_008",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "learning": [
+      "hidden_indirect_007",
+      "hidden_indirect_018"
+    ],
+    "privacy": [
+      "hidden_indirect_006",
+      "hidden_indirect_019"
+    ],
+    "product": [
+      "hidden_indirect_011",
+      "hidden_indirect_019"
+    ],
+    "role_context": [
+      "hidden_indirect_014"
+    ],
+    "service": [
+      "hidden_indirect_004",
+      "hidden_indirect_013",
+      "hidden_indirect_016"
+    ],
+    "technology": [
+      "hidden_indirect_005",
+      "hidden_indirect_015",
+      "hidden_indirect_021"
+    ],
+    "travel": [
+      "hidden_indirect_008",
+      "hidden_indirect_020"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次超市买的收纳盒用两周就裂了，收据还在，但退货要花半小时排客服。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次选PP材质厚的款，标签标了承重；收据拍照存云盘，售后直接发图免排队。"
+        }
+      ],
+      "implicit_signal": "在预算冲突中优先维护长期可靠性而非短期省钱"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下午看到一篇讲厨房动线的文章，但没提具体布局尺寸，没法直接套。"
+        },
+        {
+          "role": "assistant",
+          "content": "按你家现有橱柜尺寸（长3.2m，深0.6m）搜了三个方案，先看这篇带CAD图的，来源是建筑杂志。"
+        }
+      ],
+      "implicit_signal": "要求建议附带可验证来源和假设"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚在数位板笔记里记了三个事项，想迁移到新日历，但手工重敲一遍太烦。"
+        },
+        {
+          "role": "assistant",
+          "content": "导出CSV后直接导入日历，字段已对齐；注意事项用标签颜色区分，不需要二次录入。"
+        }
+      ],
+      "implicit_signal": "偏好结构化输出格式，讨厌重复录入"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "试了某家具回收服务，页面写免费评估，上门后说要先交注册费才能估价。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用本地二手平台，个人发布免中介费，但注意面交时核对身份。取消条件已写在备注里。"
+        }
+      ],
+      "implicit_signal": "厌恶隐藏费用和强制注册"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "笔记App同步总出问题，电脑改完手机还是旧版，又得手动复制。"
+        },
+        {
+          "role": "assistant",
+          "content": "切到纯文本Markdown+Git同步，手机电脑编辑同一仓库，差异自动合并。"
+        }
+      ],
+      "implicit_signal": "喜欢低摩擦、跨平台工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "为了领个电子优惠券，必须填详细住址和手机，感觉不值。"
+        },
+        {
+          "role": "assistant",
+          "content": "找同款用匿名邮箱领，或直接线下买；差价不足5加元，不推荐暴露隐私。"
+        }
+      ],
+      "implicit_signal": "隐私优先于便利，预算敏感"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次学烘焙，照着视频做但糊了，不知道哪步错了。"
+        },
+        {
+          "role": "assistant",
+          "content": "改成文字版带温度时间表，并标记关键节点（面糊状态），下次可对照调整。"
+        }
+      ],
+      "implicit_signal": "需要可复盘标准、示例"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次郊游按攻略走热门步道，结果停车场满了，绕路多花一小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "选备选路线B，距离短但爬升多，预计人流少；出发前查实时车位。"
+        }
+      ],
+      "implicit_signal": "路线留缓冲，避免热门景点默认最佳"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "今天午休结束前剩30分钟，买外卖要排队，自己做饭又来不及。"
+        },
+        {
+          "role": "assistant",
+          "content": "提前一晚备好冷冻糙米饭和杂蔬，微波3分钟就能吃，成本1.5加元。"
+        }
+      ],
+      "implicit_signal": "预算敏感，愿意自炊"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周末想放松，但商场活动人挤人，回来更累。"
+        },
+        {
+          "role": "assistant",
+          "content": "社区图书馆周三有小型爵士现场，免费且需预约，限30人，不影响第二天节奏。"
+        }
+      ],
+      "implicit_signal": "偏好小型、真实的活动，避免强营销"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买台新豆浆机，看中一个功能多但清洗部件繁琐的型号。"
+        },
+        {
+          "role": "assistant",
+          "content": "选刀头可拆、全部进洗碗机的款式；多花20加元但每天少洗5分钟，一年省30小时。"
+        }
+      ],
+      "implicit_signal": "产品选择要考虑长期维护成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你给的计划里‘换滤芯’写的是每6个月，但上次包装上写4个月，以哪个为准？"
+        },
+        {
+          "role": "assistant",
+          "content": "已标注【待确认】：建议查看机身标签或客服，我再补充两个信息来源链接。"
+        }
+      ],
+      "implicit_signal": "需要清楚标出未确认点"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "网上推荐的家政平台评分很高，但仔细看评论很多是刷的。"
+        },
+        {
+          "role": "assistant",
+          "content": "换用邻居群推荐的小团队，没有APP，直接电话沟通，服务条款简单明了。"
+        }
+      ],
+      "implicit_signal": "回避只看热度的推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下午和同事争论一个推理实验设计，他说‘普通人会用直觉’，我觉得该分离底层逻辑机制。"
+        },
+        {
+          "role": "assistant",
+          "content": "查了近期论文，建议用‘双重加工框架’来区分，并加一个控制组测工作记忆负载。"
+        }
+      ],
+      "implicit_signal": "作为认知科学相关工作，讨论逻辑与人类认知"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想换路由器，看测评说某款信号强，但没提穿墙后的具体数据。"
+        },
+        {
+          "role": "assistant",
+          "content": "找到同户型实测图，2.4G穿两墙后掉速30%；如果主要在客厅，该款够用。"
+        }
+      ],
+      "implicit_signal": "偏好可验证来源、明确假设"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "预约的维修师傅报价80加元，但之前预估是50，多出30没提前说。"
+        },
+        {
+          "role": "assistant",
+          "content": "先核实项目（零件费+上门费）；超出部分若可选，用DIY方案替代，工具总价15加元。"
+        }
+      ],
+      "implicit_signal": "超预算必须给替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "每周写买菜清单要翻冰箱再看一遍，老重复记已有的东西。"
+        },
+        {
+          "role": "assistant",
+          "content": "用磁贴白板在冰箱门上，临期食材标红，出门前拍照存手机，不用打字。"
+        }
+      ],
+      "implicit_signal": "讨厌重复录入信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次推的三个在线课程链接，点开都是大纲，没说明适合什么基础。"
+        },
+        {
+          "role": "assistant",
+          "content": "补了水平自测表；先做入门测验再选课，避免时间浪费。"
+        }
+      ],
+      "implicit_signal": "避免只看堆材料链接的学习方式"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看中一款智能插座，但APP必须注册手机号并开启定位才给用。"
+        },
+        {
+          "role": "assistant",
+          "content": "同价位有本地蓝牙版，无需联网，手机直接控制，数据不外传。"
+        }
+      ],
+      "implicit_signal": "产品需不强制收集过多个人信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "酒店预订有‘闪惠价’和‘可取消价’，差10加元但前者不退。"
+        },
+        {
+          "role": "assistant",
+          "content": "行程可能有变，选可取消价，多花10元但风险可控。"
+        }
+      ],
+      "implicit_signal": "可靠性和可取消优先于新奇"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "笔记软件用了两年，但导出只能PDF，无法直接迁移到其他平台。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用支持Markdown+图片外链的App，导出是文件夹结构，随时可迁。"
+        }
+      ],
+      "implicit_signal": "工具偏好跨设备同步且能导出数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_022",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友约晚上9点看夜场电影，但第二天要早起开会。"
+        },
+        {
+          "role": "assistant",
+          "content": "改约下午4点场，票价便宜3元且不影响作息；若只能夜场，选8点前的场次。"
+        }
+      ],
+      "implicit_signal": "休闲不破坏第二天节奏且预算敏感"
+    }
+  ]
+}

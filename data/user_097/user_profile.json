@@ -1,0 +1,244 @@
+{
+  "user_id": "user_097",
+  "explicit_preferences": {
+    "user_profile": "一位专注于萨尔瓦多政治格局的政治分析师。",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "里卡多·门德斯",
+        "age": 45,
+        "gender": "男性",
+        "location": "萨尔瓦多圣萨尔瓦多",
+        "languages": [
+          "西班牙语",
+          "英语"
+        ],
+        "education_level": "政治学硕士学位",
+        "occupation": "政治分析师",
+        "industry": "政治分析 / 咨询",
+        "seniority": "资深",
+        "household": "已婚，有两个孩子（12岁和15岁）",
+        "life_stage": "已建立的专业人士，以家庭为重"
+      },
+      "physical_profile": {
+        "height_cm": 178,
+        "general_appearance": "穿着整洁的商务休闲装，常戴眼镜；外表整洁，黑色短发，修剪整齐的胡须。",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "分析性强、谨慎、深入了解萨尔瓦多政治；重视事实准确性和细致理解。",
+        "big_five": {
+          "openness": 70,
+          "conscientiousness": 85,
+          "extraversion": 45,
+          "agreeableness": 55,
+          "neuroticism": 40
+        },
+        "strengths": [
+          "注重细节的研究",
+          "历史背景化",
+          "结构化论证",
+          "公正性"
+        ],
+        "weaknesses": [
+          "过于谨慎",
+          "倾向于怀疑新消息源",
+          "可能冗长"
+        ],
+        "values": [
+          "真相",
+          "民主",
+          "稳定",
+          "透明"
+        ],
+        "motivations": [
+          "理解政治动态",
+          "为公共辩论提供信息",
+          "促进政策改进"
+        ],
+        "stress_triggers": [
+          "错误信息或过度简化",
+          "政治极化",
+          "不完整的数据"
+        ]
+      },
+      "background": {
+        "early_life": "出生于萨尔瓦多圣安娜；在内战期间长大，这激发了他对政治的兴趣。",
+        "education": "萨尔瓦多大学政治学学士；德克萨斯大学奥斯汀分校硕士。",
+        "career": "从事政治新闻报道10年，后转型为独立政治分析。曾为国际非政府组织和外交使团提供咨询。",
+        "significant_life_events": "2005年结婚，育有两子；因研究需要广泛游历中美洲各地。"
+      },
+      "lifestyle": {
+        "daily_routine": "清晨开始阅读新闻和监测社交媒体；在家办公；上午晚些时候与客户或同事会面；下午进行实地研究或采访；晚上与家人共度时光。",
+        "work_environment": "家庭办公室配备双显示器，订阅多个新闻数据库和分析工具。",
+        "social_life": "社交圈适中；偶尔与其他分析师或学者共进晚餐；活跃于当地辩论社团。",
+        "hobbies": "阅读历史非虚构作品、下棋、摄影（政治集会的街头摄影）。"
+      },
+      "interests": {
+        "political_topics": [
+          "选举制度",
+          "政党动态",
+          "跨国犯罪",
+          "和平进程",
+          "中美洲国际关系"
+        ],
+        "media": [
+          "La Prensa Gráfica",
+          "El Faro",
+          "The Economist",
+          "Al Jazeera English"
+        ],
+        "books": [
+          "《向加泰罗尼亚致敬》乔治·奥威尔",
+          "《埃尔莫佐特大屠杀》",
+          "《政治秩序与政治衰败》福山"
+        ],
+        "technology": [
+          "数据可视化工具",
+          "配额抽样方法",
+          "安全通讯应用"
+        ]
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "具有历史背景的深度分析报告",
+          "基于透明方法论的数据驱动文章",
+          "知名专家基于过往记录的观点文章",
+          "内容必须符合该用户独特的工作模式：法医分析模式——优先使用西班牙语、标签简洁、置信区间、矛盾日志。",
+          "拒绝通用助手框架：不要模糊不确定性，也不要把风险转化为泛泛建议。"
+        ],
+        "product_preferences": [
+          "优质办公用品（人体工学椅、站立式办公桌）",
+          "高性能长续航笔记本电脑",
+          "用于专注的降噪耳机",
+          "产品应通过用户自身的权衡视角选择：风险矩阵+假设记录+下一步验证行动；无需友好开场白。"
+        ],
+        "service_preferences": [
+          "可靠的互联网和 VPN 服务",
+          "研究文档的云存储",
+          "提供精选资讯的新闻聚合平台",
+          "服务只有在保留此决策优先级时才可接受：将来源可信度和现场可验证性置于速度、精炼或便利之上。"
+        ],
+        "learning_preferences": [
+          "参与带有互动问答环节的研讨会和工作坊",
+          "偏好学术论文和报告而非视频内容",
+          "参加有证书的结构化课程"
+        ],
+        "travel_preferences": [
+          "追求舒适但不奢华；偏好本地交通以融入当地",
+          "选择政治敏感区域的非旅游型住宿",
+          "短期出差专注于采访或活动"
+        ],
+        "food_preferences": [
+          "喜欢普普萨（萨尔瓦多传统菜肴），但工作前避免油腻餐食",
+          "偏好家常菜，旅行时喜欢探索当地餐馆",
+          "适量饮用咖啡"
+        ],
+        "entertainment_preferences": [
+          "政治纪录片和历史剧",
+          "地缘政治播客",
+          "偶尔观看新闻讽刺节目"
+        ],
+        "technology_preferences": [
+          "使用基于Linux的操作系统以确保安全",
+          "尽可能使用开源软件",
+          "使用加密通信工具（Signal、ProtonMail）"
+        ],
+        "privacy_preferences": [
+          "注重隐私：使用 VPN、广告拦截器、社交媒体存在感极低",
+          "避免收集生物特征数据",
+          "偏好有明确数据政策的服务"
+        ],
+        "budget_preferences": [
+          "愿意投资可靠的硬件和软件",
+          "个人使用偏好免费或低成本工具，但愿意为优质数据源付费",
+          "餐饮娱乐支出适中，为家庭旅行储蓄"
+        ],
+        "personalization_directives": {
+          "style_contract": "法医分析师模式：西班牙语优先、简洁标签、置信区间、矛盾日志。",
+          "decision_priority": "优先考虑来源可信度和现场可验证性，而非速度、润色或便利性。",
+          "evidence_contract": "接受稀疏但来源清晰的证据；每个主张都需要来源层级或说明。",
+          "format_contract": "风险矩阵 + 假设账本 + 下一步验证行动；无友好开场白。",
+          "anti_default_assistant_behavior": "不要掩盖不确定性或将风险转化为通用建议。",
+          "distinctive_quirks": [
+            "面向客户的资料使用西班牙语，除非受众明确为双语。",
+            "保留冲突的民调结果，而不是将其平均化。",
+            "偏好低调、保护隐私的后勤安排，即使不够舒适。"
+          ],
+          "hard_avoidances": [
+            "听起来中立的填充内容",
+            "游客便利性",
+            "暴露联系人或位置的平台"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": [
+        "耸人听闻的媒体和点击诱饵标题",
+        "过度简化的政治分析",
+        "不可靠的网络连接",
+        "要求过多个人信息的工具",
+        "弹窗广告和侵入式追踪"
+      ],
+      "communication_style": {
+        "tone": "专业、克制且礼貌；讨论事实时可能直接",
+        "formality": "书面报告正式；个人互动随意",
+        "detail_level": "高，偏好精确语言和引用",
+        "emotional_expression": "克制；专注于数据而非情感"
+      },
+      "decision_making": {
+        "style": "分析性和基于证据；全面权衡利弊",
+        "social_influence": "高度独立；寻求专家意见但自行得出结论",
+        "risk_tolerance": "低；偏好经过验证的信息而非推测",
+        "time_horizon": "长期；考虑历史模式和未来影响"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "总结萨尔瓦多的政治发展",
+          "分析选举数据和预测",
+          "比较政策提案",
+          "为当前事件提供历史背景"
+        ],
+        "preference_conflicts": [
+          "可能优先考虑准确性而非速度，导致延迟",
+          "渴望深度但也需要简洁——平衡两者可能具有挑战性",
+          "隐私问题可能与便利性冲突"
+        ],
+        "ambiguity_to_preserve": [
+          "未指定确切政治倾向（左/右）以允许灵活回应",
+          "未提供具体客户名单或雇主",
+          "省略了详细家庭收入或圣萨尔瓦多内的确切位置"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:43",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "正式且尊重；避免随意语言或俚语",
+            "response_length": "详细但简洁；避免不必要的冗长",
+            "evidence_expectation": "期望为任何主张提供来源和推理",
+            "formatting": "偏好结构化的回复，使用标题和要点以清晰呈现",
+            "proactive_behavior": "欣赏相关主题的进一步阅读或相关建议，但仅当相关时",
+            "things_to_avoid": [
+              "无根据的观点",
+              "过度政治偏见",
+              "玩笑或非正式问候",
+              "重复已提供的信息"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "为市政选举准备政治风险评估",
+            "规划前往农村地区进行社区访谈的研究行程",
+            "建立注重隐私的家庭办公室通信系统"
+          ]
+        }
+      }
+    }
+  }
+}

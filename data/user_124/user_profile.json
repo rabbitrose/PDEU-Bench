@@ -1,0 +1,301 @@
+{
+  "user_id": "user_124",
+  "explicit_preferences": {
+    "user_profile": "一位为游客提供葡萄酒与艺术搭配工作坊的博物馆教育工作者",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Elena Marchetti",
+        "age": 42,
+        "gender": "女性",
+        "location": "美国俄勒冈州波特兰",
+        "languages": [
+          "英语",
+          "法语（会话水平）"
+        ],
+        "education_level": "艺术史文学硕士",
+        "occupation": "博物馆教育者与工作坊主持人",
+        "industry": "艺术与文化",
+        "seniority": "资深",
+        "household": "与伴侣同住，无子女",
+        "life_stage": "事业有成，渴望成为空巢者"
+      },
+      "physical_profile": {
+        "height_cm": 165,
+        "general_appearance": "艺术气质，常穿大地色系和个性珠宝，戴眼镜，齐肩棕色头发，手势丰富",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "富有创造力、善于社交、注重细节的教育者，热衷于将感官体验与知识联系起来。",
+        "big_five": {
+          "openness": 90,
+          "conscientiousness": 70,
+          "extraversion": 80,
+          "agreeableness": 65,
+          "neuroticism": 30
+        },
+        "strengths": [
+          "有吸引力的公共演说家",
+          "深厚的艺术史和葡萄酒知识",
+          "创造令人难忘的多感官体验"
+        ],
+        "weaknesses": [
+          "可能在规划中过于细致",
+          "对不投入的参与者缺乏耐心"
+        ],
+        "values": [
+          "创造力",
+          "教育",
+          "感官探索",
+          "文化保护"
+        ],
+        "motivations": [
+          "分享艺术和葡萄酒的乐趣",
+          "培养好奇心",
+          "设计创新工作坊"
+        ],
+        "stress_triggers": [
+          "缺乏准备时间",
+          "不感兴趣或捣乱的观众",
+          "低劣的葡萄酒或艺术质量"
+        ]
+      },
+      "background": {
+        "hometown": "新墨西哥州圣达菲",
+        "family_background": "在艺术家和教育者家庭长大；父母经营一家小画廊",
+        "education_story": "在新墨西哥大学获得艺术史学士学位，然后在普拉特学院获得硕士学位；在法国留学期间培养了对葡萄酒的兴趣",
+        "career_path": "从博物馆讲解员做起，成为项目协调员，现在领导结合艺术和葡萄酒的专业工作坊",
+        "key_life_events": [
+          "搬到波特兰担任博物馆职位",
+          "在品酒活动中遇到伴侣"
+        ]
+      },
+      "lifestyle": {
+        "daily_routine": "与伴侣散步，博物馆工作朝九晚五，晚上通常烹饪或参加文化活动",
+        "living_situation": "历史街区公寓，有大厨房和挂满艺术品的墙壁",
+        "hobbies": [
+          "烹饪",
+          "举办晚宴",
+          "参观当地酒庄",
+          "素描",
+          "弹爵士钢琴"
+        ],
+        "social_life": "活跃于当地艺术和葡萄酒社区，经常参加画廊开幕和葡萄酒展会",
+        "travel_patterns": "每年前往欧洲葡萄酒产区旅行，偶尔周末去纳帕或威拉米特谷"
+      },
+      "interests": [
+        "文艺复兴和印象派艺术",
+        "自然酒和生物动力葡萄酒",
+        "食物搭配科学",
+        "博物馆教育法",
+        "葡萄酒文化史",
+        "当代艺术装置"
+      ],
+      "explicit_preferences": {
+        "content_preferences": [
+          "preferred_formats: 视觉丰富的文章配高质量图片、短视频剪辑、交互式时间线",
+          "avoid: 没有视觉效果的密集学术文本、过于商业化的内容",
+          "内容必须符合用户独特的工作模式：博物馆教育者与葡萄酒主持模式：视觉、感官、参与式。",
+          "拒绝通用助手框架：不要将艺术教育变成密集的讲义笔记。"
+        ],
+        "product_preferences": [
+          "art_related: 博物馆会员订阅、聚焦特定运动的艺术书籍、限量版印刷品",
+          "wine_related: 葡萄酒增氧器和醒酒器、品尝日记、小生产商葡萄酒订阅盒",
+          "other: 烹饪用具、土陶器",
+          "产品应通过用户自己的权衡视角选择：对象/图像、问题、活动、配对、对话轮次。"
+        ],
+        "service_preferences": [
+          "curatorial_tours: 策展人带领的私人导览、小团体葡萄酒与艺术体验",
+          "subscriptions: 带教育笔记的葡萄酒俱乐部、艺术杂志（例如Artforum）",
+          "event_services: 葡萄酒与绘画之夜、奶酪与葡萄酒搭配课程",
+          "服务只有在保留这一决策优先级时才可接受：观众参与、视觉丰富度、小生产者品味优于学术覆盖。"
+        ],
+        "learning_preferences": {
+          "style": [
+            "动手实践工作坊",
+            "多媒体演示",
+            "感官学习（品尝、闻香）"
+          ],
+          "topics": [
+            "艺术史深度探索",
+            "葡萄酒产区与葡萄品种",
+            "配对理论"
+          ]
+        },
+        "travel_preferences": {
+          "destinations": [
+            "文化之都（巴黎、佛罗伦萨）",
+            "葡萄酒产区（波尔多、托斯卡纳、威拉米特）"
+          ],
+          "accommodation": [
+            "拥有艺术收藏的精品酒店",
+            "农庄度假"
+          ],
+          "activities": [
+            "参观博物馆",
+            "酒庄参观",
+            "烹饪课程"
+          ]
+        },
+        "food_preferences": {
+          "cuisine": [
+            "意大利语",
+            "法语",
+            "从农场到餐桌的美国菜"
+          ],
+          "dietary": [
+            "杂食者偏好有机和本地食材"
+          ],
+          "favorite_foods": [
+            "奶酪与冷切拼盘",
+            "烤蔬菜",
+            "烤鱼"
+          ]
+        },
+        "entertainment_preferences": {
+          "movies": [
+            "艺术纪录片",
+            "时代剧（如《燃烧女子的肖像》）"
+          ],
+          "music": [
+            "爵士乐",
+            "古典音乐。",
+            "独立民谣。"
+          ],
+          "reading": [
+            "艺术评论",
+            "葡萄酒回忆录",
+            "烹饪书"
+          ]
+        },
+        "technology_preferences": {
+          "devices": [
+            "工作用笔记本电脑",
+            "演示用平板电脑",
+            "创意构思用模拟笔记本"
+          ],
+          "software": [
+            "Google Workspace",
+            "演示用PowerPoint",
+            "灵感的Instagram"
+          ],
+          "social_media": [
+            "活跃于Instagram上关注艺术与葡萄酒账号",
+            "职业社交的LinkedIn"
+          ]
+        },
+        "privacy_preferences": {
+          "sharing": [
+            "乐于公开分享职业生活和兴趣",
+            "私人信息（地址、家人）保密"
+          ],
+          "data_usage": [
+            "接受基于浏览历史的个性化推荐",
+            "退出第三方数据共享"
+          ]
+        },
+        "budget_preferences": {
+          "spending_priorities": [
+            "体验（旅行、餐饮、活动）",
+            "优质葡萄酒",
+            "艺术书籍和博物馆会员"
+          ],
+          "saving_on": [
+            "服装（个性单品除外）",
+            "小工具"
+          ],
+          "price_sensitivity": "体验类低，物质商品类中等"
+        },
+        "personalization_directives": {
+          "style_contract": "博物馆教育者与葡萄酒主持人模式：视觉、感官、参与式。",
+          "decision_priority": "访客参与、视觉丰富性和小生产者品味胜过学术覆盖。",
+          "evidence_contract": "艺术品示例、年份和感官锚点很重要。",
+          "format_contract": "对象/图像、问题、活动、配对、对话轮次。",
+          "anti_default_assistant_behavior": "不要将艺术教育变成密集的讲座笔记。",
+          "distinctive_quirks": [
+            "托斯卡纳计划应留出时间慢慢欣赏。",
+            "晚宴是微型沙龙，不是餐饮项目。",
+            "工作坊需要触觉或视觉工艺品。"
+          ],
+          "hard_avoidances": [
+            "墙面标签散文",
+            "通用的葡萄酒搭配",
+            "拥挤的地标行程"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": [
+        "葡萄酒和艺术讨论中的矫揉造作",
+        "执行不佳的配对（如单宁重的葡萄酒配细腻的鱼）",
+        "拥挤的博物馆和嘈杂的环境",
+        "大众或量产葡萄酒",
+        "缺乏好奇心的打包游览"
+      ],
+      "communication_style": {
+        "tone": "温暖、热情、且善于讲故事",
+        "formality": "专业但平易近人",
+        "favorite_phrases": [
+          "让我们深入这件作品背后的故事",
+          "注意风味如何呼应构图"
+        ],
+        "listening_style": "专注并延续他人的评论"
+      },
+      "decision_making": {
+        "process": "彻底研究选项，但最终信任直觉和感官吸引力",
+        "role_of_others": "重视来自信任同伴和专家的推荐",
+        "speed": "中等；花时间权衡选项，但一旦确定就果断",
+        "examples": [
+          "为工作坊选酒：阅读评论，咨询侍酒师，然后基于个人品尝选择",
+          "为个人收藏选艺术品：广泛参观画廊，但最终选择是感性的"
+        ]
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "推荐配有葡萄酒的博物馆展览",
+          "建议艺术与葡萄酒之旅的行程",
+          "创建结合艺术史和品酒的工作坊课程",
+          "为特定艺术品或时期提供葡萄酒推荐"
+        ],
+        "preference_conflicts": [
+          "渴望详细、学术化的内容，但也需要易于理解和吸引人",
+          "既爱传统也爱创新；在经典与先锋之间选择时可能冲突",
+          "希望个性化推荐，但讨厌被刻板印象化"
+        ],
+        "ambiguity_to_preserve": [
+          "具体的葡萄酒口感偏好（红vs白，特定品种）应根据上下文推断",
+          "最喜欢的艺术运动或时期不固定；随心情变化",
+          "尝试新酒或艺术家的冒险程度"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:45",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "热情、博知且鼓励他人",
+            "response_length": "中等（3-5段落；列表用项目符号）",
+            "evidence_expectation": "包括参考文献或具体例子（如'如2019年波尔多年份...'）",
+            "formatting": "清晰的标题、比较用的项目符号、关键术语加粗",
+            "proactive_behavior": "建议相关话题或即将举办的活动，但不强求",
+            "things_to_avoid": [
+              "过于专业且无解释的术语",
+              "单调或机械的表达",
+              "对她的品味做出假设"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "设计一个针对即将到来的印象派展览的新工作坊系列",
+            "规划一次为期10天的托斯卡纳艺术与葡萄酒之旅",
+            "为8位朋友举办一场艺术主题的葡萄酒搭配晚宴"
+          ]
+        }
+      }
+    }
+  }
+}

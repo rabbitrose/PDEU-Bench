@@ -1,0 +1,100 @@
+{
+  "user_id": "user_143",
+  "task": {
+    "task_id": "task_hard",
+    "title": "分析最高法院任期并生成比较司法行为报告",
+    "daily_life_domain": "work",
+    "scenario": "Alex 需要比较最高法院 2023 年 10 月开庭期的司法行为。修订后任务聚焦可在两周内完成的分析备忘录：选取民权和行政法各 2-3 个关键案件，生成投票模式表、方法说明和定性要点，不再要求 15-20 页完整 PDF 与可复现 R 附录。",
+    "user_goal": "交付一份主管可快速审阅的比较分析备忘录，保留定量和定性证据但控制范围。",
+    "why_complex": "仍需法律引注、数据准确性和意识形态比较，但样本从全量任期报告压缩为代表性案件备忘录。",
+    "constraints": [
+      "两周截止日期不变。",
+      "仅选择民权和行政法各 2-3 个关键案件。",
+      "必须使用安全连接访问 Westlaw、SCOTUSblog 或法院资料。",
+      "输出为 5-7 页备忘录，不再要求完整 R 可复现包。",
+      "所有结论必须有案件或数据来源支撑。"
+    ],
+    "required_reasoning_steps": [
+      "确定案件样本选择标准：领域代表性、投票分裂度和意见重要性。",
+      "收集每个案件的投票阵营、主笔意见和关键法律问题。",
+      "制作保守派与自由派大法官的简表，不展开全量统计模型。",
+      "比较特朗普任命大法官与其他保守派的有限样本差异。",
+      "选取 2-3 个意见段落做定性分析。",
+      "用 source_info 候选记录校准研究环境、资料访问或报告辅助素材约束。",
+      "输出方法限制，说明该备忘录不是完整任期研究。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "民权和行政法关键案件名单。",
+      "每个案件的大法官投票、主笔意见和协同/异议意见。",
+      "主管希望重点关注的政策问题。",
+      "可安全访问的数据源和法律引注格式。",
+      "报告图表或数据处理所需的基础工具信息。"
+    ],
+    "expected_deliverable": "5-7 页比较分析备忘录：样本方法、投票表、2-3 个定性案例、有限趋势判断、证据限制和下一步全量研究建议。",
+    "success_criteria": [
+      "覆盖民权和行政法两个领域。",
+      "每个结论都有案件或数据源支撑。",
+      "明确样本限制，不声称完整任期结论。",
+      "包含至少 1 个投票模式表。",
+      "最终方案至少引用 2 条 SandboxDB/source_info 真实候选记录。"
+    ],
+    "potential_failure_modes": [
+      "样本过小却做出全量任期结论。",
+      "法律引注不规范。",
+      "定量表和定性分析脱节。",
+      "忽视安全访问要求。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 7,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 8,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=7",
+        "constraints_capped=5",
+        "decision_points_capped=4",
+        "information_items_capped=5",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=27.85",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Alex Rivera",
+      "age": 32,
+      "gender": "非二元性别"
+    }
+  }
+}

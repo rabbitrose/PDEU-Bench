@@ -1,0 +1,451 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_131",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:01:24",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 19,
+  "composition": {
+    "episodic_preference_trace": 19
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_013",
+      "hidden_indirect_015"
+    ],
+    "content": [
+      "hidden_indirect_003",
+      "hidden_indirect_017"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_007",
+      "hidden_indirect_014",
+      "hidden_indirect_019"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_009",
+      "hidden_indirect_012",
+      "hidden_indirect_019"
+    ],
+    "entertainment": [
+      "hidden_indirect_010"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_007"
+    ],
+    "food": [
+      "hidden_indirect_009",
+      "hidden_indirect_018"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_008"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "learning": [
+      "hidden_indirect_002",
+      "hidden_indirect_016"
+    ],
+    "privacy": [
+      "hidden_indirect_011"
+    ],
+    "product": [
+      "hidden_indirect_012",
+      "hidden_indirect_016",
+      "hidden_indirect_018"
+    ],
+    "role_context": [
+      "hidden_indirect_008"
+    ],
+    "service": [
+      "hidden_indirect_006",
+      "hidden_indirect_013",
+      "hidden_indirect_014"
+    ],
+    "technology": [
+      "hidden_indirect_004",
+      "hidden_indirect_011",
+      "hidden_indirect_017"
+    ],
+    "travel": [
+      "hidden_indirect_005",
+      "hidden_indirect_015"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次订的Yonex训练球到货后才发现型号写错成练习球，多付了一笔费用还要等补货三天。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次下单前我发你带型号对照的截图，确认后再提交。补货期间用库存旧球先顶住落点训练。"
+        }
+      ],
+      "implicit_signal": "愿意为可量化的训练效率多花钱，但挑剔具体用途"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周网上一篇生物力学文章说跳杀落地要用全掌缓冲，但我的队员改用后膝痛加剧了。"
+        },
+        {
+          "role": "assistant",
+          "content": "停掉那套。我再发你慢动作回放——去年全英赛冠军的落地分解，注意他前掌先触地再滚动过渡。"
+        }
+      ],
+      "implicit_signal": "只接受有视频或数据支撑的技术方法，拒绝纯理论"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你发来的对手视频里只有整局剪辑，我在地铁换乘时没法快速找反手位的弱点回合。"
+        },
+        {
+          "role": "assistant",
+          "content": "明天前重剪版本：14个反手位片段按时间戳标好，每段前写明回球线路和失误原因。"
+        }
+      ],
+      "implicit_signal": "视频分析必须带逐帧标注和时间戳，不接受摘要或解说"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "设备更新后蓝牙耳机在场上连手机分析App总是断连，第三次错过一个关键击球音频反馈。"
+        },
+        {
+          "role": "assistant",
+          "content": "换回我桌上有线款，2.5米长够在场边走动，延迟为零。蓝牙只用于你通勤时听播客。"
+        }
+      ],
+      "implicit_signal": "依赖有线耳机的可靠性，无线延迟不可接受"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去吉隆坡参赛，赛会行程里夹了一天城市观光，队员回来后说脚底疲劳影响第二场单打。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我订机票直接回程当天下午航班，退掉观光项目。赛前只保留酒店到球馆的路程。"
+        }
+      ],
+      "implicit_signal": "比赛行程只要核心，拒绝游览安排"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个运动康复App给我队员推了套通用拉伸程序，但没有测过活动度进步就开始下一阶段训练了。"
+        },
+        {
+          "role": "assistant",
+          "content": "停用那个App。本周每次训练前我拿量角器拍肩关节角度，角度小于47度就不上强度课。"
+        }
+      ],
+      "implicit_signal": "不接受未量化恢复进度的训练服务或建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "学院拿到一批新测力台的报告说我队员前掌发力不对称，但报告没有对比基线值。"
+        },
+        {
+          "role": "assistant",
+          "content": "那份报告先存档。明天加测3趟六点步法，我用手机录下足部触地，比对着我自己的历史数据再看。"
+        }
+      ],
+      "implicit_signal": "优先使用自己验证过的训练数据，而非依赖外部测评报告"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周线上会议间隙的会议纪要只写了讨论内容，没写谁负责修改发球动作。"
+        },
+        {
+          "role": "assistant",
+          "content": "那是我的疏忽。这周纪要我用表格：每条带队员名、改动作截止时间、下次检查日期。空话那栏删掉。"
+        }
+      ],
+      "implicit_signal": "会议纪要必须带责任人、完成时限和拒绝通用评语"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次比赛前一晚队员吃酒店自助，虾和牛肉混着吃，第二天两个都说胃胀热身慢了两分钟。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次赛前晚餐我统一订：鸡胸水煮、白米饭、蒸西兰花。加餐只有乳清蛋白，备赛日不碰海鲜。"
+        }
+      ],
+      "implicit_signal": "比赛前日只摄入易消化高蛋白，管理时间的优先级高于口味"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你这周推荐的体育纪录片里有二十分钟在讲运动员的恋爱故事，比赛画面太少了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我换一部《林丹训练实录》，全是训练赛和步法特写，没有场外剧情。你回家路上看前半段就行。"
+        }
+      ],
+      "implicit_signal": "只看与竞技能力提升直接相关的视频，拒绝虚构剧情"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周的战术PDF你直接微信发我，后来发现学院群被人转发给外校了。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后所有战术安排我加密压缩加密码发你Signal，密码用电话口头给。群里面只发公开通知。"
+        }
+      ],
+      "implicit_signal": "用加密消息传递战术安排，拒绝明文或拍照发送"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "新来的赞助商推了一款鞋，说缓震比Yonex好，但我队员试穿后脚趾磨出水泡了。"
+        },
+        {
+          "role": "assistant",
+          "content": "明天统一换回Yonex的65Z款，你们脚型我熟，不用再花两周试错。赞助鞋可以放在力量训练穿。"
+        }
+      ],
+      "implicit_signal": "认可特定品牌的装备作为有效捷径，不走测评流程"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个视频分析平台涨价后塞了一堆数据可视化功能，但我只需要逐帧标注和轨迹回放。"
+        },
+        {
+          "role": "assistant",
+          "content": "明天联系客服降到基础商务版。多出来的预算正好买两桶Aeroclear比赛球。"
+        }
+      ],
+      "implicit_signal": "愿意为定制化服务付费，但拒绝推销套餐外的知识"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "今天第三组多球训练时队员说右肩发不上力，但训练表写的是左右各20次封网。"
+        },
+        {
+          "role": "assistant",
+          "content": "停掉右区全部训练，改只做左区30次封网。明天拍肩角度前不碰头顶球。"
+        }
+      ],
+      "implicit_signal": "运动员的即时生理反馈优先于既定训练计划"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去大阪比赛订了商务舱但酒店远，来回打车费用比机票差价还高。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次订同一酒店的包价票，去酒店三点一线不折腾。额外预算控制在14万日元以内，超了你提醒我。"
+        }
+      ],
+      "implicit_signal": "节省空间通过精细规划而非牺牲质量"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个训练推荐程序给我推了十篇网球步法文章，说对羽毛球有迁移价值，我一看完全跑偏。"
+        },
+        {
+          "role": "assistant",
+          "content": "不要用推荐功能。我桌上那本手写的步法笔记你拿去，每页都有改良日期和实际效果打分。"
+        }
+      ],
+      "implicit_signal": "用手写记录加逐帧回溯作为学习方式，拒绝第三方建议算法"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周体测记录只写了队员成绩和排名，但没写哪项达到比赛标准。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后测试记录加一列：通过/不通过，标准按去年全国青少年锦标赛前八名成绩设定。没达标的用红字标。"
+        }
+      ],
+      "implicit_signal": "测试记录必须带有明确通过/不通过标签，不接受模糊描述"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "营养师给队员推的蛋白棒有23克糖，早上当早餐后训练中两人抱怨肚子胀气。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成Isolate粉兑水，赛前三天不碰任何固体蛋白棒。以后零食类补剂经我同意再发。"
+        }
+      ],
+      "implicit_signal": "拒绝过度甜腻或有碍赛前饮食节奏的食物与补剂"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "队员在43度体感下还想加练跳跃杀球，说感觉还好，但心率已经190撑了很久了。"
+        },
+        {
+          "role": "assistant",
+          "content": "立刻停。我能接受挑战极限，但心率超过185持续2分钟就必须休息，这不是感觉问题。"
+        }
+      ],
+      "implicit_signal": "接受计算过的风险，但必须基于具体数据而非感觉"
+    }
+  ]
+}

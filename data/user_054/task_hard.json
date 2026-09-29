@@ -1,0 +1,94 @@
+{
+  "user_id": "user_054",
+  "task": {
+    "task_id": "task_hard",
+    "title": "规划一次低风险、低折腾的短途出行",
+    "daily_life_domain": "travel",
+    "scenario": "Noah Keller 需要在本周工作日晚间规划一次低风险、低折腾的短途出行。修订后任务聚焦单晚可完成的微行程：一个首选目的地、一个天气备选、交通方式、预算和反馈点，不再要求完整住宿或多日旅行方案。",
+    "user_goal": "完成「规划一次低风险、低折腾的短途出行」，并给出满足约束、证据要求和截止时间的可执行结果。",
+    "why_complex": "仍需考虑预算、隐私、时间和可坚持性，但范围从旅行规划压缩为一次低风险练习。",
+    "constraints": [
+      "预算上限 185 本地货币单位。",
+      "时间窗口为本周工作日晚间。",
+      "不暴露精确住址或私人细节。",
+      "练习质量、反馈循环和可坚持性优先。"
+    ],
+    "required_reasoning_steps": [
+      "把出行目标转化为一次低风险练习，而不是完整度假。",
+      "筛选一个首选目的地和一个天气备选。",
+      "比较交通方式、总时长和预算。",
+      "安排简单活动和返回缓冲，避免信息过载。",
+      "设计 2-3 个反馈点用于下次复盘。",
+      "用 source_info 的交通、地点、天气和餐饮记录校准可行性。",
+      "输出今晚可完成的确认动作。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "两个候选目的地的距离、交通时间和费用。",
+      "本周工作日晚间天气。",
+      "返回时间和安全缓冲。",
+      "可选轻食或休息点。",
+      "反馈点模板。"
+    ],
+    "expected_deliverable": "短途出行练习卡：学习目标、首选目的地、天气备选、交通预算、今日练习、反馈点和下一次复盘。",
+    "success_criteria": [
+      "总预算不超过 185 本地货币单位。",
+      "包含首选和天气备选。",
+      "可在工作日晚间完成并安全返回。",
+      "最终方案至少引用 2 条 SandboxDB/source_info 真实候选记录。"
+    ],
+    "potential_failure_modes": [
+      "目的地过远导致工作日晚间压力过大。",
+      "反馈点过多变成信息负担。",
+      "忽视天气或返回交通。",
+      "加入太多活动偏离低折腾目标。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "navigation",
+        "travel_flights",
+        "weather",
+        "food"
+      ],
+      "domain_descriptions": {
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 7,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 7,
+      "human_verifier_estimation_basis": [
+        "domain=travel",
+        "source_domains_capped=4",
+        "reasoning_steps_capped=7",
+        "constraints_capped=5",
+        "decision_points_capped=3",
+        "information_items_capped=5",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=24.35",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Noah Keller",
+      "age": 55,
+      "gender": "非二元"
+    }
+  }
+}

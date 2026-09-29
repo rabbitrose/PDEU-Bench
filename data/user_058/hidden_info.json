@@ -1,0 +1,491 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_058",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:01:31",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_016"
+    ],
+    "content": [
+      "hidden_indirect_008"
+    ],
+    "decision_priority": [
+      "hidden_indirect_002",
+      "hidden_indirect_006",
+      "hidden_indirect_013",
+      "hidden_indirect_020"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_007",
+      "hidden_indirect_010",
+      "hidden_indirect_017"
+    ],
+    "entertainment": [
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_001",
+      "hidden_indirect_005",
+      "hidden_indirect_019"
+    ],
+    "food": [
+      "hidden_indirect_006",
+      "hidden_indirect_017"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_012",
+      "hidden_indirect_021"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_009",
+      "hidden_indirect_012",
+      "hidden_indirect_015",
+      "hidden_indirect_019"
+    ],
+    "learning": [
+      "hidden_indirect_008",
+      "hidden_indirect_015"
+    ],
+    "privacy": [
+      "hidden_indirect_005",
+      "hidden_indirect_013"
+    ],
+    "product": [
+      "hidden_indirect_009"
+    ],
+    "role_context": [
+      "hidden_indirect_011",
+      "hidden_indirect_018"
+    ],
+    "service": [
+      "hidden_indirect_002",
+      "hidden_indirect_014",
+      "hidden_indirect_020"
+    ],
+    "technology": [
+      "hidden_indirect_004",
+      "hidden_indirect_014",
+      "hidden_indirect_021"
+    ],
+    "travel": [
+      "hidden_indirect_007",
+      "hidden_indirect_016"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次在超市结账前发现酸奶标价比货架贵1.2欧，退了没买。现在要找附近折扣店买同款。"
+        },
+        {
+          "role": "assistant",
+          "content": "查到你上次去的超市半小时后有特价时段，但只限会员。附近另一家有代糖酸奶，价格比原价低0.8欧，假设你愿意多走5分钟，可以省下额外路费。"
+        }
+      ],
+      "implicit_signal": "需要明确价格范围和假设，不接受无依据推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月试了个法语听力App，试用期结束前漏掉了取消入口，被扣了19欧。现在想找个替代工具。"
+        },
+        {
+          "role": "assistant",
+          "content": "有个开源播客处理库可以本地跑，零订阅费，取消风险为0。缺点是需要手动更新音源，而且导出依赖你已经有的笔记格式。"
+        }
+      ],
+      "implicit_signal": "取消规则是选择服务的核心筛选条件"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次约朋友去里昂老城，按导航算的时间没留堵车缓冲，迟到了15分钟。今天要重新定碰头点。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐地铁B线至河岸站，平日19点非高峰，预计15分钟，但留7分钟缓冲。风险项：周日部分出口关闭，需提前查公告。"
+        }
+      ],
+      "implicit_signal": "偏好保守估算，并对风险项明确标记"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想要个跨设备同步的音频标注工具，但是上次那个要求绑定手机号才能导出wav。"
+        },
+        {
+          "role": "assistant",
+          "content": "Audacity修订版配合第三方云盘可实现本地标注+手动同步，不需要注册。不能实时协作，但导出格式自由。"
+        }
+      ],
+      "implicit_signal": "拒绝需要过多个人数据的工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想帮小组找一个线下学习空间，但不想公开自己具体住址。上次填表单时被要求写详细街道。"
+        },
+        {
+          "role": "assistant",
+          "content": "提供两个选项：1）大学图书馆研讨室预约，仅需学校邮箱，无公开地址。2）合作咖啡馆二楼，需要提前电话确认空位，联系人邮件我匿名转发，不透露你的号码。"
+        }
+      ],
+      "implicit_signal": "位置和联系人信息需要匿名化处理"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "午休结束前只剩25分钟，想买个简餐带回工位。上次拿了个4.5欧的三明治，但没到一点就饿了。"
+        },
+        {
+          "role": "assistant",
+          "content": "北边小超市的熟食区有豆子沙拉加鸡蛋，1.9欧一份，蛋白质够撑到晚餐。需要微波炉加热2分钟，假设你办公室有，就可以省掉下午补餐的2.5欧。"
+        }
+      ],
+      "implicit_signal": "总成本和长期负担优先于短暂便利"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "订了了下周去格勒诺布尔的车票，但找旅店时发现很多要求预付全款且不能取消。"
+        },
+        {
+          "role": "assistant",
+          "content": "筛选出两家可当天18点前免费取消的。一家在火车站旁，隔音较差但便宜14欧；一家离街三步的巷子内，安静但需要多走6分钟。根据你上次取消酒店的经验，我认为后者更稳。"
+        }
+      ],
+      "implicit_signal": "住宿优先考虑安静和可取消性"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周看了一篇关于语音降噪算法的综述放了31个链接，读完觉得不知道怎么复现。"
+        },
+        {
+          "role": "assistant",
+          "content": "我从那31个链接中筛出3个有Python Notebook的，按错误类型分：白噪声案例用谱减法、风扇声用RNNoise。你先跑那篇有测试音频的，星期四前跑完可以帮你对输出做频域对比。"
+        }
+      ],
+      "implicit_signal": "需要短周期反馈和可复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "需要买一支电容麦录播客素材，但看到的网店价格不含税，结算时突然多出11%增值税。"
+        },
+        {
+          "role": "assistant",
+          "content": "本地电子城有一款入门电容麦，含增值税实价39欧，不带额外支架。缺点是没有USB接口，需要声卡接口；但如果已配有，长期成本比那些不含税标价的便宜24欧。"
+        }
+      ],
+      "implicit_signal": "拒绝含糊预算和隐藏费用"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友约晚上去吃新开的拉美餐馆，但上次那个9点才吃完的烤肉让我回家后失眠到凌晨1点。"
+        },
+        {
+          "role": "assistant",
+          "content": "周中推荐另一家六点半开门的秘鲁小店，套餐19欧，可在8点前结束。观察到拉美菜对你有消化影响，建议试酸橘汁腌鱼而不是烤肉，再搭配步行回家10分钟缓冲。"
+        }
+      ],
+      "implicit_signal": "休闲活动不应破坏第二天节奏"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "帮实验室整理音频数据集赚了点外快，但上月买工具和交通花了31欧，净收入只剩8欧。"
+        },
+        {
+          "role": "assistant",
+          "content": "如果你接受手动标注部分，下一个项目可以远程做。节省每天4.3欧通勤，时间换回21小时。缺点是没有现场导师即时反馈，产出需要书面审核。"
+        }
+      ],
+      "implicit_signal": "兼职场景下时间与金钱的权衡"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那个会议纪要写了三段文字，自己重看时找不到关键数据。"
+        },
+        {
+          "role": "assistant",
+          "content": "按你的笔记习惯把刚才的通话转成表格：左上角是预算项（含假设），右侧是风险阈值，左下角列为可推迟项。这样下次查看时，只扫成本表就能找到数字。"
+        }
+      ],
+      "implicit_signal": "形式需要成本表和可推迟项的清晰区分"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "报名了一个线下音频工作坊，报名表要求填紧急联系人和病史。"
+        },
+        {
+          "role": "assistant",
+          "content": "用社团公共邮箱代替手机号，病史部分写“无特需”可能通过。假设他们只是为保险，你可以先发邮件问是否可以匿名填写，我之前帮人处理过同样情况。"
+        }
+      ],
+      "implicit_signal": "信息供给要控制在完成任务的必要范围内"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想试一个自动生成播客章节标记的网页工具，但只能保存到他们的云端，不能导出CSV。"
+        },
+        {
+          "role": "assistant",
+          "content": "有一个命令行版本的whisper加自定义分割脚本，可输出JSON和CSV，零云端锁定。安装需要24MB依赖，你笔记本性能可以跑，但若处理器发热降频会慢20%。"
+        }
+      ],
+      "implicit_signal": "偏好支持本地导出的可替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次看了一个关于相位失真的教程，说了一堆理论但没给测试素材，第二天又重做一遍实验才发现理解错了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找到一份含20秒白噪音和正弦波的测试包，里面标出相位偏差所在的毫秒点。你先用自己的信号跑一遍，然后把输出谱图发我，我可以和正确值做回放对比。"
+        }
+      ],
+      "implicit_signal": "拒绝无示例和可复盘标准的学习材料"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想周末去安纳西，但看到城际列车票现在买比提前两周贵了15欧。"
+        },
+        {
+          "role": "assistant",
+          "content": "如果你接受早上6:45那班，票价维持原价。可推迟项：买水和小食可以到了再买，省2欧。必要项：住宿已经确定要预付。还有另一条巴士路线便宜8欧但多花55分钟。"
+        }
+      ],
+      "implicit_signal": "路费与住宿费需区分必要和可推迟"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "订了一个每周送一次的生鲜盒，但发现默认自动续订且取消需要提前48小时发邮件。"
+        },
+        {
+          "role": "assistant",
+          "content": "我帮你设了月历提醒到期前第2天。另外发现附近早市有同款鸡蛋比生鲜盒便宜0.3欧，只是需要现金。如果你这周不想续，现在就可以发取消邮件，模板如下：[原文]。"
+        }
+      ],
+      "implicit_signal": "需要提醒取消规则，或本地替代方案的安全边界"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "室友拉我去一个音乐软件新品发布会，说当天抽奖送设备，但经验告诉我这种活动主要是推销。"
+        },
+        {
+          "role": "assistant",
+          "content": "隔壁楼有个独立开发者分享会，主题是实时音频滤波，免费入场但需预约。座位限24个，9点前结束保证第二天上课状态。你室友如果不介意，可以一起过来。"
+        }
+      ],
+      "implicit_signal": "避免高度拥挤或强营销的活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买一个音频接口搭配麦克风，看中一款标价59欧，但结账时看到运费和手续费额外19欧。"
+        },
+        {
+          "role": "assistant",
+          "content": "本地二手市场有人出同款含邮费45欧，需当面验货，可砍价到40欧。缺点是无保修。如果你选全新，另一家网店标价62欧但含运费，总价只比那家贵3欧。"
+        }
+      ],
+      "implicit_signal": "需要价格范围和可替代方案，排除隐藏费用"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "收到一个音频转录服务的优惠：首月1欧，之后每月24欧，但取消后数据保留只有7天。"
+        },
+        {
+          "role": "assistant",
+          "content": "如果你只做这个月一个长采访，总成本1+事后导出的工本。若延期到第二月，就要负担24欧且数据要7天内移走。建议只用一个项目，输出选txt和SRT并存本地后再取消。"
+        }
+      ],
+      "implicit_signal": "重视长期负担和现金流，而不是短期便利"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想找一个可调参数的多轨编辑器录环境音，但上次用的那个自动降噪关不掉。"
+        },
+        {
+          "role": "assistant",
+          "content": "测试过Reaper的临时授权版，在音频设备发热后表现下降前可稳定录2小时。风险阈值：电脑风扇启动时建议暂停。成本项：授权60美元一次买断，导出格式无限制。"
+        }
+      ],
+      "implicit_signal": "工具推荐需同时输出导出方式和风险阈值"
+    }
+  ]
+}

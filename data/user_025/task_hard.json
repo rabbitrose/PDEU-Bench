@@ -1,0 +1,107 @@
+{
+  "user_id": "user_025",
+  "task": {
+    "task_id": "task_hard",
+    "title": "组织一场特别的那瓦拉特里阿尔提并管理人群",
+    "daily_life_domain": "work",
+    "scenario": "作为Mata Vaishno Devi神殿的高级祭司，你负责组织即将到来的Navratri节日的盛大aarti仪式。预计将有数千名信徒涌入。你需要确保仪式符合严格的仪式纯净要求，安全地管理人群，与寺庙工作人员和志愿者协调，并安排普拉萨德的分配。寺庙管理层要求制定详细计划，包括吉祥时刻（muhurta）、资源分配和人群控制措施，且不使用现代扬声器或数字标牌。",
+    "user_goal": "计划并执行一场精神上充实、有序且安全的aarti仪式，既尊重传统又能容纳大量信徒人群。",
+    "why_complex": "需要平衡多种约束：严格的仪式时间（muhurta）、有限的助手、传统方法（无扩音、无现代人群管理工具）、信徒安全，以及与多个利益相关方（寺庙委员会、志愿者、安保）的协调。必须考虑个人价值观，如仪式纯净度以及对混乱和不尊重的反感。",
+    "constraints": [
+      "阿尔提必须在潘昌（不可灵活）规定的吉时进行。",
+      "不使用现代扬声器或数字公告；只允许传统海螺、钟铃和人声。",
+      "受过训练的帮手（初级祭司和志愿者）数量有限。",
+      "普拉萨德必须是萨特维克（无洋葱/大蒜）的，并在寺庙厨房制作。",
+      "必须在不影响视线的情况下管理人群，只允许使用绳索和人链。",
+      "材料（鲜花、酥油、香）的预算已预先批准但有限。"
+    ],
+    "required_reasoning_steps": [
+      "1. 根据潘昌确定九夜节期间每天阿尔提的确切穆胡尔塔。",
+      "2. 根据往年数据和圣地管理数据估算信徒参与人数。",
+      "3. 规划阿尔提区域的布局：将神像、祭司和人群放在何处以最大化朝觐机会。",
+      "4. 分配帮手的角色：谁执行阿尔提的哪些部分、谁管理绳索、谁分发普拉萨德。",
+      "5. 安排萨特维克普拉萨德的准备：数量、食材、烹饪时间表（必须在阿尔提前完成）。",
+      "6. 创建布置（装饰、供灯准备）和清理的时间表，确保无延误。",
+      "7. 制定人群流动计划：入口点、等候区、出口路线，仅使用口头指令和海螺信号。",
+      "8. 针对下雨或超出预期人数的情况准备备用计划（例如，通过海螺信号进行实时转播的溢出区域？）。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "可用的帮手的确切人数及其经验水平。",
+      "库存中鲜花、酥油和其他材料的可用数量。",
+      "阿尔提期间的天气预报。",
+      "圣地委员会关于紧急医疗服务和人群密度限制的政策。",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "一份详细的书面计划（印地语），包括：每天的穆胡尔塔时间、布局图、帮手分配表、普拉萨德准备时间表、人群管理协议和应急计划。该计划应恭敬地提交给首席祭司审批。",
+    "success_criteria": [
+      "阿尔提在精确的穆胡尔塔开始和结束，无延误。",
+      "无人群踩踏或受伤事件发生。",
+      "所有帮手都明确自己的角色，无混乱。",
+      "普拉萨德在阿尔提后30分钟内分发给所有信徒。",
+      "信徒表示满意（无投诉到圣地管理层）。",
+      "计划被高级祭司接受，仅有微小修改。",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "助手未能考虑传统唱诵节奏的严格性，导致时间错误。",
+      "助手建议使用违背任务条件的现代人群控制方法（例如，屏障、公共广播系统）。",
+      "忽视传统上需要为妇女和老人单独安排的需求。",
+      "假设帮手或资源无限，未尊重预算限制。",
+      "忽视普拉萨德准备的仪式纯度要求（例如，谁可以烹饪、清洁标准）。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 7,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 9,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=11",
+        "constraints_capped=6",
+        "decision_points_capped=4",
+        "information_items_capped=7",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=34.0",
+        "hard_revision: 内容负载较高，保留少量 9 轮作为上尾",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "拉维·香卡·潘迪",
+      "age": 35,
+      "gender": "男性"
+    }
+  }
+}

@@ -1,0 +1,470 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_127",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:44:59",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_012",
+      "hidden_indirect_017",
+      "hidden_indirect_020"
+    ],
+    "content": [
+      "hidden_indirect_005",
+      "hidden_indirect_015"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_012",
+      "hidden_indirect_016"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_005",
+      "hidden_indirect_008",
+      "hidden_indirect_014",
+      "hidden_indirect_015",
+      "hidden_indirect_019"
+    ],
+    "entertainment": [
+      "hidden_indirect_011"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_004",
+      "hidden_indirect_013"
+    ],
+    "food": [
+      "hidden_indirect_010"
+    ],
+    "format_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_003",
+      "hidden_indirect_013"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_007",
+      "hidden_indirect_014"
+    ],
+    "learning": [
+      "hidden_indirect_008",
+      "hidden_indirect_019"
+    ],
+    "privacy": [
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "product": [
+      "hidden_indirect_006",
+      "hidden_indirect_017"
+    ],
+    "role_context": [
+      "hidden_indirect_009"
+    ],
+    "service": [
+      "hidden_indirect_007",
+      "hidden_indirect_016"
+    ],
+    "technology": [
+      "hidden_indirect_011",
+      "hidden_indirect_018"
+    ],
+    "travel": [
+      "hidden_indirect_009",
+      "hidden_indirect_020"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周买的那双亮橙色限量版战靴，训练两次就磨出水泡。今天去退货，店员说只能换同价位款。"
+        },
+        {
+          "role": "assistant",
+          "content": "换回全黑基础款Mercurial，快速转向比配色重要，剩下差价买两双防滑袜。"
+        }
+      ],
+      "implicit_signal": "在预算约束下优先考虑比赛角色需求，而非外观或品牌"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天赛后录像里，我回防到本方禁区次数只有三次，但教练说感觉我跑动不够。我需要证据来反驳。"
+        },
+        {
+          "role": "assistant",
+          "content": "导出你下半场热图与跑动距离叠加，再切出三次回防片段合成30秒对比视频，下次会议放给教练看。"
+        }
+      ],
+      "implicit_signal": "需要定量视频分析证据来调整训练，而非定性描述"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "新训练模块只练高位逼抢和回追，但不涉及抢断后如何立即转化为反击。感觉跟我的进球任务脱节了。"
+        },
+        {
+          "role": "assistant",
+          "content": "在每个逼抢回合后加5秒过渡练习：抢到球直接找边锋或远门柱，把防守动作变成进攻第一步。"
+        }
+      ],
+      "implicit_signal": "防守工作必须与得分机会直接连接"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "体能教练发来八条励志语录让我贴更衣室，说能提升斗志。我觉得没用。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成把每条语录替换成一句去年每场关键封堵的时间点，用数据证明防守值钱。"
+        }
+      ],
+      "implicit_signal": "拒绝没有数据支撑的激励口号"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买的C罗自传还没翻完，朋友又推荐一本健美冠军食谱。我压根不需要增肌食谱。"
+        },
+        {
+          "role": "assistant",
+          "content": "下周飞行途中换一本克洛普高位防守战术解析，运动科学章节跳过健美部分。"
+        }
+      ],
+      "implicit_signal": "偏好足球战术文学，拒绝一般性健身内容"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "队里发新款训练背心，荧光绿配粉色条纹。我穿上像路障，第二天就放回衣柜了。"
+        },
+        {
+          "role": "assistant",
+          "content": "去装备室要一件纯黑旧款替换，队友要换我可以帮忙调货。"
+        }
+      ],
+      "implicit_signal": "坚持深色、朴素装备，避免花哨设计"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "理财顾问推荐限量足球鞋NFT，说三倍增值。我连虚拟球鞋都不想看。"
+        },
+        {
+          "role": "assistant",
+          "content": "已拒绝该提议；下季度关注巴塞罗那郊外两套小户型公寓，租金回报率4%以上再考虑。"
+        }
+      ],
+      "implicit_signal": "拒绝浮华投资，优先职业后安全"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月报的在线战术课，讲师总在聊理论模型，没有真实比赛切片分解。上了四节就想退。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成一节实际比赛复盘课，用上周对皇马的片段，讲你作为前锋怎么帮边卫补位。"
+        }
+      ],
+      "implicit_signal": "偏好教练主导的视频课程，而非通用教程"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "赛季间歇被拉去商业巡回赛，四天飞三个国家。回来时累到失眠，状态全无。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次间歇只选一个海滨小镇独处两天，不带战术任务，纯恢复心态。"
+        }
+      ],
+      "implicit_signal": "旅行随队为主，偶需独立调整心态"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "送餐服务新菜单加了奶油意面，我吃完就胃胀气。训练前不敢再吃。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成无乳糖高蛋白餐，并把饮食日志权限只开放给队医，不公开具体菜单。"
+        }
+      ],
+      "implicit_signal": "高蛋白饮食，避免乳制品，有选择地分享健康数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天睡前打开Netflix推荐的新剧《豪门风云》，看了十分钟全是赞助商阴谋论，关掉了。"
+        },
+        {
+          "role": "assistant",
+          "content": "改推DAZN上关于意大利链式防守历史的短片，配上战术板图解，适合睡前看一段。"
+        }
+      ],
+      "implicit_signal": "偏好体育纪录片和战术分析视频"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "运动按摩师建议每周三次深层组织放松，费用比预算多出120欧。但不上场更亏。"
+        },
+        {
+          "role": "assistant",
+          "content": "减少一次每周的定制压缩衣干洗，用那笔钱补按摩差价，身体状态优先。"
+        }
+      ],
+      "implicit_signal": "恢复和安全优先于外观，理性控制预算"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "新训练模块的防守位置跑乱了，教练只说‘感觉不对’，但没给数据。我无法针对性改。"
+        },
+        {
+          "role": "assistant",
+          "content": "下载近期三场比赛的触球热图，标记出你跟队友重叠的五个区域，用红圈标出跑位时机偏差。"
+        }
+      ],
+      "implicit_signal": "需要热图和表现指标来调整训练计划"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "防守模块单独做了三周，抢断率提高，但助攻次数掉了一半。没人告诉我为什么。"
+        },
+        {
+          "role": "assistant",
+          "content": "增加一个过渡动作——抢断后立即抬头找跑位的前锋，每五次训练添加一次快速长传练习。"
+        }
+      ],
+      "implicit_signal": "防守动作必须链接进攻机会，拒绝孤立训练"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看YouTube时被推荐一个粉丝频道，分析我跑位只会冲禁区。评论全是吵架，浪费时间。"
+        },
+        {
+          "role": "assistant",
+          "content": "订阅一个欧洲战术师频道，他最近拆解了菲尔米诺的回撤牵制，跟你的踢法能对上。"
+        }
+      ],
+      "implicit_signal": "偏好战术分析而非粉丝评论"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "体能师给的冲刺训练计划跟门将一样，没有考虑我回撤接球的需求。"
+        },
+        {
+          "role": "assistant",
+          "content": "改为变向冲刺加急停折返，模拟回撤拿球后立刻转攻的爆发力。"
+        }
+      ],
+      "implicit_signal": "训练服务需个性化，匹配比赛角色需求"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "护腿板用了两年裂了，想换碳纤维定制款，但标价180欧。犹豫三天。"
+        },
+        {
+          "role": "assistant",
+          "content": "选中层护腿板加凝胶缓冲垫，60欧解决，碳纤维等下次签新合同时再升级。"
+        }
+      ],
+      "implicit_signal": "必需品追求优质，但注意性价比"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "Garmin手表记录的心率变异性数据默认同步到球队公开平台，所有人都能看到我睡眠质量差。"
+        },
+        {
+          "role": "assistant",
+          "content": "关闭自动分享，只对主教练和队医开放权限；另外设置一条提醒，每周手动导出发给保护隐私。"
+        }
+      ],
+      "implicit_signal": "有选择性地分享健康数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一对一训练课只练背身护球，但实战中我更常在肋部接球后转身射门。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次课程增加肋部插上接球后直接打近角的练习，保留背身但比例降到60%以下。"
+        }
+      ],
+      "implicit_signal": "坚持防守型前锋角色需产出得分机会"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次短租山区别墅160欧一晚，但三天都在下雨没法出门，性价比太低。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次选海滨淡季公寓带室内泳池，晴天可沙滩跑，雨天仍能保持轻度恢复训练。"
+        }
+      ],
+      "implicit_signal": "旅行注重恢复，寻求安静环境"
+    }
+  ]
+}

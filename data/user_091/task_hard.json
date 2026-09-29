@@ -1,0 +1,105 @@
+{
+  "user_id": "user_091",
+  "task": {
+    "task_id": "task_hard",
+    "title": "优化基因组变异分析管道的测试自动化",
+    "daily_life_domain": "work",
+    "scenario": "Alex的生物科技初创公司正在AWS上推出一个新的基因组变异分析管道。遗传学家需要高置信度的变异调用, 软件必须处理大规模基因组数据集。Alex负责设计测试自动化策略。该管道使用GATK、BWA和自定义脚本等工具。团队规模小(5名工程师、2名遗传学家), 截止日期为6周后。Alex可以使用Jenkins和GitHub Actions进行CI/CD, 并且倾向于使用Playwright进行Web UI测试, 但管道主要基于CLI。遗传学家非工程师, 需要清晰的验证报告。",
+    "user_goal": "制定一个全面的测试自动化计划, 确保变异分析管道的数据完整性、性能和可重复性, 使遗传学家无需手动验证即可信任输出。",
+    "why_complex": "需要多步骤规划, 涉及选择适当的测试类型(单元、集成、性能、数据验证)、设计测试数据(合成基因组)、设置CI/CD集成、与遗传学家协调验收标准, 以及在6周时间线内平衡全面性。",
+    "constraints": [
+      "截止日期: 6周",
+      "额外AWS资源预算有限(必须优化成本)",
+      "遗传学家编程知识有限;报告必须人类可读",
+      "管道使用存在版本问题的开源生物信息学工具"
+    ],
+    "required_reasoning_steps": [
+      "1. 分析管道组件(比对、变异调用、过滤、注释)以识别故障点。",
+      "2. 确定所需测试类型: 模块的单元测试、数据流的集成测试、可扩展性的性能测试, 以及针对已知变异数据集(如NA12878)的验证测试。",
+      "3. 选择工具: 使用pytest进行单元/集成测试, snakemake或nextflow进行工作流验证, 自定义脚本进行数据完整性检查。",
+      "4. 设计测试数据策略: 合成基因组(如使用NEAT)和真实样本子集, 以最小化成本和时间。",
+      "5. 规划CI/CD集成: 在GitHub Actions中设置并行测试阶段, 为单元、集成和性能分别设置独立环境。",
+      "6. 与遗传学家合作定义验收标准(如变异调用的灵敏度/特异性阈值)。",
+      "7. 创建报告模板(HTML/PDF), 可视化测试结果和变异的重合度。",
+      "8. 迭代: 原型一个最小计划, 获取遗传学家反馈, 在6周内完善。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "确切的管道版本和工具版本(例如GATK v4.2.0.0)。",
+      "每次运行的典型输入数据大小和样本数。",
+      "遗传学家可接受的变异调用错误率(例如99.5%灵敏度)。",
+      "现有测试数据的可用性和质量。",
+      "CI/CD基础设施限制(如GitHub Actions最大运行时间)。",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "一份详细的测试计划文档, 包括: 测试类型和范围、工具选择理由、测试数据生成方法、CI/CD管道图、报告模板原型以及带有里程碑的时间线。",
+    "success_criteria": [
+      "计划可行, 并由工程和基因组学团队批准。",
+      "所有关键管道阶段在6周内具有自动化测试。",
+      "对于典型数据集, 测试套件运行时间不超过2小时。",
+      "遗传学家无需工程帮助即可解释报告。",
+      "测试执行成本不超过管道计算预算的30%。",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "过于复杂的计划无法在6周内实施。",
+      "与遗传学家协作不足导致验证标准不匹配。",
+      "测试数据不能代表真实变异, 导致虚假信心。",
+      "忽略性能测试, 导致生产中的可扩展性问题。",
+      "使用与管道Docker容器不兼容的工具。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 7,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 9,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=11",
+        "constraints_capped=5",
+        "decision_points_capped=3",
+        "information_items_capped=7",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=32.2",
+        "hard_revision: 内容负载较高，保留少量 9 轮作为上尾",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Alex Chen",
+      "age": 32,
+      "gender": "男性"
+    }
+  }
+}

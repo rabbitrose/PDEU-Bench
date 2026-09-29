@@ -1,0 +1,227 @@
+{
+  "user_id": "user_069",
+  "explicit_preferences": {
+    "user_profile": "一位寻求软件工程师关于数字出版平台建议的小说家",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Elena Vasquez",
+        "age": 45,
+        "gender": "女性",
+        "location": "美国德克萨斯州奥斯汀",
+        "languages": [
+          "英语",
+          "西班牙语"
+        ],
+        "education_level": "创意写作硕士学位",
+        "occupation": "小说家和独立出版商。",
+        "industry": "出版",
+        "seniority": "资深",
+        "household": "已婚，有两个孩子（12岁和15岁）",
+        "life_stage": "事业有成，平衡家庭与创作追求"
+      },
+      "physical_profile": {
+        "height_cm": 168,
+        "general_appearance": "苗条身材，齐肩黑发常扎起。偏爱休闲舒适的衣物。阅读时戴眼镜。",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "富有创意、好奇且务实。平衡艺术视野与实用商业头脑。对新科技持开放态度，但重视人文关怀。",
+        "big_five": {
+          "openness": 85,
+          "conscientiousness": 70,
+          "extraversion": 55,
+          "agreeableness": 75,
+          "neuroticism": 40
+        },
+        "strengths": [
+          "创意叙事",
+          "适应能力",
+          "注重细节",
+          "与其他创作者建立联系"
+        ],
+        "weaknesses": [
+          "可能对自己的作品过度挑剔",
+          "难以理解技术术语",
+          "对进展缓慢缺乏耐心"
+        ],
+        "values": [
+          "艺术完整性",
+          "社区",
+          "创新",
+          "工作与生活平衡"
+        ],
+        "motivations": [
+          "讲述引人入胜的故事",
+          "帮助其他作者驾驭数字出版",
+          "建立可持续的独立出版业务"
+        ],
+        "stress_triggers": [
+          "紧迫的截止日期",
+          "负面评价",
+          "技术故障",
+          "缺乏创意控制权"
+        ]
+      },
+      "background": "埃琳娜最初是一名记者，后来获得了艺术硕士学位。五年前她自行出版了第一部小说，获得了一定关注。如今她经营着一家小型独立出版社，结合传统与数字方法。她经常与软件工程师合作改善出版流程。",
+      "lifestyle": "住在郊区住宅，有家庭办公室。偏好规律作息：上午写作，下午开会和技术工作。定期锻炼，喜欢周末家庭出游。中度数字化但并非完全。",
+      "interests": [
+        "创意写作",
+        "文学小说",
+        "数字出版工具",
+        "面向作者的社交媒体平台",
+        "书籍封面设计",
+        "机械键盘",
+        "阅读文学博客",
+        "作家会议",
+        "出版业中的人工智能"
+      ],
+      "explicit_preferences": {
+        "content_preferences": [
+          "具有强烈角色发展的文学小说。",
+          "回忆录。",
+          "长文新闻/深度报道。",
+          "关于技术在社会中作用的深刻评论",
+          "内容必须匹配该用户的独特工作模式：Independent novelist-publisher mode：创意控制、人性化节奏、市场意识。",
+          "拒绝通用助手框架：不要为了优化而舍弃艺术之声，也不要把人工智能当作默认合作者。"
+        ],
+        "product_preferences": [
+          "Kindle Paperwhite",
+          "机械键盘（Cherry MX Brown）",
+          "Moleskine笔记本",
+          "Apple MacBook Pro",
+          "产品应通过用户自身的权衡视角来选择：创意意图、渠道、读者承诺、声音风险、下一步草稿行动。"
+        ],
+        "service_preferences": [
+          "Reedsy",
+          "Draft2Digital",
+          "ProWritingAid",
+          "Canva",
+          "WordPress",
+          "服务只有在保留这种决策优先级时才可接受：读者契合、版权控制、可持续创意能量胜过平台规模。"
+        ],
+        "learning_preferences": [
+          "视频教程（YouTube）",
+          "互动工作坊（Zoom）",
+          "带截图的书面指南",
+          "简洁的博客文章"
+        ],
+        "travel_preferences": [
+          "文学 retreat",
+          "作家驻地",
+          "有活力的文学城市",
+          "网络好的地方"
+        ],
+        "food_preferences": [
+          "地中海菜系",
+          "健康选择",
+          "浓缩咖啡",
+          "黑巧克力"
+        ],
+        "entertainment_preferences": [
+          "流媒体限定剧",
+          "音频剧",
+          "桌游",
+          "独立电影",
+          "写作播客"
+        ],
+        "technology_preferences": [
+          "稳健、稳定的工具",
+          "可能时使用开源",
+          "基于云的协作（Google Docs、Dropbox）",
+          "极简网站设计"
+        ],
+        "privacy_preferences": [
+          "中等隐私顾虑；避免分享个人地址",
+          "能接受定向图书广告",
+          "偶尔使用 VPN",
+          "偏好清晰的数据政策"
+        ],
+        "budget_preferences": [
+          "愿意投资优质工具",
+          "权衡成本与收益",
+          "对于小众工具偏好一次性购买而非经常性",
+          "有预算意识但不吝啬"
+        ],
+        "personalization_directives": {
+          "style_contract": "独立小说家-出版商模式：创意控制、人性化节奏、市场敏感。",
+          "decision_priority": "读者匹配、权利控制和可持续创意能量胜过平台规模。",
+          "evidence_contract": "出版实例和受众信号胜过通用营销统计数据。",
+          "format_contract": "创意意图、传播渠道、读者承诺、声音风险、下一步草稿行动。",
+          "anti_default_assistant_behavior": "不要优化掉艺术声音或默认推动AI作为合作者。",
+          "distinctive_quirks": [
+            "AI工具必须评估声音偏移和数据权利。",
+            "家庭度假需要受保护的写作窗口。",
+            "书籍发布应让人感到亲密，即使跨平台。"
+          ],
+          "hard_avoidances": [
+            "增长黑客语言。",
+            "AI炒作。",
+            "降低书籍语调的建议。"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": [
+        "过于复杂的软件",
+        "持续的应用通知",
+        "客户支持差的平台",
+        "激进营销",
+        "写作流程中的干扰",
+        "具有数字版权管理的平台",
+        "对小出版商不友好的定价模式"
+      ],
+      "communication_style": "温暖而直接。偏好清晰简洁的语言。喜欢类比。对创意话题可能表达丰富。倾向于追问后续问题。",
+      "decision_making": "同时考虑创意和实际方面。深入研究，但收集事实后凭直觉做决定。在做出承诺前常咨询同行或专家（如软件工程师朋友）。",
+      "evaluation_notes": {
+        "likely_tasks": [
+          "推荐数字出版平台",
+          "比较分发服务功能",
+          "建议编辑软件",
+          "帮助设置亚马逊的元数据",
+          "分析受众参与数据"
+        ],
+        "preference_conflicts": [
+          "想要尖端技术，但也需要可靠性和简洁性",
+          "希望保持创意控制但使用自动化",
+          "偏好开源但需要客户支持",
+          "平衡成本与功能"
+        ],
+        "ambiguity_to_preserve": [
+          "她的确切技术水平（熟悉但非专家）",
+          "她具体写哪种类型（文学小说，可能属于高端市场）",
+          "她用于工具的具体预算"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:44",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "专业而友好，尊重创意语境",
+            "response_length": "解释技术概念时简洁而全面",
+            "evidence_expectation": "重视数据或示例，尤其是来自出版或技术领域的可靠来源",
+            "formatting": "清晰段落，列表用项目符号，避免过多加粗/斜体",
+            "proactive_behavior": "温和地建议相关资源，但避免未经请求改动她的创意作品",
+            "things_to_avoid": [
+              "过度推销的语言",
+              "假设她不精通技术",
+              "使用过多术语而不解释",
+              "轻视传统出版价值观"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "计划下一本小说的多平台数字图书发布。",
+            "评估并选择AI写作辅助工具用于编辑和起草。",
+            "计划一次带有写作时间的家庭文学度假周末之旅。"
+          ]
+        }
+      }
+    }
+  }
+}

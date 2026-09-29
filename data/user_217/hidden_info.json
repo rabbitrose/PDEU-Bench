@@ -1,0 +1,470 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_217",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:17:03",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_002",
+      "hidden_indirect_011",
+      "hidden_indirect_019"
+    ],
+    "content": [
+      "hidden_indirect_010"
+    ],
+    "decision_priority": [
+      "hidden_indirect_002",
+      "hidden_indirect_003",
+      "hidden_indirect_012",
+      "hidden_indirect_019"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_007",
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "entertainment": [
+      "hidden_indirect_016"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_001",
+      "hidden_indirect_004",
+      "hidden_indirect_010"
+    ],
+    "food": [
+      "hidden_indirect_006",
+      "hidden_indirect_015"
+    ],
+    "format_contract": [
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_013"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_007",
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_014",
+      "hidden_indirect_016",
+      "hidden_indirect_018",
+      "hidden_indirect_020"
+    ],
+    "learning": [
+      "hidden_indirect_004",
+      "hidden_indirect_013"
+    ],
+    "privacy": [
+      "hidden_indirect_017",
+      "hidden_indirect_018"
+    ],
+    "product": [
+      "hidden_indirect_011"
+    ],
+    "role_context": [
+      "hidden_indirect_001"
+    ],
+    "service": [
+      "hidden_indirect_003",
+      "hidden_indirect_012"
+    ],
+    "technology": [
+      "hidden_indirect_017"
+    ],
+    "travel": [
+      "hidden_indirect_005",
+      "hidden_indirect_014"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次在候机区才发现预约是周三但实际是周四闭馆，白跑一趟。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次我把确认邮件里的日期单独拎出来，标出最近三个开放日，出发当天再额外提醒你一次。"
+        }
+      ],
+      "implicit_signal": "作为旅行者，需要可靠的时间和开放信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次选了便宜的本地游套餐，结果到现场被要求收每人$15的导览费，多付了一笔费用。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次看全包价，Westport历史学会的官方导览$45全部包含，没有额外收费。我核实过清单。"
+        }
+      ],
+      "implicit_signal": "决策时优先排除隐性成本，即使前期投入少"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "预约确认前发现上次那家租车行需要额外付保险费，取消还要手续费。"
+        },
+        {
+          "role": "assistant",
+          "content": "那选一家在预约确认前就显示总价并且免费取消的，比如这家$60/天全险，取消免费到24小时前。"
+        }
+      ],
+      "implicit_signal": "服务选择考虑便利和可靠，取消规则明确"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "设备更新后下载的电子书版本太旧，参考的学习资料已经过时，练习都不对。"
+        },
+        {
+          "role": "assistant",
+          "content": "那先查出版日期，我找到一本今年修订的《西港历史指南》，西港图书馆可在线借阅，标明了版本号和更新日期。"
+        }
+      ],
+      "implicit_signal": "学习资源需要最新版本和可靠来源"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "地铁换乘时才发现去灯塔的公交是整点一班，错过了要再等一小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次提前查好公交时刻表，标注最优换乘点。你从Flinders Street到Westport码头，8:15的车，9:00到，预留15分钟步行。"
+        }
+      ],
+      "implicit_signal": "行程需要具体交通时间，预留缓冲"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次拿到的纸质收据上有一家餐厅优惠，按地址去却发现已经关门了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次推荐前先电话确认营业，并且给两个备选。主选是‘海港厨房’，明天11-14点营业；备选是街角烘焙店，可外带。"
+        }
+      ],
+      "implicit_signal": "餐饮推荐需要备选和注意事项"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次照着旧版清单上的景点走，结果好几个已经关闭或改址，白跑了很多路。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次用游客中心最新纸质地图，所有标记点都是今年核查过的，不用任何app。我附上一张标注了当前开放状态的离线副本。"
+        }
+      ],
+      "implicit_signal": "避免需要下载多个应用，偏好直接可用资源"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个项目看板网站要注册才能看详细内容，我用邮箱注册后一直收到广告邮件。"
+        },
+        {
+          "role": "assistant",
+          "content": "那用西港公共图书馆的免费办公软件，不需要注册，直接看或者下载PDF。我已经把相关的看板内容导出成离线副本发你。"
+        }
+      ],
+      "implicit_signal": "拒绝使用强迫注册才能查看信息的服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次按旧版清单推荐的时间去博物馆，结果正好遇到学校团体，每个展品前都挤满了人。"
+        },
+        {
+          "role": "assistant",
+          "content": "那调整到周三上午10点刚开门时，或者下午14点后人少。我查了当天没有团体预约，可以安静参观。"
+        }
+      ],
+      "implicit_signal": "偏好非拥挤时段，避免长时间等待"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那本指南上说灯塔在1890年重建，但关键信息只有广告页提到，正文没有说明来源。"
+        },
+        {
+          "role": "assistant",
+          "content": "我查了西港档案记录，灯塔实际在1901年重建，原始记录副本编号RG-21，我截图发你。广告页的信息有误。"
+        }
+      ],
+      "implicit_signal": "需要内容附带出处和核实过程"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前买的那个电子导览器，系统版本没法回退，更新后卡顿严重，基本用不了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次用纸质导览图和语音拨号服务，不需要安装任何软件。费用$15，包含所有展品编号，永久有效。"
+        }
+      ],
+      "implicit_signal": "产品选择要考虑长期成本和升级路径"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次预约的导游提前两天生病，但客服说不能换人只能退款，我的计划全乱了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那选一个提供备选导游的服务商。西港当地有一位退休教师可以当日确认，如果他有变动，历史学会也能立刻协调其他志愿者。"
+        }
+      ],
+      "implicit_signal": "服务需要可以临时调整，灵活可靠"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "设备发热后表现下降，在线学习平台视频卡顿，练习也无法正常提交。"
+        },
+        {
+          "role": "assistant",
+          "content": "那改选离线可用的学习包。西港图书馆提供的学习手册含练习题和答案，可以先下载到手机，不需要联网。文字版约53页。"
+        }
+      ],
+      "implicit_signal": "学习需要短周期反馈和实操"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次跟着推荐的游客路线走了三个小时，全是纪念品店和网红打卡点，没什么历史内容。"
+        },
+        {
+          "role": "assistant",
+          "content": "那就走历史学会推荐的本地人步行路线，全程1.2公里，6块信息牌，没有商铺，终点是旧码头遗址。"
+        }
+      ],
+      "implicit_signal": "避开游客化路线，注重真实体验"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次为了尝网红海鲜店排队40分钟，结果下午的参观迟到了半小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "那明天午餐选11:00去‘港口小馆’，不用等位，人均$15，吃完走到灯塔只要8分钟，时间很宽裕。"
+        }
+      ],
+      "implicit_signal": "饮食选择考虑预算和当天安排"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去了老城区的开放日，结果全是推销本地旅游产品的摊位，没什么文化内容。"
+        },
+        {
+          "role": "assistant",
+          "content": "那改去西港历史学会的月度讲座，本周二19:00，讲早期航海故事，免费，座位只有32个，现在还有位置。"
+        }
+      ],
+      "implicit_signal": "休闲活动避免拥挤和商业推销"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次用的行程规划app要求读取通讯录才能同步，我不想授权，结果很多功能不能用。"
+        },
+        {
+          "role": "assistant",
+          "content": "那用纯文本清单和地图标记，不同步任何个人信息。我把所有点坐标提前存到手机地图离线版，不需要账户。"
+        }
+      ],
+      "implicit_signal": "技术工具重视数据自主和隐私"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个免费地图虽然好，但领取需要在登记簿上写姓名和出生日期，我不想留。"
+        },
+        {
+          "role": "assistant",
+          "content": "那用图书馆的公开参考地图，直接在架子上拿，不用登记。我已经在游客中心拿了一份纸质版，你到了找我拿就行。"
+        }
+      ],
+      "implicit_signal": "避免提供不必要的个人信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次为了省$5选了没有免费取消的旅馆，后来行程变动损失了$21。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次订房只看免费取消选项，西港海景旅馆一晚$75，入住前48小时免费取消。我把取消条款截屏发你。"
+        }
+      ],
+      "implicit_signal": "预算敏感时选择替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那个景点电子票必须用特定app打开，我手机存储不够装，差点进不去。"
+        },
+        {
+          "role": "assistant",
+          "content": "那直接要纸质票，游客中心可以用现金购买，不用装任何app。我把地址和柜台开放时间发你。"
+        }
+      ],
+      "implicit_signal": "避免需要安装多个应用的服务"
+    }
+  ]
+}

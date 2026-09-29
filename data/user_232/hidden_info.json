@@ -1,0 +1,470 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_232",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:12:53",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_003",
+      "hidden_indirect_007",
+      "hidden_indirect_009",
+      "hidden_indirect_014",
+      "hidden_indirect_020"
+    ],
+    "content": [
+      "hidden_indirect_005",
+      "hidden_indirect_015"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_007",
+      "hidden_indirect_016"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_008",
+      "hidden_indirect_012",
+      "hidden_indirect_017",
+      "hidden_indirect_020"
+    ],
+    "entertainment": [
+      "hidden_indirect_010"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_011",
+      "hidden_indirect_013",
+      "hidden_indirect_019"
+    ],
+    "food": [
+      "hidden_indirect_009"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_017"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_014",
+      "hidden_indirect_018"
+    ],
+    "learning": [
+      "hidden_indirect_011"
+    ],
+    "privacy": [
+      "hidden_indirect_006",
+      "hidden_indirect_010",
+      "hidden_indirect_019"
+    ],
+    "product": [
+      "hidden_indirect_001",
+      "hidden_indirect_016"
+    ],
+    "role_context": [
+      "hidden_indirect_015"
+    ],
+    "service": [
+      "hidden_indirect_002",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "technology": [
+      "hidden_indirect_012"
+    ],
+    "travel": [
+      "hidden_indirect_008"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买水管密封胶，图便宜选了特价款，结果一周就裂了，拆掉重做花了双倍时间。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次选标明30天可退换的硅胶管，单价高15元，但包装写明失效包退。先列型号和退换流程给你确认。"
+        }
+      ],
+      "implicit_signal": "在维护用品上优先选择可退换选项而非价格最低的方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上月订了上门疏通服务，页面写着随时取消，结果打电话取消时说要提前24小时，多扣了五十。"
+        },
+        {
+          "role": "assistant",
+          "content": "已筛选三家取消规则写在订单页的服务商，其中两家支持在线取消不扣费。列表里标注了每家的取消窗口和扣费触发条件。"
+        }
+      ],
+      "implicit_signal": "需要服务取消规则明确且无需额外沟通"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你给的清单只有产品名和价格，我回家路上没法判断哪个先买，最后多买了不急用的零件。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次用目标/约束/方案表格式：第一栏是必须本周换的配件，第二栏是可等到下月的耗材，每项附预算档位。先确认约束再列方案。"
+        }
+      ],
+      "implicit_signal": "交付格式必须包含目标和约束表，预算需区分必须与可推迟"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "活动散场后想立刻下个配件单，结果发现地址和上次一样还要再填一遍，直接关页面了。"
+        },
+        {
+          "role": "assistant",
+          "content": "已从你上次的订单记录里提取收货信息，预填贴在这里。你只需确认门牌号是否变动，不核对部分默认沿用。"
+        }
+      ],
+      "implicit_signal": "厌恶重复录入信息，拒绝空泛鼓励"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你看推荐那款水龙头说'口碑好'，结果买家秀里有人说接口不匹配，我白跑一趟五金店。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次三款都标注了接口型号与台面厚度的实测依据，其中一款的差评集中在密封圈过薄，已标出未知兼容风险。"
+        }
+      ],
+      "implicit_signal": "需要结论说明依据和不确定点，不接受通用推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次注册一个家修平台要绑定手机和家庭地址才能看报价，我那套房子的信息就漏了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只列无需注册即可获取价格的服务商。需要实名预约的平台已单独标记，并提供匿名电话临时的替代方案。"
+        }
+      ],
+      "implicit_signal": "拒绝忽略维护成本，对个人信息保持谨慎"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "换窗密封条，想试试新出的自粘款宣传了隔音好，结果第二周就翘边，还得用回传统压条。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐传统压条型号A，五年质保且替换件易买。自粘款预算低30元但年故障率高出两倍。若你坚持要试，给一个可回收方案。"
+        }
+      ],
+      "implicit_signal": "可靠性优先于新奇功能，超预算需给出替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去郊区建材市场，按导航走最近路线，结果堵在修路段整整40分钟，错过退换截止时间。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次给你三条路线：主路多3公里但无施工点，备选绕行高架，第三条是地铁换乘到站再步行15分钟。每条标注预计耗时浮动和备选方案。"
+        }
+      ],
+      "implicit_signal": "路线需要缓冲，偏好低摩擦工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周末想在家做顿好的，上次外卖点了家网红轻食，花了八十多份量还小，吃完又饿。"
+        },
+        {
+          "role": "assistant",
+          "content": "按你家附近菜市场周六早市价列了三个菜谱，总食材成本均在35元以内，烹饪总时不超过45分钟。第一个是番茄牛腩，炖一次可吃两顿。"
+        }
+      ],
+      "implicit_signal": "预算敏感，愿意选择本地小店或自己做饭"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周末去了个市集，现场全是直播推广，根本没法好好看手工品，回来后还收到一堆营销短信。"
+        },
+        {
+          "role": "assistant",
+          "content": "筛选了三个本地小展：一个旧书交换、一个社区木工开放日、一个邻里菜园导览。参展方无强制扫码入场，活动信息需留电话时可用虚拟号。"
+        }
+      ],
+      "implicit_signal": "偏好小型真实活动，避免过度拥挤和强营销"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前想学用冲击钻，网上找了一堆教程视频，看完还是不知道买哪款钻头配瓷砖。"
+        },
+        {
+          "role": "assistant",
+          "content": "先给你一个三步骤快速验证流程：1)用你的瓷砖边角料试钻 2)记录打孔时间和是否崩边 3)回头对比表格。第一步的材料清单已列，总花费不超过20元。"
+        }
+      ],
+      "implicit_signal": "偏好短周期反馈和可复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我用手机记了维修清单，回家想用电脑补备注发现软件不同步，还得手动再录一遍。"
+        },
+        {
+          "role": "assistant",
+          "content": "把清单转成纯文本Markdown，iCloud和OneDrive都能实时同步，电脑端可直接编辑。附件是离线副本和导出格式说明。"
+        }
+      ],
+      "implicit_signal": "偏好跨设备同步但能导出数据的工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次叫了家电维修，师傅说两小时到结果等了四小时，还要求我提供全屋电路图才给修。"
+        },
+        {
+          "role": "assistant",
+          "content": "已找三家明确在预约页标注响应时间段的网点，其中一家承诺迟到按分钟赔偿。电路信息只需提供故障区域，全屋图不需要给。"
+        }
+      ],
+      "implicit_signal": "服务需明确响应速度和数据边界"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "换角阀那家报价时说35一个，装完后说用了加长款加收20，底盒又加15，最后比预算翻了一倍。"
+        },
+        {
+          "role": "assistant",
+          "content": "列了三种常见角阀场景的套餐价，包括加长和标准款差价。你只需拍家中接口照片对照表格，加收项必须事前在订单页标灰。必须花的是密封胶带，加急费可推迟。"
+        }
+      ],
+      "implicit_signal": "拒绝隐藏费用，需区分必须花费和可推迟花费"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "安装服务合同上写着'因安装不当造成的损失上限为服务费两倍'，这表述太模糊了。"
+        },
+        {
+          "role": "assistant",
+          "content": "已划出三个模糊条款：责任上限未区分人身与财产损失、免责情形缺少列举、争议解决地未指定。建议要求对方在纸质收据上手写补充说明再签字。"
+        }
+      ],
+      "implicit_signal": "职业背景影响对合同条款的审查习惯"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前看中一款不锈钢水槽，介绍说终身质保，结果用了一年漏水说只保主体不保焊接处。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次选的盆体焊接处也纳入保修，且本地有授权维修点。列了两款：一款含5年人工费，另一款自修但配件零售价标注。替换件库存和发货时间也有。"
+        }
+      ],
+      "implicit_signal": "产品选择要说明长期使用成本、维护和替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "早上你给的计划表没有核对项，去五金店才发现清单里一个零件型号停产了，白跑一趟。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用核对表格式：第一列是型号和库存状态，第二列是到店后确认重点（如螺纹方向），末尾用方括号标出待确认项。这次需要你先拍一下旧件螺纹照片。"
+        }
+      ],
+      "implicit_signal": "交付需有下一步检查项，标注未确认点"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次推的搬家公司平台评分4.8，结果下单选了师傅后又被转包给另一家公司，多收楼层费。"
+        },
+        {
+          "role": "assistant",
+          "content": "只列自有团队同时无转包条款的公司，并在电话确认时录音。价格表已区分有无电梯和楼层阶梯，无临时加价条目。"
+        }
+      ],
+      "implicit_signal": "拒绝只看热度的推荐，需要少中转的服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "查水管漏水原因时朋友推荐了一个公众号文章，但里面推荐的产品连厂家地址都没写。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找到同一产品的官方维修手册和第三方检测报告链接，维修步骤已用你家的管道布局改为概括图示，未暴露详细地址。"
+        }
+      ],
+      "implicit_signal": "看重可验证来源和匿名化处理"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "回家路上想确认一下你要买那个工具的最低价格，结果你给的购物车链接只支持一家平台。"
+        },
+        {
+          "role": "assistant",
+          "content": "已跨三家比价并制成表格，每项标注库存地和退货门槛。同一型号有两家价格相差8元但A家可线下退。未确认项是周六是否满减，我标了问号需你当天确认。"
+        }
+      ],
+      "implicit_signal": "需要清楚标出未确认点，不喜欢被锁定在单一平台"
+    }
+  ]
+}

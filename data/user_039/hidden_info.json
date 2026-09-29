@@ -1,0 +1,512 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_039",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:19:39",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 22,
+  "composition": {
+    "episodic_preference_trace": 22
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_006",
+      "hidden_indirect_014",
+      "hidden_indirect_018",
+      "hidden_indirect_021"
+    ],
+    "content": [
+      "hidden_indirect_006",
+      "hidden_indirect_015",
+      "hidden_indirect_021"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_019"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_009",
+      "hidden_indirect_012",
+      "hidden_indirect_022"
+    ],
+    "entertainment": [
+      "hidden_indirect_004",
+      "hidden_indirect_017",
+      "hidden_indirect_022"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_008"
+    ],
+    "food": [
+      "hidden_indirect_002",
+      "hidden_indirect_013",
+      "hidden_indirect_020"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_015"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_013",
+      "hidden_indirect_020"
+    ],
+    "learning": [
+      "hidden_indirect_009",
+      "hidden_indirect_016"
+    ],
+    "privacy": [
+      "hidden_indirect_008",
+      "hidden_indirect_017"
+    ],
+    "product": [
+      "hidden_indirect_007",
+      "hidden_indirect_014"
+    ],
+    "role_context": [
+      "hidden_indirect_007"
+    ],
+    "service": [
+      "hidden_indirect_003",
+      "hidden_indirect_011",
+      "hidden_indirect_018"
+    ],
+    "technology": [
+      "hidden_indirect_005",
+      "hidden_indirect_012",
+      "hidden_indirect_019"
+    ],
+    "travel": [
+      "hidden_indirect_001",
+      "hidden_indirect_010",
+      "hidden_indirect_016"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次按推荐去里昂老城一家酒馆，结果排队35分钟，我直接走了。周日下午只有2小时空档。"
+        },
+        {
+          "role": "assistant",
+          "content": "那就选Croix-Rousse的社区小馆，提前电话看有无位，不排队，步行15分钟可达。"
+        }
+      ],
+      "implicit_signal": "优先选择自己已验证的本地路线，非热门"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我找到一家自制意面店，但谷歌写着周三休息，官网却没写。上次就是信了官网白跑。"
+        },
+        {
+          "role": "assistant",
+          "content": "我打电话确认过了：周三确实休息，周四到周日11:30开门。距离你家公交两站。"
+        }
+      ],
+      "implicit_signal": "需要营业时间和距离证据才能决定"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你给的选项太多，我反而决定不了。能不能只写最可行一个加备选？"
+        },
+        {
+          "role": "assistant",
+          "content": "最佳：街角博物馆常设展，免费且人少。备选：河畔散步加外卖三明治。到场注意：周一闭馆。"
+        }
+      ],
+      "implicit_signal": "要求格式精简但有结构"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周末去公园露天音乐节，人挤得手机信号都没，我站了15分钟就走了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次选Parquet广场周三午间场，人少，能坐草坪，听完还能逛市场。"
+        }
+      ],
+      "implicit_signal": "避免拥挤时段的偏好"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个展览要求先下app才能领票，我取消了。上次下了三个应用，删都删不干净。"
+        },
+        {
+          "role": "assistant",
+          "content": "已排除需要专属app的活动。这个文化中心用网页预约就行，不额外安装。"
+        }
+      ],
+      "implicit_signal": "拒绝下载过多应用"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次规划音乐会，预算写到30欧，但最后加服务费到了39欧，我只好放弃。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次选图书馆免费讲座，但如果你想要演出，附近小剧场周日有学生场12欧，我确认无附加费。"
+        }
+      ],
+      "implicit_signal": "预算敏感且需要替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "买了一个降噪头戴，宣传写8小时续航，实际4小时就没电了。我要退货。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成这款，实验室环境实测续航9.2小时，可换电池，客服回应快。我整理了退货运单。"
+        }
+      ],
+      "implicit_signal": "职业影响产品选择"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次注册书友会用了真实地址，结果被加进三个推销群，我直接退了会员。"
+        },
+        {
+          "role": "assistant",
+          "content": "新活动用化名注册，填写里昂公共图书馆信箱，我已查过该环节不共享给第三方。"
+        }
+      ],
+      "implicit_signal": "对数据泄露敏感"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下午2点有个免费陶艺课，但我怕拖到下班赶不上。上次定死时间结果迟到。"
+        },
+        {
+          "role": "assistant",
+          "content": "选流动性工坊：随到随做，不限开始时间，18点前完成就行。我确认了当日没预约也能去。"
+        }
+      ],
+      "implicit_signal": "喜欢可调整的计划"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你推荐的索恩河乘船游，我查了是40人团加导游播音，特别像旅游大巴。"
+        },
+        {
+          "role": "assistant",
+          "content": "不去了。换成租皮划艇自己划，2小时15欧，沿岸安静，还能随时靠岸。"
+        }
+      ],
+      "implicit_signal": "拒绝游客化路线"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "洗衣店促销五折，但网上差评说经常隔天才干。我周五要用那件外套。"
+        },
+        {
+          "role": "assistant",
+          "content": "选对面那家，无折扣但三小时可取，邻居验证过。明天上午送，中午就能拿。"
+        }
+      ],
+      "implicit_signal": "决策时优先可靠和本地口碑"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个共享单车点要扫码下载本地App，我没下载，走了20分钟到下一个站。"
+        },
+        {
+          "role": "assistant",
+          "content": "之后我会标注哪些站支持公交卡直接刷卡。里昂有35个站不用App。"
+        }
+      ],
+      "implicit_signal": "不喜欢被迫下载应用"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "打包了一份沙拉，结果盒子占了半个背包，全是纸板和塑料隔层。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐自备容器去市场熟食摊，他们称重计费，包装简单，也便宜30%。"
+        }
+      ],
+      "implicit_signal": "避免过度包装"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想换保温杯，看到35欧的，但月底电费要交了，犹豫。"
+        },
+        {
+          "role": "assistant",
+          "content": "15欧款同样保温6小时，菜市五金店就有。电费不可推迟，杯子下月再买也行。"
+        }
+      ],
+      "implicit_signal": "区分必须花费和可推迟"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次说某公园有花展，我去了发现已经撤展一周，没补说明。"
+        },
+        {
+          "role": "assistant",
+          "content": "该花展已于上周末结束。现在替代：植物园温室常设展，全年开放，我已标注确认日期为今天。"
+        }
+      ],
+      "implicit_signal": "信息必须带依据和不确定点"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想去山里徒步，但上次自己查的路线缺标记，走错两次。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次用经我验证的路线：Mont Verdun环线，路标每500米一个，往返2小时，终点有公交回程。"
+        }
+      ],
+      "implicit_signal": "短周期反馈和示例"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "邻居推荐一个手工市集，但要登记姓名电话才能入场。"
+        },
+        {
+          "role": "assistant",
+          "content": "旁边社区活动中心同一天有交换市集，无需登记，只带物品直接参与。"
+        }
+      ],
+      "implicit_signal": "活动选择中保护个人边界"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "电影票8欧，但网上订需要1.5欧手续费，我走到柜台买结果场次满座。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次提前一天电话订座，无手续费，记下确认号，到场直接取票。"
+        }
+      ],
+      "implicit_signal": "隐性成本敏感"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个笔记软件挺好用，但导出要付费，我迁移了所有笔记到本地文档。"
+        },
+        {
+          "role": "assistant",
+          "content": "已确保后续任务用的工具都支持Markdown或PDF导出，且免费版不限量。"
+        }
+      ],
+      "implicit_signal": "偏好能导出数据的工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你说里昂最好吃的可丽饼在9区，但转两趟车来回90分钟，我就去楼下面包店了。"
+        },
+        {
+          "role": "assistant",
+          "content": "对，应该先算交通。楼下即烤可丽饼4欧，新鲜，省下时间足够散步。"
+        }
+      ],
+      "implicit_signal": "不说明交通和等待成本则不选"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推荐免费纪录片放映，但没说片长，我晚上有会议，只空出90分钟。"
+        },
+        {
+          "role": "assistant",
+          "content": "该片长57分钟，加讨论15分钟，共72分钟，足够。已有确认，如果超时可以中途离场。"
+        }
+      ],
+      "implicit_signal": "结论必须说明依据"
+    },
+    {
+      "interaction_id": "hidden_indirect_022",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次订了下午3点密室逃脱，但2点老板突然让我加班，只好取消赔了全款。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次选公园寻宝活动，免费且自主安排时间，手机地图引导，随时开始或暂停。"
+        }
+      ],
+      "implicit_signal": "喜欢能临时调整的计划"
+    }
+  ]
+}

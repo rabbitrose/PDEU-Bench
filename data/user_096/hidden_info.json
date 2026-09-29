@@ -1,0 +1,449 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_096",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:53:14",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 19,
+  "composition": {
+    "episodic_preference_trace": 19
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_004",
+      "hidden_indirect_007",
+      "hidden_indirect_011",
+      "hidden_indirect_017"
+    ],
+    "content": [
+      "hidden_indirect_005",
+      "hidden_indirect_019"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_015"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_016"
+    ],
+    "entertainment": [
+      "hidden_indirect_012"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_014"
+    ],
+    "food": [
+      "hidden_indirect_008"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_012",
+      "hidden_indirect_018"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_007",
+      "hidden_indirect_008",
+      "hidden_indirect_009"
+    ],
+    "learning": [
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "privacy": [
+      "hidden_indirect_009",
+      "hidden_indirect_013"
+    ],
+    "product": [
+      "hidden_indirect_002",
+      "hidden_indirect_016"
+    ],
+    "role_context": [
+      "hidden_indirect_010"
+    ],
+    "service": [
+      "hidden_indirect_006",
+      "hidden_indirect_014",
+      "hidden_indirect_017"
+    ],
+    "technology": [
+      "hidden_indirect_003",
+      "hidden_indirect_013",
+      "hidden_indirect_015",
+      "hidden_indirect_019"
+    ],
+    "travel": [
+      "hidden_indirect_011"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上回买狗粮选了标价最低的牌子，结果每袋少 5 公斤，实际月花费反而高了。"
+        },
+        {
+          "role": "assistant",
+          "content": "接下来我按单月总用量和单价对比，列出各选项的 12 个月总成本再筛选。"
+        }
+      ],
+      "implicit_signal": "用户倾向于前置评估总成本，而非只关注初始价格"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你推荐的那款狗绳只说 3500 日元，但不同长短价格差一倍，等付款才发现。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后会先标出 1.2m 和 1.8m 两个版本的价格范围，以及你牵中型犬时的实际需求长度。"
+        }
+      ],
+      "implicit_signal": "用户要求证据包含价格范围和假设条件，避免单一数字误导"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次给的购买建议就一段文字，我不得不自己拆成表格才能比较续费和停购。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次直接以成本表呈现：必要项、可推迟项、风险阈值三列，数字对比更直观。"
+        }
+      ],
+      "implicit_signal": "用户偏好结构化成本表格，带必要项与可推迟项分类"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个宠物保险广告写月付 500，但我按年缴才发现管理费另收 22%，快顶两月了。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后把年费、月付加隐含手续费分三行列出，再按 12 月和 24 月估算保守总花费。"
+        }
+      ],
+      "implicit_signal": "用户习惯在年费场景中用保守估算，偏向自己主动发现隐性成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你又给了 5 个付款方案，我午休结束前只看完 2 个，还剩的只能跳过。"
+        },
+        {
+          "role": "assistant",
+          "content": "先筛选出两个最省现金流且可随时取消的方案，附上取消条件的原文节选。"
+        }
+      ],
+      "implicit_signal": "用户喜欢对比少量选项，但要求追溯取消规则等细节"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个云笔记试用期取消要提前一周邮件通知，过了才退钱，我完全不知。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次列出每项服务的取消窗口、通知方式和退款计算方式，并标出最宽松的那个。"
+        }
+      ],
+      "implicit_signal": "用户关注服务的退出规则和长期负担"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次搬家报价说 25000 日元基础费，结果加楼层和时段费多付 8000，全在角落小字。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会标注每一项可能的附加费与触发条件，并用红色圈出可能超出你当日预算的部分。"
+        }
+      ],
+      "implicit_signal": "用户坚决回避隐性费用和含糊预算表述"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你说那家拉面店人均 1000，我到店里发现最便宜的套餐也要 1400，还全是叉烧。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后写明当地平均价格区间和最低菜品，并将你的当日餐费上限作为前提。"
+        }
+      ],
+      "implicit_signal": "用户避免接受没有明确预算上限的建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个宠物托管 app 一定要我打开定位和通讯录才给看价格，我就关了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会先提供不需要位置就可以查到的评分，并标注哪些服务强制权限，避免再浪费你时间。"
+        }
+      ],
+      "implicit_signal": "用户拒绝泄露位置等隐私信息来换取服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次学用记账 app，你只放了教程链接，我试了三次还是不知道自动分类规则。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把我的预算分类样例截图和最容易出错的三类交易实例放进去，并请你走一遍再看我复盘。"
+        }
+      ],
+      "implicit_signal": "用户偏好短周期反馈的学习方式，通过实例和复盘来改进"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去京都那次选了车站旁的酒店，便宜但隔音差，半夜被吵醒，第二天行程全乱。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次优先筛选 quiet rating 4 以上且 24 小时前可免费取消的住宿，标出距离你遛狗路线最近的地块。"
+        }
+      ],
+      "implicit_signal": "用户旅行时优先安全、安静和可取消性"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去年的城市节排队 50 分钟才进场，里面全是摊位推销，我直接出来了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只选入场限流、活动时长不超过 2 小时且在前年评价里提到‘不拥堵’的两场，附上风险项。"
+        }
+      ],
+      "implicit_signal": "用户希望休闲安排不破坏第二天的节奏，且内容紧凑"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个笔记软件导出要逐个页面手动复制，27 条笔记差点让我放弃迁移。"
+        },
+        {
+          "role": "assistant",
+          "content": "先看工具的批量导出格式（Markdown/TXT 均可选），再对比三家是否支持无 API 手动备份。"
+        }
+      ],
+      "implicit_signal": "用户偏好跨设备同步但能导出数据，且拒绝平台锁定"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你说 A 公司宠物清洁服务评分最高，但没提它在周末不接单，我又得另找。"
+        },
+        {
+          "role": "assistant",
+          "content": "会同时列一家评分相近且周末接受预约的服务，并注明各自的预约周期和取消规则。"
+        }
+      ],
+      "implicit_signal": "用户需要可替代方案作为证据的一部分"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个智能项圈公司倒闭后 app 直接不能用了，项圈废了，我白花了 12000。"
+        },
+        {
+          "role": "assistant",
+          "content": "优先推荐有离线副本模式和开放 API 的品牌，并且把厂商存活时间和固件自更新能力纳入风险栏。"
+        }
+      ],
+      "implicit_signal": "用户在做技术选择时，长期维护成本和退出成本优先于短期便利"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你给我 6 款狗背包让我按链接看，我看了三家发现只有一款腰部有固定带。"
+        },
+        {
+          "role": "assistant",
+          "content": "我先根据你的使用场景（每天 30 分钟散步）筛出有腰部固定且可机洗的，只给你两款详细对比。"
+        }
+      ],
+      "implicit_signal": "用户愿意多比较，但希望被筛选到少量可操作项"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个自动喂食器月费 800，但我只在出差才用，全年只用 22 天。不如买手动定时。"
+        },
+        {
+          "role": "assistant",
+          "content": "已按年均使用天数计算：22 天使用 vs 365 天订阅，手动定时方案 1 年省出 9600 元，并把必要项列在上面。"
+        }
+      ],
+      "implicit_signal": "用户通过预算审计模式，倾向于区分必要与可推迟的花费"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我按照你给的步骤整理付款计划，但结尾没有核对清单，漏掉了一笔年费。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次步骤末加一条 '复盘核对项'，包括确认频率、取消条件和隐含费用，你再走一遍后告诉我哪项多余。"
+        }
+      ],
+      "implicit_signal": "用户需要可复盘标准，偏好带示例的短周期反馈"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次问平时记账用啥 app 好，你给了前三排行，没有一个支持狗财务分类。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会按你日常支出（狗粮、医疗、零食）建三个自定义类别，只推荐允许标签管理和导出 CSV 的 app。"
+        }
+      ],
+      "implicit_signal": "用户拒绝通用榜单式输出，要求贴合自身场景"
+    }
+  ]
+}

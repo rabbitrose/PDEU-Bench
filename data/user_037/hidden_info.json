@@ -1,0 +1,470 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_037",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:26:32",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_005",
+      "hidden_indirect_016"
+    ],
+    "content": [
+      "hidden_indirect_003",
+      "hidden_indirect_011"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_010"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_014"
+    ],
+    "entertainment": [
+      "hidden_indirect_007",
+      "hidden_indirect_017"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_012"
+    ],
+    "food": [
+      "hidden_indirect_008",
+      "hidden_indirect_016"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_013"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_007",
+      "hidden_indirect_015"
+    ],
+    "learning": [
+      "hidden_indirect_008",
+      "hidden_indirect_018"
+    ],
+    "privacy": [
+      "hidden_indirect_002",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "product": [
+      "hidden_indirect_009",
+      "hidden_indirect_019"
+    ],
+    "role_context": [
+      "hidden_indirect_011"
+    ],
+    "service": [
+      "hidden_indirect_006",
+      "hidden_indirect_012",
+      "hidden_indirect_019"
+    ],
+    "technology": [
+      "hidden_indirect_004",
+      "hidden_indirect_009",
+      "hidden_indirect_014",
+      "hidden_indirect_018",
+      "hidden_indirect_020"
+    ],
+    "travel": [
+      "hidden_indirect_001",
+      "hidden_indirect_010",
+      "hidden_indirect_013",
+      "hidden_indirect_017"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "订了芽庄船票，出发前两小时才通知因风浪取消，整个下午空转。平台退款还扣了手续费。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次选船时，改用可免费取消且承诺提前24小时通知的供应商；出发前先确认替代日期的可用性再付款。"
+        }
+      ],
+      "implicit_signal": "在旅行计划中优先可靠性，拒绝依赖单日天气预测的非确定性选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上了个本地野营团，页面说装备全包，到了发现帐篷和睡袋另算。沟通时对方要求通讯录权限才能下载行程。"
+        },
+        {
+          "role": "assistant",
+          "content": "拒绝权限申请，改用离线截图保存行程。下次选择旅行社时，检查用户评价中是否有隐性消费记录；不授予通讯录权限也可完成参团。"
+        }
+      ],
+      "implicit_signal": "要求可验证来源，同时保护位置与联系人信息不被平台获取"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次给的三个营地列表，只写了风景和价格，没提暴雨季节排水情况和交通管制时段。到了才发现没法开车进去。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用表格：一列目标选项，一列当前已知约束，一列风险备选。插入未确认项行，填写到达当天的交通管制情况，待核实后再定。"
+        }
+      ],
+      "implicit_signal": "要求输出结构化风险表，拒绝纯描述性推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "换手机后，以前的行程App数据锁在系统里导不出来，所有路线和备忘都要重新录入。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用支持通用格式导出的笔记工具如Obsidian本地Markdown文件夹；用iCloud同步跨设备编辑，避免二次录入。"
+        }
+      ],
+      "implicit_signal": "偏好低摩擦工具，跨设备同步但可导出"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次推荐的那个租车保险年计划，保费确实低，出险时报单次免赔额很高，加上自动涨价，整体比按次买还贵。"
+        },
+        {
+          "role": "assistant",
+          "content": "选择按次结算、取消无罚金的单程保险，年预算设为上限。用表格对比：每次价格、免赔额、取消政策，超上限不列入候选。"
+        }
+      ],
+      "implicit_signal": "拒绝忽略维护成本的推荐，保守预算"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前短租平台订的公寓，入住当天水管爆了，客服发邮件说48小时才能回复。我只能躺在候机区里改签临时酒店。"
+        },
+        {
+          "role": "assistant",
+          "content": "筛选时加入两个条件：取消规则明确显示为即时取消类型，客服响应时间不超过2小时。优先选择提供备选房源的服务商。"
+        }
+      ],
+      "implicit_signal": "需要服务有明确取消规则，且响应快"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推荐的那个网红夜市，到了全是排队和直播摊，实际能逛的内容很少。噪音大得我第二天倒时差更累了。"
+        },
+        {
+          "role": "assistant",
+          "content": "改为筛选本地论坛评分3.5以上但帖子数少于200的场所。用地图查看附近噪声监测数据，只保留80分贝以下选项。"
+        }
+      ],
+      "implicit_signal": "拒绝只看热度的推荐，偏好真实小型活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次自炊计划太理想化了，买的本地鱼需要腌制2小时，在超市结账前才发现，当天计划全被打乱。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次列食谱前，先标注每道菜的备菜时长和主食准备步骤。从24小时时间块里扣除旅行部分后再匹配食谱。"
+        }
+      ],
+      "implicit_signal": "需要示例和复盘标准，偏好不过度油腻的餐食"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "年初买的户外手表，宣传说防水50米，用了一次就进水了，官网说是使用不当不保修。没有公开防水测试报告。"
+        },
+        {
+          "role": "assistant",
+          "content": "选购带IPX6以上认证并提供公开测试数据的品牌。买前要求商家出具独立实验室报告或用户拆机评测链接。"
+        }
+      ],
+      "implicit_signal": "产品需说明长期使用成本，不优先选信息不透明的产品"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "旧金山的行程加了无人机航拍景点，但当天下午只有2小时自由，还要回去开电话会。那个点实际需要绕路1小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "移除航拍点，在那一时段插入一条步行可达、无需绕行的路线，标注出发和截止时间。会议前30分钟留作缓冲。"
+        }
+      ],
+      "implicit_signal": "在时间边界与新奇功能冲突时，优先可执行性"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前你给我气候投资分析模板，没标注数据来源，只说了趋势。采访气象员时无法引用，对方要求提供具体年份和模型版本。"
+        },
+        {
+          "role": "assistant",
+          "content": "模板中每句结论后面加中括号标注来源（如NOAA 2023年高温数据/AWI CMIP6，附页面链接），在底部预留一行让你确认最后一次更新日期。"
+        }
+      ],
+      "implicit_signal": "用户职业为金融记者，优先内容必须有据可循"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那家巴士公司广告说每天4班，实际只有2班运营，网上查不到时刻表。到了车站才被通知最后一班已取消。"
+        },
+        {
+          "role": "assistant",
+          "content": "选车时要求对方提供实时运营时刻表截图或API接口；同时保存车站电话作为备用确认渠道；订票后立刻发确认信息索要回执。"
+        }
+      ],
+      "implicit_signal": "偏好可验证来源、明确假设和失败回滚路径"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你给的旅行物品清单，把牙刷梳子和防晒霜写在一起，但在温哥华需要分托运行李和登机行李，出发前全混在一起很难核对。"
+        },
+        {
+          "role": "assistant",
+          "content": "改为按行李类型分两列：托运行李（列明容量限制）和登机行李（标注液体上限）。每项后面加「已确认」复选框，出发前逐项打钩。"
+        }
+      ],
+      "implicit_signal": "要求结构化表格输出，拒绝冗余建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "手机截图里存了5个备选航班，每次打开都要重新排除已售罄的。有些信息变了，截图没法自动更新。"
+        },
+        {
+          "role": "assistant",
+          "content": "把这5个航班转成表格，加一列“票务状态最后更新时间”。下次打开时先扫这列，在候机区里同步刷新；超过6小时未更新的重新查询。"
+        }
+      ],
+      "implicit_signal": "需要清楚标出未确认点，讨厌重复录入"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个换汇App要绑定社交媒体账号才好用，说不绑定就没法转出额度。绑了之后经常收到推荐广告。"
+        },
+        {
+          "role": "assistant",
+          "content": "取消该App授权，改用提供多种匿名换汇方式的实体银行服务。不提供任何社交账号完成换汇。"
+        }
+      ],
+      "implicit_signal": "拒绝被强迫注册或公开个人信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "超市里进口牛排39元一块，本地冻鸡胸19元，牛排做焦了几次浪费肉和酱料，实际花费超标了。"
+        },
+        {
+          "role": "assistant",
+          "content": "改选本地冻鸡胸，单次买2块。按你的烹饪设备列一个“低风险食谱”：烹饪温度、时长固定，成功率高于90%。"
+        }
+      ],
+      "implicit_signal": "预算敏感，愿意选择本地小店或自己做饭"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周五去了商场里的密室逃脱，排队1小时，进去后工作人员一直推销季卡，说今天办最划算，体验很差。"
+        },
+        {
+          "role": "assistant",
+          "content": "筛选不需要排队预约、无捆绑产品介绍的小型场馆。入场前确认购票页面是否有盲盒式加购提醒，有则排除。"
+        }
+      ],
+      "implicit_signal": "避免过度拥挤和强营销活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推荐了三篇关于天气衍生品的论文，每篇40页，读完第一篇花了3天，第二篇发现它引用了第一篇的结论，重复了。"
+        },
+        {
+          "role": "assistant",
+          "content": "先提供每个来源的摘要（包含核心结论、与投资场景的关联），标注各来源之间的引用关系，避免重复阅读。每次最多提供1个新来源。"
+        }
+      ],
+      "implicit_signal": "需要短周期反馈，不喜欢堆材料链接"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个背包推荐带太阳能充电板，说户外好用，但在市区通勤几乎用不上，板子比普通包重一倍，买回来就闲置了。"
+        },
+        {
+          "role": "assistant",
+          "content": "根据本月日程（线上会议日+户外短途）推荐可拆卸设计的产品：日常去掉太阳能板，使用时再装回。下次新增“闲置风险”一栏，标注日均使用概率。"
+        }
+      ],
+      "implicit_signal": "产品选择需说明方案与替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "设备更新后，新笔记本装了同步软件，发现它自动上传了所有离线副本到云端，包括会议纪要和手机截图。我没授权过这种操作。"
+        },
+        {
+          "role": "assistant",
+          "content": "立即撤销该软件的文件系统权限，改用本地加密文件夹存储离线副本。检查设置中是否有默认开启的云同步选项，关闭并提交隐私投诉。"
+        }
+      ],
+      "implicit_signal": "对位置、联系人和敏感历史保持谨慎"
+    }
+  ]
+}

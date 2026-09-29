@@ -1,0 +1,449 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_001",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:01:11",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 19,
+  "composition": {
+    "episodic_preference_trace": 19
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_017"
+    ],
+    "content": [
+      "hidden_indirect_010",
+      "hidden_indirect_016"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_013",
+      "hidden_indirect_015"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_019"
+    ],
+    "entertainment": [
+      "hidden_indirect_007",
+      "hidden_indirect_018"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_014"
+    ],
+    "food": [
+      "hidden_indirect_006",
+      "hidden_indirect_016"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_009"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_006",
+      "hidden_indirect_007",
+      "hidden_indirect_012"
+    ],
+    "learning": [
+      "hidden_indirect_003",
+      "hidden_indirect_014",
+      "hidden_indirect_019"
+    ],
+    "privacy": [
+      "hidden_indirect_004",
+      "hidden_indirect_012"
+    ],
+    "product": [
+      "hidden_indirect_002"
+    ],
+    "role_context": [
+      "hidden_indirect_008"
+    ],
+    "service": [
+      "hidden_indirect_005",
+      "hidden_indirect_011",
+      "hidden_indirect_017"
+    ],
+    "technology": [
+      "hidden_indirect_009",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "travel": [
+      "hidden_indirect_008",
+      "hidden_indirect_015"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "午休结束前，我在乐器店看到音叉调音器月付标价650日元，旁边贴着年付6000日元的促销。我算了一下——月付12次总共7800日元，年付省1800。去年我买同类东西时月付累计多花了2000多，不想再犯。"
+        },
+        {
+          "role": "assistant",
+          "content": "年付总计6000日元，查询取消政策后发现随时退还未使用部分，不会因为预付款亏掉余值。已确认下单年付。"
+        }
+      ],
+      "implicit_signal": "在年付折扣明确且现金流可承受时，用户选择年付而非月付以降低总支出"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周买的节拍器用了三天就不准，退货时商家说邮费自理，最后退了货款但扣了480日元运费。这次看到另一款节拍器，页面只标原价，没写运费和保修期。我不打算再冒同样风险。"
+        },
+        {
+          "role": "assistant",
+          "content": "先不买这款。我同时查另外三款含运费和保修信息的型号，列出它们各自的总成本范围、保修时长和免费退换条件，再一起比较选择。"
+        }
+      ],
+      "implicit_signal": "上一次购买因缺少运费和保修信息导致损失，此后坚持在获得完整价格范围及替代方案后再决策"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "学生家长发来三个乐理补习班的链接让我推荐。每个网站只写了月额和总课时，没列教材费和补考费。上次我踩过类似坑——推荐了一个便宜的班，后来家长发现还要补交教材费。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把三家信息拉成对比表：每月实际支出（含教材强制费）、每年考试补考费、必要报名费 vs 可推迟项目。对于每项费用来源，只保留80%以上置信度的数值，其余标为待确认风险。"
+        }
+      ],
+      "implicit_signal": "偏好将信息整理为成本表、必要项、可推迟项和风险阈值的对比格式"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周联系钢琴维修平台，对方要求上传客厅照片和完整地址才给具体报价，否则只给5000日元起的模糊估价。我没有其他选择，接受了，最后实际维修花了8000日元，等于白跑了一趟估价。"
+        },
+        {
+          "role": "assistant",
+          "content": "下一家维修商只询问琴的型号和故障描述，不需要照片或完整地址。报价阶段会上门确认但只用到街区信息，不透露具体门牌。我已查实对方的服务条款，拆检费和上门费都事前写清楚。"
+        }
+      ],
+      "implicit_signal": "保守估算个人信息披露范围，避免提供不必要的全地址或照片"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月在琴谱打印app开了试用账号，第五天系统直接从绑卡扣了年度费2200日元。我翻邮件才看到试用通知里一行小字写着自动续费，但取消入口特别小，我没找到。"
+        },
+        {
+          "role": "assistant",
+          "content": "我已经走了支付异议流程申请退款。以后直接用手动上传文件到网页版印刷，不需要注册账号。如果必须用app，我在开通前会先截图取消入口路径，确认每一步都可行再决定。"
+        }
+      ],
+      "implicit_signal": "因试用期自动续费造成损失，此后偏好无试用或少注册的服务并主动查取消路径"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "琴行附近一家定食店门口招牌写着套餐550日元，结账时变成了含税价外加10%服务费，最后收了605日元。我之前还多绕了一次路专门去这家店，结果被多收了钱。"
+        },
+        {
+          "role": "assistant",
+          "content": "那家店以后不去。附近的另一家小食堂每份定食直接标含税总价，菜单上没有任何额外收费项。过去多走3分钟，但支出固定，就不用再担心多收费。"
+        }
+      ],
+      "implicit_signal": "避免隐藏费用和含糊定价，选择标示总价的店家"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看到大阪爵士酒吧周末音乐会的海报：入场券1800日元，小字注明需另买500日元抵用券才能进场，而且当晚已售出超过额定容量一半的票。之前我去过类似活动，拥挤而且最后还要补钱。"
+        },
+        {
+          "role": "assistant",
+          "content": "跳过这个。同一周有一家小型live house的acoustic演出2000日元全包，限定报名30人，取消政策是提前48小时全额退款。我已经看了场地容量图，座位间距合理。"
+        }
+      ],
+      "implicit_signal": "拒绝需额外捆绑消费且人流密集的活动，偏好全包价且限流的选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "暑假要去京都参加三日音乐工作坊，在候机区刷到早班电车因临时检修停运，下一班要等36分钟。我上周就因为类似原因多绕了一次路，结果迟到了。"
+        },
+        {
+          "role": "assistant",
+          "content": "改坐前一班特急列车，到站后多出55分钟缓冲。住宿改为车站步行10分钟内、可免费取消的酒店，虽然比不可退款的民宿贵了1500日元，但如果行程变还能退。"
+        }
+      ],
+      "implicit_signal": "因检修导致行程延误后，选择提前班次并优先可取消住宿以保留缓冲余地"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "翻旧版清单时发现，三年前用的音乐编辑软件的工程文件只能在其自家云上访问。后来我停止付费就再也打不开了，两年数据全丢。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次选新工具，我设两个硬条件：必须支持本地导出为标准MIDI/WAV格式，且免费版无导出次数限制。只要有一个条件不满足，就列为风险选项，仅在有替代时才考虑使用。"
+        }
+      ],
+      "implicit_signal": "选择工具时明确要求本地导出和标准格式，并设定风险阈值"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我想找几部适合学生看的乐理动画，搜到16个频道，每个都说自己排名第一。我花了一小时看了前5个，还是分不清哪个更靠谱，最后什么也没选。"
+        },
+        {
+          "role": "assistant",
+          "content": "设定三条过滤器：无推销内容、每集配练习题、单集不超过5分钟。按此筛掉12个，剩下4个。再用对比表格比较内容密度和价格，30分钟内选出最合适的一个。"
+        }
+      ],
+      "implicit_signal": "愿意在筛选上花时间，但通过明确标准主动缩短比较范围"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想续订琴谱调性分析服务，月额从980涨到1280，没有提前通知也没有更低档位。我原计划这个项目每月只留1000日元，不想超过。"
+        },
+        {
+          "role": "assistant",
+          "content": "已取消续订。找到了两个替代方案：一个独立开发者版月1100日元且无自动续费，另一个免费版每天可分析10次但功能完全够日常教学用。两者的总成本都比原服务低。"
+        }
+      ],
+      "implicit_signal": "服务涨价超过预算线时直接取消，并转向有明确定价的替代品"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "学校教务系统上周升级后，要求我必须绑定信用卡才能查看自己的课时记录，而且绑定后默认订阅电子成绩单通知，我没看到退订入口。"
+        },
+        {
+          "role": "assistant",
+          "content": "不绑卡。直接联系教务导出CSV格式的课时表发到工作邮箱，就说手边没有信用卡。用旧版清单核对你之前的出勤记录，不需要系统权限。"
+        }
+      ],
+      "implicit_signal": "拒绝为获取本应公开的信息而提供非必要个人财务数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看到一个录音笔促销价4800日元（原价6800），但我注意到专用充电线已停产，以后每次只能通过蓝牙传文件，时间很长。我粗略算了下：后续传文件时间成本加上买替代线材会超过12000日元。"
+        },
+        {
+          "role": "assistant",
+          "content": "不买促销款。另一款通用Type-C录音笔原价5900，无后续耗材成本，可以用读卡器直接导出文件。虽然初价高1100，但长期总成本反而更低。"
+        }
+      ],
+      "implicit_signal": "选择总拥有成本更低的产品，即使初期价格更高"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上月报了一个在线即兴伴奏课，但老师只发录像和链接，没有打分也没说哪里错了。我花了56分钟看完还是不知道从哪改。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后选课时，至少确认每周有自测或教师反馈环节。我会提前要求看三条学生评价里明确提到'教师指出练习错误'的反馈，能试用一个月的不达标就停。"
+        }
+      ],
+      "implicit_signal": "需要课程提供可量化的评估反馈，而非仅被动观看"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去奈良看合唱演出那天，原定的公交因为现场网络中断无法查实时到站，等了25分钟还不知道下一班，我多绕了一次路才到演出厅。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后只选有固定时刻表且准点率高的路线，并提前存一份时刻表截图到手机。同时备一条步行30分钟内可到的路径，万一停运也能直接走过去。"
+        }
+      ],
+      "implicit_signal": "遭遇无实时信息导致绕路后，规划路线时固定选择定时公共交通并留存离线备份"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周网上推荐的大阪拉面店，排了一小时队，到店发现汤底太油、环境吵。下午上课时胃不舒服，直接影响了课后排练。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后只去评分4.0以上、评论里明确提到'清汤''不腻''上菜快'的店。优先选步行5到10分钟内、不需排队的本地小店。"
+        }
+      ],
+      "implicit_signal": "根据实际体验调整，避免重油、排队长且影响后续安排的选择"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "琴键翻新报价18000日元，我本来想拖到明年再修，但老师说有两个键已经严重影响触感，不修的话后续练习会养成坏习惯。"
+        },
+        {
+          "role": "assistant",
+          "content": "这是必须花费，不能推迟。先付定金50%，剩下靠两个月房租结余分摊支付。其他三个不影响弹奏的键标记为可推迟项，下次调律时再处理。"
+        }
+      ],
+      "implicit_signal": "区分必须与可推迟花费，影响练习的维修不能延后但可使用分期减轻现金流压力"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一款和弦学习游戏免费版只能弹三首歌，升级要月付490日元，而且无法取消自动续费。我上个月在取消时漏了一个确认页面，被连续扣了两个月。"
+        },
+        {
+          "role": "assistant",
+          "content": "取消并卸载。我找到一个网页版替代工具，一次性买断2400日元，全功能无内购且无自动续费。在卸载旧app前先导出我的学习记录。"
+        }
+      ],
+      "implicit_signal": "因取消过程有陷阱造成损失后，选择一次性买断且无自动续费的产品"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周日晚上我登录古典乐理讲座，发现六周课的前两周只发了材料，没有答疑也没有讨论，第三周才有第一次互动。我回头复习之前的内容已经忘光了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我帮你换一个每周都有实时讨论和练习题反馈的课程，而且前两周就安排一次模拟测验让学生知道进度。如果第一周结束后累计互动次数不足三次，就立刻申请退费。"
+        }
+      ],
+      "implicit_signal": "偏好短周期反馈的课程，前两周没有互动则退出"
+    }
+  ]
+}

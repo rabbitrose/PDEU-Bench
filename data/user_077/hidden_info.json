@@ -1,0 +1,470 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_077",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:35:44",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_002",
+      "hidden_indirect_012",
+      "hidden_indirect_019"
+    ],
+    "content": [
+      "hidden_indirect_003",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_010",
+      "hidden_indirect_017"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_002",
+      "hidden_indirect_006",
+      "hidden_indirect_009",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "entertainment": [
+      "hidden_indirect_007",
+      "hidden_indirect_019"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_004",
+      "hidden_indirect_011",
+      "hidden_indirect_016"
+    ],
+    "food": [
+      "hidden_indirect_009",
+      "hidden_indirect_018"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_011"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_012"
+    ],
+    "learning": [
+      "hidden_indirect_006",
+      "hidden_indirect_015"
+    ],
+    "privacy": [
+      "hidden_indirect_008",
+      "hidden_indirect_014"
+    ],
+    "product": [
+      "hidden_indirect_004",
+      "hidden_indirect_017"
+    ],
+    "role_context": [
+      "hidden_indirect_007",
+      "hidden_indirect_020"
+    ],
+    "service": [
+      "hidden_indirect_005",
+      "hidden_indirect_013"
+    ],
+    "technology": [
+      "hidden_indirect_008",
+      "hidden_indirect_014"
+    ],
+    "travel": [
+      "hidden_indirect_001",
+      "hidden_indirect_016"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去Aardklop，为了赶场没去成最后一场Spoegwolf演出，后悔死了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我们提前把周五晚上的时间空出来，保证那场演出优先安排。"
+        }
+      ],
+      "implicit_signal": "旅行决策中优先考虑音乐节体验而非效率"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月买了件限量版乐队T恤，花了800兰特，结果月底超支了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次烤肉派对的食材我们选本地供应商，可以省点钱补回来。"
+        }
+      ],
+      "implicit_signal": "愿意为限定周边超预算，但会事后调整支出"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你推荐的歌单太主流了，我都没听完。我想要那种有南非语独立氛围的。"
+        },
+        {
+          "role": "assistant",
+          "content": "明白了，这次我会按心情分段：黄昏公路段和深夜篝火段，全是本地小众乐队。"
+        }
+      ],
+      "implicit_signal": "重视歌单的本地质感与情绪线索"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我看中一款蓝牙音箱，但评测没说它在户外烤肉时的表现。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找到一段实际户外录音对比，还有本地用户说它低频在开放空间足够。"
+        }
+      ],
+      "implicit_signal": "购买音频设备前需要具体场景测试证据"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个新音乐App一直推Top-40，我用了三天就删了。"
+        },
+        {
+          "role": "assistant",
+          "content": "换个试试SoundCloud？上面很多南非语独立艺人首发作品。"
+        }
+      ],
+      "implicit_signal": "拒绝使用不提供本地艺人推荐的流媒体服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我想学录音，但教程只讲参数，没讲怎么调出温暖音色。"
+        },
+        {
+          "role": "assistant",
+          "content": "有个南非本地制作人的课程，他用老式调音台演示，很注重手感。"
+        }
+      ],
+      "implicit_signal": "学习音乐制作时注重仪式感而非纯规格"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次我牵头在共享表格里登记了拼车去音乐节，结果最后一项没人确认。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我帮你做个小问卷，确认每个人的出发时间和集合点。"
+        }
+      ],
+      "implicit_signal": "在粉丝社群中主动组织活动并分享"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个票务App要读取我的联系人，我直接拒绝了。"
+        },
+        {
+          "role": "assistant",
+          "content": "只开定位权限就好，这样能收到附近演出的推送，其他权限关掉。"
+        }
+      ],
+      "implicit_signal": "只愿意为音乐服务共享位置，拒绝广告追踪"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次烤肉用的音箱在户外声音散掉了，大家都说听不清背景歌单。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次带一个指向性音箱架起来，再准备一份纸质歌单方便大家点歌。"
+        }
+      ],
+      "implicit_signal": "烤肉派对中强调地域自豪感和音响氛围"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次Road trip我按攻略走了沿海线，结果错过了路边一个家庭式酒吧的即兴演出。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我们留出周日晚上自由时间，不订行程，看到当地人多的就去。"
+        }
+      ],
+      "implicit_signal": "拒绝刻板旅行行程，宁可少去景点也要参加当地即兴音乐活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你说那个新乐队不错，但只给了名字，我听了一下没感觉。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找来他们现场视频片段和一段采访，其中一段riff很像早期Spoegwolf。"
+        }
+      ],
+      "implicit_signal": "要求推荐必须附带本地口碑和具体曲目例证"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个乐队出的卫衣要600兰特，但印花洗一次就裂了，我觉得不值。"
+        },
+        {
+          "role": "assistant",
+          "content": "那看看官方网店的帆布包？同系列但耐用，还便宜150兰特。"
+        }
+      ],
+      "implicit_signal": "不会为高价低质的周边产品付费"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "Computicket给我推荐了Kapstadt大牌演出，但我只想看小场馆南非语乐队。"
+        },
+        {
+          "role": "assistant",
+          "content": "我帮你设好筛选项：只显示西开普省、容量500以下的场地。"
+        }
+      ],
+      "implicit_signal": "票务服务需本地化且避免算法推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "网站让我同意所有cookies才能看歌单，我选了仅必要。"
+        },
+        {
+          "role": "assistant",
+          "content": "这样就好，音乐推荐仍能用本地数据，但不会推无关广告。"
+        }
+      ],
+      "implicit_signal": "接受音乐推荐的cookies但屏蔽广告追踪"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次Udemy课程是美国人教的，混音例子都是英文流行歌。"
+        },
+        {
+          "role": "assistant",
+          "content": "有个开普敦工作坊，直接用南非语摇滚分轨示范，下周六有线上场。"
+        }
+      ],
+      "implicit_signal": "偏好本地制作人的实战教程而非通用理论"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我想去纳米比亚那个文化节，但官网没写露营条件。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找到一篇粉丝博客，详细写了水源和充电点位置，还有去年气温记录。"
+        }
+      ],
+      "implicit_signal": "依赖粉丝社群的实际经验而非官方宣传"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那款唱机便宜，但很多人说自动回臂会刮唱片。"
+        },
+        {
+          "role": "assistant",
+          "content": "看看二手的Rega？手动操作更有仪式感，本地音响店有台保养好的。"
+        }
+      ],
+      "implicit_signal": "购买唱机时更关注黑胶仪式感而非参数"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次烤肉用的香肠是超市货，朋友说不如路边摊的。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次推荐斯泰伦博斯本地肉铺的Boerewors，再配上手工啤酒。"
+        }
+      ],
+      "implicit_signal": "烤肉派对希望展现本地食材和音乐融合"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "Aardklop早鸟票昨天开售，我直接买了，但还没安排住宿。"
+        },
+        {
+          "role": "assistant",
+          "content": "先订票是对的，附近民宿我帮你列出有免费退订政策的几家。"
+        }
+      ],
+      "implicit_signal": "优先购买音乐节早鸟票，即使行程未定"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去年我在落地扇上贴了张南非语歌单，结果被邻居吼太吵。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次给你推荐骨传导耳机，既能听歌又不打扰别人。"
+        }
+      ],
+      "implicit_signal": "在粉丝社群中分享内部信息，建立信任"
+    }
+  ]
+}

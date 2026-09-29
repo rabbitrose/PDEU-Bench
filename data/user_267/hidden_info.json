@@ -1,0 +1,470 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_267",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:47:08",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_007",
+      "hidden_indirect_009",
+      "hidden_indirect_015",
+      "hidden_indirect_018"
+    ],
+    "content": [
+      "hidden_indirect_002",
+      "hidden_indirect_017"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_007",
+      "hidden_indirect_016",
+      "hidden_indirect_020"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_005",
+      "hidden_indirect_011"
+    ],
+    "entertainment": [
+      "hidden_indirect_015"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_004",
+      "hidden_indirect_012",
+      "hidden_indirect_014",
+      "hidden_indirect_019"
+    ],
+    "food": [
+      "hidden_indirect_009"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_008",
+      "hidden_indirect_017"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "learning": [
+      "hidden_indirect_012"
+    ],
+    "privacy": [
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_016"
+    ],
+    "product": [
+      "hidden_indirect_014"
+    ],
+    "role_context": [
+      "hidden_indirect_011"
+    ],
+    "service": [
+      "hidden_indirect_006",
+      "hidden_indirect_013",
+      "hidden_indirect_019"
+    ],
+    "technology": [
+      "hidden_indirect_010"
+    ],
+    "travel": [
+      "hidden_indirect_008",
+      "hidden_indirect_020"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次在码头订了家新开的酒吧，菜单上没写服务费，结账多出一笔，下次不想再遇到这种。朋友下周小聚，有没有预算能提前锁定的地方？"
+        },
+        {
+          "role": "assistant",
+          "content": "那家海滨小店我之前取消过预约，菜单全公开，配酒套餐标价含税和服务费，可以预约时锁定套餐价格。受影响的只有你们自己，时间定在周五晚上8点，风险是当天可能满座，备选是旁边的茶室。要我先查座位吗？"
+        }
+      ],
+      "implicit_signal": "朋友小聚选择时，优先考虑预算透明和可取消性，而非最热门的场所"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "医生说他推荐的跑鞋能预防膝盖压力，但只说了一个品牌名，我查了半天全是专业术语，不知道哪双适合日常走路。你手边有更直接的信息吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "我查了该品牌的官网和独立评测——有三款都标注了“日常缓震”，其中一款在瓦伦西亚本地店有试穿。如果你愿意，我可以列个表：受影响的是你的通勤脚感，时间安排是周末早上，风险是导购可能推销，备选是另一品牌的平价款。需要我按这个框架整理吗？"
+        }
+      ],
+      "implicit_signal": "倾向于将专业建议转化为家庭可执行的步骤，依赖具体数据和可复盘措施"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你给的那个聚会建议太长，我看完已经闭馆了，没时间记。能不能发个更短、像短信那种，只有时间和地址？"
+        },
+        {
+          "role": "assistant",
+          "content": "明白。下次小聚：周五 20:00 / 海滨店 C/ de la Mar, 12。刚才我去确认了菜单和取消规则：套餐38欧全包，24小时前可免费取消。备选是茶室，同条街。先这样？"
+        }
+      ],
+      "implicit_signal": "偏好短信式摘要，接受结构化但简短的回答"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "网上那篇建议说“如果不这样调整，未来可能会出大问题”，我看了很烦，但又不知道如何判断真假。你能直接说它哪里靠不住吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "那篇文章没有引用任何病例数据，只说“可能”，但没给出概率或条件。我查了权威来源：对于你提到的情况，真正需要警惕的是XX和YY指标——这两个在家庭自测里能看到。如果你愿意，我可以把判断标准和行动步骤整理成一段，不吓人。需要吗？"
+        }
+      ],
+      "implicit_signal": "不喜欢刻意制造焦虑的描述，回避模糊的预测"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次约了社区医生咨询家庭护理安排，现场才发觉忘带妈妈的用药清单，只好口头说一遍，浪费了时间。下次见面之前我该准备什么？"
+        },
+        {
+          "role": "assistant",
+          "content": "提前24小时准备好：药物名称和剂量（可以用代号代替全名，只写首字母和数字）；每次服药的大概时间；以及近一周任何异常反应。不用写具体诊断名称，只留必要数据。下次预约前我会前一声提醒你。这些够吗？"
+        }
+      ],
+      "implicit_signal": "需要提前准备材料，并保护家庭成员的隐私"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想退订那个杂志订阅，网站上的sitemap几乎藏了取消入口，点了三页才找到，还没有确认邮件。有更好的办法吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "是该供应商的常见问题：取消入口只在账户设置的“付费计划”里，且需要点进第二层。我帮你找到了直接链接，也准备了截图指引，按步骤两步内可退。退完后如果48小时内没收到确认邮件，再联系客服。现在操作还是等你方便时？"
+        }
+      ],
+      "implicit_signal": "避免复杂术语和冗长流程"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友推荐了一家新健身房，年费看起来便宜，但合同里要求附加保险和“设备费”，每月要多40欧。我预算已经卡死了，不想被套牢。"
+        },
+        {
+          "role": "assistant",
+          "content": "那家确实有附加条款。我对比了另一家距离较近的：月付35欧，含基础保险，无强制设备费，可逐月取消。受影响的只限你一人，时间安排：周末上午可参观，风险是用人多但不会挤到无法训练，备选是社区体育馆更便宜。要我把合同重点标出来？"
+        }
+      ],
+      "implicit_signal": "超额必须给出替代方案，避免被隐性成本影响"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次周末短途旅行，回程路段被导览绕到热门景点，堵了20分钟，差点没赶上车。这次只想找个能中途停一下、但不会被迫兜圈子的路线。能规划一个带缓冲时间、住宿可取消的方案吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "从瓦伦西亚到特鲁埃尔，有一条沿CV-23的乡间公路，无收费，沿途有两个可停靠的观景台，不绕路。住宿选一个距车站300米的旅舍，入住当天18点前可免费取消。受影响的：你和同行朋友；时间：周六早8点出发，17点前可返回；风险：乡道部分无照明；备选：高铁路线。要我把停靠点标在地图上吗？"
+        }
+      ],
+      "implicit_signal": "路线要留缓冲，出行优先考虑可取消和安静"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周想自己带饭，结果准备时间太长，最后到午休还没做完，只好叫外卖，又超了周预算。有没有能前一天晚上快速准备、不油腻的午餐方案？"
+        },
+        {
+          "role": "assistant",
+          "content": "可以试试“一锅蒸”：提前一晚上把糙米、鸡胸和冷冻西兰花分层放进蒸碗，盖好冷藏。第二天只需丢进微波炉或蒸锅12分钟。成本约3欧一份。受影响的只有你自己的午饭安排，时间：第二天午休前13分钟，风险：鸡胸可能偏干，备选是加一勺橄榄油或换成豆腐。要具体配料清单吗？"
+        }
+      ],
+      "implicit_signal": "预算敏感，偏好不过度油腻且能稳定执行的餐食"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前用一款笔记软件记录家庭日程，后来它取消了免费同步，又不让导出旧数据，我花了三天手动复制。现在想找个能导出、手机电脑同步、权限清楚的新工具。"
+        },
+        {
+          "role": "assistant",
+          "content": "可以试试Markdown本地笔记应用，比如Obsidian或Logseq，同步走第三方服务（Nextcloud或iCloud），数据是纯文本文件，随时可迁移。订阅模式只有同步需要费用（约2欧/月），其余功能免费。受影响的：所有笔记；时间：迁移建议周末做；风险：需要少量手动设置；备选是Joplin（全免费）。需要我准备迁移步骤吗？"
+        }
+      ],
+      "implicit_signal": "偏好可导出数据、支持跨设备同步、防止锁定在单一平台"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我现在要帮朋友找一个周六下午的活动，要求人不多、不吵闹、不用提前注册。我翻了好几个活动聚合页，每一步都跳转到不同网站注册，很烦。你手边有直接的选项吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "有的：圣米格尔市场旁边有一个独立书店下午有阅读分享，直接推门进，不需要报名，常常只有七八个人。影响你和你朋友两人；时间：周六16:00-18:00；风险：可能座位有限，备选是旁边公园长椅。如果你需要，我可以先把这家店的信息整理成一段短文字，不绕路。"
+        }
+      ],
+      "implicit_signal": "愿意为了稳定牺牲一点效率，慢节奏但也更可靠"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想学基础摄影，看了很多教学视频，但看完还是不知道怎么拍一张好照片。有没有一个能只要练一次就看得到进步的方案？"
+        },
+        {
+          "role": "assistant",
+          "content": "可以尝试“单主题三拍法”：选择同一个物体（比如杯子），拍三张：一张标准自动、一张手动调低曝光拍细节、一张手动调高拍影子，然后对照看哪个更接近你想要的。全程只要15分钟。风险：初看效果可能不如示意图，备选是找一张参考图对比。需要我把调参数的具体步骤写下来吗？"
+        }
+      ],
+      "implicit_signal": "偏好短周期反馈、需要可复盘的标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次使用一个上门维修服务，预约后才发现取消需要提前五天邮件通知，我没有收到提醒，漏掉了。结果白付了定金。有没有取消规则更公开、能用日历直接取消的服务？"
+        },
+        {
+          "role": "assistant",
+          "content": "我找到一个本地供应商，取消了24小时前可免费取消，直接在网页上点一次就好，取消后系统发确认邮件。受影响的是你家水管维修；时间：下周三上午；风险：如果当天材料缺货可能改期；备选是另一家有小时收费但无定金。需要预约时备注取消规则吗？"
+        }
+      ],
+      "implicit_signal": "服务需要明确取消规则和响应速度，避免隐性步骤"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看中一款空气炸锅，促销价很诱人，但网上只能找到品牌自己的宣传视频，没有独立评测。我担心用了半年就坏，维修也很贵。能不能帮我找找可靠信息？"
+        },
+        {
+          "role": "assistant",
+          "content": "我查到了实验室独立评测和用户论坛反馈：该品牌有三款有较大差异，其中你提到的型号在维修便利性上评分低——维修零件需从中国订购，运费超过炸锅本身。另一款同价位的国产品牌，在本土有服务中心，零件第二年仍在生产。受影响的是你家的厨房电器安排；时间：周末决策不急；风险：促销可能过期；备选是直接去本地商店试用后下单。要我把对比表整理出来吗？"
+        }
+      ],
+      "implicit_signal": "产品选择需要说明长期使用成本和替代选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友提议周六去一个“沉浸式展览”，票价37欧，评论说其实只有几个投影房间，很多人觉得不值。但又怕拒绝会让朋友扫兴。有没有适合两个人、不贵、又能聊得开的地方？"
+        },
+        {
+          "role": "assistant",
+          "content": "有两个选择：一是本地的社区电影院，周六下午有经典电影重映，票6欧，旁边有咖啡厅可聊；二是图书馆的纪录片放映会，免费，人少。受影响的是你和朋友的时间和体验；时间：周六下午；风险：社区座位有限，但可提前线上占座；备选是公园散步。你想要哪一个的详细信息？"
+        }
+      ],
+      "implicit_signal": "小型、真实、低成本的活动，避免强营销"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我需要为妈妈的护理做一个简单的排班表，但不想把具体健康细节写进去，也不能让别人看出哪个时段负担最重。怎么设计？"
+        },
+        {
+          "role": "assistant",
+          "content": "可以用代名制：每个人只出现“A/B/C”代号，时段写“早”“午”“晚”，不标注任务内容。另做一份只有你看的对照表，说明每个时段对应什么事务。受影响：你和另一位协助者；时间：下周开始；风险：如果临时换班需要更新代号表；备选是一张共享电子表但仅限你们两人可看。先画一个示例？"
+        }
+      ],
+      "implicit_signal": "涉及家庭健康时需要匿名化处理，情绪负担优先"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次问怎么选保温杯，你给了我三段功能说明和品牌历史，我其实只关心“能不能放在包里不漏水、不冰手”。能不能只告诉我这点？"
+        },
+        {
+          "role": "assistant",
+          "content": "明白。两款候选：容量500ml真空款——密封圈双层，测试时倒置30秒不漏；外层磨砂不冻手。价格21欧。受影响的是你通勤饮水；时间：购买后第二天可用；风险：杯盖可洗但不建议机洗；备选是同品牌的轻量款。需要链接还是直接去本地店看实物？"
+        }
+      ],
+      "implicit_signal": "拒绝通用助手框架，不接受泛化建议，只保留影响决策的部分"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "电信公司说“前三个月半价，之后恢复原价”，合同上还写“可能根据通胀调整”。我不想被不断涨价拴住，有没有月付固定价格的套餐？"
+        },
+        {
+          "role": "assistant",
+          "content": "有一家虚拟运营商提供每月固定17欧，含10GB和全市通话，合同无自动涨价条款，可随时解约。受影响的是你的手机账单；时间：本月换约无违约金；风险：覆盖在城郊稍弱，备选是另一家月付19欧但有实体店服务。需要我确认您所在区的信号覆盖再推荐？"
+        }
+      ],
+      "implicit_signal": "拒绝有条件促销、隐藏费用和不稳定的报价"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想给家里预约一次深度保洁，之前那个平台要求先注册、再填问卷、再等客服回电确认，折腾了三轮。有没有能直接发时间地点、一步确认的服务？"
+        },
+        {
+          "role": "assistant",
+          "content": "本地的“Limpieza Directa”可以在网上直接选日期时间、付款、收到确认邮件，不需要注册账户。范围覆盖瓦伦西亚市区，价格透明，每半小时28欧。受影响：你家全屋卫生；时间：系统显示下周二有空档；风险：若需变更需在24小时前上网改，备选是隔壁社区的独立清洁阿姨（稍便宜但无合同）。要不要我帮你直接选一个时间段？"
+        }
+      ],
+      "implicit_signal": "需要少中转、少注册、少额外沟通的服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次订酒店只看评分，到了发现隔壁是工地，早上七点开始施工，没法休息。这次周末要带家人住一晚，最重要的就是安静、安全，且如果行程变还能免费取消。有推荐吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "在瓦伦西亚北边有一家家庭式民宿，三层小楼，禁派对，每间有隔音窗，取消政策：入住前48小时免费。评分4.7（基于安静和安全两项加权）。受影响的是你和家人两人；时间：下周末；风险：距市中心地铁20分钟，备选是同区域另一家含早餐的旅馆。要我把取消政策原文和隔音认证截图发你吗？"
+        }
+      ],
+      "implicit_signal": "住宿优先考虑安全、安静和可取消性"
+    }
+  ]
+}

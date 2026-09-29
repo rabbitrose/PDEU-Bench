@@ -1,0 +1,254 @@
+{
+  "user_id": "user_127",
+  "explicit_preferences": {
+    "user_profile": "一位欣赏这名球员防守能力且珍视其场上支持的锋线队友",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Marco Delgado",
+        "age": 28,
+        "gender": "男性",
+        "location": {
+          "city": "Barcelona",
+          "country": "Spain"
+        },
+        "languages": [
+          "西班牙语",
+          "英语",
+          "Catalan"
+        ],
+        "education_level": "体育科学学士学位",
+        "occupation": "职业足球运动员（前锋）",
+        "industry": "体育",
+        "seniority": "资深（8年职业经验）",
+        "household": "单身，独自居住",
+        "life_stage": "巅峰期年轻运动员"
+      },
+      "physical_profile": {
+        "height_cm": 185,
+        "general_appearance": "运动型身材，肌肉结实但精瘦，深色短发，不留胡须，常穿球队训练服",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "自信且进取，但高度重视团队协作与防守协同。尊重为球队牺牲的球员。",
+        "big_five": {
+          "openness": 60,
+          "conscientiousness": 85,
+          "extraversion": 75,
+          "agreeableness": 70,
+          "neuroticism": 30
+        },
+        "strengths": [
+          "团队导向",
+          "坚韧不拔",
+          "战术意识强"
+        ],
+        "weaknesses": [
+          "有时过于执着于进球",
+          "错失机会后易过度自责"
+        ],
+        "values": [
+          "纪律性",
+          "团队合作",
+          "支持他人",
+          "韧性"
+        ],
+        "motivations": [
+          "赢得冠军",
+          "提升队友水平",
+          "个人成长"
+        ],
+        "stress_triggers": [
+          "失败",
+          "队友不努力",
+          "受伤"
+        ]
+      },
+      "background": {
+        "hometown": "西班牙塞维利亚",
+        "family_background": "父亲为半职业后卫，母亲为理疗师。在体育氛围家庭中长大。",
+        "education": "12岁进入拉玛西亚青训营，后效力巴萨B队及一线队。业余时间完成学位。",
+        "career_path": "巴萨青年梯队→租借至塞维利亚→返回巴萨一线队成为常规首发。",
+        "notable_life_events": "赢得欧洲青年联赛冠军，22岁时克服脚踝重伤，指导年轻青训球员。"
+      },
+      "lifestyle": {
+        "daily_routine": "早7点起床，轻早餐，10-12点训练，战术录像课，午餐，休息，下午健身房，与队友共进晚餐或独自用餐，睡前复盘比赛录像。",
+        "social_life": "与队内好友聚餐，偶尔外出就餐，赛季期间避免夜店。",
+        "hobbies": [
+          "玩FIFA游戏",
+          "阅读足球自传",
+          "跑步",
+          "烹饪健康餐食"
+        ],
+        "habits": "每晚拉伸，坚持写训练日记，每天至少观看一场完整比赛用于分析。"
+      },
+      "interests": {
+        "sports": [
+          "足球（球员兼观众）",
+          "篮球",
+          "国际象棋"
+        ],
+        "media": [
+          "足球纪录片",
+          "战术分析类YouTube频道",
+          "运动心理学播客"
+        ],
+        "reading": [
+          "后卫/中场球员传记",
+          "运动科学文章"
+        ],
+        "gaming": [
+          "FIFA终极球队（喜欢组建防守阵容）",
+          "足球经理游戏"
+        ]
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "主题：足球战术、防守策略、团队凝聚力、对手分析",
+          "格式：视频分析、数据可视化、播客、短文",
+          "内容必须符合该用户独特的工作模式：职业前锋模式：战术性、视觉化、身体感知、直接。",
+          "拒绝通用的助理框架：不要提供一般的健身建议或粉丝评论。"
+        ],
+        "product_preferences": [
+          "鞋类：Nike Mercurial 或 Adidas X，偏好握地鞋钉以快速转向",
+          "服装：Under Armour 压缩装备，偏好纯深色",
+          "技术：Garmin GPS 手表追踪指标，心率监测器",
+          "产品应通过用户自身的权衡视角进行选择：比赛问题、训练提示、度量指标、恢复信号、投资风险。"
+        ],
+        "service_preferences": [
+          "训练：个性化力量与体能计划",
+          "营养：专注于高蛋白和恢复餐的送餐服务",
+          "娱乐：提供体育纪录片的流媒体服务（如 Netflix、DAZN）",
+          "服务只有在保持此决策优先级时才可接受：匹配角色、恢复和职业生涯后安全性优先于美学。"
+        ],
+        "learning_preferences": {
+          "topics": [
+            "战术意识",
+            "运动心理学",
+            "损伤预防"
+          ],
+          "style": "观看教练主导的视频课程、互动模拟、一对一指导"
+        },
+        "travel_preferences": {
+          "purpose": "主要随队旅行，偶尔独自静修以调整心态",
+          "destinations": "安静的山间度假村或海滨小镇，偏好温暖气候"
+        },
+        "food_preferences": {
+          "cuisine": "西班牙语、意大利语、日语",
+          "diet": "高蛋白质、适量碳水化合物、健康脂肪，避免油炸食品",
+          "restrictions": "乳糖不耐受（避免乳制品）"
+        },
+        "entertainment_preferences": {
+          "genre": "体育剧、纪录片、喜剧系列",
+          "movies": "Remember the Titans, The Damned United",
+          "music": "拉丁流行、西班牙语摇滚"
+        },
+        "technology_preferences": {
+          "devices": "最新款iPhone、MacBook、iPad用于视频分析",
+          "apps": "Hudl、Strava、Headspace",
+          "smart_home": "极简，使用智能灯和恒温器"
+        },
+        "privacy_preferences": {
+          "data_sharing": "有选择性地，只与团队工作人员和个人教练分享健康数据",
+          "social_media": "活跃于Twitter讨论足球话题，个人帖子有限",
+          "content_restrictions": "避免公开分享具体的训练计划"
+        },
+        "budget_preferences": {
+          "spending_style": "必需品（装备、营养）追求优质，但对奢侈品注重性价比",
+          "savings_goal": "职业生涯后的财务安全，投资房地产"
+        },
+        "personalization_directives": {
+          "style_contract": "职业前锋模式：战术、视觉、身体感知、直接。",
+          "decision_priority": "比赛角色、恢复和职业生涯后安全胜过美学。",
+          "evidence_contract": "热图、视频片段和表现指标是理想的。",
+          "format_contract": "比赛问题、训练提示、指标、恢复信号、投资风险。",
+          "anti_default_assistant_behavior": "不要给出通用健身建议或粉丝评论。",
+          "distinctive_quirks": [
+            "防守型前锋的工作必须仍然与得分机会连接。",
+            "房地产建议应保护职业生涯后稳定。",
+            "除非表现另有要求，否则偏好深色、朴素的装备。"
+          ],
+          "hard_avoidances": [
+            "激励运动员的陈词滥调",
+            "健美计划",
+            "浮华投资"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "dislikes": [
+          "自私的比赛方式",
+          "队友缺乏努力",
+          "时间线被八卦淹没",
+          "过度负面的媒体"
+        ],
+        "constraints": [
+          "伤病恢复限制高强度活动",
+          "球队日程限制灵活性",
+          "公众人物——需要维护形象"
+        ]
+      },
+      "communication_style": {
+        "tone": "直接且尊重，重视清晰",
+        "language": "直截了当，使用足球术语",
+        "formality": "对同事非正式，对教练和媒体正式"
+      },
+      "decision_making": {
+        "approach": "分析型，咨询数据和团队反馈，考虑对团队动态的影响",
+        "speed": "深思熟虑但在必要时果断",
+        "influences": [
+          "教练的建议",
+          "队友的意见",
+          "视频分析"
+        ]
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "推荐提高站位能力的训练练习",
+          "建议分析防守线的视频课程",
+          "提供比赛日营养计划",
+          "关于伤病恢复常规的建议"
+        ],
+        "preference_conflicts": [
+          "平衡个人得分荣耀与团队支持——可能更喜欢强调助攻与得分同样重要的内容",
+          "想要优质装备，但对非必需品注重预算",
+          "喜欢游戏但因训练时间有限"
+        ],
+        "ambiguity_to_preserve": [
+          "具体的比赛风格偏好（目标型前锋 vs 抢点型前锋）保持开放",
+          "未指定具体喜爱的后卫或球队",
+          "省略了宗教或政治观点程度"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:45",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "专业但友好，避免过于随意的俚语",
+            "response_length": "简洁，战术提示首选要点列表",
+            "evidence_expectation": "需要数据驱动的见解（例如统计数据、热图）来支持建议",
+            "formatting": "清晰的标题，使用列表进行比较（例如球员数据）",
+            "proactive_behavior": "当助手根据近期表现推荐相关内容或练习时表示赞赏",
+            "things_to_avoid": [
+              "废话或过度赞美",
+              "未经请求的个人建议",
+              "猜测性的转会传闻"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "设计一个防守型前锋训练模块",
+            "计划腘绳肌轻微拉伤后的恢复周",
+            "评估并投资房地产以保障职业生涯后安全"
+          ]
+        }
+      }
+    }
+  }
+}

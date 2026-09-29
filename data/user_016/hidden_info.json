@@ -1,0 +1,419 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_016",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:00:34",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 19,
+  "composition": {
+    "episodic_preference_trace": 19
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_002"
+    ],
+    "content": [
+      "hidden_indirect_013"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_002"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_007",
+      "hidden_indirect_008",
+      "hidden_indirect_009"
+    ],
+    "entertainment": [
+      "hidden_indirect_019"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_004"
+    ],
+    "food": [
+      "hidden_indirect_018"
+    ],
+    "format_contract": [
+      "hidden_indirect_005",
+      "hidden_indirect_006"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_010",
+      "hidden_indirect_011",
+      "hidden_indirect_012"
+    ],
+    "learning": [
+      "hidden_indirect_016"
+    ],
+    "privacy": [
+      "hidden_indirect_019"
+    ],
+    "product": [
+      "hidden_indirect_014"
+    ],
+    "role_context": [
+      "hidden_indirect_001"
+    ],
+    "service": [
+      "hidden_indirect_015"
+    ],
+    "technology": [
+      "hidden_indirect_019"
+    ],
+    "travel": [
+      "hidden_indirect_017"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "这周有社区需求调研报告要交，我把每天的空档列出来了，但有三天下午都有线上会议间隙可以填。"
+        },
+        {
+          "role": "assistant",
+          "content": "把调研报告的拆解任务放进那三个空档，每个40分钟，只做资料整理或初稿段落，不碰新任务。"
+        }
+      ],
+      "implicit_signal": "优先保证工作交付的时间边界，拒绝被打乱"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周买了一个包月转录服务，发现导出历史记录要另付29块，之前没说过。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成本地离线转录工具，取消订阅，把导出限制加进筛选条件。"
+        }
+      ],
+      "implicit_signal": "隐性成本比标价更重要，宁愿换方案也不愿被后续费用拖累"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "活动散场后有人推荐了一个耗材供应商，说同行长期在用。我回去查官网，没有标单价。"
+        },
+        {
+          "role": "assistant",
+          "content": "只考虑公开标价或能提供前三月订单截图的价格表。这家先标记为未确认，等回复后再评估。"
+        }
+      ],
+      "implicit_signal": "不接受无来源的推荐，需要可验证的性价比对比"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "方案里有一项依赖第三方平台的定时报告，但客户还没回复能不能调接口。"
+        },
+        {
+          "role": "assistant",
+          "content": "先写一个备份方案：用本地批处理脚本替代定时报告。一旦接口未确认就走备份。"
+        }
+      ],
+      "implicit_signal": "需要明确的失败回滚路径才能推进决策"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那份备选餐厅推荐，我没时间读前面两段背景。直接给我对比表就行。"
+        },
+        {
+          "role": "assistant",
+          "content": "这周报告用三列：目标需求 / 预算和距离约束 / 具体方案和下一步操作，最后加检查项。"
+        }
+      ],
+      "implicit_signal": "交付内容必须用目标/约束/方案表结构"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次打印店清单，每家营业时间都没写。我到了发现两家下午关门。"
+        },
+        {
+          "role": "assistant",
+          "content": "今天的任务表每个步骤后加一行【待确认】——尤其是营业时间、截止日期和代收人。"
+        }
+      ],
+      "implicit_signal": "执行计划必须有明确的未确认点标注"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "设备更新后装的新笔记软件，手机和电脑同步要手动导出再导入，不是自动的。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成用iCloud同步的备忘录或坚果云，或者查工具是否支持WebDAV自动同步。"
+        }
+      ],
+      "implicit_signal": "低摩擦工具偏好：一次录入，不重复复制黏贴"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "这周填了三份类似的服务申请，每次都要重新输入地址和组织信息，同一个字段输了三次。"
+        },
+        {
+          "role": "assistant",
+          "content": "把常用信息做成文本快照模板，下次直接复制，只改日期和备注字段。"
+        }
+      ],
+      "implicit_signal": "讨厌重复录入信息，要求工具自动填充或一次设置"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "今天给社区老人通知活动，按地址跑了三家，结果最后一家已搬走，没提前标识。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后每次活动前先电话确认地址，确认清单用【已确认】【待回电】标在每个条目后。"
+        }
+      ],
+      "implicit_signal": "需要清楚标出未确认点，否则方案不可执行"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周方案卡住时你给我说“加油，你能搞定”，但我更需要下一步做什么。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后卡方案时先列出当前阻塞点和三个可选路径；如果缺信息，先问谁可提供。"
+        }
+      ],
+      "implicit_signal": "拒绝空泛鼓励，需要具体可执行建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次活动场地推荐清单一堆“网红热门”，但没提灭火器和无障碍通道。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后只推有安全检查记录和可取消条款的场地，网红标签不算有效信息。"
+        }
+      ],
+      "implicit_signal": "不看热度的推荐，拒绝替代维护成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "打印机推荐说机器便宜，但没算墨盒更换成本。我跑了两趟才买到替换墨盒。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后硬件推荐提供每月成本计算表：机器价+耗材+维修间隔，只推耗材易买的品牌。"
+        }
+      ],
+      "implicit_signal": "排除忽略维护成本的方案，要求区分初始投入和长期维护"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚才社区垃圾分类指南直接写“每天8点前丢厨余”，但没说周末或节假日是否相同。"
+        },
+        {
+          "role": "assistant",
+          "content": "上午先打社区办公室确认，然后把特殊时段也标进指南，不确定点用星号注释。"
+        }
+      ],
+      "implicit_signal": "内容必须包含依据和不确定点，不能直接给结论"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "日历协作应用试用后发现，导出数据要手动申请，且只能导出过去30天。"
+        },
+        {
+          "role": "assistant",
+          "content": "试试系统日历分享或Trello替代；如果选第三方，先查导出格式和保留期限。"
+        }
+      ],
+      "implicit_signal": "产品选择需说明长期使用成本和替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "打印服务自动续费在试用期结束前三天就扣了款，退订还要打电话。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成线下取件付现的打印店；如果必须用线上，先确认取消条款是否有在线退订。"
+        }
+      ],
+      "implicit_signal": "服务必须明确取消规则和响应速度"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "数据分析视频课看了两章，但没有练习题和反馈，不知道学得怎么样。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成每章有项目练习和自动评分的短课，反馈周期不超过两天，提供参考答案。"
+        }
+      ],
+      "implicit_signal": "学习需要短周期反馈和可复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "出差订的青旅临街很吵，取消要提前三天通知，这次不想再这样。"
+        },
+        {
+          "role": "assistant",
+          "content": "订逆向街的安静双床房，选免费取消窗口为24小时，路线加早到一小时的缓冲。"
+        }
+      ],
+      "implicit_signal": "路线必须留缓冲，住宿要可取消和安全安静"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "带老人复查那天，医院餐厅套餐24块一份但很油腻；我自己带了便当。"
+        },
+        {
+          "role": "assistant",
+          "content": "复查日提前一晚准备清淡便当，预算控制在20以内；外出吃饭就找本地小吃店。"
+        }
+      ],
+      "implicit_signal": "预算敏感，愿意选择本地小店或自己做饭"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周末参加主题市集很累，第二天状态起不来；而且那app要填家庭地址才能注册。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后选结束时间早于21点的小型展览或读书会；活动注册只给邮箱和昵称。"
+        }
+      ],
+      "implicit_signal": "娱乐不破坏第二天节奏；技术需能导出数据；只提供必要信息"
+    }
+  ]
+}

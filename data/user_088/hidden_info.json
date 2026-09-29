@@ -1,0 +1,491 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_088",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:36:59",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_002",
+      "hidden_indirect_012",
+      "hidden_indirect_017"
+    ],
+    "content": [
+      "hidden_indirect_003",
+      "hidden_indirect_021"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_004",
+      "hidden_indirect_014",
+      "hidden_indirect_021"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_009",
+      "hidden_indirect_017"
+    ],
+    "entertainment": [
+      "hidden_indirect_013"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_008",
+      "hidden_indirect_015"
+    ],
+    "food": [
+      "hidden_indirect_012"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_011"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_007",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "learning": [
+      "hidden_indirect_011",
+      "hidden_indirect_019"
+    ],
+    "privacy": [
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "product": [
+      "hidden_indirect_008",
+      "hidden_indirect_016"
+    ],
+    "role_context": [
+      "hidden_indirect_009",
+      "hidden_indirect_020"
+    ],
+    "service": [
+      "hidden_indirect_006",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "technology": [
+      "hidden_indirect_010",
+      "hidden_indirect_016",
+      "hidden_indirect_019"
+    ],
+    "travel": [
+      "hidden_indirect_007",
+      "hidden_indirect_014"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买了一个便宜的儿童座椅，用了一周发现卡扣松动，退货花了我一个下午。"
+        },
+        {
+          "role": "assistant",
+          "content": "新的座椅选这个，价格贵30%，但通过了近期碰撞测试，且免费上门安装。"
+        }
+      ],
+      "implicit_signal": "在预算和安全之间优先安全，愿意多花一点"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次维修工说‘没问题’就走了，结果第二天水管又漏，我只能请假等他再来。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我列出三个本地师傅，都有完工照片和当天返修承诺，费用写进合同。"
+        }
+      ],
+      "implicit_signal": "需要可验证的证据，不接受模糊承诺"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次收到的行程单只是日期列表，我漏掉了下午的核酸，导致全家改签。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次按这个格式整理：谁受影响 / 时间点 / 风险点 / 备案。"
+        }
+      ],
+      "implicit_signal": "需要信息以结构化方式呈现"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你发来的长篇指南，我在地铁换乘时根本没法看，只能回家再处理，差点错过预约。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只发三段：①谁几点到 ②带什么 ③如果迟到联系谁。长版进附件。"
+        }
+      ],
+      "implicit_signal": "偏好短信式摘要，决策时先考虑可达性"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那个家庭监控APP，注册要我填孩子的学校和生日，我直接删了。"
+        },
+        {
+          "role": "assistant",
+          "content": "换这个离线版摄像头，数据只存本地SD卡，注册只需邮箱，不收集位置。"
+        }
+      ],
+      "implicit_signal": "拒绝制造焦虑和强迫注册"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "临时约的保洁总是迟到，有次还提前走人，剩一半没打扫，我只好自己弄到很晚。"
+        },
+        {
+          "role": "assistant",
+          "content": "选固定时段保洁，提前三天确认，多付10%锁定，迟到免单。"
+        }
+      ],
+      "implicit_signal": "愿意为稳定牺牲效率，需要提前准备材料"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你推荐那个亲子景点，开车要两小时，来回耽误一下午，孩子午觉全没了。"
+        },
+        {
+          "role": "assistant",
+          "content": "找离家30分钟内的公园，自带游乐设施和阴凉长椅，无需排队。"
+        }
+      ],
+      "implicit_signal": "忽略照护者时间的方案会被拒绝"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那个除螨仪的评测全是术语，什么‘HEPA过滤效率’‘紫外线波长’，我看不懂。"
+        },
+        {
+          "role": "assistant",
+          "content": "选这款：①尘盒可水洗 ②滤网一年换一次 ③吸力够清理沙发缝。附坏处对比表格。"
+        }
+      ],
+      "implicit_signal": "需要专业建议转成普通家庭步骤"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次安排周末活动，只顾着孩子，结果我妈一个人在家摔倒了没人知道。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次先确认每段时间谁在家，然后排一个值班表，两小时互相报备。"
+        }
+      ],
+      "implicit_signal": "使用照护协调模式，先保证家人稳定"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个日历APP突然改收费，还把我的备注全锁住了，导出要手动敲。"
+        },
+        {
+          "role": "assistant",
+          "content": "换用这个开源日历，数据存本地iCal文件，随时导入其他应用。"
+        }
+      ],
+      "implicit_signal": "偏好可导出数据且多平台同步的工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次学那个网上摄影课，老师只放作品没讲怎么拍的，我试错好几次都没进步。"
+        },
+        {
+          "role": "assistant",
+          "content": "换这个课程，每章有作业、提交后48小时给修改建议，附一份错误清单。"
+        }
+      ],
+      "implicit_signal": "需要短反馈和可复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你推荐那家网红餐厅，人挤人到要拼桌，孩子一直哭，还花了80美元。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐社区小店，有包厢、儿童菜单、两个人40美元能吃饱，不用预订。"
+        }
+      ],
+      "implicit_signal": "预算敏感，考虑同行者限制"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月带家人去那个市集，全是推销员拉着你办卡，孩子被人流挤哭了。"
+        },
+        {
+          "role": "assistant",
+          "content": "改去图书馆周末的手工坊，免费、限流、全程可坐，时间为上午9点到11点。"
+        }
+      ],
+      "implicit_signal": "避免拥挤和强营销的活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次飞航班取消，因为买的折扣票不能退，滞留机场花了500美元住旅馆。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次选可免费取消的机票，且改签费低于20美元；备选火车方案已存离线副本。"
+        }
+      ],
+      "implicit_signal": "路线留缓冲，交通优先可取消"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个送菜服务，我取消订阅后竟然还在扣款，客服等了42分钟才接通。"
+        },
+        {
+          "role": "assistant",
+          "content": "用这个平台：取消即时生效，退款两天到账，客服15分钟内回复。"
+        }
+      ],
+      "implicit_signal": "需要明确取消规则和响应速度"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买智能灯，必须绑定APP还要求开位置权限，我直接退货了。"
+        },
+        {
+          "role": "assistant",
+          "content": "换这款物理遥控灯泡，不用联网，不收集数据，电池一年一换。"
+        }
+      ],
+      "implicit_signal": "不考虑需要过多个人数据的产品"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月支付了两次重复的保险，因为自动续费和手动缴费撞了，多花200美元。"
+        },
+        {
+          "role": "assistant",
+          "content": "设置一个家长日历空档，到期前三天手动确认，关闭自动续费。"
+        }
+      ],
+      "implicit_signal": "区分必须和可推迟花费，愿意为稳定牺牲效率"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你问孩子姓名和学校来推荐课外班，我觉得没必要，就自己找了一个。"
+        },
+        {
+          "role": "assistant",
+          "content": "只用年龄和兴趣范围推荐，不收集具体名字和地址。备选清单打印成离线副本。"
+        }
+      ],
+      "implicit_signal": "涉及家庭信息时要求匿名化处理"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次发了10个育儿课程链接，我点开几个都是宣传页，根本没内容。"
+        },
+        {
+          "role": "assistant",
+          "content": "只推荐一门：有免费试听、课程大纲和已购者家庭案例，链接附截图。"
+        }
+      ],
+      "implicit_signal": "不喜欢只堆材料链接，需要示例"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次保姆请假只提前两小时，我当天两个会议全乱套，孩子送到邻居家。"
+        },
+        {
+          "role": "assistant",
+          "content": "签下一位替补，提前一周排班，请假必须48小时通知，否则扣一天薪资。"
+        }
+      ],
+      "implicit_signal": "温和但现实地优先保证日程稳定"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你给我一个完美旅行计划，结果下雨项目取消，没有一个备选。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后每个室外活动配一个室内选项，标注天气触发条件和备用消耗时间。"
+        }
+      ],
+      "implicit_signal": "结论要说明依据和不确定点"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "user_id": "user_117",
+  "task": {
+    "task_id": "task_hard",
+    "title": "规划一次环保且尊重隐私的假期",
+    "daily_life_domain": "travel",
+    "scenario": "Alex积累了一些假期，想在接下来的2个月内安排一周的旅行。他们希望目的地的价值观与自己一致：生态旅游、文化沉浸和强有力的隐私法律。他们被各种选项所淹没，需要一个结构化的计划来避开大众旅游和数据饥渴的预订网站。",
+    "user_goal": "设计一个注重隐私、可持续的旅行行程，适合中等预算并尊重个人数据。",
+    "why_complex": "需要平衡多个标准：目的地选择需考虑隐私法律、环保住宿、不拥挤的活动、最小化数据暴露的预订方式以及纯素食和本地餐饮。隐私与便利之间需权衡。",
+    "constraints": [
+      "时间：7天旅行，在2个月内，必须考虑工作安排。",
+      "预算：中等，需要给出总成本范围和主要费用项。",
+      "需要核对预订服务的数据收集、账户要求和取消规则。",
+      "需要收集候选地点的饮食可用性信息。",
+      "需要比较候选国家的旅行规则、数据保护要求和实际可达性。"
+    ],
+    "required_reasoning_steps": [
+      "1. 确定旅行规则、数据保护要求和生态旅游条件信息完整的候选国家。",
+      "2. 筛选出2-3个拥有自然保护区或历史城镇且游客密度较低的目的地。",
+      "3. 针对每个目的地，研究接受直接预订且有透明隐私政策的环保住宿。",
+      "5. 规划一个宽松的行程，包括非旅游活动：徒步路线、本地烹饪课、无需收集个人数据的小团体游览。",
+      "6. 确定纯素食友好餐厅或售卖本地有机农产品的市场。",
+      "7. 在不必要的情况下避免泄露个人数据，检查签证要求及任何健康/安全建议。",
+      "8. 汇总最终计划及备选方案，并列出所需的隐私工具清单（如VPN、注重隐私的地图）。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "确切的假期日期和灵活度。",
+      "预算范围（确切的最大支出）。",
+      "任何过往旅行经历或对过去旅行的不喜欢。",
+      "Alex是否愿意在保持隐私的同时与紧急联系人分享位置信息。",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "详细7天行程，包含目的地、住宿、活动和餐饮选择，全部经过隐私和可持续性验证。提供避免数据追踪的预订链接、预算明细以及旅行中使用的隐私工具列表。",
+    "success_criteria": [
+      "所有推荐的服务都有明确的隐私政策，且不需要手机或社交媒体登录。",
+      "住宿和活动被评为环保且不过于旅游化。",
+      "行程在时间和预算限制内可行。",
+      "每天确认有纯素食选项。",
+      "用户在整个规划过程中对数据最小化感到放心。",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "推荐隐私保护薄弱或监控严重的旅游目的地。",
+      "推荐与第三方共享数据的OTA（在线旅游平台）。",
+      "忽视纯素食餐食的可获得性。",
+      "行程过于死板，导致喜欢灵活性的用户焦虑。",
+      "推荐需要共享个人信息的活动（例如照片标签、位置签到）。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "navigation",
+        "travel_flights",
+        "weather",
+        "food"
+      ],
+      "domain_descriptions": {
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 10,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 8,
+      "human_verifier_estimation_basis": [
+        "domain=travel",
+        "source_domains_capped=4",
+        "reasoning_steps_capped=11",
+        "constraints_capped=6",
+        "decision_points_capped=3",
+        "information_items_capped=7",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=30.15",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Alex Chen",
+      "age": 28,
+      "gender": "非二元性别"
+    }
+  }
+}

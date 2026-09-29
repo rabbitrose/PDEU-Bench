@@ -1,0 +1,156 @@
+{
+  "user_id": "user_100",
+  "explicit_preferences": {
+    "user_profile": "一位百老汇女演员，提供在压力下表演的见解",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Elena Martinez",
+        "age": 34,
+        "gender": "女性",
+        "location": "纽约州纽约市",
+        "languages": [
+          "英语",
+          "西班牙语"
+        ],
+        "education_level": "音乐剧美术学士",
+        "occupation": "女演员",
+        "industry": "表演艺术",
+        "seniority": "主要表演者",
+        "household": "独居在上西区公寓",
+        "life_stage": "资深专业人士，单身，无子女"
+      },
+      "physical_profile": {
+        "height_cm": 170,
+        "general_appearance": "苗条、运动型身材；表情丰富；深色长发；台下常淡妆，台上浓妆。",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "自律而充满激情的表演者，在压力下茁壮成长，重视台上台下的真实性。",
+        "big_five": {
+          "openness": 90,
+          "conscientiousness": 80,
+          "extraversion": 75,
+          "agreeableness": 60,
+          "neuroticism": 45
+        },
+        "strengths": [
+          "韧性",
+          "即兴表演",
+          "情感表达力"
+        ],
+        "weaknesses": [
+          "完美主义",
+          "难以委派任务",
+          "容易自我批评"
+        ],
+        "values": [
+          "艺术完整性",
+          "真实性",
+          "协作",
+          "纪律性"
+        ],
+        "motivations": [
+          "打动观众",
+          "精通她的技艺",
+          "激励年轻表演者"
+        ],
+        "stress_triggers": [
+          "最后一刻的变更",
+          "表演中的技术故障",
+          "负面评价"
+        ]
+      },
+      "background": "在迈阿密的古巴裔美国家庭长大。5岁开始跳舞。在著名的音乐剧学院学习。23岁以合唱角色在百老汇首次亮相。通过冥想和暴露疗法克服了怯场。现在以在戏剧音乐剧中担任主角而闻名。",
+      "lifestyle": "演出期间的密集排练日程；清晨声乐热身和体能训练；晚上表演；深夜社交或放松。喜欢规律但能快速适应变化。演出周避免饮酒。喜欢安静的周日阅读和准备餐食。",
+      "interests": [
+        "戏剧史",
+        "即兴表演",
+        "瑜伽和冥想",
+        "复古时尚",
+        "黑色电影",
+        "烹饪健康餐食",
+        "前往艺术节旅行",
+        "支持新兴艺术家"
+      ],
+      "explicit_preferences": {
+        "content_preferences": [
+          "偏好写实且情感复杂的叙事；喜欢关于表演者的纪录片；钟爱幕后内容；避免过度暴力或恐怖。",
+          "内容必须符合用户独特的工作模式：演员排练室模式：温暖但有挑战性，情感精准。",
+          "拒绝通用助手框架：不要提供平淡的鼓励或健康陈词滥调。"
+        ],
+        "product_preferences": [
+          "高品质护肤品、人体工学鞋、降噪耳机、用于家中练习的专业照明设备、录音笔。",
+          "产品应通过用户自己的权衡视角选择：场景/声音需求、锻炼、情感风险、恢复边界。"
+        ],
+        "service_preferences": [
+          "私人声乐教练、私人瑜伽教练、心理健康教练、活动专业造型师、旅行管家。",
+          "服务只有在保留这一决策优先级时才能接受：角色真实、声带健康和艺术充电优先于便利。"
+        ],
+        "learning_preferences": "动手操作的工作坊、一对一辅导、技巧视频教程、同伴反馈会议。",
+        "travel_preferences": "喜欢安静的度假地以放松，偏爱文化之都寻找灵感，重视高效的旅行安排，常轻装出行。",
+        "food_preferences": "健康且均衡；无乳制品；喜欢地中海饮食；偏好有机；严格补水；偶尔纵容甜点。",
+        "entertainment_preferences": "现场戏剧、电影剧情片、经典好莱坞电影、关于表演的播客、爵士乐和古典音乐。",
+        "technology_preferences": "使用iPhone和Mac；偏好可靠简洁的界面；依赖日历和笔记应用；使用流媒体进行研究；避免不必要的社交媒体干扰。",
+        "privacy_preferences": "保持私密个人生活；有选择地分享社交媒体；使用独立的工作手机号；注意位置共享。",
+        "budget_preferences": "投资于培训和健康；在优质鞋子和护肤品上挥霍；日常消费节俭；为旅行和文化体验分配预算。",
+        "personalization_directives": {
+          "style_contract": "演员排练室模式：温暖但具有挑战性，情感精准。",
+          "decision_priority": "角色真实性、嗓音健康与艺术充电优先于便利性。",
+          "evidence_contract": "健康方面可接受信息来源，但身体实践更重要。",
+          "format_contract": "场景/嗓音需求、练习、情感风险、恢复边界。",
+          "anti_default_assistant_behavior": "不要提供平淡的鼓励或健康陈词滥调。",
+          "distinctive_quirks": [
+            "若有助于表演，可直接给出反馈。",
+            "旅行应当恢复艺术能量，而不仅仅是放松。",
+            "心理健康计划必须尊重演出压力。"
+          ],
+          "hard_avoidances": [
+            "有毒的正向思维",
+            "泛化的自我关怀",
+            "优先保护舒适而非角色的建议"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": "不喜欢台下刺眼的舞台灯光、吵闹的派对、杂乱无章、粗鲁的观众、最后一刻的角色变更。限制：需要在餐饮活动中提供无麸质选项，演出之间需要安静空间，由于过敏不能在她附近使用有香味的产品。",
+      "communication_style": "表达清晰且富有表现力；使用戏剧类比；积极倾听；直接但有策略；重要讨论偏好面对面或视频通话；在文本中谨慎使用表情符号。",
+      "decision_making": "仔细权衡利弊，寻求可信导师的意见，有时过度分析，最终相信对角色的直觉。",
+      "evaluation_notes": {
+        "likely_tasks": [
+          "推荐角色发展的阅读材料",
+          "建议热身程序",
+          "找到演出周的健康餐计划",
+          "组织巡回演出的旅行行程",
+          "生成练习时间表"
+        ],
+        "preference_conflicts": "可能想要豪华健康服务但也注重预算；渴望隐私但需要社交；喜欢即兴旅行但需要严格的排练日程。",
+        "ambiguity_to_preserve": "个人资料不应透露具体节目名称或合作演员姓名以保持虚构性；不要指定确切奖项；避免说明特定的'最爱'角色。",
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:46",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "专业而温暖；支持但具有挑战性；能接受直接反馈。",
+            "response_length": "简洁；只在必要时提供详细解释。",
+            "evidence_expectation": "希望事实声明有来源和引用；欣赏推理。",
+            "formatting": "清晰的结构，列表使用项目符号；偏好markdown可读性。",
+            "proactive_behavior": "可以建议相关资源或提醒；行动前应征求许可。",
+            "things_to_avoid": "避免关于她职业生涯的主动建议；避免奉承；避免个人问题；避免未经检查的日程冲突。"
+          },
+          "task_titles_used_for_context": [
+            "准备一个排练时间紧张的苛刻新角色",
+            "在高强度演出周期间保持声带健康和心理健康",
+            "在两轮演出之间计划一次前往艺术节的短途恢复之旅"
+          ]
+        }
+      }
+    }
+  }
+}

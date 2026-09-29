@@ -1,0 +1,449 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_086",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:39:43",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 19,
+  "composition": {
+    "episodic_preference_trace": 19
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_002",
+      "hidden_indirect_008",
+      "hidden_indirect_013",
+      "hidden_indirect_015",
+      "hidden_indirect_016"
+    ],
+    "content": [
+      "hidden_indirect_007",
+      "hidden_indirect_019"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_011"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_005",
+      "hidden_indirect_012",
+      "hidden_indirect_018"
+    ],
+    "entertainment": [
+      "hidden_indirect_011",
+      "hidden_indirect_019"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_012"
+    ],
+    "food": [
+      "hidden_indirect_005",
+      "hidden_indirect_018"
+    ],
+    "format_contract": [
+      "hidden_indirect_009",
+      "hidden_indirect_010"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_014"
+    ],
+    "learning": [
+      "hidden_indirect_008",
+      "hidden_indirect_014"
+    ],
+    "privacy": [
+      "hidden_indirect_004",
+      "hidden_indirect_017"
+    ],
+    "product": [
+      "hidden_indirect_001",
+      "hidden_indirect_015"
+    ],
+    "role_context": [
+      "hidden_indirect_013"
+    ],
+    "service": [
+      "hidden_indirect_007",
+      "hidden_indirect_010",
+      "hidden_indirect_017"
+    ],
+    "technology": [
+      "hidden_indirect_003",
+      "hidden_indirect_009"
+    ],
+    "travel": [
+      "hidden_indirect_006",
+      "hidden_indirect_016"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次车展上政府的人塞给我那个EV宣传册，说买电动车能拿5000块补贴。但咱这儿冬天充电桩本来就少，客户充电得排队排半天。"
+        },
+        {
+          "role": "assistant",
+          "content": "那咱就别急着推EV了。把2015款F-150的置换价算清楚，现金实惠比补贴靠谱。我列个本地库存清单，重点看公里数和保养记录。"
+        }
+      ],
+      "implicit_signal": "考虑置换时，本地库存和可靠性比政府激励更重要。"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "客户拿网上文章给我看，说某款卡车平均价便宜2000。但上周我打电话问了一下岛西的同行，实际卖价跟网上差了一截。"
+        },
+        {
+          "role": "assistant",
+          "content": "那就别信网上的。把你同行的报价单给我，我再问问镇里那机械师傅——他经手过的车最清楚。咱们按本地实价做对比，差价省出来给客户降月供。"
+        }
+      ],
+      "implicit_signal": "皮卡价格以本地实际成交和机械师意见为准，不看网评。"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有个客户说想看看福特烈马的新款，但冬天雪地胎装上后后备箱就剩不下什么空间了，他抱怨以前那个F-150装两袋盐都挤得慌。"
+        },
+        {
+          "role": "assistant",
+          "content": "那还是推荐他看F-150的某个基础款吧，后厢够大，也能装雪地链。福特这个牌子他熟，冬天开也不怵。我找一份去年款的库存单，价格也合适。"
+        }
+      ],
+      "implicit_signal": "配置推荐必须考虑冬季实用性和品牌忠诚度。"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月有个客户提了台带远程监控的新款车，结果保险那头非要他开数据共享才能给折扣，他嫌烦直接退订了那个服务。我俩都白忙一场。"
+        },
+        {
+          "role": "assistant",
+          "content": "这类花哨功能咱不主推。下次客户问折扣，直接谈车价和贷款方案，别让数据上传那套掺和进来——隐私省心比那几块钱折扣划算。"
+        }
+      ],
+      "implicit_signal": "坚决避开需要频繁联网上传数据的车辆配置。"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周日晚上我跟孩子规划下个月去诺森伯兰海峡钓鱼露营，地图上找到条新路，但中间40分钟没铺柏油。老婆说如果没地方做热饭，她就不去了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那得带上丙烷炉和铸铁锅，上次收割机后面那箱工具还能塞个保温箱。路线走省道，拐到米尔顿那加油站能买冰块，晚上煮个杂烩汤妥妥的。"
+        }
+      ],
+      "implicit_signal": "家庭露营计划把吃的舒适度排在风景前面。"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去纽芬兰轮渡，导航推荐走跨省高速，过三个旅游小镇，还要交两段通行费。结果在第一个镇堵了半小时，过路费还涨了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下回走内陆省道，虽然多绕28公里，但车少还省过路费。沿路有家本地加油站卖的鳕鱼汉堡不错，正好让家人歇脚。"
+        }
+      ],
+      "implicit_signal": "宁可绕路也不走旅游景点集中的收费站公路。"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我在网上找了个汽车保养的视频，结果头5分钟都在讲发动机原理，我直接关了。去年跟老机械师学换刹车片，人家就拿了台实车让我看活塞推出来什么样。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我下次发您链接时就筛一下，只留那种带步骤图和本地店里实拍的。理论的东西咱不看了，省时间。"
+        }
+      ],
+      "implicit_signal": "学新东西只看实际操作文章，不看理论教程。"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "后院那个储物棚计划我一直拖着，上周去建材市场一问，木头价格比去年涨了30块一根。老婆说再等就要入冬了，孩子的东西没地方放。"
+        },
+        {
+          "role": "assistant",
+          "content": "那用废料场的旧木料吧，能省一半。我周末开工，带上水平尺和手锯，不用花哨电锯，28天准能搭好。"
+        }
+      ],
+      "implicit_signal": "家庭DIY项目的材料价格必须能控制在现金预算内。"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "侄子送了我一个智能插座，说要连手机才能调定时。我折腾了40分钟没连上，最后把说明书扔了。车库里那个旧定时器用了八年还好好的。"
+        },
+        {
+          "role": "assistant",
+          "content": "那种串网的东西不牢靠。回头您买定时插座，我推荐Mechanical Timer的机械款，拧一下就行，零下二十度也不失灵。"
+        }
+      ],
+      "implicit_signal": "设备推荐以简单和耐用为准，拒绝过度智能。"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有个客户想换轮胎，我推荐了镇上的独立机械师。他以前在连锁店被骗过，说那次多收了他换油费。现在一听推荐就说先看价格单。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我整理一份机械师的定价明细，按牌子分：Goodyear和Firestone两档。再附上他店里用的工具牌子，让客户自己挑。换胎加动平衡，直接给整体报价。"
+        }
+      ],
+      "implicit_signal": "服务推荐要附带实际花费和替代方案。"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周六原本要带孩子去看少年冰球决赛，但临时有人退出，队里凑不齐人。孩子在家闷了一天，最后只能看录播。"
+        },
+        {
+          "role": "assistant",
+          "content": "下回我提早帮您确认替补名单。要是比赛没了，可以改去社区中心看露天电影，或者跟我去超市买食材回来做贻贝火锅——孩子们喜欢那味儿。"
+        }
+      ],
+      "implicit_signal": "娱乐活动必须兼顾家庭和本地社区。"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "网上那个储物棚图纸要用台锯和圆角刨，我车库就一把手锯和旧电钻。上次照着做，木板切出来全是毛边，最后只能拿砂纸磨一下午。"
+        },
+        {
+          "role": "assistant",
+          "content": "我给您改个方案：用废料场直边木料，手锯配合直角尺就能切准。电钻拧螺丝就行，不用刨子。屋顶用波纹板，工具超市40块就买到。"
+        }
+      ],
+      "implicit_signal": "DIY棚屋方案必须能用常见工具完成。"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有个工薪客户想买辆二手皮卡，但他上个月刚换了一套胎，手头现金不够。在这里预约确认前，他说只能掏5000块首付。"
+        },
+        {
+          "role": "assistant",
+          "content": "那咱给他找台2014年左右的F-150，走72期贷款，月供压到300以内。我带他去信用合作社办当地贷款，利率比银行低半厘。"
+        }
+      ],
+      "implicit_signal": "身为销售员，看到客户现金流紧张时会推荐更长贷款期。"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友推荐了一本关于卡车维修的电子书，但要注册网站才能下。我输入了两次邮箱都没收到验证码，气得直接删了链接。"
+        },
+        {
+          "role": "assistant",
+          "content": "那破玩意不用。下次我帮您找纸质的，本地图书馆有本《Ford F-150维修手册》翻新版，借出来就行。或者直接打给我，我电话里教您怎么调化油器。"
+        }
+      ],
+      "implicit_signal": "坚决不看需要在线账户才能使用的学习内容。"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买了个DeWalt冲击钻，用了一年半齿轮箱就响了。找售后说是正常磨损，换零件要花买价的一半。我宁愿买个二手Makita，保养好了再用三年。"
+        },
+        {
+          "role": "assistant",
+          "content": "那咱以后看二手的Makita或者Bosch。工具店有台翻新Metabo角磨机30块，我下周帮您拿回来试。"
+        }
+      ],
+      "implicit_signal": "工具看重持久，但不会为牌子多花钱。"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去纽芬兰那次订了家连锁汽车旅馆，网上评分4.5，结果到了发现床单有污渍，早餐还要另外加10块。前台说那是动态定价，淡季贵了20块。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次我帮您订本地人的民宿，按床铺算钱，还能借厨房煮海鲜。我认识码头旁边那家老汤姆，双人间40块一晚，您一家住得下。"
+        }
+      ],
+      "implicit_signal": "旅行住宿选经济型本地民宿，避开连锁酒店。"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月约理发，对方发了个短信要我点击链接选时段。我点了之后页面要获取位置，我直接关了。后来又打电话去约，说系统已经锁了我30分钟。"
+        },
+        {
+          "role": "assistant",
+          "content": "那家店下次不去了。我带您去Nordie那边老店，柜台后面有张纸手写预约，电话确认就行。理发15块，不用联网。”"
+        }
+      ],
+      "implicit_signal": "服务预约拒绝任何需要手机APP确认的方式。"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "超市结账前列了单加拿大产的牛肉，但货架上好几个包装，有的写‘草饲有机’贵了8块。我老婆说家里孩子多，吃不起那么精的。"
+        },
+        {
+          "role": "assistant",
+          "content": "那买普通谷饲那块就行，性价比高。周末我去码头看看，渔民常捕的金枪鱼杂碎只要5块一磅，回来做杂烩汤比牛肉还给劲。"
+        }
+      ],
+      "implicit_signal": "选购伙食以实用和本地产为主，花哨品牌不碰。"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨晚看本地新闻，记者讲冰球联赛转播权卖给了一个外地平台，还得订阅才能看。我打小就在社区中心看免费比赛，现在整这一出。"
+        },
+        {
+          "role": "assistant",
+          "content": "那就别订那平台。我帮您找个本地直播站，有些独立博主录了比赛上传。再不行周二去社区中心看大屏幕，他们组织看球不收费。"
+        }
+      ],
+      "implicit_signal": "只看本地冰球资讯和保守评论，不要大媒体内容。"
+    }
+  ]
+}

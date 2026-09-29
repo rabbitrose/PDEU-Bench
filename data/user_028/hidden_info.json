@@ -1,0 +1,491 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_028",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:19:05",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_010",
+      "hidden_indirect_017"
+    ],
+    "content": [
+      "hidden_indirect_003",
+      "hidden_indirect_016"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_014",
+      "hidden_indirect_020"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_008",
+      "hidden_indirect_012"
+    ],
+    "entertainment": [
+      "hidden_indirect_008",
+      "hidden_indirect_019"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_011",
+      "hidden_indirect_020"
+    ],
+    "food": [
+      "hidden_indirect_005",
+      "hidden_indirect_014"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_007",
+      "hidden_indirect_015"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_009",
+      "hidden_indirect_013",
+      "hidden_indirect_021"
+    ],
+    "learning": [
+      "hidden_indirect_007",
+      "hidden_indirect_016"
+    ],
+    "privacy": [
+      "hidden_indirect_006",
+      "hidden_indirect_015"
+    ],
+    "product": [
+      "hidden_indirect_009",
+      "hidden_indirect_017"
+    ],
+    "role_context": [
+      "hidden_indirect_010",
+      "hidden_indirect_019"
+    ],
+    "service": [
+      "hidden_indirect_002",
+      "hidden_indirect_011",
+      "hidden_indirect_018"
+    ],
+    "technology": [
+      "hidden_indirect_006",
+      "hidden_indirect_013",
+      "hidden_indirect_021"
+    ],
+    "travel": [
+      "hidden_indirect_004",
+      "hidden_indirect_012",
+      "hidden_indirect_018"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "今年1月在超市结账前拿了最便宜的机油，结果三周后雪地摩托发动机漏油，维修花了双倍钱。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次查的是本地口碑最好的合成油，单价贵12欧元，但你每月行驶量能用2个月，附带现场更换点地址。"
+        }
+      ],
+      "implicit_signal": "优先选择长期可靠、低隐性成本的方案，而非低价但易出问题的选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前在线上预约了维修，排到一半才发现对方只修两冲程发动机，我的四冲程根本不接。"
+        },
+        {
+          "role": "assistant",
+          "content": "这是附近三家支持40分钟内取消的雪地摩托保养站，标注了型号兼容列表和电话确认步骤。"
+        }
+      ],
+      "implicit_signal": "需要明确服务的取消政策和响应时间，避免后续麻烦"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次给了个爆款榜单，没有实际距离和营业时间，我开车到镇东28分钟后发现店已永久关闭。"
+        },
+        {
+          "role": "assistant",
+          "content": "最佳选择：镇北修车店，今天18点前营业，距离邮局5公里。备选：东区连锁店需绕路但工时更长。注意周末需加收20%。"
+        }
+      ],
+      "implicit_signal": "偏好结论附带依据和备选，避免泛化推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "预约确认前看到那家店下午排了6个人，我得等两小时才能轮到。"
+        },
+        {
+          "role": "assistant",
+          "content": "已改为上午10点第一批，预约记录显示此时段空余，且可电话延后1小时。"
+        }
+      ],
+      "implicit_signal": "偏好非拥挤时段，能临时调整安排"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推荐了中央市场那家热门餐厅，我排了47分钟，东西又油又贵，导致下午送件时胃里难受。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成老城区巷子口的本地小店，不排队、含蔬菜套餐8欧元，步行5分钟回邮局，不影响下午排班。"
+        }
+      ],
+      "implicit_signal": "拒绝游客化路线和不说明等待成本的建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "更新系统后有个天气应用弹窗要求读取联系人，我直接卸载了。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐同款功能但只请求位置的替代应用，支持离线导出，无后台权限。"
+        }
+      ],
+      "implicit_signal": "只对工具提供最小权限，拒绝过度数据要求"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次给了10个链接，没有练习样例，我花了28分钟也没搞懂哪个步骤最常出问题。"
+        },
+        {
+          "role": "assistant",
+          "content": "这是替换雪地履带的三个真实故障案例，每个配5分钟操作视频，下方有自检对照表。"
+        }
+      ],
+      "implicit_signal": "学习内容需要示例和复盘标准，避免材料堆砌"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周跟朋友去了音乐节，散场排队一小时，到家凌晨2点，第二天送件迟到被用户投诉。"
+        },
+        {
+          "role": "assistant",
+          "content": "改成周六下午社区手风琴表演，规模小、18点结束，附近有安静座位，不耽误第二天早班。"
+        }
+      ],
+      "implicit_signal": "娱乐活动看重实际体验和第二天任务不影响"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "买了自称‘全地形’的绑链，到货后发现包装只标注重量，没有雪地使用等级数据。"
+        },
+        {
+          "role": "assistant",
+          "content": "帮你筛选了三款明确标注雪地等级且本地有库存的绑链，重量说明书内附耐久测试数据。"
+        }
+      ],
+      "implicit_signal": "拒绝过度包装和信息不透明的产品"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月换雪地摩托电池超预算50%，导致这月燃料只能买平时的一半，雪天送件两次半路没油。"
+        },
+        {
+          "role": "assistant",
+          "content": "本月建议拆分为紧急与非紧急备件，紧急电池优先，燃料用保守预算，每趟路线缩短2公里。"
+        }
+      ],
+      "implicit_signal": "作为邮差，预算分配需考虑日程和同行限制"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "线上会议间隙查了一家地图上有28条好评的修理厂，打电话过去说已歇业三周。"
+        },
+        {
+          "role": "assistant",
+          "content": "已核对三家在营店铺的今日营业时间和距离，并标注最近一次用户反馈时间在5天内。"
+        }
+      ],
+      "implicit_signal": "服务推荐必须附带真实营业状态和距离成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "同行的人临时退出，原定拼车方案泡汤，我被迫单独走一条绕雪崩区的小路，晚了40分钟。"
+        },
+        {
+          "role": "assistant",
+          "content": "改为走西侧森林道，路程多15分钟但单程安全，且明天上午人少，可随时折返。"
+        }
+      ],
+      "implicit_signal": "避免拥挤时段和强制排队，偏好灵活调整"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "为了追踪包裹下载了三个应用，其中一个还要求注册家庭地址，我当场退出。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用短信接入的追踪号，无需安装，手动输入后只显示路线时间，不收集个人信息。"
+        }
+      ],
+      "implicit_signal": "避免被迫下载多个应用，偏好低门槛方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "收件后吃了个油炸配餐，半小时后胃里翻腾，下午分拣时送错了两个包裹。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐邮局对面面包店的蔬菜三明治，下单到取2分钟，不含乳酪类，还有座位可休息。"
+        }
+      ],
+      "implicit_signal": "优先稳定执行当天安排，餐食不过度油腻"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "候选文件夹里有一份健康报销表，必须填写家庭住址和病理细节才能提交，我直接关掉了页面。"
+        },
+        {
+          "role": "assistant",
+          "content": "改成用邮政编号代替住址，病理描述使用系统预设选项，不附详细报告，仍具效力。"
+        }
+      ],
+      "implicit_signal": "信息提供需匿名化家庭、健康等敏感数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次给了10个速修技巧网页，全是汽车引擎的例子，我的雪地摩托链条根本用不上。"
+        },
+        {
+          "role": "assistant",
+          "content": "替换为雪地摩托冬季启动三步法：检查火花塞、预热3分钟、链条上油，最后附操作照片。"
+        }
+      ],
+      "implicit_signal": "推荐内容需贴合自身工作模式，拒绝通用榜单"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前贪便宜买了可拆卸雪地绑链，用了两次螺钉就掉落，拆装花了我38分钟，最后还丢了一根。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐一体式快扣绑链，单价高15%但耐久测试大4倍，包装含工具包，本地店可加购保修。"
+        }
+      ],
+      "implicit_signal": "选择产品需说明长期使用成本和替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "材料发出去后又撤回，因为服务商在确认页面才额外收取冬季附加费，之前根本没提。"
+        },
+        {
+          "role": "assistant",
+          "content": "经过你确认的供应商明码标价，冬季附加费随订单分项显示，取消不收手续费。"
+        }
+      ],
+      "implicit_signal": "服务需要少中转、取消政策清晰"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周排期失误，晚上7点去看电影，结果第二天早起下大雪，没来得及准备摩托防滑装置，送件迟了1小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "调整成周六午间社区影展，片长80分钟，放映厅步行距离有摩托配件店，不影响第二天排班。"
+        }
+      ],
+      "implicit_signal": "休闲需兼顾工作节奏和同行者状态"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "查到了一家线上评分4.9的汽修店，到了发现工具都不适配雪地摩托，白跑一趟。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用本地快递工会推荐的修理站，三年来专修雪地车，备件清单已核对型号兼容性。"
+        }
+      ],
+      "implicit_signal": "优先便利可靠和本地口碑，而非网络评分"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "随身笔记里写了个上门养护计划，只列了任务没算路线耗时，排到最后发现时间不够，任务全取消了。"
+        },
+        {
+          "role": "assistant",
+          "content": "已加入每站之间雪地车速估时，总耗时加30分钟缓冲，每段注明可临时跳过顺序。"
+        }
+      ],
+      "implicit_signal": "不说明交通和时间成本会被直接拒绝"
+    }
+  ]
+}

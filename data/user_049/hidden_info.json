@@ -1,0 +1,512 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_049",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:24:40",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 22,
+  "composition": {
+    "episodic_preference_trace": 22
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_005",
+      "hidden_indirect_013",
+      "hidden_indirect_019"
+    ],
+    "content": [
+      "hidden_indirect_006"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_018",
+      "hidden_indirect_022"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "entertainment": [
+      "hidden_indirect_014",
+      "hidden_indirect_015"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_006",
+      "hidden_indirect_016",
+      "hidden_indirect_019"
+    ],
+    "food": [
+      "hidden_indirect_009"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_007",
+      "hidden_indirect_013",
+      "hidden_indirect_017",
+      "hidden_indirect_021"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_012"
+    ],
+    "learning": [
+      "hidden_indirect_003",
+      "hidden_indirect_018"
+    ],
+    "privacy": [
+      "hidden_indirect_010",
+      "hidden_indirect_022"
+    ],
+    "product": [
+      "hidden_indirect_007",
+      "hidden_indirect_016"
+    ],
+    "role_context": [
+      "hidden_indirect_014"
+    ],
+    "service": [
+      "hidden_indirect_008",
+      "hidden_indirect_017",
+      "hidden_indirect_021"
+    ],
+    "technology": [
+      "hidden_indirect_011"
+    ],
+    "travel": [
+      "hidden_indirect_002",
+      "hidden_indirect_004",
+      "hidden_indirect_012",
+      "hidden_indirect_020"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次给CEO订东京酒店，有三个选项：五星商务、设计精品、普通连锁。我选了连锁，因为CEO说他只住三晚，省钱住好地方不如省时间。但入住后发现房间太小，无法临时开会。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次选带商务中心的精致商务酒店，比五星便宜30%，但确保房间有办公桌和贵宾厅。我先筛出距会场步行5分钟内、有24小时商务中心的，发你三个再定。"
+        }
+      ],
+      "implicit_signal": "重视时间效率与预算明确性，避免无上限支出选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次订上海到北京高铁，你推荐8点班次，没说原因。结果CEO早起改到10点，退票收手续费。我希望下次有明确理由，比如‘早班避开安检高峰’之类。"
+        },
+        {
+          "role": "assistant",
+          "content": "明白。我以后在预约确认前列出两个班次的票价、用时、拥挤度数据，并标注推荐班次的理由。本次北京段推荐14点班次，因会后有余量时间且避开午休高峰。"
+        }
+      ],
+      "implicit_signal": "需要数据支撑的预订决策，避免主观推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月你让我看两个项目管理课程链接，只说‘你看看哪个更好’。我花了午休时间全看完，结果课程内容都很浅。浪费40分钟。"
+        },
+        {
+          "role": "assistant",
+          "content": "后续内容推荐我会先评估课程大纲、时长和评价，直接给出一份对比表，并在底部列出一个推荐项和替代项。你只需回复‘确认’即可。本次送你LinkedIn Learning上‘领导力沟通’的20分钟课程摘要。"
+        }
+      ],
+      "implicit_signal": "偏好结构化清单和明确的下一动作，避免开放式问题"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去首尔，上午会议结束后你只安排了出租车去机场，结果堵车35分钟，差点错过航班。活动散场后CEO脸色很难看。"
+        },
+        {
+          "role": "assistant",
+          "content": "已修正。以后行程会预留45分钟缓冲，并同时预订出租车和地铁备选，时间表上标注备用方案。本次首尔回程安排：会后30分钟缓冲，主选专车，备选机场快线。"
+        }
+      ],
+      "implicit_signal": "行程必须包含缓冲时间和备用交通工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次订新德里酒店时你给了两个预付价，说‘到店付晚一天也可以’。结果CEO忘了预付，会议延期后订单无法取消，浪费一晚房费。"
+        },
+        {
+          "role": "assistant",
+          "content": "今后所有预订只给有明确取消政策和付款截止日期的方案。本次新德里改订灵活取消价，并设日历提醒在免费取消前48小时复查。"
+        }
+      ],
+      "implicit_signal": "拒绝无截止日期的费用选项，避免后续超支"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周你发来商业新闻摘要，只是标题列表。CEO说这些他当天早会都刷过了，你给的没有附加背景分析，他看完就删了。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后每日简报会按‘关键事件+影响+行动建议’三重结构，每条50字内，末尾标注信息来源时间。今早已发新版，含半导体制裁对供应链的1句预测。"
+        }
+      ],
+      "implicit_signal": "需要简要证据来支撑资讯摘要，不能只发列表"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次推荐三个云存储产品，只发了特性列表。午休结束前我没时间逐条对比，最后选了最贵的，结果老板说预算超了。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后产品对比我会做成四列表：产品名、价格、核心功能、限制。底部附一行‘推荐选项+责任人’。本次Dropbox Business vs Google Workspace对比已按格式发到Slack。"
+        }
+      ],
+      "implicit_signal": "决策选项必须以表格对比、有行动项归责"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周订的餐食服务送来半成品，需要自己煎炒。早餐桌边CEO说没时间弄，结果那份食材全扔了，钱白花。"
+        },
+        {
+          "role": "assistant",
+          "content": "替换为即食健康餐，微波炉或开袋即食，每份热量和成分标注。已暂停Sunbasket，改用Factor75的6餐计划，本周试吃后反馈。"
+        }
+      ],
+      "implicit_signal": "餐食准备必须健康且零摩擦，不能需要额外烹饪"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上月取消了一个笔记软件试用账号，结果误关了共享日历权限，CEO当天的会议提醒全没收到，很被动。"
+        },
+        {
+          "role": "assistant",
+          "content": "已设置变更流程：所有订阅修改前会列出受影响的服务，并先在午休时段做30分钟测试。此次试用期管理——创建‘订阅到期日历’事件，提前3天提醒评估。"
+        }
+      ],
+      "implicit_signal": "订阅需避免干扰工作系统，优先保障沟通工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次订新加坡民宿，平台要求扫脸验证，CEO拒绝了，说凭什么提供生物信息。我们临时换酒店，损失定金。"
+        },
+        {
+          "role": "assistant",
+          "content": "今后酒店筛选加入‘无需额外生物识别验证’条件，优先选国际连锁品牌。本次新加坡已改订Marriott，支持常规身份验证入住。"
+        }
+      ],
+      "implicit_signal": "避免没有显式隐私保障的选项，尤其是在旅行中"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你曾推荐一个AI会议记录工具，说有‘音乐模式’和‘个人日历整合’。CEO说他只关心会议速记，其他功能是多余的，结果试用后没续费。"
+        },
+        {
+          "role": "assistant",
+          "content": "之后只推荐能直接嵌入现有工作流的产品，并突出核心功能。本次筛选只保留Fireflies.ai和Otter.ai，已用CEO日历导出3个会议测试自动摘要效果。"
+        }
+      ],
+      "implicit_signal": "以工作日程而非个人探索决定工具选择"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次新加坡到雅加达的航班只订了一个选项，结果航空公司罢工，CEO在机场干等5小时。你在度假不能第一时间处理，最后他打了两通电话才改签。"
+        },
+        {
+          "role": "assistant",
+          "content": "今后跨城市航班至少安排一个备选时间段和一家替代航司。同时我会在日历设置离线行程副本。本次已预订SQ950，备选ID7153，并在备忘录中留存客服直通号码。"
+        }
+      ],
+      "implicit_signal": "拒绝没有备用方案的出行计划"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周CEO看月度支出表，发现没有分紧急和常规类别，他没法快速决定削减哪项。你说‘这是上个月的所有支出’然后没了。"
+        },
+        {
+          "role": "assistant",
+          "content": "已重新组织报表格式：按预算类别（差旅、订阅、餐食）分组，每组标注上月实际、预算线、超支原因。下月起每次发送前会加一项‘建议削减项’。本期报表已更新到共享盘。"
+        }
+      ],
+      "implicit_signal": "费用报告需要明确的预算类别和审批状态"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推荐了一个科幻剧，说‘适合放松’。CEO回复说‘我有时间看一集就不错了，不如推荐商业纪录片’。你的推荐没有考虑他的时间限制。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后娱乐推荐会限制在单集约30分钟的剧集，并以商业、科技或真实案例题材优先。这次推荐一部45分钟的《Inside Bill's Brain》单集，附上一页关键要点摘要。"
+        }
+      ],
+      "implicit_signal": "选择推荐内容时以CEO的日程和智识需求为重，而非个人兴趣"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上月我建议取消所有流媒体订阅省钱，但CEO说他在长途飞行时不看书只看Netflix，没了它我没法工作。结果又得重新订阅，白付两次管理费。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后优化订阅前会先列出‘核心工作保留’和‘可砍’分类，保留至少一个离线影音选项。本次保留Netflix基础版，砍掉HBO Max和Disney+，全年省$180。"
+        }
+      ],
+      "implicit_signal": "订阅削减应避免干扰工作系统，非必要休闲订阅可砍"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推荐过一款便携投影仪，说‘便携旅行好物’。结果在曼谷用的时候设备发热后性能下降，画面卡顿，CEO演示时失礼了。"
+        },
+        {
+          "role": "assistant",
+          "content": "之后推荐硬件会附带散热参数、连续使用测试结果和体积对比。本次改选一款尺寸相近但带主动散热的型号，已用手持测温仪测试30分钟运行温度低于45度。"
+        }
+      ],
+      "implicit_signal": "需要客观测试数据而非营销语来支撑设备推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次与翻译服务签协议，刚签完对方说已满单，需要等4周。CEO说‘这不是最后一项没人确认嘛’，我们排到最后才去确认，结果白等。"
+        },
+        {
+          "role": "assistant",
+          "content": "今后合同签署前会书面确认档期，并添加‘若排期冲突，服务方提前3天通知并提供替代供应商’条款。本次已约好两家翻译公司同时报价，先确认档期再签。"
+        }
+      ],
+      "implicit_signal": "服务合同需要显式违约条款、替代方案和联系人"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推荐了一个领导力播客系列，12集每集45分钟。CEO听了10分钟说‘这是给大公司总监听的，不符合我的阶段。’"
+        },
+        {
+          "role": "assistant",
+          "content": "以后内容推荐按‘高/中/低优先匹配当前项目’分类，附上一段适用性说明。本次改成他关注的新加坡市场扩张专题，推送2篇哈佛商业评论案例分析，每篇阅读时间约8分钟。"
+        }
+      ],
+      "implicit_signal": "学习内容必须与CEO当前业务需求直接相关"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次建议削减打印订阅，你说‘大概省一点’。CEO问具体数字你答不上来，他直接否决了建议，说‘没有数据我不做决定’。"
+        },
+        {
+          "role": "assistant",
+          "content": "后续所有成本削减方案都会附带年度精确节省和效果估算。打印订阅分析已完成：取消后年省$360，影响是每周减少3份纸质报告，可用数字版替代。推荐执行。"
+        }
+      ],
+      "implicit_signal": "费用节省需附带明确的年度节省估算和设备影响"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你只订了一间不可取消的房，结果CEO临时调整行程，第二晚我们完全用不上。排到一半才发现这种方案不合适，退改还花了半天交涉。"
+        },
+        {
+          "role": "assistant",
+          "content": "此后所有住宿先筛选‘可免费取消至入住前24小时’的选项，并额外备注替代酒店。本次雅加达已选可取消房型，另存了一间同区域备选酒店，车程5分钟内。"
+        }
+      ],
+      "implicit_signal": "预订时必须提供可逆的取消政策和备用方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月订了同传设备租用，只有口头确认。结果当天早上对方说没货，第二天又重做一遍——我重新找供应商、重新布线，CEO在门外等了20分钟。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后重要设备租赁必须签书面服务清单与档期保函，并备份一家备选供应商。本次已签21页设备租赁合同，保留电子扫描件；备选供应商已确认库存同步可用。"
+        }
+      ],
+      "implicit_signal": "所有服务采购需要书面确认档期与备选供应商"
+    },
+    {
+      "interaction_id": "hidden_indirect_022",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你建议用共享文档存所有账户密码，说‘方便团队协作’。但CEO担心数据泄露，他说‘我把秘密都放在一个篮子里？不如分开保管。’"
+        },
+        {
+          "role": "assistant",
+          "content": "已改用1Password保险库按类别分存，每个库设不同主密码，仅CEO和我有权限，且启用双因素。本次迁移已完成，12个账户已分类并关闭共享链接访问权限。"
+        }
+      ],
+      "implicit_signal": "以高管时间安全为首要考量，而非便利性"
+    }
+  ]
+}

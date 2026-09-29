@@ -1,0 +1,487 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_108",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:03:23",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_009",
+      "hidden_indirect_017",
+      "hidden_indirect_020"
+    ],
+    "content": [
+      "hidden_indirect_003",
+      "hidden_indirect_018"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_008",
+      "hidden_indirect_014",
+      "hidden_indirect_019"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_008",
+      "hidden_indirect_012"
+    ],
+    "entertainment": [
+      "hidden_indirect_013"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_007"
+    ],
+    "food": [
+      "hidden_indirect_010",
+      "hidden_indirect_017"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_009"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_013"
+    ],
+    "learning": [
+      "hidden_indirect_007",
+      "hidden_indirect_018"
+    ],
+    "privacy": [
+      "hidden_indirect_006",
+      "hidden_indirect_016",
+      "hidden_indirect_021"
+    ],
+    "product": [
+      "hidden_indirect_005",
+      "hidden_indirect_015"
+    ],
+    "role_context": [
+      "hidden_indirect_006",
+      "hidden_indirect_019"
+    ],
+    "service": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_016",
+      "hidden_indirect_020"
+    ],
+    "technology": [
+      "hidden_indirect_002",
+      "hidden_indirect_015",
+      "hidden_indirect_021"
+    ],
+    "travel": [
+      "hidden_indirect_004",
+      "hidden_indirect_012"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周末冰暴预报说下午减弱，结果傍晚才停，害我取消家庭聚餐。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次用Windy看逐小时雷达叠加路况图层，确认冻雨时间窗口，17点前决定是否调班。"
+        }
+      ],
+      "implicit_signal": "天气数据直接决定排班调整，不可靠的预报导致取消休假"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买的户外手机壳说扛-20°C，结果零下15°C导航就自己关机了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次选三星Galaxy XCover，查过散热设计和低温电池认证，现场测试三分钟再确认付款。"
+        }
+      ],
+      "implicit_signal": "某一技术产品承诺的功能与实际不符导致退出购买决策"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "培训部发的冰暴指南先列装备清单，现场发现没写通讯中断时怎么办。"
+        },
+        {
+          "role": "assistant",
+          "content": "重排指南：先写通信备用方案（卫星电话频点），再列装备，最后提撤离路线。"
+        }
+      ],
+      "implicit_signal": "信息呈现必须按行动优先级结构，不能跳过风险步骤"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去年阿冈昆小屋游，回程雪暴封路，备用路线还是食品补给都没提前套好。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次出发前确认三条返程路线和最近加油站，把离线副本存手机和纸质地图各一份。"
+        }
+      ],
+      "implicit_signal": "小屋旅行必须包含疏散计划，否则不会出发"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "网上那款200刀的手电号称军用级，淋了场雨就不亮了。"
+        },
+        {
+          "role": "assistant",
+          "content": "改看莱泽曼Surge附带的灯，IPX7认证且本体多功能，预算从装备基金出。"
+        }
+      ],
+      "implicit_signal": "消费级产品标榜坚固但实际脆弱，直接排除"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "调度中心新系统要求24小时开放定位，还要家属也能查轨迹。"
+        },
+        {
+          "role": "assistant",
+          "content": "家庭群开共享仅限配偶，调度系统用角色权限限制，自己手机关闭广告位置授权。"
+        }
+      ],
+      "implicit_signal": "紧急岗位下位置共享用于安全，但限制公开社交"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "线上创伤模块全是理论，没附2018年那篇真实气道管理的统计表。"
+        },
+        {
+          "role": "assistant",
+          "content": "加引注表格和原始论文编号，下次讨论前先把参考文献发群里核对。"
+        }
+      ],
+      "implicit_signal": "案例研究需要实际数据来源，不能只有结论"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "冰暴轮值表只排了人手，没留强制休息窗，上次连值33小时差点出错。"
+        },
+        {
+          "role": "assistant",
+          "content": "按23点后不安排非紧急任务，每12小时强制45分钟闭眼班，备一套替班联系人。"
+        }
+      ],
+      "implicit_signal": "轮班计划必须内建疲劳管理和冰暴预案"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次季度安全采购，新制服优先结果防水靴报废了半年没换。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次先从靴子和手套预算走，制服延后一批，差额用个人装备补贴补上。"
+        }
+      ],
+      "implicit_signal": "预算分配需要先确保关键行动装备再考虑舒适"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "夜班前吃了份油腻餐，同事说开车前差点犯困。"
+        },
+        {
+          "role": "assistant",
+          "content": "周日备餐改成糙米鸡胸和沙拉，午休结束前半小时加小份坚果，下午4点前喝完咖啡。"
+        }
+      ],
+      "implicit_signal": "轮班备餐避免油腻和易昏迷风险"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "杂货配送设置次日达，结果在夜班早上8点送货，没人接。"
+        },
+        {
+          "role": "assistant",
+          "content": "重约当日达时段，设定白班结束后17-18点窗口，放门外并短信确认。"
+        }
+      ],
+      "implicit_signal": "配送服务必须匹配轮班窗口，不是便利就好"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "回密西沙加冰堵高速，导航建议绕路结果是施工路段。"
+        },
+        {
+          "role": "assistant",
+          "content": "出发前用Waze查实时报告，收藏三条备用路线离线副本，加区域气候雷达图层。"
+        }
+      ],
+      "implicit_signal": "长途旅行自驾优先，但必须检查备用路线和气候数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "动作片子最后主角用消防斧劈决断，现实中那结构早垮了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次找救援纪实片《完美风暴》加《紧急救援》案例，看完讨论实际流程漏洞。"
+        }
+      ],
+      "implicit_signal": "灾难电影必须拒绝美化危险，否则不看"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去年冰暴我的班次全堵家里，没及时去社区备灾站帮布置。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次提前一天住队里备勤宿舍，冰暴预警期间固定调度中心—社区两点一线。"
+        }
+      ],
+      "implicit_signal": "冰暴计划以社区疏散优先级替代个人便利"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "22刀的外接电宝冻一天就没电了，现场导航只能关屏省电。"
+        },
+        {
+          "role": "assistant",
+          "content": "换Zoobomb 20000毫安户外款，IP68且耐低温，放车内充电槽固定。"
+        }
+      ],
+      "implicit_signal": "大容量便携充电器必须通过三防认证才能采购"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次感冒用远程医疗，APP把就诊记录同步到云端共享文件夹。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成Telus Health，确认数据只在加拿大存储且不开通广告追踪，小病只文字咨询。"
+        }
+      ],
+      "implicit_signal": "远程医疗服务关注数据泄露控制"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "超市结账前看沙拉标签，升级蛋白款比普通贵一半。"
+        },
+        {
+          "role": "assistant",
+          "content": "周日买鸡胸、生菜和烤牛肉自己配，成本砍半还能控制盐分。"
+        }
+      ],
+      "implicit_signal": "高蛋白沙拉自己备餐比预制餐更优，成本可控"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "推送新创伤气囊研究只有摘要，细节还得搜原文期刊。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次改推全文PDF链接和三级要点：适应症、禁忌症、现场操作对比。"
+        }
+      ],
+      "implicit_signal": "医学期刊推送必须英文原文加摘要整合"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "总结冰暴应对复盘的会议纪要只列了讨论，最后一项没人确认行动."
+        },
+        {
+          "role": "assistant",
+          "content": "重写纪要：每条决定后加责任人和deadline，附检查清单章节号。"
+        }
+      ],
+      "implicit_signal": "部门会议纪要必须标注责任人和截止时间"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "亚马逊说当日达却半夜23点才送到站，我夜班没拿到防水胶带。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次选加拿大邮政次日优先，设置17点前自助快递柜取件。"
+        }
+      ],
+      "implicit_signal": "关键物资当日达需要承诺窗口而非预估"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "健康应用提示心率异常自动上传到厂商数据库，删除历史还要人工申请。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用Garmin Instinct本地模式，关闭所有云同步，数据仅查看不分享。"
+        }
+      ],
+      "implicit_signal": "智能手表健康数据不上传云端仅本地存储"
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "user_id": "user_093",
+  "explicit_preferences": {
+    "user_profile": "一位专注于提高产后并发症意识的孕产妇健康倡导者。",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Elena Martinez",
+        "age": 34,
+        "gender": "女性",
+        "location": "美国德克萨斯州奥斯汀",
+        "languages": [
+          "英语",
+          "西班牙语"
+        ],
+        "education_level": "公共卫生硕士（MPH）",
+        "occupation": "孕产妇健康项目经理",
+        "industry": "非营利/医疗保健",
+        "seniority": "中级",
+        "household": "已婚，有两个孩子（年龄3岁和1岁）",
+        "life_stage": "抚养年幼的孩子"
+      },
+      "physical_profile": {
+        "height_cm": 165,
+        "general_appearance": "健康，常穿舒适的衣服如牛仔裤和开衫，深色短发，戴眼镜",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "富有同理心、有条理且热衷于孕产妇健康。重视循证实践，不遗余力地预防产后并发症。",
+        "big_five": {
+          "openness": 85,
+          "conscientiousness": 90,
+          "extraversion": 60,
+          "agreeableness": 85,
+          "neuroticism": 30
+        },
+        "strengths": [
+          "同理心",
+          "组织能力",
+          "说服力",
+          "研究驱动"
+        ],
+        "weaknesses": [
+          "容易情绪倦怠",
+          "可能对错误信息过于挑剔",
+          "工作与生活平衡的挣扎"
+        ],
+        "values": [
+          "孕产妇健康公平",
+          "家庭",
+          "循证医学",
+          "社区支持"
+        ],
+        "motivations": [
+          "降低孕产妇死亡率",
+          "赋能新妈妈",
+          "将研究转化为实践"
+        ],
+        "stress_triggers": [
+          "听到可预防的产后死亡",
+          "项目资金不足",
+          "医疗服务提供者的轻视态度"
+        ]
+      },
+      "background": {
+        "hometown": "德克萨斯州圣安东尼奥",
+        "family_background": "中产阶级，父母是教师；一个弟弟",
+        "education": "德克萨斯大学生物学学士，德克萨斯大学公共卫生学院公共卫生硕士（MPH）",
+        "career_path": "最初担任生殖健康研究助理，然后成为社区健康教育者，现在是一家孕产妇健康非营利组织的项目经理",
+        "key_life_events": [
+          "朋友严重的产后出血激发了她的倡导",
+          "第一个孩子的出生强化了产后护理的重要性"
+        ]
+      },
+      "lifestyle": {
+        "daily_routine": "早上6点起床，锻炼或瑜伽，给孩子准备，工作8-5，家庭晚餐，晚上阅读或网络研讨会，10:30睡觉",
+        "work_environment": "混合办公：两天在非营利组织办公室，三天远程",
+        "social_life": "定期安排玩耍约会，偶尔与朋友共进晚餐，活跃于本地妈妈群",
+        "hobbies": [
+          "与家人一起徒步",
+          "烹饪健康餐食",
+          "阅读医学期刊和回忆录",
+          "在妇女收容所做志愿者"
+        ],
+        "health_and_wellness": "每周跑步3次，练习瑜伽，每月看一次治疗师，优先保证睡眠"
+      },
+      "interests": {
+        "topics": [
+          "产后健康",
+          "孕产妇死亡率",
+          "健康政策",
+          "儿童发展",
+          "营养"
+        ],
+        "activities": [
+          "参加公共卫生会议",
+          "撰写关于产后经历的博客",
+          "参与倡导团体"
+        ],
+        "media": [
+          "收听播客，如《The Birth Hour》和《Public Health on Call》",
+          "阅读《纽约时报》、ProPublica、学术期刊"
+        ]
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "基于证据的健康信息",
+          "产后并发症的个人故事",
+          "孕产妇健康政策更新",
+          "给新父母的实用技巧",
+          "避免：点击诱饵或非科学主张",
+          "内容必须匹配该用户独特的工作模式：社区健康组织者模式：双语、温暖、物流优先、文化特定。",
+          "拒绝通用助手框架：不要默认使用机构声音或枯燥的公共卫生套话。"
+        ],
+        "product_preferences": [
+          "不含BPA的婴儿奶瓶",
+          "有机棉哺乳文胸",
+          "健身追踪器（Fitbit）",
+          "压缩袜",
+          "高质量吸奶器",
+          "产品应通过用户自身的权衡视角来选择：触达谁、消除障碍、传递者、材料、后续跟进。"
+        ],
+        "service_preferences": [
+          "导乐服务",
+          "哺乳顾问",
+          "在线治疗平台（Talkspace）",
+          "产后送餐服务",
+          "只有当服务保留这一决策优先级时才可接受：信任、儿童保育可及性和实际参与胜过完美的临床完整性。"
+        ],
+        "learning_preferences": [
+          "播客",
+          "网络研讨会",
+          "短期在线课程（Coursera）",
+          "同行评审文章",
+          "偏好短小、易消化的学习方式"
+        ],
+        "travel_preferences": [
+          "与家人国内旅行",
+          "医疗条件好的目的地",
+          "偏好租房子而非酒店",
+          "避免：带小孩长途飞行"
+        ],
+        "food_preferences": [
+          "倾向素食（偶尔吃鸡蛋、奶制品、鱼）",
+          "喜爱：墨西哥菜、地中海菜、新鲜农产品",
+          "避免：加工食品、过量糖分"
+        ],
+        "entertainment_preferences": [
+          "纪录片（尤其是健康/社会正义）",
+          "喜剧系列（如《The Good Place》）",
+          "文学小说",
+          "益智游戏（数独、填字游戏）"
+        ],
+        "technology_preferences": [
+          "苹果生态系统（iPhone, Mac, iPad）",
+          "注重隐私的应用（Signal, DuckDuckGo）",
+          "智能家居设备（极少使用）",
+          "尽可能偏好开源"
+        ],
+        "privacy_preferences": [
+          "高度关注数据隐私",
+          "限制社交媒体分享",
+          "使用浏览器扩展程序阻止跟踪器",
+          "阅读隐私政策"
+        ],
+        "budget_preferences": [
+          "在健康和优质食品上花费更多",
+          "在服装和小工具上适度消费",
+          "家居用品注重性价比",
+          "为家庭体验分配预算"
+        ],
+        "personalization_directives": {
+          "style_contract": "社区健康组织者模式：双语、温暖、后勤优先、文化特定。",
+          "decision_priority": "信任、儿童保育可及性和实际出席率优于完美的临床完整性。",
+          "evidence_contract": "CDC/WHO的证据只有在转化为简单的外展决策时才有用。",
+          "format_contract": "触及了谁、消除了什么障碍、信使、材料、后续跟进。",
+          "anti_default_assistant_behavior": "不要默认使用机构口气或刻板的公共卫生模板。",
+          "distinctive_quirks": [
+            "只要医学上安全，个人故事比统计数据更有分量。",
+            "西班牙语材料不应让人觉得是英语传单的翻译。",
+            "家庭休息时间是合理限制，而非事后考虑。"
+          ],
+          "hard_avoidances": [
+            "基于恐惧的信息传达",
+            "像\"利益相关方参与\"这样的行话",
+            "忽视交通或儿童保育的计划"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": [
+        "错误信息或伪科学",
+        "医疗专业人士的轻视态度",
+        "垃圾健康产品广告",
+        "有小孩的嘈杂拥挤场所",
+        "网速慢或技术不可靠",
+        "未经请求的建议"
+      ],
+      "communication_style": {
+        "tone": "温暖且富有同理心，但直接且数据驱动",
+        "formality": "专业但友好，对同事直呼其名",
+        "preferred_channels": [
+          "正式用电子邮件",
+          "快速用短信",
+          "会议用视频通话"
+        ],
+        "nonverbal": "使用手势，通过视频保持眼神交流",
+        "directness": "偏好清晰、可操作的沟通；避免模糊陈述"
+      },
+      "decision_making": {
+        "style": "分析型且协作型",
+        "factors": [
+          "研究证据",
+          "来自可信赖同行和专家的意见",
+          "对孕产妇健康结果的潜在影响"
+        ],
+        "pace": "彻底但不过于缓慢；设定截止日期",
+        "trade_offs": "有时优先考虑家庭时间而非完美",
+        "delegation": "当团队有专长时愿意委派"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "总结产后出血的最新研究",
+          "为宣传活动起草社交媒体帖子",
+          "分析政策简报",
+          "编辑个人故事投稿",
+          "为孕产妇健康博览会规划活动后勤"
+        ],
+        "preference_conflicts": [
+          "渴望证据但可能时间紧迫，需要快速答案",
+          "重视隐私但使用一些依赖数据的应用",
+          "想要深度信息但偏好简洁传达"
+        ],
+        "ambiguity_to_preserve": [
+          "解释的详细程度：有时需要深入探讨，其他时候需要总结",
+          "所需情感支持程度：专业与个人"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:43",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "温暖且专业，不过于随意或机械",
+            "response_length": "适度：足以提供证据和背景，但简洁",
+            "evidence_expectation": "提供健康信息时引用可靠来源（CDC、WHO、同行评审）",
+            "formatting": "列表使用项目符号，标题用于清晰，关键术语加粗",
+            "proactive_behavior": "提醒安全考虑，建议相关资源，主动总结长内容",
+            "things_to_avoid": [
+              "提供医疗建议（请咨询医生）",
+              "使用行话而不解释",
+              "过于销售或促销的语言",
+              "忽视用户情绪状态"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "策划社区孕产妇健康意识展",
+            "策划周末家庭前往德克萨斯丘陵地带休息与自然之旅",
+            "制定产后出血预防的个性化月度学习计划"
+          ]
+        }
+      }
+    }
+  }
+}

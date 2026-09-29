@@ -1,0 +1,85 @@
+{
+  "user_id": "user_063",
+  "task": {
+    "task_id": "task_hard",
+    "title": "比较多个候选商品并选择长期成本更稳的方案",
+    "daily_life_domain": "shopping",
+    "scenario": "陈若溪需要在本周工作日晚间比较一个购物决策。修订后任务聚焦 3 个候选商品的长期成本和质感比较：首选、安静备选、放弃条件和下一步，不再要求购物车创建或完整采购执行。",
+    "user_goal": "完成「比较多个候选商品并选择长期成本更稳的方案」，并给出满足约束、证据要求和截止时间的可执行结果。",
+    "why_complex": "仍需兼顾预算、长期成本和个人审美，但范围压缩为三选一决策。",
+    "constraints": [
+      "预算上限 185 本地货币单位。",
+      "时间窗口为本周工作日晚间。",
+      "不暴露精确住址、财务或私人细节。",
+      "质感和长期成本优先于热门销量。"
+    ],
+    "required_reasoning_steps": [
+      "明确商品必须满足的基本功能和长期成本项。",
+      "搜索并比较 3 个候选商品。",
+      "按价格、耐用性、维护成本和审美质感排序。",
+      "选择首选和安静备选，并给出放弃条件。",
+      "用 source_info 商品记录校准价格、评分和配送信息。",
+      "输出下一步购买前检查，而不直接创建购物车。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "3 个候选商品的价格、评分、评论数和配送条件。",
+      "维护、耗材或更换成本。",
+      "用户不愿暴露的购买信息边界。",
+      "购买前必须确认的退换规则。"
+    ],
+    "expected_deliverable": "三选一商品决策表：首选、安静备选、成本、灵感价值、长期成本风险和购买前检查。",
+    "success_criteria": [
+      "至少比较 3 个候选商品。",
+      "推荐不超过 185 本地货币单位，或说明超支收益。",
+      "不创建购物车，不暴露地址。",
+      "最终方案至少引用 2 条 SandboxDB/source_info 商品记录。"
+    ],
+    "potential_failure_modes": [
+      "被热门销量带偏，忽略长期成本。",
+      "只看初始价格不看耗材或维护。",
+      "评论样本太少仍做强推荐。",
+      "过早进入购买执行。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 5,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 6,
+      "human_verifier_estimation_basis": [
+        "domain=shopping",
+        "source_domains_capped=1",
+        "reasoning_steps_capped=6",
+        "constraints_capped=5",
+        "decision_points_capped=3",
+        "information_items_capped=4",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=18.0",
+        "hard_revision: 结构较轻，低于主体峰值但仍高于 easy"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "陈若溪",
+      "age": 31,
+      "gender": "女性"
+    }
+  }
+}

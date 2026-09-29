@@ -1,0 +1,449 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_011",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:09:58",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 19,
+  "composition": {
+    "episodic_preference_trace": 19
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_013"
+    ],
+    "content": [
+      "hidden_indirect_002",
+      "hidden_indirect_018"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_010",
+      "hidden_indirect_015",
+      "hidden_indirect_019"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_007",
+      "hidden_indirect_015",
+      "hidden_indirect_018"
+    ],
+    "entertainment": [
+      "hidden_indirect_012"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_008",
+      "hidden_indirect_016"
+    ],
+    "food": [
+      "hidden_indirect_010"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_006",
+      "hidden_indirect_016"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_007",
+      "hidden_indirect_017"
+    ],
+    "learning": [
+      "hidden_indirect_011"
+    ],
+    "privacy": [
+      "hidden_indirect_008",
+      "hidden_indirect_012"
+    ],
+    "product": [
+      "hidden_indirect_005",
+      "hidden_indirect_014"
+    ],
+    "role_context": [
+      "hidden_indirect_009",
+      "hidden_indirect_019"
+    ],
+    "service": [
+      "hidden_indirect_009",
+      "hidden_indirect_014"
+    ],
+    "technology": [
+      "hidden_indirect_011",
+      "hidden_indirect_017"
+    ],
+    "travel": [
+      "hidden_indirect_003",
+      "hidden_indirect_013"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次健康外展活动，我们订了2000份传单，但最后一半没发出去，仓库还剩一堆。营地运输费比印刷费还贵，预算在最后一步失控。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我们只印800份，集中在五个关键分发点。省下的钱加购20个便携喇叭，现场语言宣讲覆盖面更大，运输也轻便。"
+        }
+      ],
+      "implicit_signal": "在项目启动时会优先确保核心活动（宣传）的供应，即使需要压缩辅助环节预算"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "世卫那份霍乱预防手册，全是标准操作程序，但没提这里取水点每天只开放两次。志愿者读完后还是不知道什么时候发氯片。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把取水时间和手册时间表叠在一起，重新排了一张‘轮到你的街区时该带什么’的图示，加在手册附件里。"
+        }
+      ],
+      "implicit_signal": "要求联合国/世卫组织的建议必须有现场可执行的说明，不接受抽象指南"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去内罗毕参会，往返机票加三晚住宿一共报了380美元，审计问了一周，说没解释清楚和当地伙伴的会面怎么降低项目成本。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我提前拟好行程单，每场会议附上对应节省的运输或翻译费估算，一并提交审批。"
+        }
+      ],
+      "implicit_signal": "必须详细解释出差每项支出如何直接服务于项目，否则不愿批准"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "这次推广用的活动登记表，设计成在线表单。结果第一天网络断了3小时，志愿者只能记在纸上，晚上还得人工录入，第二天又重做一遍。"
+        },
+        {
+          "role": "assistant",
+          "content": "改回纸质入场券，每张预印编号，现场手工勾选。收工后用离线ODK扫描录入，有网时再同步。"
+        }
+      ],
+      "implicit_signal": "拒绝使用需要持续联网的应用；坚持离线运作优先"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月我报了一个Coursera数据分析课，结果每段视频都要缓冲，测验还有计时。上了一周就放弃了，根本没法在营地晚上摸黑学。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我帮你找到一个带离线下载的全文本版，所有阅读材料可存到本地，练习题不强制在线交。你可以攒到周末一次回看。"
+        }
+      ],
+      "implicit_signal": "因为带宽和疲劳问题，选课时要求课程材料能提前下载、不分段计时"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "总部发来的‘协同增效’‘利益相关方参与矩阵’模板，我让本地伙伴填，他们看不懂，材料发出去后又撤回。"
+        },
+        {
+          "role": "assistant",
+          "content": "我重新写了一个版本：左侧列每个社区负责人姓名，右侧列他们能调用的人力车数，中间让他们打勾确认角色。今天就能发出去。"
+        }
+      ],
+      "implicit_signal": "拒绝总部行话，要求现场限制、供应、本地合作伙伴等具体信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一个捐助方提议直接派国际医疗队进camp做霍乱筛查，没提怎么和本地诊所护士协调。上次类似做法，护士们觉得被架空，工作差点停摆。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次方案改成：国际队负责物资和培训，本地护士主导分诊和随访，共同签署日常报告。要对方确认再推进。"
+        }
+      ],
+      "implicit_signal": "任何干预都必须有当地合作伙伴角色，否则不执行"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周做水质调查，参考了世卫的随机采样指南，但没考虑到这片区域只有一口井是小朋友经常去打水的。数据全偏了，而且暴露了哪些孩子天不亮就去打水。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次用分层采样，按取水时间段分组。问卷上不记孩子名字，只用颜色贴纸标记家庭区号。分析报告里也去掉精确坐标。"
+        }
+      ],
+      "implicit_signal": "引用标准化建议时必须提供适用于本地的转化步骤，并保护受访者身份"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "推广一款新净水app，但当地妇女都习惯用喀伦族的口头口诀判断水是否安全，我硬推广了三天，参与率不到一成。"
+        },
+        {
+          "role": "assistant",
+          "content": "停掉app推广，改和村里妇女组长合作，把净水步骤编成口诀，每天早上的取水排队一起唱。同时准备一份简单的纸版对照卡插在取水点。"
+        }
+      ],
+      "implicit_signal": "作为现场协调员，选择服务时首要考虑社区接受度而非技术先进性"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月营养包分发，原本计划每人加一包花生酱，但运输延误导致只有乌加里和豆子到位。我犹豫要不要等花生酱到了再发，结果发了两天都没发完。"
+        },
+        {
+          "role": "assistant",
+          "content": "不等了，豆子和乌加里各加一勺植物油，就能保证能量。先发完，下批花生酱留到下月配合蔬菜到货时做加餐。"
+        }
+      ],
+      "implicit_signal": "当安全与供应受限时，优先确保基本的营养充足，而非种类多样化"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "前天想在手机上装一个新版健康地图软件，结果要联网注册才能用。我去取水点路上信号很差，注册页面一直转圈。"
+        },
+        {
+          "role": "assistant",
+          "content": "我帮你找了一个完全免注册版本，所有数据先存在本地csv文件。等你有Wi-Fi时，一次性上传到项目服务器即可。"
+        }
+      ],
+      "implicit_signal": "工具必须能离线运行，且设置简单，不依赖持续网络支持"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次我看了一部关于难民营的纪录片，其中一段拍了一个小女孩的脸和她的姓名。我认识那个女孩，她家人后来抱怨不安全。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后看片子或推荐时，先确认项目是否签署了知情同意，并且在播出时用化名和模糊化处理脸部。我可以帮你拉一份有伦理审查的片单。"
+        }
+      ],
+      "implicit_signal": "娱乐内容偏好真实的难民叙事，同时严格保护受访者隐私"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月去Lokichoggio参加协调会，发现机票比提前三周预订贵了6000先令，而且会议日程里有一半时间谈的是我不负责的物资分配。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次出发前先向会议方要精确议程，只参加和你的卫生宣传、社区协调直接相关的场次。多余的半天可以安排去附近的供应点取一批可重复使用水桶。"
+        }
+      ],
+      "implicit_signal": "个人出差预算节俭，即使组织报销也要求证明必要性"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次用银行转账给社区志愿者发补贴，每人扣了150先令手续费，5个人下来快失去信任，他们以为我吞了钱。"
+        },
+        {
+          "role": "assistant",
+          "content": "全部改用M-Pesa发，每人实时到账，且我可以保存每条交易短信做凭证。今天下午就统一发出。"
+        }
+      ],
+      "implicit_signal": "金融工具必须易地使用且手续费低；本地区移动支付优先"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "今天收到一份完美的项目计划书，但里面假设每天有6小时稳定供电和一辆随时可用的运输车。我上周停电停了4次，唯一的车还在修。"
+        },
+        {
+          "role": "assistant",
+          "content": "砍掉那些依赖稳定条件才能完成的活动，重新分配人力和时间，把活动和太阳能充电设备绑定时段。"
+        }
+      ],
+      "implicit_signal": "项目设计必须优先考虑安全限制和供应约束，而不是纸上协议"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "总部发来一份基于evidenced的洗手推广方案，但没有说在只有一个水龙头的地方怎么排班，也没有列明每天应督导的最少人数。"
+        },
+        {
+          "role": "assistant",
+          "content": "我按每个洗手台方圆200米的人数，折算出每两小时一组的轮值表，再加上两个现场督导的巡查指标。"
+        }
+      ],
+      "implicit_signal": "建议必须有现场可操作的步骤，且格式包含指标"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天尝试用一个在线合作的疫苗接种跟踪表，但每次保存都需要网络。我走到营地边缘才有信号，一天只更新了3条。"
+        },
+        {
+          "role": "assistant",
+          "content": "换用本地Excel文件，在USB里共享。每天晚上用短信把关键数字报给总部，只传总数，不传全表。"
+        }
+      ],
+      "implicit_signal": "排斥需要稳定互联网才能工作的工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "印刷了一批预防霍乱的全彩手册，结果发现村里识字率只有一半，而且手册太重，志愿者不愿背到偏远片区。"
+        },
+        {
+          "role": "assistant",
+          "content": "停印手册，改画一套简单的图示卡，每张正面是动作，背面是斯瓦希里语短句。志愿者一次只用揣8张卡出门。"
+        }
+      ],
+      "implicit_signal": "信息材料必须适合低带宽、低文化程度受众，且可直接在当地使用"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "季度报告里总部要求填写‘受益者满意度百分比’，但我们是面对面收集意见，没有问卷。我随手填了个80%，后来被审计质疑数据源。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次我改用焦点小组的记录引用：引用特定日期、地点和人数，再加上当天的现场照片。审计认可这种‘证据’形式。"
+        }
+      ],
+      "implicit_signal": "在现场协调员角色中，确保社区参与度不被总部抽象指标取代"
+    }
+  ]
+}

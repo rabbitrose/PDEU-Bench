@@ -1,0 +1,491 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_138",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:05:28",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_012",
+      "hidden_indirect_016"
+    ],
+    "content": [
+      "hidden_indirect_004",
+      "hidden_indirect_017",
+      "hidden_indirect_021"
+    ],
+    "decision_priority": [
+      "hidden_indirect_002",
+      "hidden_indirect_010"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_012",
+      "hidden_indirect_019"
+    ],
+    "entertainment": [
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_008",
+      "hidden_indirect_014"
+    ],
+    "food": [
+      "hidden_indirect_008",
+      "hidden_indirect_015"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_009"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_011",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "learning": [
+      "hidden_indirect_003",
+      "hidden_indirect_011",
+      "hidden_indirect_017"
+    ],
+    "privacy": [
+      "hidden_indirect_007",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "product": [
+      "hidden_indirect_005"
+    ],
+    "role_context": [
+      "hidden_indirect_001"
+    ],
+    "service": [
+      "hidden_indirect_007",
+      "hidden_indirect_016",
+      "hidden_indirect_020"
+    ],
+    "technology": [
+      "hidden_indirect_006",
+      "hidden_indirect_014",
+      "hidden_indirect_019"
+    ],
+    "travel": [
+      "hidden_indirect_009",
+      "hidden_indirect_013",
+      "hidden_indirect_021"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次选滑雪营只看了好评，结果到了发现装备另付，超预算57加元。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我先把装备租赁和场地费的明细列出来，用共享表格标注每项是否可选。"
+        }
+      ],
+      "implicit_signal": "旅行预算需优先于课程名气，且要求证据透明"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "翻到个训练营排名，但没写学员赛后成绩变化。"
+        },
+        {
+          "role": "assistant",
+          "content": "我去找过去三周每个学员的冰时统计和射门命中率，把前后对比列在旧版清单后面。"
+        }
+      ],
+      "implicit_signal": "偏好可观察进步指标而非泛泛排名"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次复习课笔记只给了链接，练完才发现漏了关键动作。"
+        },
+        {
+          "role": "assistant",
+          "content": "今天练习三步：1. 设置计时器 2. 按模板做三组 3. 录一段自我反馈。下次复盘看第2组速度。"
+        }
+      ],
+      "implicit_signal": "偏好明确反馈点和复盘步骤的结构"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那篇文章太长，我看到一半不知道该怎么练。"
+        },
+        {
+          "role": "assistant",
+          "content": "从文章里挑出两条能今天就练的：第一条是重心转移示范，第二条是手腕发力的动图。你选哪个先试？"
+        }
+      ],
+      "implicit_signal": "需要短周期里程碑，清单化执行"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "这个护具品牌官网没写保修期和返修流程，只说七天退换。"
+        },
+        {
+          "role": "assistant",
+          "content": "先看两家本地店的库存，一家提供一年保修，另一家有同价位可调护膝。不在线买非透明品牌。"
+        }
+      ],
+      "implicit_signal": "拒绝信息不透明的产品，要求维护成本和替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "住宿平台给我推了18家，光是筛选条件就填了三页。"
+        },
+        {
+          "role": "assistant",
+          "content": "先排除评分低于4.5和没有免费取消的，剩下6家，再按到冰场步行时间排序。"
+        }
+      ],
+      "implicit_signal": "容易被选项拖慢，需要用排除法聚焦"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次运动恢复App注册时需要位置权限，取消时还得打客服电话。"
+        },
+        {
+          "role": "assistant",
+          "content": "换这家：官网写明取消两步内完成，数据只存本地，不要求位置。"
+        }
+      ],
+      "implicit_signal": "要求服务取消规则透明，数据边界清晰"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "比赛前一晚吃那家网红意面，第二天肚子一直不舒服。"
+        },
+        {
+          "role": "assistant",
+          "content": "明天想试的餐单：白米饭、鸡胸、蒸西兰花，碳水够且你之前赛后吃完反映稳定。可行？"
+        }
+      ],
+      "implicit_signal": "偏好基于数据和反馈的饮食方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次转机只留了1小时，结果前班延误直接错过。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次方案：11:00到机场 / 13:20起飞 / 预留过安检后45分钟缓冲 / 备选统一订可改签舱位。"
+        }
+      ],
+      "implicit_signal": "偏好小标题式步骤，包含缓冲时间"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "市里冰球嘉年华下午两点，但那天上午有加练，怕赶不上。"
+        },
+        {
+          "role": "assistant",
+          "content": "上午加练调到7:30开始，10点结束。嘉年华只去你感兴趣的技能挑战区，不待满全程。"
+        }
+      ],
+      "implicit_signal": "练习质量和可坚持性优先于活动名气"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "教练说‘多用下肢发力’，但没有演示也没给练习路径。"
+        },
+        {
+          "role": "assistant",
+          "content": "从训练视频里截取三个动作：深蹲弹跳-侧弓步-单腿硬拉。每组10次，录下自己对比镜面示范。"
+        }
+      ],
+      "implicit_signal": "拒绝只给大道理，要求可执行反馈"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那家旅舍便宜但没暖气，预约确认前才发现取消了暖气费。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐这家：同区域，含暖气、早餐、24小时退房，每晚贵18加元。可推迟省的是餐费，不是保暖。"
+        }
+      ],
+      "implicit_signal": "需要区分必须花费和可推迟花费"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个订房网要我填同伴的联系方式才能继续预订。"
+        },
+        {
+          "role": "assistant",
+          "content": "换用booking.com的访客模式，只填一个联系人（你本人），不共享伴侣号码。"
+        }
+      ],
+      "implicit_signal": "位置信息保持谨慎，只提供必要信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "旧版清单插件突然更新，历史记录全没了，版本没法回退。"
+        },
+        {
+          "role": "assistant",
+          "content": "换用本地Markdown文件管理清单，手动同步到云盘，每次改动前备份一次。"
+        }
+      ],
+      "implicit_signal": "偏好可导出数据的工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "营养师说多吃牛油果，但我吃完快餐薯条加牛油果，训练时胀气。"
+        },
+        {
+          "role": "assistant",
+          "content": "明天训练前两小时的餐食：水煮蛋两枚、一根香蕉、一杯燕麦。牛油果放到训练后补。"
+        }
+      ],
+      "implicit_signal": "避免忽略当前水平的餐食建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "保险索赔流程让我先注册再提交，关键信息只有广告页提到。"
+        },
+        {
+          "role": "assistant",
+          "content": "换当地冰协的合作保险公司：电话直接提交，不需要线上注册，免赔额更低。"
+        }
+      ],
+      "implicit_signal": "偏好少中转、少注册的服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那篇文章贴了50个练习，但没有一个写‘做到什么算合格’。"
+        },
+        {
+          "role": "assistant",
+          "content": "只取前三：1. 连续10次传球命中目标 2. 15秒内完成折返 3. 射门命中率70%以上。每项练完记结果。"
+        }
+      ],
+      "implicit_signal": "要求示例和可复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "活动散场后，发现那个巡回展要求扫码关注才能看复盘视频。"
+        },
+        {
+          "role": "assistant",
+          "content": "不扫，用手机拍下现场屏幕的关键数据，回家搜公开比赛录像复盘。"
+        }
+      ],
+      "implicit_signal": "避免过度拥挤和强营销活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前那个笔记本App只能苹果设备用，想在冰场看还得带平板。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用Standard Notes，安卓也能开，还能导出纯文本备份到网盘。"
+        }
+      ],
+      "implicit_signal": "偏好跨设备同步且不受平台锁定"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次客服说‘帮你查下’就没下文，最后一项没人确认。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次预约完要求对方邮件确认所有项目，抄送自己不删。"
+        }
+      ],
+      "implicit_signal": "拒绝低保真度反馈，要求可追溯步骤"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那篇‘10大冰场’把室外的排第一，但我需要早6点开门练射门。"
+        },
+        {
+          "role": "assistant",
+          "content": "筛选条件：6:00开门、有射门区、月卡可暂停。从结果中选两个，对比后定一个。"
+        }
+      ],
+      "implicit_signal": "拒绝通用榜单，要求贴合个人场景"
+    }
+  ]
+}

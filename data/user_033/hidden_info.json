@@ -1,0 +1,497 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_033",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T06:01:14",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_007",
+      "hidden_indirect_021"
+    ],
+    "content": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_019"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_005",
+      "hidden_indirect_011",
+      "hidden_indirect_017"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_001",
+      "hidden_indirect_004",
+      "hidden_indirect_007",
+      "hidden_indirect_012",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "entertainment": [
+      "hidden_indirect_006"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_006",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "food": [
+      "hidden_indirect_004",
+      "hidden_indirect_016"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_009",
+      "hidden_indirect_014",
+      "hidden_indirect_019"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_008",
+      "hidden_indirect_012",
+      "hidden_indirect_016"
+    ],
+    "learning": [
+      "hidden_indirect_003",
+      "hidden_indirect_014"
+    ],
+    "privacy": [
+      "hidden_indirect_010",
+      "hidden_indirect_020"
+    ],
+    "product": [
+      "hidden_indirect_009",
+      "hidden_indirect_018"
+    ],
+    "role_context": [
+      "hidden_indirect_010"
+    ],
+    "service": [
+      "hidden_indirect_005",
+      "hidden_indirect_013",
+      "hidden_indirect_021"
+    ],
+    "technology": [
+      "hidden_indirect_002",
+      "hidden_indirect_017"
+    ],
+    "travel": [
+      "hidden_indirect_008",
+      "hidden_indirect_015"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "distinctive_quirk",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周在戛纳看了三部主竞赛片，其中一部讲述移民故事，但用了完全线性的三幕结构。"
+        },
+        {
+          "role": "assistant",
+          "content": "那你需要在报道中把结构分析放在前面，可以不去提它如何反映社会议题，而是先拆解时间线为何如此保守。"
+        }
+      ],
+      "implicit_signal": "在电影节报道中优先形式独特性而非流行度"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我在找一台新OLED电视，看了Rtings评分，但想听听你建议怎么对比真实表现。"
+        },
+        {
+          "role": "assistant",
+          "content": "根据你常看的内战电影中黑暗场景需求，对比两台机型的HDR峰值亮度和局部调光分区数就够了。"
+        }
+      ],
+      "implicit_signal": "依赖具体技艺证据而非评分来判断设备"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚听完一个线上讲座《非线性叙事新浪潮》，里面用曼陀罗图分析环形结构，但我记不住那些术语。"
+        },
+        {
+          "role": "assistant",
+          "content": "我可以用笔记整理成三步法对照表：并行线程、时间跳跃、循环收束，明天发你PDF。"
+        }
+      ],
+      "implicit_signal": "交付格式偏向技术性、反流行的结构化分析课程"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我在曼谷街头胡乱走进一家店，菜单全是泰文，老板娘不会英文，结果那碗船面比五星酒店的都好吃。"
+        },
+        {
+          "role": "assistant",
+          "content": "你记下摊位位置了吗？下次你写曼谷游记时，完全可以用这个细节，不必说‘隐藏宝石’那种旅游词。"
+        }
+      ],
+      "implicit_signal": "避免营销词汇，倾向本地真实体验"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去年订了Mubi和Criterion Channel，但Mubi最近频繁上架商业喜剧，我考虑换掉。"
+        },
+        {
+          "role": "assistant",
+          "content": "可以调查一下Mubi本月的新片上架记录，如果连续三周都是类型片，就值得暂停订阅改投租赁少数电影的独立平台。"
+        }
+      ],
+      "implicit_signal": "流媒体选择以策展风险和边缘声音为准"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我写影评时反复用‘剧情简介’开头，合作编辑说这显得草率，但我想让读者先知道故事。"
+        },
+        {
+          "role": "assistant",
+          "content": "可以尝试用第一个场景代替简介。比如你把开场的雨夜作为切入点，描述构图和音轨，让读者从感官进入。"
+        }
+      ],
+      "implicit_signal": "拒绝IMDb式简介，用场景分析替代"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我在音响店对比了Sonos Arc和一套入门级被动音箱+功放组合，价格一样。"
+        },
+        {
+          "role": "assistant",
+          "content": "既然你的观影场景是狭小客厅，选被动系统+中置声道能获得更准确的人声对白定位，这是Sonos无法提供的。"
+        }
+      ],
+      "implicit_signal": "家庭影院升级看重保真度而非价格"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在多伦多电影节有公关团队反复邀请我参加一部大制片厂作品的红毯，但我对那部片的导演毫无兴趣。"
+        },
+        {
+          "role": "assistant",
+          "content": "你可能更喜欢去Discovery区看一位难民导演的手持纪录片，没有红毯，但选材更符合你的策展标准。"
+        }
+      ],
+      "implicit_signal": "避免电影节热点与公关推动"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我刚收到一台二手家用放映机，但没有说明书，不知道投射尺寸怎么调。"
+        },
+        {
+          "role": "assistant",
+          "content": "测量环境光后建议设定投射比1.5:1，把机器固定在与幕布3米处，先不调颜色模式，你今天要放的是黑白默片还是彩色？"
+        }
+      ],
+      "implicit_signal": "交付格式包含批判角度和场景设置"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有读者私信问我在纽约的住所地址，说要送电影剧本给我，但我不希望公开具体街区。"
+        },
+        {
+          "role": "assistant",
+          "content": "你可以回复他一个邮政信箱，或者指定一家附近的咖啡店作为接收点。"
+        }
+      ],
+      "implicit_signal": "保持专业与私人生活分离"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下一个电影节计划是坎昆电影节，我看到一部热门的墨西哥商业片，但另一部是首部全部由原住民主演的剧情片。"
+        },
+        {
+          "role": "assistant",
+          "content": "优先排原住民那部，它属于被边缘化的声音，即使发行方资源少，你可以在报道里重点分析其视觉叙事。"
+        }
+      ],
+      "implicit_signal": "内容选择以被忽视的弱势声音为先"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我写了一篇关于两届影展中重复出现的《失魂者》的评论，编辑指出其中两段观点与去年那篇几乎相同。"
+        },
+        {
+          "role": "assistant",
+          "content": "删掉第二段，转为分析该片今年新增的15分钟片段中光线的断裂，而不是重复讨论剪辑风格。"
+        }
+      ],
+      "implicit_signal": "避免在报道中重复叙事"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我打算订阅一个韩国独立电影线上租赁平台，但只看到用户评分，没有详细的技术规格说明。"
+        },
+        {
+          "role": "assistant",
+          "content": "向客服询问流媒体码率和音频格式。低于15 Mbps或者只有立体声的话，即使评分高也不值得订阅。"
+        }
+      ],
+      "implicit_signal": "证据标准要求技术层面推理"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我参加了一个关于苏联蒙太奇理论的网络研讨会，讲课人滔滔不绝，但只得到一篇文字摘要。"
+        },
+        {
+          "role": "assistant",
+          "content": "我可以用一张对比表帮你提炼爱森斯坦与维尔托夫的核心剪辑原则，附你常分析的《战舰波将金号》片段时间码。"
+        }
+      ],
+      "implicit_signal": "学习交付采用批评角度和结构工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我有朋友想来我家看电影，他们希望是轻松的喜剧，但我不想找流媒体排行榜上的片子。"
+        },
+        {
+          "role": "assistant",
+          "content": "考虑一部1963年的日本黑白讽刺片《天国与地狱》，剧情紧凑不沉闷，叙事带有批评社会的尖锐，适合非影迷但非套路。"
+        }
+      ],
+      "implicit_signal": "私人放映追求策展性与难度"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有人推荐一家新开的素食餐厅，说Yelp评分4.5，但我查了菜单发现根本没有季节变化。"
+        },
+        {
+          "role": "assistant",
+          "content": "放弃这个推荐，搜索一下Google地图上有没有标注‘固定菜单’的评论，你的标准是食材随季节调整，而非评分。"
+        }
+      ],
+      "implicit_signal": "避免仅基于评分的推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我想升级手机用来拍短片，但新机型的影像系统增加了大量AI滤镜功能，我担心干扰原始画面。"
+        },
+        {
+          "role": "assistant",
+          "content": "选支持Cinematic ProRes或Log模式的型号，关闭所有自动增强，用外接监看身件控制参数，比功能列表重要。"
+        }
+      ],
+      "implicit_signal": "技术选择以视听保真度优先于功能数量"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我在考虑买一个Blu-ray播放器，看到一款标榜‘8K upscaling’但价格翻倍，不确定值不值。"
+        },
+        {
+          "role": "assistant",
+          "content": "对比它在1440p蓝光碟上的真实边缘重建测试，而不是相信包装上的‘8K’字样。你收藏的《七武士》修复版才是试金石。"
+        }
+      ],
+      "implicit_signal": "产品评估依赖技艺证据而非营销"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我需要为杂志写一篇1200字的《记忆碎片》影评，但不想采用经典的情节总结加主题讨论结构。"
+        },
+        {
+          "role": "assistant",
+          "content": "你可以用倒叙方式，从最后一场心理对话开始，逐段回溯该场景连接的剪辑点，让文章本身呈现叙事断裂。"
+        }
+      ],
+      "implicit_signal": "内容分析采用形式结构工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一个影评人微信群要求我们共享每位电影节的场次安排以互相帮助，我有点犹豫。"
+        },
+        {
+          "role": "assistant",
+          "content": "你可以只告知某几天有空的时段，而不是具体到哪家影院几点；提前标记想看却未定的片单则设为私密。"
+        }
+      ],
+      "implicit_signal": "不分享地理位置与排片日程"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "Criterion Channel涨价了20%，且推出了插播广告的低价档，我在考虑是否降级。"
+        },
+        {
+          "role": "assistant",
+          "content": "保持现有无广告套餐。你每月看片量超过15部，广告中断会破坏你写作前需要的沉浸状态。"
+        }
+      ],
+      "implicit_signal": "愿意为无广告优质流媒体付费"
+    }
+  ]
+}

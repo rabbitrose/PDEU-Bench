@@ -1,0 +1,203 @@
+{
+  "user_id": "user_070",
+  "explicit_preferences": {
+    "user_profile": "一名学校篮球队队长，认为体育及其经费应优先于学生会竞选活动",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "马库斯·约翰逊",
+        "age": 17,
+        "gender": "男性",
+        "location": "美国俄亥俄州代顿市",
+        "languages": [
+          "英语"
+        ],
+        "education_level": "高中三年级",
+        "occupation": "学生",
+        "industry": "教育",
+        "seniority": "学生",
+        "household": "与父母和妹妹同住",
+        "life_stage": "青少年"
+      },
+      "physical_profile": {
+        "height_cm": 185,
+        "general_appearance": "运动员体魄，平头，常穿篮球装备",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "有抱负、好胜、注重团队；优先考虑体育卓越，并认为学校资金应倾斜于体育项目而非学生会竞选活动。",
+        "big_five": {
+          "openness": 30,
+          "conscientiousness": 85,
+          "extraversion": 80,
+          "agreeableness": 55,
+          "neuroticism": 40
+        },
+        "strengths": [
+          "领导力",
+          "纪律性",
+          "体能耐力",
+          "激励性演讲"
+        ],
+        "weaknesses": [
+          "兴趣狭隘",
+          "低估非体育活动价值",
+          "对官僚程序缺乏耐心"
+        ],
+        "values": [
+          "团队合作",
+          "毅力",
+          "获胜",
+          "通过体育展现学校精神"
+        ],
+        "motivations": [
+          "获得大学篮球奖学金",
+          "带领球队夺冠",
+          "证明体育塑造品格"
+        ],
+        "stress_triggers": [
+          "输掉比赛",
+          "体育项目预算削减",
+          "不公平的裁判",
+          "训练受干扰"
+        ]
+      },
+      "background": "出身于热爱体育的家庭；父亲曾是高中篮球教练。六岁开始打篮球。高二成为队长。认为体育项目比学生会活动更能培养纪律性和学校凝聚力。",
+      "lifestyle": "凌晨5:30起床进行晨练，上学，然后下午训练或比赛。休息时间学习。周末参加锦标赛。采用高蛋白饮食。空闲时间观看NBA精彩片段或玩篮球电子游戏。",
+      "interests": [
+        "篮球",
+        "体育训练",
+        "NBA",
+        "健身",
+        "体育电子游戏",
+        "团队策略"
+      ],
+      "explicit_preferences": {
+        "content_preferences": [
+          "体育新闻",
+          "篮球训练技巧",
+          "比赛集锦",
+          "体育科学",
+          "内容必须匹配这位用户独特的工作模式：场边教练模式：简短、有竞争性，只有在能改变行动时才使用数据。",
+          "拒绝通用的助手框架：听起来不要像学校辅导员或通用励志海报。"
+        ],
+        "product_preferences": [
+          "耐克篮球鞋",
+          "安德玛运动服饰",
+          "佳得乐",
+          "Wilson篮球",
+          "产品应通过用户自身的权衡视角来筛选：训练项目、分钟数、强度、提示语、比分影响。"
+        ],
+        "service_preferences": [
+          "健身房会员",
+          "个人训练应用",
+          "体育分析平台",
+          "服务只有在保留这一决策优先级时才可接受：当前表现和团队士气优先于抽象的长期优化。"
+        ],
+        "learning_preferences": [
+          "动手训练",
+          "视觉演示",
+          "教练反馈"
+        ],
+        "travel_preferences": [
+          "锦标赛旅行",
+          "活跃假期（徒步、体育训练营）",
+          "偏好有良好篮球场的目的地"
+        ],
+        "food_preferences": [
+          "高蛋白餐食",
+          "冰沙",
+          "烤鸡",
+          "比赛前避免快餐"
+        ],
+        "entertainment_preferences": [
+          "体育赛事",
+          "关于运动员的纪录片",
+          "动作电影",
+          "ESPN节目"
+        ],
+        "technology_preferences": [
+          "健身可穿戴设备（Fitbit、Garmin）",
+          "游戏主机（PlayStation）",
+          "篮球训练应用"
+        ],
+        "privacy_preferences": [
+          "不介意分享一般信息，但会保密个人数据和比赛视频"
+        ],
+        "budget_preferences": [
+          "愿意在优质运动装备上花钱",
+          "在非运动物品上节俭",
+          "为大学存钱"
+        ],
+        "personalization_directives": {
+          "style_contract": "场边教练模式：简短、竞争性强，只有改变行动时才展示数据。",
+          "decision_priority": "今天的表现和团队士气胜过抽象的长期优化。",
+          "evidence_contract": "使用比分板式数据、训练技巧和比赛实例。",
+          "format_contract": "训练、时间、强度、提示、计分板效应。",
+          "anti_default_assistant_behavior": "不要听起来像学校辅导员或通用的励志海报。",
+          "distinctive_quirks": [
+            "耐克/安德玛的偏向是真实存在的，除非预算不允许。",
+            "用于倡导时，使用学生运动员语言而非政策语言。",
+            "想要一个能在训练前截图保存的计划。"
+          ],
+          "hard_avoidances": [
+            "长篇引用",
+            "医学式谨慎，除非受伤风险具体明确",
+            "外观好看但会降低变向速度的装备选项"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": [
+        "不喜欢过度关注学生会竞选胜过体育",
+        "不喜欢缓慢、官僚的流程",
+        "时间受严格训练计划限制",
+        "赛季期间避免垃圾食品"
+      ],
+      "communication_style": "直接、有活力，使用体育隐喻。给出简短、激励性的指令。偏好面对面或快讯交流。",
+      "decision_making": "在体育背景下数据驱动（数据和比赛录像），但在团队士气上凭直觉。重视教练和信任队友的意见。在压力下快速决策。",
+      "evaluation_notes": {
+        "likely_tasks": [
+          "查找篮球训练计划",
+          "比较篮球鞋型号",
+          "安排训练 session",
+          "获取比赛日营养建议",
+          "分析对手球队数据"
+        ],
+        "preference_conflicts": [
+          "可能拒绝优先考虑学生会或艺术资助的建议",
+          "可能忽略非体育内容推荐"
+        ],
+        "ambiguity_to_preserve": [
+          "具体的大学偏好（他目标大学）",
+          "具体技能水平（例如垂直弹跳高度）",
+          "与学生会成员的关系"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:43",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "热情且鼓舞人心，像教练一样",
+            "response_length": "短到中等长度，快速切入主题",
+            "evidence_expectation": "希望获得数据、事实和可靠来源的训练或装备建议",
+            "formatting": "用要点呈现建议，关键数据加粗",
+            "proactive_behavior": "可以建议每日训练计划、提醒补水或分享励志语录",
+            "things_to_avoid": "居高临下的语气、无关的学术或艺术建议、冗长的解释"
+          },
+          "task_titles_used_for_context": [
+            "优化区域锦标赛训练计划",
+            "在校董会议上倡导增加体育经费",
+            "在预算内为即将到来的赛季选择最佳篮球鞋"
+          ]
+        }
+      }
+    }
+  }
+}

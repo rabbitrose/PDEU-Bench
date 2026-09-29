@@ -1,0 +1,281 @@
+{
+  "user_id": "user_005",
+  "explicit_preferences": {
+    "user_profile": "一位来自信德省的巴基斯坦家庭主妇。",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "法蒂玛·阿里",
+        "age": 35,
+        "gender": "女性",
+        "location": "巴基斯坦信德省海得拉巴",
+        "languages": [
+          "信德语",
+          "乌尔都语",
+          "基础英语"
+        ],
+        "education_level": "家政学学士学位",
+        "occupation": "家庭主妇",
+        "industry": "家庭",
+        "seniority": null,
+        "household": "已婚，有两个孩子（8岁和12岁），与丈夫和公婆同住",
+        "life_stage": "中年早期，抚养学龄儿童，是大家庭的一部分"
+      },
+      "physical_profile": {
+        "height_cm": 160,
+        "general_appearance": "传统巴基斯坦外貌：肤色黝黑，黑发常以杜帕塔或头巾遮盖，日常穿着莎丽瓦卡米兹。温暖的微笑，中等身材。",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "温暖、以家庭为重、传统。她重视家庭和谐，以家庭角色为荣。如果对家庭有益，乐于接受新想法。",
+        "big_five": {
+          "openness": 40,
+          "conscientiousness": 75,
+          "extraversion": 50,
+          "agreeableness": 85,
+          "neuroticism": 30
+        },
+        "strengths": [
+          "有养育之心",
+          "有条理",
+          "善于预算",
+          "务实的问题解决者"
+        ],
+        "weaknesses": [
+          "对现代技术犹豫不决",
+          "高度依赖家人意见",
+          "避免冲突"
+        ],
+        "values": [
+          "家庭团结",
+          "传统",
+          "好客",
+          "尊重长辈",
+          "宗教信仰（伊斯兰教）"
+        ],
+        "motivations": [
+          "确保孩子的未来",
+          "保持家庭和睦",
+          "维护文化遗产",
+          "成为受人尊敬的母亲和妻子"
+        ],
+        "stress_triggers": [
+          "孩子生病或在学校遇到困难",
+          "经济压力",
+          "与公婆冲突",
+          "毫无准备的意外客人"
+        ]
+      },
+      "background": {
+        "birthplace": "信德省Moro附近的小村庄",
+        "upbringing": "在信奉强烈信德传统的联合家庭中长大。长女，从小帮助母亲做家务。",
+        "education": "就读当地公立学校，在海得拉巴的一所大学获得家政学学士学位。",
+        "career_history": "婚前短暂担任教师，之后成为全职主妇。",
+        "major_life_events": "24岁时嫁给一名政府文员；搬到海得拉巴。有两个孩子。曾帮助照顾年迈的公婆。"
+      },
+      "lifestyle": {
+        "daily_routine": "黎明起床做晨礼，为家人准备早餐，送孩子上学，打扫卫生，做午饭，拜访邻居或看电视，接孩子放学，辅导作业，准备晚餐，与家人共度晚间，睡前诵读古兰经。",
+        "social_life": "关系紧密：与邻居、亲戚和清真寺的女性互动。很少独自外出。",
+        "health_habits": "在家内走动，做健康饭菜（少油、多蔬菜）。只在需要时去看医生体检。"
+      },
+      "interests": {
+        "hobbies": [
+          "烹饪和尝试新信德食谱",
+          "缝纫和刺绣",
+          "听信德民间音乐",
+          "看巴基斯坦电视剧",
+          "阅读宗教书籍",
+          "在小块土地上种菜"
+        ],
+        "passions": [
+          "保存传统信德菜",
+          "教孩子乌尔都语和信德语",
+          "为宗教节日装饰家"
+        ]
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "话题：育儿技巧、伊斯兰教义、巴基斯坦电视剧、信德文化",
+          "形式：短视频（2-5分钟）、分步文字食谱、音频讲座（宗教）",
+          "来源：YouTube（信德语/乌尔都语频道）、WhatsApp家庭群、本地电视台（ARY、Hum TV）",
+          "内容必须符合该用户独特的工作模式：实用的家庭大姐模式——尊重、分步、文化熟悉。",
+          "拒绝通用助手框架：不要显得学术、西化或居高临下。"
+        ],
+        "product_preferences": [
+          "饮食：进口茶（Dilmah）、巴斯马蒂米、本地蔬菜、芥子油",
+          "家居：Pigeon品牌厨具、Safeguard肥皂、滴露消毒剂、本地洗衣粉",
+          "服装：Khaadi未裁剪布料、夏季薄纱套装、棉质纱丽克米兹、经典银饰",
+          "电子产品：基本手机（诺基亚或廉价安卓），CRT电视（如果需要会升级为LED）",
+          "产品应通过用户自身的权衡视角选择：今天做什么、问店员/医生/老师什么、成本上限。"
+        ],
+        "service_preferences": [
+          "家务帮助：偶尔请钟点工做重度清洁、裁缝定制衣服",
+          "教育：偏好孩子上女子学校、请家教辅导数学和乌尔都语",
+          "财务：在本地合作组织储蓄、尽量不借贷",
+          "服务只有在保持此决策优先级时才可接受：家庭信任、现金预算、可维修性和适度优于最佳规格。"
+        ],
+        "learning_preferences": {
+          "style": [
+            "视觉和动手型",
+            "更喜欢向信任的朋友或家人学习，而非正式课程"
+          ],
+          "subjects": [
+            "新食谱",
+            "古兰经学习",
+            "帮助孩子的基础英语"
+          ]
+        },
+        "travel_preferences": [
+          "很少旅行",
+          "偏好短途回乡或前往宗教圣地（如塞赫万谢里夫）",
+          "避免乘飞机"
+        ],
+        "food_preferences": {
+          "cuisines": [
+            "信德语（sai bhaji, biryani, dhoodh）",
+            "Biryani",
+            "简单的家常菜"
+          ],
+          "dietary_restrictions": "本身没有禁忌，但因健康原因避免过多红肉，吃清真食品",
+          "flavors": [
+            "微辣、酸（罗望子、柠檬）",
+            "用传统甜点如khoya招待客人"
+          ]
+        },
+        "entertainment_preferences": {
+          "shows": [
+            "巴基斯坦电视剧，如《Ehd-e-Wafa》（过去的）或当前热门",
+            "烹饪节目",
+            "QTV上的宗教节目"
+          ],
+          "music": [
+            "信德民间音乐",
+            "纳特（宗教歌曲）"
+          ],
+          "books": [
+            "带翻译的古兰经",
+            "伊斯兰书籍",
+            "信德诗歌（Shah Abdul Latif Bhittai）"
+          ]
+        },
+        "technology_preferences": {
+          "devices": [
+            "基本智能手机（主要用于WhatsApp和YouTube）",
+            "偏好简单界面"
+          ],
+          "usage": [
+            "用手机打电话、发信息、看视频",
+            "除了 WhatsApp 之外不使用社交媒体"
+          ],
+          "willingness_to_adopt": "如果看到新科技如何帮助家庭（例如儿童教育应用），则愿意尝试"
+        },
+        "privacy_preferences": {
+          "sharing": "非常注重隐私；不在网上分享家庭事务，避免自拍，更喜欢语音通话",
+          "data_concerns": "担心诈骗和个人信息被滥用"
+        },
+        "budget_preferences": {
+          "spending_style": "谨慎且节俭，优先考虑孩子的需求和储蓄",
+          "payment_method": "偏好现金；避免使用信用卡",
+          "splurging_areas": "孩子活动、宗教节日（开斋节）和待客之道"
+        },
+        "personalization_directives": {
+          "style_contract": "实用的家庭大姐模式：尊重、循序渐进、文化熟悉",
+          "decision_priority": "家庭信任、现金预算、可维修性和谦虚胜过最优配置",
+          "evidence_contract": "值得信赖的本地建议和权威人物比研究更有说服力",
+          "format_contract": "今天做什么、问店主/医生/老师什么、费用上限",
+          "anti_default_assistant_behavior": "不要听起来学术化、西化或居高临下",
+          "distinctive_quirks": [
+            "当话题涉及家庭或健康时，乌尔都语/印地语的礼貌很重要",
+            "燃气灶的选择应考虑本地维修和安全安装",
+            "教育应用不仅要儿童友好，还要家长友好"
+          ],
+          "hard_avoidances": [
+            "行话",
+            "昂贵的订阅",
+            "直接否定家庭建议"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "dislikes": [
+          "家中杂乱无章",
+          "浪费食物",
+          "过于暴露的现代服装",
+          "太辣或太油腻的食物",
+          "未经请求的育儿建议"
+        ],
+        "constraints": [
+          "丈夫薪水收入有限",
+          "依赖公共交通或丈夫的自行车",
+          "没有家庭共识无法做出重大决定",
+          "家务活导致时间紧张"
+        ]
+      },
+      "communication_style": {
+        "tone": "礼貌、温柔且尊重他人。使用敬语（如“Ji”、“Aap”）。不同意时表达间接。",
+        "formality": "对陌生人及长辈正式；对亲近的家人随意。",
+        "eloquence": "中等程度，混合使用信德语和乌尔都语短语。可能会使用文化谚语。",
+        "non_verbal": "避免与男性直接目光接触，经常微笑，手势谦逊有礼。"
+      },
+      "decision_making": {
+        "process": "首先考虑对家庭和谐的影响。重大采购咨询丈夫，家庭活动咨询姻亲。征求可信朋友的意见。权衡传统与便利。",
+        "pace": "缓慢、谨慎；不喜欢被催促。",
+        "risk_tolerance": "低；偏好经过检验的选项而非新选择。"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "信德菜品或健康家庭餐的食谱建议",
+          "婚礼或宗教活动的穿搭推荐",
+          "家居整理和清洁技巧",
+          "伊斯兰育儿指导",
+          "简单的儿童手工制作",
+          "家庭开支预算建议",
+          "乌尔都语/信德语儿童读物或教育内容推荐"
+        ],
+        "preference_conflicts": [
+          "传统与便利（例如手工食品与即食食品）",
+          "为孩子存钱与购买高品质物品的平衡",
+          "愿意尝试新科技与担心复杂性或隐私的权衡",
+          "希望孩子现代化与保持文化价值观的平衡"
+        ],
+        "ambiguity_to_preserve": [
+          "对具体数字应用或小工具的看法不固定；她持开放态度但需要说服。",
+          "宗教解读可能有所不同；她遵循主流逊尼派伊斯兰教，但非深度的教派倾向。",
+          "食物偏好可能随季节或家庭健康状况改变。",
+          "政治观点不强烈；避免讨论政治。"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:44",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "温暖、尊重且鼓励。用乌尔都语时使用“Madam”或“Aap”。避免居高临下。",
+            "response_length": "中等：直入主题但包含足够的实际操作细节。",
+            "evidence_expectation": "低：更信任权威和家庭资源而非学术研究。个人轶事或文化例证更有说服力。",
+            "formatting": "简单的段落；食谱或步骤用列表。避免复杂表格。谨慎使用表情符号（例如😊）。",
+            "proactive_behavior": "祈祷时间、学校活动和购物清单的有用提醒。根据现有食材推荐食谱。可预警宗教活动。",
+            "things_to_avoid": [
+              "过于技术性的行话",
+              "推广非清真或文化不适宜的内容",
+              "在没有明确家庭益处的情况下强行推销新技术",
+              "提及敏感的家庭或政治话题",
+              "过于直接或生硬"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "在预算紧张的情况下更换故障燃气灶",
+            "帮助年幼孩子摆脱反复腹痛",
+            "学习使用教育应用辅助孩子学习英语"
+          ]
+        }
+      }
+    }
+  }
+}

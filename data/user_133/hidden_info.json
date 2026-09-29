@@ -1,0 +1,473 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_133",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:03:57",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_002",
+      "hidden_indirect_015"
+    ],
+    "content": [
+      "hidden_indirect_003",
+      "hidden_indirect_021"
+    ],
+    "decision_priority": [
+      "hidden_indirect_002",
+      "hidden_indirect_011"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_007"
+    ],
+    "entertainment": [
+      "hidden_indirect_008",
+      "hidden_indirect_019"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_012"
+    ],
+    "food": [
+      "hidden_indirect_007",
+      "hidden_indirect_020"
+    ],
+    "format_contract": [
+      "hidden_indirect_004",
+      "hidden_indirect_013"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_010"
+    ],
+    "learning": [
+      "hidden_indirect_005",
+      "hidden_indirect_013"
+    ],
+    "privacy": [
+      "hidden_indirect_009",
+      "hidden_indirect_018"
+    ],
+    "product": [
+      "hidden_indirect_001",
+      "hidden_indirect_012"
+    ],
+    "role_context": [
+      "hidden_indirect_001"
+    ],
+    "service": [
+      "hidden_indirect_010",
+      "hidden_indirect_014"
+    ],
+    "technology": [
+      "hidden_indirect_004",
+      "hidden_indirect_017"
+    ],
+    "travel": [
+      "hidden_indirect_006",
+      "hidden_indirect_016"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周订的清洁剂到货少了五箱，供应商说是我没传最新订单。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次用共享表格实时更新，双方都能看到当前版本，避免传错。"
+        }
+      ],
+      "implicit_signal": "用户需要更可靠的供应链管理，避免补货失误。"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "装修预算在最后一步安装窗帘时超了，因为报价里没包括轨道费。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次签合同前逐项列出所有可能额外项目，我做一个检查清单。"
+        }
+      ],
+      "implicit_signal": "用户注重预算明细，要求预先列出所有潜在费用。"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那篇关于居家效率的文章看起来很有道理，但没提数据来源。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找出文中引用的原始资料，标注出处和发布机构，再评估可信度。"
+        }
+      ],
+      "implicit_signal": "用户要求内容必须附带原始出处，便于验证可信度。"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我试了几个笔记软件，但输出格式都不统一，无法直接导入其他平台。"
+        },
+        {
+          "role": "assistant",
+          "content": "我选了三款支持Markdown导出和反向链接的，先测试再推荐。"
+        }
+      ],
+      "implicit_signal": "用户偏好支持标准导出格式的工具，防止锁定。"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "两个Python教程对同一个函数的解释矛盾，我不知道该相信哪个。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把两个观点分别记录，先按第一个写个例子，然后看第二个的评论，最后注明差异。"
+        }
+      ],
+      "implicit_signal": "用户倾向保留矛盾信息，通过实践验证而非直接综合。"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "地铁换乘时app推荐的出口跟我记忆的不一致，导致多走了十分钟。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次出行前从官方网站确认出口编号并截屏保留，跟app提示对比。"
+        }
+      ],
+      "implicit_signal": "用户重视保留官方原始信息作为对照依据。"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "同事推荐一家寿司店说食材新鲜，但我看评论有人说是冷冻品。"
+        },
+        {
+          "role": "assistant",
+          "content": "我查该店的进货许可证和近期卫生检查记录，区分主观评价和客观事实。"
+        }
+      ],
+      "implicit_signal": "用户要求区分主观评价与客观事实，避免被单一描述误导。"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有人说新上映的纪录片很无聊，但没有具体说为什么。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找五个专业影评和普通观众评价，提取具体批评点再综合。"
+        }
+      ],
+      "implicit_signal": "用户拒绝无具体理由的评价，需要详细批评点。"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个记账app要读取短信权限来获取银行验证码，但我不确定是否安全。"
+        },
+        {
+          "role": "assistant",
+          "content": "我查了隐私政策，找到替代方案：手动输入或使用银行官方APP。"
+        }
+      ],
+      "implicit_signal": "用户对权限请求警惕，优先找不暴露隐私的替代方案。"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次旅行团最后一项接送服务没人确认，结果当天没车。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后每个确认点都要在合同里明确，提前48小时逐项核实。"
+        }
+      ],
+      "implicit_signal": "用户要求服务确认过程透明，避免遗漏关键步骤。"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我准备买一台空气净化器，但不同网站评测结果差异很大。"
+        },
+        {
+          "role": "assistant",
+          "content": "我列出三方评测的方法和样本，按你的使用环境筛选最相关的对比。"
+        }
+      ],
+      "implicit_signal": "用户在做购买决策时需要多维数据比较，而非单一推荐。"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我想换手机，但不同店铺推荐参数互相矛盾。"
+        },
+        {
+          "role": "assistant",
+          "content": "我查各款手机的实验室测试报告，对比实际续航和性能数据。"
+        }
+      ],
+      "implicit_signal": "用户要求产品数据有可追溯的测试报告，拒绝模糊宣传。"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "网上的摄影教程结构混乱，没有循序渐进顺序。"
+        },
+        {
+          "role": "assistant",
+          "content": "我按主题重组内容，先讲基础参数，再案例，最后错误分析。"
+        }
+      ],
+      "implicit_signal": "用户希望学习材料结构清晰，有明确的进阶顺序。"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周的会议纪要被同事误删了，我凭记忆补充，漏了最后一项待办。"
+        },
+        {
+          "role": "assistant",
+          "content": "今后每次会议后立即导出离线副本，并同步到两个备份路径。"
+        }
+      ],
+      "implicit_signal": "用户需要在团队协作中保留原始会议记录，避免信息丢失。"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "积攒了一年的纸质收据，最近发现部分字迹完全模糊了，无法报销。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后每次拿到收据立即拍照上传，并在一周内录入电子表。"
+        }
+      ],
+      "implicit_signal": "用户注重收据存档，倾向立即电子化防止模糊。"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "导航带我走了一条施工路段，多绕了3公里，导致迟到。"
+        },
+        {
+          "role": "assistant",
+          "content": "出发前先查施工公告和路况，并预设一条备选路线。"
+        }
+      ],
+      "implicit_signal": "用户出行前需要实时路况信息，避免因施工绕路。"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "培训当天现场网络断了，我准备的在线材料全用不上，只能干等。"
+        },
+        {
+          "role": "assistant",
+          "content": "今后所有培训材料提前下载离线版本，并带实体U盘。"
+        }
+      ],
+      "implicit_signal": "用户需要离线备用方案应对现场技术故障。"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "15分钟例会临时延长到1小时，导致下午拜访客户的时间全乱了。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后安排任务时留出15分钟缓冲，并区分固定和灵活时间。"
+        }
+      ],
+      "implicit_signal": "用户需要缓冲时间应对会议延长，避免打乱日程。"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那次社区音乐会报名18人，但场地只容20人，差点超过。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次先确认报名上限，并在接近时发预警通知。"
+        }
+      ],
+      "implicit_signal": "用户对活动容量敏感，需要提前设置上限预警。"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我花34分钟找一份午餐优惠券文档，因为文件名全是乱写的。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后采用统一命名规则：日期_项目_版本号，并建立索引。"
+        }
+      ],
+      "implicit_signal": "用户希望有统一文件命名规范，提高检索效率。"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我每天想散步半小时，但总被临时杂物打断，坚持不了一周。"
+        },
+        {
+          "role": "assistant",
+          "content": "把散步作为固定日历事件，并设置提醒勿扰模式。"
+        }
+      ],
+      "implicit_signal": "用户需要将休闲活动固化为日程，减少被执行干扰。"
+    }
+  ]
+}

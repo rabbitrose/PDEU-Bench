@@ -1,0 +1,491 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_113",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:06:38",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_006",
+      "hidden_indirect_011",
+      "hidden_indirect_014",
+      "hidden_indirect_020"
+    ],
+    "content": [
+      "hidden_indirect_007",
+      "hidden_indirect_018"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_007",
+      "hidden_indirect_010",
+      "hidden_indirect_014",
+      "hidden_indirect_019"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_009",
+      "hidden_indirect_015"
+    ],
+    "entertainment": [
+      "hidden_indirect_012",
+      "hidden_indirect_021"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_008",
+      "hidden_indirect_016"
+    ],
+    "food": [
+      "hidden_indirect_011"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_015"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_012"
+    ],
+    "learning": [
+      "hidden_indirect_009",
+      "hidden_indirect_018"
+    ],
+    "privacy": [
+      "hidden_indirect_005",
+      "hidden_indirect_013",
+      "hidden_indirect_017"
+    ],
+    "product": [
+      "hidden_indirect_016",
+      "hidden_indirect_020"
+    ],
+    "role_context": [
+      "hidden_indirect_001"
+    ],
+    "service": [
+      "hidden_indirect_008",
+      "hidden_indirect_017"
+    ],
+    "technology": [
+      "hidden_indirect_013",
+      "hidden_indirect_021"
+    ],
+    "travel": [
+      "hidden_indirect_010",
+      "hidden_indirect_019"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "budget",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次在线上会议间隙用手机填社区垃圾回收申请表，提交前发现要付19澳元工本费，页面没提前说。我当时退出了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找到另一个市政入口，申请表免费，只是多注册一次。先比较注册需要的信息量和后续维护成本？"
+        }
+      ],
+      "implicit_signal": "重视预算底线，即使公共事务任务也需要控制隐性支出"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "志愿者团队发来两种保险方案：年付和月付，只说“全包”，我不清楚覆盖范围，就没敢选。"
+        },
+        {
+          "role": "assistant",
+          "content": "我拉到PDF条款，列出必备的三类责任覆盖，同时算出年付每月34澳元，月付多收10%手续费。需要数字还是先看细则？"
+        }
+      ],
+      "implicit_signal": "需要明确的价格范围、假设和替代方案，否则无法决策"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次准备社区活动物资，我用手机截图了一张报价单，金额太杂，我花了半小时还是没搞清哪些必须买。"
+        },
+        {
+          "role": "assistant",
+          "content": "我列成三项：必要项（摊位租金、安全用品）、可推迟项（装饰旗）、风险项（备用雨棚共29澳元，无退单）。可先只订必要项？"
+        }
+      ],
+      "implicit_signal": "偏好成本表+必选/可推迟/风险阈值的结构"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "试用账号到期前一天我忘取消，自动续了三个月。上次买工具也是，下月才发现被扣了一笔。"
+        },
+        {
+          "role": "assistant",
+          "content": "现在先检查这两个服务的取消按钮位置，我录屏说明步骤。你每天早餐桌边有固定时间，我设个闹钟提醒？"
+        }
+      ],
+      "implicit_signal": "需要刻意核实取消规则，因过去吃过亏"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "社区协调人非要我在表上填家庭群成员的联系电话，我直接空着交了。后来他追问我三次，我也没给。"
+        },
+        {
+          "role": "assistant",
+          "content": "可以引用数据最小化原则，用你个人手机号代收通知，再加一句“若需紧急联络将通过协调人转达”。这样合规也省事。"
+        }
+      ],
+      "implicit_signal": "严格保护家庭群等个人信息，不愿公开细节"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "团购垃圾袋标价15澳元，结算时发现还要加一笔“环保处理费”，根本没写在主页面。我直接关闭了页面。"
+        },
+        {
+          "role": "assistant",
+          "content": "跳过那家。我找到本地市政直营店，每卷14.50澳元，含任何附加费，可当场取货。要现在生成路线？"
+        }
+      ],
+      "implicit_signal": "绝不允许隐藏费用，一旦发现就倾向放弃该选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次发那个邻里会议排班表，四个方案每组时间都不一样，我直接看晕了，搁置了一周没选。"
+        },
+        {
+          "role": "assistant",
+          "content": "我重新按你的可用时段筛掉两组，剩下两个候选。一个早班但需自备材料，一个晚班有茶点。你倾向于不额外准备还是自带？"
+        }
+      ],
+      "implicit_signal": "先排除硬约束，再比较少量选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个清洁预约平台，我一直没找到怎么删除付款方式，担心忘记退订，所以到现在都没用过。"
+        },
+        {
+          "role": "assistant",
+          "content": "我在帮助中心找到退订流程：在线提交表单，3个工作日内确认。我截图每一页，并在日历设提前两天提醒。要现在测试取消？"
+        }
+      ],
+      "implicit_signal": "服务决策需要取消规则、响应时间等明确条款"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次学用那个社区笔记工具，教程全是通用术语，我试了两周还是没搞懂怎么协作，最后还是用回了旧方法。"
+        },
+        {
+          "role": "assistant",
+          "content": "我用你和邻居最近一起填申请表为例，录一段三分钟实操：先共享文件夹，再用评论标记改动的步骤。你回家路上可以听？"
+        }
+      ],
+      "implicit_signal": "需要短周期反馈和可复盘的标准案例"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去市政厅交材料，导航只选了最快路线，结果遇上封路绕了多半小时，迟了被退回，第二天又跑了一趟。"
+        },
+        {
+          "role": "assistant",
+          "content": "现在三条可选路线中都加一个缓冲区：一条走主路固定25分钟但可能排长队，一条小路19分钟但封路风险一样。选第二条再提前10分钟出发？"
+        }
+      ],
+      "implicit_signal": "路线必须留足缓冲时间，防止耽误约定"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次社区会议提供的餐盒太油腻，下午一直犯困，而且每份18澳元，我才吃一半，觉得浪费。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次建议改为本地泰国小店的河粉套餐，每份12.50澳元，可备注少油。需提前一天预订，也能按人数退改。要我看菜单截图？"
+        }
+      ],
+      "implicit_signal": "预算敏感，偏好本地小店和灵活的用餐安排"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月社区音乐节入场后全是赞助商摊位，人挤人，我带的孩子根本看不到舞台，白花了34澳元，提前离场。"
+        },
+        {
+          "role": "assistant",
+          "content": "有场图书馆周末原声小演出，仅限30人，免费但需预约。场地安静，结束时间刚好让你第二天不累。要提交预约？"
+        }
+      ],
+      "implicit_signal": "避免拥挤和强营销活动，倾向于小型真实体验"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个邻里通讯App，非要读取我的联系人列表才能发消息，我拒绝了，结果基本用不了，我就卸载了。"
+        },
+        {
+          "role": "assistant",
+          "content": "用Signal替代，手动添加号码即可，同步联系人可选关闭；聊天记录可导出纯文本。我已在你的手机截图上标注安装步骤。"
+        }
+      ],
+      "implicit_signal": "要求工具能导出数据且默认隐私保护"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "志愿者活动预算表里一堆项目，我不知道哪些是这周必须付的，结果拖过了押金截止日，多付了10澳元。"
+        },
+        {
+          "role": "assistant",
+          "content": "我按截止日排了：场地押金29日必须付（可犹豫到明天），设备租用可推一周。我把两张表截图单独标红，你早餐桌边看？"
+        }
+      ],
+      "implicit_signal": "必须区分必须花费和可推迟花费"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次邻居说“清理大概两小时”，结果整个下午才收尾，后续安排全乱，晚饭也耽误了。"
+        },
+        {
+          "role": "assistant",
+          "content": "用上次实际时长做模板：每户平均34分钟，加上15分钟缓冲。按五户算，总耗时3小时10分。你线上会议间隙可以操作？"
+        }
+      ],
+      "implicit_signal": "需要保守估算而非乐观预测"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "两个垃圾袋品牌都是大包装，一个便宜但不知道桶是否变形，另一个贵但说耐用。我犹豫了两天没下单。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找到用户反馈：平价款20%用户出现提手断裂，贵款质保一年。原价差6澳元，算每月多花0.50。我做了简单成本表，你确认是否接受多花？"
+        }
+      ],
+      "implicit_signal": "比较产品时需说明长期使用成本和替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "这个停车场预约App要求生日和家庭住址才让注册，我取消安装，改用别的停车场。"
+        },
+        {
+          "role": "assistant",
+          "content": "用市政官网直接预订同一停车场，只需要姓名和车牌号。我导出了预约表格，你回家路上可以顺便确认时间窗口。"
+        }
+      ],
+      "implicit_signal": "注册必须最小化个人信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "给了我一堆社区政策视频链接，我一个都没看，不知道哪段有用，最后申请填错一个字段被退回了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我挑出针对申请流程的关键片段：5分钟讲表格填写，3分钟讲证明材料。你线上会议间隙看，之后我用你旧表复盘一份清单？"
+        }
+      ],
+      "implicit_signal": "学习材料需要示例和复盘标准，否则无效"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次订社区参访大巴，没确认取消政策，结果三周前退票仍被扣50%手续费，以后再也不订那家公司了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这家有灵活票，退改免费至出发前48小时，安静车厢且中途不停热门景点。座位有限，优先你一名和邻居三名，我先锁定？"
+        }
+      ],
+      "implicit_signal": "住宿和交通优先可取消、安静、安全的选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "工具箱促销套装看起来很值，但我没找到耗材价格和保修是否额外收费，所以没买，怕后续坑。"
+        },
+        {
+          "role": "assistant",
+          "content": "我单独查了耗材年费用：基础使用约40澳元，保修需另购两年延保19澳元。如果活动只在周末，建议单买你已确认的一种替换头，避免囤积闲置。"
+        }
+      ],
+      "implicit_signal": "只考虑有明确长期负担透明的产品"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次露天电影看到深夜11点回家，第二天六点的志愿服务直接失约了，被组长批评了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下周社区有下午三点的木偶戏工作坊，约1.5小时，安静免费且无需注册。位于回家的顺路方向，不耽误你晚上整理文件。要座位？"
+        }
+      ],
+      "implicit_signal": "休闲安排必须不破坏第二天作息"
+    }
+  ]
+}

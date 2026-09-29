@@ -1,0 +1,449 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_036",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:18:00",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 19,
+  "composition": {
+    "episodic_preference_trace": 19
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_009",
+      "hidden_indirect_011",
+      "hidden_indirect_017"
+    ],
+    "content": [
+      "hidden_indirect_007"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_008",
+      "hidden_indirect_017"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_002",
+      "hidden_indirect_006",
+      "hidden_indirect_010",
+      "hidden_indirect_012",
+      "hidden_indirect_018"
+    ],
+    "entertainment": [
+      "hidden_indirect_014"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_004",
+      "hidden_indirect_016"
+    ],
+    "food": [
+      "hidden_indirect_010"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_012",
+      "hidden_indirect_018"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_008",
+      "hidden_indirect_015",
+      "hidden_indirect_019"
+    ],
+    "learning": [
+      "hidden_indirect_003",
+      "hidden_indirect_013"
+    ],
+    "privacy": [
+      "hidden_indirect_005",
+      "hidden_indirect_014",
+      "hidden_indirect_019"
+    ],
+    "product": [
+      "hidden_indirect_011"
+    ],
+    "role_context": [
+      "hidden_indirect_013"
+    ],
+    "service": [
+      "hidden_indirect_005",
+      "hidden_indirect_015"
+    ],
+    "technology": [
+      "hidden_indirect_007",
+      "hidden_indirect_016"
+    ],
+    "travel": [
+      "hidden_indirect_009"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月订了一个音乐合同模板库，月付19000韩元，今天翻银行账单才发现已经扣了两次，我根本忘了取消入口在哪。"
+        },
+        {
+          "role": "assistant",
+          "content": "先帮你找到取消路径。你从哪个页面注册的？截图里如果有确认邮件，我可以帮你定位账户设置里的订阅管理。"
+        }
+      ],
+      "implicit_signal": "优先选择有明确取消和退款政策的服务，即使初始价格略高"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周末花三个小时改了一份合作协议，今天客户说有一条豁免范围写得太宽，第二天又重做了一遍。"
+        },
+        {
+          "role": "assistant",
+          "content": "把你第一次的版本和客户反馈放在一起，我帮你标注具体的宽泛点。今天先聚焦那条豁免条款的修改方向，例子用你上一份合同里的真实措辞。"
+        }
+      ],
+      "implicit_signal": "要求展示具体进步证据，而非笼统评价"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我常在手机备忘录里记录谈判要点，但每次要找特定条款时都得翻好几屏，文件夹也很乱。"
+        },
+        {
+          "role": "assistant",
+          "content": "学习目标：建立条款速查清单。今日练习：把最近三次修改涉及的条款按类别整理成三级标题，每条附上原始来源和失败教训。反馈点：明天看能否在一条消息里定位到上周改过的赔偿上限条款。"
+        }
+      ],
+      "implicit_signal": "偏好可复用的清单式学习工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友推荐了一家法律文书校对服务，说口碑很好，但我搜了半小时只找到主页上的两句广告语，关键信息只有广告页提到，没有第三方评测。"
+        },
+        {
+          "role": "assistant",
+          "content": "不直接用那句广告语作判断。把服务条款里关于修改次数和时限的部分截图给我，我对比行业常见标准，帮你确认是否合理。"
+        }
+      ],
+      "implicit_signal": "不接受无具体依据的推荐，要求可追溯的决策基础"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "音乐版权管理平台注册时要求上传身份证照片和家庭住址，我填了一半停住了。"
+        },
+        {
+          "role": "assistant",
+          "content": "先不提交。查一下这个平台是否有隐私政策页面，看数据保留期限和用途。如果必须验证身份，问能否用护照号后四位加工作证明代替。"
+        }
+      ],
+      "implicit_signal": "拒绝超出必要范围的数据收集"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买一台便携打印机随身带合同，在购物网站上一搜出来四十多个型号，我看了半小时还在比较耗材成本。"
+        },
+        {
+          "role": "assistant",
+          "content": "先排除不满足核心条件的：打印分辨率低于300dpi和墨盒不通用蓝牙连接的全部划掉。剩下三个型号，告诉我你的单月打印量和是否常用双面，我来算年度耗材总成本。"
+        }
+      ],
+      "implicit_signal": "选项过多会导致决策延迟，需要快速缩小范围"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "试用了一款跨国合同同步软件，发现条款修改记录只能在该应用内查看，没法导出PDF或发链接给客户。"
+        },
+        {
+          "role": "assistant",
+          "content": "放弃这款。今天下午我列三个支持导出原始文件且版本对比可另存为独立文档的工具，每个附上导出格式列表和字数限制。"
+        }
+      ],
+      "implicit_signal": "工具必须能导出数据，不能锁定在单一平台"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "报了一个知名法学院开的音乐版权网课，16万韩元，六周课程，但作业只能自动对答案，没有真人反馈。"
+        },
+        {
+          "role": "assistant",
+          "content": "课程名气和反馈机制不能等价。如果主要目标是改合同实战，建议退掉这门课，改为找一位执业律师做三次模拟合同修改，每次给出书面批注和修改理由。费用大概是一次课的价格。"
+        }
+      ],
+      "implicit_signal": "教学资源选择的优先顺序：反馈质量 > 机构名气"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次出差订了一家靠近弘大商圈的酒店，入住后发现房间没有书桌，只能在床上用电脑改合同，而且漏掉了取消入口，第二天退房多付了一天。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次按三个硬条件筛选：退房前24小时免费取消、房内必须有独立书桌椅、确认窗户隔音评级。预算范围告诉我，我直接列出符合条件的酒店再比较位置。"
+        }
+      ],
+      "implicit_signal": "旅行住宿优先考虑安静和可取消性"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "今天下午要连着见三个客户，中午在早餐桌边刷到一家新开的炸鸡店推荐，跑过去吃了一个小时，回来胃难受，下午谈判时一直分心喝温水。"
+        },
+        {
+          "role": "assistant",
+          "content": "未来连续见客户的日程，中午固定选便利店三角饭团加无糖茶，或者步行距离内可坐下十五分钟吃完的汤饭。提前一天确认菜单，不临时试新店。"
+        }
+      ],
+      "implicit_signal": "在紧凑日程中，餐食必须快速且不破坏后续专注力"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "买充电宝时在两个型号之间犹豫：一个便宜但数据线接口差，我之前用过同系列，三个月后充电速度变慢了；另一个贵一点但接口是磁吸的。"
+        },
+        {
+          "role": "assistant",
+          "content": "按三年折旧算，便宜的如果一年换一次，总成本反而更高。选磁吸款，注意看是否附带C to C线材质保期。购买前截图产品保修页面给我，确认非人为损坏可以免费换新。"
+        }
+      ],
+      "implicit_signal": "愿意为长期维护成本低的选项多付初始费用"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚处理完一次音乐授权纠纷的调解，过程很乱，手机截图和家庭群消息混在一起，不知道从哪里梳理流程。"
+        },
+        {
+          "role": "assistant",
+          "content": "按这个结构复盘：1. 触发条件（什么条款被违反）2. 证据来源（截图、聊天记录时间戳）3. 我的行动步骤和先后顺序 4. 对方在哪些环节拖延了 5. 下一次重复该流程时可优化的环节。今天先填第1和第2栏，明天补后面的。"
+        }
+      ],
+      "implicit_signal": "偏好结构化复盘模板"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想学习如何审查音乐发行合同中的授权地域条款，但看了一篇概述文章，没有案例，根本不知道怎么应用到手里的具体合同。"
+        },
+        {
+          "role": "assistant",
+          "content": "学习目标：在48小时内修订一条地域授权条款。今日练习：拿出你手头合同里授权地域的原文，标出是独占还是非独占，以及是否涵盖衍生数字发行。反馈点：修订后对比行业示范条款的地域清单差异。"
+        }
+      ],
+      "implicit_signal": "学习材料要配合当前实操案例"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "同事拉我参加一个音乐行业线下交流会，报名要填手机号码和公司名，群公告还说摄影记者会在现场拍照发新闻稿。"
+        },
+        {
+          "role": "assistant",
+          "content": "如果只想打探信息但不希望被公开身份，看活动是否提供不挂牌的非发言席位。如果不能匿名参与，换一个不需要注册个人信息的小型沙龙。我知道本周有一个只凭入场编码的案例分析会。"
+        }
+      ],
+      "implicit_signal": "选择活动时优先考虑隐私和可控性"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去年末订阅了一份音乐行业报告服务，12万韩元季度付，收到第一期后发现内容全是公开新闻汇总，想取消，但网站要求先打电话客服，电话等待了34分钟才接通。"
+        },
+        {
+          "role": "assistant",
+          "content": "取消后把这次经验记入黑名单。下一次订阅任何信息产品之前，先检查三个条件：是否有7天冷静期、是否可以用电子邮件发起取消、取消是否需至少提前49天通知。不满足其中任一的直接排除。"
+        }
+      ],
+      "implicit_signal": "不接受自动续约且取消流程复杂的产品"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在比较两个合同管理云端工具，一个说AES-256加密，一个没说具体加密方式，而且客服无法提供安全审计报告。"
+        },
+        {
+          "role": "assistant",
+          "content": "不能提供审计报告的视为数据安全未知，不建议接手。对于第一个工具，要求对方出示SOC2或ISO 27001认证的截图，确认加密是否包含传输状态。截图发我，我帮你核对证书编号。"
+        }
+      ],
+      "implicit_signal": "只信任有明确淘汰标准的技术方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "买医疗保险时发现基础套餐每年24万韩元，但不覆盖律师咨询中的业务过失赔偿。升级版加9万韩元覆盖，我犹豫了一周。"
+        },
+        {
+          "role": "assistant",
+          "content": "按你每年处理12~15份合同计算，升级版相当于每份合同多花6000韩元买业务过失覆盖。如果一份合同出错的可能损失超过该数额，升级划算。下载升级版的免赔条款和赔偿上限页面，我帮你核算风险覆盖是否真实。"
+        }
+      ],
+      "implicit_signal": "愿意为降低隐性风险支付溢价，但需可见证据"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "写一份音乐授权样板合同，写了两天只完成了开头定义部分，周末陪伴侣去了一趟市场，回家路上就不想继续了。"
+        },
+        {
+          "role": "assistant",
+          "content": "把剩余部分拆成四个半天可完成的区块：上午完成授权范围和期限条款，下午完成使用区和限制条款。每完成一个区块在日历空档里画一个绿色标记。先完成第一个区块，截图发我，我给你下一条的细节模板。"
+        }
+      ],
+      "implicit_signal": "需要短期里程碑来维持执行动力"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想用一款版权到期追踪软件，注册时要求绑定Google日历、通讯录和地理位置，说为了自动提醒本地演出许可。"
+        },
+        {
+          "role": "assistant",
+          "content": "权限需求超过功能逻辑。放弃这款，换用手动输入到期日的手账系统或不要求通讯录权限的轻量应用。今天帮你找两个可用邮箱注册且只读日历权限的替代品。"
+        }
+      ],
+      "implicit_signal": "拒绝需要过多个人信息才能使用的服务"
+    }
+  ]
+}

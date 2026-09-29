@@ -1,0 +1,479 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_143",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:55:53",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_010",
+      "hidden_indirect_011"
+    ],
+    "content": [
+      "hidden_indirect_007"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_002",
+      "hidden_indirect_021"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_010"
+    ],
+    "entertainment": [
+      "hidden_indirect_014"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_001",
+      "hidden_indirect_003",
+      "hidden_indirect_018"
+    ],
+    "food": [
+      "hidden_indirect_015"
+    ],
+    "format_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_003",
+      "hidden_indirect_021"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_007",
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_020",
+      "hidden_indirect_021"
+    ],
+    "learning": [
+      "hidden_indirect_012"
+    ],
+    "privacy": [
+      "hidden_indirect_005",
+      "hidden_indirect_014",
+      "hidden_indirect_019"
+    ],
+    "product": [
+      "hidden_indirect_011",
+      "hidden_indirect_013"
+    ],
+    "role_context": [
+      "hidden_indirect_016"
+    ],
+    "service": [
+      "hidden_indirect_008",
+      "hidden_indirect_017"
+    ],
+    "technology": [
+      "hidden_indirect_006",
+      "hidden_indirect_012"
+    ],
+    "travel": [
+      "hidden_indirect_009",
+      "hidden_indirect_020"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次SCOTUSblog投票模型用了Spaeth数据库，但编码规则只写了年份没列变量定义，结果模型跑出来三组矛盾系数。"
+        },
+        {
+          "role": "assistant",
+          "content": "我们改用Martin-Quinn分数作为稳健性检查，并补充一个20个变量的详细编码附录再出表。"
+        }
+      ],
+      "implicit_signal": "当编码规则不明时主动补充变量定义和附录，确保结论可复现再发布"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "邮件里同事问‘今天的新判决有什么重点’，只依他想要的速览来写。"
+        },
+        {
+          "role": "assistant",
+          "content": "我回了五段：原文引注、多数意见的逻辑结构、异议的度量反对、我的编码备注、原始意见PDF链接。"
+        }
+      ],
+      "implicit_signal": "即使对方只要求速览，输出也带假设、度量和偏差声明"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上一版经济自由排名表只写了‘取自Federalist Society’，没列数据年份和样本量。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把来源改为Fraser Institute 2022完整数据集，在表格底部加上假设、度量、偏差风险和样本排除标准。"
+        }
+      ],
+      "implicit_signal": "数据来源和操作定义等同于法律引用，否则拒绝接受输出"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去国会图书馆，安排在下午三点到，结果他们四点半清场，只找到27份判决书原稿。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次旅行我会预约早晨第一批入场，订附近有独立工作空间的住处，不把时间浪费在往返上。"
+        }
+      ],
+      "implicit_signal": "研究旅行安排优先保证档案时间和隐私控制"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次在候机区里用免费Wi-Fi登Westlaw，之后邮箱收到三封law firm推广信。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会启用旅行VPN，并把设备MAC地址在登机前切换一次，避免数据关联。"
+        }
+      ],
+      "implicit_signal": "旅行中控制个人信息泄漏，安检和在线登记时最小化暴露"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "对方发了Windows-only的NVivo项目包，我在Ubuntu上打不开，也没法跑R脚本交叉验证。"
+        },
+        {
+          "role": "assistant",
+          "content": "我重新要求对方导出为NVivo for Mac兼容格式，并调整R脚本在Wine上的运行配置。"
+        }
+      ],
+      "implicit_signal": "坚持使用Ubuntu及开源生态，确保工作流可复现"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "会议纪要里有人写‘这位法官明显自由派’，但没给出投票一致率或Segal-Cover分数。"
+        },
+        {
+          "role": "assistant",
+          "content": "删去该句，替换为‘该法官在四个民权案件中投出自由主义方向的比例为75%’。"
+        }
+      ],
+      "implicit_signal": "拒绝不含操作度量的意识形态标签"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有人把Politico那篇247字的解读当作论据来源，没跑一次回归也没翻判例原文。"
+        },
+        {
+          "role": "assistant",
+          "content": "改从SCOTUSblog的详细案例摘要和原始判决书替代，并在报告开头说明排除了纯新闻来源。"
+        }
+      ],
+      "implicit_signal": "拒绝仅依赖新闻分析的快速报告"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去国家档案馆，酒店早餐排了25分钟队，到阅览室已经9点半了。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成提供客房早餐的酒店，提前一晚准备好证件复印本，8点整直接入场。"
+        }
+      ],
+      "implicit_signal": "不可浪费早晨档案时间的旅行安排"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "今年订阅费超支了，I-House和Westlaw同时续费会占掉预算的37%。"
+        },
+        {
+          "role": "assistant",
+          "content": "取消《The Atlantic》订阅，保留Westlaw全部模块和I-House的最低档，多出48美元补回法律史期刊访问。"
+        }
+      ],
+      "implicit_signal": "订阅修剪必须保留小众法律数据库，优先于通用资讯平台"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "NVivo更新要180美元，但最近做了三次定性编码，旧版对长文档导出总是乱码。"
+        },
+        {
+          "role": "assistant",
+          "content": "从外出就餐预算里挪出80美元，加上订阅退款凑齐，购买年度升级并启用批量导出修复选项。"
+        }
+      ],
+      "implicit_signal": "愿为研究工具支付更高，日常消费则可压缩"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周一个30分钟的R网络讲座，没讲义也没代码仓库，听完还是不会修数据处理错误。"
+        },
+        {
+          "role": "assistant",
+          "content": "报名一门三周的Coursera专项课程，每周有带编码练习和文字转录的模块。"
+        }
+      ],
+      "implicit_signal": "喜欢的培训是结构化、有课后延伸的正式课程"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "旧平板在PDF上做高亮后，导出到NVivo时标注层全丢，重新标了48份文件。"
+        },
+        {
+          "role": "assistant",
+          "content": "换一台支持原生PDF注释且可通过USB-C直接导出注解层的设备。"
+        }
+      ],
+      "implicit_signal": "电子墨水平板用于阅读法律文件时，优先考虑批注导出质量"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友推荐一部司法题材剧，但剧里审讯过程完全没提米兰达警告的实操问题。"
+        },
+        {
+          "role": "assistant",
+          "content": "我换成了《The Innocent Man》纪录片系列，并启用私人浏览器窗口观看以防止推荐算法关联。"
+        }
+      ],
+      "implicit_signal": "观影选择时代替娱乐，重视真实案件细节与隐私考量"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "会议提供的午餐是意式三明治，只有奶酪，素食者只能吃边上的胡萝卜条。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次我会提前48小时给承办方发送素食（蛋奶）定制要求，并在早餐桌边自备一份鹰嘴豆泥卷。"
+        }
+      ],
+      "implicit_signal": "坚持素食，且倾向家庭制作避免加工成分"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "报告初稿里只有‘研究表明’四个字，既没引用数据集ID也没标注判决引用。"
+        },
+        {
+          "role": "assistant",
+          "content": "我补上Spaeth数据库的DOI号和七条判决Shepard's引用链，并在附录附上编码脚本的Git仓库链接。"
+        }
+      ],
+      "implicit_signal": "政策分析师角色要求数据可复制性与法律依据并重"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "两个法律数据库年费相近，但一个提供历史判例全文PDF的批量下载，另一个只有摘要。"
+        },
+        {
+          "role": "assistant",
+          "content": "选择支持批量下载的那个，并利用27美元的折扣码一次性拉取1990–2020年所有关键词案例。"
+        }
+      ],
+      "implicit_signal": "服务选择优先考虑档案访问权和订阅回报率"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次共享表格里‘种族歧视案件’的编码只写了yes/no，没列使用哪个定义标准。"
+        },
+        {
+          "role": "assistant",
+          "content": "我们引入EEOC 2020年指南作为编码基准，并在表格增加一列注明每条的标准出处。"
+        }
+      ],
+      "implicit_signal": "要求数据来源的编码规则与法律引用同等可追溯"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "地铁换乘时，我用手机打开NVivo项目文件，旁边有人瞄到了项目标题。"
+        },
+        {
+          "role": "assistant",
+          "content": "开启ProtonVPN并设置屏幕防窥膜；今后只通过Signal发送项目文件的加密链接。"
+        }
+      ],
+      "implicit_signal": "最小化共享个人研究轨迹，使用加密通讯"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次行程排了两个法院参观和一个旁听，但阅览室只开了半天，最后一项没人确认。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次把参观砍掉一个，把周二全天留在档案馆，并让对方中午前确认电子阅览室预约。"
+        }
+      ],
+      "implicit_signal": "旅行路线必须最大化档案工作时间"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "format_contract",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我昨晚发出了季度报告，今早发现‘自由裁量变量’下面没写度量单位，对方退回要求重发。"
+        },
+        {
+          "role": "assistant",
+          "content": "我在发送模板里增加一个校验步骤：每个数值型变量必须有单位来源与操作定义，通过后再发。"
+        }
+      ],
+      "implicit_signal": "材料发出去后又撤回是因为缺失操作定义，下次必须在提交前检查假设栏是否填写"
+    }
+  ]
+}

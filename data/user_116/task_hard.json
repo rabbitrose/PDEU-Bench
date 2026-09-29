@@ -1,0 +1,105 @@
+{
+  "user_id": "user_116",
+  "task": {
+    "task_id": "task_hard",
+    "title": "为一部意大利犯罪剧集英语配音选角配音演员",
+    "daily_life_domain": "work",
+    "scenario": "埃琳娜是负责一部以伦巴第和西西里为背景的意大利犯罪剧配音的高级制片人。该剧有复杂的地区方言和情感深度。她需要组建一组英语配音演员，能够令人信服地演绎意大利角色，并带有恰当的口音（例如米兰侦探使用伦巴第口音，黑手党人物使用西西里口音），同时保持剧集的 gritty 基调。工作室给了她三周的紧凑期限来为5个主要角色选角。",
+    "user_goal": "选聘5位主要角色的配音演员，确保方言准确性、情感范围以及彼此间的化学反应，在预算和时间限制内。",
+    "why_complex": "需要评估不同方言的多份试音，在真实性与可用性和预算之间取得平衡，与方言教练和工作室协调，并在理想人选不可用时做出权衡。",
+    "constraints": [
+      "选角决定需在三周内完成",
+      "5位演员总预算限制在25,000美元",
+      "演员必须能够在洛杉矶参加三次录音",
+      "工作室高管要求主角至少有一位知名演员",
+      "不能为主要角色使用AI生成的声音（个人禁忌）"
+    ],
+    "required_reasoning_steps": [
+      "1. 审阅剧本，确定每个角色的关键方言要求。",
+      "2. 搜索配音演员数据库（Voices.com、行业联系人），寻找具备伦巴第/西西里方言技能的演员。",
+      "3. 创建10-12位候选人的短名单，优先考虑有类似犯罪剧经验的人。",
+      "4. 发送试镜片段（方言特定）并要求在5天内提交自录视频。",
+      "5. 评估试镜的口音准确性、情感表达和口型同步（使用参考片段）。",
+      "6. 每个角色筛选2-3人，进行回调（现场或实时Zoom）以测试主角间的化学反应。",
+      "7. 在预算内谈判费用，必要时考虑妥协一位明星演员。",
+      "8. 最终确定演员并安排录音时间，确认档期。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "来自方言教练或剧本注释的详细口音要求",
+      "工作室对每个角色的精确预算分配",
+      "顶尖候选人在录音日期的可用性",
+      "首选演员联系方式（Slack/邮件）",
+      "工作室对明星演员要求的灵活度",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "包含5位演员的最终选角清单，附有方言熟练度说明、费用协议和录音安排。简要说明每个选择的理由。",
+    "success_criteria": [
+      "在截止日期前填满所有5个角色",
+      "总成本低于25,000美元",
+      "至少一位演员有犯罪剧经历",
+      "方言教练对口音准确性的正面反馈",
+      "所有环节确认演员档期",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "忽视预算限制，在一位演员上超支",
+      "选择方言好但情感表达差的演员",
+      "未能签下明星演员导致高管不满",
+      "由于时间紧张，未安排足够的回调时间"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 9,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 9,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=11",
+        "constraints_capped=5",
+        "decision_points_capped=3",
+        "information_items_capped=7",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=32.2",
+        "hard_revision: 内容负载较高，保留少量 9 轮作为上尾",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Elena Marchetti",
+      "age": 42,
+      "gender": "女性"
+    }
+  }
+}

@@ -1,0 +1,491 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_203",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:38:26",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_012",
+      "hidden_indirect_020"
+    ],
+    "content": [
+      "hidden_indirect_004"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_007",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_010",
+      "hidden_indirect_012",
+      "hidden_indirect_017",
+      "hidden_indirect_021"
+    ],
+    "entertainment": [
+      "hidden_indirect_010"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_008",
+      "hidden_indirect_014",
+      "hidden_indirect_019"
+    ],
+    "food": [
+      "hidden_indirect_009",
+      "hidden_indirect_016"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_009",
+      "hidden_indirect_016"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_011",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "learning": [
+      "hidden_indirect_006"
+    ],
+    "privacy": [
+      "hidden_indirect_007",
+      "hidden_indirect_017",
+      "hidden_indirect_021"
+    ],
+    "product": [
+      "hidden_indirect_002",
+      "hidden_indirect_014"
+    ],
+    "role_context": [
+      "hidden_indirect_006"
+    ],
+    "service": [
+      "hidden_indirect_003",
+      "hidden_indirect_011"
+    ],
+    "technology": [
+      "hidden_indirect_005",
+      "hidden_indirect_013",
+      "hidden_indirect_019"
+    ],
+    "travel": [
+      "hidden_indirect_008",
+      "hidden_indirect_015",
+      "hidden_indirect_018"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次下雨，选了评分4.8的咖啡馆，回家要钻施工巷子，踩一脚泥，多花25打车。"
+        },
+        {
+          "role": "assistant",
+          "content": "换车站对面茶店，末班车直达门口，人均不超20，全程有路灯。"
+        }
+      ],
+      "implicit_signal": "夜间出行以直达+照明状况优先于店铺评分，预算在人均20内"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "买了瓶广告说强力去油的清洁液，瓶身成分表只有一句中文，用后毫无效果。"
+        },
+        {
+          "role": "assistant",
+          "content": "改去批发市场，先在店里油污试板上擦过，确认标签有固化时间再付款。"
+        }
+      ],
+      "implicit_signal": "拒绝仅有广告页证据的产品，要求亲自试用实物"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "约牙科时系统要求填手机、住址和紧急联系人，后来赶不及又找不到取消入口。"
+        },
+        {
+          "role": "assistant",
+          "content": "用社区诊所的预约码系统，取消按钮在邮件第一行，只需别名和邮箱。"
+        }
+      ],
+      "implicit_signal": "预约必须提前告知取消规则，拒绝填写多字段注册系统"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周日晚上收到3页户外聚会说明，翻到底才知道要自带折叠椅和防水垫。"
+        },
+        {
+          "role": "assistant",
+          "content": "改发一行：周六14点车站旁绿地，自带坐垫与水杯，无其他费用。"
+        }
+      ],
+      "implicit_signal": "偏好一条消息容下的短信式摘要，拒绝长活动说明"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次展示前天，同伴说临时有事，我只能连夜一人准备所有原型。"
+        },
+        {
+          "role": "assistant",
+          "content": "我备两份独立材料，一份放共享文件夹，你将你那份周四前确认即可。"
+        }
+      ],
+      "implicit_signal": "拒绝制造焦虑的临时变动，提前准备备份材料"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在论坛贴了5个资料链接，被说太长看不懂，不知道从哪入手。"
+        },
+        {
+          "role": "assistant",
+          "content": "我抽出其中一种写成三步：选哪种软胶、混合比例、静置时间，周六你在家用小样试。"
+        }
+      ],
+      "implicit_signal": "拒绝纯链接堆砌，要求近期可执行的分步方法"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "手工坊报名表让填家庭住址与紧急联系人，我直接关掉了页面。"
+        },
+        {
+          "role": "assistant",
+          "content": "换仅签昵称的社区中心活动，场地有监控且转角是公交站。"
+        }
+      ],
+      "implicit_signal": "拒绝提供家庭地址与紧急联系人，优先可达性与场地监控"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "路线收藏里那条徒步径，网友说维护很好，到入口发现封路告示，多走2公里回头路。"
+        },
+        {
+          "role": "assistant",
+          "content": "我打了公园管理处电话确认新路线已开，将入口照片发你收藏备注。"
+        }
+      ],
+      "implicit_signal": "拒绝未向官方核实的路线推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次点了川菜外卖，妹妹吃一口就被辣哭，冰箱没有能替换的现成东西。"
+        },
+        {
+          "role": "assistant",
+          "content": "周六12:30你与妹妹到茶楼，点不辣肠粉和蒸饺，备选是二楼面馆。"
+        }
+      ],
+      "implicit_signal": "坚持格式：谁受影响/时间/主菜/备选，拒绝无结构的点单"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周五临时买电影票只剩第一排边角，看完脖子酸了两天。"
+        },
+        {
+          "role": "assistant",
+          "content": "我提前三天买了周六下午中间两排，你确认人数后我再同排加订。"
+        }
+      ],
+      "implicit_signal": "愿提前锁定稳定座位，换取临场无座的损失"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "收纳公司客服说最低预约4小时且须本人到场签合同，我只有2小时空闲。"
+        },
+        {
+          "role": "assistant",
+          "content": "改找按小时计的自由整理师，线上确认预约，取消提前24小时即可。"
+        }
+      ],
+      "implicit_signal": "拒绝强制最低时长与长途到场签约的服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "共享表格预算列为预估，五金店结账时多出51，之后表格与收据对不上。"
+        },
+        {
+          "role": "assistant",
+          "content": "每次花完将纸质收据拍照上传至新列，我每周五标记红色提醒超支。"
+        }
+      ],
+      "implicit_signal": "凭纸质收据核对实际支出，拒绝仅依靠预估"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "论坛帖子写分子量分布与拉伸比，我看了三遍也无法向家人复述。"
+        },
+        {
+          "role": "assistant",
+          "content": "改成：去超市买热缩管剪10cm，最高档吹45秒，能撑2斤重。"
+        }
+      ],
+      "implicit_signal": "拒绝复杂术语，改写成家庭可执行白话"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "笔记App号称免费，导出全部笔记得付年费，且仅能在本平台打开。"
+        },
+        {
+          "role": "assistant",
+          "content": "切到纯文本App，数据存.md，跨Mac手机免费同步，导出无限制。"
+        }
+      ],
+      "implicit_signal": "拒绝免费试用但隐藏导出费的笔记工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "走居民区捷径到车站，路段施工封闭多绕23分钟，沿途无路灯。"
+        },
+        {
+          "role": "assistant",
+          "content": "规划走主路多留35分钟，共享表格标出每个路灯位置。"
+        }
+      ],
+      "implicit_signal": "路线留缓冲走主干道，拒绝无照明的短捷径"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "母亲突然说对甲壳类过敏，但那家店整本菜单都是虾蟹，附近无备选。"
+        },
+        {
+          "role": "assistant",
+          "content": "替你安排周日的意面店：素或鸡肉，同时列出同一排的拉面店作为备选。"
+        }
+      ],
+      "implicit_signal": "提供备选方案，拒绝无替换的单一餐厅"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "读书会要求真实姓名与头像注册，我直接退群；后来家庭群让填全名紧急联系人我也只写姓氏。"
+        },
+        {
+          "role": "assistant",
+          "content": "我新建群组只用昵称，报名只需一个联系方式，不收集其他信息。"
+        }
+      ],
+      "implicit_signal": "只留姓氏或昵称，拒绝真实姓名群组"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "元旦去了市中心公园，排队40分钟进门，里面连坐的地方都找不到。"
+        },
+        {
+          "role": "assistant",
+          "content": "查到一个社区小花园，本地人少，开到日落，长椅充足，步行8分钟到门口。"
+        }
+      ],
+      "implicit_signal": "拒绝人挤人的热门地，选人少可达的安静替代"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "浏览器推荐第一的手机壳满屏满分短评，到手一个月边角脱皮。"
+        },
+        {
+          "role": "assistant",
+          "content": "改去本地电子城，现场试摸材质，看摆样磨损程度，店家还保三个月换新。"
+        }
+      ],
+      "implicit_signal": "拒绝纯好评的线上榜单，要求现场试摸实物"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "商家电话报价胶水35/公斤，交易多出附加与包装费，多付23。"
+        },
+        {
+          "role": "assistant",
+          "content": "让商家发含全部费用的PDF报价单，核对后再付款，备选同价位店。"
+        }
+      ],
+      "implicit_signal": "下单前要求包含所有费用的书面报价单"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "帮家属预约康复科，系统要求填家族史明细，我只写了心脏病与过敏史，未列哪位家属何时发病。"
+        },
+        {
+          "role": "assistant",
+          "content": "我改成仅描述当前症状与用药注意的备注，不提及任何人名年龄。"
+        }
+      ],
+      "implicit_signal": "家属病史只按类别概括，拒绝具体姓名和年龄"
+    }
+  ]
+}

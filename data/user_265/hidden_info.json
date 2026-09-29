@@ -1,0 +1,428 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_265",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:58:38",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 18,
+  "composition": {
+    "episodic_preference_trace": 18
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_003",
+      "hidden_indirect_008",
+      "hidden_indirect_013"
+    ],
+    "content": [
+      "hidden_indirect_006",
+      "hidden_indirect_016"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_015"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "entertainment": [
+      "hidden_indirect_014"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_006",
+      "hidden_indirect_017"
+    ],
+    "food": [
+      "hidden_indirect_013"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_004"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_007",
+      "hidden_indirect_008",
+      "hidden_indirect_009"
+    ],
+    "learning": [
+      "hidden_indirect_011",
+      "hidden_indirect_018"
+    ],
+    "privacy": [
+      "hidden_indirect_007",
+      "hidden_indirect_012"
+    ],
+    "product": [
+      "hidden_indirect_002",
+      "hidden_indirect_017"
+    ],
+    "role_context": [
+      "hidden_indirect_016"
+    ],
+    "service": [
+      "hidden_indirect_005",
+      "hidden_indirect_009",
+      "hidden_indirect_015"
+    ],
+    "technology": [
+      "hidden_indirect_012"
+    ],
+    "travel": [
+      "hidden_indirect_010",
+      "hidden_indirect_011",
+      "hidden_indirect_014"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周订租车时没算异地还车费，最后多出了 58 欧元。这次去格勒诺布尔，我想换个方式。"
+        },
+        {
+          "role": "assistant",
+          "content": "以下是两种方案：火车直达 45 欧（含行李），租车基础价 38 欧但加异地费约为 62 欧。建议选火车，总成本更低且无需额外保险。"
+        }
+      ],
+      "implicit_signal": "优先考虑总成本和长期负担，拒绝隐性费用"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "超市结账前，我翻看保温杯标签只写“可保冷24h”，没写材质寿命。上次买类似款半年就掉涂层。"
+        },
+        {
+          "role": "assistant",
+          "content": "这款 304 不锈钢内胆标称 5 年，但未注明涂层工艺。另一款同样 23 欧的采用无涂层双层抽真空，保冷实测 22h，长期更稳定。"
+        }
+      ],
+      "implicit_signal": "要求明确价格范围、假设和替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次露营计划被现场网络断了打乱，提前买的非取消套餐白费了 45 欧。这次订房前我想先确认取消政策。"
+        },
+        {
+          "role": "assistant",
+          "content": "已筛选出三家可免费取消的青旅。成本表：A 床位 23 欧/晚取消截止入住前 48h，B 单间 58 欧/晚取消需付 15 欧手续费，C 民宿 45 欧/晚但取消后全退。推荐 C 兼顾成本和灵活。"
+        }
+      ],
+      "implicit_signal": "要求用成本表区分必要项和可推迟项"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次整理活动路线时把交通、餐饮、门票混在一起，到现场发现时间不够，被迫跳过一个点。今天我想分开列。"
+        },
+        {
+          "role": "assistant",
+          "content": "分为：必要项（博物馆预约 10–12 点、火车 14:05）、可推迟项（河边散步、小型市集）、风险阈值（若第一项延误超 30 分钟则取消市集）。每项下附成本 0–23 欧。"
+        }
+      ],
+      "implicit_signal": "输出格式偏好成本表+必要项/可推迟项/风险阈值"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "早餐桌边，我翻邮件发现一个视频流试用账号昨天已到期，但没自动取消，从今天开始扣月费 12 欧。我记得当时没仔细看取消规则。"
+        },
+        {
+          "role": "assistant",
+          "content": "已查到该服务取消需在到期前 48h 发邮件。现在取消会退剩余 23 天费用吗？客服回复称不退，但停止继续扣费。以后试用我提前在日历设一个到期前 2 天的提醒。"
+        }
+      ],
+      "implicit_signal": "偏好保守估算，需要提醒取消规则"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "活动散场后有人推了一个叫“EcoMove”的拼车应用，说能省钱。但我搜了一下没有用户协议，也不知道数据怎么用。"
+        },
+        {
+          "role": "assistant",
+          "content": "该应用未公开隐私政策，评分数量不足 50，且要求绑定位置和通讯录。作为替代，Blablacar 提供类似路线，匿名注册且明确数据保留期。多绕一次路总比暴露信息好。"
+        }
+      ],
+      "implicit_signal": "需要依据和不确定点，不接受无理由推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在订票平台选大巴时，填完信息才发现结账页有笔 3.5 欧的“平台服务费”，之前没写。我退出了订单。"
+        },
+        {
+          "role": "assistant",
+          "content": "换用官网直接购票，同样班次 23 欧无附加费，且只需提供姓氏和邮件。以后优先走官方渠道，避免第三方中途加项。"
+        }
+      ],
+      "implicit_signal": "拒绝隐藏费用和隐私索取"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周一个向导说“大概 100 欧左右”，结果结束时收 145 欧，说包含没提的停车费和税费。当时现金不够，很尴尬。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次要求对方提供书面报价，分项列出服务费、税费和可能附加项。若对方拒绝，换另一家评分 4.3+ 且明码标价的向导，并保留截图。"
+        }
+      ],
+      "implicit_signal": "拒绝含糊预算"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "住宿平台推荐“升级到高级会员享 20% 折扣”，但月费 9.9 欧自动续，我算下来三个月总花销反而多 7.7 欧。"
+        },
+        {
+          "role": "assistant",
+          "content": "不订阅会员，直接选一单非会员价 58 欧的住宿。高级会员的折扣在低消费场景下无法回本，长期负担大于短期收益。"
+        }
+      ],
+      "implicit_signal": "拒绝超前消费建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "计划去安纳西两日，交通方式有火车、拼车、大巴和租车，我列了四个对比，但每个又弹出子选项，看了快一小时还没定。"
+        },
+        {
+          "role": "assistant",
+          "content": "先排除租车（异地还车费 58 欧）和拼车（需提前 48h 确认），剩下火车 45 欧/2h 和大巴 23 欧/3.5h。你更倾向时间还是成本？选一个后我补具体班次。"
+        }
+      ],
+      "implicit_signal": "愿意多比较但不要无限选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次徒步用了新导航 app，结果多绕了一次路，因为它的离线数据只更新到两个月前。回来后才看到用户说路线不准。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用 Organic Maps，数据每周更新且完全离线。使用前下载区域地图并对照官方步道验证前 2km。两小时后告诉我是否顺利，便于后续调整。"
+        }
+      ],
+      "implicit_signal": "偏好短周期反馈和可复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个任务管理工具要求读取我的日历和位置权限才能用路线功能，我觉得没必要。但手动输入又很慢。"
+        },
+        {
+          "role": "assistant",
+          "content": "用 TickTick 免费版，日历可手动导入 .ics，无需位置权限，数据支持 JSON 导出。设置一次后能跨设备同步，且不绑定社交账号。"
+        }
+      ],
+      "implicit_signal": "偏好能导出数据、最小权限的工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "活动散场后和同事约饭，推荐了一家网红店，人均 35 欧且要排队 45 分钟。我那天晚上还有整理行装的任务，犹豫了。"
+        },
+        {
+          "role": "assistant",
+          "content": "改去隔壁小巷的家庭餐馆，人均 16 欧，不用排队，25 分钟吃完。可提前电话点单，到店即取回住处吃，不影响当晚整理。"
+        }
+      ],
+      "implicit_signal": "优先考虑预算和当天执行稳定性"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在里昂老城看到“免费音乐节”海报，但查了评论说实际是商家促销，音响嘈杂，且结束时间不定。我怕影响第二天早班车。"
+        },
+        {
+          "role": "assistant",
+          "content": "不去音乐节，改去附近的微型博物馆（票价 8 欧，开放到 20:00），有导览且安静。回住处步行 10 分钟，保证 22:00 前休息。"
+        }
+      ],
+      "implicit_signal": "选择有内容密度、不破坏节奏的活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "月底要交论文，想用一个文档协作工具。朋友推荐 Notion，但我算了一下个人版免费但团队功能要月付 10 欧，长期下来不低。"
+        },
+        {
+          "role": "assistant",
+          "content": "个人需求用 Obsidian 本地版完全免费，支持 Markdown 导出，长期维护成本为零。若需简单共享，用 Syncthing 同步文件夹，无需订阅。"
+        }
+      ],
+      "implicit_signal": "总成本和长期负担优先于短期便利"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周六要去一片林区记录动物行为异常，站点之间跨度大。之前用一份网上找的路线图，但实际很多小路已封，多付了一笔费用给向导才出来。"
+        },
+        {
+          "role": "assistant",
+          "content": "联系当地林业局要最新的封路 shapefile，导入地图离线使用。为你规划顺序：从南入口（确认开放）依次经溪谷、松林带至北出口，全程 6km，耗时约 4h，预留 1h 缓冲。"
+        }
+      ],
+      "implicit_signal": "结合巡林员工作模式，偏好基于真实数据的内容"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买一个便携气象站，页面写“IP67 防水”，但没写电池更换方式。搜了论坛说这种型号电池焊死，寿命只有两年。"
+        },
+        {
+          "role": "assistant",
+          "content": "换用 Tempest 基础版（199 欧），官方售后提供电池更换套件，用户自行更换无需工具。初期投入高 23 欧，但长期使用成本低于前款（预期 4–5 年）。"
+        }
+      ],
+      "implicit_signal": "要求可验证的替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "报名了线上鸟鸣识别课，第一节给了 45 个链接和一篇 20 页 PDF，我读完不知道重点在哪。第二天要实地练习感觉没准备。"
+        },
+        {
+          "role": "assistant",
+          "content": "精选 5 个当地常见鸟种录音，每段 30 秒，附区分要点（如音调变化模式）。今天对着听 15 分钟，明早去公园实测，回来告诉我哪几种听混了，再调整。"
+        }
+      ],
+      "implicit_signal": "偏好短周期反馈和示例"
+    }
+  ]
+}

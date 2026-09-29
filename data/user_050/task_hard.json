@@ -1,0 +1,101 @@
+{
+  "user_id": "user_050",
+  "task": {
+    "task_id": "task_hard",
+    "title": "策划一个关于程序化生成的VR开发教程系列",
+    "daily_life_domain": "work",
+    "scenario": "Mia想创建一个关于VR程序化生成的新YouTube教程系列，以发展她的频道并吸引受众。她需要从头规划该系列：确定范围（例如，地形、建筑或整个世界）、集数、工具（Unity/Unreal）以及考虑到其他承诺的现实时间线。",
+    "user_goal": "设计一个引人入胜且可行的教程系列，教授有用的VR技能，符合她的制作能力，并与受众兴趣一致。",
+    "why_complex": "涉及在创意抱负（程序化生成很复杂）与实际限制（时间、预算、技术可行性）之间取得平衡。需要市场调研、自我评估和规划。多个权衡：深度与广度、Unity与Unreal、资产商店与自定义代码。",
+    "constraints": [
+      "她每周大约有10小时用于开发、录制和常规内容制作之外的时间。",
+      "该系列资产购买预算上限为200美元。",
+      "她想保持每周上传一个视频的常规节奏。",
+      "她倾向于使用已拥有的Unity Pro，但如果Unreal在程序化生成方面更好，也能接受。"
+    ],
+    "required_reasoning_steps": [
+      "在论坛和YouTube上研究VR程序化生成的热门话题。",
+      "评估她在程序化生成方面的当前技能水平，并找出差距。",
+      "确定系列范围：在聚焦（如洞穴生成）或广泛（如完整世界）之间选择。",
+      "估算每集开发时间及所需总周数。",
+      "为必要资产或工具分配预算。",
+      "设计逐集大纲，包括学习目标和演示项目。",
+      "规划适合她日常工作的录制和编辑时间表。",
+      "通过投票或社区建议融入受众反馈。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "她典型渲染和每分钟最终视频录制所需的时间（可从过去推断）。",
+      "任何可能影响该系列的即将推出的VR开发更新（如Unity 6功能）。",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "一个详细的系列计划，包括：选定主题、目标受众、5-8集大纲、预估时间线（含缓冲）、预算明细，以及征求受众意见的方法。",
+    "success_criteria": [
+      "系列计划符合她的每周时间预算，不与其他现有承诺冲突。",
+      "主题已显示受众兴趣（如投票结果）。",
+      "每集在前一集基础上构建，有明确的学习成果。",
+      "总成本低于200美元。",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "规划过广：计划太多集或主题过于复杂导致倦怠。",
+      "低估程序化生成编码所需时间。",
+      "忽略受众反馈，选择不受欢迎的主题。",
+      "未为技术问题或硬件故障预留缓冲。",
+      "选择不熟悉的工具（如Unreal）且缺乏足够经验，导致延误。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 8,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 8,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=11",
+        "constraints_capped=4",
+        "decision_points_capped=4",
+        "information_items_capped=5",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=31.1",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Mia Chen",
+      "age": 29,
+      "gender": "女性"
+    }
+  }
+}

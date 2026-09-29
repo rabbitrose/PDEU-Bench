@@ -1,0 +1,472 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_122",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:43:20",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_004",
+      "hidden_indirect_010",
+      "hidden_indirect_017"
+    ],
+    "content": [
+      "hidden_indirect_002",
+      "hidden_indirect_014"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_009",
+      "hidden_indirect_013",
+      "hidden_indirect_020"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_011",
+      "hidden_indirect_015"
+    ],
+    "entertainment": [
+      "hidden_indirect_012"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_006",
+      "hidden_indirect_010",
+      "hidden_indirect_019"
+    ],
+    "food": [
+      "hidden_indirect_011",
+      "hidden_indirect_017"
+    ],
+    "format_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_008"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_003",
+      "hidden_indirect_007",
+      "hidden_indirect_014"
+    ],
+    "learning": [
+      "hidden_indirect_008",
+      "hidden_indirect_016"
+    ],
+    "privacy": [
+      "hidden_indirect_005",
+      "hidden_indirect_012",
+      "hidden_indirect_020"
+    ],
+    "product": [
+      "hidden_indirect_004",
+      "hidden_indirect_018"
+    ],
+    "role_context": [
+      "hidden_indirect_009"
+    ],
+    "service": [
+      "hidden_indirect_005",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "technology": [
+      "hidden_indirect_006",
+      "hidden_indirect_015",
+      "hidden_indirect_019"
+    ],
+    "travel": [
+      "hidden_indirect_001",
+      "hidden_indirect_007",
+      "hidden_indirect_016"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "travel",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去开普敦出差，经济舱只要往返4800兰特，但到达后要立刻见客户。上次选廉价航班结果延误，现场网络断了，资料调不出来。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次订商务舱吧，保证准点和休息室网络。多出的费用控制在16000兰特以内，计入项目成本。"
+        }
+      ],
+      "implicit_signal": "职业形象与预算间的权衡，优先考虑专业形象"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "把上周那份并购案的尽职调查报告再整理一下，之前你只列了要点，但我需要知道每个风险点的判例依据。"
+        },
+        {
+          "role": "assistant",
+          "content": "这是更新后的版本：按风险等级排序，每个问题后面附了对应判例编号和Westlaw链接。"
+        }
+      ],
+      "implicit_signal": "要求引用来源并给出结构化摘要"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下周五女儿学校有演出，但约翰内斯堡的客户临时要开会。上次我选了出差，回来她好几天没理我。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我把客户会议调成周四下午视频会议，你周四早班机过去，当天返回，周五下午空出来。"
+        }
+      ],
+      "implicit_signal": "学校演出不可妥协，因此调整出差计划"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我那块Omega表带磨得不行了，想换根新的。专柜原装要3500兰特，网上有替代款只卖800。"
+        },
+        {
+          "role": "assistant",
+          "content": "专柜原装皮料耐用且贴合，替代款半年就裂。多花2700兰特换三年寿命，按年算更划算。"
+        }
+      ],
+      "implicit_signal": "愿意为长效产品付溢价，但坚持性价比"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "为了伦敦出差我注册了Priority Pass，但他们要求同步通讯录才能激活快速通道。上次酒店礼宾部也这么搞，结果推了一堆广告。"
+        },
+        {
+          "role": "assistant",
+          "content": "我直接用手动输入卡号绑定，不同步通讯录。休息室网络连VPN后你再处理邮件。"
+        }
+      ],
+      "implicit_signal": "偏好可控、加密的服务，拒绝随意分享数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "新公司法草案里关于董事责任的条款，网上说法不一。有文章说责任加重了，但没写具体出处。"
+        },
+        {
+          "role": "assistant",
+          "content": "我调了LexisNexis原文，第22条新增了‘勤勉义务’举证倒置，来源是2025年修正案官方公报第489号。"
+        }
+      ],
+      "implicit_signal": "法律问题必须提供权威来源，不能给印象式答案"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去纽约出差，行政助理订了个青旅附近的旅馆，说省下的钱能多住两晚。但我约了客户在大堂碰面谈项目。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成中城区的商务酒店，单人间含早每晚2100兰特。预订确认前我给你发三个选项，你挑一个。"
+        }
+      ],
+      "implicit_signal": "拒绝过度节俭的旅行方式，保持体面"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周参加的领导力在线课程，讲师只给了PPT和回放链接，我想快速回看‘跨文化谈判’那章，翻了十分钟没找到。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把回放按时间戳分段提取并加了标题索引，现在PDF里直接搜‘跨文化’就能定位到第22分钟处。"
+        }
+      ],
+      "implicit_signal": "课程材料需要结构化、可检索"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "助理把客户尽调报告截止日从周五改到周三，说是对方催得紧。但我周二整天有庭前会议。"
+        },
+        {
+          "role": "assistant",
+          "content": "那周二晚在候机区里用iPad审阅，周三上午我按你的批注生成最终版，再发给客户。"
+        }
+      ],
+      "implicit_signal": "合伙人对团队工作有掌控力，但尊重客户时间"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "订巴黎酒店时，Booking显示总价含税，但到店又收了城市税，多付了一笔费用共29欧元。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次预订后我拨酒店前台确认税项明细，并把确认邮件里的价目表截图保存。这次损失我记在差旅台账。"
+        }
+      ],
+      "implicit_signal": "用事实审查避免多付冤枉钱"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下月慈善半马，主办方要我带家人参加起跑仪式，但当天女儿有钢琴考级。上次我推掉考级陪她训练效果也不好。"
+        },
+        {
+          "role": "assistant",
+          "content": "你按时参加起跑拍照，然后直接去接女儿考级，后面5公里用线上陪跑功能完成。赞助商那边我拟个简短感谢致辞提前发。"
+        }
+      ],
+      "implicit_signal": "慈善活动须兼顾声誉和家庭时间"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在Netflix上搜《王冠》第六季，弹出个弹窗说要启用个性化推荐才能继续播放，还默认勾了分享观看数据。"
+        },
+        {
+          "role": "assistant",
+          "content": "到设置里关掉个性化功能，改用直接搜索片名播放。数据分享全部拒绝，不影响画质。"
+        }
+      ],
+      "implicit_signal": "拒绝流媒体个性化推荐侵犯隐私"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "常去的干洗店把我的Hugo Boss西装纽扣洗掉了一颗，送回去还说要等三天从意大利调原装扣。"
+        },
+        {
+          "role": "assistant",
+          "content": "我查了附近另一家，承诺24小时用同色系替代扣修复且不留痕迹。费用多出60兰特，但不用耽误周二的客户晚宴。"
+        }
+      ],
+      "implicit_signal": "服务须稳定可靠，不能妥协专业形象"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "家庭群里有人转了个链接，说新税法能让自雇人士免交一半增值税，还标了‘紧急提醒’。"
+        },
+        {
+          "role": "assistant",
+          "content": "那是去年废止的草案，我调了SARS官网2025年第11号公告给你贴到群里，顺便提醒他们别信转发。"
+        }
+      ],
+      "implicit_signal": "拒绝未核实的法律自媒体内容"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "设备更新后，MacBook上的LexisNexis插件不兼容了，每次查判例要手动复制案号，之前存的书签也全失效。"
+        },
+        {
+          "role": "assistant",
+          "content": "我装回Rosetta2兼容层运行旧版，同时把22个常用案号做成Chrome书签文件夹，按法域分类。"
+        }
+      ],
+      "implicit_signal": "设备更新后必须兼容旧工作流，不能打断效率"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "候机区里1小时空闲，想补一下跨境并购的税务新规，但之前买的16节视频课太长，一节要45分钟。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把课程按知识点切成11个短视频，每段8-10分钟，并标注了‘居民国抵免’‘常设机构风险’等关键词。"
+        }
+      ],
+      "implicit_signal": "差旅间隙学习，要求高效和针对性"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "结婚纪念日想带家人去那家法餐厅，但套餐从去年的950涨到1350兰特每人，孩子还要另点儿童餐。"
+        },
+        {
+          "role": "assistant",
+          "content": "订工作日早场（17:30），有‘早鸟套餐’980兰特每人，儿童餐半价。提前48小时取消不收违约费。"
+        }
+      ],
+      "implicit_signal": "家庭聚餐愿为环境和品质付溢价"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "新买的降噪耳机用了两周，右耳出现电流声。客服说寄回去检测要等22个工作日，期间不给替代机。"
+        },
+        {
+          "role": "assistant",
+          "content": "我在保修页面选了‘高级换货’，付110兰特运费，三天内先寄新机，旧机用预付费标签退回。"
+        }
+      ],
+      "implicit_signal": "拒绝低质品和高姿态客服"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "试用账号快到期了，但AI合同审查工具生成的摘要漏了第11页的违约金条款，差点签错版本。"
+        },
+        {
+          "role": "assistant",
+          "content": "我调取工具的处理日志，发现它跳过了加密页。之后改成先用AdobeAcrobat展平所有图层，再提交审查。"
+        }
+      ],
+      "implicit_signal": "对软件工具要求可验证、可追溯"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "女儿班主任在家庭群里发了成绩单PDF，她先发了群聊，又说‘为了保护隐私以后改私发’。但我已经下载了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我帮你撤回该消息并设置群内文件自动过期删除。以后老师的私发邮件直接转发到你的加密文件夹。"
+        }
+      ],
+      "implicit_signal": "家庭通讯安全和可控高于便利"
+    }
+  ]
+}

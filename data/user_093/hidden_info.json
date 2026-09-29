@@ -1,0 +1,491 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_093",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:54:54",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_016",
+      "hidden_indirect_021"
+    ],
+    "content": [
+      "hidden_indirect_002",
+      "hidden_indirect_019"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_007",
+      "hidden_indirect_016"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_013",
+      "hidden_indirect_014",
+      "hidden_indirect_018"
+    ],
+    "entertainment": [
+      "hidden_indirect_011"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_008",
+      "hidden_indirect_013"
+    ],
+    "food": [
+      "hidden_indirect_010"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_012",
+      "hidden_indirect_015"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_014",
+      "hidden_indirect_021"
+    ],
+    "learning": [
+      "hidden_indirect_008",
+      "hidden_indirect_017"
+    ],
+    "privacy": [
+      "hidden_indirect_009",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "product": [
+      "hidden_indirect_006",
+      "hidden_indirect_019"
+    ],
+    "role_context": [
+      "hidden_indirect_012"
+    ],
+    "service": [
+      "hidden_indirect_007",
+      "hidden_indirect_017"
+    ],
+    "technology": [
+      "hidden_indirect_009",
+      "hidden_indirect_020"
+    ],
+    "travel": [
+      "hidden_indirect_005",
+      "hidden_indirect_018"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次活动印了500份双语宣传册，花了$400，但当天只来了200人，还剩一堆放仓库积灰。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次换滚动电子屏预告，只印300份，把省下的$100加在托儿补贴上，之前有妈妈因为没人看孩子没来。"
+        }
+      ],
+      "implicit_signal": "在预算有限时优先考虑实际到场率而非理论完整性"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次翻译CDC产后出血指南，志愿者说太学术，妈妈们听完直接问我这是什么意思。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只保留三条关键信号：出血量超过一碗、头晕、心跳快，配漫画展示，其余扔掉。"
+        }
+      ],
+      "implicit_signal": "需要将研究证据转化为简单信息，而非直接引用机构措辞"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次把英语传单直接译成西班牙语，妈妈群反馈语气生硬，像政府文件没人愿看。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次让本土双语作家重写，用‘cuando la sangre corre demasiado’开头，保留口语节奏。"
+        }
+      ],
+      "implicit_signal": "西班牙语材料必须独立创作而非直译"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周把活动设在周五晚7点，参与展位的义工多为新手妈妈，有人要哄孩子睡觉来不了，最后缺了3个摊位。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次改到周六上午10点，并在报名表里注明‘可带孩子’，现场设安静角落。"
+        }
+      ],
+      "implicit_signal": "避免忽视家庭时间限制，将其视为合理边界"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "合作方发来一张产后感染致死的案例照片，要用在展板上说‘这就是不就医的下场’，当场有妈妈哭了。"
+        },
+        {
+          "role": "assistant",
+          "content": "撤掉那张图；换成一张妈妈带宝宝做产后检查的微笑照片，配文‘及早发现，一起安全’"
+        }
+      ],
+      "implicit_signal": "拒绝恐惧式健康宣传"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次从电商批量买哺乳枕当礼品，结果好几个妈妈抱怨拉链卡住，退货还要自付运费。"
+        },
+        {
+          "role": "assistant",
+          "content": "换本地母婴店的内衣，支持试穿，还能用西班牙语直接沟通，虽然单价高15%但口碑更好。"
+        }
+      ],
+      "implicit_signal": "产品选择考量便利性与信任度，贴合家庭场景"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次请的导乐服务很专业，但她的普通话课程预约难，协调时间用了两周，有妈妈等不了去了别家。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次改签本地的双语育婴指导，能上门且随叫随到，虽然资质浅一些，但妈妈们实际能参与。"
+        }
+      ],
+      "implicit_signal": "将儿童保育可及性置于完美临床完整性之前"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次报的产后护理网课列了50页文献，但看完还是不知道怎么给社区排课，浪费两周时间。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次找一个3周速成班，每周末只教一张教学卡片，学完直接能用在小团体聚会。"
+        }
+      ],
+      "implicit_signal": "学习内容必须可操作，而非理论堆叠"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "志愿者用微信群收集妈妈们的产后出血经历，有人反映担心信息泄露退群了。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成Signal群组，并提前发隐私说明，强调不会存电话号码或聊天记录。"
+        }
+      ],
+      "implicit_signal": "优先使用注重隐私的工具处理敏感信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次提供的小吃全是薯片和含糖汽水，血糖高的妈妈们全程没碰，活动结束后都说饿。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次备新鲜水果杯、坚果和矿泉水，成本差不多但至少所有人都能放心吃。"
+        }
+      ],
+      "implicit_signal": "拒绝加工食品，活动餐饮务求健康"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次活动结束后安排了亲子剧，票价$35一位，很多妈妈嫌贵只看了半场就走了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次包场一个社区公园的免费露天电影，只花$50租放映设备，孩子跑跳也不怕噪音。"
+        }
+      ],
+      "implicit_signal": "为家庭体验配置预算，但不过度消费"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次的总结报告只写了400人参加，老板追问具体什么社区、怎么来的、下一步怎么做，我答不上来。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次调整为三段格式：触达人群/消除的障碍/后续跟进，配上社区地图和回访计划。"
+        }
+      ],
+      "implicit_signal": "工作场景中需要追踪谁被触达、障碍和后续"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次展板贴了‘产后出血发生率3%’的数据条，妈妈们走过都没看，还有个妈妈问我这是什么意思。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次放一段真实妈妈讲述‘我流了800毫升，还好护士及时给了药’的录音，配血袋实物对照。"
+        }
+      ],
+      "implicit_signal": "个人故事优于统计数据，前提是医学安全"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次培训材料里写‘建议利益相关方建立围产期转诊网络’，护士看完问我到底要做什么。"
+        },
+        {
+          "role": "assistant",
+          "content": "改成‘每个社区诊所指定一个联系人帮妈妈找产科’，并打印一张电话号码贴纸。"
+        }
+      ],
+      "implicit_signal": "反对行话，要求直接可操作"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次用纸质签到表收集妈妈全名和电话，会后信息被丢在公共桌上，有人投诉说隐私泄露。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次改用一次性二维码扫码，只留昵称和邮箱，数据24小时后自动删除。"
+        }
+      ],
+      "implicit_signal": "隐私偏好影响信息收集方式"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次为省钱没租场地，借社区地下室，结果当天暴雨积水，一半人没来，活动冷清。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次多付$200租二楼有雨棚的公园亭子，再加$50租两辆摆渡车接送地铁站来的妈妈。"
+        }
+      ],
+      "implicit_signal": "优先确保实际出席，预算是可调节的杠杆"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次听一个专家讲胎盘滞留的三种分类，说完第一种我就开始分神，后面内容全没听进去。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次改15分钟短视频，只讲‘生完30分钟内怎么判断胎盘完整’，配合动画，睡前就能看完。"
+        }
+      ],
+      "implicit_signal": "学习体验必须简短、易消化"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次为赶9点活动，早上5点半叫醒孩子，开车40分钟，结果孩子哭闹了一上午，我也没心思招呼。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次把活动推到10点半，并跟场地协调一个早到保姆区，孩子醒了直接带去玩。"
+        }
+      ],
+      "implicit_signal": "家庭休息时间是合理限制，出行计划需预留缓冲"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次选的高颜值量表夹，妈妈们反馈花哨但不好放包里，还重，没人用。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次换成防水拉链袋，可挂在伞车上，设计更实用，颜色只留黑白两色。"
+        }
+      ],
+      "implicit_signal": "产品选择要匹配社区实际用途"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次用微信接龙预约产检提醒，跳出一堆广告，妈妈们说像骚扰拒绝使用。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用开源工具Calendly并设置预约上限，数据只存本地，且通过短信发送提醒，不用社交媒体。"
+        }
+      ],
+      "implicit_signal": "系统选用优先考虑隐私和易用性"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "费用有限，想用夸张图片吸引注意，比如产后住院血淋淋的对比，但怕吓到妈妈。"
+        },
+        {
+          "role": "assistant",
+          "content": "不能那么做；把预算转到真实妈妈视频 testimonials 和中文对照卡片，比恐惧更有效。"
+        }
+      ],
+      "implicit_signal": "拒绝恐惧式传播，预算应服务于正向信息"
+    }
+  ]
+}

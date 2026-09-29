@@ -1,0 +1,491 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_103",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:39:03",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_002",
+      "hidden_indirect_011",
+      "hidden_indirect_016",
+      "hidden_indirect_020"
+    ],
+    "content": [
+      "hidden_indirect_004"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_007",
+      "hidden_indirect_015",
+      "hidden_indirect_017"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "entertainment": [
+      "hidden_indirect_010",
+      "hidden_indirect_019"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_009",
+      "hidden_indirect_014",
+      "hidden_indirect_021"
+    ],
+    "food": [
+      "hidden_indirect_006",
+      "hidden_indirect_016"
+    ],
+    "format_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_012"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_008",
+      "hidden_indirect_011",
+      "hidden_indirect_019"
+    ],
+    "learning": [
+      "hidden_indirect_008",
+      "hidden_indirect_018"
+    ],
+    "privacy": [
+      "hidden_indirect_005",
+      "hidden_indirect_014"
+    ],
+    "product": [
+      "hidden_indirect_012"
+    ],
+    "role_context": [
+      "hidden_indirect_013"
+    ],
+    "service": [
+      "hidden_indirect_001",
+      "hidden_indirect_009",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "technology": [
+      "hidden_indirect_003",
+      "hidden_indirect_013",
+      "hidden_indirect_021"
+    ],
+    "travel": [
+      "hidden_indirect_007",
+      "hidden_indirect_017"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "前天针灸预约时，前台硬要我注册App填身高体重才给约，我直接取消了。护士后来打电话说可以电话留位置。下次就用电话约了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我现在拨那个护士留下的座机号码，你手边有这个号码吗？我帮你确认周三下午2点。结束后只存这个号码，不关联邮箱。"
+        }
+      ],
+      "implicit_signal": "用户优先选择可快速绑定行程且不强制提供额外信息的服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周买了两次同一家理疗馆的体验券，结果第一次用掉后，第二张因为超时退不了，多付了26欧元。早知道当时就看清楚取消条款。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我把Sana诊所三种套餐的价格、取消窗口和可退比例写成表格，先放大字号印出来贴冰箱，下次买之前看一眼。"
+        }
+      ],
+      "implicit_signal": "用户需要费用和退款规则的表格化对比"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你推荐的营养追踪软件我只用了三天就放弃了：你只说「大家都说好」，可我查了它会上传餐食图片到云端分析，默认还不加密。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次重新筛选：只考虑数据存储在本地且开源的项目，比如Nutritionix。我会附上各自的隐私政策关键段和可验证链接。"
+        }
+      ],
+      "implicit_signal": "用户要求信息源可还原查证"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周六参加的那个公开瑜伽课，老师全程站着讲理论，我一张笔记都没写，只感觉白费了一个下午，还没能拍张动作序列图。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找了一家小工作室，他们的晨间流瑜伽课会课后发手绘体式卡，可以贴进本子当素材。需要帮你问能否单次买课吗？"
+        }
+      ],
+      "implicit_signal": "用户喜欢能产出可复用的内容素材而非消耗性体验"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "地铁换乘时想试试那家新开的物理诊所预约，网页非要填全名、电话、生日才显示可选时段。我直接关了页面。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我换一家：中心区Kirsten Praxis只需选时段和留一个姓氏，到店才核实保险卡，你愿意试试这个入口吗？"
+        }
+      ],
+      "implicit_signal": "用户拒绝提供非必要的个人数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "理疗后想找地方吃饭，路上进了家评分高的拉面店，结果排了30分钟队，里面音乐大得听不见手机提示音，吃完头都胀了。"
+        },
+        {
+          "role": "assistant",
+          "content": "Otto路那家越南河粉馆离诊所步行6分钟，晚餐时段人少，店里只放收音机轻新闻。今天菜单有鸡肉河粉，不油腻，我帮你预留今晚7点的单人位。"
+        }
+      ],
+      "implicit_signal": "用户偏好安静、小规模且方便独自前往的饮食场景"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "客户回复前我定了个午休后的理疗，结果客户突然加了一轮视频会，两边差22分钟，当时在地铁站只能干着急，最后还是迟到了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那以后理疗全部排在上午9点到11点之间或下午4点以后，中间留出至少30分钟空档作为缓冲，我帮你把明天那趟理疗调到17:15如何？"
+        }
+      ],
+      "implicit_signal": "用户要求保留充足的物理缓冲时间避免行程冲突"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "找了一个失眠调整的视频课，光介绍脑科学讲了40分钟，实际能用的只有三句话，且没有对照表格，看完觉得自己在浪费时间。"
+        },
+        {
+          "role": "assistant",
+          "content": "找到一家从第一节课就发纸质执行清单的焦虑康复工作坊：首课只有三步动作和一张7日打卡表。我帮你预留明天下午的小班名额？"
+        }
+      ],
+      "implicit_signal": "用户需要可操作的动作序列而非理论解释"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前订阅的冥想App免费试用三天后直接扣了全年费，我发退订邮件折腾了两周才退回部分钱。这件事让我对月费自动续费非常警觉。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我只考虑提供清晰退订按钮和至少2周免费试用的服务。目前已筛选出三个都不需要绑定银行卡，你把它们贴在一页便签上，今天下午可以逐一看看？"
+        }
+      ],
+      "implicit_signal": "用户需要试用期和明确的取消路径"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友拉我去一个网红沉浸式展览，人挤人，每个场景都要排队拍照，我一张能用的素材都没拍到，出来发现手机耗掉了30%电。"
+        },
+        {
+          "role": "assistant",
+          "content": "这周Kunstverein有一个版画工作坊，限12人，结束后可以带走自己印的纸品做拼贴素材。我帮你查看周六上午的位子，你本子上正好可以贴一张当封面。"
+        }
+      ],
+      "implicit_signal": "用户偏好能产出笔记或创作素材的小众娱乐"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "午休结束前收到健身课包促销邮件，号称「最后一天」，我冲动买了个30次课包，结果第4次课就发现课包不能转给别人用，还剩22次全额浪费。"
+        },
+        {
+          "role": "assistant",
+          "content": "今后只按次付费或买不超过6次的课包，且确认退费政策写在合同里。我找了两家可以随时暂停月付的拳击馆，今天下班后我们顺路去看看？"
+        }
+      ],
+      "implicit_signal": "用户强制区分非可支配支出和弹性支出"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在药店买了个按摩滚轮，包装上说「缓解全身酸痛」，回家才看到最大承重标注在底面小字里，而我的体重刚好超了2公斤，用两次就变形了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我查本地器械店，只选承重上限明确标在详情页且超过你体重15%以上的型号，今晚我把三款对比表格——包含材质、承重、保修年限——贴在冰箱上。"
+        }
+      ],
+      "implicit_signal": "用户喜欢产品信息以非营销语言呈现并说明使用限制"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次用了一个理疗进度跟踪App，做得很好，但只在安卓用。我换到iPad上看不到记录，也没有导出功能，等于重新开始，气得我直接删了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找了一个基于网页且支持无App使用、同时后台自动生成iCal文件以链接日历。你只需在笔记本上记一次登录凭证，所有进度都会同步。试试看？"
+        }
+      ],
+      "implicit_signal": "用户需要能跨设备同步且数据能导出的工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有家线上健康咨询平台，评估问卷里问了经期、体重、用药记录，还要求上传保险卡照片，我填到一半直接关闭了，感觉风险太高。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我换成本地一家线下咨询：首次面谈只需要说症状和过敏史，不上传任何文件，费用当面结算。我帮你约周五14:30，你带上身份证就好，不需额外准备。"
+        }
+      ],
+      "implicit_signal": "用户对涉及身体健康的信息分享持谨慎态度"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我收到一家连锁健身房的「首次免费体验」券，去后发现全是推销卡路里计算和体测，我离开后多次收到推销电话，感觉氛围很功利。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我推荐一家圆角社区里的训练馆，教练自己就是退役运动员，氛围安静，没有推销，只卖单次通行。需要我明天陪你去探访一下？"
+        }
+      ],
+      "implicit_signal": "用户更信任小而独特的本地服务商而非大型连锁"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "连续三天在外面吃外卖后，发现每餐均价15欧元，月底账单多出一笔意料之外的开支，够我付两周的菜钱。上周开始就尽量带饭了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我查一下诊所和家之间有没有周末市场，可以一次性买够一周的鸡胸和蔬菜。另外我整理一份15分钟能搞定的便当食谱，打印贴在厨房。"
+        }
+      ],
+      "implicit_signal": "用户对外出就餐预算敏感，倾向于自己做或吃本地小店"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前去参加一个健康节，订了间网红民宿，宣传上写「安静居民区」，实际楼下就是酒吧街，半夜2点才安静，我第二天头昏脑涨没法运动。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我筛选的标准是：阳台朝后院、评价里没有提到「噪音」且可以免费取消。找到一家民宿距离会场15分钟步行，你确认后我看是否仍有余位。"
+        }
+      ],
+      "implicit_signal": "用户优先选择安全安静且可随时取消的住宿选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "为了改善核心力量，我在网上找了一套康复课程，5分钟视频后全是讨论运动员案例，没有实际动作分解，我看了前三节就放弃了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找到一个叫BodyFix的系列：每节课5分钟教学+10分钟跟随练习，课后附带一张空白练习日记，可以填写自己的完成度和感受，能贴上本子。周一开始？"
+        }
+      ],
+      "implicit_signal": "用户喜欢可执行、可复盘且能产出个人笔记的学习材料"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月花30欧参加了一个「健康市集」，到现场发现大半摊位是代餐和减肥补剂在推销，跟健康没太大关系，感觉被套钱了。"
+        },
+        {
+          "role": "assistant",
+          "content": "本地周四有一个不设展商位的社区野餐+轻徒步活动，每人带一份食物，没有广告。想参加的话我帮你在地图标记集合点？不需要任何注册。"
+        }
+      ],
+      "implicit_signal": "用户避免参加明显营销驱动的活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "选了点评排第二的健康餐订阅，配送费每单都多收2欧，客服说是包装费，但订单页没写。一个月下来，多付了将近26欧元。"
+        },
+        {
+          "role": "assistant",
+          "content": "我改用本地农场的按周配送：菜单上标注了含包装、配送和税金在内的总价，没有额外结算。本周试订一箱，不满意可以随时停订。"
+        }
+      ],
+      "implicit_signal": "用户需要提前知道完全成本，避免隐性消费"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你建议我用一款拉伸App，说「适合初学者」，但App里很多动作需要配合弹力带。我买了弹力带才发现教程只有两个动作涉及带子，觉得信息不实在。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我让你自己点进每个App的「课程目录」页面再看。目前已把三个候选的免费课程截图和弹力带使用次数整理在一页便签上，你看看哪个目录更清楚。"
+        }
+      ],
+      "implicit_signal": "用户要求对比信息有真实依据和可访问的原始页面"
+    }
+  ]
+}

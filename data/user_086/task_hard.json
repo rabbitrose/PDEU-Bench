@@ -1,0 +1,101 @@
+{
+  "user_id": "user_086",
+  "task": {
+    "task_id": "task_hard",
+    "title": "建议客户将2015款福特F-150置换为带有EV激励的新款车型",
+    "daily_life_domain": "work",
+    "scenario": "一位常客，本地承包商，来到经销商处。他拥有一辆2015年福特F-150，里程数高，想升级到新卡车。他听说过联邦和省级电动车返利，纠结是否该考虑电动卡车还是继续用汽油F-150。他还担心置换价值和贷款利率。戈登需要帮他决定最佳车辆和交易，考虑客户的预算、用途（拖拽、运输）和长期成本。戈登对电动车炒作持怀疑态度，但必须给出诚实的比较。",
+    "user_goal": "提供可信赖的建议，平衡客户满意度、经销商利润和戈登作为知识型销售员的声誉。",
+    "why_complex": "需要评估置换价值（考虑里程、状况、市场）、比较新汽油车与电动卡车的成本（包括返利、燃油节省、保养）、分析融资选项（租赁与购买、利率），并解决客户对爱德华王子岛乡村地区续航和充电基础设施的顾虑。同时也涉及戈登个人对政府激励措施的怀疑及保持客观的需求。",
+    "constraints": [
+      "客户需在两周内提车。预算：置换后4万至5.5万美元。客户每周拖船一次并运输建筑材料。戈登必须遵守经销商定价政策，且不能提供虚假返利信息。时间：需在一次会面中提出选项。"
+    ],
+    "required_reasoning_steps": [
+      "评估客户置换车辆：根据里程、状况和本地二手F-150市场估算价值。",
+      "比较新款汽油F-150与电动卡车（如福特F-150闪电）在价格、续航、拖拽能力、燃油成本和保养上的差异。",
+      "研究可用返利：联邦iZEV及爱德华王子岛省级电动卡车激励措施，包括截止日期。",
+      "计算两种选项5年总拥有成本，考虑燃油节省、返利和潜在转售价值。",
+      "确定融资选项：租赁与购买、经销商与信用合作社的利率。",
+      "权衡客户典型用途（拖拽、农村驾驶）与电动卡车续航及爱德华王子岛充电可用性。",
+      "准备清晰诚实的比较，强调实际利弊，以客户自身驾驶习惯为例。",
+      "推荐一个选项并解释理由，然后协商交易以促成销售。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "确切置换里程、状况（任何事故、锈蚀、机械问题）。",
+      "客户每日通勤距离和典型拖拽距离。",
+      "客户是否有家庭充电桩或工作场所充电条件？",
+      "客户信用评分和首选月付金额。",
+      "目前是否有任何特殊促销或经销商折扣。",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "一个包含关键数字的详细对比表或讲义、口头推荐以及包含折价金额、车辆价格、融资条款和最终成交价的拟议交易单。",
+    "success_criteria": [
+      "客户感觉信息充分且没有压力。",
+      "戈登公正地提出了两种选择，并参考了实际数据。",
+      "客户做出决定（即使不是立即）或安排后续跟进。",
+      "如果成交，该交易既能达到经销商的利润目标，又能让客户满意。",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "过度强调自己对电动汽车的偏见，导致客户不信任他。",
+      "提供不准确的补贴信息（例如忽略省级政策变化）。",
+      "低估折价金额并冒犯客户。",
+      "推销高佣金车型而非最合适的车型。",
+      "未询问家庭充电情况，导致推荐不合适的电动汽车。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 6,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 9,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=11",
+        "constraints_capped=5",
+        "decision_points_capped=4",
+        "information_items_capped=7",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=33.6",
+        "hard_revision: 内容负载较高，保留少量 9 轮作为上尾",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Gordon MacLellan",
+      "age": 52,
+      "gender": "男性"
+    }
+  }
+}

@@ -1,0 +1,449 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_106",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:49:44",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 19,
+  "composition": {
+    "episodic_preference_trace": 19
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_009",
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "content": [
+      "hidden_indirect_005",
+      "hidden_indirect_017"
+    ],
+    "decision_priority": [
+      "hidden_indirect_002",
+      "hidden_indirect_011",
+      "hidden_indirect_015"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_013",
+      "hidden_indirect_014"
+    ],
+    "entertainment": [
+      "hidden_indirect_006",
+      "hidden_indirect_019"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_007",
+      "hidden_indirect_015"
+    ],
+    "food": [
+      "hidden_indirect_011"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_012",
+      "hidden_indirect_017"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_001",
+      "hidden_indirect_006",
+      "hidden_indirect_012",
+      "hidden_indirect_019"
+    ],
+    "learning": [
+      "hidden_indirect_009",
+      "hidden_indirect_013"
+    ],
+    "privacy": [
+      "hidden_indirect_008",
+      "hidden_indirect_016"
+    ],
+    "product": [
+      "hidden_indirect_010"
+    ],
+    "role_context": [
+      "hidden_indirect_001"
+    ],
+    "service": [
+      "hidden_indirect_008",
+      "hidden_indirect_018"
+    ],
+    "technology": [
+      "hidden_indirect_007",
+      "hidden_indirect_016"
+    ],
+    "travel": [
+      "hidden_indirect_004",
+      "hidden_indirect_014"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上一轮气候变化系列用了一张冰川融化的黑白照，开篇写‘我们还有十年’，邮箱一下子涌来11封退订邮件。我拔了网线去煮咖啡。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次开篇我用一个孩子指着自家后院的苹果树说‘今年花开早了’的照片，先勾住好奇，把恐慌留给脚注。"
+        }
+      ],
+      "implicit_signal": "作为科学博主，深陷末日叙事会让退订率飙升，已记入黑名单"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周四发了一篇海平面上升的文章，引用了10篇Nature论文，但配了一张枯燥的折线图。阅读完成率只有18%，评论区都在说‘太干了’。"
+        },
+        {
+          "role": "assistant",
+          "content": "我去找一张你家附近渔市场1880年与2020年的并排照片，再叠上潮位标记，证据交给图注里的DOI链接。"
+        }
+      ],
+      "implicit_signal": "可视化的因果关系比完整引用列表更重要"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨晚在候机区里重读稿件，发现‘温室效应’那段的第三、四段顺序反了——先给了正确机制再反驳误解，读者早跑了。我直接在平板上圈改。"
+        },
+        {
+          "role": "assistant",
+          "content": "下一版我把第一个小节标为‘你可能以为地球是被棉被裹着’，后面跟三个加粗误区，第五段才写真实机制。"
+        }
+      ],
+      "implicit_signal": "必须用误解清单开头，而不是摘要"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "两年前蒙特雷湾海洋生物学旅行，日程排得太满，第三天在码头只拍了15分钟素描。回来后发现编辑想要的手部骨骼细节全得靠照片回忆，气得撕了那页便签。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次周三下午空出来，只做一件事：在潮汐池边用Procreate慢慢画藤壶的开口，不赶路不排采访。"
+        }
+      ],
+      "implicit_signal": "考察行程必须预留写生时间"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月科普聚会，一个工程师问‘二氧化碳比空气重怎么就浮在平流层了’。我当场画了三层纸模型，他恍然大悟。这个对比后来成了帖子爆点。"
+        },
+        {
+          "role": "assistant",
+          "content": "我在系列第三篇开头塞一个‘倒一杯可乐，气泡为什么往上跑’的动态图，然后才解释CO₂流向。"
+        }
+      ],
+      "implicit_signal": "气候传播应先引发好奇心，再纠正"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去年我让实习生整理一份来源文档，他交了个69条纯文字参考文献。我瞄了一眼就让他重做，告诉他每篇必须配一句‘为什么这张图用了这个数据’。"
+        },
+        {
+          "role": "assistant",
+          "content": "我先把参考文献精简到8篇，每篇旁边放一张缩略图（从原文截图），图注就写‘这篇的Figure 3解释了为什么海冰反照率是关键’。"
+        }
+      ],
+      "implicit_signal": "无视觉元素的引用列表会直接否决"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "试过用Canva自动生成饼图，但数据从Excel导出时四舍五入错了，一个13%的切片画成了15%。我在家庭群里发了三条语音抱怨，后来全手动重算。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次所有的比例图我用Illustrator手动锚点，每个百分数旁边用路径文字标出原始样本量，文件保存两个备份。"
+        }
+      ],
+      "implicit_signal": "工具切换必须能追溯原始来源"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有家科技博客想塞给我一篇胃酸气候类比，开价500美元，但要求我在文章里埋他们的阅读追踪代码。我直接回绝了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我从Quanta Magazine找一篇经同行评议的珊瑚白化特稿，用Mailchimp给付费订阅者发摘要图，链接全用独立短链。"
+        }
+      ],
+      "implicit_signal": "愿意为可信新闻付费，但绝不用追踪插件"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去年在Skillshare买了一门《科学图表的信息设计》，讲师花了整整三节课讲配色色轮，我实际用到的只有最后15分钟的工具技巧。多付了一笔费用。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我选《数据叙事：让曲线自己说话》，先看第一章的免费章节，确认全是案例拆解再付款。"
+        }
+      ],
+      "implicit_signal": "课堂必须能直接用在博客视觉上才能花钱"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "为了拍微距贝壳纹理，犹豫两个月才下单佳能100mm f/2.8L镜头，结果汇率涨了多付32美元。但收到第一张照片时觉得值回来了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次大额工具订购前先设汇率提醒，但不要为了省几百块换成副厂镜头——那张藤壶口器的锐度差距肉眼可见。"
+        }
+      ],
+      "implicit_signal": "大件花销宁可分期也要保持品质"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "连续五天只吃沙拉和意面，周日晚上做博客排期时脑子转不动，把‘碳循环’写成了‘碳酸循环’。倒在沙发上翻Blue Apron的菜单。"
+        },
+        {
+          "role": "assistant",
+          "content": "下周Blue Apron选‘烤三文鱼配藜麦’和‘鹰嘴豆咖喱’两款，确保午休前那餐有20g以上蛋白质。"
+        }
+      ],
+      "implicit_signal": "弹性素食者为保证精力优先考虑蛋白质"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一个设计模板网站给我推‘5步制作信息图’的通用指南，我扫了一眼就关了——‘先选一个主题’这种废话写满了三屏。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次我直接用你上篇关于珊瑚白化的手绘草图对照，把你觉得啰嗦的步骤删掉，只保留‘锚点数据→画比喻图→加来源脚注’。"
+        }
+      ],
+      "implicit_signal": "通用信息图建议直接忽略"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次推荐的Tableau入门，学完只会做柱状图，完全没法用在博客的浮游生物迁徙图上。我把它从收藏夹里删了。"
+        },
+        {
+          "role": "assistant",
+          "content": "现在我找一门《用Procreate做科学动画》的课，学完可以直接做磷虾垂直迁移的逐帧GIF。"
+        }
+      ],
+      "implicit_signal": "课程必须提升视觉叙事，而非纯技术图表"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去年在挪威追极光住了一家连锁酒店，窗户朝北但被隔壁楼挡光，想画山脊时所有素描阴影全是错的。周日晚上用随身笔记标记了‘再也不住北向房间’。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次订房要求‘东南向窗户，上午有直射光’，如果Airbnb房东确认不了就选带天窗的Loft。"
+        }
+      ],
+      "implicit_signal": "住宿必须有好光线写生"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "为了凑篇‘蜜蜂与气候变化’的综述，用了某科普网站的非一手数据，结果被同行指出那张蜂群趋势图实际只覆盖三年。我在博客上发了更正，但阅读量掉了四成。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只从PNAS和Nature Climate Change里挑三篇，每篇数据跨度至少十年，不够的用美国农业部原始数据集补。"
+        }
+      ],
+      "implicit_signal": "来源可信度优先于完整性"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "买了一个智能温控器，结果发现它会把室内温度曲线上传到营销平台。我当晚就拆了，换成老式旋钮。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次推荐智能传感器时先检查数据存储位置，只选数据存本地或经E2E加密且不出境的产品。"
+        }
+      ],
+      "implicit_signal": "智能家居便利可接受，但拒绝数据外流"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上一篇关于云杉松甲的稿子，我直接从WordPress导出一长段摘要贴到Twitter，结果被算法压到只显示前两行。51个点击里只有3个完成跳转。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我把最炸的比喻句做成一张900×600的方形卡片，中心加图注和来源链接，直接作为推文图片。"
+        }
+      ],
+      "implicit_signal": "分享格式必须附带社交优化"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周Instacart缺货，不得不补一单Whole Foods配送，结果发现他们悄悄把番茄标价上浮了15%。我取消了他们的Express会员。"
+        },
+        {
+          "role": "assistant",
+          "content": "从此杂货只用社区生鲜合作社，虽然配送费贵1.5元但价格透明，把省下的会员费捐给科学博客奖基金。"
+        }
+      ],
+      "implicit_signal": "预算优先支持独立创作者"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周电影之夜挑了一部《移动迷宫》，看到反派靠引力逆转装置时间倒流，我直接按下暂停键查了半小时论文，最后发现原理纯属胡扯。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次电影之夜优先排《降临》或《星际穿越》，至少里面的物理顾问名字能写在片尾演职员表里。"
+        }
+      ],
+      "implicit_signal": "不选无视实际物理学的科幻"
+    }
+  ]
+}

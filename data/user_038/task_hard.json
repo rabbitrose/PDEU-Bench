@@ -1,0 +1,105 @@
+{
+  "user_id": "user_038",
+  "task": {
+    "task_id": "task_hard",
+    "title": "为学生规划一次探索岛屿海岸侵蚀的实地考察",
+    "daily_life_domain": "work",
+    "scenario": "Jasmine想为她中学地理班（14-16岁）组织一次半天的实地考察，去附近一个海岸侵蚀明显的海滩。她旨在将动手学习与环境意识结合起来。学校交通预算有限，她必须获得家长同意。她还希望融入一位在环境意识组织非政府组织工作的朋友的当地专家知识。",
+    "user_goal": "设计一次安全、有教育意义且后勤可行的实地考察，在校时间3小时内，教学生关于海岸侵蚀的知识，并与课程保持一致。",
+    "why_complex": "需要协调多个利益相关者（学校管理层、家长、非政府组织专家），在有限预算下导航，选择具有明显侵蚀特征的合适地点，准备行前和行后活动，并确保安全。Jasmine必须在教育深度与时间、资源限制之间取得平衡，并考虑雨季时间。",
+    "constraints": [
+      "Budget: 交通和材料总计低于200美元。",
+      "Time: 必须在3小时的学校上午时段内完成（例如上午9点到12点）。",
+      "Safety: 学生必须有防晒、水和急救包；没有危险悬崖。",
+      "Logistics: 需要至少提前两周的家长同意表。",
+      "Curriculum: 必须与“海岸过程与管理”单元相联系。"
+    ],
+    "required_reasoning_steps": [
+      "步骤1：确定安提瓜岛上显示明显侵蚀迹象且距学校车程30分钟内的潜在海滩位置。",
+      "步骤2：评估每个地点的安全性（例如无强水流、地面稳定、有阴凉区域）。",
+      "步骤3：联系非政府组织专家确认可用性和潜在贡献（例如引导的侵蚀步行或演示）。",
+      "步骤4：计算交通成本（学校小巴 vs 租赁巴士）并确定预算是否允许，或寻求替代资金（例如教育部的少量拨款）。",
+      "步骤5：设计行前课程介绍侵蚀概念和行后反思活动（例如草图或简短报告）。",
+      "步骤6：草拟家长同意信，包括旅行详情、安全措施以及要求防晒霜/帽子。计划发放和收集时间表。",
+      "步骤7：分配旅行时间：交通、专家讲解、引导观察、数据收集（例如使用GPS手表或测量卷尺）和汇报。确保缓冲时间。",
+      "步骤8：制定雨天备份计划（例如，使用视频或在线侵蚀地图的室内替代方案）",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "从学校到候选海滩的精确距离和驾车时间",
+      "当地非政府组织专家的可用性和费用（如果有）",
+      "选定日期的当前天气预报（季节性：五月至六月为淡季，但可能多雨）",
+      "学校的实地考察政策：所需文书、师生比例、保险",
+      "学生人数以及任何特殊需求或无障碍限制",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "一份详细的1页实地考察计划，包括：选定地点及理由、时间表（逐小时）、预算明细、课前/课后大纲样本、同意书模板、安全清单和备份计划",
+    "success_criteria": [
+      "行程在3小时内且费用低于200美元",
+      "至少90%的学生归还签名的同意书",
+      "学生能在行程后识别至少两种侵蚀特征并解释一种成因",
+      "如果有非政府组织专家参与，能丰富学习体验",
+      "无安全事故发生；学生参与度高且舒适",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "选择侵蚀特征不足的地点，令学生失望",
+      "因学生分心或内容过多导致超时",
+      "忘记获取许可或保险导致取消行程",
+      "忽视天气预报导致行程湿冷不适"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 7,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 9,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=11",
+        "constraints_capped=5",
+        "decision_points_capped=4",
+        "information_items_capped=7",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=32.9",
+        "hard_revision: 内容负载较高，保留少量 9 轮作为上尾",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Jasmine Browne",
+      "age": 42,
+      "gender": "女性"
+    }
+  }
+}

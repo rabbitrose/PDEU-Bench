@@ -1,0 +1,449 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_116",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:45:08",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 19,
+  "composition": {
+    "episodic_preference_trace": 19
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_012",
+      "hidden_indirect_017"
+    ],
+    "content": [
+      "hidden_indirect_010"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_013",
+      "hidden_indirect_019"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_005",
+      "hidden_indirect_007",
+      "hidden_indirect_014"
+    ],
+    "entertainment": [
+      "hidden_indirect_006"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_008",
+      "hidden_indirect_018"
+    ],
+    "food": [
+      "hidden_indirect_012"
+    ],
+    "format_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_008",
+      "hidden_indirect_014"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_009",
+      "hidden_indirect_015",
+      "hidden_indirect_016"
+    ],
+    "learning": [
+      "hidden_indirect_007",
+      "hidden_indirect_015"
+    ],
+    "privacy": [
+      "hidden_indirect_011"
+    ],
+    "product": [
+      "hidden_indirect_005",
+      "hidden_indirect_016"
+    ],
+    "role_context": [
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "service": [
+      "hidden_indirect_011",
+      "hidden_indirect_017"
+    ],
+    "technology": [
+      "hidden_indirect_009",
+      "hidden_indirect_013"
+    ],
+    "travel": [
+      "hidden_indirect_003",
+      "hidden_indirect_004",
+      "hidden_indirect_019"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次为西西里角色选角，预算只够请二线演员。结果试镜时他连‘u’的闭口音都发不准，后期修了三次。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次我多找两位巴勒莫地区的声音样本，即使日薪高15%，也省后期修复时间。"
+        }
+      ],
+      "implicit_signal": "优先于声音质感和文化契合度，预算对稀有方言可放宽"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚收到一个罗马演员的简历，演过很多主角，但没给角色对比片段。我没办法判断他能不能配米兰口音。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会回信要求一段1分钟独白：用他之前配过的类似年龄角色，同时读一段带米兰方言的脚本。"
+        }
+      ],
+      "implicit_signal": "用可比角色片段，而非履历；格式需含角色需求、音色、口音风险"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去年去首尔只考察了旅游景点，回来后发现对选角帮助不大，连当地棚的声学环境都不清楚。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我会提前联系三家录音棚，安排两场实地试听，其余的晚课时间留给语言交换。"
+        }
+      ],
+      "implicit_signal": "日本/韩国行程需包含工作室访问和听力环境"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周日晚上翻过去那趟拿坡里行程，发现自己花了大半天在看古迹，却没去当地配音工作室见那位方言指导。"
+        },
+        {
+          "role": "assistant",
+          "content": "下回行程我把文化点安排在最后半天，优先和本地选角导演喝咖啡交换声音样本。"
+        }
+      ],
+      "implicit_signal": "拒绝对一般观光旅游；工作导向的旅行"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买的那副旗舰耳机，评测说低频好，但我在听意大利语犯罪剧的对白时，连舌尖齿音都糊了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我把试听重点放在中高频的齿音分离上，尤其对比两段不同演员的耳语场景再决定。"
+        }
+      ],
+      "implicit_signal": "耳机评价标准基于对话细节，而非品牌知名度"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "副制片推了一个网红配音演员，说能带流量。试了片段，他把那部南美剧集的‘ll’音发成了西班牙中部口音，完全不对。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后所有非本地口音角色，我都要求先提交目标方言的语音样本，而不看粉丝数。"
+        }
+      ],
+      "implicit_signal": "拒绝根据知名度选角"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "午休结束前去上日语课，老师放NHK新闻，但我更想听动漫里不同角色的语速变化和情绪重音。"
+        },
+        {
+          "role": "assistant",
+          "content": "下周我找三段动漫对话——争吵、独白、方言角色——提前发你预习，课上专注分析声调细节。"
+        }
+      ],
+      "implicit_signal": "语言沉浸不是为了旅游，而是为了训练耳朵"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "候选文件夹里有一份演员名单，但没标音色类型和口音风险，我无法快速筛选。"
+        },
+        {
+          "role": "assistant",
+          "content": "我重新整理格式：第一列角色需求，第二列音色（低沉/明亮），第三列口音风险（1-3），末列两位备选人。"
+        }
+      ],
+      "implicit_signal": "音色、口音风险与备选演员格式"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "这是一页便签，上面记着技术团队建议用AI合成主角声音省成本。但上次用AI配旁白，情感层次完全缺失。"
+        },
+        {
+          "role": "assistant",
+          "content": "主角锁定人类演员，AI只用于后期车流音和电话录音里的背景声。"
+        }
+      ],
+      "implicit_signal": "规避AI声音作主角"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚看完一部意大利剧的英配版，主角选了好莱坞明星但口音是通用美式，完全失去了那不勒斯街头的粗粝感。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次推荐选角名单时，我会先列三位带南方口音能力的演员，即使知名度较低，再加明星选项做备选。"
+        }
+      ],
+      "implicit_signal": "内容匹配配音制片人模式：声音优先"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "新合作的选角平台要求上传全部联系人名单，指出潜在候选人。我担心同行会看到我挖掘的新人。"
+        },
+        {
+          "role": "assistant",
+          "content": "我们只匿名分享角色需求和试镜数量统计，具体姓名和联系方式保留在自己的候选文件夹中。"
+        }
+      ],
+      "implicit_signal": "数据共享界限：不愿分享专有选角数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周在日落大道一家标榜正宗的意大利餐厅吃了米兰式烩饭，结果米粒夹生到像未加工，价格却够买半副耳机了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次聚餐我推荐去小东京那家拉面店或者在家做一道伦巴第risotto，预算只花三分之一。"
+        }
+      ],
+      "implicit_signal": "外出就餐节省，在家烹饪意大利菜"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "评测网站说某电容麦适合人声，但我用它录完一段意大利语对话回放，发现闭音节尾音被压缩得不像原声。"
+        },
+        {
+          "role": "assistant",
+          "content": "我借来三款同价位麦克风，分别录同一段西西里方言独白，对比尾音保留度再决定购买。"
+        }
+      ],
+      "implicit_signal": "麦克风评判基于对话细节"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在候机区里翻手机，发现上次东京行程只排了观光和购物，完全没时间进录音棚听本地演员的现场声。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次出发前先锁定三家棚的时间，每天上午试听演员，下午在棚里用他们的设备录样本。"
+        }
+      ],
+      "implicit_signal": "韩国/日本行程需工作室访问和当地听力环境"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "这次为一部科幻剧选角，指导老师花20分钟讲北欧神话背景，但与角色性格和声音无关。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后选角前沟通：只需要和声音相关的角色背景——比如阶级、年龄、习惯用语，其余删除。"
+        }
+      ],
+      "implicit_signal": "规避冗长文化背景介绍"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "购物车里有副明星联名耳机，朋友说戴着听播客够用。但我用它挑对白瑕疵时，背景音乐明显盖过人声细节。"
+        },
+        {
+          "role": "assistant",
+          "content": "我再找一副同价位但标注‘监听风格’的耳机，用同一段多轨混音对比人声清晰度。"
+        }
+      ],
+      "implicit_signal": "根据声音适应性而非明星效应选产品（耳机）"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次选角用的自由配音平台月费涨了，同事建议换便宜的平台。但便宜的那个连方言标注功能都没有。"
+        },
+        {
+          "role": "assistant",
+          "content": "保留当前平台，我从剧目预算里挤出一部分覆盖费用，同时取消另一个不常用的流媒体订阅。"
+        }
+      ],
+      "implicit_signal": "愿意为声音质感投资，日常用品节约"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一位演员寄来很长的舞台剧获奖清单，但没有英文配音片段。我没办法判断他能不能配好剧里警察的疲惫声音。"
+        },
+        {
+          "role": "assistant",
+          "content": "我回复请他提交一段30秒对白：用他演过的最接近警察年龄的角色，加上一句剧中疲惫语气的试读。"
+        }
+      ],
+      "implicit_signal": "可比角色样本比简历更有说服力"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "回家路上反省上周去墨西哥城选角，大半天都在游客区，没时间见本地配音演员听他们的日常对话。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次先把选角面试和录音棚参观排进日程，最后半天留给市场听街头小吃摊的吆喝来练耳朵。"
+        }
+      ],
+      "implicit_signal": "旅行优先声音真实性与文化沉浸，而非观光"
+    }
+  ]
+}

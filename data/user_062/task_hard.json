@@ -1,0 +1,100 @@
+{
+  "user_id": "user_062",
+  "task": {
+    "task_id": "task_hard",
+    "title": "策划一场关于田纳西·威廉姆斯《玻璃动物园》的沙龙讨论",
+    "daily_life_domain": "social",
+    "scenario": "朱利安每月在灯塔山的褐石公寓为戏剧爱好者举办沙龙。本月的聚会即将到来，他想引导一场关于《玻璃动物园》的深度、细腻讨论，聚焦角色动机、记忆与现实的对比，以及剧本的自传元素。他需要挑选具体段落进行分析，准备避免浅层解读的讨论问题，并决定一种尊重客人不同专业水平的形式（例如圆桌讨论、戏剧朗诵）。他还想提供简单的意大利茶点，与知识氛围相配。",
+    "user_goal": "组织一场生动的沙龙之夜，既尊重剧本的复杂性，又能深度吸引参与者，同时体现他个人对戏剧讨论的标准。",
+    "why_complex": "需要挑选既能让经验较少的参与者理解，又能为资深戏剧爱好者提供深度的材料，设计探究性的问题而不流于浅薄，在家居条件下规划后勤（朗读、饮食、座位），并与欣赏他正式而温暖风格的客人协调。",
+    "constraints": [
+      "行动不便，无法爬楼梯（沙龙必须在一楼）",
+      "对明亮屏幕敏感（避免使用投影仪演示；更喜欢大字体打印讲义）",
+      "不愿使用算法推荐来选择讨论焦点；希望依靠自己的专业知识",
+      "预算：愿意在葡萄酒和意大利开胃菜食材上花费最多100美元",
+      "时间：准备1周，活动持续2.5小时"
+    ],
+    "required_reasoning_steps": [
+      "识别《The Glass Menagerie》中符合Julian对复杂叙事兴趣的关键主题和角色弧线。",
+      "选择2-3个短场景，既能最大化讨论潜力，又能在15分钟以内阅读完成。",
+      "设计5个开放式讨论问题，避免简单答案，邀请多种解读。",
+      "规划晚间结构：开场致辞、朗读所选场景（提前分配角色）、引导式圆桌讨论、总结感想。",
+      "选择简单的意大利菜单（例如：意式烤面包、腌橄榄、一瓶浓郁的Chianti），既能烘托气氛又符合预算。",
+      "制作一页讲义，包含场景节选、问题以及简短背景说明（确保无错别字，使用大号可读字体）。",
+      "发送邀请，礼貌请求回复出席情况，并附上关于活动形式的说明以管理预期。",
+      "为出席人数少或有人主导谈话做好准备（例如：温和的引导技巧）。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "根据回复人数调整食物数量和座位安排。",
+      "客人是否有特殊的饮食限制（特别是关于葡萄酒或麸质）？",
+      "是否有客人有视力障碍，需要更大的讲义字体？",
+      "确认客厅有老花镜和合适的照明。",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "完整的沙龙计划，包括所选场景、讨论问题、配有葡萄酒搭配的菜单、讲义设计、活动时间表和嘉宾沟通模板。",
+    "success_criteria": [
+      "讨论避免肤浅的情节概括，深入探讨角色心理和象征意义。",
+      "所有参与者都积极参与，没有单一声音主导。",
+      "食物和葡萄酒受到好评，并与知识氛围相得益彰。",
+      "讲义无错误、清晰易读，并打印在纸上（无屏幕）。",
+      "晚间活动在2.5小时内结束，并带来有意义的交流感。",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "选择的场景对于讨论来说过长或过短。",
+      "问题要么太模糊，要么太有引导性。",
+      "忽视食物/葡萄酒搭配质量，导致分心。",
+      "未能有效引导，允许偏离主题的对话。",
+      "忽视年长嘉宾的可访问性需求（字体大小、座位）。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "navigation",
+        "food",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 6,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 8,
+      "human_verifier_estimation_basis": [
+        "domain=social",
+        "source_domains_capped=4",
+        "reasoning_steps_capped=11",
+        "constraints_capped=5",
+        "decision_points_capped=4",
+        "information_items_capped=6",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=28.5",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Julian Marchetti",
+      "age": 68,
+      "gender": "男性"
+    }
+  }
+}

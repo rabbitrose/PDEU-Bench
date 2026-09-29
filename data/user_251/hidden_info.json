@@ -1,0 +1,451 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_251",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:53:29",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 19,
+  "composition": {
+    "episodic_preference_trace": 19
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_002",
+      "hidden_indirect_012",
+      "hidden_indirect_014",
+      "hidden_indirect_017"
+    ],
+    "content": [
+      "hidden_indirect_006"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_014"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_007",
+      "hidden_indirect_011",
+      "hidden_indirect_018",
+      "hidden_indirect_019"
+    ],
+    "entertainment": [
+      "hidden_indirect_009",
+      "hidden_indirect_016"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_008",
+      "hidden_indirect_017"
+    ],
+    "food": [
+      "hidden_indirect_005",
+      "hidden_indirect_014"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_010",
+      "hidden_indirect_016"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_009",
+      "hidden_indirect_013"
+    ],
+    "learning": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_018"
+    ],
+    "privacy": [
+      "hidden_indirect_007",
+      "hidden_indirect_015"
+    ],
+    "product": [
+      "hidden_indirect_012"
+    ],
+    "role_context": [
+      "hidden_indirect_006"
+    ],
+    "service": [
+      "hidden_indirect_008",
+      "hidden_indirect_015"
+    ],
+    "technology": [
+      "hidden_indirect_003",
+      "hidden_indirect_010",
+      "hidden_indirect_019"
+    ],
+    "travel": [
+      "hidden_indirect_004",
+      "hidden_indirect_013"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前在Coursera选了一门Python课，老师从头念PPT，没有习题，两周后什么都写不出来。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次选Codecademy的Python3路径，每节有练习题和即时评分，学完一章能直接跑脚本验证。"
+        }
+      ],
+      "implicit_signal": "优先选有明确评分和反馈的课程"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "中午去超市发现只收现金，附近没ATM，只能空手回办公室饿了一下午。"
+        },
+        {
+          "role": "assistant",
+          "content": "HEB在Congress Ave那家收Apple Pay和Visa，且官网标价。下次去之前看一眼营业时间，避免白跑。"
+        }
+      ],
+      "implicit_signal": "要求推荐前核实营业时间和支付方式"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "用Notion记了三个月笔记，某天同步失败导致丢失27条，且没备份。"
+        },
+        {
+          "role": "assistant",
+          "content": "首选Obsidian，本地存储且能自动导出PDF。备选Logseq，同样本地优先。到场注意：先试导出再迁移全部内容。"
+        }
+      ],
+      "implicit_signal": "需要附带备选和注意事项"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上回住Airbnb图便宜，结果火车道就在窗边，整夜没睡，第二天会议一直打哈欠。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次选SpringHill Suites South，离火车道半英里，隔音好且支持免费取消。预算多20刀但能保证休息。"
+        }
+      ],
+      "implicit_signal": "好睡眠优先于低价旅馆"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "午休去新开的烤肉店，排队20分钟，回去只剩10分钟吃饭，还点了太油腻的肋排，下午犯困。"
+        },
+        {
+          "role": "assistant",
+          "content": "附近Curra's Grill的牛油果沙拉12刀，出餐快、不油腻。11点45分前人少，能从容吃完还能散步10分钟。"
+        }
+      ],
+      "implicit_signal": "避免排队和油腻食物"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次推了一本编辑手册，我搜出来是没有人审校的PDF，连作者名都没有。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次推荐《The Chicago Manual of Style》第18版，University of Chicago Press出版，有样章试读。替换方案是《New Oxford Style Manual》，Oxford出版。"
+        }
+      ],
+      "implicit_signal": "要求推荐附来源和作者信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "为了看一个本地演出时间表，要求下载app并注册邮箱，取消订阅后还收到推销邮件。"
+        },
+        {
+          "role": "assistant",
+          "content": "直接访问Do512网站，不用登录就能看每周活动列表和地址。把喜欢的记到Google日历就行。"
+        }
+      ],
+      "implicit_signal": "拒绝强迫下载和注册"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "订阅了一个云存储试用，忘记取消，第二个月自动扣了47刀，取消要联系客服且48小时才回复。"
+        },
+        {
+          "role": "assistant",
+          "content": "之后推荐iCloud+的50GB方案，取消直接在设置里一键停用，且扣款前三天会发提醒邮件。"
+        }
+      ],
+      "implicit_signal": "需要服务说明取消条款"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "同事约去听SXSW免费场，到现场排队绕了两圈，入场后只能站在角落什么都看不到。"
+        },
+        {
+          "role": "assistant",
+          "content": "不如去The Continental Club的周二下午场，不用预约，场地小，座位先到先得，且人流量只有晚上的三分之一。"
+        }
+      ],
+      "implicit_signal": "拒绝过度拥挤的计划外的活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "旧版清单软件升级后不再支持CSV导出，尝试回退但版本没法回退，数据全卡在里面。"
+        },
+        {
+          "role": "assistant",
+          "content": "用Todoist，数据可导出JSON和CSV，且免费版够用。备选Microsoft To Do，与Outlook联动。到场注意：先试导出一次再开始建清单。"
+        }
+      ],
+      "implicit_signal": "需可导出标准格式的工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "自学西班牙语三个月，没找到带答案的练习册，直到去考试才发现大多背错了。"
+        },
+        {
+          "role": "assistant",
+          "content": "用Duolingo的Spanish Podcast搭配Quizlet，每集有pdf习题和答案。每天15分钟，做完两集就能自测词汇量。"
+        }
+      ],
+      "implicit_signal": "需要每节有对照答案的练习"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "网上买了个49刀的打印机，两个月后卡纸，店里说不保，修一次比买新的贵。"
+        },
+        {
+          "role": "assistant",
+          "content": "首选HP LaserJet M110we，社区店能当天维修且保修一年。备选Brother DCP-L2550DW，成本相似但耗材便宜。到场注意：看看评价里维修口碑。"
+        }
+      ],
+      "implicit_signal": "偏好易维修和明确保修的物品"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "参加了一个低价步行导览，结果导游每5分钟就推销一次纪念品商店，全程都在赶路。"
+        },
+        {
+          "role": "assistant",
+          "content": "用Atlas Obscura的self-guided路线，免费下载地图，自己走Congress Avenue至East Side，中间可以看壁画或进独立书店。"
+        }
+      ],
+      "implicit_signal": "拒绝带推销的旅游路线"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "被广告吸引去了一家新开的汉堡店，一个套餐25刀，味道平平还等了30分钟。"
+        },
+        {
+          "role": "assistant",
+          "content": "去P. Terry's，经典汉堡6.5刀，出餐5分钟，且本地口碑一直稳定。中午去也不怎么排队，留足午休时间。"
+        }
+      ],
+      "implicit_signal": "避免高溢价无可靠口碑的餐厅"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想预约剪发，店方要求提供全名、电话和住址，说不填不能保留时间。"
+        },
+        {
+          "role": "assistant",
+          "content": "换用The Good Life Barber，只给名字和电话就可以预约，到店再填邮箱。官网显示价格，不用先注册。"
+        }
+      ],
+      "implicit_signal": "拒绝要求敏感个人信息的预约服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去了一家新开的影院，屏幕很大但空调声像拖拉机，根本没听清对白。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次选Alamo Drafthouse South Lamar，空调维护好且观影前有提示。官网可查座位和音量标准。到场注意：坐在中间排避开空调出风口。"
+        }
+      ],
+      "implicit_signal": "需要真实内容和足够安静的环境"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "付了47刀订阅了个素材库，一个月只下载了两次，忘了取消又被扣了一个月。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次单次购买，用Freepik的按素材付费，单张2刀，不用月费。如果确实频繁，再考虑月费。"
+        }
+      ],
+      "implicit_signal": "需要明确每月是否真的用到订阅"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次给了七个在线课程链接，我挨个打开发现每个都要登录，最后一条也没学。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只推荐一个：freeCodeCamp的Responsive Web Design认证，无需登录即可开始，每步有对照答案，到第二天就能写出页面。"
+        }
+      ],
+      "implicit_signal": "需要可立即执行的步骤而非链接列表"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "线上会议间隙去附近星巴克，坐满且只剩门口高脚凳，网还卡到没法共享屏幕。"
+        },
+        {
+          "role": "assistant",
+          "content": "改去Epoch Coffee，上午9点前空位多，有电源和稳定WiFi。离会议开始早15分钟到，可以占一张四人桌。"
+        }
+      ],
+      "implicit_signal": "需要不拥挤时段和灵活座位"
+    }
+  ]
+}

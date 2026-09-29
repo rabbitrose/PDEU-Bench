@@ -1,0 +1,470 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_074",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:37:16",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 22,
+  "composition": {
+    "episodic_preference_trace": 22
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_013"
+    ],
+    "content": [
+      "hidden_indirect_014"
+    ],
+    "decision_priority": [
+      "hidden_indirect_002",
+      "hidden_indirect_003"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_010"
+    ],
+    "entertainment": [
+      "hidden_indirect_020"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_004",
+      "hidden_indirect_005"
+    ],
+    "food": [
+      "hidden_indirect_019"
+    ],
+    "format_contract": [
+      "hidden_indirect_006",
+      "hidden_indirect_007"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_011",
+      "hidden_indirect_012",
+      "hidden_indirect_013"
+    ],
+    "learning": [
+      "hidden_indirect_017"
+    ],
+    "privacy": [
+      "hidden_indirect_022"
+    ],
+    "product": [
+      "hidden_indirect_015"
+    ],
+    "role_context": [
+      "hidden_indirect_001"
+    ],
+    "service": [
+      "hidden_indirect_016"
+    ],
+    "technology": [
+      "hidden_indirect_021"
+    ],
+    "travel": [
+      "hidden_indirect_018"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月选培训供应商只看报价，结果两家服务跟不上，团队花了额外时间协调。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次先筛选过往合作过的名单，每家电话确认响应流程和备选方案。"
+        }
+      ],
+      "implicit_signal": "工作场景中优先选择有实际服务证据的供应商"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "两件外套：一件贵40%但羊毛混纺，另一件便宜但第三个月就起球。"
+        },
+        {
+          "role": "assistant",
+          "content": "如果穿两年以上，贵的单位成本更低，且免去更换麻烦。预算紧可等季末折扣。"
+        }
+      ],
+      "implicit_signal": "长期质感和单位成本优先于短期低价"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "两个手工坊：大型商场连锁流程快，社区小店环境安静但要早去占位。"
+        },
+        {
+          "role": "assistant",
+          "content": "社区小店体验更沉浸，提前到还能和店家聊，适合周末放松。"
+        }
+      ],
+      "implicit_signal": "氛围和社区感优先于便利或规模"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次看测评买蓝牙耳机，结果音质刺耳退掉了。这次通勤需要降噪款。"
+        },
+        {
+          "role": "assistant",
+          "content": "把你候选型号发我，我找本地店铺评论和通勤环境测评重点看低频降噪。"
+        }
+      ],
+      "implicit_signal": "基于本地实测和具体场景而非通用推荐做决策"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "找同时连电脑和手机的键盘，网上都说支持，但切换延迟没人说清。"
+        },
+        {
+          "role": "assistant",
+          "content": "告诉我你的设备组合和切换频率，我对比三款实测视频标注2.4G和蓝牙延迟。"
+        }
+      ],
+      "implicit_signal": "需要实测延迟数据而非模糊宣传"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下周朋友来温哥华，想找安静能聊天的餐厅，人均30刀以内。家庭群推荐了热闹的店。"
+        },
+        {
+          "role": "assistant",
+          "content": "三家：意大利小馆（氛围温馨、人群年轻、人均28）、日式居酒屋（有包间、人均25）、越南粉（快餐适合午餐）。选哪个？"
+        }
+      ],
+      "implicit_signal": "推荐包含氛围、人群、成本、安静备选"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周末计划徒步，早餐桌边看攻略发现几条路线，但不确定哪个适合半新手。"
+        },
+        {
+          "role": "assistant",
+          "content": "A海岸景观（人群少、难度低、有咖啡馆）、B森林小道（树荫多、中等长度、需自带水）、C热门步道（设施完善但人多）。附停车信息。"
+        }
+      ],
+      "implicit_signal": "内容包含人群、成本、安静度"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周去大型书展，人多到只待半小时。下周有个独立出版商活动，场地很小。"
+        },
+        {
+          "role": "assistant",
+          "content": "小场更适合深度交流，预留两小时，回家路上还能整理发现的书单。"
+        }
+      ],
+      "implicit_signal": "偏爱小而真实的场所"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "连续三天社交，感觉自己精力被耗尽，明天和朋友约了但想取消。"
+        },
+        {
+          "role": "assistant",
+          "content": "改到下周工作日茶歇，今晚完全空出来休息。周末保持低社交节奏。"
+        }
+      ],
+      "implicit_signal": "需要定期独处恢复精力"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周末想拍照，但热门打卡点拍出来千篇一律，没什么意思。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐废弃铁路和湖边船坞，有工业风和自然元素，能凑出不同素材组图。"
+        }
+      ],
+      "implicit_signal": "偏好能产出创作素材的活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看到护肤品宣称“28天焕肤”，价格不高，但配方表只有基础保湿成分。"
+        },
+        {
+          "role": "assistant",
+          "content": "保湿可买，但焕肤效果不可信。成分不支持强效宣称。"
+        }
+      ],
+      "implicit_signal": "规避营销话术和夸大宣传"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友推荐网红brunch，说温哥华必吃榜第一，但排队两小时且为出片设计。"
+        },
+        {
+          "role": "assistant",
+          "content": "附近有评分高但小众的早午餐店，不用排队，菜品实在。"
+        }
+      ],
+      "implicit_signal": "规避网红化和过度营销的场所"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看中背包，联名款价格翻倍，共享表格里算了下超预算55刀。"
+        },
+        {
+          "role": "assistant",
+          "content": "同品牌功能基础款便宜30%，面料相同。或者等过季折扣买联名款。"
+        }
+      ],
+      "implicit_signal": "规避过度商业化的溢价产品并坚持预算"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次看咖啡机测评只说推荐，没说适合一天一杯的早班族。"
+        },
+        {
+          "role": "assistant",
+          "content": "胶囊机方便但耗材贵；半自动成本低但需磨豆。你早上时间紧，胶囊机更合适。"
+        }
+      ],
+      "implicit_signal": "需要结论结合场景和限制"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看中两款保温杯：不锈钢和陶瓷内胆，价差20刀。"
+        },
+        {
+          "role": "assistant",
+          "content": "不锈钢耐用但易留味，陶瓷保温稍差但易清洗。常泡茶选陶瓷，注重耐摔选不锈钢。"
+        }
+      ],
+      "implicit_signal": "产品选择考虑长期维护和使用成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次体验课没找到取消入口，错过退款期限，最后发现也没人确认。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次订课前先确认退款政策。这个体验课官网明确写开课前24小时可免费取消。"
+        }
+      ],
+      "implicit_signal": "优先选取消规则透明的服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "数据分析在线课视频太长，看到一半就分心，没有作业反馈。"
+        },
+        {
+          "role": "assistant",
+          "content": "改看案例模块，每节后做小练习。或者选每周有直播问答的小课。"
+        }
+      ],
+      "implicit_signal": "学习需要短反馈和实操案例"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "两天假期，在热门海边和冷门山区之间选。日历只剩这周末。"
+        },
+        {
+          "role": "assistant",
+          "content": "山区人少，最近天气凉爽适合徒步。住宿选可免费取消的选项。"
+        }
+      ],
+      "implicit_signal": "旅行选安静地点且住宿可取消"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "经常自己做饭，周末想出去吃，预算20刀以内，不要太油腻。回家路上顺便解决。"
+        },
+        {
+          "role": "assistant",
+          "content": "越南河粉汤清淡配春卷18刀，或中餐面馆素面加小菜。都在回家路线上。"
+        }
+      ],
+      "implicit_signal": "饮食健康不油腻且在回家路线上"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看到大型俱乐部脱口秀，要买酒水最低消费，回复确认等了36分钟。"
+        },
+        {
+          "role": "assistant",
+          "content": "社区小剧场即兴喜剧票价低且无强制消费，氛围更真实。"
+        }
+      ],
+      "implicit_signal": "娱乐选小型真实场地，避免强制消费"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想换手机，旧品牌导出数据麻烦，且玩游戏发热后掉帧严重。"
+        },
+        {
+          "role": "assistant",
+          "content": "选Android机型便于数据转移，推荐有跨平台同步和细致隐私设置的品牌。"
+        }
+      ],
+      "implicit_signal": "技术产品选跨平台且隐私保护完善的"
+    },
+    {
+      "interaction_id": "hidden_indirect_022",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "购物网站注册要求绑定手机号和社交账号才能发货。"
+        },
+        {
+          "role": "assistant",
+          "content": "换一家支持访客下单或只需邮箱的网站，保护个人信息边界。"
+        }
+      ],
+      "implicit_signal": "只在必要时提供个人信息"
+    }
+  ]
+}

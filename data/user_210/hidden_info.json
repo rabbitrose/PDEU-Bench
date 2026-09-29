@@ -1,0 +1,428 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_210",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:37:19",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 18,
+  "composition": {
+    "episodic_preference_trace": 18
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_013",
+      "hidden_indirect_016"
+    ],
+    "content": [
+      "hidden_indirect_003",
+      "hidden_indirect_015"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_017"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_007",
+      "hidden_indirect_012"
+    ],
+    "entertainment": [
+      "hidden_indirect_010"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_008",
+      "hidden_indirect_014",
+      "hidden_indirect_018"
+    ],
+    "food": [
+      "hidden_indirect_006",
+      "hidden_indirect_016"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_009"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_010"
+    ],
+    "learning": [
+      "hidden_indirect_007",
+      "hidden_indirect_015"
+    ],
+    "privacy": [
+      "hidden_indirect_004",
+      "hidden_indirect_014"
+    ],
+    "product": [
+      "hidden_indirect_011"
+    ],
+    "role_context": [
+      "hidden_indirect_013"
+    ],
+    "service": [
+      "hidden_indirect_002",
+      "hidden_indirect_008"
+    ],
+    "technology": [
+      "hidden_indirect_005",
+      "hidden_indirect_012",
+      "hidden_indirect_018"
+    ],
+    "travel": [
+      "hidden_indirect_009",
+      "hidden_indirect_017"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周买了个无线鼠标，结果用了三天就坏了，回收时发现保修需要实名注册，我直接把包装退了没再补登。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次选同类工具时，我先筛选保修政策免注册的品牌，比如罗技入门款或雷柏，再把每项售后条款列成对比表让你勾选最低风险方案。"
+        }
+      ],
+      "implicit_signal": "优先选择低维护、预算保守且可追踪的购买路径，而非短期便利"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天想用在线修图工具处理几张截图，注册时它要求读取通讯录和位置，我直接关掉了页面。"
+        },
+        {
+          "role": "assistant",
+          "content": "我重新找了三款本地处理的修图软件，ArtRage免费版、Krita、Photopea离线模式，每款数据收集清单都标注在笔记开头，你选一个再下载。"
+        }
+      ],
+      "implicit_signal": "需要服务方提前明示数据收集范围才能决策"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次推荐的笔记本整理方法，只写了优点，没说万一同步冲突该怎么办，我后来文档丢失了两段。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次改推Obsidian+本地版Syncthing的方案，最小披露：无需云端账户；可用方案：每日自动备份至本地盘；风险残留：重启时可能滞后；回退动作：手动导出.md到U盘。"
+        }
+      ],
+      "implicit_signal": "交付必须包含风险残留与回退动作，不接受仅有优点的推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "家庭群消息里提到下周聚餐，我想把时间记到日历，但不想让第三方同步工具读取群成员的姓名和关系。"
+        },
+        {
+          "role": "assistant",
+          "content": "我用本地日历新建事件，标题只写“聚餐·第3组”，参与人字段留空，位置选“里昂第二区私定餐馆”，全程不存任何真实身份。"
+        }
+      ],
+      "implicit_signal": "默认脱敏联系人，避免暴露家庭内部信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想用一个待办清单App，下载后必须实名才能创建第一条任务，我直接卸载了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我列出三个匿名可用选项：Todo.txt仅本地文件、TaskCoach离线版、StandardNotes纯文本同步，第一项无需任何注册，直接写入手机。"
+        }
+      ],
+      "implicit_signal": "拒绝对工具提供过多个人信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "本来计划下班自己做沙拉，结果超市搬家，绕路多跑了20分钟，到家已经八点半，晚饭全乱了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次在日历中规划两套方案：首选小区转角菜店（步行5分钟），备选地铁口自动售菜柜（24小时），无论哪个都不超15分钟采购。"
+        }
+      ],
+      "implicit_signal": "避免临时变动影响当天的饮食执行"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天想学一个Excel新函数，打开的教程网站必须先登录邮箱才能看完整内容，我关了页面。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找到另一份PDF版详解函数手册可离线保存，xxz.top/file/excel_vlookup_zh.pdf，直接下载到笔记app里，不需要任何账户。"
+        }
+      ],
+      "implicit_signal": "偏好信息本地处理，不接受要求联网注册的学习资源"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "用了一个月的在线笔记同步服务，今天想停用，发现取消入口藏在财务设置第三层，完全没有提醒邮件，感觉不透明。"
+        },
+        {
+          "role": "assistant",
+          "content": "我整理出三家透明取消服务：StandardNotes（设置内直接关闭）、Joplin（免费开源无需注册）、Notesnook（取消在账户页面首层），每家的取消路径和取回数据步骤已做好截图。"
+        }
+      ],
+      "implicit_signal": "服务需要明确取消规则方可采纳"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次出差，因为会议提前结束，回程火车只差15分钟，改签窗口排了25人，我只能多等两小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次出发前我会预定两个车次，第一程后预留至少40分钟缓冲；酒店也选免费取消的选项，约在里昂Part-Dieu火车站周边500米内。"
+        }
+      ],
+      "implicit_signal": "行程方案必须包含缓冲时间和可取消的住宿"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友推了一个周末小型艺术展，进场发现每个展品旁边都有销售二维码，展区窄到几乎贴在墙上，我15分钟就出来了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我再筛选里昂本月的展览清单，排除所有现场有直接销售或要求扫码注册的，挑出一个本地画廊免费开放日，单日预约上限30人。"
+        }
+      ],
+      "implicit_signal": "不接受强营销或拥挤的娱乐活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买一根新手机充电线，一个品牌要求首次使用先下载App并上传位置才能享受保修，我直接选了另一个不支持该功能的牌子。"
+        },
+        {
+          "role": "assistant",
+          "content": "我筛选两个品牌：Baseus通用线（无需App验证）、Anker标准线（保修走亚马逊，只需要订单号），它们的评测已排除了需注册的场景。"
+        }
+      ],
+      "implicit_signal": "产品选择先排除必须上传敏感资料的方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "这段时间用了一款笔记本工具同步手机和电脑，昨天发现导出为纯文本的选项是灰色的，客服说只支持应用内查看。"
+        },
+        {
+          "role": "assistant",
+          "content": "我已经转用Joplin，免费开源，支持Markdown导出和OneDrive手动同步，数据文件格式标准，任何一个设备都可以直接读取文件夹。"
+        }
+      ],
+      "implicit_signal": "工具必须支持跨平台同步并允许数据导出"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月预算超了，因为临时买了一双打折跑鞋，结果发现穿着不舒服，退货运费花了8欧，月底生活费差点不够。"
+        },
+        {
+          "role": "assistant",
+          "content": "这个月先列好必须品清单：日常食材、洗衣液、交通卡，每项只留一个品牌。运动装备推迟到下季度，期间在本地试穿后再线上找折扣。"
+        }
+      ],
+      "implicit_signal": "在预算紧张时优先保证必要购物，推迟可选消费"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一个健康追踪App说可以配合我的运动手环，但隐私政策里没写明步数数据是否会被出售给保险公司，我还没绑定。"
+        },
+        {
+          "role": "assistant",
+          "content": "我查到该App在欧洲的DPR声明必须写明用途，但确实未写明第三方共享。我暂用Apple自带健康（数据只在设备端处理）或首信HealthDevice（开源，数据强制本地），等这家补充条款再考虑。"
+        }
+      ],
+      "implicit_signal": "仅在服务说明数据边界后才考虑使用"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你给了一个UX设计书单，只有书名和作者，我读了前五章不知道哪些理论能用在工作交接中。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次换成《Designing Interfaces》第二章，我把每个设计原则配上一段真实案例拆解，PDF中可以直接加注释，同时在末尾列出你最近项目的3个复用点。"
+        }
+      ],
+      "implicit_signal": "学习材料要求附带可操作标准与示例"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "前天晚上加班后想随便吃点，外卖平台推荐了一家沙拉店，起送价12欧再加4欧配送费，我宁可回家煮了冻蔬菜。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把下班常走路线上的平价餐馆标好：CornerBistro例汤3.5欧、面包店三明治4.2欧，再按冰箱食材做两款5分钟自炊菜单贴在厨房，方便你随手拿。"
+        }
+      ],
+      "implicit_signal": "预算有限时优先选择本地小店或自炊"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次订了一家民宿，页面说很安静，结果隔壁在装修，早上七点就吵醒，退房时前台不给全额退款，说超过取消期限了。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后订住宿预留三晚缓冲：第一晚选Booking免费取消的上铺间，入住当天先看环境，若不满意后两晚可即时更换，并且从开始就选择安静特惠过滤条件。"
+        }
+      ],
+      "implicit_signal": "住宿和交通优先考虑安静与可取消条款"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "用了两年的记账App突然宣布下架，导出数据只能转到它自己的新App，而且只支持在线账户绑定，我不想再绑。"
+        },
+        {
+          "role": "assistant",
+          "content": "我现在把所有历史数据先导出CSV到本地，再迁移到MoneyLine免费版：支持CSV导入和本地备份，账户字段可以自定义，不要求绑定手机号。"
+        }
+      ],
+      "implicit_signal": "软件需要明确数据迁移方式才考虑长期使用"
+    }
+  ]
+}

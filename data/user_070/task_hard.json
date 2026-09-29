@@ -1,0 +1,84 @@
+{
+  "user_id": "user_070",
+  "task": {
+    "task_id": "task_hard",
+    "title": "优化区域锦标赛训练计划",
+    "daily_life_domain": "health",
+    "scenario": "马库斯是所在高中篮球队的队长。他们将在两周后参加地区锦标赛。他需要制定一个密集的训练计划，平衡休息、技能训练、对抗赛和模拟比赛，以确保在锦标赛中达到最佳状态。他还需要与教练协调，并确保队友们能兼顾学业出席训练。",
+    "user_goal": "制定一个为期14天的详细练习计划，以最大化球队在锦标赛中的表现，同时防止受伤和疲劳。",
+    "why_complex": "需要平衡多个因素：训练负荷的周期化、个别球员的技术差距、团队动态、学业时间表（学习时间）和恢复。还必须考虑教练的理念以及自己作为队长的角色，以激励和执行该计划。",
+    "constraints": [
+      "时间：距离锦标赛还有14天。练习时间：工作日下午3:00-5:30可使用学校体育馆，但有些日子有早放学或考试。预算有限，没有额外资金用于外部训练。后勤：需要考虑球员的出勤情况。健康：避免过度训练；必须包含休息日。"
+    ],
+    "required_reasoning_steps": [
+      "利用近期比赛数据和教练反馈评估当前球队的优势和弱点。",
+      "确定关键的练习重点领域（如防守、罚球、快攻）。",
+      "确定14天内最佳的训练负荷进度（强度/量），包括锦标赛前的减量训练。",
+      "在可用体育馆时间和球员出勤范围内安排具体的训练、对抗赛和录像分析课程。",
+      "规划与团队的沟通（如共享日历），并分配队长主导的训练。",
+      "纳入恢复方案（拉伸、冰浴）和营养提醒。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "当前球队伤病情况。个别球员的练习出勤时间表（考试、家庭活动）。教练对重点领域的意见。可用体育馆设备及任何冲突事件。",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "一份为期14天的逐日练习计划（表格或列表），包含时间段、活动、强度水平和休息日。包括每个阶段的理由及其与锦标赛准备的关联性。",
+    "success_criteria": [
+      "计划在限制条件（时间、设施、球员出勤）下切实可行，包含适当的周期化和休息。教练同意，团队成员可以执行。休息日无比赛安排。",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "忽视学业承诺导致冲突。忽略球员疲劳导致受伤。提供过于通用的计划而未针对球队具体弱点。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "weather",
+        "food",
+        "navigation",
+        "shopping"
+      ],
+      "domain_descriptions": {
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 6,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 8,
+      "human_verifier_estimation_basis": [
+        "domain=health",
+        "source_domains_capped=4",
+        "reasoning_steps_capped=10",
+        "constraints_capped=6",
+        "decision_points_capped=4",
+        "information_items_capped=3",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=27.0",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "马库斯·约翰逊",
+      "age": 17,
+      "gender": "男性"
+    }
+  }
+}

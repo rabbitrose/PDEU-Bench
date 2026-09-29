@@ -1,0 +1,86 @@
+{
+  "user_id": "user_085",
+  "task": {
+    "task_id": "task_hard",
+    "title": "选择并迁移一个工具，同时保留数据和隐私边界",
+    "daily_life_domain": "technology",
+    "scenario": "用户需要在未来 7 天内完成一个技术相关决策，但必须同时照顾预算、时间、可用性和任务边界。",
+    "user_goal": "形成一个可执行的技术计划，并明确首选方案、备选方案、成本、风险和下一步行动。",
+    "why_complex": "需要跨多个信息源获取候选、核对关键字段、处理证据冲突并形成可执行结论。",
+    "constraints": [
+      "预算上限暂定为 235 本地货币单位，除非能明确说明超支收益。",
+      "时间窗口：未来 7 天内。",
+      "不暴露不必要的联系人、精确住址、健康或财务细节。"
+    ],
+    "required_reasoning_steps": [
+      "抽取用户目标、硬约束和约束优先级。",
+      "确定需要调用哪些主题 API 获取候选信息、日程、地点、预算或资料。",
+      "对候选项按预算、时间、隐私和交付要求进行过滤。",
+      "比较剩余方案的收益、风险、维护成本和不确定点。",
+      "选择首选方案并给出至少一个可执行备选。",
+      "生成最终交付物，并列出下一步需要用户确认的信息。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "用户当天可用时间的精确区间。",
+      "是否有不可变预算上限。",
+      "候选项的可用性、取消规则或开放时间。",
+      "是否存在同行者或家庭成员限制。",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "一个包含首选方案、备选方案、成本估算、风险提示、隐私处理和下一步行动的结构化计划。",
+    "success_criteria": [
+      "计划符合预算、时间和隐私约束。",
+      "最终计划包含可执行下一步和备选方案。",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "推荐无法在时间或预算内执行的方案。",
+      "暴露过多敏感信息或要求不必要注册。",
+      "没有说明不确定信息和需要确认的问题。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 7,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 7,
+      "human_verifier_estimation_basis": [
+        "domain=technology",
+        "source_domains_capped=1",
+        "reasoning_steps_capped=9",
+        "constraints_capped=5",
+        "decision_points_capped=4",
+        "information_items_capped=6",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=23.9",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Amelia Brooks",
+      "age": 43,
+      "gender": "非二元"
+    }
+  }
+}

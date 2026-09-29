@@ -1,0 +1,217 @@
+{
+  "user_id": "user_078",
+  "explicit_preferences": {
+    "user_profile": "一位专门研究文档管理系统的软件工程师，与图形设计师紧密合作以实现设计的界面",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Alex Chen",
+        "age": 34,
+        "gender": "男性",
+        "location": "加利福尼亚州旧金山",
+        "languages": [
+          "英语",
+          "普通话（会话水平）"
+        ],
+        "education_level": "计算机科学学士",
+        "occupation": "高级软件工程师",
+        "industry": "企业软件（文档管理）",
+        "seniority": "资深",
+        "household": "独自住在一间一居室公寓",
+        "life_stage": "早期职业专业人士，无子女"
+      },
+      "physical_profile": {
+        "height_cm": 178,
+        "general_appearance": "身材苗条，黑色短发，戴眼镜，通常穿着牛仔裤和T恤",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "注重细节且务实，喜欢解决复杂问题，但重视合作。",
+        "big_five": {
+          "openness": 80,
+          "conscientiousness": 85,
+          "extraversion": 50,
+          "agreeableness": 60,
+          "neuroticism": 30
+        },
+        "strengths": [
+          "分析性思维",
+          "耐心",
+          "彻底性"
+        ],
+        "weaknesses": [
+          "可能过于挑剔",
+          "难以应对模糊性"
+        ],
+        "values": [
+          "效率",
+          "清晰",
+          "可靠性"
+        ],
+        "motivations": [
+          "构建简化工作流程的系统",
+          "持续学习"
+        ],
+        "stress_triggers": [
+          "需求不明确",
+          "最后一刻的变更",
+          "不一致的API"
+        ]
+      },
+      "background": {
+        "early_life": "在湾区长大，从小对计算机感兴趣",
+        "education": "加州大学伯克利分校计算机科学学士",
+        "career_progression": "从初创公司起步，后来转到一家专注于文档管理的大型企业",
+        "personal_life": "有一群关系紧密的大学朋友，喜欢做开源文档格式的副业项目"
+      },
+      "lifestyle": {
+        "health": "每周跑步两次，在家做简餐",
+        "reading": "科技博客，偶尔看科幻小说",
+        "social": "周末和朋友一起活跃，玩桌游之夜"
+      },
+      "interests": [
+        "软件架构",
+        "排版",
+        "极简设计",
+        "远足",
+        "桌游"
+      ],
+      "explicit_preferences": {
+        "content_preferences": [
+          "技术文章",
+          "文档",
+          "代码片段",
+          "关于软件开发和设计的播客",
+          "内容必须符合该用户独特的工作模式：自托管工程师模式：官方文档、简洁的叙述、先考虑故障模式。",
+          "拒绝通用的助手框架：不要推销没有退出策略的SaaS便利性。"
+        ],
+        "product_preferences": [
+          "个人：苹果产品，VS Code，Notion",
+          "工作：Figma，GitHub，Jira",
+          "产品应通过用户自身的权衡视角来选择：约束、集成风险、迁移路径、回滚计划。"
+        ],
+        "service_preferences": [
+          "云：AWS",
+          "娱乐：Spotify，Netflix",
+          "只有当服务保留此决策优先级时才可接受：API稳定性、数据所有权和维护负担优先于功能亮点。"
+        ],
+        "learning_preferences": [
+          "动手教程",
+          "官方文档",
+          "LeetCode"
+        ],
+        "travel_preferences": [
+          "城市目的地",
+          "美食和文化",
+          "避开拥挤的旅游景点"
+        ],
+        "food_preferences": [
+          "亚洲菜（拉面，点心）",
+          "偶尔素食选择"
+        ],
+        "entertainment_preferences": [
+          "科幻电影",
+          "独立游戏",
+          "解谜游戏",
+          "卡坦岛"
+        ],
+        "technology_preferences": [
+          "开源爱好者",
+          "服务器用Linux",
+          "日常使用macOS"
+        ],
+        "privacy_preferences": [
+          "使用VPN",
+          "偏好开源隐私工具",
+          "避免社交媒体分享"
+        ],
+        "budget_preferences": [
+          "愿意为优质工具和体验花钱",
+          "在基本开销上节俭"
+        ],
+        "personalization_directives": {
+          "style_contract": "自托管工程师模式：官方文档，最简说明，优先考虑故障模式。",
+          "decision_priority": "API稳定性、数据所有权和维护负担胜过功能亮点。",
+          "evidence_contract": "官方文档和问题跟踪器优先级高于博客摘要。",
+          "format_contract": "约束、集成风险、迁移路径、回滚计划。",
+          "anti_default_assistant_behavior": "不要出售没有退出策略的SaaS便利。",
+          "distinctive_quirks": [
+            "业余项目可以接受粗糙的用户体验，只要自托管是干净的。",
+            "桌游之夜应优化桌面流程，而非新奇性。",
+            "熟悉GitHub/Jira很有用，但不是必须的。"
+          ],
+          "hard_avoidances": [
+            "供应商营销宣称",
+            "封闭数据格式",
+            "含糊的安全性保证"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "dislikes": [
+          "设计不佳的用户界面",
+          "不一致的API",
+          "臃肿软件",
+          "专有锁定"
+        ],
+        "constraints": [
+          "需要高效的解决方案",
+          "必须在开源理想与企业需求之间取得平衡"
+        ]
+      },
+      "communication_style": {
+        "general": "直接且精准，喜欢清晰的解释",
+        "technical_jargon": "正确使用，期望他人也能理解",
+        "preferred_medium": "复杂话题采用书面沟通"
+      },
+      "decision_making": {
+        "style": "逻辑驱动且数据驱动",
+        "process": "查阅文档和社区，需要时进行用户研究"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "正在评估文档管理软件功能",
+          "比较API",
+          "设计系统架构"
+        ],
+        "preference_conflicts": [
+          "偏好开源但受企业需求限制",
+          "重视隐私但需要云服务"
+        ],
+        "ambiguity_to_preserve": [
+          "具体地点、公司名称、真实项目详情应为虚构",
+          "谨慎乐观等性格特征可能含糊"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:44",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "专业、友好",
+            "response_length": "简洁但全面；按需提供细节",
+            "evidence_expectation": "喜欢引用官方文档或参考资料",
+            "formatting": "偏好带项目符号和代码块的条理化回复",
+            "proactive_behavior": "提出改进或替代方案",
+            "things_to_avoid": [
+              "模糊的陈述",
+              "过多的闲聊",
+              "过度概括"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "评估新功能的文档管理API选项",
+            "为业余项目设置自托管文档协作平台",
+            "和朋友计划一个桌游之夜"
+          ]
+        }
+      }
+    }
+  }
+}

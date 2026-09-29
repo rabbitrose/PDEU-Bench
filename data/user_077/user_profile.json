@@ -1,0 +1,289 @@
+{
+  "user_id": "user_077",
+  "explicit_preferences": {
+    "user_profile": "热情追捧南非语音乐并死忠支持Spoegwolf",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Marinda van der Merwe",
+        "age": 29,
+        "gender": "女性",
+        "location": "南非西开普省斯坦林布什",
+        "languages": [
+          "南非荷兰语",
+          "英语"
+        ],
+        "education_level": "学士学位",
+        "occupation": "数字营销经理",
+        "industry": "市场营销与广告",
+        "seniority": "中级",
+        "household": "单身，租住公寓独居",
+        "life_stage": "年轻专业人士，事业有成，社交活跃"
+      },
+      "physical_profile": {
+        "height_cm": 168,
+        "general_appearance": "运动型身材，古铜色皮肤，长发常扎成马尾，眼神富有表现力，穿着休闲但时尚",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "热情、有创造力且外向。一个在音乐和社群中投入情感的忠实粉丝。",
+        "big_five": {
+          "openness": 85,
+          "conscientiousness": 65,
+          "extraversion": 75,
+          "agreeableness": 80,
+          "neuroticism": 35
+        },
+        "strengths": [
+          "与音乐和艺术的深层情感连接",
+          "在粉丝社群中拥有出色的人脉",
+          "有条理且积极主动地策划活动"
+        ],
+        "weaknesses": [
+          "对她不喜欢的音乐可能过分挑剔",
+          "倾向于在演唱会门票和周边商品上超支",
+          "有时对自己的观点固执己见"
+        ],
+        "values": [
+          "艺术中的真实性",
+          "社群与共享体验",
+          "保护南非语文化"
+        ],
+        "motivations": [
+          "发现新的南非语音乐艺术家",
+          "参加现场演出",
+          "支持本土人才"
+        ],
+        "stress_triggers": [
+          "音响效果差的拥挤场馆",
+          "对她最喜欢的乐队的负面评论",
+          "日程冲突阻碍参加演唱会"
+        ]
+      },
+      "background": {
+        "hometown": "西开普省帕尔",
+        "family": "父母（均为教师），一个住在约翰内斯堡的弟弟",
+        "education": "斯泰伦博斯大学传播学文学士",
+        "career_path": "从社交媒体助理起步，晋升为一家精品生活方式品牌代理机构的数字营销经理",
+        "key_life_events": [
+          "19岁时在斯泰伦博斯一个小场馆首次参加Spoegwolf演唱会",
+          "在南非语音乐节（如Woordfees、Aardklop）担任志愿者",
+          "2018年创办Spoegwolf粉丝博客"
+        ]
+      },
+      "lifestyle": {
+        "daily_routine": "每周两天在家工作，三天在办公室。晚上常去本地音乐场所或练习吉他。周末包括徒步、与朋友早午餐或参加演出。",
+        "social_life": "活跃于一个品味相投的密友圈子。定期参加斯泰伦博斯音乐圈子聚会。",
+        "habits": [
+          "通勤和工作时听音乐（歌单随心情变化）",
+          "收藏黑胶唱片和乐队周边",
+          "在Instagram上发布演唱会照片和评论"
+        ],
+        "environment": "住在大学校园附近的一间工作室公寓，装饰有音乐海报和独立艺术品。"
+      },
+      "interests": [
+        "南非语摇滚和另类音乐（Spoegwolf、Die Heuwels Fantasties、Fokofpolisiekar）",
+        "独立音乐节",
+        "摄影（尤其是演唱会摄影）",
+        "徒步和户外探险",
+        "阅读（当代小说和传记）",
+        "学习电吉他"
+      ],
+      "explicit_preferences": {
+        "content_preferences": [
+          "音乐类型：南非荷兰语摇滚、另类、独立、民谣",
+          "视频内容：音乐纪录片、演唱会直播、乐队幕后花絮",
+          "阅读材料：音乐博客、南非音乐人传记、艺术文化杂志",
+          "内容必须匹配该用户的独特工作模式：南非荷兰语独立策展人模式：本地质感、感官细节、中等长度。",
+          "拒绝通用助手框架：不要让推荐感觉像算法或全球通用。"
+        ],
+        "product_preferences": [
+          "电子产品：高品质耳机、便携蓝牙音箱、唱机转盘",
+          "服装：乐队T恤、连帽衫、牛仔夹克",
+          "家居装饰：黑胶唱片收纳架、演唱会海报相框、特色灯具",
+          "产品应通过用户自己的权衡视角进行选择：心情、路线/曲目单、本地供应商、社交时刻、备份。"
+        ],
+        "service_preferences": [
+          "流媒体：Apple Music、SoundCloud（用于独立艺人）、Spotify（歌单策划）",
+          "票务：Computicket、Webtickets（本地活动）",
+          "配送：Takealot（商品）、Mr Delivery（食品）",
+          "服务只有在保留这一决策优先级时才可接受：当地文化、氛围连贯性和音乐发现胜过效率。"
+        ],
+        "learning_preferences": {
+          "subjects": [
+            "音乐制作",
+            "摄影",
+            "社交媒体营销"
+          ],
+          "formats": [
+            "在线课程（Udemy）",
+            "工作坊",
+            "YouTube教程"
+          ]
+        },
+        "travel_preferences": {
+          "destinations": [
+            "西开普省沿海城镇",
+            "纳米比亚的文化节",
+            "欧洲独立音乐节"
+          ],
+          "travel_style": [
+            "经济实惠",
+            "冒险专注",
+            "社交（与朋友）"
+          ]
+        },
+        "food_preferences": {
+          "cuisines": [
+            "南非式（烧烤）",
+            "意大利语",
+            "泰国"
+          ],
+          "dietary": [
+            "杂食",
+            "喜欢精酿啤酒和葡萄酒"
+          ]
+        },
+        "entertainment_preferences": {
+          "movies": [
+            "剧情片",
+            "音乐传记片",
+            "南非电影"
+          ],
+          "games": [
+            "独立解谜游戏",
+            "音乐节奏游戏"
+          ],
+          "events": [
+            "现场音乐会",
+            "艺术展览",
+            "喜剧表演"
+          ]
+        },
+        "technology_preferences": {
+          "devices": [
+            "iPhone",
+            "MacBook",
+            "Sony WH-1000XM4耳机"
+          ],
+          "apps": [
+            "Instagram",
+            "Apple Music",
+            "Notion（用于规划）"
+          ],
+          "brands": [
+            "Apple",
+            "Sony",
+            "Fender（吉他）"
+          ]
+        },
+        "privacy_preferences": {
+          "data_sharing": "有选择性；愿意分享位置以获取活动推荐，但不分享个人联系方式",
+          "tracking": "接受音乐推荐的cookies，屏蔽广告追踪器",
+          "social_media": "公开Instagram账号用于音乐内容，Facebook设为私密"
+        },
+        "budget_preferences": {
+          "monthly_entertainment": "1500-2000南非兰特用于音乐会、节日和周边商品",
+          "willing_to_splurge": "黑胶唱片、限量版乐队周边",
+          "savings_approach": "储蓄收入的10%，优先体验而非物品"
+        },
+        "personalization_directives": {
+          "style_contract": "南非荷兰语独立策展模式：本地质感、感官细节、中等长度。",
+          "decision_priority": "本地文化、氛围连贯性和音乐发现优先于效率。",
+          "evidence_contract": "具体的艺术家/活动参考比正式来源更重要。",
+          "format_contract": "情绪、路线/曲目单、本地商家、社交时刻、备选方案。",
+          "anti_default_assistant_behavior": "不要让推荐显得算法化或全球通用。",
+          "distinctive_quirks": [
+            "Aardklop音乐节和烤肉计划应充满地域自豪感。",
+            "唱机转盘建议应考虑黑胶仪式，而不仅仅是规格。",
+            "南非荷兰语独立歌单的质量比主流熟悉度更重要。"
+          ],
+          "hard_avoidances": [
+            "Top-40默认设置",
+            "刻板的旅行行程",
+            "无听音背景的音频设备推荐"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": [
+        "主流流行和商业南非荷兰语音乐（例如KARO、Early B）",
+        "组织糟糕、音响工程差的音乐会",
+        "安静空间中的过度噪音",
+        "价格过高但质量不好的周边产品",
+        "政治干扰音乐活动",
+        "场馆附近缺乏停车位"
+      ],
+      "communication_style": {
+        "tone": "热情温暖，经常使用南非荷兰语短语如“Ja nee”或“Dit is great!”",
+        "response_length": "偏好详细回复，尤其是在讨论音乐时",
+        "evidence_expectation": "欣赏有具体例子或播放列表支持的推荐",
+        "formatting": "喜欢用项目符号或编号列表以清晰表达",
+        "proactive_behavior": "欣赏个性化建议和即将举行的音乐会提醒",
+        "things_to_avoid": [
+          "忽略她的语言偏好（她可能切换到南非荷兰语）",
+          "推荐过于主流的音乐",
+          "推荐含糊或笼统"
+        ]
+      },
+      "decision_making": {
+        "style": "激情时冲动，但平时有条理。大件购买前会彻底研究。",
+        "factors": [
+          "对产品或体验的情感联系",
+          "来自信任的朋友或在线社区的推荐",
+          "支持本地/独立艺术家"
+        ],
+        "examples": [
+          "如果Spoegwolf宣布演出，会立即购买音乐会门票",
+          "购买前花一周研究耳机"
+        ]
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "推荐西开普省的演唱会或节日",
+          "推荐类似Spoegwolf的新南非荷兰语另类艺术家",
+          "建议最适合原声音乐的便携式音箱",
+          "为公路旅行创建播放列表"
+        ],
+        "preference_conflicts": [
+          "喜欢小型场馆演出和大型节日（预算/时间困境）",
+          "想支持新艺术家但又忠于老牌乐队",
+          "偏好数字流媒体但也投资黑胶唱片"
+        ],
+        "ambiguity_to_preserve": [
+          "她如何平衡工作和赶场音乐会",
+          "她在南非荷兰语另类音乐中的确切品味（子流派）",
+          "她关于语言和文化的政治观点"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:44",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "对话式但有见地",
+            "response_length": "中长篇（3-5段）",
+            "evidence_expectation": "尽可能提供链接或来源",
+            "formatting": "推荐使用列表，叙述使用段落",
+            "proactive_behavior": "通知新专辑发行和本地巡演日期",
+            "things_to_avoid": [
+              "过度推销的语言",
+              "忽视南非荷兰语音乐场景",
+              "假设她喜欢所有南非荷兰语音乐"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "计划去Aardklop音乐节的周末公路旅行",
+            "选择并购买一台适合黑胶收藏的唱机转盘",
+            "用南非荷兰语独立歌单组织一场生日烤肉派对"
+          ]
+        }
+      }
+    }
+  }
+}

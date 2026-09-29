@@ -1,0 +1,85 @@
+{
+  "user_id": "user_074",
+  "task": {
+    "task_id": "task_hard",
+    "title": "比较多个候选商品并选择长期成本更稳的方案",
+    "daily_life_domain": "shopping",
+    "scenario": "Noah Keller 需要在本周工作日晚间比较一个购物决策。修订后任务聚焦 3 个候选商品的长期成本、质感和维护风险，不再要求创建购物车、提醒或完整采购执行。",
+    "user_goal": "完成「比较多个候选商品并选择长期成本更稳的方案」，并给出满足约束、证据要求和截止时间的可执行结果。",
+    "why_complex": "仍需兼顾预算、长期成本和个人表达，但范围压缩为三选一商品判断。",
+    "constraints": [
+      "预算上限 185 本地货币单位。",
+      "时间窗口为本周工作日晚间。",
+      "不暴露精确住址、财务或私人细节。",
+      "质感、社区感和长期成本优先于销量榜。"
+    ],
+    "required_reasoning_steps": [
+      "确认商品必须功能和可接受的审美边界。",
+      "比较 3 个候选商品的价格、评分、评论数和配送。",
+      "估算长期维护、耗材或替换成本。",
+      "选出首选和安静备选。",
+      "用 source_info 商品记录校准价格和评价信号。",
+      "输出购买前检查清单，不直接下单。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "3 个候选商品的价格、评分、评论数和配送条件。",
+      "耗材、保修或维护成本。",
+      "退换货规则。",
+      "购买前需要确认的隐私和地址信息。"
+    ],
+    "expected_deliverable": "商品比较表：3 个候选、首选、安静备选、长期成本、灵感价值、风险和购买前检查。",
+    "success_criteria": [
+      "至少比较 3 个候选商品。",
+      "推荐不超过 185 本地货币单位，或明确超支收益。",
+      "不创建购物车或暴露地址。",
+      "最终方案至少引用 2 条 SandboxDB/source_info 商品记录。"
+    ],
+    "potential_failure_modes": [
+      "审美描述替代了成本判断。",
+      "忽略耗材和维护成本。",
+      "过早进入购买流程。",
+      "候选商品评价信号不足。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 5,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 6,
+      "human_verifier_estimation_basis": [
+        "domain=shopping",
+        "source_domains_capped=1",
+        "reasoning_steps_capped=6",
+        "constraints_capped=5",
+        "decision_points_capped=3",
+        "information_items_capped=4",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=18.0",
+        "hard_revision: 结构较轻，低于主体峰值但仍高于 easy"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Noah Keller",
+      "age": 29,
+      "gender": "女性"
+    }
+  }
+}

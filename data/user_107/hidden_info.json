@@ -1,0 +1,470 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_107",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:50:40",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_006",
+      "hidden_indirect_011",
+      "hidden_indirect_013",
+      "hidden_indirect_017"
+    ],
+    "content": [
+      "hidden_indirect_002"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_015"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_005",
+      "hidden_indirect_007"
+    ],
+    "entertainment": [
+      "hidden_indirect_013",
+      "hidden_indirect_020"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_008",
+      "hidden_indirect_018",
+      "hidden_indirect_019"
+    ],
+    "food": [
+      "hidden_indirect_008",
+      "hidden_indirect_017"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_012"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_009",
+      "hidden_indirect_010",
+      "hidden_indirect_016"
+    ],
+    "learning": [
+      "hidden_indirect_006",
+      "hidden_indirect_019"
+    ],
+    "privacy": [
+      "hidden_indirect_009",
+      "hidden_indirect_018"
+    ],
+    "product": [
+      "hidden_indirect_004",
+      "hidden_indirect_014"
+    ],
+    "role_context": [
+      "hidden_indirect_012",
+      "hidden_indirect_020"
+    ],
+    "service": [
+      "hidden_indirect_005",
+      "hidden_indirect_014"
+    ],
+    "technology": [
+      "hidden_indirect_010",
+      "hidden_indirect_016"
+    ],
+    "travel": [
+      "hidden_indirect_007",
+      "hidden_indirect_015"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次给科技客户提案用了豪华设计模板，结果花了34小时改版，客户反而说太花哨。多付了一笔费用给设计师。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次改用简洁版式，把预算重点放在案例数据上，确保客户一眼能看到转型效果。提案周五前交付。"
+        }
+      ],
+      "implicit_signal": "在预算约束下优先选择能带来客户牵引力的方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一篇创新文章说‘80%的数字化转型失败’，但只有广告页提到数据来源，正文没链接。"
+        },
+        {
+          "role": "assistant",
+          "content": "跳过那篇文章。我会找HBR或TechCrunch的分析，至少引用有同行评审的研究来支撑工作坊论点。"
+        }
+      ],
+      "implicit_signal": "对不熟悉的主张要求提供来源或推理"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次工作坊结束，客户反馈‘不错但不知道下一步做什么’。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次每节结束加入15分钟模拟对练，让客户现场用创新工具假设测试一个真实问题，带走可执行卡片。"
+        }
+      ],
+      "implicit_signal": "工作坊提案需体现可见的行为改变"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "客户来了一家‘创新玩具’公司推销VR脑暴工具，说能‘颠覆’我们工作坊，但演示时设备发热后表现下降。"
+        },
+        {
+          "role": "assistant",
+          "content": "不采用。推荐用Miro白板加计时器，低成本且经过验证，客户团队已经熟悉。"
+        }
+      ],
+      "implicit_signal": "拒绝创新作秀类的产品"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下周飞旧金山见客户，订了一家距酒店3.5英里的万豪，但附近没拳馆。"
+        },
+        {
+          "role": "assistant",
+          "content": "改订有24小时健身房的凯悦，我会带跳绳和阻力带，6点晨跑后7点开始备会。"
+        }
+      ],
+      "implicit_signal": "商务差旅包含训练"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看到Coursera一门‘AI for Consultants’课程标价350美元，评论说要不是实操项目多，根本不值。"
+        },
+        {
+          "role": "assistant",
+          "content": "先翻到课程大纲看案例企业是否匹配客户，如果是真能用就报名，否则找免费替代资源。"
+        }
+      ],
+      "implicit_signal": "为职业发展投资，但避免浪费"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "旧金山出差只有三天，同行的人临时退出，我得独自完成所有客户会面。下午6点后的空档没安排。"
+        },
+        {
+          "role": "assistant",
+          "content": "把6点空档租一个24小时共享拳击馆练一小时，然后打包健康碗回酒店边吃边复盘会议要点。"
+        }
+      ],
+      "implicit_signal": "差旅时间紧凑时包含训练"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "客户带我去一家新餐厅，菜单说有‘高蛋白碗’，但没写蛋白质克数。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会请服务员问厨房，要求鸡胸肉用烤的，酱料单放。如果信息不全，只点一杯黑咖啡。"
+        }
+      ],
+      "implicit_signal": "对餐饮选择要求有明确营养信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一款跨国送餐App要求绑定手机和访问通讯录才能下单，我在超市结账前忘了提前订餐。"
+        },
+        {
+          "role": "assistant",
+          "content": "不注册。直接去Sweetgreen柜台按健康碗搭配买，用现金支付，不留下数字足迹。"
+        }
+      ],
+      "implicit_signal": "拒绝不必要的隐私侵犯"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看到最新款MacBook Pro广告，但我现有M1型号还能流畅运行所有软件，换机成本太高。"
+        },
+        {
+          "role": "assistant",
+          "content": "不升级。继续用现有本子直到性能瓶颈明显，优先买一双更耐用的Hayabusa拳击手套。"
+        }
+      ],
+      "implicit_signal": "避免奢侈电子产品，追求实用"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有个便宜拳击馆月费50美元，但设备老旧，周末不开门，影响我每周五天训练计划。"
+        },
+        {
+          "role": "assistant",
+          "content": "多花一倍钱去Rumble，保证每周五天的课程和时间灵活性，训练连贯性比节省更重要。"
+        }
+      ],
+      "implicit_signal": "训练坚韧度优于表面省钱"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "客户要求工作坊提案包含一个‘颠覆性构想’，但主题是公司内部的流程改进。"
+        },
+        {
+          "role": "assistant",
+          "content": "设计一个假设：新流程能否缩短周报告时间50%？用两周试点测试，然后交付一页简洁结果。"
+        }
+      ],
+      "implicit_signal": "假设、测试、简洁交付"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "流媒体平台推出一部‘创新商业剧’，每月15美元，但评论说剧情浮夸，像标题党文章。"
+        },
+        {
+          "role": "assistant",
+          "content": "不订阅。等Lex Fridman播客更新，或重温Neal Stephenson的《编码宝典》。时间有限不浪费。"
+        }
+      ],
+      "implicit_signal": "娱乐消费受预算约束，优先高回报内容"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "新买的Hayabusa拳套用了三个月，手腕贴合度很好但内衬开始磨损。"
+        },
+        {
+          "role": "assistant",
+          "content": "拍照发给客服看是否保修。同时开始物色同样高支撑手型但更耐用的型号，比如Everlast Elite。优先功能。"
+        }
+      ],
+      "implicit_signal": "要求耐用性和贴合度，不重外观"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去伦敦出差，客户临时把会议从下午3点改到中午12点。我原有航班10点到，转接时间只有1小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "改为前一晚红眼航班，多花300美元但确保有1小时缓冲。落地直冲酒店淋浴再打车去客户办公室。"
+        }
+      ],
+      "implicit_signal": "差旅效率优先于完美安排"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "活动散场后，一个智能咖啡机推销员说能‘用App预约早晨风味’，但需要绑定云账户按月缴费。"
+        },
+        {
+          "role": "assistant",
+          "content": "不买，手冲壶煮出咖啡再出门，省下每月费用买高质量咖啡豆。"
+        }
+      ],
+      "implicit_signal": "拒绝花哨无用的智能家居"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "连续三天晚餐吃Sweetgreen，账单加起来75美元，而自己做备餐一周才60美元。"
+        },
+        {
+          "role": "assistant",
+          "content": "周日花2小时备一周高蛋白午餐，用Chipotle碗的份量作参考，晚餐改吃自制冷冻健康碗。"
+        }
+      ],
+      "implicit_signal": "健康食品优先，但避免过多开支"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "午休结束前，Google Workspace弹窗要求‘分享健康数据以优化日历’。我没授权过任何追踪。"
+        },
+        {
+          "role": "assistant",
+          "content": "拒绝授权，同时检查上次授权过的应用列表。后续只用离线健身日志记录训练数据。"
+        }
+      ],
+      "implicit_signal": "不愿与大科技公司分享个人数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看到一门‘行为经济学在咨询中的应用’在线课，但全是PPT录像，没有客户案例分析。"
+        },
+        {
+          "role": "assistant",
+          "content": "不报。在YouTube找三位咨询师分享真实案例如何用行为设计改变客户决策，更实用。"
+        }
+      ],
+      "implicit_signal": "偏向案例研究和动手实践"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "Netflix推荐一部拳击纪录片，但我怀疑在颂扬毫无战术的街头斗殴。"
+        },
+        {
+          "role": "assistant",
+          "content": "先看预告和IMDB评论确认是否涉及训练策略与比赛分析，再决定花时间看。如果空洞就跳过。"
+        }
+      ],
+      "implicit_signal": "偏好有策略情节的动作片"
+    }
+  ]
+}

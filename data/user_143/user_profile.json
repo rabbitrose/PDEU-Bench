@@ -1,0 +1,238 @@
+{
+  "user_id": "user_143",
+  "explicit_preferences": {
+    "user_profile": "一位专注于现代司法影响的政治学同行研究生",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Alex Rivera",
+        "age": 32,
+        "gender": "非二元性别",
+        "location": "美国华盛顿特区",
+        "languages": [
+          "英语",
+          "西班牙语"
+        ],
+        "education_level": "博士学位",
+        "occupation": "政策分析师",
+        "industry": "智库 / 公共政策",
+        "seniority": "中级",
+        "household": "独居",
+        "life_stage": "早期职业专业人士"
+      },
+      "physical_profile": {
+        "height_cm": 170,
+        "general_appearance": "专业又休闲；常穿西装外套或开衫；戴眼镜；外表整洁。",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "细致的研究者，致力于司法透明和循证政策。",
+        "big_five": {
+          "openness": 0.85,
+          "conscientiousness": 0.9,
+          "extraversion": 0.3,
+          "agreeableness": 0.5,
+          "neuroticism": 0.4
+        },
+        "strengths": [
+          "分析性思维",
+          "注重细节",
+          "清晰的书面沟通能力"
+        ],
+        "weaknesses": [
+          "对不完整数据过于挑剔",
+          "不愿在没有充分证据的情况下行动",
+          "可能有些学究气"
+        ],
+        "values": [
+          "正义",
+          "准确性",
+          "公正性",
+          "知识诚实"
+        ],
+        "motivations": [
+          "理解司法决策如何塑造社会结果",
+          "通过严谨分析指导政策"
+        ],
+        "stress_triggers": [
+          "公共话语中的错误信息",
+          "法律问题过度简化",
+          "缺乏数据透明度"
+        ]
+      },
+      "background": {
+        "education": "乔治城大学政治学博士，论文题为最高法院判决对民权立法的影响。",
+        "career": "毕业后加入布伦南正义中心担任政策分析师；现任职于兰德公司，专注于司法影响。",
+        "key_life_events": [
+          "本科期间在联邦上诉法院实习",
+          "发表多篇关于司法行为的同行评审文章"
+        ]
+      },
+      "lifestyle": {
+        "daily_routine": "早起，阅读新闻和法律博客，在家或办公室工作，参加研讨会，撰写报告，晚上阅读或参加政策小组讨论。",
+        "social_habits": "偏好小型聚会进行智力讨论；在专业网络中活跃，但社交低调。",
+        "hobbies": [
+          "观看辩论",
+          "历史非虚构作品",
+          "跑步",
+          "烹饪素食"
+        ],
+        "media_consumption": [
+          "播客：Strict Scrutiny, The Weeds",
+          "新闻：SCOTUSblog, The Atlantic",
+          "电视：白宫风云，终生"
+        ]
+      },
+      "interests": {
+        "politics": "对司法政治、公民自由和制度设计深感兴趣。",
+        "technology": "对法律科技和法律数据分析感兴趣。",
+        "arts": "喜欢法庭剧和法律历史纪录片。",
+        "sports": "不是主要关注点，但会关注跑步赛事。"
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "格式：学术论文、政策简报、长篇新闻、法律分析播客",
+          "主题：最高法院判决、宪法、司法行为、民权",
+          "复杂度：高，期望深度和细微差别",
+          "内容必须符合该用户独特的工作模式：司法行为分析师模式：方法优先、注重隐私、必要时详尽无遗。",
+          "拒绝通用助手的框架：不要在没有操作定义的情况下给出专家结论。"
+        ],
+        "product_preferences": [
+          "书籍：法律史精装非虚构，例如《The Brethren》或《Simple Justice》",
+          "软件：R、Stata、NVivo用于定性分析",
+          "设备：用于阅读法律文件的电子墨水平板",
+          "产品应通过用户自身的权衡视角来选择：假设、度量、数据源、偏差风险、输出表格。"
+        ],
+        "service_preferences": [
+          "订阅：JSTOR、Westlaw、《纽约时报》",
+          "专业服务：Duolingo用于语言维护",
+          "服务只有在保留这种决策优先级时才可接受：可复制性、档案访问权和订阅回报率优先于快速评论。"
+        ],
+        "learning_preferences": {
+          "style": "具有明确学习目标的结构化课程或研讨会。",
+          "format": "如果可能的话面对面，否则带有文字记录的录制讲座。"
+        },
+        "travel_preferences": {
+          "destinations": "历史法律遗址（例如最高法院、老贝利），学术会议。",
+          "accommodation": "有工作空间的安静酒店。",
+          "activities": "访问法院、档案室和讲座。"
+        },
+        "food_preferences": {
+          "diet": "素食（蛋奶素食）。",
+          "cuisines": "地中海、印度、墨西哥。",
+          "avoid": "快餐、过度加工的餐食。"
+        },
+        "entertainment_preferences": {
+          "genres": "纪录剧情片、政治惊悚片、法庭剧。",
+          "recent_enjoyed": [
+            "《The Post》",
+            "《Just Mercy》",
+            "《The Innocent Man》"
+          ]
+        },
+        "technology_preferences": {
+          "os": "Linux (Ubuntu)",
+          "browser": "带有隐私扩展的Firefox。",
+          "communication": "Signal用于安全消息，ProtonMail用于电子邮件。"
+        },
+        "privacy_preferences": {
+          "data_sharing": "非常谨慎；最小化个人数据的共享。",
+          "tracking": "使用广告拦截器、VPN和注重隐私的DNS。"
+        },
+        "budget_preferences": {
+          "spending_habits": "愿意投资高质量的研究工具和书籍；在非必需品上节约。",
+          "typical_monthly": "分配约200美元用于订阅/服务，100美元用于书籍，400美元用于外出就餐（适合素食）。"
+        },
+        "personalization_directives": {
+          "style_contract": "司法行为分析师模式：方法优先、注重隐私、必要时详尽。",
+          "decision_priority": "可复制性、档案访问和订阅投资回报率胜过快速评论。",
+          "evidence_contract": "数据集来源和编码规则与法律引用同等重要。",
+          "format_contract": "假设、度量、数据来源、偏差风险、输出表格。",
+          "anti_default_assistant_behavior": "没有操作性定义就不要给出专家结论。",
+          "distinctive_quirks": [
+            "研究旅行应最小化隐私泄露并最大化档案时间。",
+            "订阅修剪必须保留小众法律数据库。",
+            "R/Stata/NVivo工作流应明确说明。"
+          ],
+          "hard_avoidances": [
+            "没有度量的意识形态标签",
+            "仅新闻分析",
+            "浪费早晨档案时间的旅行计划"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "disliked_content": [
+          "标题党。",
+          "过于简单的政治评论。",
+          "无根据的观点。"
+        ],
+        "disliked_products": [
+          "低质量电子阅读器。",
+          "Windows操作系统。"
+        ],
+        "disliked_services": [
+          "具有付费墙限制访问的新闻网站。",
+          "隐私保护薄弱的社交媒体平台。"
+        ],
+        "constraints": [
+          "时间：研究截止日期紧张。",
+          "预算：中等但不过度奢侈。"
+        ]
+      },
+      "communication_style": {
+        "tone": "正式、精确、尊重。",
+        "formality": "高；避免缩略语和俚语。",
+        "expressiveness": "使用清晰、结构化的论点；偏好要点列表或编号列表。",
+        "evidence_expectation": "期望引用；不信任轶事证据。"
+      },
+      "decision_making": {
+        "style": "分析性、数据驱动、在决定前咨询多个来源。",
+        "speed": "缓慢而谨慎。",
+        "risk_tolerance": "低；偏好经过验证的方法。",
+        "influences": [
+          "同行评议的研究。",
+          "专家意见。",
+          "历史先例。"
+        ]
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "分析最近最高法院的裁决。",
+          "比较不同法官的司法哲学。",
+          "撰写关于司法独立的政策简报。"
+        ],
+        "preference_conflicts": [
+          "对快速摘要的渴望与对详细证据的需求。",
+          "想要高度隐私但同时也需要访问许多资源。"
+        ],
+        "ambiguity_to_preserve": "不要假设政党归属；关注司法方法论而非政治意识形态。",
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:44",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "客观、尊重、中立。",
+            "response_length": "详细且全面解释。",
+            "evidence_expectation": "尽可能提供引用或参考文献。",
+            "formatting": "清晰的标题、要点和结构化的论点。",
+            "proactive_behavior": "对新相关研究或司法更新保持警惕。",
+            "things_to_avoid": "随意语言、无支撑的主张、过度简化、过于简短。"
+          },
+          "task_titles_used_for_context": [
+            "分析最高法院任期并生成比较司法行为报告",
+            "规划一次多城市研究旅行，前往档案馆和会议，兼顾隐私和效率",
+            "在预算内优化司法研究的专业订阅组合"
+          ]
+        }
+      }
+    }
+  }
+}

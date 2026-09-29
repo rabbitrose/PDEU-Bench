@@ -1,0 +1,449 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_231",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:44:09",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 19,
+  "composition": {
+    "episodic_preference_trace": 19
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_007",
+      "hidden_indirect_009",
+      "hidden_indirect_018",
+      "hidden_indirect_019"
+    ],
+    "content": [
+      "hidden_indirect_003",
+      "hidden_indirect_017"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_006",
+      "hidden_indirect_008",
+      "hidden_indirect_013",
+      "hidden_indirect_016",
+      "hidden_indirect_017"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_014"
+    ],
+    "entertainment": [
+      "hidden_indirect_010"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_015"
+    ],
+    "food": [
+      "hidden_indirect_009"
+    ],
+    "format_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_012",
+      "hidden_indirect_015"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_016"
+    ],
+    "learning": [
+      "hidden_indirect_012"
+    ],
+    "privacy": [
+      "hidden_indirect_006",
+      "hidden_indirect_011"
+    ],
+    "product": [
+      "hidden_indirect_013"
+    ],
+    "role_context": [
+      "hidden_indirect_014"
+    ],
+    "service": [
+      "hidden_indirect_007",
+      "hidden_indirect_018"
+    ],
+    "technology": [
+      "hidden_indirect_011"
+    ],
+    "travel": [
+      "hidden_indirect_008",
+      "hidden_indirect_019"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去那个免费展览排了45分钟，孩子饿得发脾气，我不得不提前撤，活动钱倒是省了，但全家都不开心。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我们换个思路：找需要预约、有固定入场时段的付费景点，虽然花点钱，但能保证进去不排队。我查到一个科学馆，提前订下午两点的票，人少。"
+        }
+      ],
+      "implicit_signal": "在预算紧张时优先考虑活动质量和可持续性，而不是低价促销"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我搜了三个公园，每个都说周末有活动，但根本不知道真实等待时间，上次选了宣传最火的，结果现场网络断了，连导航都用不了，白跑一趟。"
+        },
+        {
+          "role": "assistant",
+          "content": "我查了这周末的实时客流数据，三个公园的平均排队时长分别是：A 10分钟，B 37分钟，C 25分钟，A的可取消门票也免费。我们可以先预订A的停车位，避免现场买票长队。"
+        }
+      ],
+      "implicit_signal": "要求推荐有明确事实依据，且能直接用于决策的格式"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周三我选好餐厅和路线都发到家庭群了，结果没人确认，周五晚上我才发现伴侣已经订了别的地方，材料发出去后又撤回，来回沟通浪费了一天。"
+        },
+        {
+          "role": "assistant",
+          "content": "今晚九点前我只给两个选项：A是河边步道旁的早午餐，B是室内游乐场附带快餐。每人看完回复一个数字，截止后我订票，超时不候。这样你不用来回等消息。"
+        }
+      ],
+      "implicit_signal": "需要短周期里程碑和明确反馈来维持执行"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我打开旅游网站搜亲子活动，有二十几个结果，标签还分室内户外，我看了二十分钟还是没定下来，午休结束前只保存了三个链接。"
+        },
+        {
+          "role": "assistant",
+          "content": "根据你家孩子的年龄和今天天气，排除掉室外长排队和高消费的，实际只剩两个选项：图书馆故事会和社区手作集市。我帮你把地址和停车策略列成清单了。"
+        }
+      ],
+      "implicit_signal": "容易因选项太多而停滞，需要助手主动缩减候选"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你发了三篇文章讲郊游装备清单，我看了觉得都不适合——我家孩子才三岁，那些徒步建议根本不现实，版本没法回退，第二天又重做一遍。"
+        },
+        {
+          "role": "assistant",
+          "content": "抱歉，我忽略了年龄限制。这次我只看本地社区推荐的低幼友好活动：一个室内农场体验，全程有工作人员带，不用你准备东西。只要带湿纸巾和换洗裤子就行。"
+        }
+      ],
+      "implicit_signal": "拒绝堆砌资源和忽略当前水平的建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个活动预约页面非要填孩子全名和出生日期才能买票，我填了一半关掉了，感觉没必要的隐私都交出去了，结果没去成。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找到另一个同样主题的活动，购票只需要年龄范围和人数，不用具体姓名。我可以直接用你的邮箱预约，不填孩子信息。周末票还剩27张。"
+        }
+      ],
+      "implicit_signal": "保护家庭信息，不提供多余个人数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次用一个景点年卡，说是免费取消，实际提前三天退还要收服务费，而且系统强制注册会员才能看详情，感觉被锁定了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我选一个按次付费的动物园，官网写明提前24小时取消全额退款，无需注册，直接在线买。比年卡省42刀，而且不绑定后续消费。"
+        }
+      ],
+      "implicit_signal": "选服务要求透明取消规则和低隐性成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次我按导航最短时间计划，结果路上修路堵了40分钟，到景点时预约时段已过，工作人员不让进了，白花了27刀。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我们比导航建议提前30分钟出发，而且选一条有并行替代路线的路径。如果主干道堵车，可以走海边老路，多花8分钟但时间可控。"
+        }
+      ],
+      "implicit_signal": "路线需要缓冲时间，避免安排过紧"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "活动附近那家网红餐厅套餐人均22刀，加税和小费快30了，三大一小吃下来超预算，而且油腻，孩子下午午睡都难受。"
+        },
+        {
+          "role": "assistant",
+          "content": "我查到一个本地家庭食堂，成人套餐12.5刀，儿童半价，清淡还配水果。离活动点走路8分钟，不用额外交通费。如果时间紧，也可以自备三明治在公园野餐。"
+        }
+      ],
+      "implicit_signal": "倾向本地小店或自己做饭，控制家庭支出"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个周末去了那个号称家庭友好的嘉年华，实际上每个摊位都在推销会员卡，而且人挤人，孩子被挤哭了，待了不到一小时就走了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找到一个本地社区中心举办的周末家庭日，限流50人，没有商业摊位，只有手工和讲故事。提前网约确定有位，现场也不卖任何东西。"
+        }
+      ],
+      "implicit_signal": "避免过度拥挤和强营销活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我用活动App保存了行程，但它不能同步到我的日历，而且还要求位置一直开启才能用，我觉得没必要，删了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我直接把行程做成日历附件，你可以导入到苹果或谷歌日历，离线也能看。地点只填街道名，不需要实时位置。之后也能导出成文本备份。"
+        }
+      ],
+      "implicit_signal": "偏好能导出数据、跨设备同步、不锁定在单一平台"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次活动后我想和孩子一起回顾一下学到的动物知识，但活动手册只有一张涂色纸，没有复习材料，第二天全忘了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我做一个简单的活动反馈点：活动时拍三张孩子喜欢的动物照片，回家后用我问你答的方式做五分钟复习。下周再翻照片重复一次。需要模板的话我发你。"
+        }
+      ],
+      "implicit_signal": "适应学习教练模式，有反馈点和下次复盘"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我给孩子买了一个户外探索背包，布料是好看但没用两次拉链就卡了，而且不能换修，等于浪费52刀。"
+        },
+        {
+          "role": "assistant",
+          "content": "我推荐一个本地户外品牌，背包有五年保修和免费换拉链，价格42刀但可以用到孩子长大。虽然是基础款，但耐用，比一次性产品划算。"
+        }
+      ],
+      "implicit_signal": "选择产品时要考虑长期使用成本和维护"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "以前我在邮局分拣高峰时段总用寄件模板控制投递顺序，现在家庭外出我也想列个时间模板，但不知道周末几点人少。"
+        },
+        {
+          "role": "assistant",
+          "content": "按你熟悉的模式：活动前三天晚上八点开始确认准备清单，出发当天提前一个半小时打包。我按你以前用的模板做了个家庭外出清单，包括物品和节点。"
+        }
+      ],
+      "implicit_signal": "在家庭任务中体现邮局退休背景的影响，偏好清单和模板"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你说那个博物馆适合家庭，但没告诉我到底哪个展区适合低幼、哪个时间段人少、有没有免费车位，结果到了发现停车场满员，我又开了一圈。"
+        },
+        {
+          "role": "assistant",
+          "content": "这周末的客流数据：上午10点前和下午3点后人最少。我建议你预约下午两点的场次，展区按年龄排序：第一层面向2-5岁。东侧停车场免费且只有52个车位，建议提前半小时到。"
+        }
+      ],
+      "implicit_signal": "要求推荐附带可观察指标而非泛泛好评"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次只说‘要做好时间管理’，没说具体怎么做。结果我还是按老方式出发，现场网络断了，找不到入口又绕了半天。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把步骤拆开：1. 提前一天下载离线地图和门票二维码到手机截图。2. 出门前检查三样：水杯、充电宝、公园实时车位。3. 在路上再听一遍导航。你对照清单做完再出发。"
+        }
+      ],
+      "implicit_signal": "拒绝只给大道理，需要可执行步骤"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你列了温哥华十大亲子景点，但排名第一的水族馆我家去过五次了，后面的科学馆孩子太小看不懂，你不如直接给我限定条件。"
+        },
+        {
+          "role": "assistant",
+          "content": "按你们现在的情况：孩子三岁、预算50刀、不想挤、想有趣味性，去掉水族馆和科学馆，满足条件的只有两个：格兰维尔岛的市场摊位和社区花园探索。选一个吧。"
+        }
+      ],
+      "implicit_signal": "不接受通用榜单式输出，要贴合自身场景"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一个活动平台要求我先注册、再验证、然后再选套餐，最后还要下载他们的App才能入场，折腾了半小时，我放弃了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找到一个直接通过短信确认的活动，不需要注册，点链接付款后收到带二维码的短信，到现场扫一下就行。多花2刀手续费但省了注册烦。预算内能承受。"
+        }
+      ],
+      "implicit_signal": "服务需少中转、少注册、少额外沟通"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次定的民宿离活动点远，晚上旁边还在施工，根本睡不着，取消了还要扣一半房费，第二天全家没精神玩。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次选一个离活动点步行10分钟内的汽车旅馆，评分四点五，房间在背街一侧安静，而且支持入住当天免费取消。价格比民宿便宜27刀，也有停车位。"
+        }
+      ],
+      "implicit_signal": "住宿交通优先考虑安全、安静和可取消"
+    }
+  ]
+}

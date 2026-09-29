@@ -1,0 +1,275 @@
+{
+  "user_id": "user_038",
+  "explicit_preferences": {
+    "user_profile": "一位在安提瓜和巴布达出生并长大的地理教师",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Jasmine Browne",
+        "age": 42,
+        "gender": "女性",
+        "location": "圣约翰，安提瓜和巴布达",
+        "languages": [
+          "英语（母语）",
+          "西班牙语（中级）"
+        ],
+        "education_level": "地理学硕士",
+        "occupation": "地理教师",
+        "industry": "教育",
+        "seniority": "高级教师（地理系主任）",
+        "household": "已婚，有两个孩子（年龄10岁和14岁）",
+        "life_stage": "中年前后家庭"
+      },
+      "physical_profile": {
+        "height_cm": 168,
+        "general_appearance": "友善的面孔，卷曲黑发，常穿反映加勒比文化的彩色服装。",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "热情的教师，与加勒比地理有深厚联系。喜欢分享本地知识，培养环境意识。",
+        "big_five": {
+          "openness": 0.8,
+          "conscientiousness": 0.75,
+          "extraversion": 0.5,
+          "agreeableness": 0.85,
+          "neuroticism": 0.2
+        },
+        "strengths": [
+          "引人入胜的教学风格",
+          "丰富的本地知识",
+          "耐心的导师"
+        ],
+        "weaknesses": [
+          "有时过于注重细节",
+          "因热情而有时难以管理时间"
+        ],
+        "values": [
+          "教育",
+          "可持续性",
+          "文化遗产",
+          "社区"
+        ],
+        "motivations": [
+          "激励学生欣赏地理",
+          "促进加勒比地区的可持续旅游"
+        ],
+        "stress_triggers": [
+          "缺乏教育资源",
+          "对本地文化的不尊重",
+          "不准确的地理表述"
+        ]
+      },
+      "background": {
+        "birthplace": "安提瓜和巴布达",
+        "grew_up": "安提瓜",
+        "education": [
+          "西印度群岛大学地理学学士",
+          "西印度群岛大学地理教育硕士"
+        ],
+        "career": "在安提瓜中学教授地理15年，现任系主任。还就加勒比地理发表公众讲座。",
+        "family_background": "父母是农民；与土地有深厚联系。"
+      },
+      "lifestyle": {
+        "daily_routine": "早起，准备家庭早餐，白天教学，晚上批改作业，周末与家人远足。",
+        "community_involvement": "在本地环境非政府组织做志愿者，组织海滩清理。",
+        "hobbies": [
+          "远足",
+          "观鸟",
+          "阅读历史小说",
+          "烹饪传统菜肴"
+        ]
+      },
+      "interests": {
+        "primary": [
+          "加勒比地理",
+          "制图学",
+          "气候变化对小岛的影响",
+          "可持续旅游"
+        ],
+        "secondary": [
+          "安提瓜历史",
+          "当地民俗",
+          "园艺"
+        ]
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "主题：关于自然和气候的纪录片，探索小众目的地的旅行博客，用于课堂的教育视频",
+          "格式：互动地图，短视频片段，信息图表",
+          "内容必须符合该用户的独特工作模式：岛屿地理教师模式——基于地点、地图驱动、低术语。",
+          "拒绝通用助手框架：不要让加勒比计划听起来像通用的生态旅游。"
+        ],
+        "product_preferences": [
+          "类别：高质量地形图，耐用登山靴，防水笔记本，地理教育桌游",
+          "品牌：国家地理，REI，Garmin（GPS设备）",
+          "产品应通过用户自己的权衡视角选择：地图停留、观察任务、安全提示、本地联系人、学习成果。"
+        ],
+        "service_preferences": [
+          "旅行：生态小屋，由当地人带领的小团体游，岛屿间的渡轮服务",
+          "教育：带互动地图的在线课程，针对教师的GIS工作坊",
+          "食物：从农场到餐桌的餐厅，当地街头小吃摊",
+          "服务仅在保留此决策优先级时才能接受：学生安全、本地知识和可观察的现场证据优先于教科书完整性。"
+        ],
+        "learning_preferences": {
+          "style": [
+            "动手实地考察",
+            "视觉辅助工具",
+            "加勒比案例研究"
+          ],
+          "tools": [
+            "Google Earth",
+            "ArcGIS",
+            "地球仪"
+          ]
+        },
+        "travel_preferences": {
+          "type": [
+            "探险旅行",
+            "文化沉浸"
+          ],
+          "accommodation": [
+            "环保住宿",
+            "本地酒店"
+          ],
+          "season": [
+            "非旺季（五月至六月或十一月）"
+          ]
+        },
+        "food_preferences": {
+          "cuisine": [
+            "加勒比美食（尤其是安提瓜风格炖菜、木薯饺、玉米面包）",
+            "新鲜海鲜"
+          ],
+          "dietary_restrictions": "无",
+          "preferred_beverages": [
+            "新鲜椰子水",
+            "本地朗姆潘趣酒"
+          ]
+        },
+        "entertainment_preferences": {
+          "music": [
+            "卡利普索音乐",
+            "索卡音乐",
+            "雷鬼音乐"
+          ],
+          "movies": [
+            "自然纪录片",
+            "历史剧"
+          ],
+          "books": [
+            "非虚构游记",
+            "地理题材小说"
+          ]
+        },
+        "technology_preferences": {
+          "devices": [
+            "拍照功能好的智能手机",
+            "用于备课的笔记本电脑",
+            "GPS手表"
+          ],
+          "software": [
+            "OpenStreetMap",
+            "Google Maps",
+            "GIS工具"
+          ],
+          "privacy": [
+            "在社交媒体上谨慎分享位置",
+            "在公共Wi-Fi上使用VPN"
+          ]
+        },
+        "privacy_preferences": {
+          "data_sharing": "最少化，不公开分享个人位置数据",
+          "contact": "专业询问偏好邮件而非电话"
+        },
+        "budget_preferences": {
+          "spending_style": "愿意花更多钱在优质教育资源和体验上；日常用品则预算有限",
+          "price_sensitivity": "高价值物品低价，不必要的奢侈品高价"
+        },
+        "personalization_directives": {
+          "style_contract": "岛屿地理教师模式：立足地方、以地图为导向、少用术语。",
+          "decision_priority": "学生安全、本地知识和可观察的实地证据比教科书完整性更重要。",
+          "evidence_contract": "地图、当地向导、天气/潮汐数据和课堂可用性最关键。",
+          "format_contract": "地图停留点、观察任务、安全提示、当地联系人、学习成果物。",
+          "anti_default_assistant_behavior": "不要将加勒比计划描述成普通的生态旅游。",
+          "distinctive_quirks": [
+            "学生应该触摸地图和地形，而不仅仅是阅读讲义。",
+            "可持续旅行应支持岛屿社区。",
+            "GIS研讨会必须适应学校技术设备不均的情况。"
+          ],
+          "hard_avoidances": [
+            "企业可持续性语言",
+            "大陆假设",
+            "忽视潮汐或交通可靠性的实地考察"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "dislikes": [
+          "不准确的地图",
+          "媒体中的文化刻板印象",
+          "过度拥挤的旅游景点",
+          "不尊重环境"
+        ],
+        "constraints": [
+          "农村地区互联网连接有限",
+          "教学日程限制了学期内的旅行",
+          "家庭责任需要提前规划"
+        ]
+      },
+      "communication_style": {
+        "tone": "热情且信息丰富，常用当地地理轶事",
+        "formality": "在专业场合稍显正式，对同事友好",
+        "detail_level": "中高程度，欣赏深度但尊重时间"
+      },
+      "decision_making": {
+        "process": "寻求可信赖同行和专家的建议，重视证据和数据，考虑当地影响",
+        "speed": "深思熟虑，不冲动"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "使用地理示例进行教案设计",
+          "计划加勒比地区的家庭度假",
+          "请求教学用地图推荐",
+          "寻求气候变化纪录片建议"
+        ],
+        "preference_conflicts": [
+          "可能想要详细信息但受时间限制；可能更喜欢带深层材料链接的摘要",
+          "重视环保选项，但旅行可能有预算限制"
+        ],
+        "ambiguity_to_preserve": [
+          "她对加勒比以外某些世界地区的看法不太明确",
+          "并非所有偏好都强烈，有些可能视情况而定"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:43",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "尊重且教育性强，避免企业术语",
+            "response_length": "简洁但全面，偏好要点列表以便清晰",
+            "evidence_expectation": "期望事实声明（尤其是地理数据）有参考文献或引用",
+            "formatting": "使用标题和要点，避免长段落",
+            "proactive_behavior": "欣赏相关内容或资源的建议，但不过分强推",
+            "things_to_avoid": [
+              "复杂主题的过度简化",
+              "忽视当地背景或文化敏感性",
+              "推广非环保选项"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "为学生规划一次探索岛屿海岸侵蚀的实地考察",
+            "在学校假期规划一次前往多米尼加的可持续家庭度假",
+            "为加勒比地理教师准备一次使用GIS的专业发展工作坊"
+          ]
+        }
+      }
+    }
+  }
+}

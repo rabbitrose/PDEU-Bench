@@ -1,0 +1,240 @@
+{
+  "user_id": "user_048",
+  "explicit_preferences": {
+    "user_profile": "一个有决心的篮球运动员，立志成为学校的体育明星",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "马库斯·约翰逊",
+        "age": 17,
+        "gender": "男性",
+        "location": "美国伊利诺伊州芝加哥",
+        "languages": [
+          "英语",
+          "西班牙语（会话水平）"
+        ],
+        "education_level": "高中三年级学生",
+        "occupation": "学生",
+        "industry": "教育",
+        "seniority": "学生",
+        "household": "与母亲和妹妹同住",
+        "life_stage": "青少年，专注于体育和学业"
+      },
+      "physical_profile": {
+        "height_cm": 188,
+        "general_appearance": "运动体格，黑色短发，棕色眼睛，常穿篮球装备或队服",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "有抱负、自律、好胜，有强烈的成功意愿，场上场下皆如此。外向且注重团队，但有时对自己苛刻。",
+        "big_five": {
+          "openness": 5,
+          "conscientiousness": 8,
+          "extraversion": 7,
+          "agreeableness": 6,
+          "neuroticism": 4
+        },
+        "strengths": [
+          "决心",
+          "领导力",
+          "职业道德",
+          "韧性"
+        ],
+        "weaknesses": [
+          "急躁",
+          "过度好胜",
+          "难以委派任务"
+        ],
+        "values": [
+          "努力",
+          "团队合作",
+          "正直",
+          "卓越"
+        ],
+        "motivations": [
+          "成为校队明星",
+          "获得大学篮球奖学金",
+          "让家人自豪"
+        ],
+        "stress_triggers": [
+          "输掉重要比赛",
+          "在训练中表现不佳",
+          "与队友发生冲突"
+        ]
+      },
+      "background": {
+        "family": "单身母亲（教师），妹妹（14岁），父亲不在生活中",
+        "upbringing": "在芝加哥工人阶级社区长大；8岁开始在地方娱乐联赛打篮球",
+        "education": "就读于一所公立高中，篮球项目很强；保持3.2 GPA",
+        "significant_events": "在高中二年级夏季联赛中获得MVP；上赛季脚踝轻微受伤但迅速恢复",
+        "culture": "非裔美国人，重视社区和毅力"
+      },
+      "lifestyle": {
+        "daily_routine": "早上5:30起床，轻度锻炼，学校8点到3点，篮球训练4点到6点，作业7点到9点，晚上10:30睡觉",
+        "social_life": "与队友关系密切，喜欢逛商场或打电子游戏，参加学校活动",
+        "habits": "保持训练日志，每晚看NBA精彩集锦，睡前拉伸"
+      },
+      "interests": {
+        "hobbies": [
+          "篮球",
+          "举重训练",
+          "观看体育纪录片",
+          "玩NBA 2K"
+        ],
+        "sports": "篮球（主要），也关注足球和田径",
+        "arts_and_culture": "听嘻哈和说唱，很少去博物馆",
+        "other": "对体育新闻感兴趣，作为潜在职业方向"
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "篮球训练视频",
+          "比赛分析（NBA/大学）",
+          "体育播客",
+          "励志演讲",
+          "嘻哈歌单",
+          "内容必须符合此用户独特的模式：比赛日队友模式——简洁、带劲，食物和鞋子选择与比赛表现相关。",
+          "拒绝通用助手式陈述：不要过度解释营养科学，或让计划显得家长式。"
+        ],
+        "product_preferences": [
+          "耐克篮球鞋",
+          "Under Armour服装",
+          "佳得乐",
+          "Wilson篮球",
+          "Fitbit追踪器",
+          "产品应通过用户自己的权衡视角选择：赛前/赛中/赛后计划，附确切时间和备用零食。"
+        ],
+        "service_preferences": [
+          "Netflix（体育纪录片）",
+          "Spotify",
+          "YouTube Premium",
+          "用于日程安排的TeamSnap",
+          "服务只有在保持此决策优先级时才可接受：能量、胃部舒适、团队凝聚力和性价比优于完美优化。"
+        ],
+        "learning_preferences": [
+          "动手训练",
+          "视频教程",
+          "带视觉元素的短文"
+        ],
+        "travel_preferences": [
+          "比赛日偏好国内旅行",
+          "预算友好的住宿",
+          "靠近体育设施"
+        ],
+        "food_preferences": [
+          "高蛋白餐食",
+          "训练后奶昔",
+          "喜欢意大利和墨西哥菜"
+        ],
+        "entertainment_preferences": [
+          "体育电影（例如《卡特教练》、《火爆教头草地兵》）",
+          "NBA比赛",
+          "电子游戏（体育类）"
+        ],
+        "technology_preferences": [
+          "智能手机（安卓）",
+          "用于学校的手提电脑",
+          "听音乐用的耳机"
+        ],
+        "privacy_preferences": [
+          "仅与家人/团队共享位置",
+          "使用社交媒体但避免过度分享"
+        ],
+        "budget_preferences": [
+          "节俭：为篮球训练营和装备存钱",
+          "偏好折扣和促销"
+        ],
+        "personalization_directives": {
+          "style_contract": "比赛日队友模式：精炼、带点亢奋，食物和鞋类决策与场上表现挂钩。",
+          "decision_priority": "能量、胃部舒适度、团队凝聚力和性价比优先于完美优化。",
+          "evidence_contract": "来自真实篮球日常的例子优于正式引用。",
+          "format_contract": "前后/期间/之后的计划，包含精确时间和备用零食。",
+          "anti_default_assistant_behavior": "不要过度解释营养科学，或让计划显得家长式。",
+          "distinctive_quirks": [
+            "偏好视频链接或视觉提示，而非密集段落。",
+            "春假计划应感觉像团队化学反应，而非学校旅行。",
+            "如果脚感更好，可以接受略不耐用的鞋。"
+          ],
+          "hard_avoidances": [
+            "含有不熟悉食物的餐食计划",
+            "关于纪律的说教",
+            "超出学生预算的奢侈选项"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "dislikes": [
+          "失败",
+          "消极的队友",
+          "赛前垃圾食品",
+          "早课"
+        ],
+        "constraints": [
+          "因训练导致的有限自由时间",
+          "家庭收入一般",
+          "受伤风险需要谨慎训练"
+        ]
+      },
+      "communication_style": {
+        "tone": "直接且热情，有时激烈",
+        "formality": "与同龄人随意，对教练和老师尊敬",
+        "preferred_channels": "用短信发快速消息，重要谈话当面进行",
+        "body_language": "表达丰富，常用手势"
+      },
+      "decision_making": {
+        "process": "收集教练和母亲的意见，然后果断做决定",
+        "speed": "篮球相关决定迅速，学术决定更谨慎",
+        "factors": [
+          "对他篮球生涯的好处",
+          "家庭支持",
+          "实用性"
+        ]
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "推荐篮球训练内容",
+          "比较篮球鞋",
+          "规划比赛日营养",
+          "帮助家庭作业时间管理"
+        ],
+        "preference_conflicts": [
+          "可能想要高性能装备，但受预算限制",
+          "想提高技能，但额外训练时间有限"
+        ],
+        "ambiguity_to_preserve": [
+          "与同龄人相比的确切技能水平",
+          "大学偏好（可能是任何D1学校）",
+          "具体伤病史细节"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:43",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "激励性和支持性，像教练一样",
+            "response_length": "解释训练或概念时简洁但全面",
+            "evidence_expectation": "希望来自真实比赛的统计数据或例子",
+            "formatting": "技巧要点用项目符号，推荐视频或链接",
+            "proactive_behavior": "提醒训练计划，建议新练习",
+            "things_to_avoid": [
+              "只有负面批评，没有建设性意见",
+              "不切实际的建议",
+              "过于复杂的术语"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "优化比赛前营养和热身流程以备锦标赛",
+            "预算内找性价比最高的篮球鞋",
+            "春假期间安排团队团建活动"
+          ]
+        }
+      }
+    }
+  }
+}

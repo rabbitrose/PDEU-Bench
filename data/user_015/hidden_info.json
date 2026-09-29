@@ -1,0 +1,428 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_015",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:09:44",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 18,
+  "composition": {
+    "episodic_preference_trace": 18
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_005",
+      "hidden_indirect_015",
+      "hidden_indirect_017"
+    ],
+    "content": [
+      "hidden_indirect_008"
+    ],
+    "decision_priority": [
+      "hidden_indirect_002",
+      "hidden_indirect_008",
+      "hidden_indirect_014"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_007",
+      "hidden_indirect_012",
+      "hidden_indirect_018"
+    ],
+    "entertainment": [
+      "hidden_indirect_010"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_001",
+      "hidden_indirect_011"
+    ],
+    "food": [
+      "hidden_indirect_006",
+      "hidden_indirect_017"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_010"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_009",
+      "hidden_indirect_013"
+    ],
+    "learning": [
+      "hidden_indirect_003",
+      "hidden_indirect_014"
+    ],
+    "privacy": [
+      "hidden_indirect_002",
+      "hidden_indirect_013",
+      "hidden_indirect_016"
+    ],
+    "product": [
+      "hidden_indirect_009"
+    ],
+    "role_context": [
+      "hidden_indirect_006"
+    ],
+    "service": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_018"
+    ],
+    "technology": [
+      "hidden_indirect_004",
+      "hidden_indirect_012",
+      "hidden_indirect_016"
+    ],
+    "travel": [
+      "hidden_indirect_007",
+      "hidden_indirect_015"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月报的本地画室，说随时可退，结果要提前两周书面申请，还要扣材料费。最后没去成但钱也拿不回来。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次比较时我先把取消政策和隐藏费用逐条列出，并标注哪些可在线完成、哪些必须线下寄信。你确认过再下单。"
+        }
+      ],
+      "implicit_signal": "需要服务取消规则透明才考虑使用"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周末打算去南法小镇，下载了离线地图。但那个导航app非要我注册并提供手机号才能用完整离线包，我直接把app删了。"
+        },
+        {
+          "role": "assistant",
+          "content": "你用这一份OpenStreetMap离线副本，无需注册。我帮你把候选文件夹里的三个小镇POI都打包进去了。"
+        }
+      ],
+      "implicit_signal": "隐私优先于便利，拒绝非必要信息收集"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次找的串珠教程，给了十几个视频链接和百科页。我花了半小时看，发现一半是商业推广，一半需要的工具我根本没有。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我只列出三样你已有的工具、一个15分钟内能练完的步骤，和一张检查表让你自己判断成品是否合格。没有多余链接。"
+        }
+      ],
+      "implicit_signal": "学习材料需要可操作的方法而不是只是资料清单"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "新的笔记应用想同步到桌面，但它要求先授权读取我的通讯录联系人。我没有给，直接改用txt本地写。"
+        },
+        {
+          "role": "assistant",
+          "content": "我导出一份纯文本的随身笔记，你可以在本地用任何编辑器打开。同步用U盘或自建网盘，不需要授权联系人或位置。"
+        }
+      ],
+      "implicit_signal": "偏好匿名或本地处理数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友推荐一个拼车服务，点进去要先短信验证，填完才发现起步价18欧，比普通公交贵三倍，还不能取消预约。"
+        },
+        {
+          "role": "assistant",
+          "content": "里昂市区这几条公交专线更便宜，上车买票即可，无需注册。如果你需要深夜班次，我可以先查实时到站表。"
+        }
+      ],
+      "implicit_signal": "拒绝隐藏费用和强迫注册"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次午休前去了一家新开的越南粉，结果排队太久，吃完饭已经下午1点40，下午的工作全往后推了。"
+        },
+        {
+          "role": "assistant",
+          "content": "周三午休你可以去这家本地小面馆，出餐快，13点前吃完。我把它和下午的客户时间都放到随身笔记里，你看下是不是合理。"
+        }
+      ],
+      "implicit_signal": "吃饭安排需与后续工作任务衔接"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周四要去安纳西，订了一个可免费取消的民宿，但我没留全名，只写了姓氏和城市。房东打电话确认时说不接受不完整信息。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找到了另一家同样价格、支持48小时免费取消的民宿，只要求姓氏和手机号后四位。你用此处的虚拟联系方式登记，回退路线也标好了。"
+        }
+      ],
+      "implicit_signal": "默认脱敏联系人，选择可取消的住宿"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想提高法语写作，网上推荐了一堆经典文学书单。但我平时要写的是客户邮件和活动简报，文学句子用不上。"
+        },
+        {
+          "role": "assistant",
+          "content": "这是三个模版：确认预约、更改方案、礼貌催款。每份都带一段法语原文和改写练习，你可以在回家路上用随身笔记过一遍。"
+        }
+      ],
+      "implicit_signal": "内容必须与自身场景贴合，不接受泛化建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买一个便携绣架，在电商平台上看到要上传身份证才能下单国际配送。我关掉了页面。"
+        },
+        {
+          "role": "assistant",
+          "content": "里昂手工用品店有同款，线下现金支付，不需要留任何个人信息。我标出了它的位置和营业时间，刚好在你周六购物路线旁边。"
+        }
+      ],
+      "implicit_signal": "不接受要求实名注册的产品"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周末去了一音乐节，人挤人，信号差，根本没法和朋友碰头。回家已经凌晨两点，第二天状态很糟糕。"
+        },
+        {
+          "role": "assistant",
+          "content": "这周六下午有一场小型老电影放映，35个座位，需提前预约但可随时取消。散场大约晚上9点，不影响你周日手作计划。"
+        }
+      ],
+      "implicit_signal": "活动安排要低密度、有内容，并考虑第二天节奏"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想用本地洗衣配送，页面只写‘我们会保护您的信息’，却没说保存什么数据。我放弃了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我联系了客服：他们只存手机号、地址和送取时间，30天后自动删除，且支持现金支付。这是聊天记录截图，你可以看看再决定。"
+        }
+      ],
+      "implicit_signal": "需要服务在决策前说明数据收集范围"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "系统自动推荐了一个日程app，说能‘智能安排会议’。但我看不到它怎么获取我的日历事件，也不清楚数据存在哪。"
+        },
+        {
+          "role": "assistant",
+          "content": "你用本地日历文件管理，我写了一个简单的脚本，只读取未来三天的标题和时间段，不会访问联系人、地点或备注。脚本和输出文件都在候选文件夹里，你可完全离线使用。"
+        }
+      ],
+      "implicit_signal": "不接受黑箱推荐，不接受便利大于隐私"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "办图书馆续卡，系统要求上传护照扫描件。我表示不合适，工作人员说可以带实体卡来人工办理。"
+        },
+        {
+          "role": "assistant",
+          "content": "我记下了人工服务的时间——周三和周五下午2点至5点。你带实体卡和图书馆通知单去窗口，无需扫描件和手机验证。"
+        }
+      ],
+      "implicit_signal": "拒绝上传敏感资料"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "参加了一期线上编织课，老师一口气讲了两个钟头，结束后没有作业也没有反馈，完全不知道学得怎么样。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次你换成30分钟小课，课后有5个自测动作和一个成品样品图。我把它放在随身笔记里，你可以带着样品比对。"
+        }
+      ],
+      "implicit_signal": "学习需要短周期反馈和可复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "同行的人临时退出后，我独自去阿尔勒。原本订的双人房不能退款，只能加价换单人房，多花了37欧元。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次订房时我优先筛选支持免费取消的单人间，并在候选文件夹里保存一个保底青旅——距离火车站步行8分钟，评分8.6。"
+        }
+      ],
+      "implicit_signal": "预算保守，优先安全安静的住宿"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前用某笔记应用写食谱，想导出成PDF，发现只能导出成特定格式，换到其他软件就打不开。"
+        },
+        {
+          "role": "assistant",
+          "content": "我推荐你用Markdown本地写，可一键导出为PDF或TXT。你现有的30道菜谱我已经批量转好，放在候选文件夹里了。"
+        }
+      ],
+      "implicit_signal": "工具要能导出数据且不为单一平台锁定"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周参加一个国际美食节，入场费15欧，里面一份烤串卖8欧，最后花了40多欧还没吃饱。"
+        },
+        {
+          "role": "assistant",
+          "content": "这附近有一个农贸市场周五下午开放，3欧能买够两餐的蔬菜和香料。你可以在家自己烤，加上腌制时间不到45分钟。"
+        }
+      ],
+      "implicit_signal": "预算敏感，愿意选择本地小店或自己做饭"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "设备更新后，手机助手建议我开启‘智能场景’模式，会自动定位并推送附近推荐。我看不到推荐逻辑就没开。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把这个入口在设置里关闭了。如果你需要本地推荐，告诉我具体点，我可以给你列出候选文件夹里手动筛选过的三家小店。"
+        }
+      ],
+      "implicit_signal": "拒绝黑箱推荐，不接受便利大于隐私"
+    }
+  ]
+}

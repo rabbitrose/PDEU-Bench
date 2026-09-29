@@ -1,0 +1,428 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_245",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:20:14",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 18,
+  "composition": {
+    "episodic_preference_trace": 18
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_009",
+      "hidden_indirect_016"
+    ],
+    "content": [
+      "hidden_indirect_002",
+      "hidden_indirect_018"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_008",
+      "hidden_indirect_016"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_012"
+    ],
+    "entertainment": [
+      "hidden_indirect_010"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "food": [
+      "hidden_indirect_008",
+      "hidden_indirect_017"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_014"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_015"
+    ],
+    "learning": [
+      "hidden_indirect_003",
+      "hidden_indirect_011"
+    ],
+    "privacy": [
+      "hidden_indirect_007",
+      "hidden_indirect_017"
+    ],
+    "product": [
+      "hidden_indirect_004",
+      "hidden_indirect_012"
+    ],
+    "role_context": [
+      "hidden_indirect_011"
+    ],
+    "service": [
+      "hidden_indirect_005",
+      "hidden_indirect_009",
+      "hidden_indirect_013"
+    ],
+    "technology": [
+      "hidden_indirect_007",
+      "hidden_indirect_014"
+    ],
+    "travel": [
+      "hidden_indirect_006",
+      "hidden_indirect_015"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周末选了郊区露营，预约时没注意取消政策，结果同行的人临时退出，多付了一笔场地费。今天再选周末活动，我想避免这种问题。"
+        },
+        {
+          "role": "assistant",
+          "content": "明白，我会先筛选支持免费取消或改期的选项。目前有湿地骑行和社区手作坊两个，取消门槛都写明在详情里。你先看活动内容，确认后再做决定。"
+        }
+      ],
+      "implicit_signal": "在时间紧张时优先选择成本明确且可退改的选项，避免隐性费用"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你推荐的家常菜食谱，我照着做结果咸了，后来才发现你给的调料量写的是“适量”。这次找个具体的。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次推荐一道番茄牛肉煲：牛肉切块300克，番茄2个切块，生抽20毫升，老抽5毫升，冰糖10克，水500毫升。小火炖40分钟。你有食物过敏或忌口吗？"
+        }
+      ],
+      "implicit_signal": "需要明确的依据和不确定性说明，不接受模糊推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我买了个电钢琴，想自学基础。之前看教程只看视频太散，现在想按周练，最好有明确反馈点。"
+        },
+        {
+          "role": "assistant",
+          "content": "本周目标：学会C大调音阶右手指法。今日练习：从中央C上行到高八度C，慢速连奏每天10遍。反馈点：录一段最后5遍发给自己听，确认音色均匀。下一次复盘：周日检查连贯性。"
+        }
+      ],
+      "implicit_signal": "喜欢清单和模板，需要分步骤的学习计划"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我在选一款蓝牙追踪器，看了十几个品牌结果一下午还没定下来。能帮我先砍掉那些需要频繁注册或长期订阅的？"
+        },
+        {
+          "role": "assistant",
+          "content": "已过滤：需要年费订阅的排除；绑定专有平台才用的排除；必须注册真实邮箱才能查看定位记录的排除。剩下两款：U1芯片款（单价99，电池可换）和Tile Pro（单价129，无订阅但提醒功能受限）。先看这两款。"
+        }
+      ],
+      "implicit_signal": "容易被过多选项拖慢，需要快速排除不满足硬约束的选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我订阅了一款线上文档服务，试用期过了才发现下个月的自动续费入口在三级菜单里，而且取消要申请人工审核。对这种设计很烦。"
+        },
+        {
+          "role": "assistant",
+          "content": "已标记为不再推荐。如果需要替代品，我推荐OpenOffice或OnlyOffice，明确免费、无自动续费，导出和取消规则在官网首屏写明。"
+        }
+      ],
+      "implicit_signal": "拒绝隐藏费用和不确定的取消规则"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我想带家人去周边城市度周末，但每次列一堆景点反而拖着没订。这次只定两件事：一个住宿和一个确定的白天活动。"
+        },
+        {
+          "role": "assistant",
+          "content": "第一步：在这个周六或周日选择一个，天气预报是晴。第二步：住宿选莫干山山脚民宿，可取消至前一日18点。白天活动：徒步古道来回3小时，带干粮。你先确认日期，我再订民宿。"
+        }
+      ],
+      "implicit_signal": "偏好短周期里程碑，把旅行规划拆分成可执行步骤"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想找个周末健身App，但好多一注册就要求访问电话本和精确位置。我只需要一个能记录动作次数的工具。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐Strong：注册只要求邮箱，不访问位置或联系人，数据可在设置里导出CSV。免费版支持5个自定义动作模板。你打算练哪个动作？我帮你设好第一组计数。"
+        }
+      ],
+      "implicit_signal": "对位置和敏感历史保持谨慎，只提供必要信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "中午经常选单位旁边那家网红简餐，但吃了总是犯困。今天想换一个不会影响下午工作的午饭。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐隔壁社区店的蒸菜套餐：一份蒸鱼+时蔬+杂粮饭，人均28元。非油炸，碳水适量，同事评价下午不会昏沉。你有忌口吗？比如香菜不加？"
+        }
+      ],
+      "implicit_signal": "练习质量和可坚持性优先于名气，避免油腻影响下午工作"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我想给小书房装个空气净化器，搜了一圈性能好的都超三千。这周预算最多两千五，还要预留周末买菜的浮动。"
+        },
+        {
+          "role": "assistant",
+          "content": "降到两千五以内且满足CADR大于200的选择：小米4 Lite（1999元，耗材年换成本约150）和美的KJ210（2299元，滤芯半年一换）。两者都支持手机控制，数据可导出。差个预算缺口，你优先选静音还是能耗？"
+        }
+      ],
+      "implicit_signal": "必须区分必须和可推迟花费，超预算要有替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看到商场有周末市集，去了发现全是卖手串和香薰的，还一直拉着扫码注册。这次选个真正有内容的活动。"
+        },
+        {
+          "role": "assistant",
+          "content": "查到一个社区博物馆的微型摄影展，周六14-16点免费开放，现场有导览但不会推销。最多容纳30人，需预约确保有座。我帮你预约？"
+        }
+      ],
+      "implicit_signal": "避免过度拥挤和强营销活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我想系统地学一下基础日语，但市面上课程不是太长就是太贵。我需要一个能在碎片时间执行的短期计划，每次有明确产出。"
+        },
+        {
+          "role": "assistant",
+          "content": "本周目标：掌握五十音前五行发音和书写。今日练习：听音频跟读あ行15分钟，抄写平假名三遍。反馈点：录一段自己朗读发给助教检查。下一次复盘：周六前能默写前五行。"
+        }
+      ],
+      "implicit_signal": "作为军事策略分析师，偏好将家庭任务拆解为可执行步骤，避免信息过载"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买个体重秤记录变化，但不想把数据上传到云端或者关联社交账号。只要本地显示就行。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐百利达KD-192，纯机械显示，无需电池和App。记录可以手动写在笔记里。价格35元，能持续用多年。如果需要趋势线，也可以在本地表格里每周记一次。"
+        }
+      ],
+      "implicit_signal": "需要短周期里程碑，产品选择支持可量化和可导出"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "找了一家家政服务，网页写“高级清洁”，但没写明包含哪些项目，也没说取消要提前多久。"
+        },
+        {
+          "role": "assistant",
+          "content": "目前已排除该服务。推荐“洁家”标准服务，页面写明：包含全屋表面清洁、厨房抽油烟机外部、卫生间死角；取消需提前4小时电话联系。到位后会给一张核对单，逐项勾选后签名确认。需要我预约周日下午？"
+        }
+      ],
+      "implicit_signal": "偏好例题、评分标准和可观察进步指标，拒绝含糊承诺"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前你推荐笔记应用，给了一大段功能介绍反而更乱了。这次只需要：本周目的、操作步骤、怎么回查。"
+        },
+        {
+          "role": "assistant",
+          "content": "本周目标：设置一个跨设备同步但数据能导出的笔记。操作步骤：1. 安装Joplin，2. 启用OneDrive同步（免费），3. 创建第一个笔记本“家庭清单”。反馈点：周日在电脑端导出一次Markdown文件确认可读。下一次复盘：如数据保留完整就继续使用。"
+        }
+      ],
+      "implicit_signal": "偏好结构化输出，避免泛化建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去爬山现场网络断了，导航和票务都瘫痪，折腾两小时。这次选近郊路线，必须到一个有备用方案的地方。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐半山森林公园：主路线有路标且离线地图可提前下载；门口有游客中心可现金购票。如果天气变化，折返点距离入口2公里，沿途有凉亭。出发前我会发你离线地图包和集合点照片。"
+        }
+      ],
+      "implicit_signal": "拒绝只给大道理，路线要有缓冲和安全考量"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "家里电热水器坏了，维修报价280，换新要2200。目前只能拿出维修费，但如果修完顶一年又坏就不划算。"
+        },
+        {
+          "role": "assistant",
+          "content": "你可以先支付280维修，同时将新热水器纳入下季度专项预算（每月存500，4个月存够）。这样现在不超支，未来也有更换计划。我会在日历设置4个月后的提醒重新评估，届时标记该热水器使用年份。"
+        }
+      ],
+      "implicit_signal": "保守预算优先，愿意为降低风险付费但需明确替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我想在下厨房App上分享食谱，但发现注册必须绑定手机号。我只想传个文字版，不想关联真实身份。"
+        },
+        {
+          "role": "assistant",
+          "content": "替代方案：用cookpad国际版，注册仅需邮箱；创建菜谱时可选匿名制，显示自定义昵称。第一道菜：番茄牛肉煲。如果不想注册，也可以先写在本地笔记，我帮你整理成可复用的模板。"
+        }
+      ],
+      "implicit_signal": "涉及家庭地址和健康信息时保持匿名化"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我在自学游泳，同伴说“还行”但我想知道具体哪不对。网上教程只讲理论，没告诉我怎么自检。"
+        },
+        {
+          "role": "assistant",
+          "content": "今天试这个自检：1. 用手机录一段侧视图，2. 对比三个标准：头部入水是否漫过眉线、手臂入水是否超过肩膀宽度、打腿频率是否与呼吸一致。反馈：找出其中一点差一档的，下次先修那个。复盘时把前后两段视频放在一起比较。"
+        }
+      ],
+      "implicit_signal": "需要可观察进步指标，不接受笼统评价"
+    }
+  ]
+}

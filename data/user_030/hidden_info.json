@@ -1,0 +1,428 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_030",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:15:32",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 18,
+  "composition": {
+    "episodic_preference_trace": 18
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_002",
+      "hidden_indirect_012",
+      "hidden_indirect_017"
+    ],
+    "content": [
+      "hidden_indirect_006",
+      "hidden_indirect_009"
+    ],
+    "decision_priority": [
+      "hidden_indirect_002",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_004",
+      "hidden_indirect_010",
+      "hidden_indirect_014",
+      "hidden_indirect_016"
+    ],
+    "entertainment": [
+      "hidden_indirect_013"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_001",
+      "hidden_indirect_007"
+    ],
+    "food": [
+      "hidden_indirect_012"
+    ],
+    "format_contract": [
+      "hidden_indirect_001",
+      "hidden_indirect_014"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_003",
+      "hidden_indirect_005",
+      "hidden_indirect_008",
+      "hidden_indirect_018"
+    ],
+    "learning": [
+      "hidden_indirect_006",
+      "hidden_indirect_016"
+    ],
+    "privacy": [
+      "hidden_indirect_011",
+      "hidden_indirect_015"
+    ],
+    "product": [
+      "hidden_indirect_007"
+    ],
+    "role_context": [
+      "hidden_indirect_011"
+    ],
+    "service": [
+      "hidden_indirect_005",
+      "hidden_indirect_008",
+      "hidden_indirect_015"
+    ],
+    "technology": [
+      "hidden_indirect_004",
+      "hidden_indirect_010",
+      "hidden_indirect_017"
+    ],
+    "travel": [
+      "hidden_indirect_009"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次浏览器收藏的文章里引了段15世纪探险日志，复制到笔记时才发现链接已失效，没法查原始出处。"
+        },
+        {
+          "role": "assistant",
+          "content": "明白。那这份购物方案里，所有价格和库存数据我会直接附上来源链接和截图时间戳，方便你回查。"
+        }
+      ],
+      "implicit_signal": "坚持验证来源，并依赖结构化格式节省时间"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买运动手表时销售大力推荐最新款，结果多付了一笔费用，旧款其实完全够用。"
+        },
+        {
+          "role": "assistant",
+          "content": "理解。这次先按你预算上限锁定三款，如果超预算，我会直接列出功能损失最小的替选。"
+        }
+      ],
+      "implicit_signal": "预算约束优先于功能，必须给出超预算替代"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买背包，商家页面写了防水但没标等级，结果小雨就渗进去了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次方案表里每个属性我都会标出是“已确认”还是“待核实”，防水等级会专门备注测试标准。"
+        }
+      ],
+      "implicit_signal": "需要清楚标出未确认点，避免遗漏"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "每次在线比价都得重新填一遍地址电话，同样的信息在不同的站反复敲。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会把常用收货信息做成一次性填入模板，需要注册的站先确认是否支持一键填表，否则直接排除。"
+        }
+      ],
+      "implicit_signal": "厌恶重复录入信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次选民宿时看到平台推荐榜第一，去了才发现噪音大、位置偏，评分全靠刷。"
+        },
+        {
+          "role": "assistant",
+          "content": "筛选时会只看近三月真实差评和回复，榜单只作初步列表，不做决策依据。"
+        }
+      ],
+      "implicit_signal": "拒绝只看热度的推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次给的对比表里只写了结论，没列判断标准，我没法自己复判断。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次每条推荐后我会附上一行“判断依据”，比如电池续航测试方法，方便你评分或调整权重。"
+        }
+      ],
+      "implicit_signal": "依赖短周期反馈和可复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前在二手平台买了台相机，到手发现快门数被改过，退货运费自己出，得不偿失。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次如果推荐二手，我会先确认平台是否支持到付退货、是否提供第三方检测报告，列出回滚成本。"
+        }
+      ],
+      "implicit_signal": "需要失败回滚路径"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次开了个云存储年费会员，半年后才知道免费版已经够用，退订时漏掉了取消入口，多扣了一季。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我会在方案里标注续费周期和取消截止日期，并提供替代的免费方案对比维护成本。"
+        }
+      ],
+      "implicit_signal": "拒绝忽略维护成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次按小红书攻略走首尔到束草路线，中间堵车两个钟，同行的人临时退出后更乱。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会准备两套路线，一套直达、一套加休息站，每段标注预计时长和弹性余量，避开热门拥堵时段。"
+        }
+      ],
+      "implicit_signal": "路线留缓冲，拒绝默认热门推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前试了个购物清单App，界面好看但导出要手动复制粘贴，不支持云端同步。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会优先推荐支持CSV导出和跨设备同步的工具，如果必须用锁定式平台，会提前告知迁移成本。"
+        }
+      ],
+      "implicit_signal": "喜欢低摩擦工具，能导出数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "地铁换乘时搜了款扫地机器人，商家让传户型图才给报价，我觉得太越界。"
+        },
+        {
+          "role": "assistant",
+          "content": "不要求户型图的品牌我会单独列出，如果需要尺寸辅助，用标准房型代号替代具体数据。"
+        }
+      ],
+      "implicit_signal": "在信息过多时决策变慢，保护隐私边界"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前按外卖榜点了家韩式拌饭，价格是巷子店的1.5倍，味道却差不多。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次会优先推荐自家做或本地小店，标注每份价格区间，按热量和能否冷冻分档。"
+        }
+      ],
+      "implicit_signal": "预算敏感，偏好本地小店"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "图书馆闭馆前临时看到个研讨会，报名后发现时间跟第二天早会冲突，退票还要手续费。"
+        },
+        {
+          "role": "assistant",
+          "content": "娱乐活动会按你日历空档来排，报名前先确认退改规则，优先选可以免费延期的场次。"
+        }
+      ],
+      "implicit_signal": "可靠性、可维护性和时间边界优先"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上回买了三件外套，回来发现每件都有小问题，退货前才想起来该列个对比表。"
+        },
+        {
+          "role": "assistant",
+          "content": "方案会以表格分列：目标/约束/方案/下一步检查。每件商品对照你的硬约束（预算、可退、洗涤方式）打勾。"
+        }
+      ],
+      "implicit_signal": "结构化的目标/约束/方案表"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "预约确认前客服要求上传身份证正反面，才能查库存，我觉得没必要。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会先筛选那些只打电话或填简短表单就能报价的商家，身份证类敏感信息在确认购买前一律不提供。"
+        }
+      ],
+      "implicit_signal": "只提供完成任务必要的信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "客户回复前我研究了十篇测评，最后反而不知道该信哪篇，设备发热后表现下降那条没人提。"
+        },
+        {
+          "role": "assistant",
+          "content": "会挑出3篇包含长期使用测试或压力测试的测评，直接标注每篇的测试时长和失败案例，不堆数量。"
+        }
+      ],
+      "implicit_signal": "需要示例和可复盘标准，讨厌堆材料"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买打印机时图便宜选了兼容墨盒，结果用了三个月就提示更换，多付了一笔费用。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会把总持有成本（机器+耗材/年）列出来，标注哪部分是一次性投入，哪部分是周期性必须花费。"
+        }
+      ],
+      "implicit_signal": "保守预算，需要区分必须和可推迟花费"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前你给的计划说加油“一定可以完成”，但没给具体时间，结果当天购物车又加了8件不急用的。"
+        },
+        {
+          "role": "assistant",
+          "content": "方案会按你日历空档分配每步最晚截止时间，每件物品标明是“今日必须”还是“可推迟到下周”，不鼓励凑单。"
+        }
+      ],
+      "implicit_signal": "时间边界优先，空泛鼓励不可接受"
+    }
+  ]
+}

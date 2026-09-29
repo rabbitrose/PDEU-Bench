@@ -1,0 +1,512 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_099",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:04:13",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 22,
+  "composition": {
+    "episodic_preference_trace": 22
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_005",
+      "hidden_indirect_009",
+      "hidden_indirect_015",
+      "hidden_indirect_022"
+    ],
+    "content": [
+      "hidden_indirect_011",
+      "hidden_indirect_017"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_006",
+      "hidden_indirect_010",
+      "hidden_indirect_020"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_008",
+      "hidden_indirect_011",
+      "hidden_indirect_016",
+      "hidden_indirect_018",
+      "hidden_indirect_021"
+    ],
+    "entertainment": [
+      "hidden_indirect_010"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_007",
+      "hidden_indirect_014"
+    ],
+    "food": [
+      "hidden_indirect_009",
+      "hidden_indirect_021"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_014"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_013",
+      "hidden_indirect_015",
+      "hidden_indirect_019",
+      "hidden_indirect_022"
+    ],
+    "learning": [
+      "hidden_indirect_007",
+      "hidden_indirect_019"
+    ],
+    "privacy": [
+      "hidden_indirect_004",
+      "hidden_indirect_012"
+    ],
+    "product": [
+      "hidden_indirect_006"
+    ],
+    "role_context": [
+      "hidden_indirect_017"
+    ],
+    "service": [
+      "hidden_indirect_005",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "technology": [
+      "hidden_indirect_002",
+      "hidden_indirect_012",
+      "hidden_indirect_016"
+    ],
+    "travel": [
+      "hidden_indirect_008",
+      "hidden_indirect_020"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周日在超市结账前，发现带了两包标价不同的同款豆浆，本来想省时间直接拿贵的走，但一算多出1300韩元。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我把两包拿回去对比了保质期和生产批次，最终选了日期更新且折合单价更低的。如果下次没有明显品质差异，我建议把便宜的放进购物车，但先放在副袋里，确认不影响当天其他东西再结账。"
+        }
+      ],
+      "implicit_signal": "在预算压力下优先维护可靠性和时间边界，而非寻求更多功能"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "买了台二手显微镜，卖家说电池续航4小时，但第一次在田间用，13分钟左右就自动关机了。回看交易记录，发现对方没给测试视频。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次优先选提供至少30分钟满载运行截图的卖家。我这次会把退货窗口和运费承担条款列在纸上，确认后再付款。"
+        }
+      ],
+      "implicit_signal": "需要可验证来源和失败回滚路径，拒绝空洞推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在手机截图里看到自己之前做实验材料采购的列表，用的是手写笔记APP，但每次想编辑都要重新画表，太慢。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用和当前日历、笔记打通的表格应用吧。我这几周用Airtable的免费方案，列三列：目的-数量-预计拆解时间，10分钟就能跟新手机截图对照一次。"
+        }
+      ],
+      "implicit_signal": "喜欢低摩擦工具，但要求格式内保持已知结构"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "为了预约一家植物商店的熟土样品，被迫注册了他们的会员系统。结果后来发现他们要求填手机号和家庭地址才能领样品，而且不能匿名。"
+        },
+        {
+          "role": "assistant",
+          "content": "我撤销了那次申请，去另外一家不需要注册、只用邮箱确认的店拿了土壤测试包。以后凡是要求手机号才能看价格或取样的，先跳过。"
+        }
+      ],
+      "implicit_signal": "拒绝强迫注册或公开个人信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "曾买过一个试用账号的自动浇水系统订阅，但它的取消入口在页面最下面，而且只有工作日能联系客服。漏掉了取消入口，多付了一个月。"
+        },
+        {
+          "role": "assistant",
+          "content": "现在选任何服务之前，先把取消流程截图存下来。我这次选的是短信就能取消的服务，月费比之前低29%，并且支持在周日晚上操作。"
+        }
+      ],
+      "implicit_signal": "服务必须明确取消规则和长期维护成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在找便携式土壤湿度计，看上了一个能连手机的。但查评价发现半年后探头老化导致读数不准，而且官方不单独卖探头。"
+        },
+        {
+          "role": "assistant",
+          "content": "不买那个。我找到了另一款探头可更换、电池标准AAA、说明书里带校准曲线图，价格高15%但能用两年以上。"
+        }
+      ],
+      "implicit_signal": "产品选择优先考虑长期使用成本和替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "参加了一门线上植物病理课，老师只给PDF和视频链接，没有作业批改也没有反馈。材料发出去后又撤回了两次，内容很重复。"
+        },
+        {
+          "role": "assistant",
+          "content": "换了一门每周末有模拟诊断练习、48小时内提交分析报告的课程。我上周提交的土壤判断模型，导师给了一条非常具体的修正步骤，我在下次取样里直接验证了。"
+        }
+      ],
+      "implicit_signal": "偏好短周期反馈和可复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "计划去仁川植物园，导航推荐了一条换乘两次的路线，第二次换乘只有3分钟间隔。但到了地铁换乘时发现通道施工，多绕了一次路，迟到了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次我用手机截图存下备选路线，设定至少7分钟换乘缓冲。这次我把地铁施工公告存进日历提醒，提前查了临时公交。"
+        }
+      ],
+      "implicit_signal": "路线要留出缓冲，且讨厌重复录入信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下班回家路上想买晚饭，进了一家连锁便当店，单份紫菜包饭要4500韩元。但想起家里还有昨天没煮完的鸡蛋和泡菜。"
+        },
+        {
+          "role": "assistant",
+          "content": "掉头去旁边小超市买了250克米和两条辣椒，总价不到1500韩元，回家半小时做好蛋包饭。第二天还剩一份可以做午餐，比外卖省钱。"
+        }
+      ],
+      "implicit_signal": "预算敏感，愿意选择本地小店或自己做饭"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周六被同事拉去一个植物市集，那人非常多，每个展台都要排队半小时，而且有很多直播带货的摊子，噪音很大。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后只看那种提前发布参展商名单、人数限流的植物市集。最近发现了首尔一个每季度开的社区种子交换会，免费入场、不用注册，1小时内能逛完。"
+        }
+      ],
+      "implicit_signal": "小型真实活动，且不破坏第二天节奏"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在看一篇关于转基因水稻的深度报道，里面引用了很多数据，但没标出哪些是通过专家联系确认的。"
+        },
+        {
+          "role": "assistant",
+          "content": "我翻到原文引用来源的论文列表，直接查看其中两篇的摘要。发现有一处数据其实是样本量不足的预印本。以后这种文章我只读带批注或引用链接的版本。"
+        }
+      ],
+      "implicit_signal": "需要清楚标出未确认点"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "安装了一款植物叶片识别APP，要求读取联系人、历史和定位才能使用完整功能。我选了拒绝，结果只能扫三片叶子就要付费。"
+        },
+        {
+          "role": "assistant",
+          "content": "卸载了它。改用PlantNet，它只用相机权限，且每次识别后数据可以当场删除。我已在设置里关闭后台刷新，它在测试30种样本时识别率比之前那个好。"
+        }
+      ],
+      "implicit_signal": "默认开启隐私保护和最小权限"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "搜索温室通风方案时，有个网站列出“最受欢迎TOP5”，但没有一台设备写清楚风量测试环境和日常清洁方法。"
+        },
+        {
+          "role": "assistant",
+          "content": "不采纳那5台。我从别的地方找到一个用户社群，他们把每台风机在30天连续使用后的粉尘堵塞率做成了表格。最后选了其中一台维护成本最低的。"
+        }
+      ],
+      "implicit_signal": "拒绝只看热度的推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在选滴灌管道材料，卖家给了3种报价，但只有总价没有每米单价和质保年限。我要求给明细，对方只发了一个模糊截图。"
+        },
+        {
+          "role": "assistant",
+          "content": "拒绝了那家。我后来要求供应商按“目的-约束-方案表”格式列出：材料类型、每米承压、质保时限、替换零件可购渠道。有一家立即提供了PDF，按那个下单了。"
+        }
+      ],
+      "implicit_signal": "偏好可验证来源和结构化对比"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一台旧培养箱显示温度波动，看到有廉价加热元件，但评论说半年就烧坏且不兼容原厂接头。差点下单了。"
+        },
+        {
+          "role": "assistant",
+          "content": "没买。我多花了一点钱买了原厂组件，外加一个备用保险丝，总价虽然高三成，但安装后连续运行30天没报警。附带的说明书里有故障码列表，自己就能换。"
+        }
+      ],
+      "implicit_signal": "忽略维护成本是硬性回避"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "每天要在三个不同APP里记录土壤温度、湿度和光照数据，每次手动输入相同田块编号，烦死。"
+        },
+        {
+          "role": "assistant",
+          "content": "用Google Sheets搭了一个表单，扫码就能填，一行的田块编号自动继承上次。我用了手机截图里的田块地图，做了下拉菜单，以后不用再敲编号。"
+        }
+      ],
+      "implicit_signal": "讨厌重复录入信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在准备本科生的实验讲义，网上搜到一篇通用农业操作指南，但里面写的是温室数据，不是我们地栽的条件。"
+        },
+        {
+          "role": "assistant",
+          "content": "我改用自己上次在相同地块做的三组对照数据做讲义，现场给本科生的操作步骤按湿度变化分了两套。这次没有通用模板，但大家当天就能动手。"
+        }
+      ],
+      "implicit_signal": "偏好行业专业场景贴合的内容"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "为了买一袋生物炭，需要先注册农场商城会员，再链接个人邮箱，还要下载他们的APP才能看运费。"
+        },
+        {
+          "role": "assistant",
+          "content": "放弃了。在另一家本地农资店，用电话直接问完了价格和运费，当天直接到店取货，不用下载任何东西。"
+        }
+      ],
+      "implicit_signal": "需要少中转、少注册的服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "参加了一个植物育种工作坊，老师只说“很好，继续努力”，没有指出我杂交记录表里漏了花粉采集时间。"
+        },
+        {
+          "role": "assistant",
+          "content": "我后来把工作坊的考核表拿来自己补了时间戳。下次选那种要求学员在每次操作后提交一步照片、导师列修正点的课程。"
+        }
+      ],
+      "implicit_signal": "重视示例和可复盘标准，拒绝空泛鼓励"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "打听到一个乡下种子库开放参观，但附近太难订房，只剩没有独立卫浴、且取消政策要提前7天的民宿。"
+        },
+        {
+          "role": "assistant",
+          "content": "不订那个。我改成当天往返，查了末班车是20:30，提前买了早班票并把回程闹钟设在19:15。虽然参观时间少了些，但不用冒险住不安全的地方。"
+        }
+      ],
+      "implicit_signal": "住宿和交通优先考虑安全和可取消性"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在菜单上看到一份“辣炖鸡块”，没有标辣度等级和配菜成分。我上次吃类似菜后半夜胃不舒服。"
+        },
+        {
+          "role": "assistant",
+          "content": "我直接问了店员能否做成少油且不放蒜粉，对方说可以换青椒代替。我点了那份，并备注在手机截图里标注了下次点菜时提醒确认酱料成分。"
+        }
+      ],
+      "implicit_signal": "需要清楚标出未确认点，且不过度油腻"
+    },
+    {
+      "interaction_id": "hidden_indirect_022",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看上一台带数据导出功能的温度记录仪，标价是29万韩元，比我预算高了整整一倍。"
+        },
+        {
+          "role": "assistant",
+          "content": "不买。找到另一家提供相同精度的手动记录仪，USB输出不含云服务，标价13万，且商家提供一个月无条件退换。我买了一台试了三天，数据稳定，省下的钱够买两个备用探头。"
+        }
+      ],
+      "implicit_signal": "若超预算必须给出替代方案"
+    }
+  ]
+}

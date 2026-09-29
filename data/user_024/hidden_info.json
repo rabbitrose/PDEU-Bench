@@ -1,0 +1,514 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_024",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:17:13",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 22,
+  "composition": {
+    "episodic_preference_trace": 22
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_013"
+    ],
+    "content": [
+      "hidden_indirect_003",
+      "hidden_indirect_014",
+      "hidden_indirect_021"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_009",
+      "hidden_indirect_013",
+      "hidden_indirect_019"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_007",
+      "hidden_indirect_008",
+      "hidden_indirect_015",
+      "hidden_indirect_017",
+      "hidden_indirect_020",
+      "hidden_indirect_022"
+    ],
+    "entertainment": [
+      "hidden_indirect_011"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_014"
+    ],
+    "food": [
+      "hidden_indirect_004",
+      "hidden_indirect_017"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_010",
+      "hidden_indirect_016",
+      "hidden_indirect_021"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_012",
+      "hidden_indirect_018"
+    ],
+    "learning": [
+      "hidden_indirect_002",
+      "hidden_indirect_010",
+      "hidden_indirect_022"
+    ],
+    "privacy": [
+      "hidden_indirect_005",
+      "hidden_indirect_012"
+    ],
+    "product": [
+      "hidden_indirect_008",
+      "hidden_indirect_015"
+    ],
+    "role_context": [
+      "hidden_indirect_011"
+    ],
+    "service": [
+      "hidden_indirect_001",
+      "hidden_indirect_007",
+      "hidden_indirect_020"
+    ],
+    "technology": [
+      "hidden_indirect_006",
+      "hidden_indirect_016",
+      "hidden_indirect_018"
+    ],
+    "travel": [
+      "hidden_indirect_009",
+      "hidden_indirect_019"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周切换了银行的免费转帐功能，启动后发现在线支付都用不了，信贷员说我必须绑定一个储蓄账户才能恢复。"
+        },
+        {
+          "role": "assistant",
+          "content": "我帮你查一下这家信用合作社的替代方案：他们有低余额豁免的选项，但需填写纸质申请。你可以先提交，我同步检查是否有其他不强制关联账户的本地银行。"
+        }
+      ],
+      "implicit_signal": "优先选择支持社区互惠而非效率最大化的服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "创伤知情护理的培训结业报告里引了一篇2022年的RCT，但参与群体全是城市中产，我案主里有三位农村移民，他们叙事里从没提过那套指标。"
+        },
+        {
+          "role": "assistant",
+          "content": "我们把这篇文章降级为辅助参考，改用社区口述案例和当地合作社的记录来补充督导记录。研究有用，但不该覆盖你客户的真实经验。"
+        }
+      ],
+      "implicit_signal": "研究若与生活经验冲突则重新评估采纳逻辑"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "督导让我整理‘好邻居’项目简报，同事模板写了五大好处，用了大量自我管理话术，但里面没有提到谁无法获得这些资源。"
+        },
+        {
+          "role": "assistant",
+          "content": "我帮你加一节‘获取障碍’，列出语言、交通、残疾包容三类缺口，每项后面配一句社区已有的互助措施，不掩盖权力问题。"
+        }
+      ],
+      "implicit_signal": "反对将结构性不公塑造成健康建议，内容必须保留权力分析维度"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那次回家路上看到社区花园招募海报，写的是‘让你更高效地放松’、‘每周产出有机菜’，后来活动散场后组织者还在推销付费营养计划。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次我们赶在周日晚上把共享表格发出去：只列免费种子交换日和食物主权讨论会，用‘分享多余收成’替代‘提高效率’。"
+        }
+      ],
+      "implicit_signal": "自护不等于效率优化，社区园艺突出食物正义"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "当地食物银行想用一个应用追踪领取人数，但注册时必须填地址、家庭收入和子女数量，还要接收推送广告。"
+        },
+        {
+          "role": "assistant",
+          "content": "我们不能替客户授权那些字段。我做了离线副本，只统计人数与食物品类，不绑定任何个人数据。入口处用纸质签到即可。"
+        }
+      ],
+      "implicit_signal": "拒绝收集敏感客户数据的数字工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "机构想做一个‘冬日暖心’活动，海报文案放大写‘捐助者可以让一个家庭免于饥寒’，但没提到领用者本身的决定权。"
+        },
+        {
+          "role": "assistant",
+          "content": "我建议把标语改成‘社区内的食物点是大家共有的资源’，取消‘受助者’分类，用‘邻居’统一称呼。避免救世主叙事。"
+        }
+      ],
+      "implicit_signal": "拒绝将慈善救济凌驾于权利之上的框架"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次督导会一个合作方说‘那些高风险青少年需要行为矫正计划’，但我的案主小杰只是搬家后没找到篮球场，情绪表达直接而已。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次会议我们拿同一位案主做练习：把所有‘矫正’替换成‘支持’；‘问题行为’换成‘应对策略’，并注明环境因素而非个人缺陷。"
+        }
+      ],
+      "implicit_signal": "强调非监禁化、非病理化的语言实践"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "同事推荐一款‘社工自护订阅盒’，每月寄来蜡烛、精油和待办事项本，但供应商是快时尚投资方，盒子用塑料气泡包装了三层。"
+        },
+        {
+          "role": "assistant",
+          "content": "我帮你找当地蜂农做的蜂蜡蜡烛和二手日记本，加一个本地合作社的散装茶样，包装用旧报纸。通知订阅商不再续费。"
+        }
+      ],
+      "implicit_signal": "仅当产品符合社区赋权而非个人消费主义时才被接受"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去年去奥林匹克国家公园本想徒步露营，但同行的人临时退出，我只能临时找旅馆，三天住宿花了我半个月的杂货预算。"
+        },
+        {
+          "role": "assistant",
+          "content": "我查了今年九月农村社区志愿者旅行的空档，住宿费全免但需要每天帮当地食物银行发四次物资。你只需付大巴油费分摊，约36美元。"
+        }
+      ],
+      "implicit_signal": "旅行优先可负担性和社区互动而非舒适度"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "文化谦逊工作坊的讲稿只用一句‘要尊重差异’带过，没提供具体步骤，结果第一天就有参与者问‘那我可以问移民身份吗’。"
+        },
+        {
+          "role": "assistant",
+          "content": "我们重写第三节：每条建议后面跟上‘促进举措’（如把会议室让给社区代表先发言）、‘可访问性检查’（手语、多语言材料）。"
+        }
+      ],
+      "implicit_signal": "培训材料必须包含权力问询与促进举措"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那天在候机区里看了Netflix一部热门纪录片，讲单亲妈妈创业成功，但完全没提托儿补贴缺口和种族薪资差距。"
+        },
+        {
+          "role": "assistant",
+          "content": "我记得波特兰独立影院周末有一部《合作的代价》，讲巴西无地工人运动的纪实，票价是自愿付费。下周我可以发一份影单给你，每部附上社区讨论线索。"
+        }
+      ],
+      "implicit_signal": "休闲内容须带有社会意识而非纯逃避"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "机构要我导入客户的联络人到一款协作应用，方便其他社工随时调用，但该应用默认把联系人信息上传云服务器并允许算法重排。"
+        },
+        {
+          "role": "assistant",
+          "content": "完全不能接受。我在离线数据库里建一个只读查阅表，不设网络同步，每人手动输入查看理由。等IT写完本地存储确认单再启用。"
+        }
+      ],
+      "implicit_signal": "拒绝强制分享和过度聚合用户数据的工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周末农贸市场有个熟食摊卖盒装沙拉，6美元一盒，但供应商被爆付给包装工人低于市价的时薪，最后一项没人确认其劳动条件。"
+        },
+        {
+          "role": "assistant",
+          "content": "我从共享表格里找到三名愿意换工的家庭，下周轮流带饭并用香草交换。零花钱省下来，凑55美元捐给本地食品主权联盟。"
+        }
+      ],
+      "implicit_signal": "财务决策优先互助与长期集体利益而非即时便利"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一篇论文说‘无家可归者中药物滥用率达47%’，但我的案主Shelly从未被问过她用药是为了在白天的收容所里保持清醒。"
+        },
+        {
+          "role": "assistant",
+          "content": "我们把Shelly的叙述做成匿名案例卡片，放在政策倡导信的开头，让数据变成辅证而不是解释。引用研究之前先算一下样本的代表性。"
+        }
+      ],
+      "implicit_signal": "生活经验证据优先于抽象研究，尤其在系统性问题中"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那家道德服装品牌的新广告语是‘高效自我投资——每件衣服帮你省下早晨决策时间’。第二天又重做一遍，因为我穿着它开会时老想这文案。"
+        },
+        {
+          "role": "assistant",
+          "content": "给客服写邮件建议他们换回旧版‘适合你慢节奏周末的棉麻衫’，如果他们不改，我推荐另一家波特兰裁缝，每件按小时计价，不搞效率叙事。"
+        }
+      ],
+      "implicit_signal": "反对自护等于生产力优化的表达"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "组织引进了一个CRM系统，宣传说‘一键安排所有案主回访’，但系统自动把英语非母语的客户分配到更短的时段，理由是减少翻译成本。"
+        },
+        {
+          "role": "assistant",
+          "content": "必须关掉那个自动分配规则。我重新建一张手工排期表格，在‘语言’列之后加一栏‘翻译资源已配置’，保证每人至少35分钟。"
+        }
+      ],
+      "implicit_signal": "反对将结构性不平等掩盖在技术升级叙事下"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "社区花园的申请表要求申请人写‘你打算贡献多少小时’，但下个月没有15个以上成年志愿者报名，表格就被系统自动废弃了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我在表格最后一栏加一个选项：‘若时间不够，我可以参与轮流浇水或收成共享’，并附上说明：参与形式不限体力劳动。然后把自动废弃的门槛改成人工确认。"
+        }
+      ],
+      "implicit_signal": "食物正义实践必须突出获取结构和权利而非单一个体努力"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "社工群里有人推荐一款‘同行支持打卡APP’，需要注册并授权读取照片和通讯录才能看到其他用户发的匿名帖子。"
+        },
+        {
+          "role": "assistant",
+          "content": "我们可以用公共共享表格和日历空档来标注可约的茶歇时段，不留电话和姓名。设备发热后表现下降，正好说明无端授权的代价不值得。"
+        }
+      ],
+      "implicit_signal": "拒绝任何强制分享个人数据的工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次约了三位朋友去滑雪，但只有我查了返程大巴时刻表；他们临时改主意要住一晚，我第二天的督导会因为迟到被记了警告。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次出门前用共享表格列出每个人的底线时间和预算上下限，谁提出变更就要同步提供新的接驳方案。我再把仅剩的应急假放进行程缓冲区。"
+        }
+      ],
+      "implicit_signal": "旅行规划和伙伴选择优先参与者的能动性和集体决策"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "公司EAP推荐了一个冥想App，首页是‘15分钟帮你提升工作效率’，好几次我按开都觉得自己在上班而非休息。"
+        },
+        {
+          "role": "assistant",
+          "content": "我整理了一份纯公益的音频资源：没有进度跟踪，没有成就徽章，只有引导语音和环境声。同步退出EAP订阅，改从图书馆免费借CD拷贝。"
+        }
+      ],
+      "implicit_signal": "自我照顾要保留非工具化的空间"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "督导给我一份‘客户自评量表’，里面满屏术语并默认受访者会读英文，其中一项问‘你是否感到绝望’没有选项说明。"
+        },
+        {
+          "role": "assistant",
+          "content": "我先在表格注释里逐条写出日常用语的等价翻译，然后在行末加一列‘促进举措：可请口译或求助家人’，最后把原表存为草稿，等文化顾问审完再用。"
+        }
+      ],
+      "implicit_signal": "评估任何工具或资源须先问权力问题和可及性障碍"
+    },
+    {
+      "interaction_id": "hidden_indirect_022",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "同行学习小组的注册页面写着‘评估你的创伤水平再报名’，还要填一份包含过去诊断史的心理量表，我看到后直接退出了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我联系主办方把量表换成开放式入场问卷：‘你想带来什么？你想带走什么？’，同时确认会议室有桌椅按圆圈摆放，不设讲台。"
+        }
+      ],
+      "implicit_signal": "学习形式优先线下集体性，强调非病理化语境"
+    }
+  ]
+}

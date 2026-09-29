@@ -1,0 +1,462 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_052",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:24:05",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_005",
+      "hidden_indirect_011",
+      "hidden_indirect_016",
+      "hidden_indirect_020"
+    ],
+    "content": [
+      "hidden_indirect_008"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_013",
+      "hidden_indirect_016"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_010",
+      "hidden_indirect_012",
+      "hidden_indirect_018"
+    ],
+    "entertainment": [
+      "hidden_indirect_013"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_008"
+    ],
+    "food": [
+      "hidden_indirect_012"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_017"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_007",
+      "hidden_indirect_019"
+    ],
+    "learning": [
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "privacy": [
+      "hidden_indirect_007",
+      "hidden_indirect_014",
+      "hidden_indirect_019"
+    ],
+    "product": [
+      "hidden_indirect_009"
+    ],
+    "role_context": [
+      "hidden_indirect_015"
+    ],
+    "service": [
+      "hidden_indirect_006",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "technology": [
+      "hidden_indirect_009",
+      "hidden_indirect_014"
+    ],
+    "travel": [
+      "hidden_indirect_011"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买游击舞厅票花了37美元，结果当晚现场网络断了，表演取消，票钱只退了80%。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次选场地先查是否有离线预案；总成本按可退还部分计算，保留20%作为风险折价。备用日期也列出来。"
+        }
+      ],
+      "implicit_signal": "倾向于排除总成本超过当前可支配余额的方案，即使短期体验更好"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次推荐的是瓜城独立影院月票，但我查了官网才发现价格比你说的高42比索，而且限定周二使用。"
+        },
+        {
+          "role": "assistant",
+          "content": "该信息取自三个月前的博客页面，未验证有效期。本次改引用影院官方PDF，并标注价格确认日期和适用条件。"
+        }
+      ],
+      "implicit_signal": "要求推荐中附带第三方价格对比来源和假设说明"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天你给的那个娱乐方案没有分栏，我午休结束前得自己重排成表格才能决定。"
+        },
+        {
+          "role": "assistant",
+          "content": "接下来所有方案直接用四栏表：必要项 / 成本 / 可推迟项 / 风险阈值。本周六选项如下——"
+        }
+      ],
+      "implicit_signal": "交付格式严格：必须包含成本表、必要项、可推迟项、风险阈值"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周艺术市集预计逛2小时，实际37分钟就结束了，但返程公交因为活动临时取消，多等了30分钟。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次把活动时间保守到最低估的80%，并把交通缓冲从15分钟增加到30分钟。实际参考使用当日家庭群通知。"
+        }
+      ],
+      "implicit_signal": "倾向于保守估算，在数字上预留额外余量"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那个salsa班写着70美元全包，报名后又说要另付57比索材料费和场地清洁费。"
+        },
+        {
+          "role": "assistant",
+          "content": "这类班不再推荐。本次只列出明确标价且提供取消规则的场所，额外收费项必须在原始页面注明。"
+        }
+      ],
+      "implicit_signal": "强烈回避隐藏费用和含糊预算表述"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "以前你推荐的流媒体免费试用指定要绑定信用卡，我取消了但次月还被扣了42比索。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐前先确认是否不用银行卡即可试用，且取消窗口在试用期内明确标出。本次只列非自动续费平台。"
+        }
+      ],
+      "implicit_signal": "严格规避超前消费建议和强制连续订阅"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "报名户外导览填了姓名、电话、邮箱还不够，还被要求上传自拍证件照。"
+        },
+        {
+          "role": "assistant",
+          "content": "此导览跳过。以后只推荐报名表只收集必要字段（姓氏、人数、紧急联系）且不能强制上传照片的活动。"
+        }
+      ],
+      "implicit_signal": "反感被迫提交超出需要的个人信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你之前给的那个娱乐网站列表，第一推荐是水上乐园，可那天周日晚上我需要上午处理完工作仪表盘，下午三点才能动。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次清单一律按用户当天可行动时间段过滤，并标注每项从家庭地址的交通时长。先确认午休后能出发。"
+        }
+      ],
+      "implicit_signal": "要求内容针对自身职业和生活节奏，不接受通用榜单"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个活动笔记app我用了两周，导出数据只有专有格式，没法转成旧版清单用。"
+        },
+        {
+          "role": "assistant",
+          "content": "换用支持CSV导出的工具。免费版足够，本地存储不开同步，总成本为零，且任何时候可迁移。"
+        }
+      ],
+      "implicit_signal": "选择产品需评估长期总成本和可退出路径"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次看了你发的基础烹饪视频合集，没有操作对照表，我试了一道炖豆子锅底糊了，不知道错在哪步。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成每道菜附带错误对照卡（锅底糊 → 火太大或水太少）。完成后用三个标准自评：时间、温度、颜色。"
+        }
+      ],
+      "implicit_signal": "喜欢有示例和可复盘标准的学习材料，短周期反馈"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去特基拉一日游，大巴的中午停靠站强制购物，多花了42美元买非必需品。"
+        },
+        {
+          "role": "assistant",
+          "content": "筛选有明确无购物承诺且提供可取消通票的巴士公司。优先考虑早班车，留足自己用餐时间。"
+        }
+      ],
+      "implicit_signal": "旅行选择安全、可取消、总成本优先于热门度"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推荐的街角taco店确实便宜，但吃完后一下午都胃撑，影响了晚上散步和记账。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后优先推荐份量中等且非油炸的本地小店，并标注大概热量和饱腹感水平——避开那些配薯条或双层肉的选项。"
+        }
+      ],
+      "implicit_signal": "预算敏感且需要稳定执行当日安排，不过度油腻"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次尝试密室逃脱，晚上十点半才结束，回家做仪表盘做到一点，第二天午休才缓过来。"
+        },
+        {
+          "role": "assistant",
+          "content": "本次只推荐时间在18:00前结束、地点离家步行可到的活动。额外确认回程无额外堵点。"
+        }
+      ],
+      "implicit_signal": "休闲活动不能破坏第二天的工作节奏"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个记账同步app要求读取我的通讯录和相册，我只想手动录入金额。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用离线记账表模板，数据只存在本地，每周手动备份一份到加密云盘。无需任何权限。"
+        }
+      ],
+      "implicit_signal": "要求最小权限和跨平台可导出"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次报名了线上电影讨论会，结果对方直接电话我聊了57分钟，我中途说要去关笔记本也没能挂断。"
+        },
+        {
+          "role": "assistant",
+          "content": "只推荐有明确时长说明且支持随时静音的异步服务（邮件/私信讨论）。先让对方提供文本版流程。"
+        }
+      ],
+      "implicit_signal": "因工作身份，需要服务明确取消规则和响应速度"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你推荐我买提前票省37比索，但后来我取消了当天的会议，票不能退全款，反而更亏。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后只推荐灵活票或支付当天现场票价。若提前买，必须附上退改规则和取消概率预判（如活动经验值≤3次，拒推早鸟）。"
+        }
+      ],
+      "implicit_signal": "必须区分可推迟花费和必须花费"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次说某个博物馆周日免费，但到了发现只对本地居民免费，我需要护照才能进。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后所有免费信息括号注明来源和是否有限制条件。无法确认的标记为“未核实”，并给出验证路径。"
+        }
+      ],
+      "implicit_signal": "需要明确被告知推荐中的未知信息或不确定性"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次给了8个周六活动让我选，我午休花了42分钟看完还是决定不了，最后只在家散步。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后每轮只列最多3个选项，附带比较表，按总成本从低到高排。超时未选则默认推荐最低成本项。"
+        }
+      ],
+      "implicit_signal": "愿意多比较但需要在合理范围内，避免无限选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次让我共享实时位置来找附近公园，但我不想暴露当晚散步路线给外部服务。"
+        },
+        {
+          "role": "assistant",
+          "content": "之后只基于你手动输入的社区范围来推荐。公园半径不超过一公里，不调用任何定位接口。"
+        }
+      ],
+      "implicit_signal": "对位置和家庭群信息敏感，需匿名化处理"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次想报一个手工布艺工作坊，要先注册三个平台才能看到课表，还得再跳转付款页。"
+        },
+        {
+          "role": "assistant",
+          "content": "这类服务不再推荐。只选一个页面完成登记+付款的本地工坊，并提前截图取消政策发你确认。"
+        }
+      ],
+      "implicit_signal": "多中转、多注册的服务需要排除"
+    }
+  ]
+}

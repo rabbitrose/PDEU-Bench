@@ -1,0 +1,246 @@
+{
+  "user_id": "user_064",
+  "explicit_preferences": {
+    "user_profile": "一位理解不完整或不准确项目文档法律含义的法律顾问",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Alexandra Marchetti",
+        "age": 42,
+        "gender": "女性",
+        "location": "美国华盛顿特区",
+        "languages": [
+          "英语",
+          "意大利语"
+        ],
+        "education_level": "法学博士，法学硕士（LL.M.）",
+        "occupation": "法律顾问",
+        "industry": "法律服务/合规",
+        "seniority": "资深",
+        "household": "已婚有两个孩子",
+        "life_stage": "处于职业生涯中期、有家庭责任的专业人士"
+      },
+      "physical_profile": {
+        "height_cm": 170,
+        "general_appearance": "专业、整洁的着装，戴眼镜",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "注重细节、谨慎、有原则的法律专业人士，重视准确性和完整性。",
+        "big_five": {
+          "openness": 6,
+          "conscientiousness": 9,
+          "extraversion": 5,
+          "agreeableness": 7,
+          "neuroticism": 3
+        },
+        "strengths": [
+          "文件审查的彻底性",
+          "分析性思维",
+          "强大的道德判断力",
+          "对细节极佳的注意力"
+        ],
+        "weaknesses": [
+          "完美主义可能拖慢产出速度",
+          "对小错误过于挑剔",
+          "任务难以委派"
+        ],
+        "values": [
+          "准确性",
+          "正直",
+          "责任感",
+          "风险缓解"
+        ],
+        "motivations": [
+          "确保合规性与法律健全性",
+          "保护客户免受责任",
+          "维护专业标准"
+        ],
+        "stress_triggers": [
+          "不明确或不完整的文件",
+          "最后一刻的变更",
+          "在细节上妥协的压力"
+        ]
+      },
+      "background": {
+        "summary": "出身于律师家庭，在乔治城大学获得法学博士学位，随后获得合规方向的法学硕士学位。在一家顶级律师事务所工作10年后，转入一家跨国企业担任内部法律顾问。拥有丰富的合同审查、法规合规和风险评估经验。",
+        "education_specializations": [
+          "公司法",
+          "合规",
+          "知识产权"
+        ],
+        "career_history": [
+          "在Smith & Jones律师事务所担任律师（8年）",
+          "在Global Corp担任高级法律顾问（5年）",
+          "现任：TechInnovate Inc.法律顾问（3年）"
+        ]
+      },
+      "lifestyle": {
+        "daily_routine": "早晨与家人共度，工作时间为上午8点至下午6点，晚上陪孩子或自由安排。周末定期远足和尝试烹饪。",
+        "hobbies": [
+          "远足",
+          "烹饪意大利菜",
+          "摄影",
+          "阅读法律惊悚小说"
+        ],
+        "social_habits": "偏爱小型聚会或一对一会议，避免大型派对。活跃于专业法律网络。"
+      },
+      "interests": [
+        "公司治理",
+        "数据隐私法规",
+        "风险管理",
+        "法律科技",
+        "古典音乐",
+        "法律史纪录片"
+      ],
+      "explicit_preferences": {
+        "content_preferences": [
+          "法律分析与评论",
+          "判例法更新",
+          "合规指南",
+          "风险管理文章",
+          "内容必须符合该用户独特的工作模式：法律顾问备忘录模式：问题、风险敞口、控制文件、下一步签字。",
+          "拒绝通用助手框架：除非法律决策需要，否则不要提供宽泛的教育性解释。"
+        ],
+        "product_preferences": [
+          "高质量办公用品",
+          "可靠笔记本电脑（偏好Apple MacBook Pro）",
+          "人体工学家具",
+          "安全文件存储解决方案",
+          "产品应通过用户自身的权衡视角选择：红/黄/绿风险表，包含负责人和截止日期列。"
+        ],
+        "service_preferences": [
+          "法律研究数据库（Westlaw, LexisNexis）",
+          "在线归档服务",
+          "带追踪功能的快递服务",
+          "专业发展网络研讨会",
+          "服务只有在保留以下决策优先级时才可接受：特权可执行性、审计追踪和家庭时间边界优先于完整性。"
+        ],
+        "learning_preferences": [
+          "数据隐私法在线课程",
+          "合同管理研讨会",
+          "带有问答环节的现场研讨会"
+        ],
+        "travel_preferences": [
+          "偏好直飞航班",
+          "具有良好工作空间的住宿",
+          "参加欧洲城市的法律会议"
+        ],
+        "food_preferences": [
+          "意大利菜",
+          "有机和本地采购食材",
+          "避免过度加工食品"
+        ],
+        "entertainment_preferences": [
+          "法律剧和纪录片",
+          "古典音乐会",
+          "悬疑小说（尤其是John Grisham的作品）"
+        ],
+        "technology_preferences": [
+          "苹果生态系统（iPhone、iPad、Mac）",
+          "Microsoft Office套件",
+          "VPN和加密工具",
+          "双因素认证"
+        ],
+        "privacy_preferences": [
+          "非常高的隐私期望",
+          "使用VPN和加密电子邮件",
+          "最小化社交媒体存在"
+        ],
+        "budget_preferences": [
+          "愿意投资于质量和可靠性",
+          "个人物品注重预算",
+          "偏好价值而非奢华"
+        ],
+        "personalization_directives": {
+          "style_contract": "法律备忘录模式：问题、风险敞口、控制文件、下一步签署。",
+          "decision_priority": "特权可执行性、审计追踪和家庭时间界限优先于完整性。",
+          "evidence_contract": "希望精确引用，但仅在陈述实际风险之后。",
+          "format_contract": "红/黄/绿风险表，附有负责人和截止日期列。",
+          "anti_default_assistant_behavior": "除非法律决策依赖于它们，否则不要提供广泛的教育性解释。",
+          "distinctive_quirks": [
+            "意大利家庭承诺可能优先于高效工作安排。",
+            "仅当访问控制可解释时，才使用Mac优先和加密存储。",
+            "对于休闲计划，路线难度和餐食准备比著名景点更重要。"
+          ],
+          "hard_avoidances": [
+            "法律术语的文本墙",
+            "没有保留控制的工具",
+            "默认占用周末的工作计划"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": [
+        "杂乱无章的文件",
+        "语法错误",
+        "无来源的主张",
+        "过于随意的沟通",
+        "家庭和工作带来的时间限制",
+        "有争议的社交媒体辩论"
+      ],
+      "communication_style": {
+        "tone": "正式而精确",
+        "vocabulary": "使用法律术语但适应受众",
+        "rhythm": "稳重，避免仓促结论",
+        "nonverbal_cues": "专注，面对面时保持眼神交流"
+      },
+      "decision_making": {
+        "style": "基于证据且具有咨询性质",
+        "factors_considered": [
+          "法律影响",
+          "风险评估",
+          "利益相关方意见",
+          "以往先例"
+        ],
+        "risk_tolerance": "Low",
+        "speed": "深思熟虑，不急于求成"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "审查合同完整性",
+          "起草合规备忘录",
+          "就文档标准提供建议",
+          "审计项目文档"
+        ],
+        "preference_conflicts": [
+          "想要快速答案但也要求彻底性",
+          "平衡家庭时间与工作需求",
+          "渴望创新但重视可靠性"
+        ],
+        "ambiguity_to_preserve": [
+          "新兴法规中的细微法律解释",
+          "跨司法管辖区合规中的不确定性"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:43",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "专业且尊重",
+            "response_length": "简洁但彻底，包含必要细节",
+            "evidence_expectation": "期望引用或参考来源",
+            "formatting": "偏好项目符号和清晰标题",
+            "proactive_behavior": "应预见文件问题并标记潜在风险",
+            "things_to_avoid": [
+              "俚语或过于随意的语言",
+              "未经证实的事实",
+              "过于情绪化或主观的陈述"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "审计不完整的项目文档以进行跨境合规",
+            "计划一次周末家庭徒步和意大利烹饪晚餐",
+            "评估并选择安全、整合的文件存储解决方案"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,490 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_244",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:18:06",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 22,
+  "composition": {
+    "episodic_preference_trace": 22
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_003",
+      "hidden_indirect_007",
+      "hidden_indirect_019"
+    ],
+    "content": [
+      "hidden_indirect_005",
+      "hidden_indirect_020"
+    ],
+    "decision_priority": [
+      "hidden_indirect_006",
+      "hidden_indirect_009",
+      "hidden_indirect_017"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_001",
+      "hidden_indirect_014",
+      "hidden_indirect_015"
+    ],
+    "entertainment": [
+      "hidden_indirect_012"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_010",
+      "hidden_indirect_018"
+    ],
+    "food": [
+      "hidden_indirect_007"
+    ],
+    "format_contract": [
+      "hidden_indirect_004",
+      "hidden_indirect_018"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_001",
+      "hidden_indirect_013",
+      "hidden_indirect_016"
+    ],
+    "learning": [
+      "hidden_indirect_005",
+      "hidden_indirect_021"
+    ],
+    "privacy": [
+      "hidden_indirect_002",
+      "hidden_indirect_011"
+    ],
+    "product": [
+      "hidden_indirect_002",
+      "hidden_indirect_010"
+    ],
+    "role_context": [
+      "hidden_indirect_008"
+    ],
+    "service": [
+      "hidden_indirect_006",
+      "hidden_indirect_022"
+    ],
+    "technology": [
+      "hidden_indirect_011",
+      "hidden_indirect_022"
+    ],
+    "travel": [
+      "hidden_indirect_009"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨晚在随身笔记里记了两条案例，同一法律原则但判决相反。"
+        },
+        {
+          "role": "assistant",
+          "content": "保留两条原文出处，先不整合，标注冲突点以待下次查证。"
+        }
+      ],
+      "implicit_signal": "用户倾向保留矛盾记录，不强行统一"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "试用账号登录后，效率应用要求访问全部联系人。"
+        },
+        {
+          "role": "assistant",
+          "content": "查了权限清单，有最小权限替代方案，建议用匿名邮箱注册。"
+        }
+      ],
+      "implicit_signal": "用户对应用权限敏感，选择最小权限方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周买学习材料的纸质收据比预估高了35欧。"
+        },
+        {
+          "role": "assistant",
+          "content": "核对项目明细，确认其中一项是非必要加购，可申请退差价。"
+        }
+      ],
+      "implicit_signal": "用户会核对收据细节，追溯超预算原因"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "小组共享表格里证据来源缺失，只写了结论。"
+        },
+        {
+          "role": "assistant",
+          "content": "增加一列“来源与置信度”，把每项判断拆成原文和推断两部分。"
+        }
+      ],
+      "implicit_signal": "用户要求协作表格中明确来源和推论"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周日晚上读了篇14页的审案摘要，但没列证据层级。"
+        },
+        {
+          "role": "assistant",
+          "content": "按“来源/冲突/判断/待复核”重新整理一条笔记。"
+        }
+      ],
+      "implicit_signal": "用户学习时要求结构化笔记，按层级整理"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "线上会议间隙收到笔记订阅续费提醒，原价涨了。"
+        },
+        {
+          "role": "assistant",
+          "content": "查了取消规则和替代笔记应用列表，确认可取消后推荐免费方案。"
+        }
+      ],
+      "implicit_signal": "取消订阅前会评估替代方案和规则"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "活动散场后和同学吃饭，预算剩12欧。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐附近有素食套餐的店，不超预算且能快速吃完不影响明天早课。"
+        }
+      ],
+      "implicit_signal": "餐饮选择以预算和次日安排为约束"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次小组作业最后一项没人确认，导致进度延期。这次模拟法庭手册分配核实环节。"
+        },
+        {
+          "role": "assistant",
+          "content": "每份证据增加确认人字段和截止时间，提前一天提醒。"
+        }
+      ],
+      "implicit_signal": "法律学生角色下注重证据确认和分工"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去年排景点排到一半才发现不合适，今年计划布拉格时优先排除需要排队超过42分钟的。"
+        },
+        {
+          "role": "assistant",
+          "content": "从攻略里筛选出三个不需要排队且评价好的街区，留半天缓冲。"
+        }
+      ],
+      "implicit_signal": "旅行计划基于前次失败经验调整筛选标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "比较两个闪卡应用，一个说高效但无第三方评测。"
+        },
+        {
+          "role": "assistant",
+          "content": "找了一篇独立评测和红迪讨论，列出各端同步的限制后再选。"
+        }
+      ],
+      "implicit_signal": "选择产品前依赖独立评测和用户反馈"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在用的笔记软件新加入了AI功能，默认开启数据训练。"
+        },
+        {
+          "role": "assistant",
+          "content": "检查隐私设置关闭数据共享，导出备份以防条款变化。"
+        }
+      ],
+      "implicit_signal": "对技术工具的数据训练功能持谨慎态度"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友约去看沉浸式戏剧，票价35欧且超拥挤。"
+        },
+        {
+          "role": "assistant",
+          "content": "查了评价说场地通风差，建议选空闲日的下午场或改约密室逃脱。"
+        }
+      ],
+      "implicit_signal": "选择娱乐活动时避免高价而体验差的项目"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一篇参考文章说“法考通过率只有10%”，没注年份。"
+        },
+        {
+          "role": "assistant",
+          "content": "标注为“未指明统计时间”，查找官方报告确认实际浮动范围。"
+        }
+      ],
+      "implicit_signal": "对无来源的统计数据保持怀疑"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "收到对方发来的案情摘要，已删除了备注栏。"
+        },
+        {
+          "role": "assistant",
+          "content": "要求重新发送未清理版本，保留原始编辑痕迹用于核查。"
+        }
+      ],
+      "implicit_signal": "用户倾向于保留文档的原始字段"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次小组讨论记录把“我认为”和“他承认”混在一起。"
+        },
+        {
+          "role": "assistant",
+          "content": "重新划线，用标记区分直接引语和推测，并添加区分符号。"
+        }
+      ],
+      "implicit_signal": "用户会在记录中区分事实和推论"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "两个权威来源对同一法条解释相悖，以前会选一个。"
+        },
+        {
+          "role": "assistant",
+          "content": "并排列出，注明均通过二审案例验证，保留决策需要的矛盾。"
+        }
+      ],
+      "implicit_signal": "用户不回避权威来源之间的矛盾"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "找实习面试攻略，多数短视频没有具体案例。"
+        },
+        {
+          "role": "assistant",
+          "content": "筛出法学院校友书面经验，列出每个建议的适用场景和失效情况。"
+        }
+      ],
+      "implicit_signal": "用户优先考虑有具体案例支持的来源"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "写证据分析时不知道如何排列目击证词。"
+        },
+        {
+          "role": "assistant",
+          "content": "按可信度排序：原始记录>警方报告>转述，每级标注可复核路径。"
+        }
+      ],
+      "implicit_signal": "用户要求证据按可信度排序并标注复核路径"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "买教材多付了14欧，原来是默认选了加急。"
+        },
+        {
+          "role": "assistant",
+          "content": "申请取消加急并退款，下次勾选标准配送。"
+        }
+      ],
+      "implicit_signal": "用户会纠正因默认选项导致的额外费用"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "订阅的法律简报每周太长，经常跳读到一半。"
+        },
+        {
+          "role": "assistant",
+          "content": "建议只保留判例分析栏目，删除行业新闻和广告，减少阅读负担。"
+        }
+      ],
+      "implicit_signal": "用户偏好精简、有分析的内容而非泛泛新闻"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "复习时总在同一类假设题出错，但不知怎么针对性练。"
+        },
+        {
+          "role": "assistant",
+          "content": "集中三天每天做5道假设题，记录错误类型，每周末复盘一次。"
+        }
+      ],
+      "implicit_signal": "用户倾向于针对薄弱点进行短期密集训练"
+    },
+    {
+      "interaction_id": "hidden_indirect_022",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想找个同步笔记的云服务，但不能因为免费而卖数据。"
+        },
+        {
+          "role": "assistant",
+          "content": "列出三个端到端加密且可自部署的选项，对比定价和注销流程。"
+        }
+      ],
+      "implicit_signal": "用户选择云服务时注重加密和数据自主性"
+    }
+  ]
+}

@@ -1,0 +1,512 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_254",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:19:31",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 22,
+  "composition": {
+    "episodic_preference_trace": 22
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_005",
+      "hidden_indirect_013",
+      "hidden_indirect_019"
+    ],
+    "content": [
+      "hidden_indirect_007",
+      "hidden_indirect_020"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_009",
+      "hidden_indirect_015"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_011"
+    ],
+    "entertainment": [
+      "hidden_indirect_006",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_014",
+      "hidden_indirect_022"
+    ],
+    "food": [
+      "hidden_indirect_004",
+      "hidden_indirect_010",
+      "hidden_indirect_016",
+      "hidden_indirect_019"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_010"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_006",
+      "hidden_indirect_012",
+      "hidden_indirect_016"
+    ],
+    "learning": [
+      "hidden_indirect_008",
+      "hidden_indirect_014",
+      "hidden_indirect_022"
+    ],
+    "privacy": [
+      "hidden_indirect_007",
+      "hidden_indirect_017",
+      "hidden_indirect_021"
+    ],
+    "product": [
+      "hidden_indirect_001",
+      "hidden_indirect_018"
+    ],
+    "role_context": [
+      "hidden_indirect_008"
+    ],
+    "service": [
+      "hidden_indirect_009",
+      "hidden_indirect_013",
+      "hidden_indirect_021"
+    ],
+    "technology": [
+      "hidden_indirect_002",
+      "hidden_indirect_012",
+      "hidden_indirect_018"
+    ],
+    "travel": [
+      "hidden_indirect_003",
+      "hidden_indirect_011",
+      "hidden_indirect_017"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买的舞鞋，广告图看起来很好，结果到货鞋头全是指纹印，退货运费花了我11欧。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次选了另一家本地实体店款，官图有侧光和微距，你能先看实物细节再下单。"
+        }
+      ],
+      "implicit_signal": "选择时优先考虑质感而非数量，排除外观模糊的选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那个智能灯，详情页只有渲染图，装到走廊上色温偏冷，完全不是我要的氛围。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次筛选出三个柏林本地用户发的安装实拍，你从里面选最接近排练厅暖光的那个型号。"
+        }
+      ],
+      "implicit_signal": "需要真实样例而非合成图来评估设备"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次给的那份周末方案，只列了景点名字和开放时间，我根本不知道哪个时段人少。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次按氛围 / 人群密度 / 成本 / 灵感价值 / 安静备选重排。给你两版路线，每版都标注了下午闭馆前的低流量时段。"
+        }
+      ],
+      "implicit_signal": "喜欢有氛围和安静备选的结构化的建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨晚被同事拉去亚历山大广场那家新开放厨房，音乐大得听不见对面说话，回来偏头痛。"
+        },
+        {
+          "role": "assistant",
+          "content": "那一带往北两个街区有家只放古典弦乐的俄式小食堂，座位少，但你可以自己带书坐角落吃。"
+        }
+      ],
+      "implicit_signal": "倾向于小型场所，而非高流量连锁店"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周六看演出加来回倒地铁，实际花了快四个小时，到家后完全恢复不了，第二天排练腿都抬不起来。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次控制在35分钟内能到，结束最晚22:00，你还能在合租屋的沙发上安静喝杯茶再睡。"
+        }
+      ],
+      "implicit_signal": "重视恢复时间且对隐性成本敏感"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友转了个周末pop-up活动的推送，海报写了“柏林最火沉浸体验”，点进去全是游客自拍和网红打卡位。"
+        },
+        {
+          "role": "assistant",
+          "content": "那个馆我筛查过运营方，三个月搬了两次场地。不如周三晚上在Kunstquartier有场小型芭蕾即兴，你去过那边，台下不超过35人。"
+        }
+      ],
+      "implicit_signal": "回避过度商业化和营销腔的活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那次看展注册时填了手机号，之后每周收到两三条营销短信，取消入口藏得很深。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次选馆只让你留邮箱前缀，现场取票用二维码。不允许第三方合作的馆，我已经从候选文件夹里删掉了两家。"
+        }
+      ],
+      "implicit_signal": "对位置和个人信息保持边界"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次学编舞新软件，教程给了几十页PDF，我翻了半小时还没找到快捷键列表。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成B站那个15分钟分步讲解，每段后面有可暂停的练习。你周日晚上试完跟我说哪个部分卡住了，我再补充一个本地示例。"
+        }
+      ],
+      "implicit_signal": "偏好短周期反馈和可复盘的标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月订的那个音乐流媒体，免费试用到期后自动扣了两个月，取消按钮在第四层菜单里。"
+        },
+        {
+          "role": "assistant",
+          "content": "找到一家只收年费且取消规则写在首页的服务，曲库偏小众现场录音。第一年可以按月付，到期前30天邮件提醒。"
+        }
+      ],
+      "implicit_signal": "质感优先于流量、清楚取消规则的优先级"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次推荐的那家汤馆，菜单没有标明份量，我和搭档对着一份汤面分着吃，都不够。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次提前标注了小份/大份和单价。帮你选了预算是7欧以内能吃饱的本地小馆，且角落有单人座，不吃面的话也能换沙拉。"
+        }
+      ],
+      "implicit_signal": "结构包含预算和安静备选"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前去波茨坦，我只跟着主流路线走了无忧宫，回来发现错过了旁边那个旧苏联疗养院和墙上的马赛克。"
+        },
+        {
+          "role": "assistant",
+          "content": "帮你加了一条东侧步道，途中经过的旧售票亭改的摄影小站，人少，你可以弹50分钟钢琴或录音当素材。"
+        }
+      ],
+      "implicit_signal": "重视创作素材和真实的细节"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "用某个笔记软件记了一年排练日志，后来它更新强制登录，旧版清单直接打不开。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成支持Markdown导出且离线可用的应用。你现有的23条日志已经转成纯文本存进本地文件夹，不会再有平台锁定风险。"
+        }
+      ],
+      "implicit_signal": "避免被锁在单一平台"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那个周末工作坊，最后一项是自由交流，结果没人确认谁来收尾，我站了20分钟不知道去哪。"
+        },
+        {
+          "role": "assistant",
+          "content": "这个替代活动有明确的结束前15分钟提醒，且退改政策写明了前48小时免费取消。贵5欧，但不会让你多付出隐性时间成本。"
+        }
+      ],
+      "implicit_signal": "愿意为降低风险的选项付费"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个线上编舞课的材料全是国外剧院的数据，我找不到一个柏林排练厅的案例。"
+        },
+        {
+          "role": "assistant",
+          "content": "补了一份你在Kreuzberg常去的那个排练厅的平面图和采光时段表，替换掉原先的通用模板部分。"
+        }
+      ],
+      "implicit_signal": "需要实际示例和本地语境"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次的音乐节，主舞台全是赞助商播放列表，台下手机举得比人高，完全没法投入。"
+        },
+        {
+          "role": "assistant",
+          "content": "下周六在废旧轨道仓库有一场无扩音器的弦乐即兴，凭门票还可以免费参加15分钟的编曲工作坊，不加社交媒体宣传。"
+        }
+      ],
+      "implicit_signal": "个人表达和社区感优先于流量"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "同事拉我去的那家早午餐店，菜单上有23种本尼迪克蛋，换个配料加3欧，根本选不出来。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐早餐街角那家只做三种主食的小店，没有附加选项，价格固定，你坐下五分钟就能吃完去排练。"
+        }
+      ],
+      "implicit_signal": "回避冗余和不必要的负担"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次共享表格里我填了住处附近的地铁站，结果多了一个人发了好友申请。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次路线收藏只标了集合点坐标，不需要填任何个人位置。你到地铁换乘时再打开查看下一步，前段路线已离线下载。"
+        }
+      ],
+      "implicit_signal": "路线需有缓冲且避免过度曝光位置"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个智能手表用了一个月，设备发热后表现下降，而且必须绑手机才能看历史记录。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成没有心率监测、本地存储能用USB导出的基础款闹钟表。电池续航35天，不连接网络。"
+        }
+      ],
+      "implicit_signal": "偏好可导出和少权限的硬件"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "排练厅附近的超市三明治越来越贵，而且包装里酱料反而占了半份。"
+        },
+        {
+          "role": "assistant",
+          "content": "你周日晚上可以花11欧买基础食材，做两份烤蔬菜配粗麦粉，够周一周二带饭。剩下的料做早餐还能省一顿早餐钱。"
+        }
+      ],
+      "implicit_signal": "愿意选择本地小店和自己做饭"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个纪录片放映会，广告之间插了15分钟正片，关键信息只有广告页提到。"
+        },
+        {
+          "role": "assistant",
+          "content": "选了一个独立电影院的20:00场，映后有导演连线，座位限35人，中间没有插入广告。结束大概22:15，你还能赶上末班地铁。"
+        }
+      ],
+      "implicit_signal": "偏好内容密度高的小型活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想用那个预约平台订排练室，它要求上传身份证照片才能选时间。"
+        },
+        {
+          "role": "assistant",
+          "content": "找到另一家只确认手机尾号核验，不保留证件副本的场地，价格比目标少5欧，位置在你常去的那条街往南两站。"
+        }
+      ],
+      "implicit_signal": "只提供必要信息，拒绝冗余注册"
+    },
+    {
+      "interaction_id": "hidden_indirect_022",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那个音乐理论app只告诉我“多练习”，没有评分也没有任何我能对照的标准。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成有声谱示例的课程，每段后面有正确/错误的按键录音对比。你早餐桌边可以听一遍，然后自己弹一遍录下来回放。"
+        }
+      ],
+      "implicit_signal": "要求可复盘标准而非笼统反馈"
+    }
+  ]
+}

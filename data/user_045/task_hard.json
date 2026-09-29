@@ -1,0 +1,104 @@
+{
+  "user_id": "user_045",
+  "task": {
+    "task_id": "task_hard",
+    "title": "修订自主无人机蜂群竞赛规则",
+    "daily_life_domain": "work",
+    "scenario": "作为一家大型国际机器人竞赛规则委员会主任，Vasquez 博士需要更新规则手册以适应新的自主无人机蜂群类别。该提案包括协同导航和避障，但她必须确保安全性、公平性以及与教育目标的一致性。规则手册需在 10 天内提交委员会评审。",
+    "user_goal": "起草竞赛规则手册中关于无人机蜂群的部分章节，涵盖安全协议、评分标准和技术规格，同时在创新与严格的安全和公平标准之间取得平衡。",
+    "why_complex": "需要多步推理：理解新技术，预见边缘情况，查阅现有安全标准，与分委员会协调，并制定精确的规则，避免歧义的同时鼓励创新。还要在允许新方法和防止不安全配置之间进行权衡。",
+    "constraints": [
+      "截止日期：10天内向委员会提交草案。",
+      "必须遵守竞赛的总体安全框架。",
+      "由于部门职责（教学、会议），时间有限。",
+      "如果涉及人机交互，大学政策要求伦理委员会批准。",
+      "对花生过敏，但不直接相关。"
+    ],
+    "required_reasoning_steps": [
+      "审查当前竞赛安全标准，找出无人机集群的差距。",
+      "研究学术和行业环境中自主无人机集群的最佳实践（例如避碰、故障安全、交通管理）。",
+      "草拟初步安全约束清单：最大速度、高度、集群规模、通信协议、紧急关机要求。",
+      "定义评分标准，奖励合作行为和个体可靠性，确保没有单一策略不公平地主导。",
+      "编写硬件技术规格（例如最低传感器套件、冗余），但为创新留出空间。",
+      "就任何涉及人机交互的方面（例如无人机与人类裁判互动）咨询伦理委员会和团队负责人。",
+      "创建清晰、结构化的文档，包含标题、编号规则和示例，以防误解。",
+      "在全面审查前，将草案分发给一小部分委员会成员征求意见。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "现有类似类别（空中机器人，而非集群）的竞赛规则。",
+      "典型学生自制无人机的技术能力（例如平均处理能力、传感器精度）。",
+      "她的网络中即将发表的关于无人机集群安全的研究论文。",
+      "在紧迫时间线内委员会成员提供反馈的可用性。",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "规则手册中10-15页的部分，采用LaTeX或Word格式，清晰组织，包含编号规则、定义、安全检查表和评分公式。包括主要变更和理由的摘要。",
+    "success_criteria": [
+      "草案按时完成并提交给委员会。",
+      "规则无歧义：没有两个理性的人会得出不同解释。",
+      "至少一名委员会成员对清晰度和公平性给出积极反馈。",
+      "安全协议涵盖至少三种故障模式（例如通信丢失、空中碰撞、电池故障）。",
+      "评分公式平衡了创新和可靠性的奖励。",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "过于谨慎的规则扼杀创造力，受到参与者批评。",
+      "遗漏可能导致事故的关键安全问题。",
+      "术语不一致导致混乱。",
+      "未能咨询伦理委员会，存在违规风险。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 9,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 8,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=11",
+        "constraints_capped=5",
+        "decision_points_capped=3",
+        "information_items_capped=6",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=31.15",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Dr. Elena Vasquez",
+      "age": 48,
+      "gender": "女性"
+    }
+  }
+}

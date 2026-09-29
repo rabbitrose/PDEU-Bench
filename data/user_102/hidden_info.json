@@ -1,0 +1,470 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_102",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:08:07",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_012",
+      "hidden_indirect_016"
+    ],
+    "content": [
+      "hidden_indirect_003",
+      "hidden_indirect_015"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_010",
+      "hidden_indirect_017"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_007",
+      "hidden_indirect_008"
+    ],
+    "entertainment": [
+      "hidden_indirect_009",
+      "hidden_indirect_018"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_009",
+      "hidden_indirect_019"
+    ],
+    "food": [
+      "hidden_indirect_008",
+      "hidden_indirect_015"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_011"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_012",
+      "hidden_indirect_018"
+    ],
+    "learning": [
+      "hidden_indirect_007",
+      "hidden_indirect_013"
+    ],
+    "privacy": [
+      "hidden_indirect_005",
+      "hidden_indirect_014",
+      "hidden_indirect_020"
+    ],
+    "product": [
+      "hidden_indirect_002",
+      "hidden_indirect_016"
+    ],
+    "role_context": [
+      "hidden_indirect_013"
+    ],
+    "service": [
+      "hidden_indirect_006",
+      "hidden_indirect_014",
+      "hidden_indirect_020"
+    ],
+    "technology": [
+      "hidden_indirect_004",
+      "hidden_indirect_011",
+      "hidden_indirect_019"
+    ],
+    "travel": [
+      "hidden_indirect_010",
+      "hidden_indirect_017"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买清洁剂直接看广告说环保，没找到每升价格，到货比超市贵一倍，我退款了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次列出三个选项，每行开头写单价和浓度，让你先看数字再决定买哪个。"
+        }
+      ],
+      "implicit_signal": "因为上次只看广告没对比单价导致多花钱，所以这次要求列出每升价格和浓度，用数字比价而不是听营销说法"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看中一款除湿机，评论都说好，但噪音数据只有广告页写38分贝，关键信息太少。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找了一份第三方实验室报告，实测噪音42分贝，并标出与广告的差异，你自己判断信哪个数据。"
+        }
+      ],
+      "implicit_signal": "因为广告页噪音数据和第三方报告有矛盾，所以要求标注来源层级、用实测值而不是品牌宣传值"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次给了五个电饭煲推荐没写理由，我花了21分钟自己搜评测。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只保留两个型号，用三段写：一、测试来源；二、两款的矛盾点；三、我的判断和你需要验证的部分。"
+        }
+      ],
+      "implicit_signal": "因为上次五个推荐没有来源理由，导致自己花21分钟搜评测，所以这次只保留两个型号并用三段结构提供来源、矛盾点和待验证项"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "日历里有两个时间冲突的事件，我翻了邮箱才确定哪个是正式的，很麻烦。"
+        },
+        {
+          "role": "assistant",
+          "content": "我保留邮件时间戳和冲突标记，用灰色斜体注明来源，不自动合并，让你自己核实。"
+        }
+      ],
+      "implicit_signal": "因为日历冲突只有自动合并无来源，导致需要自己翻原始邮件确认，所以要求保留原始时间戳、冲突标记和来源字段，不自动消除矛盾"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次租房网站要填手机号才能看合同细节，我直接关掉了页面。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我摘录条款，不涉及你的位置和联系信息。不确定的条款用[待确认]标出，不替你说没问题。"
+        }
+      ],
+      "implicit_signal": "因为租房网站要填手机号才显示合同细节，导致直接关闭页面，所以这次只摘录条款并用[待确认]标出不替用户说没问题"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "预约确认前没收到提醒，现场网络断了，什么也办不了，白等30分钟。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次安排两个通道：线上自助和人工电话。电话提前存好，不依赖单一网络。"
+        }
+      ],
+      "implicit_signal": "因为预约确认前没有提醒且现场网络断了，导致白等30分钟，所以要求提供两个通道：线上自助和人工电话，不单一依赖网络"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "学做面包，食谱说190度35分钟，我的烤箱实际要36分钟才上色，第二天又重做一遍。"
+        },
+        {
+          "role": "assistant",
+          "content": "我建一栏备注，记录食谱温度和你烤箱实测偏移，下次直接调时间，把差异写下来不抹平。"
+        }
+      ],
+      "implicit_signal": "因为食谱和烤箱实测有1分钟偏移且第二天又重做一遍，所以要求记录差异并直接调时间，不抹平矛盾"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次外卖套餐你说适合忙碌时段，我吃了第一口汤太油，没吃完。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把三家菜单上的油脂含量标出来（事实），再写一个推断列：如果你赶时间可能选哪家。你自己按事实选。"
+        }
+      ],
+      "implicit_signal": "因为上次推荐说适合忙碌时段但实际汤太油没吃完，所以要求菜单上标油脂含量（事实）和赶时间时可能选哪家（推断），两者分开"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次本地博物馆活动从朋友圈看到，去了发现已经结束。"
+        },
+        {
+          "role": "assistant",
+          "content": "我从主办方官网截屏日期和购票链接。朋友圈消息作为二级来源，用灰色字标注。"
+        }
+      ],
+      "implicit_signal": "因为上次从朋友圈看到活动消息去了却发现已结束，所以要求从主办方官网截屏日期和购票链接，朋友圈消息作为二级来源用灰色字标注"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周末去山区，导航推荐了最快路线没提醒修路，我在候机区附近堵了快一小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "这条路有两个不确定点：测速段和施工段。我标出官方施工通告截图，让你决定绕路还是赌通行。"
+        }
+      ],
+      "implicit_signal": "因为导航推荐最快路线没提醒修路导致在候机区附近堵一小时，所以要求标出测速段和施工段两个不确定点并附官方施工通告截图，由用户决定绕路还是赌通行"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "试用账号自动续费了，退订邮件藏在帮助页下面，我没找到。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次写取消步骤列表，每步后面附官方路径截图标题；结尾写待验证项：取消后30天访问是否保留。"
+        }
+      ],
+      "implicit_signal": "因为试用账号自动续费且退订邮件藏在帮助页下面没找到，所以要求写取消步骤列表每步附官方路径截图标题，结尾加待验证项（取消后30天是否保留）"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天看净水器超过预算30%，你只说这是最好的，没提别的。"
+        },
+        {
+          "role": "assistant",
+          "content": "我拆成三列：超预算款、预算内款、自己组装方案。每列写明长期维护费，不暗示哪个最好。"
+        }
+      ],
+      "implicit_signal": "因为净水器超过预算30%只推荐最好的没提替代方案，所以要求拆成三个方案：超预算款、预算内款、自己组装方案，每列写长期维护费不暗示哪个最好"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你让我按模板整理收据，我做完后没有反馈，不知道对不对。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次给你三步检查清单：日期、金额、发票号。做完回传，我十分钟内告诉你哪里不一致。"
+        }
+      ],
+      "implicit_signal": "因为上次整理收据后没有反馈所以不知道对错，所以要求给三步检查清单并十分钟内回传反馈"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次为了领折扣券注册了三个平台，现在每天收促销短信，烦了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次直接给你两个不用注册的折扣码。如果必须注册，我在旁边写出取消短信的方法。"
+        }
+      ],
+      "implicit_signal": "因为上次为领折扣券注册三个平台现在每天收促销短信，所以要求给两个不用注册的折扣码，必须注册的时候在旁边写出取消短信的方法"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你又给了个“十大厨房神器”列表，里面一半我用不上。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只写两样：你厨房台面尺寸下能放的小型洗碗机，以及需要的排水改造，其他不提。"
+        }
+      ],
+      "implicit_signal": "因为上次十大厨房神器列表一半用不上，所以这次只写厨房台面尺寸下能放的洗碗机和排水改造，不列无关产品"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你推荐了进口木砧板，用了三个月裂了，不如附近五金店的塑料板。"
+        },
+        {
+          "role": "assistant",
+          "content": "我对比本地超市三款砧板，每款写一年损耗费用，选一款保五年不坏的，总预算不超过50雷亚尔。"
+        }
+      ],
+      "implicit_signal": "因为上次推荐进口木砧板三个月裂了不如五金店塑料板，所以要求对比本地三款砧板写一年损耗费用，选保五年不坏的且总预算不超过50雷亚尔"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你说市中心住宿最好，结果晚上太吵，睡不着第二天没精神。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次不推市中心。我找地铁站旁、能免费取消的三家，用表格对比噪音评分和取消窗口，你来挑。"
+        }
+      ],
+      "implicit_signal": "因为上次推市中心住宿太吵睡不着第二天没精神，所以要求找地铁站旁能免费取消的三家并用表格对比噪音评分和取消窗口"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次看夜场电影回家快12点，第二天上班差点迟到，以后不看了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找周六下午两点的场次，时长不超过90分钟，五点半前散场。不推荐有午夜场的影院。"
+        }
+      ],
+      "implicit_signal": "因为上次夜场电影回家12点第二天差点迟到，所以要求找周六下午两点的场次时长不超过90分钟五点半前散场不推荐有午夜场的影院"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次用A笔记记了一周购物清单，它突然关了导出功能，我重新抄了一遍。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次用支持.md和.txt导出的工具写，正文前注明：数据可复制到任何平台，不锁定。"
+        }
+      ],
+      "implicit_signal": "因为A笔记突然关导出功能导致重新抄一周清单，所以要求用支持.md和.txt导出的工具并在正文前注明数据不锁定可复制到任何平台"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次订餐平台取消订单要我打电话，通话里还要身份证后四位，我放弃了取消。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找一个应用内一键取消的平台，取消规则写第二行，确认页不收集身份证信息。"
+        }
+      ],
+      "implicit_signal": "因为订餐平台取消订单要打电话并提供身份证后四位导致放弃取消，所以要求找应用内一键取消的平台把取消规则写第二行确认页不收集身份证信息"
+    }
+  ]
+}

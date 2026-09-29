@@ -1,0 +1,428 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_010",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:09:24",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 18,
+  "composition": {
+    "episodic_preference_trace": 18
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_013"
+    ],
+    "content": [
+      "hidden_indirect_003",
+      "hidden_indirect_014"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_008",
+      "hidden_indirect_018"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_012"
+    ],
+    "entertainment": [
+      "hidden_indirect_011"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_009",
+      "hidden_indirect_017"
+    ],
+    "food": [
+      "hidden_indirect_010"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_010"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_007",
+      "hidden_indirect_011"
+    ],
+    "learning": [
+      "hidden_indirect_006",
+      "hidden_indirect_015"
+    ],
+    "privacy": [
+      "hidden_indirect_002",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "product": [
+      "hidden_indirect_009",
+      "hidden_indirect_017"
+    ],
+    "role_context": [
+      "hidden_indirect_008"
+    ],
+    "service": [
+      "hidden_indirect_007",
+      "hidden_indirect_014",
+      "hidden_indirect_016"
+    ],
+    "technology": [
+      "hidden_indirect_005",
+      "hidden_indirect_012",
+      "hidden_indirect_016"
+    ],
+    "travel": [
+      "hidden_indirect_004",
+      "hidden_indirect_015"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上一笔采访报销被驳回了，说是因为我用了加密虚拟专用网络和一次性手机，财务觉得不是必要开支。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会从其他调查经费里补上，你的安全不能因为会计规则打折。接下来我们继续用加密线路沟通。"
+        }
+      ],
+      "implicit_signal": "在预算冲突时会选择保护举报人安全而非节省费用"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那位离职护士只给了口头描述，说见过医生修改病历，但没留任何纸质副本或录音。"
+        },
+        {
+          "role": "assistant",
+          "content": "这个不能直接用。除非你能找回当时的工作邮件截屏、或者有第二位在场者独立确认，否则我们只能把它放在待核实清单。"
+        }
+      ],
+      "implicit_signal": "要求原始记录和独立验证，拒绝基于单一发言的主张"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你发给我的那份医院声明我只读了两行——全是公关腔，没有任何可引用的数据。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我重新整理：声明来源是媒体关系部，未提供原始处方记录或统计摘要。下一步建议去翻那家医院的年度质量报告，看看有没有异常指标。"
+        }
+      ],
+      "implicit_signal": "回复需包含信息来源类型与证实差距，不能只给结论"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "宾州那个采访点，如果直接订旅馆的话，信用卡账单上会留下那家汽车旅馆的名字。"
+        },
+        {
+          "role": "assistant",
+          "content": "用现金到付，然后提前到旁边的镇子绕一圈再过去，这样对方查不到真实落脚点。"
+        }
+      ],
+      "implicit_signal": "旅行计划必须遮掩举报人身份"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下次采访对象说只能用普通短信联系，他不懂也不信任Signal。"
+        },
+        {
+          "role": "assistant",
+          "content": "那至少见面谈，或者在普通短信里只约地点和时间，不讨论任何实质内容。不能把调查线索就那样暴露在运营商服务器上。"
+        }
+      ],
+      "implicit_signal": "避免不安全通信，坚持使用加密工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个数据新闻工作坊的课程表发来了，两天全是基础Excel和入门可视化。"
+        },
+        {
+          "role": "assistant",
+          "content": "不值得去。我的时间更应该用在攻破那些PDF表格的批量提取上，不是学怎么做柱状图。"
+        }
+      ],
+      "implicit_signal": "数据研讨会只有明确能改进调查时才愿意参加"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有位病人家属发来一篇博客，说某某医生开过一种禁用药，博客里只有他自己的描述。"
+        },
+        {
+          "role": "assistant",
+          "content": "博客不能作为证据。我们需要处方记录、药房出库单或者至少两个独立的医疗工作者背书。先放着，别发出去。"
+        }
+      ],
+      "implicit_signal": "拒绝采用未经核实的单一来源主张"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "编辑让我今晚必须交稿，可唯一能证实那份内部审计报告的线人说要下周才能给原件。"
+        },
+        {
+          "role": "assistant",
+          "content": "那就延稿。告诉编辑我们宁可多等五天，也不能在没有独立文件的情况下上线。我来发邮件解释。"
+        }
+      ],
+      "implicit_signal": "在发表前把来源保护看得比速度更重要"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个文件修复软件试用版只能恢复3个文件，我正在处理的8年前的数据刚好有41个损坏的PDF。"
+        },
+        {
+          "role": "assistant",
+          "content": "买完整版。回忆上一回就是试用版不够用最后重做了一遍，耽误了51天。这次直接授权。"
+        }
+      ],
+      "implicit_signal": "采购工具时优先考虑证据获取能力"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚才约了线人明天早餐桌边见面，他说会带一份旧会议纪要的截图来。"
+        },
+        {
+          "role": "assistant",
+          "content": "收到后给我传一份加密扫描件。然后你的任务：1. 确认截图拍摄时间；2. 看是否有其他与会者名字可以追访；3. 截图里有没有日期或页眉编号。"
+        }
+      ],
+      "implicit_signal": "需要结构清晰的回复，带有下一步行动"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有人在做一个关于精神科历史的播客，但主持人说他们‘不讲复杂证据，只讲好故事’。"
+        },
+        {
+          "role": "assistant",
+          "content": "那不是给我们用的素材。我需要的是可引用、可核实的来源，不是情绪叙事。"
+        }
+      ],
+      "implicit_signal": "拒绝接受以娱乐框架包装的调查内容"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "医院法律部发来一封信，要求我们不得提及任何患者个案，说这违反伦理。"
+        },
+        {
+          "role": "assistant",
+          "content": "我们可以用化名和模糊化细节，但不会因为他们的施压就放弃调查。让他们提供具体的法律依据，我们再评估改写方案。"
+        }
+      ],
+      "implicit_signal": "心理健康报道需道德谨慎，但不顺从机构"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个安全云存储的年费比我现在的普通云贵三倍，但我手上有8份采访录音需要加密存放。"
+        },
+        {
+          "role": "assistant",
+          "content": "买。录音外泄的代价不是那几百块能比的。把旧账号注销，所有资料迁移过去。"
+        }
+      ],
+      "implicit_signal": "为隐私工具愿意额外付费"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我的订阅列表里刚到期的那个健康简报，这半年全是转载其他媒体的摘要，没有原创调查。"
+        },
+        {
+          "role": "assistant",
+          "content": "不续。把预算转到ProPublica或者The Marshall Project的会员上，他们出的精神健康系列能直接补充我们的背景素材。"
+        }
+      ],
+      "implicit_signal": "订阅新闻服务时只选有深度调查的媒体"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下周要飞去芝加哥采访，但白天还有几个小时的空白。我在犹豫是带一本精神病学史还是带一节统计网课。"
+        },
+        {
+          "role": "assistant",
+          "content": "网课。可以在飞机上和酒店学，回来翻译那批病历数据时就能直接用上。书可以放回程路上读。"
+        }
+      ],
+      "implicit_signal": "在选择出差工具时考虑学习实用性"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚刚试了一个新的文档协作平台，它说协作记录会被永久保存并可被管理员审计。"
+        },
+        {
+          "role": "assistant",
+          "content": "立即停止使用。在我们的调查没有结论之前，每一步编辑痕迹都不能暴露给第三方。用OnlyOffice本地版替代。"
+        }
+      ],
+      "implicit_signal": "只接受具备安全通信功能的服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "淘宝上有人卖一份精神科诊所的内部排班表，说可以扫码付款后发PDF，但不提供任何来源证明。"
+        },
+        {
+          "role": "assistant",
+          "content": "不能买。一旦对方事后说是伪造的，我们没有任何办法自证。去找那些愿意面交并提供原始截图或邮件头的人。"
+        }
+      ],
+      "implicit_signal": "采购工具时要求可独立验证的原始数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个实习生想帮忙整理采访稿，但她只有公司配的电脑，没有加密文件夹。"
+        },
+        {
+          "role": "assistant",
+          "content": "给她开一个临时的加密共享盘，所有文件只读，加密码。并且提醒她不要在聊天软件里粘贴任何受访者真实姓名。"
+        }
+      ],
+      "implicit_signal": "把来源保护放在协作便利之上"
+    }
+  ]
+}

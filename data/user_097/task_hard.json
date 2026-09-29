@@ -1,0 +1,105 @@
+{
+  "user_id": "user_097",
+  "task": {
+    "task_id": "task_hard",
+    "title": "为市政选举准备政治风险评估",
+    "daily_life_domain": "work",
+    "scenario": "里卡多的主要客户——一家国际非政府组织——要求对萨尔瓦多即将举行的市政选举进行全面的政治风险评估，重点关注五个政治局势动荡的关键市政当局。截止日期为一周。里卡多可获取两份趋势冲突的民调数据、近期新闻报道和历史选举结果。他需要撰写一份平衡且数据驱动的报告，涵盖历史背景、当前安全局势及可能的选后情景",
+    "user_goal": "交付一份全面准确的风险评估报告，帮助非政府组织决定观察员的资源分配和安全协议",
+    "why_complex": "需协调冲突的民调数据、纳入内战时期的历史背景、分析当前政治动态，并在不确定性中做出预测——所有工作需在紧迫期限内保持分析严谨性",
+    "constraints": [
+      "截止日期：7天",
+      "必须仅使用经过验证的来源（无未经证实的说法）",
+      "客户要求定量与定性分析并重",
+      "里卡多的标准：高准确性并附引用",
+      "由于安全顾虑，部分市政当局的直接访问受限"
+    ],
+    "required_reasoning_steps": [
+      "根据风险指标（暴力、两极分化、选举违规）识别并优先排序五个市政当局",
+      "收集并比较两份民调数据，评估方法差异和偏见",
+      "研究每个市政当局的历史选举模式及重大政治事件（如战后权力更迭）",
+      "整合当地媒体和官方来源（如警方、选举法庭）的近期安全报告",
+      "将研究结果综合为每个市政当局的情景分析（最佳情况、中等情况、最坏情况）",
+      "起草报告，明确分节：执行摘要、方法、市政概况、风险矩阵、建议",
+      "用多个来源交叉验证所有说法并添加引用",
+      "审查报告的中立性，避免政治偏见或耸人听闻的表述",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "每个来源确切民调方法和样本量",
+      "目标市政当局过去6个月的官方安全事件报告",
+      "报道这些地区的当地记者姓名和可信度",
+      "可能影响选举的近期法院判决或政治逮捕",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "一份结构化的15-20页PDF报告，包含执行摘要、方法部分、附风险评分的详细市政概况、情景分析和可操作建议。报告应以精确正式的西班牙语撰写，必要时附英文执行摘要",
+    "success_criteria": [
+      "按时交付报告",
+      "所有说法均至少有两条来源支持",
+      "风险评分有逻辑推导和解释",
+      "客户反馈表明报告全面且有用",
+      "同行评审未发现事实错误或遗漏",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "因个人偏见过度强调某一民调来源",
+      "包含未经明确条件警示的推测性陈述",
+      "未能充分处理矛盾数据",
+      "使报告过于冗长或过于简略",
+      "忽视报道不足的关键安全事件"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 9,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 9,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=11",
+        "constraints_capped=5",
+        "decision_points_capped=4",
+        "information_items_capped=6",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=32.2",
+        "hard_revision: 内容负载较高，保留少量 9 轮作为上尾",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "里卡多·门德斯",
+      "age": 45,
+      "gender": "男性"
+    }
+  }
+}

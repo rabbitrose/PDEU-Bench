@@ -1,0 +1,491 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_223",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:46:26",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_003",
+      "hidden_indirect_008",
+      "hidden_indirect_018"
+    ],
+    "content": [
+      "hidden_indirect_003"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_012",
+      "hidden_indirect_019"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_006",
+      "hidden_indirect_013",
+      "hidden_indirect_017"
+    ],
+    "entertainment": [
+      "hidden_indirect_007",
+      "hidden_indirect_015"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_005",
+      "hidden_indirect_012",
+      "hidden_indirect_016"
+    ],
+    "food": [
+      "hidden_indirect_008",
+      "hidden_indirect_018"
+    ],
+    "format_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_010",
+      "hidden_indirect_014"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_007",
+      "hidden_indirect_011",
+      "hidden_indirect_015",
+      "hidden_indirect_021"
+    ],
+    "learning": [
+      "hidden_indirect_004",
+      "hidden_indirect_014",
+      "hidden_indirect_020"
+    ],
+    "privacy": [
+      "hidden_indirect_004",
+      "hidden_indirect_011"
+    ],
+    "product": [
+      "hidden_indirect_006",
+      "hidden_indirect_019"
+    ],
+    "role_context": [
+      "hidden_indirect_009",
+      "hidden_indirect_020"
+    ],
+    "service": [
+      "hidden_indirect_002",
+      "hidden_indirect_016"
+    ],
+    "technology": [
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_017"
+    ],
+    "travel": [
+      "hidden_indirect_001",
+      "hidden_indirect_009",
+      "hidden_indirect_013",
+      "hidden_indirect_021"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次预订岚山民宿时我选了不可取消优惠，结果第二天发烧没能去，多付了全额。33岁那次教训够深刻。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次京都一日往返我们优先看可免费取消选项。巴士比新干线贵2000日元但取消窗口长24小时，风险更低。"
+        }
+      ],
+      "implicit_signal": "在比较交通与住宿时优先考虑可取消性和总成本，而非便利性"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在预约确认前，我发现租借和服的服务页写了'取消手续费根据时期变动'，没有具体数字。我放弃了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我查了另一家：取消规则写明了提前两天免费，当天50%。这是他们的费用列表——基础套餐+保险+可选项目，没有隐藏费用。"
+        }
+      ],
+      "implicit_signal": "确认取消规则和费用后才能进入对比，拒绝含糊条款"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "同行朋友不能吃油腻，但路边拉面店基本都是猪骨汤底。上次随便找一家，她几乎没吃，我后来还得再煮一次饭。"
+        },
+        {
+          "role": "assistant",
+          "content": "筛选了祇园附近三家：一家荞麦面、一家豆腐怀石、一家越南粉。豆腐怀石套餐2200日元，清淡且有植物蛋白，18点前不用预约。"
+        }
+      ],
+      "implicit_signal": "预算敏感，愿意选择本地小店以节省开支并满足同行需求"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想学茶道基础，搜到的线上课都要先填手机号注册才看大纲。我退出，材料发出去后又撤回。"
+        },
+        {
+          "role": "assistant",
+          "content": "找到大阪中央区一个每月一次的工作坊：无需注册，只留邮箱接收确认函就能参加。上次学员的练习视频可片段浏览。"
+        }
+      ],
+      "implicit_signal": "学习新技能时需要真实示例，且不愿为注册暴露过多个人信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "试用了一个行程规划App，发现数据只能留在App内，不能导出为CSV或ICS。我删了——没法放进我的共享表格。"
+        },
+        {
+          "role": "assistant",
+          "content": "Timetree和Notion都能导出。Timetree有位置共享但可以关闭权限。我把它们的功能对比表放在候选文件夹了。"
+        }
+      ],
+      "implicit_signal": "需要跨设备同步且能导出数据的工具，默认开启隐私保护"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买一支便携毛笔，电商搜出来18页。周日晚上我翻了一个小时还没下单——选项太多反而卡住。"
+        },
+        {
+          "role": "assistant",
+          "content": "按你的书写习惯和预算（3000日元以内），选出三款：一支储水式、一支墨囊式、一支可灌墨。各有续航和价格列表。你挑两个再细比？"
+        }
+      ],
+      "implicit_signal": "愿多比较但不想陷入无限选择，需要收敛到少数候选"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周去了一个'书法表演展'，结果是卖毛笔的营销场。我提前离场，第二天又重做一遍周末计划。"
+        },
+        {
+          "role": "assistant",
+          "content": "这个月京都文化博物馆有个小型临书展：入场500日元，限流30人，不设导购。展品说明卡可带回家复习。"
+        }
+      ],
+      "implicit_signal": "避免过度拥挤和强营销活动，偏好有内容密度的小型活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "旅行时每天外食预算超了，三天就花了计划一周的餐饮费。我翻出自己的随身笔记里记的超市位置。"
+        },
+        {
+          "role": "assistant",
+          "content": "你住处步行8分钟有业务超市，便当258日元起，也有切好的蔬菜包。我按预算表估了一下：自己做早餐和晚餐能把每日餐费压到1800日元。"
+        }
+      ],
+      "implicit_signal": "预算敏感，愿意自己做饭节省成本并保证饮食可控"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次金阁寺行程太满，回来累得没精力写书法日记。连续三天没练，手感断了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次只安排上午一个点，午休结束前回到住处。我查了：住处附近有个付费自习室，每小时200日元，可以安静练字。"
+        }
+      ],
+      "implicit_signal": "作为艺术家，旅行计划需留出创作和练习时间"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "听说一款行程App可以自动优化路线，但数据不能导出PDF。我不用——万一换软件所有记录都锁在里面了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那用My Maps吧：可以导入导出KML，路线手动调整也不收费。我把操作步骤和截图放候选文件夹了。风险：需Google账号。你能接受吗？"
+        }
+      ],
+      "implicit_signal": "拒绝被锁定在单一平台，要求工具能导出数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想预订奈良一个民宿，平台要求上传身份证件和自拍视频验证。我取消了——太越界。"
+        },
+        {
+          "role": "assistant",
+          "content": "那换Airbnb上一位超级房东的房源：只需提供姓名和手机号，身份证件可以打码后上传。评价里36位住客都没遇到额外验证。价格比刚才那间高15%，但可免费取消。"
+        }
+      ],
+      "implicit_signal": "拒绝强迫注册或公开个人信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看到一张周游券宣传说'省很多'但没写具体路线价格对比。上次信了宣传多付了一笔费用。"
+        },
+        {
+          "role": "assistant",
+          "content": "我按你的行程（大阪-奈良-京都）做了成本表：周游券8500日元，单买总价7400。周游券不划算。替代：买IC卡加一张京都巴士一日券。"
+        }
+      ],
+      "implicit_signal": "总成本和长期负担优先于短期便利；需要价格范围与替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "搜大阪到姬路的交通方式，JR、巴士、高速船加组合票一共七种。我看了半小时还没选，午休结束前必须定下来。"
+        },
+        {
+          "role": "assistant",
+          "content": "按时间和成本砍到两种：JR新快速（1350日元/73分）和高速船+巴士（1200日元/90分）。新快速更稳，船有停航风险。我倾向JR，你觉得呢？"
+        }
+      ],
+      "implicit_signal": "愿意多比较但不想陷入无限选择，需要收敛到少数候选"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "报了一个线上书法课，老师只发视频不回点评。我练了两周不知道对不对，放弃了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找了个周末工作坊：每次课结束前老师会逐字批改，每次只练三个字。费用是3600日元一次，含纸墨。你可以上一次看看，不满意不用续。"
+        }
+      ],
+      "implicit_signal": "偏好短周期反馈，需要示例和可复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友提议周六去一个即兴市集，说不必预约。结果到现场要排队两小时，我那天节奏全乱了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这周六有个陶艺市集需要提前预约，入场时间固定。我已经查好名额还剩18个，可以帮你预约11点那场，入场后自由逛，不赶时间。"
+        }
+      ],
+      "implicit_signal": "避免临时变动，偏好已确认的、有缓冲的安排"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "预约了和服体验，客服说'取消会扣一点点'，没具体比例。我担心留到当天再说，结果有事取消才发现扣了50%。"
+        },
+        {
+          "role": "assistant",
+          "content": "这家明确写了：提前三天免费，前一天30%，当天50%。而且客服在预约确认前自动发送了取消规则链接。价格是8800日元全套（含发型）。"
+        }
+      ],
+      "implicit_signal": "服务需要明确取消规则和响应速度"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想换一个笔记App，搜了推荐文列出12款。我把它们全部下载试用了，浪费了三天周日晚上。"
+        },
+        {
+          "role": "assistant",
+          "content": "我按你的需求（本地存储、Markdown、可导出）挑了Obsidian和Logseq。这是对比：同步方案、存储格式、学习成本。先深度用一款，不行再换另一个。"
+        }
+      ],
+      "implicit_signal": "愿意多比较但不想陷入无限选择，需要收敛到少数候选"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "旅行时在便利店解决三餐，水果和蔬菜摄入不够。后来牙龈肿了，多花了一笔医药费。"
+        },
+        {
+          "role": "assistant",
+          "content": "那周末去附近的业务超市和八百屋：一次采购足够一周的蔬果，预算约2500日元。我把附近两家超市的价格表（必要项/可推迟项）放进了随身笔记。"
+        }
+      ],
+      "implicit_signal": "预算敏感，愿意自己做饭；需要区分必须和可推迟花费"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买一个电动沏茶器，店员推荐了高端款，说能用十年。我没买——我问了保养和换滤芯成本，对方答不上来。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找了一款不同价位的小型茶壶：价格5800日元，滤网可替换（每半年约800日元）。还有手动款作为替代，总成本三年能省约6000日元。这是成本表。"
+        }
+      ],
+      "implicit_signal": "产品选择要说明长期使用成本、维护和替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想练好'永'字八法，网上教程说要点很多但我看不清错误。我拍了照问朋友，朋友说看不出来。"
+        },
+        {
+          "role": "assistant",
+          "content": "这个Youtube频道每期只示范五个字，有慢动作和常见错误对比。你可以录自己的练习然后逐帧对比。我把第一期的关键帧截图和检查清单放候选文件夹了。"
+        }
+      ],
+      "implicit_signal": "作为艺术家，学习新技能时希望有实例和复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去城崎温泉，官网标价便宜，但加完入汤税和设施费多了1800日元。我钱包没带够，尴尬。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把天桥立日归温泉的总费用算清了：入场费850日元+税=930，毛巾套装300。不需要额外设施费。从京都坐特急需额外买指定席，我加了估算费用。给你表格。预算内有缓冲。"
+        }
+      ],
+      "implicit_signal": "避免隐藏费用；路线要留有缓冲"
+    }
+  ]
+}

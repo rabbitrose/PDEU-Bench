@@ -1,0 +1,474 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_004",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:09:53",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 22,
+  "composition": {
+    "episodic_preference_trace": 22
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_022"
+    ],
+    "content": [
+      "hidden_indirect_007"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_014",
+      "hidden_indirect_022"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_005",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "entertainment": [
+      "hidden_indirect_013"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_021"
+    ],
+    "food": [
+      "hidden_indirect_012"
+    ],
+    "format_contract": [
+      "hidden_indirect_004",
+      "hidden_indirect_018"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_006",
+      "hidden_indirect_016",
+      "hidden_indirect_019"
+    ],
+    "learning": [
+      "hidden_indirect_010"
+    ],
+    "privacy": [
+      "hidden_indirect_002"
+    ],
+    "product": [
+      "hidden_indirect_008"
+    ],
+    "role_context": [
+      "hidden_indirect_017"
+    ],
+    "service": [
+      "hidden_indirect_009"
+    ],
+    "technology": [
+      "hidden_indirect_008"
+    ],
+    "travel": [
+      "hidden_indirect_011"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次约人吃饭选了家没标价的私房菜，结账时每人摊了45欧，下个月日常开销直接缩了。这次换我组织。"
+        },
+        {
+          "role": "assistant",
+          "content": "先给一个总价上限再选店，鱼铺那家套餐18欧含主菜和本地酒，能提前确认总花费。"
+        }
+      ],
+      "implicit_signal": "优先排除硬约束不匹配项，再比较候选方案；预算敏感"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次订火车票为了积分填了手机号，三天后收到推销电话。之后注册活动我只留姓氏和邮箱。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次报名表不需要电话，用别名和临时邮箱注册，最后一步不勾选数据共享。"
+        }
+      ],
+      "implicit_signal": "只提供完成任务必要的信息，不完全暴露个人数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "公园导览app让我授权通讯录才能看活动详情，我直接退出了。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用地物局官网的PDF日程，只要求语言偏好，无权限请求，更新时发邮件通知可退订。"
+        }
+      ],
+      "implicit_signal": "需要说明服务会收集什么、如何取消和如何迁移"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你给的计划写了一大段背景，我午休结束前没看完，那天多绕了一次路才找到集合点。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只列：集合点（罗讷河桥北端）、时间（14:30）、备用方案（暴雨改在桥下咖啡馆）、风险（周六封路需多走7分钟）。"
+        }
+      ],
+      "implicit_signal": "偏好最小披露/可用方案/风险残留/回退动作的格式"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "共享表格里有人直接填了同事全名和分机号，我担心公开后有人乱打，就把自己那行改成了‘联系人A’。"
+        },
+        {
+          "role": "assistant",
+          "content": "你可以新建一列‘联络方式’，只填‘邮件内信’或‘群内@’，不必暴露号码。"
+        }
+      ],
+      "implicit_signal": "默认脱敏联系人，不愿意上传敏感资料"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次想报个工作坊，网站非要上传身份证照片才能看到日程。我直接关掉了。"
+        },
+        {
+          "role": "assistant",
+          "content": "市政公告栏有同一工作坊的海报，附邮箱可匿名询问，不需要上传任何证件。"
+        }
+      ],
+      "implicit_signal": "不接受强制实名注册"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次看博物馆展览推荐，通篇“必看十大杰作”，没解释每个展品为什么适合我。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次选三个展柜，备注每件作品对应的维多利亚文学典故（如《双城记》手稿对照），并说明后两件因临时借展可能替换。"
+        }
+      ],
+      "implicit_signal": "结论必须说明依据和不确定点；偏好真实可行"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "买了款笔记app只能导入不能导出，第二年涨价两倍，迁移时花两小时手工复制。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用Standard Notes，免费层可导出纯文本，付费每月1.5欧，支持全平台同步且无锁定。"
+        }
+      ],
+      "implicit_signal": "产品选择要说明长期使用成本、维护和替代方案；跨设备同步但能导出数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次订的清洁服务页面上写“随时取消”，真取消时要求提前两周书面通知，多付了49欧违约金。"
+        },
+        {
+          "role": "assistant",
+          "content": "选一家合同写明：取消日提前3天，线上点按钮即确认，无附加费用，客服回复不超过4小时。"
+        }
+      ],
+      "implicit_signal": "服务需要明确取消规则、响应速度和数据边界"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "拉丁语课只发录音和长阅读清单，我两周后还是不懂怎么变位。"
+        },
+        {
+          "role": "assistant",
+          "content": "换微型课程：每段15分钟，包含填空练习和即时对答案，完成一个单元后有复盘模板可对照错误。"
+        }
+      ],
+      "implicit_signal": "偏好短周期反馈；需要示例和可复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去阿维尼翁，订的民宿在热门景点隔壁，夜里吵到两点，第二天直接困到早午餐缺席。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次选城墙外安静区，到主站步行19分钟，可免费取消到出发前48小时，带独立隔音窗。"
+        }
+      ],
+      "implicit_signal": "路线要留出缓冲；住宿和交通优先考虑安全、安静和可取消性"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次聚餐点的套餐全是油炸和奶酪，晚上胃胀得睡不好，第二天实验操作手抖。以后选餐标要先看有没有清淡选择。"
+        },
+        {
+          "role": "assistant",
+          "content": "那家黎巴嫩小馆有鹰嘴豆泥和烤蔬菜套餐，份量不大，人均12欧，提前帮你看过菜单没有隐藏辣度。"
+        }
+      ],
+      "implicit_signal": "偏好不过度油腻、预算敏感，可自己做饭"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "临时答应跟同事去了音乐节主舞台，被人潮挤到听不清歌，回家路上一直耳鸣。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次去隔壁独立书店的诗歌夜，限30人，提前报名，座位固定，活动结束后有15分钟安静散场时间。"
+        }
+      ],
+      "implicit_signal": "偏好小型、真实、有内容密度的活动；避免过度拥挤"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下午要订实验室耗材，平台说下载PDF目录需微信登录才能看价格。"
+        },
+        {
+          "role": "assistant",
+          "content": "不用登录，供应商官网公开价目表可另存为图片，用量大的还能直接用手机截图询价。"
+        }
+      ],
+      "implicit_signal": "隐私、数据边界和可撤回性优先于便利"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "图书馆闭馆前收到邮件推荐新数据库，但没写收录期刊范围，我不确定是否可信。"
+        },
+        {
+          "role": "assistant",
+          "content": "先发到内部匿名论坛问用过的人，同时查该库的出版商和撤回政策，再决定要不要提交使用申请。"
+        }
+      ],
+      "implicit_signal": "不接受黑箱推荐，偏好匿名或本地处理"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "申请郊区菜园抽签，要求上传三个月水电费单验证住址。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用不动产税单或电话账单匿名打码后提交，若系统只接受水电费单，则放弃该签，另找直接租地不用验证的试点。"
+        }
+      ],
+      "implicit_signal": "要求上传敏感资料则直接跳过"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "同事提议周末一起做个跨学科科普直播，但只说了“大家分工”，最后一项没人确认，到周五才知道没人负责设备。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次分工前先拉一个最小共享表格，每人填好“负责项/截止点/备份人”，你只需勾自己那块。"
+        }
+      ],
+      "implicit_signal": "作为教授需要把社交任务拆解为可执行步骤"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次文学讨论会通知写了50字，没注明是否提供纸质收据报销，当天一半人没带现金。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后通知固定结构：A) 收费方式（现金/扫码）及可开纸质收据; B) 最晚到场时间; C) 若迟到超过19分钟直接取消留座; D) 联系人只给群名片。"
+        }
+      ],
+      "implicit_signal": "格式要求：最小披露 / 可用方案 / 风险残留 / 回退动作"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友想用我手机号注册拼车APP，说这样分摊更方便。"
+        },
+        {
+          "role": "assistant",
+          "content": "不行，用你的备用邮箱或匿名号码；若必须绑手机，你用临时号码生成器注册，走之前注销账户。"
+        }
+      ],
+      "implicit_signal": "把便利当作默认收益则拒绝"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想确认二手显微镜卖家信用，平台要求绑定银行卡才能看历史纠纷记录。"
+        },
+        {
+          "role": "assistant",
+          "content": "不通过平台，直接在本地大学二手群用化名询问，私聊时隐藏真实地址，只约在图书馆闭馆前面交。"
+        }
+      ],
+      "implicit_signal": "偏好匿名/本地处理"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次报名线上讨论会，确认页只说‘数据用于内部研究’，问客服三天未回。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次只用注册时声明‘只存储参会邮箱，会后30天删除，可随时要求导出和注销’的服务再报名。"
+        }
+      ],
+      "implicit_signal": "需要说明服务会收集什么、如何取消和如何迁移"
+    },
+    {
+      "interaction_id": "hidden_indirect_022",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "本来只想去图书馆复印一篇论文，结果看到旁边有装订服务，花了52欧装订一堆旧笔记——其实可以推迟到下学期。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后打印前先列两个清单：必须花（如月底要交的作业）与可推迟花（如装订），先支付前者。"
+        }
+      ],
+      "implicit_signal": "保守预算区分必须花费和可推迟花费"
+    }
+  ]
+}

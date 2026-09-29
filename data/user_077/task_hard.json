@@ -1,0 +1,101 @@
+{
+  "user_id": "user_077",
+  "task": {
+    "task_id": "task_hard",
+    "title": "计划去Aardklop音乐节的周末公路旅行",
+    "daily_life_domain": "travel",
+    "scenario": "Marinda看到下个月在Potchefstroom将举办大型南非荷兰语艺术节Aardklop。她想和两位同样热爱南非荷兰语另类音乐的密友一同前往。她们预算有限（每人2000南非兰特），需要安排交通、住宿和音乐节门票。Marinda还想参加特定的Spoegwolf和其他独立演出。",
+    "user_goal": "组织一次难忘且经济实惠的周末之旅，包括最优先的演唱会、良好的住宿以及与朋友共同的美好体验。",
+    "why_complex": "需要协调时间安排、比较交通选项（租车vs巴士）、预订靠近场地的住宿、在预算限制下选择购买哪些演唱会门票，以及制定兼顾音乐和休息的灵活行程。",
+    "constraints": [
+      "每人总预算2000南非兰特（交通、住宿、餐饮、门票）。",
+      "朋友们的上班时间不同（一人只能周五下午出发）。",
+      "音乐节从周五持续到周日；必须周日晚返回为周一上班做准备。",
+      "靠近音乐节场地的住宿已部分被预订。",
+      "通常每月娱乐预算仅1500南非兰特，但愿意为这次旅行破例。"
+    ],
+    "required_reasoning_steps": [
+      "查看音乐节阵容，确定三位朋友都必看的演出。",
+      "估算总费用：票价、交通、住宿、餐饮、额外支出。",
+      "研究交通选项：租车vs巴士（成本、灵活性、时间）。",
+      "在预算内搜索可用的住宿（民宿、Airbnb、露营）。",
+      "协调出发和返回时间以符合朋友们的限制。",
+      "制定初步音乐节时间表，优先安排大家共同喜爱的乐队。",
+      "分配预算：降低餐饮/住宿支出以购买更好座位的演唱会门票。",
+      "预订门票和住宿，确保有取消灵活性。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "确切的节日日期和门票价格（早鸟票 vs 标准票）。",
+      "提供免费取消的住宿可用情况。",
+      "朋友们的确切预算限制以及任何食物过敏情况。",
+      "是否有朋友持有有效驾驶证可以租车。",
+      "周末天气预报。",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "详细的行程安排，包括旅行计划、住宿预订确认、已购门票时间、每日活动日程和预算明细。包含应对恶劣天气或演出售罄的备用计划。",
+    "success_criteria": [
+      "所有三位朋友都同意该计划。",
+      "每人总费用低于2000兰特。",
+      "至少参加3场优先级最高的音乐会。",
+      "没有重大时间冲突。",
+      "周日晚10点前返回家中。",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "忽略隐藏成本（过路费、停车费、节日食品费用）。",
+      "预订距离场地太远的住宿，导致错过早期演出。",
+      "未确认朋友们在特定时间段是否有空。",
+      "选择不适合携带行李（节日装备）的交通方式。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "navigation",
+        "travel_flights",
+        "weather",
+        "food"
+      ],
+      "domain_descriptions": {
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 7,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 8,
+      "human_verifier_estimation_basis": [
+        "domain=travel",
+        "source_domains_capped=4",
+        "reasoning_steps_capped=11",
+        "constraints_capped=5",
+        "decision_points_capped=4",
+        "information_items_capped=7",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=30.45",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Marinda van der Merwe",
+      "age": 29,
+      "gender": "女性"
+    }
+  }
+}

@@ -1,0 +1,428 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_205",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:53:21",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 18,
+  "composition": {
+    "episodic_preference_trace": 18
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_018"
+    ],
+    "content": [
+      "hidden_indirect_004",
+      "hidden_indirect_014"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_010",
+      "hidden_indirect_017"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_009",
+      "hidden_indirect_017"
+    ],
+    "entertainment": [
+      "hidden_indirect_009"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_007"
+    ],
+    "food": [
+      "hidden_indirect_003",
+      "hidden_indirect_013"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_013"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_008",
+      "hidden_indirect_011",
+      "hidden_indirect_018"
+    ],
+    "learning": [
+      "hidden_indirect_007",
+      "hidden_indirect_016"
+    ],
+    "privacy": [
+      "hidden_indirect_005",
+      "hidden_indirect_014"
+    ],
+    "product": [
+      "hidden_indirect_010"
+    ],
+    "role_context": [
+      "hidden_indirect_012"
+    ],
+    "service": [
+      "hidden_indirect_008",
+      "hidden_indirect_015"
+    ],
+    "technology": [
+      "hidden_indirect_006",
+      "hidden_indirect_015"
+    ],
+    "travel": [
+      "hidden_indirect_002",
+      "hidden_indirect_012",
+      "hidden_indirect_016"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上回带孩子去那个室内游乐场，说是有家庭套票，结果进去后每个项目还要单独收费，比预算多了两万韩元。回来路上孩子闹着要喝饮料又被宰了一笔。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次筛选时只保留价格标示到每个项目的场馆。先排除所有只写‘套票’不写分项的，再挑周末不额外涨价的地方。给你三个入门价明确的选项？"
+        }
+      ],
+      "implicit_signal": "优先选择价格透明、可当日取消的场地，拒绝套餐捆绑"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你推的那个公园，我按你给的地址导航，换乘了一次地铁，出站又走了21分钟才到标称入口。结果回程赶上末班车提前停运，多绕了一次路。"
+        },
+        {
+          "role": "assistant",
+          "content": "那个入口信息是旧版地图上的。这次我改成只采用官网更新的到达路线，并把回程几种交通工具的末班时间放到清单最后一项，你出门前确认这一步就行。"
+        }
+      ],
+      "implicit_signal": "选地点前要先查当日到达时间与回程缓冲，拒绝没有时间数据的推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你发的周末野餐清单，开头居然先列了三十种超市零食，我翻到第三屏才看到主食安排，而且没留准备时间。当天早上出门晚了，只能路边买紫菜包饭。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次改成：学习目标 / 今天要带的食物结构（三样三份） / 反馈点（孩子是否吃完） / 下一次复盘。第一屏只放本周确定带的东西，拆成两步——今晚先备料，明早组装。"
+        }
+      ],
+      "implicit_signal": "需要先列今日练习目标再给食谱，不能直接给全局推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你那次给我发了篇关于公园植物介绍的链接，说可以边走边给孩子讲。结果打开是一整篇博士论文长度的文章，我地铁上读了四站还没找到能讲的点。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次只给你准备每类植物三句话版，再加上一个指认小游戏。你先在地铁上背完第一组——松树、银杏、樱花——够到目的地前完成的量。"
+        }
+      ],
+      "implicit_signal": "需要短周期的小里程碑，不喜欢一次性获得大量信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上回推的那个亲子工作坊，我点进去发现要填孩子姓名、出生日期和我的手机号才能看时间表。我就退出了，连替代方案都没找。"
+        },
+        {
+          "role": "assistant",
+          "content": "对，那种在活动页面前就设置信息门槛的不列入。这次选项里有一个社区中心的活动，点开直接看到日期和年龄段，不用填任何东西；另外两家用邮箱就能接收简介。"
+        }
+      ],
+      "implicit_signal": "拒绝必须注册才能查看活动详情的要求"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次列了八个候选地点，每个都附了三段评论。我在线上会议间隙翻了十分钟，每个选项优缺点反复比，最后会议开始了还没定下来。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次最多三个选项，按今天完成前提下的便捷度排序：离家近、不用预约、开放到下午。如果你选不出，我直接给出出门前十分钟可以确认的那个。"
+        }
+      ],
+      "implicit_signal": "容易被过多选项拖慢，需要精简候选"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推荐那个‘首尔森林自然导览’APP，说能让孩子认识五种鸟。实际用了两周，孩子只记住了APP的按钮在哪里，鸟的名字一个没记住。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次给你换一种方式：用‘今日练习——在公园里指认三种颜色不同的鸟’代替APP打卡。反馈点就是手机拍到的那三张照片，下一次复盘时看看有没有增加。"
+        }
+      ],
+      "implicit_signal": "需要可观察的行为指标来验证推荐是否有效"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次提的那个室内玩具体验馆，我打电话去问能不能取消预约，客服说必须是预订人本人发邮件申请，还要上传身份证照片。我就直接挂了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次全部先筛取消规则：只保留能在APP内一键取消或提前两小时可退的选项。已经核对过五个备选，其中两个符合，你去之前我会把取消按钮截图发你。"
+        }
+      ],
+      "implicit_signal": "不选需要多轮电话确认才能取消的服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上周说可以带孩子去光化门广场看展览，但没有给我需要做什么的步骤。到了现场才发现要排队领号、扫码登记、存包、租讲解器，37分钟全耗在流程上。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次给你一份按顺序排好的出门清单：第一步、在家先扫码登记 / 第二步、带一个小包免存包 / 第三步、到广场直接去领号机。每项后面有个小方框，做完打钩，省得现场判断下一步。"
+        }
+      ],
+      "implicit_signal": "喜欢清单和模板，不喜欢需要自己整理的活动步骤"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推荐的那个知名博物馆线上亲子课，我买了一个月，每节课一小时，孩子后半段就跑开了。反馈只有月底一张综合成绩单，根本不知道哪节课没跟上。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次换成每个活动最多二十分钟、每节结束直接问一个孩子能答对的问题。不在名气大的平台上找，选本地文化中心那种每周一次、课后有老师一句点评的小课。"
+        }
+      ],
+      "implicit_signal": "反馈循环和可坚持性高于课程名气"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次发了个周末农场体验，说适合一家三口。我点开一看，入场费加上工具租用加材料包，比去超市买一周菜还贵。没有说有任何便宜的选项。"
+        },
+        {
+          "role": "assistant",
+          "content": "那把预算写在最前面。以五万韩元为上限，只找入场后不再收其他费用的地点。目前有两个社区菜园的开放日符合，工具免费、可自带零食、不用额外购票。"
+        }
+      ],
+      "implicit_signal": "拒绝超出预算且没有替代方案的建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推的那个‘朝鲜王朝沉浸式体验馆’，广告写得很热闹，结果里面大部分是投影和网红拍照墙，没有任何实物或史料说明。孩子问‘这是真的吗’，我没法回答。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次只保留有实物展品和历史解说牌的地点。先筛选那些国立或市立机构，看官网介绍里是否写明‘常设展’和‘文献出处’再推荐，不再单凭宣传文案判断。"
+        }
+      ],
+      "implicit_signal": "作为历史研究者，倾向于筛选有真实背景的活动空间"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次只发了餐厅地址，没告诉我哪些菜孩子能接受、哪些要避开。到那里才发现只有辣炒年糕和冷面，孩子一样都不吃，最后去便利店解决了午餐。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次按学习目标（让孩子尝试一种新食物）/ 今日练习（在菜单上指出三道不辣的选择）/ 反馈点（孩子吃完后是否愿意再吃）/ 下一次复盘（记下想试的新菜）来整理。这次看看汤饭或者饺子店？"
+        }
+      ],
+      "implicit_signal": "喜欢按四段式复盘结构来整理饮食安排"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你分享的那个周末集市折扣券，我打开发现要授权位置和相册权限，还要分享到社交群才能用。我就没领，也让家人别分享。"
+        },
+        {
+          "role": "assistant",
+          "content": "明白，以后只提取不需要额外授权或社交分享就能使用的优惠。这次集市有免费班车，不需要券也不用注册，直接到集合点上车就行。我把时间表和接站点发你。"
+        }
+      ],
+      "implicit_signal": "拒绝公开家庭行程细节来获取折扣"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你让我用某个笔记APP做外出计划，写了一个月后想导出打印，发现只能导出成图片，不能复制文字到便签上。设备更新后笔记还丢了一页。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次换用系统自带的备忘录或可以用文本格式导出的工具。我会在你做完计划后把内容转成纯文本，存到你能编辑的文件夹里。打印时直接用那个文件，不会因为换手机出问题。"
+        }
+      ],
+      "implicit_signal": "偏好跨设备同步但能导出数据的工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去那个历史村有人带你转的行程，导游讲太快孩子听不懂，问了一句导游也没停。全程就像在赶路，没什么问答或互动，回来孩子只说‘走得好累’。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次找有工作坊或寻宝任务的路线，让向导每到一个点停五分钟提问。这次我看到一个独立书坊有让孩子写汉字的体验课，过程可以随时暂停，你们一起参与而不是被带着走。"
+        }
+      ],
+      "implicit_signal": "需要能获得即时反馈的旅行活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你给的外出计划包含了交通餐饮活动三项，看起来很完整，但每项都要我自己做决策——坐哪路车、几点出发、带什么餐具。我拿着手机站在玄关看了三分钟还没出门。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次直接给一个按顺序排好的模板：出门前对照——背包里装A/B/C / 9点15之前必须进地铁站 / 到站后往3号出口走。你只要按打钩顺序走，不用在起点重新组织步骤。"
+        }
+      ],
+      "implicit_signal": "喜欢清单和模板，优先考虑可坚持性"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次说‘找性价比高的地方’，但没有告诉我具体是多少钱封顶。我翻了三页评论才估计出大概档次。最后去了，饮料和附加费加起来又超过心理线。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我会明确标明每个选项的总费用上限，包括入场、附加费和预估餐饮。超出你上一周说的四万韩元预算的直接去掉，不会再出现‘性价比高’这种没有数字的说法。"
+        }
+      ],
+      "implicit_signal": "拒绝只给大道理不给具体预算分配的建议"
+    }
+  ]
+}

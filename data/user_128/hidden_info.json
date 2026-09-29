@@ -1,0 +1,491 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_128",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:16:09",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_008",
+      "hidden_indirect_014",
+      "hidden_indirect_015",
+      "hidden_indirect_018"
+    ],
+    "content": [
+      "hidden_indirect_009",
+      "hidden_indirect_010"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_002",
+      "hidden_indirect_006",
+      "hidden_indirect_016",
+      "hidden_indirect_019"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_007",
+      "hidden_indirect_020"
+    ],
+    "entertainment": [
+      "hidden_indirect_016"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_003",
+      "hidden_indirect_018"
+    ],
+    "food": [
+      "hidden_indirect_015"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_004"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_021"
+    ],
+    "learning": [
+      "hidden_indirect_013"
+    ],
+    "privacy": [
+      "hidden_indirect_011",
+      "hidden_indirect_012",
+      "hidden_indirect_017",
+      "hidden_indirect_020"
+    ],
+    "product": [
+      "hidden_indirect_010",
+      "hidden_indirect_011"
+    ],
+    "role_context": [
+      "hidden_indirect_019"
+    ],
+    "service": [
+      "hidden_indirect_007",
+      "hidden_indirect_012"
+    ],
+    "technology": [
+      "hidden_indirect_013",
+      "hidden_indirect_017",
+      "hidden_indirect_021"
+    ],
+    "travel": [
+      "hidden_indirect_014"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次选了月付29欧的软件，半年下来累计付了174，比年付99贵75。纸质收据还在抽屉里。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次改动之前我会先算12个月总成本，年付150以下才考虑，否则保留免费期选项。"
+        }
+      ],
+      "implicit_signal": "优先按总成本而非月费决策"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "搬家后要买保险，过去搜了三家官网，排到一半才发现缺关键条款，又得重头翻。"
+        },
+        {
+          "role": "assistant",
+          "content": "我列了一个对比表：赔付上限、免赔额和等待期，30分钟内你能确认哪家符合你的风险阈值。"
+        }
+      ],
+      "implicit_signal": "需要对比表和具体假设才做决定"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次维修师傅报价450，事后才说材料费另算，跟最初说的大包价差120。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我会按必要项、可推迟项、风险项三栏列明费用，每栏后面标注价格范围和依据来源。"
+        }
+      ],
+      "implicit_signal": "需要成本分层表而非单一推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "App点补办公交卡，结账前才冒出5欧手续费，入口藏在最后一步，取消还要验证码。"
+        },
+        {
+          "role": "assistant",
+          "content": "我跳过那个App，直接去线下柜台办；同时把取消入口截图标出来，避免下次又漏掉。"
+        }
+      ],
+      "implicit_signal": "不接受补办费用和聊天式报价"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次旅行预算估80欧一天，超了22，因为按低估物价算的，没留浮动。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次按110算日花费，加20缓冲；如果实际低于90，把差额转入应急储备。"
+        }
+      ],
+      "implicit_signal": "用保守估值预留缓冲，反对含糊预算"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "为买一个行李箱看了9家电商，第7家和第9家价差只有2欧，浪费整个午休。"
+        },
+        {
+          "role": "assistant",
+          "content": "我限定了筛选范围：只看免运费、可退换且总价低于60的3个型号，你跟这三个比就行。"
+        }
+      ],
+      "implicit_signal": "愿意费力多比但不想陷入无限循环"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "预定了二周后的旅宿，预付25%订金，前天行程有变要取消，客服说条款里没写可退。"
+        },
+        {
+          "role": "assistant",
+          "content": "我重新找取消政策在白纸黑字之前的平台，订金可退且在中止申请后48小时内到账。"
+        }
+      ],
+      "implicit_signal": "对允诺折扣但取消后收回的行为高度警惕"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下单一款设备，到手发现评估费15欧是强行加的，退货又不慢但退回邮费需要自付。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我要求卖家出具含税总价截图，附加费用列出后我再确认，否则不下单。"
+        }
+      ],
+      "implicit_signal": "躲避隐性收费比节省时间更重要"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "搜了‘最适合上班族的便当方案’，结果是通用榜单，里面3个要提前一晚炖煮，我根本没有时间。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把过滤条件设为：总制备时间低于30分钟，无需慢炖，食材在楼下超市能一次买齐。"
+        }
+      ],
+      "implicit_signal": "拒绝笼统排名，要求按自身场景过滤"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "选耳机看了3篇测评，没有一篇告诉我戴着跑步会不会滑落，买后第二周就换了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我筛选三个产品重新做对比，每款加注你戴着运动40分钟后的注意点，并附退换时效。"
+        }
+      ],
+      "implicit_signal": "对产品报告要求附带使用场景模拟"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "记账App要求读取通讯录和位置才允许使用预算模块，我拒绝了，只能手写在本子上。"
+        },
+        {
+          "role": "assistant",
+          "content": "我推荐一个离线可用、只存本地且导出CSV的替代，权限清单只有存储和日历提醒。"
+        }
+      ],
+      "implicit_signal": "倾向于脱机权限最小化的本地工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "线上挂号平台非要填完整住址和手机号才能看医生排班，我放弃填了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找到另一个预约系统：只用区号和年龄就能查空档，到现场再实名核对。"
+        }
+      ],
+      "implicit_signal": "对需要更多个人数据才能试用的服务警惕"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想学用Excel预算模板，看了几个教程都是40分钟视频，版本还没法回退到对应功能。"
+        },
+        {
+          "role": "assistant",
+          "content": "我给你一张分步截图和五步操作清单，每一步对应一个单元格，总计13分钟能做完基础版。"
+        }
+      ],
+      "implicit_signal": "要求短反馈周期且有可操作步骤"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次选了便宜的民宿，但退订需提前七天且退款仅扣50%，结果行程变动损失一晚房费。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次筛选时加一个硬条件：入住前48小时免费取消且退款不低于80%，排名按总价+违约金排序。"
+        }
+      ],
+      "implicit_signal": "优先安全与可取消，预算留余地"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "按榜单推荐去了一家新开的减脂轻食店，一份沙拉13欧，味道一般，还不如自己带。"
+        },
+        {
+          "role": "assistant",
+          "content": "本周我列出家里附近三家小店的周菜单，选一份总价低于7欧、热量适中、不用排队超过6分钟的组合。"
+        }
+      ],
+      "implicit_signal": "预算敏感且不追求新奇"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周六参加了一个户外音乐市集，人太多且散场已凌晨一点，周日全天状态很差。"
+        },
+        {
+          "role": "assistant",
+          "content": "这周活动我选室内小型演出、21点前结束、且距住处步行12分钟以内，出发前确认不会因为设备发热导致耳机没电。"
+        }
+      ],
+      "implicit_signal": "休闲安排不能破坏第二天节奏"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "某笔记应用只能导出为专有格式，用其他工具打开格式完全乱掉，之前版本的回滚也不行。"
+        },
+        {
+          "role": "assistant",
+          "content": "我改用Markdown本地存储并定期备份到U盘，不用同步账户，不装任何App。"
+        }
+      ],
+      "implicit_signal": "宁愿输出格式有限也保持数据自主"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "旧版清单里漏算了周末加急费，实际花费比预算多付34，午休结束前才反应过来。"
+        },
+        {
+          "role": "assistant",
+          "content": "我重新制作清单，每个项目后面加一列‘可能性额外费用’，并标注触发条件和大概金额。"
+        }
+      ],
+      "implicit_signal": "总成本评估优先月费等表面参数"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "要为课题采集问卷数据，之前平台收费按每份0.5欧累计，总样本量400花了200，还没到设定目标。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把方案调整为使用学校的免费配额并搭配邮件邀请，成本限制在30欧以内再谈个人补贴预算。"
+        }
+      ],
+      "implicit_signal": "学术任务需要成本与替代方考量"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次体育周卡试用到期前忘记取消被扣全月费用，连取消入口都找了二十分钟，客服回复前又过了一天。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把试用截止日在日历提前两天设提醒，并且把取消按钮的精确路径截下存在桌面。"
+        }
+      ],
+      "implicit_signal": "强制自己确认取消规则的行为习惯"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "租车时估价显示33欧一天，取车时才被告知要加青年驾驶员附加费和保险补差，实际每日53，无法退订。"
+        },
+        {
+          "role": "assistant",
+          "content": "我要求车行出具含所有附加项的结算单，如有‘额外费用将另行收取’字样的条款，直接换下一家。"
+        }
+      ],
+      "implicit_signal": "明确拒绝补差价条款替代真实价格"
+    }
+  ]
+}

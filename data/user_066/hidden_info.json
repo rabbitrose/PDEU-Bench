@@ -1,0 +1,449 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_066",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:31:51",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 19,
+  "composition": {
+    "episodic_preference_trace": 19
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_006",
+      "hidden_indirect_010"
+    ],
+    "content": [
+      "hidden_indirect_003",
+      "hidden_indirect_015"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_006",
+      "hidden_indirect_014"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_002",
+      "hidden_indirect_004",
+      "hidden_indirect_009",
+      "hidden_indirect_012",
+      "hidden_indirect_018"
+    ],
+    "entertainment": [
+      "hidden_indirect_011"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_008"
+    ],
+    "food": [
+      "hidden_indirect_011"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_009",
+      "hidden_indirect_015"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_007",
+      "hidden_indirect_013",
+      "hidden_indirect_019"
+    ],
+    "learning": [
+      "hidden_indirect_008",
+      "hidden_indirect_013"
+    ],
+    "privacy": [
+      "hidden_indirect_007",
+      "hidden_indirect_018"
+    ],
+    "product": [
+      "hidden_indirect_004",
+      "hidden_indirect_016"
+    ],
+    "role_context": [
+      "hidden_indirect_001",
+      "hidden_indirect_017"
+    ],
+    "service": [
+      "hidden_indirect_005",
+      "hidden_indirect_014",
+      "hidden_indirect_019"
+    ],
+    "technology": [
+      "hidden_indirect_012",
+      "hidden_indirect_016"
+    ],
+    "travel": [
+      "hidden_indirect_010",
+      "hidden_indirect_017"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次CME课程我选了患者满意度高的康复方案，结果术后6个月重返运动率只有51%。"
+        },
+        {
+          "role": "assistant",
+          "content": "本次课程大纲我已替换为AJSM 2024的系统综述，证据等级为A，重返率78%。"
+        }
+      ],
+      "implicit_signal": "临床有效性优先于患者满意度评分"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周收到一份CME材料，引用的是一篇YouTube手术视频里的结论。"
+        },
+        {
+          "role": "assistant",
+          "content": "已删除该材料，改为Orthobullets上关于ACL康复的Meta分析，PMID 37289451。"
+        }
+      ],
+      "implicit_signal": "要求同行评审证据，拒绝轶事来源"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次会议演示有15张幻灯片全是背景，最后2张才讲临床建议。"
+        },
+        {
+          "role": "assistant",
+          "content": "本次提纲改为一页便签风格：临床问题->证据等级->推荐->病例展示，共10页。"
+        }
+      ],
+      "implicit_signal": "要求高信号、限时的内容格式"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次家庭滑雪旅行绑带断裂，17岁孩子的靴子脱落在雪道中间。"
+        },
+        {
+          "role": "assistant",
+          "content": "已查Arthrex新款固定绑带ASTM测试报告，抗拉强度提升37%，紧急替换件已装包。"
+        }
+      ],
+      "implicit_signal": "对滑雪旅行装备有高级可靠性要求"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有家远程医疗公司合作邀请，但他们的康复指南引用的是健身博主的数据。"
+        },
+        {
+          "role": "assistant",
+          "content": "已回绝合作。建议改选Medscape的CME课程，引用的是AOSSM官方指南。"
+        }
+      ],
+      "implicit_signal": "拒绝健康影响者来源的医疗服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我想报名AAOS新机器人研讨会，但费用加旅行预算在最后一步失控了。"
+        },
+        {
+          "role": "assistant",
+          "content": "已找到AOSSM免费网络研讨会替代，同主题证据更新，并且下午时间可用。"
+        }
+      ],
+      "implicit_signal": "预算优先于新颖性"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "同事推荐一个共享患者结果的分析平台，但没有明确数据删除条款。"
+        },
+        {
+          "role": "assistant",
+          "content": "已拒绝。改用Epic内部报告模块，只输出匿名汇总，保留完全控制权。"
+        }
+      ],
+      "implicit_signal": "严格保护患者数据和个人健康数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一篇推送说PRP治疗ACL成功率提高85%，但没有作者和引用期刊。"
+        },
+        {
+          "role": "assistant",
+          "content": "推送已忽略。建议查阅AJSM 2023系统综述，结论为尚无足够证据支持常规使用。"
+        }
+      ],
+      "implicit_signal": "对无出处的统计表格持怀疑态度"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次AOSSM分会演讲，有同事幻灯片每页超过51个字符，台下都在看手机。"
+        },
+        {
+          "role": "assistant",
+          "content": "本次演示我设计成项目看板格式：左图右字，每页最多7个要点，字体32pt。"
+        }
+      ],
+      "implicit_signal": "会议演示要求视觉清晰无冗余"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去波士顿的AOSSM年会，直飞航班加会议酒店超出科室今年预算。"
+        },
+        {
+          "role": "assistant",
+          "content": "已改订联航经芝加哥中转航班，加上会议中心步行15分钟的万怡酒店，总节省37%。"
+        }
+      ],
+      "implicit_signal": "控制CME出差成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次会议午餐是快餐三明治配薯片，下午手术前胃不舒服。"
+        },
+        {
+          "role": "assistant",
+          "content": "本次CME课程午餐换成烤鸡沙拉配黑咖啡，地点在会议中心3楼安静区。"
+        }
+      ],
+      "implicit_signal": "偏好营养均衡的高质量餐食"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一个患者术后戴Garmin，但步数数据与康复进展关联薄弱。"
+        },
+        {
+          "role": "assistant",
+          "content": "已建议换用Apple Watch Ultra，附加惯性感测器可量化日常步态对称率。"
+        }
+      ],
+      "implicit_signal": "可穿戴设备只有在数据改变康复决策时才有用"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次检索ACL重建康复，PubMed导出了2000多篇无筛选结果。"
+        },
+        {
+          "role": "assistant",
+          "content": "现在改为使用AOSSM循证实践定制检索词，输出临床研究+系统综述共17篇。"
+        }
+      ],
+      "implicit_signal": "拒绝未经筛选的PubMed导出"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "收到一个周日晚上的在线CME直播邀请，但那天是女儿16岁生日。"
+        },
+        {
+          "role": "assistant",
+          "content": "已自动拒绝。建议改为周一早7点回放，并设置1.5倍速观看提醒。"
+        }
+      ],
+      "implicit_signal": "家庭安全优先于职业机会"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一个CME视频花了10分钟讲膝盖解剖基础，我都知道，浪费17分钟。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次VuMedi课程已选择专家级过滤器，跳过基础模块，直进入病例讨论。"
+        }
+      ],
+      "implicit_signal": "要求高信号、免基础废话"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一个新内固定厂家提供折扣，但产品没有在AJSM上发过临床研究。"
+        },
+        {
+          "role": "assistant",
+          "content": "已暂缓采购，改为对比Arthrex最新关节镜缝合器材的Level I证据。"
+        }
+      ],
+      "implicit_signal": "手术器械要求循证支持"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次新奥尔良AAOS我定了偏远民宿，每天地铁换乘时耽误45分钟。"
+        },
+        {
+          "role": "assistant",
+          "content": "本次AOSSM已预订会议中心旁的希尔顿，凭房间钥匙可直达展厅。"
+        }
+      ],
+      "implicit_signal": "会议酒店优先选择会议中心附近"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有同行在Twitter讨论病例，未脱敏影像和结果细节都公开了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我已删掉个人专业LinkedIn分享中的患者数据，只留匿名统计。"
+        }
+      ],
+      "implicit_signal": "公开论坛避免分享患者结果"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去年AOSSM后第二天我订了全天的国家公园徒步，结果开会到深夜完全没休息成。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次会议后日程已改为：当日回酒店22:00睡觉，次日10点后才安排活动。"
+        }
+      ],
+      "implicit_signal": "拒绝会议后疲劳的家庭计划"
+    }
+  ]
+}

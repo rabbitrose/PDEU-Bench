@@ -1,0 +1,470 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_087",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:40:23",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_006",
+      "hidden_indirect_012",
+      "hidden_indirect_016",
+      "hidden_indirect_019"
+    ],
+    "content": [
+      "hidden_indirect_003",
+      "hidden_indirect_017"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_007",
+      "hidden_indirect_016"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_002",
+      "hidden_indirect_004",
+      "hidden_indirect_011",
+      "hidden_indirect_015"
+    ],
+    "entertainment": [
+      "hidden_indirect_010",
+      "hidden_indirect_020"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_001",
+      "hidden_indirect_008",
+      "hidden_indirect_014"
+    ],
+    "food": [
+      "hidden_indirect_006",
+      "hidden_indirect_008",
+      "hidden_indirect_019"
+    ],
+    "format_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_014"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_003",
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_020"
+    ],
+    "learning": [
+      "hidden_indirect_009"
+    ],
+    "privacy": [
+      "hidden_indirect_004",
+      "hidden_indirect_013"
+    ],
+    "product": [
+      "hidden_indirect_012"
+    ],
+    "role_context": [
+      "hidden_indirect_013"
+    ],
+    "service": [
+      "hidden_indirect_009",
+      "hidden_indirect_015",
+      "hidden_indirect_018"
+    ],
+    "technology": [
+      "hidden_indirect_005",
+      "hidden_indirect_011",
+      "hidden_indirect_017"
+    ],
+    "travel": [
+      "hidden_indirect_007",
+      "hidden_indirect_018"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次为了省50欧找了水暖工小张，结果他没用防漏胶带，一周后管线又渗水，返工花了上午的时间。现在水龙头又滴水了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我建议找持证的Sanitär服务商，查一下他们最近三次同类维修的记录，确认是否注明使用DIN标准材料。价格高一点但返工成本更低。"
+        }
+      ],
+      "implicit_signal": "在做居家维修决定时优先考虑可靠性而非价格，并要求可验证的证据支持"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你给四个买净水器的链接让我自己比，我看完头大，最后什么都没买。反而是周末和邻居聊天才知道某款的实际维护费。"
+        },
+        {
+          "role": "assistant",
+          "content": "明白。先把你的需求写出来：目标：降低水垢。约束：滤芯半年换一次、总预算150欧内、不绑App。方案表：前三款的购买价、年滤芯费、安装难度。然后选一个。"
+        }
+      ],
+      "implicit_signal": "偏好结构化格式：目标、约束、方案表、检查项"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下午暖气片不热，上网搜了一圈，全都说‘建议找专业人员’，没一个说可能的故障点在哪里。白费了45分钟。"
+        },
+        {
+          "role": "assistant",
+          "content": "先做两件事：1. 检查排气阀有没有水出来；2. 摸一下进水管温度。如果热出水管冷，大概率是泵卡住了，具体步骤是：关总阀再打开排气阀。"
+        }
+      ],
+      "implicit_signal": "强烈避免空泛鼓励，要求基于事实的推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个居家维修App注册时要求填家庭住址、手机号、紧急联系人，连生日都要。我只想查个漏水检查报价，不是签保险合同。"
+        },
+        {
+          "role": "assistant",
+          "content": "换个工具：用Check24的匿名报价功能，只需要邮编和服务类型，结果出来之前不填个人资料。"
+        }
+      ],
+      "implicit_signal": "讨厌重复录入信息，拒绝不必要的个人数据收集"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "同事推荐了一款智能水阀，说小红书上很多人装。但我查了它的App客服响应要两天，而且只支持云端控制，断网就废。"
+        },
+        {
+          "role": "assistant",
+          "content": "我查到了另一款：手动加本地定时器控制，不需要联网，换电池就行。五年故障率数据比那款低一半。"
+        }
+      ],
+      "implicit_signal": "避免只看热度的推荐，要求考虑维护成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "冰箱灯坏了，报修要120欧上门费。但灯条自己买才15欧，只要拆两颗螺丝。"
+        },
+        {
+          "role": "assistant",
+          "content": "先确认型号：你可能需要这一款灯条。拆之前断电，用塑料撬棒避开电路板。如果只是灯珠烧了，还不急用，等月底采购一起买省运费。"
+        }
+      ],
+      "implicit_signal": "预算保守，区分必须和可推迟花费"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周末去建材市场，导航推荐一条新路节省10分钟，结果那条路临时施工，绕了25分钟，到店时已经午休结束前了，只好改天再取货。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次用Waze看实时路况，出发前先确认市场营业时间。如果时间紧，宁可走A114绕远，至少它的休息区多，堵车也有替代出口。"
+        }
+      ],
+      "implicit_signal": "路线选择优先可靠性和缓冲，而非新奇或热门路线"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前按文章买的一款‘德国人最爱即食汤’，结果含大量味精和增稠剂，第二天肠胃不舒服。文章是某大号转发的。"
+        },
+        {
+          "role": "assistant",
+          "content": "我直接去旁边Ernst's Bio Laden问店员，他们选品有原料清单可查。推荐两种：Bio-Zentrum的无添加番茄汤和你楼下的Katzenbrot自产扁豆汤。"
+        }
+      ],
+      "implicit_signal": "对饮食建议要求可验证来源，偏好本地小店"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "报了个水管维修网课，给了50多个视频链接，没考试也没练习，学完还是不会换马桶密封圈。"
+        },
+        {
+          "role": "assistant",
+          "content": "我用Hornbach的免费工作坊材料，先学三个关键步骤，每个不超过5分钟，然后对照检查表做一次就判断会不会。今天先练卸旧密封圈。"
+        }
+      ],
+      "implicit_signal": "偏好短周期反馈和可复盘标准，不喜欢堆材料"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周末去了社区DIY展，免费入场但全程有人追着推销保险和净水器，想看的工具区反而不大。散了之后觉得浪费一上午。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次去Makerspace的定期开放日，需要预约但凭工作台入场，没有推销，可以试工具。最近的下周六有维修俱乐部，自带设备就行。"
+        }
+      ],
+      "implicit_signal": "避免过度拥挤和强营销活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "材料清单里用了好几种规格的膨胀螺丝，但没标注每个位置需要的长度和承重标准，我拿了一包到现场才发现太短。"
+        },
+        {
+          "role": "assistant",
+          "content": "重新做清单：在每项后面加一列‘确认状态’，要求你量一下墙体厚度。没有标的不带，等确认后再补。"
+        }
+      ],
+      "implicit_signal": "需要清楚标出未确认点才做下一步动作"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看了三款水管胶，价格差了三倍。最贵的广告说‘永恒密封’，但没写保质期和适用压力范围。"
+        },
+        {
+          "role": "assistant",
+          "content": "选第二款：12欧，标注适用于3bar以内、保质期2年，且这家有替换装可单独购买。第一款不标保质期，第三款只卖大包装。长期看第二款成本最低。"
+        }
+      ],
+      "implicit_signal": "产品选择要求说明长期使用成本，预算保守"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "诊所的同事让我用她的账号订工具折扣，但我得登录她的亚马逊，看得到她的地址和全部历史订单。"
+        },
+        {
+          "role": "assistant",
+          "content": "别用。建个新账号，用你们诊所的电话和地址，付款用单独的Revolut卡。这样你不用看她隐私，她也不会看到你的搜索记录。"
+        }
+      ],
+      "implicit_signal": "职业身份影响隐私保护方式"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你给我三个买梯子的方案，但没写每款的最大承重和收放方式，到现场才发现其中一款折叠后太长放不进电梯。"
+        },
+        {
+          "role": "assistant",
+          "content": "补一个检查表：目标：家用两米梯子。约束：折叠后长度<1.2米、承重>120kg。方案：三款各自的规格、重量、价格、退货条件。你量一下电梯门宽度再选。"
+        }
+      ],
+      "implicit_signal": "交付格式必须包含目标、约束、方案表、下一步检查"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "申请了一个家居维护月订阅服务，试用了免费期之后想取消，发现只有打客服电话才能退订邮箱还发了五次广告。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找到另一家：Helpling的按次预约模式，在线取消不需要电话，且只保留你当前订单的联系信息。不发送促销邮件。"
+        }
+      ],
+      "implicit_signal": "服务选择要求明确取消规则和数据边界"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想换窗户密封条，最便宜的品牌6欧一卷，但需要专用压条工具才能装。另一家10欧一卷自带背胶直接贴。"
+        },
+        {
+          "role": "assistant",
+          "content": "选10欧自带背胶的，因为6欧的要额外花20欧买压条工具，而且万一装不好还得再拆。你这次先买一卷试试，如果好再补货。"
+        }
+      ],
+      "implicit_signal": "优先考虑可维护性和时间边界，预算超支需替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "搜到的智能家居指南全是把全屋灯光、窗帘、门锁配齐，但我就想控制地下室的除湿机时间。"
+        },
+        {
+          "role": "assistant",
+          "content": "买一个机械定时插座，插上除湿机。不需要App，不用配网，价格10欧。否则你的场景里多出来的功能全都是冗余。"
+        }
+      ],
+      "implicit_signal": "偏好与自身场景贴合的建议，不接受通用榜单"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "订维修活动去另一个城区，Airbnb选了便宜的23欧一晚，结果凌晨隔壁在装修，淋浴头水压不够，也没法退。"
+        },
+        {
+          "role": "assistant",
+          "content": "我筛选Booking上的可免费取消选项，并看最近评价里有没有‘安静’‘水压’标签。有一家IBIS Budget 35欧，隔音评分8.5，退房前24小时可取消。"
+        }
+      ],
+      "implicit_signal": "住宿首选安全、安静、可取消"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "超市促销买了一大包螺丝面条，但下周要出城一天，回家时面条很可能已经受潮。"
+        },
+        {
+          "role": "assistant",
+          "content": "用密封食品袋再加一个干燥剂包存好。如果怕麻烦，可以和邻居分一半，一人出2欧，至少不浪费。"
+        }
+      ],
+      "implicit_signal": "愿意为降低风险的选项付费，但预算敏感"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周末参加了一个全天家具组装工作坊，结束后很累，第二天周一迟到不说，身体酸痛没法站诊台。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次选半天的进阶课程，比如周六下午13–17点。那样周日还有一整天恢复，不耽误周一状态。"
+        }
+      ],
+      "implicit_signal": "休闲安排不破坏第二天节奏"
+    }
+  ]
+}

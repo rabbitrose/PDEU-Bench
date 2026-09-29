@@ -1,0 +1,249 @@
+{
+  "user_id": "user_086",
+  "explicit_preferences": {
+    "user_profile": "爱德华王子岛的汽车销售员，对政府政策持怀疑态度",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Gordon MacLellan",
+        "age": 52,
+        "gender": "男性",
+        "location": "夏洛特敦，爱德华王子岛",
+        "languages": [
+          "英语"
+        ],
+        "education_level": "高中学历",
+        "occupation": "汽车销售员",
+        "industry": "汽车销售",
+        "seniority": "资深",
+        "household": "已婚，有两个十几岁的孩子（14岁和16岁）",
+        "life_stage": "职业生涯中期，有家庭"
+      },
+      "physical_profile": {
+        "height_cm": 178,
+        "general_appearance": "中等身材，花白短发，常穿polo衫和西裤",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "一个务实、持怀疑态度的汽车销售员，重视自力更生和地方传统。他对政府过度干预和新潮流保持警惕，偏好经过验证的方法。",
+        "big_five": {
+          "openness": 3,
+          "conscientiousness": 4,
+          "extraversion": 3,
+          "agreeableness": 2,
+          "neuroticism": 3
+        },
+        "strengths": [
+          "有说服力",
+          "擅长数字和细节",
+          "压力下坚韧"
+        ],
+        "weaknesses": [
+          "不信任权威",
+          "对变化持怀疑态度",
+          "固执己见"
+        ],
+        "values": [
+          "努力",
+          "自立",
+          "家庭",
+          "当地社区"
+        ],
+        "motivations": [
+          "财务安全。",
+          "维护本地商业",
+          "养家糊口"
+        ],
+        "stress_triggers": [
+          "政府繁文缛节",
+          "增税",
+          "伤害小企业的政策"
+        ]
+      },
+      "background": {
+        "hometown": "爱德华王子岛的萨默赛德",
+        "family_background": "在一个小土豆农场长大；父亲是机械师，母亲是家庭主妇",
+        "education": "本地高中毕业；没有大学学位",
+        "career_history": "从轮胎店开始，26岁转到汽车销售；在同一个车行工作了26年",
+        "notable_life_events": "通过专注于二手车度过了2008年经济衰退；目睹了多项政府法规增加了文书工作"
+      },
+      "lifestyle": {
+        "daily_routine": "早上6:30起床，通勤20分钟到工作地点，白天在停车场或与客户在一起，下午6点回家，看本地新闻，睡前读汽车杂志",
+        "hobbies": [
+          "钓鱼",
+          "打猎",
+          "修理房子和卡车的项目"
+        ],
+        "social_life": "来自教堂和冰球联盟的亲密朋友圈；每月与老友打牌",
+        "health_and_fitness": "适度；在停车场走动，没有正式锻炼；偶尔体检"
+      },
+      "interests": {
+        "general": [
+          "汽车",
+          "钓鱼",
+          "打猎",
+          "冰球",
+          "本地新闻"
+        ],
+        "specific_topics": [
+          "经典美国卡车",
+          "在诺森伯兰海峡钓金枪鱼",
+          "爱德华王子岛小型冰球联盟",
+          "省级政治"
+        ]
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "实用的操作指南文章",
+          "PEI地方新闻",
+          "保守观点",
+          "任何关于卡车或农业的事情",
+          "内容必须匹配此用户独特的工作模式：PEI务实销售员模式：脚踏实地、本地化、懂交易。",
+          "拒绝通用助手的框架：不要听起来像城市、企业或过于技术化。"
+        ],
+        "product_preferences": [
+          "可靠卡车（福特F-150，雪佛兰Silverado）",
+          "尽可能选择加拿大制造的产品",
+          "耐用工具（例如Makita、DeWalt）",
+          "产品应通过用户自己的权衡视角来选择：简单推荐、权衡、本地检查、价格/努力。"
+        ],
+        "service_preferences": [
+          "本地独立机械师",
+          "独立保险经纪人",
+          "在当地理发店理发",
+          "只有服务保留了此决策优先级时才可接受：本地信任、坚固可靠性和真正的现金价值胜于抽象效率。"
+        ],
+        "learning_preferences": [
+          "动手演示",
+          "5分钟以内的短文或视频",
+          "偏好案例研究而非理论"
+        ],
+        "travel_preferences": [
+          "加拿大境内公路旅行（海洋省份、纽芬兰）",
+          "露营和钓鱼小屋",
+          "避开拥挤的旅游景点"
+        ],
+        "food_preferences": [
+          "家常菜：肉和土豆",
+          "本地海鲜（龙虾、贻贝）",
+          "舒适食物如杂烩汤、甜甜圈"
+        ],
+        "entertainment_preferences": [
+          "冰球比赛（现场或电视）",
+          "乡村音乐（经典，非流行乡村）",
+          "动作片（《疾速追杀》、《疯狂的麦克斯》）"
+        ],
+        "technology_preferences": [
+          "简单智能手机（iPhone SE或基础版安卓）",
+          "更喜欢打电话而非发短信",
+          "不喜欢智能家居设备"
+        ],
+        "privacy_preferences": [
+          "警惕数据收集：选择退出追踪",
+          "许多购买使用现金",
+          "避免社交媒体"
+        ],
+        "budget_preferences": [
+          "价格敏感：寻找优惠和返利",
+          "看重品质但不愿为品牌支付溢价",
+          "偏好二手或去年款车型"
+        ],
+        "personalization_directives": {
+          "style_contract": "PEI实用销售模式：务实、本地、懂交易。",
+          "decision_priority": "本地信任、坚固可靠和实际现金价值胜过抽象效率。",
+          "evidence_contract": "本地技工、天气和客户体验胜过全国排名。",
+          "format_contract": "简单推荐、权衡、本地检查、价格/努力。",
+          "anti_default_assistant_behavior": "不要听起来像城市、企业或过于技术。",
+          "distinctive_quirks": [
+            "卡车建议应尊重品牌忠诚度和冬季实用性。",
+            "露营/钓鱼计划需要考虑天气和家庭舒适。",
+            "DIY棚屋计划应能用普通工具建造。"
+          ],
+          "hard_avoidances": [
+            "电动汽车狂热宣传",
+            "仅限政府来源的解释",
+            "不能经受滥用的花哨装备"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": [
+        "没有明确本地影响的抽象政策",
+        "高税收和政府费用",
+        "官僚主义繁文缛节",
+        "过于技术性的行话",
+        "咄咄逼人的销售策略（他讨厌这些，尽管他自己也在用）",
+        "损害他客户钱包的环境法规"
+      ],
+      "communication_style": {
+        "tone": "直接、非正式，使用本地表达如“right, b'y?”",
+        "preferred_channel": "面对面或电话",
+        "formality": "低（正式程度）；喜欢随意交谈",
+        "humor": "冷幽默且自嘲",
+        "evidence_expectation": "想要真实世界的例子，而不是政府报告中的统计数据"
+      },
+      "decision_making": {
+        "process": "务实且规避风险；咨询信任的同事和本地专家",
+        "key_factors": [
+          "成本",
+          "可靠性",
+          "家庭影响",
+          "本地利益"
+        ],
+        "typical_timeline": "接受新事物慢；可能需要多次交谈",
+        "influences": [
+          "来自同行销售员的口碑",
+          "个人经验",
+          "机械师的推荐"
+        ]
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "比较车型和价格",
+          "谈判租赁与购买选项",
+          "向客户解释卡车和货车的功能",
+          "获得出售二手车的建议"
+        ],
+        "preference_conflicts": [
+          "想要便宜但可靠；对环保选项持怀疑态度，但如果经济上合理可能会考虑",
+          "喜欢本地企业，但有时为了方便从大型连锁店购买",
+          "重视隐私，但使用会员卡获取折扣"
+        ],
+        "ambiguity_to_preserve": [
+          "对电动汽车持开放态度，如果基础设施改善且价格下降",
+          "可能在某些问题上信任政府（例如公共卫生），但在其他问题上不信任",
+          "可能被信任同行的个人证词所影响"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:46",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "尊重、脚踏实地、不过于正式",
+            "response_length": "简洁但全面；要点或短段落",
+            "evidence_expectation": "提供清晰、实际的证据；避免引用政府来源，除非是本地来源",
+            "formatting": "纯文本或简单列表；没有花哨的图形",
+            "proactive_behavior": "欣赏关于省钱或本地活动的主动提示，但不接受未经请求的政治内容",
+            "things_to_avoid": [
+              "政治说教或推行政策议程",
+              "推广没有明确好处的新技术",
+              "过于乐观的预测",
+              "使用行话或流行语"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "建议客户将2015款福特F-150置换为带有EV激励的新款车型",
+            "计划一次前往诺森伯兰海峡的家庭钓鱼露营之旅",
+            "在后院建一个储物棚"
+          ]
+        }
+      }
+    }
+  }
+}

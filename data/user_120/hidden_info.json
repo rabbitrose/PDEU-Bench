@@ -1,0 +1,414 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_120",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:48:58",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 18,
+  "composition": {
+    "episodic_preference_trace": 18
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_002",
+      "hidden_indirect_005",
+      "hidden_indirect_018"
+    ],
+    "content": [
+      "hidden_indirect_009"
+    ],
+    "decision_priority": [
+      "hidden_indirect_002",
+      "hidden_indirect_008"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_002",
+      "hidden_indirect_005",
+      "hidden_indirect_007"
+    ],
+    "entertainment": [
+      "hidden_indirect_015"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_001",
+      "hidden_indirect_003",
+      "hidden_indirect_010"
+    ],
+    "food": [
+      "hidden_indirect_014"
+    ],
+    "format_contract": [
+      "hidden_indirect_004",
+      "hidden_indirect_009",
+      "hidden_indirect_018"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_006",
+      "hidden_indirect_008",
+      "hidden_indirect_011"
+    ],
+    "learning": [
+      "hidden_indirect_012"
+    ],
+    "privacy": [
+      "hidden_indirect_017"
+    ],
+    "product": [
+      "hidden_indirect_010"
+    ],
+    "role_context": [
+      "hidden_indirect_001"
+    ],
+    "service": [
+      "hidden_indirect_006",
+      "hidden_indirect_011"
+    ],
+    "technology": [
+      "hidden_indirect_003",
+      "hidden_indirect_016"
+    ],
+    "travel": [
+      "hidden_indirect_013"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次在项目看板上分配预算项，最后一项没人确认，导致采购延迟，且没人知道原始假设。"
+        },
+        {
+          "role": "assistant",
+          "content": "我在看板上给每项添加了确认标识和假设备注，昨天采购负责人直接点确认，没再延迟。"
+        }
+      ],
+      "implicit_signal": "希望任务有明确确认和假设记录"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在超市结账前比较了三款洗衣液，纠结每克单价和存储空间，最终选了体积适中的。"
+        },
+        {
+          "role": "assistant",
+          "content": "我列了个总使用成本表，只放这三款，你选的那款在九个月周期里单价最低。"
+        }
+      ],
+      "implicit_signal": "倾向于总成本优先且有限比较"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "用手机截图保存了两个软件报价，但截图没包含实施费和税率，最终预算超了15%。"
+        },
+        {
+          "role": "assistant",
+          "content": "我从供应商拿到了含实施费和税率的完整书面报价，总费用和截图一致，没超支。"
+        }
+      ],
+      "implicit_signal": "需要涵盖所有费用的完整报价"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "早餐桌边你发来的支出表，只有总额和明细，没标哪些是固定哪些可推迟，不好决策。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把支出表分成必要项、可推迟项和风险阈值三列，并加了颜色标记，方便你核对。"
+        }
+      ],
+      "implicit_signal": "希望支出表按照优先级分层"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "设备更新后按额定功率算电费，结果实际比预期低两成，但月初现金流按高估准备的，没浪费。"
+        },
+        {
+          "role": "assistant",
+          "content": "我按额定功率上浮15%估算电费，比实际高出一些，但月初现金流没紧张。"
+        }
+      ],
+      "implicit_signal": "偏好保守式预算估算"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "报了个线上 Excel 课，上了一半才发现额外教材费，退课还要手续费。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次报名前我查了课程全部费用说明和退课条款，额外教材费已包含在总价内。"
+        }
+      ],
+      "implicit_signal": "付款前必须确认所有费用及取消条款"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周免费试用视频会员，到期忘了取消，被扣了49元月费，又花时间申请退款。"
+        },
+        {
+          "role": "assistant",
+          "content": "我已在日历设了免费试用到期前三天提醒，并标注取消截止日期，下周到期前会通知你。"
+        }
+      ],
+      "implicit_signal": "需要提前设置取消提醒"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "听了分期建议办了新手机分期，结果多绕了一次路去银行还款，还产生手续费。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找到了另一个型号，一次性付清比分期总价便宜8%，而且不用额外跑银行。"
+        }
+      ],
+      "implicit_signal": "避免超前消费，除非零成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你之前发的理财文章列出好几种方法，但没写适合什么收入水平，我无法挑。"
+        },
+        {
+          "role": "assistant",
+          "content": "我重新整理了一张表，按收入区间比对各方法，并把你的收入水平所属行标了出来。"
+        }
+      ],
+      "implicit_signal": "推荐内容需要结构化比较表"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "前年贪便宜买的基础款净水器，现在滤芯停产，只能换整机，费用翻倍。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次选的净水器，官方承诺滤芯供应至少五年，且有本地维修点，维修成本在报价单里。"
+        }
+      ],
+      "implicit_signal": "选择产品需事先评估长期维护和备件可用性"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "选的云盘存储，免费额度用完自动续费且超量费翻倍，取消要等三个工作日。"
+        },
+        {
+          "role": "assistant",
+          "content": "我换了一个云盘，它明确写超量费固定、取消即时生效，并且你可以在账户设置里直接操作。"
+        }
+      ],
+      "implicit_signal": "服务需透明超量收费和取消流程"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你给的那个 Python 教程，全是文档链接，我自练一周还是不知进度在哪。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把教程拆成15分钟模块，每个模块末尾有自测题，你做完告诉我分数，以便调整后面内容。"
+        }
+      ],
+      "implicit_signal": "偏好分阶段、有即时反馈的学习材料"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周末按推荐走了热门红叶路线，堵车51分钟，停车场满，只好折返。"
+        },
+        {
+          "role": "assistant",
+          "content": "我查了三条备用路线，选了车流少、有预约停车场的一条，上周往返只堵了15分钟。"
+        }
+      ],
+      "implicit_signal": "出行需留足够缓冲并准备替代路线"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "按你推荐的餐厅吃晚餐，人均超出预算三成，还有道菜油腻到胃不舒服。"
+        },
+        {
+          "role": "assistant",
+          "content": "我筛选了附近三家评分稳、有清淡选项的本店，人均在预算内，附带菜单和单价截图。"
+        }
+      ],
+      "implicit_signal": "饮食选择优先预算和清淡适宜"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "参加那个音乐节人太多，音响震得头疼，回家失眠，第二天上班没精神。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次推荐的书店朗读会只招50人，时长两小时，离你住处步行15分钟，不影响次日计划。"
+        }
+      ],
+      "implicit_signal": "倾向于小型、短时长、影响小的休闲活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前用某笔记软件，后来限制导出且无离线副本，只能续费，感觉被绑定。"
+        },
+        {
+          "role": "assistant",
+          "content": "这个新笔记软件支持Markdown导出和离线副本，我已把你的现有笔记转移并验证可导入。"
+        }
+      ],
+      "implicit_signal": "偏好数据开放、可迁移的数字工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "注册一个新软件，要求填写详细地址和职业，我只是想试用基本功能。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找到了一个替代软件，只需邮箱注册，试用体验基本一致，且无需填写个人信息。"
+        }
+      ],
+      "implicit_signal": "偏好最少个人信息参与的服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月水电杂费实际比预算高了49%，因为没考虑季节波动。"
+        },
+        {
+          "role": "assistant",
+          "content": "新预算表包含必要项、可推迟项和风险阈值，并单独留了10%应急用于季节波动。"
+        }
+      ],
+      "implicit_signal": "需要按优先级结构化的预算表并预留应急"
+    }
+  ]
+}

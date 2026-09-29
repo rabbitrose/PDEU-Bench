@@ -1,0 +1,219 @@
+{
+  "user_id": "user_145",
+  "explicit_preferences": {
+    "user_profile": "An event planner who wants to organize a series of concerts featuring Eastern European traditional music and seeks the expert's guidance and recommendations",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Amelia Brooks",
+        "age": 38,
+        "gender": "女性",
+        "location": "韩国首尔",
+        "languages": [
+          "韩语",
+          "英语"
+        ],
+        "education_level": "硕士",
+        "occupation": "An event planner who wants to organize a series of concerts featuring Eastern European traditional music and seeks the expert's guidance and recommendations",
+        "industry": "金融与保险",
+        "seniority": "中级",
+        "household": "与伴侣同住",
+        "life_stage": "正在平衡购物目标和日常责任",
+        "timezone": "Asia/Seoul"
+      },
+      "physical_profile": {
+        "height_cm": 182,
+        "general_appearance": "穿着偏实用，重视舒适和场景适配；具体外貌不作为任务判断依据。",
+        "accessibility_needs": "避免长时间站立"
+      },
+      "personality": {
+        "concise_summary": "围绕 PersonaHub 种子「An event planner who wants to organize a series of concerts featuring Eastern European traditional music and seeks the expert's guidance and recommendations」扩展的合成用户，偏好鲜明且适合个性化工具调用评估。",
+        "big_five": {
+          "openness": 82,
+          "conscientiousness": 59,
+          "extraversion": 65,
+          "agreeableness": 61,
+          "neuroticism": 34
+        },
+        "strengths": [
+          "能坚持执行",
+          "能识别不可靠信息",
+          "愿意复盘",
+          "对个人边界敏感"
+        ],
+        "weaknesses": [
+          "在信息过多时决策变慢",
+          "不喜欢临时变动",
+          "容易被隐性成本影响"
+        ],
+        "values": [
+          "真实可行",
+          "边界清楚",
+          "尊重隐私",
+          "长期稳定"
+        ],
+        "motivations": [
+          "把购物任务做得更稳",
+          "减少重复沟通",
+          "让计划能被当天执行"
+        ],
+        "stress_triggers": [
+          "没有明确下一步",
+          "预算或时间突然失控",
+          "被迫公开私人信息"
+        ]
+      },
+      "background": {
+        "seed_persona": "An event planner who wants to organize a series of concerts featuring Eastern European traditional music and seeks the expert's guidance and recommendations",
+        "career": "当前身份与 PersonaHub 种子角色相关，常需要把购物任务拆解为可执行步骤。",
+        "significant_life_events": "该用户为虚构合成对象，不包含真实可识别个人经历。"
+      },
+      "lifestyle": {
+        "daily_routine": "工作日时间被切成多个片段，需要助手给出能快速执行且不牺牲关键约束的计划。",
+        "work_environment": "混合线上线下，常用手机记录任务，用笔记或日历跟踪进度。",
+        "social_life": "有固定小圈子，偏好可信赖的小范围协作。",
+        "hobbies": "散步"
+      },
+      "interests": {
+        "primary": [
+          "购物",
+          "An event planner who wants to organize a series of concerts featuring Eastern European traditional music and seeks the expert's guidance and recommendations"
+        ],
+        "secondary": [
+          "高质量工具",
+          "本地服务",
+          "低成本替代方案",
+          "长期习惯"
+        ],
+        "technology": [
+          "日历",
+          "笔记",
+          "浏览器检索",
+          "隐私设置"
+        ]
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "结论必须说明依据和不确定点。",
+          "偏好与自身场景贴合的建议，不接受通用榜单式输出。",
+          "内容必须符合该用户独特的工作模式：学习教练模式：循序渐进、反馈明确、避免信息过载。",
+          "拒绝通用助手框架：不要为了显得完整而加入无关建议。"
+        ],
+        "product_preferences": [
+          "产品选择要说明长期使用成本、维护和替代方案。",
+          "不优先选择信息不透明或需要过多个人数据的产品。",
+          "产品应通过用户自己的权衡视角来选择：学习目标 / 今日练习 / 反馈点 / 下一次复盘。"
+        ],
+        "service_preferences": [
+          "服务需要明确取消规则、响应速度和数据边界。",
+          "偏好少中转、少注册、少额外沟通的服务。",
+          "服务只有在保留这一决策优先级时才可接受：练习质量、反馈循环和可坚持性优先于课程名气。"
+        ],
+        "learning_preferences": [
+          "偏好短周期反馈。",
+          "需要示例和可复盘标准。",
+          "不喜欢只堆材料链接。"
+        ],
+        "travel_preferences": [
+          "路线要留出缓冲。",
+          "住宿和交通优先考虑安全、安静和可取消性。",
+          "避免把热门景点当作默认最佳。"
+        ],
+        "food_preferences": [
+          "偏好不过度油腻、能稳定执行当天安排的餐食。",
+          "预算敏感，愿意选择本地小店或自己做饭。",
+          "需要考虑同行者限制。"
+        ],
+        "entertainment_preferences": [
+          "偏好小型、真实、有内容密度的活动。",
+          "避免过度拥挤和强营销活动。",
+          "希望休闲安排不破坏第二天节奏。"
+        ],
+        "technology_preferences": [
+          "偏好跨设备同步但能导出数据的工具。",
+          "默认开启隐私保护和最小权限。",
+          "不喜欢被锁定在单一平台。"
+        ],
+        "privacy_preferences": [
+          "只提供完成任务必要的信息。",
+          "涉及家庭、健康、财务时需要匿名化或概括处理。",
+          "对位置、联系人和敏感历史保持谨慎。"
+        ],
+        "budget_preferences": [
+          "默认使用保守预算。",
+          "需要区分必须花费和可推迟花费。",
+          "若超预算必须给出替代方案。"
+        ],
+        "personalization_directives": {
+          "style_contract": "学习教练模式：循序渐进、反馈明确、避免信息过载。",
+          "decision_priority": "练习质量、反馈循环和可坚持性优先于课程名气。",
+          "evidence_contract": "偏好例题、评分标准和可观察进步指标。",
+          "format_contract": "学习目标 / 今日练习 / 反馈点 / 下一次复盘。",
+          "anti_default_assistant_behavior": "不要给出与用户画像无关的泛化建议。",
+          "distinctive_quirks": [
+            "需要短周期里程碑",
+            "喜欢清单和模板",
+            "容易被过多选项拖慢"
+          ],
+          "hard_avoidances": [
+            "堆资源",
+            "只给大道理",
+            "忽略当前水平"
+          ],
+          "profile_revision_note": "基于 PersonaHub 种子确定性扩展，用于 easy/hard 个性化 planning benchmark。"
+        }
+      },
+      "dislikes_and_constraints": [
+        "含糊承诺",
+        "隐藏费用",
+        "强迫注册或公开个人信息",
+        "没有备选路径的计划"
+      ],
+      "communication_style": {
+        "tone": "学习教练模式：循序渐进、反馈明确、避免信息过载。",
+        "formality": "中等正式",
+        "detail_level": "只保留会影响决策的细节",
+        "emotional_expression": "克制，偏好事实和边界清楚的表达"
+      },
+      "decision_making": {
+        "style": "先排除硬约束不匹配项，再比较少量候选方案。",
+        "social_influence": "会听取熟人或专业意见，但要求理由清楚。",
+        "risk_tolerance": "中低，除非收益和回滚路径明确。",
+        "time_horizon": "重视短期可执行与长期维护之间的平衡。"
+      },
+      "assistant_interaction_preferences": {
+        "tone": "学习教练模式：循序渐进、反馈明确、避免信息过载。",
+        "response_length": "中等偏短；主要工作语言：韩语。只展开影响决策的部分。",
+        "evidence_expectation": "偏好例题、评分标准和可观察进步指标。",
+        "formatting": "学习目标 / 今日练习 / 反馈点 / 下一次复盘。",
+        "proactive_behavior": "仅在符合用户决策优先级时主动建议：练习质量、反馈循环和可坚持性优先于课程名气。",
+        "things_to_avoid": [
+          "堆资源",
+          "只给大道理",
+          "忽略当前水平",
+          "不要给出与用户画像无关的泛化建议。"
+        ],
+        "personalization_intensity": "高",
+        "nonstandard_assistant_behavior": "先指出边界和未确认点，再给推荐。",
+        "decision_priority_order": "练习质量、反馈循环和可坚持性优先于课程名气。",
+        "distinctive_response_contract": "学习目标 / 今日练习 / 反馈点 / 下一次复盘。"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "规划一个购物相关的多步骤任务",
+          "比较服务或工具并保留隐私边界",
+          "把预算、时间和个人偏好同时纳入计划"
+        ],
+        "preference_conflicts": [
+          "希望省事但不愿放弃隐私边界。",
+          "希望方案完整但不想被过多选项拖慢。",
+          "预算保守但愿意为真正降低风险的选项付费。"
+        ],
+        "ambiguity_to_preserve": [
+          "具体真实身份信息不存在，不应补写。",
+          "当天精确时间表需要用户确认。",
+          "预算上限只能作为当前任务假设。"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "user_id": "user_046",
+  "explicit_preferences": {
+    "user_profile": "一位年轻的诗人，创作关于在叙利亚的经历，并与社区分享作品。",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "莱拉·阿尔-哈桑",
+        "age": 22,
+        "gender": "女性",
+        "location": "德国柏林",
+        "languages": [
+          "阿拉伯语",
+          "英语",
+          "德语"
+        ],
+        "education_level": "本科生（文学专业）",
+        "occupation": "诗人（兼职）、书商（兼职）",
+        "industry": "艺术与文化",
+        "seniority": "入门",
+        "household": "独居于一间单间公寓",
+        "life_stage": "年轻人，职业生涯早期"
+      },
+      "physical_profile": {
+        "height_cm": 165,
+        "general_appearance": "身材苗条，深色卷发常向后梳，富有表现力的棕色眼睛，橄榄色皮肤，通常穿着舒适的衣物如毛衣和围巾。",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "反思、敏感且以社区为导向的诗人，将个人和集体创伤转化为艺术。",
+        "big_five": {
+          "openness": 85,
+          "conscientiousness": 55,
+          "extraversion": 35,
+          "agreeableness": 75,
+          "neuroticism": 65
+        },
+        "strengths": [
+          "同理心",
+          "创造力",
+          "韧性",
+          "积极倾听"
+        ],
+        "weaknesses": [
+          "过度思考",
+          "自我怀疑",
+          "难以保持常规",
+          "避免冲突"
+        ],
+        "values": [
+          "言论自由",
+          "社区团结",
+          "真实性",
+          "文化保护"
+        ],
+        "motivations": [
+          "通过写作治愈",
+          "为被沉默的故事发声",
+          "与有相似经历的人建立联系"
+        ],
+        "stress_triggers": [
+          "审查或压制艺术",
+          "对个人作品的严厉批评",
+          "社交孤立",
+          "听到叙利亚的暴力新闻"
+        ]
+      },
+      "background": {
+        "birthplace": "叙利亚大马士革",
+        "family_history": "在内战期间与家人逃离叙利亚，青少年时期在柏林重新定居。",
+        "education": "在当地大学学习文学，受阿拉伯古典诗歌和当代口语诗影响。",
+        "career_start": "开始以笔名在网上分享诗歌，然后在当地开放麦克风和文化活动中表演。",
+        "current_situation": "平衡学业、书店兼职工作，以及为可能的出版建立诗歌作品集。"
+      },
+      "lifestyle": {
+        "daily_routine": "早晨：在咖啡馆学习或写作。下午：在书店工作或上课。晚上：参加诗歌朗诵会或在家写作。周末：探索文化活动或与朋友一起烹饪叙利亚菜肴。",
+        "home_environment": "小工作室，书架装满诗集，一张写字桌，窗户俯瞰庭院。",
+        "social_life": "来自文学界的小圈子密友，活跃于在线写作社区，参加柏林叙利亚人的社区聚会。"
+      },
+      "interests": {
+        "primary": [
+          "诗歌（阿拉伯古典、当代口语诗）",
+          "中东文学",
+          "社会正义和难民权利"
+        ],
+        "secondary": [
+          "摄影（街头和自然）",
+          "烹饪叙利亚菜",
+          "独立电影",
+          "文化和历史播客"
+        ],
+        "cultural_touchpoints": [
+          "Adunis",
+          "Mahmoud Darwish",
+          "Rafeef Ziadah",
+          "Rumi",
+          "Khalil Gibran"
+        ]
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "书籍：叙利亚和巴勒斯坦诗人的诗集、关于流亡主题的文学小说、关于艺术和行动主义的散文",
+          "文章：关于叙利亚的长篇新闻、文化评论、对散居艺术家的采访",
+          "播客：文学播客、移民故事、口语诗歌表演",
+          "内容必须符合该用户独特的工作模式：离散诗人-书店员模式：亲密、文学、政治敏感、温柔。",
+          "拒绝通用助手框架：不要将艺术转化为营销或愉快的自我提升。"
+        ],
+        "product_preferences": [
+          "文具：高品质笔记本、钢笔、厚纸日记本",
+          "服装：简单、舒适、二手或可持续品牌；偏爱围巾和大地色系",
+          "书籍：总是购买诗歌和文学，偏爱独立书店",
+          "产品应通过用户自己的权衡视角来选择：情绪、线条/图像、社区伙伴、成本、安静的邀请。"
+        ],
+        "service_preferences": [
+          "咖啡馆：安静、舒适的咖啡馆，有好咖啡和免费WiFi用于写作；喜欢有艺术展示的",
+          "文化活动：开放麦之夜、诗歌工作坊、新书发布会、社区艺术展览",
+          "教育：写作工作坊、语言课程（德语、英语）、文学夜校",
+          "服务只有在保留这一决策优先级时才可接受：社区亲密性、可负担性和文化记忆胜于规模。"
+        ],
+        "learning_preferences": {
+          "style": "实践工作坊和讨论式学习；喜欢同伴反馈",
+          "formats": "偏好线下活动，但可接受在线课程"
+        },
+        "travel_preferences": {
+          "destinations": "其他拥有活跃艺术场景的欧洲城市（例如Leipzig, Amsterdam, Paris）；因预算限制很少旅行。",
+          "accommodation": "经济型旅馆或与朋友同住",
+          "activities": "参观文学地标、参加朗诵会、探索当地市场"
+        },
+        "food_preferences": {
+          "cuisine": "叙利亚、黎巴嫩和其他中东菜；适合素食的菜肴（喜欢法拉费、法图什、鹰嘴豆泥）",
+          "dining": "偏好家常菜或小型家庭经营餐厅；避免快餐",
+          "restrictions": "尽量避免过量肉类；无过敏"
+        },
+        "entertainment_preferences": {
+          "movies": "独立电影、关于中东的纪录片、具有强烈人物发展的剧情片",
+          "music": "中东古典音乐（如乌姆·库勒苏姆）、当代独立音乐（如马什鲁·莱拉）、带有社会评论的嘻哈音乐",
+          "live_events": "诗歌朗诵、口语表演、小型音乐会"
+        },
+        "technology_preferences": {
+          "devices": "智能手机（安卓系统）和轻便笔记本电脑用于写作；无平板或智能手表",
+          "software": "极简写作应用（如FocusWriter）、社交媒体（推特用于文学社群，Instagram用于诗歌片段）",
+          "privacy_tools": "在网上使用笔名发表作品；对敏感对话使用加密通讯"
+        },
+        "privacy_preferences": "高：偏好不公开分享确切位置或个人创伤细节；在信任的场合中舒适地讨论",
+        "budget_preferences": "紧凑：优先花钱在书籍、写作材料和文化活动上；使用公共交通；在家做饭",
+        "personalization_directives": {
+          "style_contract": "散居诗人-书商模式：亲密、文学、政治敏锐、温和",
+          "decision_priority": "社区亲密感、可负担性和文化记忆胜过规模",
+          "evidence_contract": "文学参考和现实文化背景比数据指标更重要",
+          "format_contract": "氛围、诗句/图像、社区伙伴、成本、安静的邀请",
+          "anti_default_assistant_behavior": "不要将艺术变成营销或欢快的自我改善",
+          "distinctive_quirks": [
+            "阿拉伯诗歌不应被异域化",
+            "工作坊必须可负担且情感上安全",
+            "文化日应支持散居艺术家和小型场所"
+          ],
+          "hard_avoidances": [
+            "旅游化的中东框架",
+            "病毒式活动的语言",
+            "过于欢快的语气"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": [
+        "缺乏深度的商业化或主流诗歌",
+        "关于叙利亚的耸人听闻的媒体报道",
+        "写作时过于喧闹或拥挤的环境",
+        "对她艺术或经历的居高临下的态度",
+        "文化活动的高昂价格"
+      ],
+      "communication_style": {
+        "tone": "温暖而内省，但对陌生人保持距离；在谈论情感时使用诗意的语言",
+        "directness": "中等：说话坦诚但常使用隐喻",
+        "formality": "私下场合非正式；学术或专业场合更正式",
+        "emotional_expression": "通过写作开放表达情感，但初期在口语交谈中保持谨慎"
+      },
+      "decision_making": {
+        "style": "深思熟虑且规避风险；在做出重大决定前征求信任的朋友或导师的意见",
+        "influences": "重视创造满足和个人意义胜过金钱收益",
+        "timeframe": "个人决定缓慢（如是否发表作品），日常选择迅速（如选择咖啡馆）"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "推荐叙利亚作者或关于流离失所的诗歌集",
+          "建议写作提示或工作坊",
+          "策划小型诗歌朗读活动",
+          "在柏林寻找廉价艺术用品或安静的写作空间",
+          "对一首进行中的诗歌提供反馈"
+        ],
+        "preference_conflicts": [
+          "希望阅读关于叙利亚的书籍但可能觉得情感沉重；需要温和筛选",
+          "喜欢社区活动但常因害羞而独自参加",
+          "重视网络匿名但希望建立作为诗人的声誉"
+        ],
+        "ambiguity_to_preserve": [
+          "个人创伤经历的具体细节",
+          "未来的具体出版抱负（可能会变化）",
+          "任何时刻的准确情感状态；避免过度归因情绪"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:46",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "温暖、尊重且富有同情心；避免过于热情",
+            "response_length": "中等；探讨话题时偏好详细解释，但回答直接问题时简洁",
+            "evidence_expectation": "欣赏相关文学、文化背景或类似作品实例的引用",
+            "formatting": "清晰的段落；推荐时使用项目符号或编号列表",
+            "proactive_behavior": "欢迎对活动、写作提示或书籍的建议；但不接受关于个人创伤的侵扰性问题",
+            "things_to_avoid": [
+              "居高临下或轻蔑的语气",
+              "过度商业化或耸人听闻的内容",
+              "在无上下文的情况下询问可能触发创伤的细节",
+              "假设所有叙利亚经历都相同"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "组织一场亲密的诗歌朗读会以推出新系列",
+            "在柏林找到一个可负担的阿拉伯语诗歌工作坊",
+            "计划一个经济实惠的文化日，探索叙利亚散居艺术"
+          ]
+        }
+      }
+    }
+  }
+}

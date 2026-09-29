@@ -1,0 +1,470 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_072",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:36:49",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_018"
+    ],
+    "content": [
+      "hidden_indirect_006",
+      "hidden_indirect_017"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_018"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_010",
+      "hidden_indirect_012",
+      "hidden_indirect_020"
+    ],
+    "entertainment": [
+      "hidden_indirect_009"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_009",
+      "hidden_indirect_016"
+    ],
+    "food": [
+      "hidden_indirect_010"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_014",
+      "hidden_indirect_019"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_003",
+      "hidden_indirect_005",
+      "hidden_indirect_008",
+      "hidden_indirect_013",
+      "hidden_indirect_017"
+    ],
+    "learning": [
+      "hidden_indirect_002",
+      "hidden_indirect_012",
+      "hidden_indirect_019"
+    ],
+    "privacy": [
+      "hidden_indirect_006",
+      "hidden_indirect_013"
+    ],
+    "product": [
+      "hidden_indirect_007"
+    ],
+    "role_context": [
+      "hidden_indirect_007",
+      "hidden_indirect_016"
+    ],
+    "service": [
+      "hidden_indirect_008",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "technology": [
+      "hidden_indirect_005",
+      "hidden_indirect_014"
+    ],
+    "travel": [
+      "hidden_indirect_004",
+      "hidden_indirect_015"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月花了55美元买了一个在线估算课程，团队试用后反馈只是理论讲解没有实际练习，集体决定不再用。"
+        },
+        {
+          "role": "assistant",
+          "content": "那换Pluralsight上的交互式估算工作坊，有模拟Sprint环节，我先试看十分钟，效果好再推给团队。"
+        }
+      ],
+      "implicit_signal": "更愿意为能直接减少团队会议成本的工具付费，而不为仅有的理论认证付费"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周把一篇20页的估算偏差白皮书发团队，结果没人读，我在回顾里看到大家普遍反馈太长。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我换方式：周一站立会议前在Slack发一条带三个关键图表的消息，每人两分钟看完，再花五分钟讨论一个实际案例。"
+        }
+      ],
+      "implicit_signal": "需要轻量级指标和即时的复盘来验证学习效果，不看长篇理论文章"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次参加了一个三小时SAFe估算工作坊，结束后没有可交付的图表或行动项，白白浪费了一个下午。"
+        },
+        {
+          "role": "assistant",
+          "content": "那改办一次45分钟的短工作坊，目标直接是输出一份团队估算校准表，结束时每人带走一个实际改进动作。"
+        }
+      ],
+      "implicit_signal": "拒绝没有明确成果的长时间工作坊，更看重具体的产出项"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周末家庭徒步，我让孩子识别沿途三种本地植物，他只想尽快到山顶吃零食，之后就不再配合了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次出发前用App挑一种他感兴趣的动物，比如山雀，沿途只找它的痕迹，像寻宝一样，不会觉得是上课。"
+        }
+      ],
+      "implicit_signal": "家庭徒步计划应包含教育元素，但不变成家庭作业"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "团队上周试用一款新燃尽图工具，要求每天手动输入进度原因，大家为了填表而填，没人实际看图。"
+        },
+        {
+          "role": "assistant",
+          "content": "退订那个工具，回到Trello简单卡片标签，每天站立时口头更新状态，回顾时再用插件生成一次图表。"
+        }
+      ],
+      "implicit_signal": "避免制造报告表演的工具，采纳真正反映团队状态的轻量级工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我常去的技术博客突然要求分享浏览器指纹才给看全文，我直接关掉页面，没再访问过。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐两个替代源：一个纯RSS订阅无追踪，另一个是Medium加密镜像站，你可以通过VPN访问。"
+        }
+      ],
+      "implicit_signal": "偏好加密和隐私友好的阅读方式"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "新估算插件的供应商列出了43项高级功能，我团队实际只需要扑克牌投票和离线支持两项。"
+        },
+        {
+          "role": "assistant",
+          "content": "只试基础套餐，重点测离线投票延迟和CSV导出速度，达标就签6个月，不签年约。"
+        }
+      ],
+      "implicit_signal": "作为项目经理，更关注工具如何减少团队摩擦而非功能数量"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "Jira新出的估算助手需要先开一次2小时启动会才能配置，我看完邮件就点了忽略。"
+        },
+        {
+          "role": "assistant",
+          "content": "那就不碰它，继续用Trello加估算卡片标签，每周四下午花10分钟回顾偏差即可。"
+        }
+      ],
+      "implicit_signal": "拒绝会增加会议负荷的服务，即使它来自行业巨头"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在奈飞看一部新科幻剧，前两集铺垫太长，直接跳到第三集发现仍无主线，就放弃不追了。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐《万神殿》，前15分钟就有核心冲突，节奏类似你喜欢的《副本》，很适合碎片时间看。"
+        }
+      ],
+      "implicit_signal": "娱乐内容也选择能提供轻量级反馈的"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在超市结账前看到加工意大利面酱含糖量18克，放回货架，回家用新鲜番茄和罗勒自己做了一份。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次周日晚上一次煮两批酱分装冷藏，工作日晚餐只需加热花五分钟，比买罐装还快。"
+        }
+      ],
+      "implicit_signal": "倾向于减少加工食品，并通过具体事件强化选择"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前花150美元买了一个估价软件年费，团队用了两周发现偏差率反而上升，今年不续约了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次只选月付，花55美元买Planing Poker测试版一个月，三个Sprint后偏差率下降10%以上再考虑年付。"
+        }
+      ],
+      "implicit_signal": "优先投资能提升团队估算质量的工具，但坚持试用再买"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "差点报名一个高级敏捷教练认证，发现结业只是写一份文档而不是带真实工作坊，我就没报名。"
+        },
+        {
+          "role": "assistant",
+          "content": "那你看CSP-SM，它要求至少主持两次真实回顾并提交录像，有实际指导价值。"
+        }
+      ],
+      "implicit_signal": "认证必须展示实际教练价值，而不是以徽章为驱动"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "安装新估算工具时，默认勾选了“匿名使用数据分享”，我手动去掉并关闭了所有遥测选项。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把设置步骤截图发到Slack，让大家也检查一遍客户端，确保只保留崩溃报告开启。"
+        }
+      ],
+      "implicit_signal": "避免无条件的数据收集行为，即使是很小的设置"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "技术团队想引入自动化估算工具，但提案只给了架构图和原理说明，没有前期实验数据。"
+        },
+        {
+          "role": "assistant",
+          "content": "让他们用一条真实用户故事在两个工具上各估算五次，记录时长和偏差，下周站会汇报对比结果。"
+        }
+      ],
+      "implicit_signal": "格式偏好实验和指标，而不是流程图和理论"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次出差订了转机航班，第一段晚点导致错过团队晚餐，报销时还多付了改签费。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次优先订直飞，贵一点也接受；落地后用手机花10分钟查好去酒店路线，避免再出乱子。"
+        }
+      ],
+      "implicit_signal": "旅行偏好直飞，并且注重实际体验而非花哨服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "供应商发来40页评估报告，装订精美，但摘要里没有一个数字，我直接翻到最后找数据表。"
+        },
+        {
+          "role": "assistant",
+          "content": "要求下次只提供三页：团队采纳率时间序列图、估算偏差箱线图、成本分析表。"
+        }
+      ],
+      "implicit_signal": "作为项目经理，会基于已有记录而非花哨呈现做决策"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "团队新成员在回顾中用了“PI规划”“ART同步”等术语，其他人一脸疑惑，讨论效率因此严重降低。"
+        },
+        {
+          "role": "assistant",
+          "content": "在团队指南加一条：站会和回顾中只使用内部定义的角色名称，任何新术语出现必须用一句话解释。"
+        }
+      ],
+      "implicit_signal": "拒绝SAFe风格的行话，倾向实际可操作的表达"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "找到一款免费估算插件，但安装需要改Jira权限，安全团队审批要两周，大家觉得太慢就没用。"
+        },
+        {
+          "role": "assistant",
+          "content": "放弃免费的，花43美元买Slack原生估算机器人，团队两分钟上手，下个Sprint就能启用。"
+        }
+      ],
+      "implicit_signal": "高团队采纳度优先于低价格"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "买了《敏捷估算圣经》，每章后都是思考题而非练习，读了40页就搁置了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那从Pluralsight找一门带编码练习的统计学估算课程，每次课后能用真实项目数据跑一次测试。"
+        }
+      ],
+      "implicit_signal": "学习方式偏好交互式且有即时产出的课程"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "为了试用新视频会议工具，团队每人花了半小时注册和设置虚拟背景，存在明显阻力，我们就退回Zoom了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那继续用Zoom，不加新工具；如果需要自动转录，在Zoom里加一个机器人，点击一次就能生效。"
+        }
+      ],
+      "implicit_signal": "服务选择优先考虑能否减少设置摩擦，不追求品牌"
+    }
+  ]
+}

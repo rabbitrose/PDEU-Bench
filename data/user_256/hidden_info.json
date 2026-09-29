@@ -1,0 +1,449 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_256",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:55:11",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 19,
+  "composition": {
+    "episodic_preference_trace": 19
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_007",
+      "hidden_indirect_015"
+    ],
+    "content": [
+      "hidden_indirect_008",
+      "hidden_indirect_017"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_019"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_008",
+      "hidden_indirect_012"
+    ],
+    "entertainment": [
+      "hidden_indirect_010"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_006",
+      "hidden_indirect_017"
+    ],
+    "food": [
+      "hidden_indirect_007"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_014"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "learning": [
+      "hidden_indirect_002",
+      "hidden_indirect_014"
+    ],
+    "privacy": [
+      "hidden_indirect_006",
+      "hidden_indirect_016"
+    ],
+    "product": [
+      "hidden_indirect_001",
+      "hidden_indirect_012"
+    ],
+    "role_context": [
+      "hidden_indirect_009"
+    ],
+    "service": [
+      "hidden_indirect_003",
+      "hidden_indirect_009",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "technology": [
+      "hidden_indirect_004",
+      "hidden_indirect_011",
+      "hidden_indirect_016",
+      "hidden_indirect_019"
+    ],
+    "travel": [
+      "hidden_indirect_005",
+      "hidden_indirect_015"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买储物箱只看图没看内径，快递到了发现放不进柜子。退货花了三天。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次先列柜子内径约束，再从可退换的卖家筛，付款前确认支持替换。"
+        }
+      ],
+      "implicit_signal": "优先选择有明确规格和替换方案的产品"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看了个收纳教程，但说的品牌网上找不到第三方评测，怕又是软文。"
+        },
+        {
+          "role": "assistant",
+          "content": "那先搜同尺寸产品的B站开箱，对比三个以上视频再定，缺口标在清单备注栏。"
+        }
+      ],
+      "implicit_signal": "偏好有可验证来源和复盘标准的方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "订阅了某收纳规划服务，取消入口藏在二级菜单，多扣了一期才发现。"
+        },
+        {
+          "role": "assistant",
+          "content": "换用前先截图取消路径，确认后把取消日加入日历提醒，备选写邮件申请。"
+        }
+      ],
+      "implicit_signal": "要求服务取消规则透明并给出备选"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "换了个清单app，旧版清单手动重输一遍，花掉整个午休。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次挑支持CSV导出的，先导旧数据再切，迁移完核对数量。"
+        }
+      ],
+      "implicit_signal": "讨厌重复录入，要求工具可导出"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去宜家前没留缓冲，排到一半才发现尺寸不对，白跑一趟。"
+        },
+        {
+          "role": "assistant",
+          "content": "去之前查好库存，标两个替代品，留出地铁换乘时30分钟机动。"
+        }
+      ],
+      "implicit_signal": "拒绝不设缓冲的路线规划"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "客户回复前那个问卷要求填家庭住址和卧室照片，说是为了推荐方案。"
+        },
+        {
+          "role": "assistant",
+          "content": "只给储物区尺寸和照片，地址用邮编代替，拒绝不必要的权限。"
+        }
+      ],
+      "implicit_signal": "敏感信息只提供任务必要部分"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看中一款实木收纳架，加上运费超预算40%，但同时又想省事。"
+        },
+        {
+          "role": "assistant",
+          "content": "先记下这款参数，然后找两款金属架对比，成本控制在预算内，保留升级选项。"
+        }
+      ],
+      "implicit_signal": "超预算必须给出替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前照着篇热文买收纳盒，结果抽屉深度差2厘米，盖子盖不上。"
+        },
+        {
+          "role": "assistant",
+          "content": "列清单时把待量尺寸标黄，下单前附抽屉深度照片让卖家确认。"
+        }
+      ],
+      "implicit_signal": "要求明确指出未确认点"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想用本地收纳服务，结果要注册三个平台才能预约测量，中途退出去找工具。"
+        },
+        {
+          "role": "assistant",
+          "content": "直接搜可电话预约的本地师傅，只提供姓名和需测区域，不注册平台账号。"
+        }
+      ],
+      "implicit_signal": "偏好少中转少注册的服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周末计划逛个生活市集，网上排第一但现场全是推销，浪费时间。"
+        },
+        {
+          "role": "assistant",
+          "content": "改选附近社区二手交换场，内容密度高且不破坏第二天节奏。"
+        }
+      ],
+      "implicit_signal": "拒绝只看热度的推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看中一款智能收纳标签机，有蓝牙但评论说半年后app连不上维护差。"
+        },
+        {
+          "role": "assistant",
+          "content": "换手动标签机加可反复贴的标签纸，维护成本低且数据不依赖云端。"
+        }
+      ],
+      "implicit_signal": "可靠性和可维护性优先于新奇功能"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前量柜子用卷尺，记录到app又量一遍，第二天重做两次。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次用带记忆折叠尺，量完直接拍照贴到看板，省掉记数步骤。"
+        }
+      ],
+      "implicit_signal": "喜欢低摩擦工具，减少信息录入"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "选了低价安装服务，半年后螺丝松动，联系客服说保修需付上门费。"
+        },
+        {
+          "role": "assistant",
+          "content": "挑服务时看保修条款和用户评价里的维护问题，把上门费纳入决策表。"
+        }
+      ],
+      "implicit_signal": "拒绝忽略维护成本的服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "以前看收纳规划只讲步骤，排完才发现漏了通风和材质限制。"
+        },
+        {
+          "role": "assistant",
+          "content": "输出方案表：目标（放32件工具），约束（深度≤48cm），先列风险再给行动。"
+        }
+      ],
+      "implicit_signal": "要求输出目标/约束/方案表/下一步检查"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去趟远郊建材市场，路费超预算三成，还买了非必需装饰件。"
+        },
+        {
+          "role": "assistant",
+          "content": "先列必须买品（架子和分隔板），线上查路费推上限，装饰件延后。"
+        }
+      ],
+      "implicit_signal": "保守预算并区分必须/可推迟花费"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "用某收纳规划网页，注册要求绑定通讯录和位置权限。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用手动清单和离线表格，不联网也能完成规划，避免共享联系人与位置。"
+        }
+      ],
+      "implicit_signal": "默认保护隐私，只提供必要信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "照一个博主推荐买了磁性刀架，结果墙面不平粘不住，退货又要运费。"
+        },
+        {
+          "role": "assistant",
+          "content": "先搜平替用户对墙面的实测，再用可移除背胶贴测试位置，落地再下单。"
+        }
+      ],
+      "implicit_signal": "偏好可验证来源和失败回滚路径"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "预约了一个免费测量，师傅到后说是基础价，特殊墙面要加收，提前没说。"
+        },
+        {
+          "role": "assistant",
+          "content": "先电话确认墙面类型和费用边界，再预约，预约前把沟通录音存到看板。"
+        }
+      ],
+      "implicit_signal": "拒绝隐藏费用和模糊承诺的服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看中一款无线充电收纳盒，但评论说一年后电池鼓包过保维修难。"
+        },
+        {
+          "role": "assistant",
+          "content": "选纯机械分层盒加USB线，无电池隐患，维护只需定期擦尘。"
+        }
+      ],
+      "implicit_signal": "优先可维护性和时间边界"
+    }
+  ]
+}

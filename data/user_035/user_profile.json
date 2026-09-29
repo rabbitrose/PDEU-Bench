@@ -1,0 +1,243 @@
+{
+  "user_id": "user_035",
+  "explicit_preferences": {
+    "user_profile": "一位与亚历克斯有共同幽默感的工程师，从小学起就认识这位喜剧演员",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Alex Chen",
+        "age": 35,
+        "gender": "男性",
+        "location": "San Francisco, CA, USA",
+        "languages": [
+          "英语（母语）",
+          "普通话（会话水平）"
+        ],
+        "education_level": "计算机科学硕士",
+        "occupation": "高级软件工程师",
+        "industry": "技术（AI初创公司）",
+        "seniority": "资深",
+        "household": "独居一居室公寓，无宠物",
+        "life_stage": "事业有成，单身，经济宽裕"
+      },
+      "physical_profile": {
+        "height_cm": 178,
+        "general_appearance": "运动身材，常穿休闲但时髦的衣服，有时留胡子和戴眼镜",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "务实、机智、注重细节的工程师，具有冷嘲幽默感，对老朋友忠诚。",
+        "big_five": {
+          "openness": 6,
+          "conscientiousness": 9,
+          "extraversion": 6,
+          "agreeableness": 5,
+          "neuroticism": 3
+        },
+        "strengths": [
+          "分析型",
+          "创造性解决问题",
+          "忠诚",
+          "幽默"
+        ],
+        "weaknesses": [
+          "过于挑剔",
+          "对效率不耐烦",
+          "有时挖苦"
+        ],
+        "values": [
+          "真实性",
+          "效率",
+          "幽默",
+          "友谊"
+        ],
+        "motivations": [
+          "解决有趣的问题",
+          "让人发笑",
+          "与童年朋友保持联系"
+        ],
+        "stress_triggers": [
+          "重复性任务",
+          "缺乏智力挑战",
+          "粗鲁的人"
+        ]
+      },
+      "background": {
+        "grew_up": "马萨诸塞州波士顿郊区",
+        "education": "加州大学伯克利分校计算机科学学士，斯坦福大学硕士",
+        "career_history": [
+          "金融科技初创公司的软件工程师",
+          "大型科技公司的高级工程师",
+          "目前在一家AI创业公司工作"
+        ],
+        "key_life_events": [
+          "小学时最好的朋友成了单口喜剧演员（Mike the Jester）",
+          "因大学搬到旧金山",
+          "每月与朋友举办一次桌游之夜"
+        ]
+      },
+      "lifestyle": {
+        "daily_routine": "早上6点起床，去健身房，弹性工作制9点到6点，做晚饭，睡前阅读或看喜剧",
+        "weekends": "徒步、喜剧俱乐部、桌游、尝试新餐厅、做副业项目",
+        "finance": "储蓄和投资，花钱在体验和优质小工具上，避免奢侈品",
+        "social_life": "有一群来自大学和工作的亲密朋友，定期给儿时好友打电话"
+      },
+      "interests": [
+        "单口喜剧",
+        "远足",
+        "桌游",
+        "精酿啤酒",
+        "梦幻足球",
+        "编程副业项目",
+        "科幻和幽默书籍",
+        "烹饪"
+      ],
+      "explicit_preferences": {
+        "content_preferences": [
+          "机智、聪明的幽默",
+          "技术博客（Hacker News, Ars Technica）",
+          "喜剧播客（例如 'Comedy Bang Bang'）",
+          "科幻小说（例如Andy Weir, Neal Stephenson）",
+          "内容必须匹配该用户独特的工作模式：机智工程师模式：高效，允许冷幽默，选项带有隐藏陷阱。",
+          "拒绝通用的助手框架：不要过于认真、仪式化或过度帮助。"
+        ],
+        "product_preferences": [
+          "苹果生态系统（iPhone, MacBook, AirPods）",
+          "极简功能设计",
+          "高质量厨刀和炊具",
+          "产品应通过用户自己的权衡视角来选择：最佳选择、为什么它不烦人、备选方案、日历就绪的细节。"
+        ],
+        "service_preferences": [
+          "Spotify（播客和音乐）",
+          "Netflix（脱口秀特辑和科幻）",
+          "Amazon Prime（免费配送和流媒体）",
+          "使用Signal进行消息通讯",
+          "使用ProtonMail处理电子邮件",
+          "只有在服务保留此决策优先级时才可接受：低摩擦执行和社交乐趣胜过详尽比较。"
+        ],
+        "learning_preferences": [
+          "动手学习",
+          "在线课程（Udacity, Coursera）",
+          "通过实践学习（副项目）"
+        ],
+        "travel_preferences": [
+          "冒险旅行（徒步、文化）",
+          "拜访不同城市的朋友",
+          "避免豪华度假村",
+          "偏好Airbnb以获得本地体验"
+        ],
+        "food_preferences": [
+          "亚洲菜（日式拉面、泰国菜）",
+          "汉堡和精酿啤酒",
+          "在家用新鲜食材烹饪"
+        ],
+        "entertainment_preferences": [
+          "单口喜剧特辑",
+          "科幻电影（例如《降临》、《银翼杀手》）",
+          "纪录片（科技、自然）"
+        ],
+        "technology_preferences": [
+          "开源软件",
+          "注重隐私的工具",
+          "对权衡务实",
+          "偏好Linux服务器但日常使用macOS"
+        ],
+        "privacy_preferences": [
+          "谨慎但不偏执",
+          "除非必要，避免分享个人信息",
+          "公共Wi-Fi使用VPN"
+        ],
+        "budget_preferences": [
+          "中等支出者",
+          "愿意在优质体验上挥霍",
+          "追求价值，不一定是便宜"
+        ],
+        "personalization_directives": {
+          "style_contract": "诙谐工程师模式：高效，允许冷幽默，选项带有隐藏陷阱。",
+          "decision_priority": "低摩擦执行和社交乐趣胜过详尽比较。",
+          "evidence_contract": "简要的理由就足够；引用通常是噪音。",
+          "format_contract": "最佳选择、为何不烦人、备选、可直接放入日历的细节。",
+          "anti_default_assistant_behavior": "不要过于认真、客气或过度帮助。",
+          "distinctive_quirks": [
+            "喜剧应机智而非宽泛或温馨。",
+            "苹果生态系统的便利性是有效的决定因素。",
+            "桌游计划需要节奏和桌面氛围，而不仅仅是后勤。"
+          ],
+          "hard_avoidances": [
+            "老套的笑话",
+            "为休闲做电子表格式的过度规划",
+            "流行但不尖锐的播客"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": [
+        "闹剧或冒犯性幽默",
+        "重复或毫无意义的任务",
+        "粗鲁或不专业的行为",
+        "过度宣传或虚假语言",
+        "杂乱或低效的界面"
+      ],
+      "communication_style": {
+        "tone": "直接，偶尔幽默，恰当使用技术术语",
+        "formality": "对同事和朋友非正式但尊重",
+        "humor": "冷幽默，机智，常自嘲",
+        "preferred_channels": "使用短信（Signal）快速消息，电子邮件处理详细话题，面对面进行重要讨论"
+      },
+      "decision_making": {
+        "approach": "理性且数据驱动，但也相信直觉",
+        "speed": "对日常决策快速，对重大决策深思熟虑",
+        "criteria": "效率、影响力、与价值观一致（真实性、幽默）",
+        "examples": "根据规格和生态系统契合度选择新手机，根据徒步机会和朋友推荐选择度假地点"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "计划周末去另一个城市参加技术会议",
+          "找到符合他口味的新喜剧播客",
+          "为即将到来的假期推荐一本书",
+          "调试一个棘手的代码问题",
+          "组织一次与不同圈子朋友的聚会"
+        ],
+        "preference_conflicts": [
+          "想要效率但也幽默；推荐应既实用又有趣",
+          "重视高质量体验，但在合理预算内；可能会抵制高价选项",
+          "喜欢开源和隐私，但对便利性务实；可能接受权衡"
+        ],
+        "ambiguity_to_preserve": [
+          "特定的幽默感是冷幽默和机智，但没有详尽定义；留出发现空间",
+          "与儿时好友的关系很重要，但不过分感伤；保持为微妙影响",
+          "技术水平高，但并非所有领域的专家；避免假设太多领域知识"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:43",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "友好但高效，专业但平易近人",
+            "response_length": "简洁但足够详尽以有用",
+            "evidence_expectation": "欣赏数据或理由，但不要求引用",
+            "formatting": "使用列表的要点、清晰标题，避免大段文字",
+            "proactive_behavior": "可以接受建议，但不要打断或插入未经请求的意见",
+            "things_to_avoid": [
+              "过度热情或推销式语言",
+              "不必要的奉承",
+              "忽视对简洁的偏好",
+              "在没有上下文的情况下假设太多熟悉度"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "规划一次前往西雅图的周末技术会议兼喜剧之旅",
+            "组织一次结合桌游和喜剧的生日庆祝",
+            "找到并整合一个新的机智喜剧播客到日常中"
+          ]
+        }
+      }
+    }
+  }
+}

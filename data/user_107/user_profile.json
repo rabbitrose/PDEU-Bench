@@ -1,0 +1,221 @@
+{
+  "user_id": "user_107",
+  "explicit_preferences": {
+    "user_profile": "一位热爱拳击的独立创新顾问",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Marcus Chen",
+        "age": 34,
+        "gender": "男性",
+        "location": "美国纽约州纽约市",
+        "languages": [
+          "英语",
+          "普通话"
+        ],
+        "education_level": "硕士学位",
+        "occupation": "独立创新顾问",
+        "industry": "管理咨询/科技",
+        "seniority": "高级（8年以上经验）",
+        "household": "单身，独居一居室公寓",
+        "life_stage": "成熟的专业人士，专注于职业发展和个人成长"
+      },
+      "physical_profile": {
+        "height_cm": 178,
+        "general_appearance": "运动型身材，黑色短发，经常因拳击而轻微淤青或关节粗大。通常在客户会议上穿着商务休闲装（西装外套、休闲裤），训练时穿健身服。",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "自律、分析能力强、有竞争心，同时拥有咨询行业的创造力和拳击手的韧性。",
+        "big_five": {
+          "openness": 75,
+          "conscientiousness": 90,
+          "extraversion": 65,
+          "agreeableness": 50,
+          "neuroticism": 35
+        },
+        "strengths": [
+          "战略思维",
+          "压力下的韧性",
+          "创造性解决问题",
+          "自律"
+        ],
+        "weaknesses": [
+          "对效率不耐烦",
+          "可能过于挑剔",
+          "难以委派任务"
+        ],
+        "values": [
+          "正直",
+          "持续改进",
+          "努力",
+          "创新"
+        ],
+        "motivations": [
+          "帮助客户颠覆市场",
+          "拳击和咨询领域的个人精通",
+          "财务独立"
+        ],
+        "stress_triggers": [
+          "官僚主义",
+          "缺乏进展",
+          "无能",
+          "困在交通中"
+        ]
+      },
+      "background": {
+        "education": "麻省理工学院机械工程学士，斯坦福商学院MBA",
+        "career_history": [
+          "在BCG担任创新分析师3年",
+          "在财富500强科技公司担任高级创新经理4年",
+          "担任独立顾问2年（至今）"
+        ],
+        "notable_achievements": "领导了一项数字化转型项目，为客户每年节省5000万美元；赢得了一项地区金手套拳击锦标赛。",
+        "personal_history": "在旧金山长大，研究生毕业后搬到纽约。大学时开始拳击以缓解压力，现在每周训练5天。"
+      },
+      "lifestyle": {
+        "daily_routine": "早上5:30起床，晨跑或拳击训练，8点到5点客户电话，下午6点晚间拳击训练，9点晚餐和阅读/副业项目，10:30就寝。",
+        "living_environment": "位于地狱厨房的现代高层公寓，设有小型家庭办公室和用于影子拳击的阳台。",
+        "social_life": "活跃但有限的社交圈：几个来自拳击馆和咨询同行的密友。偏好小型聚会而非派对。",
+        "hobbies": "拳击（业余比赛）、阅读商业传记、尝试备餐、偶尔在线下国际象棋。"
+      },
+      "interests": {
+        "professional_interests": [
+          "设计思维",
+          "开放式创新",
+          "敏捷方法论",
+          "颠覆性技术趋势",
+          "风险投资"
+        ],
+        "personal_interests": [
+          "拳击技术和历史",
+          "营养和运动科学",
+          "自助和巅峰表现",
+          "科幻文学"
+        ]
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "新闻：商业和技术创新（例如TechCrunch、HBR），但偏好分析而非突发新闻。",
+          "书籍：非虚构类：策略、创新者传记、一些科幻（Neal Stephenson）。",
+          "播客：How I Built This、The Tim Ferriss Show、Lex Fridman Podcast、The Knowledge Project。",
+          "内容必须匹配该用户独特的工作模式：创新顾问-拳击手模式：敏锐、实验驱动、略带幽默。",
+          "拒绝通用助手设定：不要将显而易见的想法包装成创新。"
+        ],
+        "product_preferences": [
+          "技术：偏好高性能笔记本电脑（MacBook Pro）、降噪耳机（Sony）、极简智能手机设置（无预装软件的iPhone）。",
+          "拳击装备：Everlast或Hayabusa等品牌；看重耐用性和贴合度而非外观。",
+          "服装：工作穿商务休闲（Theory、Uniqlo），拳击穿运动服（Nike、Under Armour）。偏好中性色。",
+          "产品应通过用户自身的权衡视角选择：假设、测试、有力的交付、对练/旅行限制。"
+        ],
+        "service_preferences": [
+          "效率工具：Notion用于项目管理、Slack用于客户沟通、Google Workspace用于文档。",
+          "健身服务：在高端健身房上拳击课（如Rumble或在家打影子拳击），每周也请私人教练一次。",
+          "送餐服务：偏好Factor75等配餐服务提供健康午餐；偶尔从健康餐厅订购。",
+          "服务只有在保留此决策优先级时才可接受：客户吸引力、训练坚韧度和旅行效率优于完美。"
+        ],
+        "learning_preferences": {
+          "learning_style": "动手实践和案例研究为基础；喜欢带有实际项目的互动课程。",
+          "preferred_platforms": "Coursera（用于结构化课程）、YouTube用于拳击训练、阅读研究论文。",
+          "topics": "创新框架、拳击技术、谈判、行为经济学。"
+        },
+        "travel_preferences": {
+          "purpose": "咨询业务出差（国内/国际）和偶尔的拳击比赛。",
+          "style": "高效且精简：偏好直飞航班、有良好健身房的酒店（凯悦或万豪）、当地健康食品选择。",
+          "destinations": "创新中心（旧金山、东京、伦敦）或拳击文化浓厚的地方（费城、墨西哥城）。"
+        },
+        "food_preferences": {
+          "diet": "高蛋白、低加工食品；遵循灵活的饮食计划。喜欢亚洲菜（日式、中式）和健康碗。",
+          "dislikes": "油炸食品、浓奶油酱、含糖甜点。",
+          "eateries": "偏好快速休闲健康连锁店（Sweetgreen、Chipotle）或提供明确营养信息的坐下餐厅。"
+        },
+        "entertainment_preferences": {
+          "movies": "带有策略情节的动作/惊悚片（例如《谍影重重》系列）、关于创新或体育的纪录片。",
+          "tv_shows": "商业剧集（《亿万》），科技主题限定剧（《辍学生》），以及拳击纪录片。",
+          "music": "高能量运动时：嘻哈、电子；工作时：器乐或低保真音乐。"
+        },
+        "technology_preferences": {
+          "brands": "苹果生态（iPhone、MacBook、iPad），但开放使用任何平台的生产力工具。",
+          "trends": "对AI在咨询和拳击训练（如可穿戴设备）中的应用感兴趣。",
+          "avoidance": "不需要的智能家居小工具；重视简单和功能性。"
+        },
+        "privacy_preferences": {
+          "data_sharing": "不愿与大科技公司分享个人数据；使用VPN和广告拦截器。在职业社交中愿意分享专业数据。",
+          "social_media": "存在感极低：领英用于职业场合，没有个人Instagram/Facebook。匿名使用推特跟踪行业新闻。"
+        },
+        "budget_preferences": {
+          "spending_priorities": "投资优质拳击装备、健康食品、职业发展以及比赛旅行。积极储蓄以提前退休。",
+          "splurge_categories": "度假时选择配备良好健身设施的地点、顶级咨询会议和好咖啡。",
+          "frugal_categories": "服装（运动服除外）、频繁外出就餐和奢侈电子产品。"
+        },
+        "personalization_directives": {
+          "style_contract": "创新顾问-拳击手模式：犀利、实验驱动、略带幽默。",
+          "decision_priority": "客户牵引力、训练坚韧度和差旅效率优先于表面功夫。",
+          "evidence_contract": "推理和快速测试；仅对不熟悉的主张引用来源。",
+          "format_contract": "假设、测试、简洁交付、陪练/差旅约束。",
+          "anti_default_assistant_behavior": "不要把显而易见的想法包装成创新。",
+          "distinctive_quirks": [
+            "工作坊提案需要体现可见的行为改变。",
+            "拳击训练计划应包括不适但不愚蠢。",
+            "商务差旅如果时间紧凑可以包含训练。"
+          ],
+          "hard_avoidances": [
+            "创新作秀",
+            "软性激励辅导",
+            "奢侈的差旅加成"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "dislikes": {
+          "content": "标题党文章、过度耸人听闻的新闻、真人秀节目。",
+          "food": "含糖饮料、快餐。",
+          "services": "咄咄逼人的销售策略、糟糕的客户服务。",
+          "people": "缺乏守时、不诚实。"
+        },
+        "constraints": "行程繁忙，需拜访客户；娱乐时间有限。需要尊重他时间并高效交付的产品和服务。"
+      },
+      "communication_style": {
+        "tone": "直接、简洁且尊重他人。偏好清晰胜于礼貌。在职业场合自信但不傲慢。",
+        "language": "使用拳击和咨询领域的行话（例如“转型”、“干净饮食”、“颠覆性创新”）。",
+        "expressiveness": "通常克制；讨论创新或拳击时可能变得热情。",
+        "common_phrases": "“开门见山吧。”“投资回报率是多少？”“保持自律。”"
+      },
+      "decision_making": {
+        "style": "分析但果断；基于数据和经验直觉快速权衡利弊。",
+        "biases": "对自己分析的信心有时会导致过度自信；可能低估共识。",
+        "influences": "重视可信同行和导师的见解，但最终自己做决定。"
+      },
+      "evaluation_notes": {
+        "likely_tasks": "推荐创新类书籍/播客、拳击训练计划或装备、生产力软件、符合高蛋白饮食的餐食计划、咨询差旅行程。",
+        "preference_conflicts": "想要健康食品，又要求方便快捷；希望数字足迹最小，但同时使用生产力工具。拳击装备上可能在节俭与品质间冲突。",
+        "ambiguity_to_preserve": "确切拳击水平（业余但有竞争力）、具体咨询客户行业（科技与非科技）、精确营养宏量营养素，以避免过度拟合。",
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:46",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "专业、信息丰富且高效。适当幽默可接受。",
+            "response_length": "简洁但全面；推荐用要点，说明用短段落。",
+            "evidence_expectation": "期望建议背后有来源或推理，尤其是不熟悉的话题。",
+            "formatting": "清晰的标题、列表用要点、关键点加粗。避免大段文字。",
+            "proactive_behavior": "欢迎主动推荐生产力工具、拳击训练或相关行业活动，但不要过于频繁。",
+            "things_to_avoid": "奉承、未经请求的个人生活建议、过于随意的语言，或重复已提供的信息。"
+          },
+          "task_titles_used_for_context": [
+            "为科技客户准备创新工作坊提案",
+            "设计一个为期4周的拳击训练计划以参加比赛",
+            "规划一次包含拳击训练的3天旧金山商务差旅"
+          ]
+        }
+      }
+    }
+  }
+}

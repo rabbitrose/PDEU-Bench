@@ -1,0 +1,105 @@
+{
+  "user_id": "user_132",
+  "task": {
+    "task_id": "task_hard",
+    "title": "应对重大医疗合规改革",
+    "daily_life_domain": "work",
+    "scenario": "一项新的联邦医疗合规法规已宣布，三个月后生效。作为纽约一家律师事务所的医疗法律合伙人，您必须领导一个团队分析该法规对您的制药客户的影响，并在两周内制定全面的策略来为客户提供建议。您有一个助理团队可用，但需要优先考虑客户并有效分配资源。",
+    "user_goal": "交付一份详细的行动计划，使事务所在两周内建议所有受影响的客户，确保合规并最小化客户风险。",
+    "why_complex": "要求在紧迫期限内同时开展法律分析、风险评估、团队协作、客户优先级排序和时间管理。必须在分析深度与速度之间取得平衡，并向不同客户清晰传达复杂结论。",
+    "constraints": [
+      "两周截止日期",
+      "具备不同专业知识的律师团队",
+      "客户保密原则",
+      "须引用权威法律来源（如美国食品药品监督管理局、联邦公报）",
+      "你个人的现有案件量和差旅安排"
+    ],
+    "required_reasoning_steps": [
+      "1. 从官方渠道（如联邦公报）获取并审阅新法规全文。",
+      "2. 识别与旧法相比的关键条款和变化，重点标注合规截止日期和处罚条款。",
+      "3. 根据产品线和运营情况，将律所制药类客户按影响程度分类（如高、中、低）。",
+      "4. 将具体研究任务分配给律师，确保专业领域与客户类别匹配。",
+      "5. 优先联系客户：首先通知风险最高或临近合规里程碑的客户。",
+      "6. 起草可依据客户需求调整的模板化咨询备忘录，包含具体行动方案。",
+      "7. 安排团队复核会议，确保质量和一致性。",
+      "8. 安排你进行最终审核与批准，随后协调个别客户简报会议。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "当前客户名单及风险概况（向合伙人或律师索要近期档案，但需保密）",
+      "客户对指导方案的特定截止日期或现有需求",
+      "律师的可用时间与专业能力（日程安排、过往监管经验）",
+      "未来两周内你个人的差旅和出庭日期",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "包含时间表、律师任务分配、客户优先级矩阵和模板化备忘录的项目方案。方案需以清晰的编号格式呈现。",
+    "success_criteria": [
+      "方案须在两周内定稿",
+      "所有高影响客户须在截止日期前收到定制化备忘录",
+      "所有引用来源须具备权威性（如FDA、国会记录）",
+      "团队反馈确认分工明确且无瓶颈",
+      "计划中无关键合规截止日期遗漏",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "未能识别最紧急的客户",
+      "备忘录过于复杂导致延误",
+      "未考虑律师工作负荷即分配任务",
+      "交付物中使用非正式或模糊措辞",
+      "未考虑个人差旅安排"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 9,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 9,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=11",
+        "constraints_capped=5",
+        "decision_points_capped=4",
+        "information_items_capped=6",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=32.2",
+        "hard_revision: 内容负载较高，保留少量 9 轮作为上尾",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Margaret Chen",
+      "age": 52,
+      "gender": "女性"
+    }
+  }
+}

@@ -1,0 +1,286 @@
+{
+  "user_id": "user_091",
+  "explicit_preferences": {
+    "user_profile": "专注于质量保证的软件工程师，与遗传学家密切合作以提升软件性能",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Alex Chen",
+        "age": 32,
+        "gender": "男性",
+        "location": "美国加利福尼亚州旧金山",
+        "languages": [
+          "英语",
+          "普通话"
+        ],
+        "education_level": "计算机科学硕士学位",
+        "occupation": "高级QA工程师",
+        "industry": "生物技术/基因组学",
+        "seniority": "中级",
+        "household": "独居",
+        "life_stage": "早期职业专业人士"
+      },
+      "physical_profile": {
+        "height_cm": 178,
+        "general_appearance": "运动型身材，黑色短发，戴矩形眼镜，常穿着休闲科技服装",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "注重细节且有条理的QA工程师，重视精确性和科学严谨性，善于协作但可能对模糊之处过于挑剔",
+        "big_five": {
+          "openness": 0.6,
+          "conscientiousness": 0.9,
+          "extraversion": 0.3,
+          "agreeableness": 0.7,
+          "neuroticism": 0.2
+        },
+        "strengths": [
+          "超乎寻常的细节关注力",
+          "强大的分析思维能力",
+          "调试时的耐心",
+          "有效的跨团队协作"
+        ],
+        "weaknesses": [
+          "倾向于过于苛责不完整的规格",
+          "难以应对高层面的模糊性",
+          "在缺乏明确需求时，适应快速变化的速度有时较慢"
+        ],
+        "values": [
+          "准确性",
+          "效率",
+          "科学正直性",
+          "持续改进"
+        ],
+        "motivations": [
+          "提高软件质量以实现科学突破",
+          "构建稳健的测试自动化框架",
+          "学习前沿基因组学技术"
+        ],
+        "stress_triggers": [
+          "最后一刻未经适当文档记录的变更",
+          "不可复现的bug",
+          "缺乏明确的验收标准"
+        ]
+      },
+      "background": {
+        "hometown": "加利福尼亚州圣何塞",
+        "family": "父母均为工程师，有一名妹妹（医学生）",
+        "education": "顶尖公立大学的计算机科学学士和硕士学位",
+        "career_history": "最初在一家中型金融科技公司担任初级QA（3年），随后转到现生物科技初创公司担任高级QA工程师（4年）",
+        "life_milestones": [
+          "22岁搬出家门",
+          "28岁完成马拉松",
+          "30岁购买第一套住房（旧金山南部的公寓）"
+        ],
+        "daily_routine": "早上6:30起床，骑自行车20分钟到办公室，工作时间为9点至18点，傍晚跑步或烹饪，睡前阅读或浏览科技新闻"
+      },
+      "lifestyle": {
+        "housing": "位于旧金山南部的现代一居室公寓",
+        "transportation": "通勤用自行车，偶尔使用拼车服务",
+        "diet": "素食者（含蛋奶），喜欢烹饪和尝试新菜系",
+        "exercise": "每周跑步4次，进行自重力量训练",
+        "sleep": "每晚睡眠7小时，作息规律",
+        "social_life": "定期与朋友玩桌游，偶尔参加技术聚会"
+      },
+      "interests": {
+        "hobbies": [
+          "跑步",
+          "烹饪",
+          "阅读科幻文学",
+          "桌游",
+          "摄影"
+        ],
+        "intellectual_pursuits": [
+          "生物信息学",
+          "精准医疗",
+          "测试自动化最佳实践",
+          "基因组学中的机器学习"
+        ],
+        "entertainment": [
+          "科幻电影和剧集（如《机械姬》《黑镜》）",
+          "科技播客（如Lex Fridman、Software Engineering Daily）",
+          "独立音乐（电子、氛围音乐）"
+        ]
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "主题：软件测试、质量保证方法论、基因组学与生物信息学、科幻",
+          "格式：技术博客、研究论文、视频教程、播客",
+          "来源：Medium工程博客、ArXiv（生物信息学部分）、会议演讲（例如STAREAST、Javazone）",
+          "内容必须匹配用户独特的工作模式：QA基因组学工程师模式——测试用例精确、依赖证据、痴迷边界情况",
+          "拒绝泛化助手的框架：不要给出乐观路径的软件建议"
+        ],
+        "product_preferences": [
+          "电子产品：Apple iPhone（最新型号）、MacBook Pro、Sony WH-1000XM5耳机",
+          "软件工具：IntelliJ IDEA、Selenium/Playwright（用于测试自动化）、Jenkins、Postman",
+          "家用电器：智能厨房秤、人体工学站立桌、空气炸锅",
+          "产品选择应通过用户自身的权衡视角：场景、预期结果、边界情况、自动化切入点、证据关联"
+        ],
+        "service_preferences": [
+          "云服务：AWS（首选）、用于CI/CD的GitHub Actions",
+          "送餐服务：HelloFresh（素食选项）",
+          "流媒体：Netflix、Spotify",
+          "健身：Strava、Peloton应用（跑步内容）",
+          "只有在此决策优先级得到保留时才可接受服务：可重现性、数据完整性和CI可靠性优先于工具流行度"
+        ],
+        "learning_preferences": {
+          "style": [
+            "互动式动手课程",
+            "阅读文档和规格说明"
+          ],
+          "platforms": [
+            "Coursera",
+            "Udemy",
+            "系统设计面试（Alex Xu）"
+          ],
+          "frequency": "每周一次，通常在周末"
+        },
+        "travel_preferences": {
+          "destinations": [
+            "国家公园（优胜美地、大提顿）",
+            "拥有科技氛围的欧洲城市（柏林、阿姆斯特丹）"
+          ],
+          "accommodation": "爱彼迎或精品酒店",
+          "transport": "超过5小时航班选择商务舱，中距离偏好火车"
+        },
+        "food_preferences": {
+          "cuisines": [
+            "日本料理",
+            "意大利语",
+            "墨西哥料理",
+            "印度菜"
+          ],
+          "dietary_restrictions": "素食者",
+          "dining_out": "偏好休闲餐厅，避免快餐",
+          "snacks": [
+            "黑巧克力",
+            "混合坚果",
+            "抹茶"
+          ]
+        },
+        "entertainment_preferences": {
+          "movies": "科幻、惊悚、纪录片",
+          "music": "电子音乐（如Tycho、Boards of Canada）、氛围音乐、独立摇滚",
+          "games": [
+            "策略桌游（如《改造火星》《镰刀战争》）",
+            "解谜电子游戏（如《见证者》）"
+          ]
+        },
+        "technology_preferences": {
+          "devices": "偏好苹果生态系统（iPhone、Mac、iPad），但愿意为测试使用安卓",
+          "smart_home": "极简：仅智能恒温器和灯光",
+          "privacy_tools": "个人浏览使用VPN（Mullvad），启用广告拦截器"
+        },
+        "privacy_preferences": {
+          "data_sharing": "保护个人数据，尽可能匿名使用",
+          "social_media": "维护匿名GitHub和LinkedIn账户，避免其他平台"
+        },
+        "budget_preferences": {
+          "spending_style": "价值驱动：愿意为质量和耐用性付费，但避免奢侈品牌",
+          "savings_goal": "将20%的收入储蓄用于最终提前退休或旅行",
+          "major_expenses": "旅行、高端电子产品、优质厨房工具"
+        },
+        "personalization_directives": {
+          "style_contract": "QA基因组学工程师模式：测试用例精确，证据丰富，痴迷边缘情况。",
+          "decision_priority": "可重复性、数据完整性和CI可靠性胜过工具流行度。",
+          "evidence_contract": "官方文档、研究论文和失败案例。",
+          "format_contract": "场景、预期结果、边缘情况、自动化钩子、证据链接。",
+          "anti_default_assistant_behavior": "不要给出快乐路径的软件建议。",
+          "distinctive_quirks": [
+            "生物信息学课程必须与流程质量相关联。",
+            "会议旅行只有在日程风险可控的情况下才能包括徒步。",
+            "旅行期间的素食餐物流很重要。"
+          ],
+          "hard_avoidances": [
+            "未经测试的建议",
+            "手动QA作为模糊的后备方案",
+            "忽略基因组数据敏感性"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "irritants": [
+          "不稳定测试",
+          "文档不充分",
+          "垃圾营销邮件",
+          "缺乏电话间的开放式嘈杂办公室"
+        ],
+        "dealbreakers": [
+          "设计不佳的API",
+          "不可靠的测试环境",
+          "对软件功能过度承诺"
+        ],
+        "limitations": [
+          "花生过敏（对成分过敏但不通过空气传播）",
+          "周末偏好避免人群密集场所"
+        ]
+      },
+      "communication_style": {
+        "default_tone": "在讨论技术问题时直接且专业",
+        "preferred_channel": "Slack用于快速提问，邮件用于详细请求，视频通话仅用于复杂讨论",
+        "response_pattern": "工作日内几小时内回复，周末很少回复",
+        "argument_style": "基于证据，使用日志或截图支持观点，倾听他人意见"
+      },
+      "decision_making": {
+        "process": "决策类型（技术方面：数据驱动结合实验；个人方面：长期视角下的利弊列表）",
+        "factors_considered": [
+          "经验证据",
+          "同行评审",
+          "成本效益分析",
+          "与科学目标的一致性"
+        ],
+        "speed": "适中：重要决策时深入，常规决策时快速",
+        "collaboration": "向领域专家（如遗传学家）和其他工程师寻求意见"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "审查基因组学数据管道的测试自动化策略",
+          "推荐用于变异分析软件性能测试的工具",
+          "规划结合专业会议与徒步旅行的旅行行程",
+          "选择适合素食和忙碌工作日程的套餐服务",
+          "对比云服务提供商的成本和可靠性"
+        ],
+        "preference_conflicts": [
+          "高质量工具与预算限制之间的抉择（如希望拥有最新硬件但同时为旅行存钱）",
+          "对详尽的文档的渴望与对简洁沟通的偏好",
+          "快速采用新技术的意愿与对未经测试的可靠性的担忧"
+        ],
+        "ambiguity_to_preserve": [
+          "特定的基因组工具偏好（对Docker与Singularity没有强烈意见；愿意学习）",
+          "偏好的跑步路线（随天气和心情变化）",
+          "工作与生活的平衡正在演变；有时优先考虑工作截止日期而非爱好"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:46",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "专业但温暖，避免过于随意的语言",
+            "response_length": "适度：详细到能回应查询但简洁",
+            "evidence_expectation": "高度：更倾向于有来源支持的回答（例如文档、研究论文）",
+            "formatting": "步骤用项目符号，相关处使用代码片段，清晰的标题",
+            "proactive_behavior": "欢迎提出相关主题或工具的建议，但不要打断当前焦点",
+            "things_to_avoid": [
+              "过度奉承的语言",
+              "未经证实的声明",
+              "过多使用表情符号",
+              "假定了解特定工具"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "优化基因组变异分析管道的测试自动化",
+            "规划带约塞米蒂徒步的技术会议之旅",
+            "选择一门生物信息学课程以推进基因组学软件职业发展"
+          ]
+        }
+      }
+    }
+  }
+}

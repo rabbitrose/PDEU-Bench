@@ -1,0 +1,428 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_230",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:20:37",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 18,
+  "composition": {
+    "episodic_preference_trace": 18
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_002",
+      "hidden_indirect_003"
+    ],
+    "content": [
+      "hidden_indirect_010"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_004",
+      "hidden_indirect_008"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_005",
+      "hidden_indirect_008",
+      "hidden_indirect_011",
+      "hidden_indirect_016"
+    ],
+    "entertainment": [
+      "hidden_indirect_014"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_006"
+    ],
+    "food": [
+      "hidden_indirect_009",
+      "hidden_indirect_016"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_004"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_009",
+      "hidden_indirect_010",
+      "hidden_indirect_012"
+    ],
+    "learning": [
+      "hidden_indirect_013"
+    ],
+    "privacy": [
+      "hidden_indirect_007",
+      "hidden_indirect_015"
+    ],
+    "product": [
+      "hidden_indirect_017"
+    ],
+    "role_context": [
+      "hidden_indirect_018"
+    ],
+    "service": [
+      "hidden_indirect_006",
+      "hidden_indirect_007",
+      "hidden_indirect_012",
+      "hidden_indirect_017"
+    ],
+    "technology": [
+      "hidden_indirect_013",
+      "hidden_indirect_015"
+    ],
+    "travel": [
+      "hidden_indirect_001",
+      "hidden_indirect_005",
+      "hidden_indirect_011",
+      "hidden_indirect_014",
+      "hidden_indirect_018"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次订了非退款房，结果临时出差，出发前三天取消，全款扣掉，实际浪费246欧。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次给你看的那间标注免费取消至入住前48小时，比不可取消的贵14欧，但上次已损失那么多，这14欧是为防止再重复损失。"
+        }
+      ],
+      "implicit_signal": "优先考虑取消条款和可退款期限，把损失降到最低"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次为了便宜选了无早餐房，结果早晨饥肠辘辘，车站买可颂咖啡花了7.5欧，和加早餐差不多，但还多花时间排队。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次我们算的时候，如果早餐包含价格差在7～10欧以内，就归为必要项,因为避免额外时间成本和隐藏花费。"
+        }
+      ],
+      "implicit_signal": "必须区分必要支出和可推迟支出，避免盲目节省但实际浪费"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次给了一大段文字解释三个住宿，我需要自己画表对比。直接按必要项、可推迟项、风险列个表吧。"
+        },
+        {
+          "role": "assistant",
+          "content": "可以。住宿A：必要186全含，可推迟无，风险24小时取消窗口。B：必要172，可推迟早餐14，风险不可取消。C：必要162，可推迟无，风险网络地图差。"
+        }
+      ],
+      "implicit_signal": "要求表格形式列出必要项、可推迟项、风险项，拒绝冗长描述"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那份比较表只说“A性价比高B环境好”，没说哪个更贵、哪个取消条款差。我从中没法决策。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次每行表头固定：必要成本、可推迟费用、风险水平。这样你可以一眼看出取舍——这次选项A风险低但贵14欧，选项C便宜但不可取消。"
+        }
+      ],
+      "implicit_signal": "需要清晰的取舍说明，而不是笼统的优缺点"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次民宿显示一晚78，但结账加清洁费28和城市税12，实际单日变成108，超出预算不少。"
+        },
+        {
+          "role": "assistant",
+          "content": "所以以后只用含税总价和全包费用来比较，不再信标价。这样这边公寓日终价是92欧，虽然标价高，但没隐藏费用。"
+        }
+      ],
+      "implicit_signal": "喜欢保守估算，拒绝报价低于实际费用的推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你推的那家旅馆说40～50欧，我订的时候却只有60～75的空房，只能加钱或住青旅。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我按前三天实际房源价格上浮15%给区间：车站附近真实价格65～90欧。如果你接受步行12分钟外的地方，可降到48～60欧。"
+        }
+      ],
+      "implicit_signal": "需要价格真实范围和替代方案，模糊推荐直接排除"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次某租车平台要求上传驾照正反面和护照扫描件才能预订，但最后订单取消后数据未提示删除。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次不选那些要求额外证件的服务。酒店确认只需名字和邮箱，现场付现金，不用交护照扫描。"
+        }
+      ],
+      "implicit_signal": "拒绝强制交过多个人信息的服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你列了九个住宿选项，每条都附评论，我花了整个傍晚比较，最后累到随便拍了一个，根本没选最合适的。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次我只推送三个最符合你约束条件的选项：安静、必备设施、可取消。筛选完直接并排对比，十分钟内决定。如果三间都不满意，再退回到放宽条件。"
+        }
+      ],
+      "implicit_signal": "愿意比较但限定在三四个选项内，过多会陷入决策倦怠"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次旅馆说早餐额外12欧，但入住时变成不论吃不吃都加15欧强制早餐，还不能退。"
+        },
+        {
+          "role": "assistant",
+          "content": "这种强制消费直接放弃。周围一百米有超市卖酸奶面包，单天早餐不到4欧，自由度高。以后先问是否必须买早。"
+        }
+      ],
+      "implicit_signal": "避免被强制消费附带餐饮，拒绝变相加价"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我看一篇旅游博客说‘里昂住宿不贵’，但具体查时发现同一区都要每晚90+，博客根本没提淡旺季。"
+        },
+        {
+          "role": "assistant",
+          "content": "这种没有范围和日期的不采用。我按你出发日期（下周二到周六）从三处比价拉出实际价格：中央区60～110欧含税，不引博客。"
+        }
+      ],
+      "implicit_signal": "拒绝没有数据支撑的模糊价格信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次订了免费取消的Airbnb，以为可以当天取消，结果条款是入住前72小时，忘操作被扣了180欧。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次订完后我会在你日历上设两个提醒：取消窗口截止前48小时警告一次，24小时前再警告一次，确保你不会错过。如果改期，立即调提醒。"
+        }
+      ],
+      "implicit_signal": "需要明确取消规则提醒，避免忘记操作"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次租车时柜员推荐多加道路救援险，说只要一天多7欧，但最后根本没用到，还多花了28欧。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只加你已经确认的险种。如果对方再提升级，我会先判断：如果风险可控即城市自驾，就按默认不改；不额外加购。"
+        }
+      ],
+      "implicit_signal": "拒绝超额消费提议，不付与需求无关的升级"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次装了一款汇率比价插件，用了一周却从未看到更新提示，也不知道它是否还准。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后试新工具时先设定三天测试期，手动核对两个数据点。如果偏差超过5%或未更新，停用。这次订可用直接比价，不需插件。"
+        }
+      ],
+      "implicit_signal": "需要短反馈周期和试错验证，避免无法评估的工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次晚上跟团看了灯光秀，回来都凌晨一点了，第二天早上状态极差，午睡打乱了全部安排。"
+        },
+        {
+          "role": "assistant",
+          "content": "今晚和明晚活动最晚结束时间是21点，且选在步行15分钟内可回到住所的地方。推荐傍晚湖边散步加简餐，不累又能感受氛围。"
+        }
+      ],
+      "implicit_signal": "晚间活动不超过当地日落时间，保证第二天执行能力"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次用的旅行规划APP只存在于手机端，电脑上无法修改，如果手机没电就看不到行程。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次改用既可以网页登录又可以导出的工具。我会存成一份离线PDF和一份ICS日历，放到你常用的云盘，电脑手机都能打开。"
+        }
+      ],
+      "implicit_signal": "偏好能导出数据且跨平台的工具，不锁定单一设备"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次午餐吃了火车站边的牛角包和火腿，太油了，下午一直消化不好，赶不上规划。"
+        },
+        {
+          "role": "assistant",
+          "content": "那午餐建议改为：轻食三明治或拉面，清淡不腻。附近评分高的碗装沙拉加鸡肉，不超8欧，不影响下午精力。"
+        }
+      ],
+      "implicit_signal": "食物不过于油腻或厚重，能保证当天后续精力"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次户外店推荐了个25欧保温壶说保冷6小时，但实际不到2小时就不冰了，也没写保热参数。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次只看明确标注保热12小时、保冷24小时的牌子。前面看的一款标价38，虽然贵，但三年用下来折旧更划算，而且附测试数据。"
+        }
+      ],
+      "implicit_signal": "产品长期成本清晰才购买，不买标识不清的"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次日程排太密，从车站到酒店再到博物馆预估才留45分钟，结果找路花了20分钟，最后打车赶场花16欧。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后每个景点之间留至少90分钟的缓冲窗口。首日抵达后仅安排一个主要活动，其余时间自由探路，不排满。"
+        }
+      ],
+      "implicit_signal": "需要行程有缓冲时间，避免赶场造成额外成本"
+    }
+  ]
+}

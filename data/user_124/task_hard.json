@@ -1,0 +1,105 @@
+{
+  "user_id": "user_124",
+  "task": {
+    "task_id": "task_hard",
+    "title": "设计一个针对即将到来的印象派展览的新工作坊系列",
+    "daily_life_domain": "work",
+    "scenario": "Elena 的博物馆正在举办一场名为 'Light and Color: Masters of Impressionism' 的巡回印象派展览，时间从五月到八月。她被要求创作一系列4个葡萄酒与艺术搭配工作坊，与展览主题一致。每个工作坊应专注于不同的子主题（例如，风景、肖像、静物、城市景观），并搭配能唤起类似感官品质的葡萄酒。她需要提出详细的课程计划，包括葡萄酒选择、品酒笔记和互动活动。博物馆为系列工作坊预算为$2,000，她有3周时间提交提案。",
+    "user_goal": "开发一个连贯、有教育意义且令人难忘的工作坊系列，加深游客对艺术和葡萄酒的欣赏，同时保持在预算和时间范围内。",
+    "why_complex": "需要创造性融合艺术史知识、葡萄酒专业知识、教学设计、预算管理和后勤规划。她必须在主题连贯性与感官体验之间取得平衡，选择既平易近人又有趣的葡萄酒，并设计适合不同受众知识水平的活动。",
+    "constraints": [
+      "总预算：4场工作坊共2,000美元（包含葡萄酒、材料、如有则食品搭配费用）。",
+      "每场工作坊时长90分钟，含15分钟准备/清理时间。",
+      "葡萄酒须从当地经销商（如威拉米特山谷等）采购，或通过在线订购（需2周提前期）。",
+      "工作坊须适合15至20人团体参与。",
+      "必须适应饮食限制（例如无麸质饼干用于品鉴）。"
+    ],
+    "required_reasoning_steps": [
+      "1. 分析展览主题，选取4个可清晰类比葡萄酒搭配的子主题（例如：光与明亮对应清爽白葡萄酒）。",
+      "2. 为每个子主题研究并精选能反映艺术特质的葡萄酒（例如：霞多丽搭配阳光充沛的风景画，黑皮诺搭配细腻肖像画）。",
+      "3. 为每场工作坊设计互动活动（例如盲品匹配葡萄酒与画作、边品酒边素描、引导讨论感官印象）。",
+      "4. 开发将艺术史知识与葡萄酒特性关联的教育内容，确保兼顾新手与行家。",
+      "5. 规划后勤：计算葡萄酒用量（每6人1瓶用于品鉴倒酒），从本地经销商或葡萄酒俱乐部渠道采购，订制与葡萄酒和艺术相配的食品搭配（如奶酪、水果）。",
+      "6. 创建预算表格逐项列出每场工作坊成本，调整选择使总花费控制在2,000美元内。",
+      "7. 起草提案文档，包含工作坊描述、学习目标、酒单、品酒笔记、活动大纲及预算。",
+      "8. 向博物馆馆长提交提案并征求反馈，根据意见修改。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "展览的具体布局及可用工作坊空间（房间容量、视听设备）。",
+      "经销商当前库存及特定葡萄酒的定价。",
+      "博物馆与本地酒庄或葡萄酒店的合作关系（能否提供折扣）。",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "一份全面的提案文档，包含：工作坊标题与描述、学习目标、详细酒单及品酒笔记、每场活动的计划、预算明细及暂定日程表。",
+    "success_criteria": [
+      "3周内提交提案。",
+      "工作坊描述应兼具教育意义并能创新性地联结艺术与葡萄酒。",
+      "葡萄酒选择需在预算内且可通过已知供应商获取。",
+      "活动需引人入胜且可在90分钟内完成。",
+      "预算控制在2,000美元以内，无隐性成本。",
+      "博物馆馆长批准提案（或仅需小幅修改）。",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "选择过于小众或超出预算的葡萄酒。",
+      "活动设计过度复杂导致超时。",
+      "忽视受众差异（例如假设所有参与者都是葡萄酒专家）。",
+      "未在食物搭配中考虑饮食限制。",
+      "提交的提案过于学术化而缺乏感官体验。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 9,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 9,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=11",
+        "constraints_capped=5",
+        "decision_points_capped=3",
+        "information_items_capped=6",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=32.2",
+        "hard_revision: 内容负载较高，保留少量 9 轮作为上尾",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Elena Marchetti",
+      "age": 42,
+      "gender": "女性"
+    }
+  }
+}

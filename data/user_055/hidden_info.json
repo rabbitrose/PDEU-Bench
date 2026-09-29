@@ -1,0 +1,430 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_055",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:22:36",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 18,
+  "composition": {
+    "episodic_preference_trace": 18
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_008",
+      "hidden_indirect_018"
+    ],
+    "content": [
+      "hidden_indirect_003",
+      "hidden_indirect_011",
+      "hidden_indirect_015"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_006",
+      "hidden_indirect_012",
+      "hidden_indirect_016"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_009",
+      "hidden_indirect_014"
+    ],
+    "entertainment": [
+      "hidden_indirect_009"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_010",
+      "hidden_indirect_014"
+    ],
+    "food": [
+      "hidden_indirect_001"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_013"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_010"
+    ],
+    "learning": [
+      "hidden_indirect_002",
+      "hidden_indirect_013"
+    ],
+    "privacy": [
+      "hidden_indirect_007",
+      "hidden_indirect_017"
+    ],
+    "product": [
+      "hidden_indirect_008",
+      "hidden_indirect_018"
+    ],
+    "role_context": [
+      "hidden_indirect_011"
+    ],
+    "service": [
+      "hidden_indirect_005",
+      "hidden_indirect_012",
+      "hidden_indirect_017"
+    ],
+    "technology": [
+      "hidden_indirect_007",
+      "hidden_indirect_015"
+    ],
+    "travel": [
+      "hidden_indirect_006",
+      "hidden_indirect_016"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天在超市结账前，我拿起一包新出的芒果干，妈妈说她得看看价格。最后没买。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次购物我可以带你找平时吃的水果零食，比如草莓条，这样确认更快。你还可以帮我放一个进购物车。"
+        }
+      ],
+      "implicit_signal": "愿意在日常食物上接受简单变化，但不会为不熟悉的食物冒险"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "幼儿园老师说下雨是水从天上掉下来，但我问为什么水在天上，她只说‘因为云’，我还是不懂。"
+        },
+        {
+          "role": "assistant",
+          "content": "我们来玩个小游戏：你从洗澡盆里舀水泼到墙上，水珠挂住慢慢滑下——云就像盆里的小水滴，冷了就一起落下来。你想试试吗？"
+        }
+      ],
+      "implicit_signal": "偏好通过日常例子而非抽象解释来理解新概念"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天妈妈读了一本很长的恐龙书，到第三页我就跑去玩积木了。她说我注意力不好。"
+        },
+        {
+          "role": "assistant",
+          "content": "那下次我们可以选有翻翻页的书，每页只讲一句，比如‘这只梁龙爱吃树叶’，然后你再说一次‘树叶’。你选翻哪页？"
+        }
+      ],
+      "implicit_signal": "故事时间需要简短、视觉化、可参与"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "爸爸用英语给我讲了一个关于消防员的故事，全是英语，我有几处没听懂，就不想听了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我们一起看一个双语版的《小狗波波》消防员视频，英语和西班牙语每句都来一遍。你先说‘bombero’，再说‘firefighter’，怎么样？"
+        }
+      ],
+      "implicit_signal": "需要混合语言以保持参与，避免纯英语的长段落"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "言语治疗师每句话都让我重说三遍，我后来就闭嘴不说话了。妈妈很担心。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次练习我们可以用手机录下你自己说‘quiero agua’，然后放出来一起听，像玩游戏。你只说一遍，我听，然后我模仿你，你笑就好。"
+        }
+      ],
+      "implicit_signal": "排斥被频繁纠正，治疗效果因此打折扣"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周末去探访祖父母，回程堵车，我在安全座椅里哭了40分钟，因为太久了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次我们可以选择开车25分钟以内的公园，比如去格里菲斯公园，你还可以带上一辆玩具车。你更想去有滑梯的还是有大草坪的？"
+        }
+      ],
+      "implicit_signal": "短途、有熟悉元素的外出优先于远距离旅行"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天我想打开平板里一个新app，但需要密码。妈妈说你不能自己下载东西。"
+        },
+        {
+          "role": "assistant",
+          "content": "对，你平板上的app是妈妈安装好的。你想用哪个我们一起找？我可以在已安装的里面帮你找到画画的那个。"
+        }
+      ],
+      "implicit_signal": "账户设置由家长主导，孩子仅使用受控设备"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在商店里我看见一盒乐高恐龙，但妈妈说21美元太贵了，说下个月再买。"
+        },
+        {
+          "role": "assistant",
+          "content": "我们可以一起做一个手工恐龙：用纸盘和Crayola马克笔画，再粘上尾巴。成本不到3美元，而且你今天就能拥有它。你想画什么样的恐龙？"
+        }
+      ],
+      "implicit_signal": "玩具选择需平衡价格和兴趣，但孩子参与决定"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下午我在托管班看了一集新的《汪汪队立大功》，但是情节太快了，我跟不上，就闷闷不乐。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我们切换到《芝麻街》双语版，里面的歌可以跟着拍手。比如那首‘C is for Cookie’——你唱cookie时是用英语还是西班牙语说galleta？"
+        }
+      ],
+      "implicit_signal": "偏好可跟唱的、视觉简单的视频，而非叙事复杂的节目"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "妈妈问我想吃什么零食：她列了四种，我站在冰箱前想了五分钟，最后哭了，因为都不知道选哪个。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次我们只用两个选项：比如苹果片或奶酪条。手指指一个，你说‘ese’，我们就拿那个。你先选一个常见的？"
+        }
+      ],
+      "implicit_signal": "避免过多选项导致的困惑，需要通过具体例子引导"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "线上会议间隙，妈妈让我跟语言治疗师视频，治疗师拿出一张全是长单词的清单，我直接跑开了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次治疗时我们可以用玩具车来练习：每辆车发出一个音‘brrr’，你说‘coche’再推给我。单词就藏在车的声音里。"
+        }
+      ],
+      "implicit_signal": "用户处于儿童角色，内容应匹配其年龄段和语言背景"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周言语治疗练习是重复‘see’单词十次，我做到六次就没耐心了，妈妈有点失望。"
+        },
+        {
+          "role": "assistant",
+          "content": "我们改成找东西游戏：我藏一张贴纸，你每说出一个以‘s’开头的词就提示一个方向。总共说三个词就能找到贴纸，你想试试吗？"
+        }
+      ],
+      "implicit_signal": "治疗活动需优先孩子的舒适和参与感"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我用ABCmouse学字母时，卡在“K”的发音练习，点了重试三次还是不对，就关掉不学了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我们先不点app，我写一个K在纸上，你用手指画一遍说‘kuh’，然后我们一起画一只袋鼠（kangaroo）。你画好我贴冰箱上。"
+        }
+      ],
+      "implicit_signal": "需要小步骤和可说的反馈，而非长篇讲解"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "奶奶打电话问我今天做了什么，我只说了‘玩车’，但其实我还画了画。她说你咋不记得了呢。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次我们可以用手机截图：把画的画拍下来，通话前看一眼图片再讲。你找一下那张画的照片，我们一起看，然后你告诉奶奶你画了什么。"
+        }
+      ],
+      "implicit_signal": "重视通过日常惯例和例子来记忆，而非抽象规则"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我试了一个新的双语语音助手，它回答完问题后还加了一段广告，我直接喊妈妈来关掉。"
+        },
+        {
+          "role": "assistant",
+          "content": "那个app不太合适。我们换一个没有广告的比如‘Mibo’，你说‘我想要找恐龙’，它只给你看一张恐龙图和名字。我们来喊一次‘我想要找triceratops’？"
+        }
+      ],
+      "implicit_signal": "技术产品需有家长控制且内容简短有趣"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "暑假计划飞去看爷爷奶奶，但上次飞行的后半程我不停踢前座，爸爸生气了。"
+        },
+        {
+          "role": "assistant",
+          "content": "那今年我们可以改成坐一次40分钟的短途火车去港口看船，中间你可以用我的手机看两集《小猪佩奇》双语版。你想坐窗边还是过道？"
+        }
+      ],
+      "implicit_signal": "长途旅行需分段或避免，短途活动更可行"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "语言治疗师想把我发音练习的视频上传到她们诊所网站，妈妈说不行。"
+        },
+        {
+          "role": "assistant",
+          "content": "视频只会存在你的平板里，我看完就自己删除。我们可以录一段只说‘hola’的短视频，妈妈同意后只发给她，不发给其他人。"
+        }
+      ],
+      "implicit_signal": "家长严格控制数据共享，治疗记录需谨慎管理"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "爸爸觉得25美元的言语治疗app太贵，因为我上周只玩了两次。"
+        },
+        {
+          "role": "assistant",
+          "content": "我们可以先试用免费的功能，比如每天一个字母游戏。如果你连续三天都玩，我们再说服爸爸买。今天你要试试A字母的找宝石游戏吗？"
+        }
+      ],
+      "implicit_signal": "在工具上愿意投资，但需平衡使用频率"
+    }
+  ]
+}

@@ -1,0 +1,470 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_047",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:31:09",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_002",
+      "hidden_indirect_012",
+      "hidden_indirect_014",
+      "hidden_indirect_018"
+    ],
+    "content": [
+      "hidden_indirect_010"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_002",
+      "hidden_indirect_011",
+      "hidden_indirect_016",
+      "hidden_indirect_019",
+      "hidden_indirect_020"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_007",
+      "hidden_indirect_015"
+    ],
+    "entertainment": [
+      "hidden_indirect_014"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_010",
+      "hidden_indirect_013"
+    ],
+    "food": [
+      "hidden_indirect_009",
+      "hidden_indirect_018"
+    ],
+    "format_contract": [
+      "hidden_indirect_004",
+      "hidden_indirect_005"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_017"
+    ],
+    "learning": [
+      "hidden_indirect_012",
+      "hidden_indirect_020"
+    ],
+    "privacy": [
+      "hidden_indirect_003",
+      "hidden_indirect_006",
+      "hidden_indirect_017"
+    ],
+    "product": [
+      "hidden_indirect_011"
+    ],
+    "role_context": [
+      "hidden_indirect_001"
+    ],
+    "service": [
+      "hidden_indirect_008",
+      "hidden_indirect_016"
+    ],
+    "technology": [
+      "hidden_indirect_007",
+      "hidden_indirect_015"
+    ],
+    "travel": [
+      "hidden_indirect_013",
+      "hidden_indirect_019"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周在非营利组织要核对一家供应商的环保声明，对方只给了宣传册。客户回复前我需要确定他们是否真有不披露条款。"
+        },
+        {
+          "role": "assistant",
+          "content": "去公司注册地查公开备案文件，把原始条款截图存本地，不理宣传册。后续只接受官网PDF或监管报告。"
+        }
+      ],
+      "implicit_signal": "职业性质要求核查材料来源，坚持从原始条款获取证据"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天用转账App发现收藏的金额记录在早餐桌边被家人瞥见，多付了一笔费用的截图也在手机里。我不想再让人看到具体数字。"
+        },
+        {
+          "role": "assistant",
+          "content": "记账改用手写便签放文件夹。金额只写千位数以下，去掉完整账户尾号，每周汇总一次用本地加密笔记存。跨设备不同步。"
+        }
+      ],
+      "implicit_signal": "预算约束与隐私冲突时优先后者，主动找替代路径"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "这家线上会计工具客户回复前说免费，注册后要求上传身份证，才看到关键信息只有广告页提到取消需邮件申请。版本还没法回退。"
+        },
+        {
+          "role": "assistant",
+          "content": "停止注册。用本地开源方案替代，不传任何证件。后续选工具先把取消流程和数据下载方式截图，再填资料。"
+        }
+      ],
+      "implicit_signal": "拒绝服务前要求明确数据收集与取消路径"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚收到一份财务建议书，里面列了一排按钮但我没选。我需要你重写，只用三行：第一步做什么，最坏会跑偏什么，真跑偏了怎么回来。"
+        },
+        {
+          "role": "assistant",
+          "content": "可用方案：先拨出5万日元到单独账户。风险留存：如果月底有临时支出这笔可能不够垫。回退动作：从日常预算里调3天餐饮费用补。"
+        }
+      ],
+      "implicit_signal": "要求回复使用最小披露格式：风险留存、可用方案、回退动作依次列出"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚才那个理财规划模板又给了一堆选项，我根本没时间比较五个基金的透明度报告。只告诉我哪一个不强制实名注册，其他全删。"
+        },
+        {
+          "role": "assistant",
+          "content": "只有绿点基金支持全虚拟姓名且无需上传住址证明。其余四个都要手机号实名。推荐绿点，但赎回需要邮件确认，需提前留出两个工作日窗口。"
+        }
+      ],
+      "implicit_signal": "拒绝黑箱推荐与便利优先，要求去掉多余选项包装"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我把笔记本里存了一份旧版清单，包含了所有合作方的手机号码和职务。想换个工具管理这些联系人，但不想让它们暴露在云端。"
+        },
+        {
+          "role": "assistant",
+          "content": "导出CSV后把每个号码中间四位替换成XXXX，职务只保留级别如“经理”，不写具体单位。新工具选只存本机无自动同步的，比如Standard Notes。"
+        }
+      ],
+      "implicit_signal": "默认脱敏联系人，避免自动同步暴露关系网络"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前那份预算表用了一个在线办公套件，后来想导出到本地发现格式限制只能打印不能原样下载，设备发热后表现下降。我想换个能随时拉走的。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成离线Markdown+表格编辑，装在本地文件夹里，用Git做版本管理，同步自己选时机推私有仓库。隐私、导出你全控制。"
+        }
+      ],
+      "implicit_signal": "偏好本地优先、可导出数据的工具，拒绝平台锁定"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "这个报销自动化工具要上传照片，填入全名和住址才能用。我想了一年都没决定，今天旧手机内存不足让我不得不处理。客户回复前我在想还有没有别的路。"
+        },
+        {
+          "role": "assistant",
+          "content": "用本地截图在电脑上裁剪去EXIF，名字只填缩写，住址写区域不写门牌。如果这样仍然不让提交，换另一个只要求邮箱的工具。"
+        }
+      ],
+      "implicit_signal": "拒绝必须实名注册的服务场景"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次午餐在火车站选了连锁便当，结果太油，下午2点开会时犯困，设备发热后表现下降，我还多付了一笔费用因为没看到折扣套餐只写在广告页。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次带前一晚煮好的糙米饭与煮蛋，用便当盒装，711买小盒沙拉不加酱。成本控制在380日元内，吃完不用排长队。"
+        }
+      ],
+      "implicit_signal": "选择餐食时预算和当天节奏优先，拒绝油腻打乱安排的选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天读一篇关于汽车保险对比的文章，全文没有日期、没有测试方法，关键信息只有广告页提到赔付流程。我停下来没敢用它的推荐。"
+        },
+        {
+          "role": "assistant",
+          "content": "去那家保险公司官网下载条款PDF，查看“赔付流程”部分是否标注3-5工作日。如果没写明则视为不可用。等你找到有日期的比较表再继续。"
+        }
+      ],
+      "implicit_signal": "要求结论附带不确定性和依据"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我想买一台二手扫描仪，把一页便签的收据电子化。但我发现两个型号都只写首年保修，版本也没法回退软件。我需要知道三年后坏了怎么办。"
+        },
+        {
+          "role": "assistant",
+          "content": "选那个支持第三方驱动且常见零件有兼容替代的型号。风险：光电模组五年后停产。回退：四年内提前买一套拆机件备着。"
+        }
+      ],
+      "implicit_signal": "产品选择须评估长期成本、维护与替代方案，隐私和可撤回性优先"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "花了两晚上看理财入门视频合集，每个都推荐某个基金但都不说怎么转出要多久到账。我觉得浪费时间。请给一个我能今天验证30分钟的办法。"
+        },
+        {
+          "role": "assistant",
+          "content": "用虚拟交易平台投放1000日元模拟额度，记录买进和模拟卖出时间差。30分钟内算出实际佣金与延迟。对比两个平台的表现，截图留作复盘表。"
+        }
+      ],
+      "implicit_signal": "学习偏好短周期反馈、可复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去京都按热门推荐订了市中心的民宿，结果半夜酒吧吵，房间窗户朝向隔壁排气扇，关键信息只有广告页提到隔音一般。第二天行程全垮。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次订酒店：选离主干道两百米以上、评分写“安静”不少于十条、可免费取消的。不用景点列表倒推住宿，从谷歌地图噪音标签反向筛选。"
+        }
+      ],
+      "implicit_signal": "路线须留缓冲，优先安全安静及可取消"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周末被朋友拉着去了一个免费市集，结果全是扫码抽奖摊位，人挤到手机信号中断。我本来打算晚上9点睡，结果10点半才到家，第二天状态差。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次活动直接先看主办方是否有详细参展名单与内容说明，无则跳过。推荐去小型独立影院看一部纪录片，提前查好散场时间，确保8点前结束。"
+        }
+      ],
+      "implicit_signal": "偏好小型真实有内容密度的活动，不破坏第二天节奏"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "今天用手机截图保存了一张银行活动页面，但系统自动上传到云端相册。我不想让任何服务器存到我的交易截图。"
+        },
+        {
+          "role": "assistant",
+          "content": "关闭云端相册自动备份，把截图剪切到本地加密文件夹（用Veracrypt容器），再删掉相册里的原件。以后截图完立刻移出相册目录。"
+        }
+      ],
+      "implicit_signal": "偏好能跨设备同步但能导出数据的应用，默认关闭自动上传"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "续费一个订阅软件时发现它今年更新了条款：默认共享匿名使用数据，退出需单独发邮件，取消必须在到期前10天。我不想继续了。"
+        },
+        {
+          "role": "assistant",
+          "content": "发退订邮件并抄送自己留档，然后删除账户。回退：先用免费版导出所有数据到本地，再确认取消信已回复。之后选新工具先验证取消周期和默认可否关闭数据收集。"
+        }
+      ],
+      "implicit_signal": "服务只有保留隐私、数据边界和可撤回性时才可接受"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "写一份家庭应急资金计划时需要填入部分家人的收入区间。我不想让我姐的具体数字出现在任何文档里，包括笔记App。"
+        },
+        {
+          "role": "assistant",
+          "content": "用“2-3倍家庭月基本支出”代替具体金额，不写人名只写“A成员”。文档保存在本地加密区，不设云同步。你姐那份单独用笔写在便签上，用完即销毁。"
+        }
+      ],
+      "implicit_signal": "涉及家庭健康财务等敏感信息须匿名化或概括"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "食堂下周涨价15%，原本350日元的套餐变400。我算了一下日伙食费会到1200，而每天交通费已经950。要么开动存款要么改。"
+        },
+        {
+          "role": "assistant",
+          "content": "带饭三天，早餐和午餐合为一顿。保留两天食堂作为社交窗口。可推迟支出：放弃每天一瓶饮料，每月能腾出2400日元补缺口。"
+        }
+      ],
+      "implicit_signal": "区分必须与可推迟花费，保守预算优先"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "订去奈良的旅行，平台自动跳出热门酒店列表，但取消条款都写着“出发前3天之外免费”，再久就要扣50%。我不想锁住一大笔钱。"
+        },
+        {
+          "role": "assistant",
+          "content": "选一家“24小时前免费取消”的胶囊旅馆。备选方案：订青旅单间，额度只有酒店一半。两者都写清风险：取消窗口短，但金额小可承担。景点跳过鹿公园，去县立博物馆。"
+        }
+      ],
+      "implicit_signal": "住宿交通优先可取消和安全性，拒绝热门景点默认引导"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想学一门财务数据分析课，但英文版8万日元，日语版6万但要求全程开启摄像头。我不接受上课暴露房间背景。"
+        },
+        {
+          "role": "assistant",
+          "content": "日语版不能买。英文版用分期付且确认能否下载录播。风险：英文术语量加大可能拖慢进度。回退：第一个月如果没完成40%就取消，费用损失约1.6万。"
+        }
+      ],
+      "implicit_signal": "排除硬约束不匹配后仅比较少量候选，偏好明确回滚路径"
+    }
+  ]
+}

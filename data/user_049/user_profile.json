@@ -1,0 +1,246 @@
+{
+  "user_id": "user_049",
+  "explicit_preferences": {
+    "user_profile": "一位忠诚且资源丰富的助理，负责处理企业家的日常运营与谈判事务",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Jordan Chen",
+        "age": 34,
+        "gender": "女性",
+        "location": "美国加利福尼亚州旧金山",
+        "languages": [
+          "英语",
+          "普通话"
+        ],
+        "education_level": "工商管理学士学位",
+        "occupation": "行政助理",
+        "industry": "技术",
+        "seniority": "资深",
+        "household": "单身，独居一室公寓",
+        "life_stage": "职业中期人士，无子女"
+      },
+      "physical_profile": {
+        "height_cm": 165,
+        "general_appearance": "专业、整洁，常穿商务休闲装，外表干净利落",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "高度尽责且忠诚，乔丹是一位有条理且资源丰富的助理，热衷于支持她的企业家老板。她在压力下保持冷静，但可能会因混乱而感到压力",
+        "big_five": {
+          "openness": 4,
+          "conscientiousness": 9,
+          "extraversion": 5,
+          "agreeableness": 7,
+          "neuroticism": 3
+        },
+        "strengths": [
+          "组织能力",
+          "谈判能力",
+          "注重细节",
+          "时间管理",
+          "主动解决问题"
+        ],
+        "weaknesses": [
+          "难以委派任务",
+          "过度承诺",
+          "将他人的需求置于自身需求之前"
+        ],
+        "values": [
+          "忠诚",
+          "效率",
+          "正直",
+          "可靠性",
+          "职业素养"
+        ],
+        "motivations": [
+          "支持老板取得成功",
+          "看到项目顺利推进",
+          "持续改进"
+        ],
+        "stress_triggers": [
+          "最后一刻的变更",
+          "杂乱无章",
+          "不明确的指令",
+          "时间浪费"
+        ]
+      },
+      "background": {
+        "grew_up_in": "加利福尼亚州旧金山郊区",
+        "education": "加州大学伯克利分校，工商管理学士",
+        "career_history": "从前台做起，后任行政助理，至今已为一位科技企业家担任执行助理10年",
+        "key_life_events": [
+          "大学毕业后搬到旧金山",
+          "曾在上一家初创公司获得“年度助理”奖"
+        ]
+      },
+      "lifestyle": {
+        "daily_routine": "早上6点起床，查看邮件，8点到办公室，管理日程和接听电话至下午6点，之后瑜伽或烹饪，晚10点睡觉",
+        "sleep": "每晚7小时",
+        "exercise": "每周两次瑜伽，周末徒步",
+        "diet": "健康饮食，偏好快速营养餐，偶尔点外卖"
+      },
+      "interests": {
+        "hobbies": [
+          "阅读",
+          "远足",
+          "烹饪",
+          "瑜伽"
+        ],
+        "professional_interests": [
+          "商业策略",
+          "生产力工具",
+          "领导力",
+          "谈判技巧"
+        ],
+        "cultural_interests": [
+          "科幻电影",
+          "纪录片",
+          "现代艺术"
+        ]
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "新闻：简洁的商业新闻摘要、科技行业动态",
+          "书籍：商业和领导力类非虚构作品，一些科幻小说",
+          "播客：商业播客，如 'How I Built This', 'The Tim Ferriss Show'",
+          "内容必须匹配此用户的独特工作模式：执行助理模式：简洁、注重应急方案、以日历为先。",
+          "拒绝通用的助理设定：不要解释为什么组织能力重要。"
+        ],
+        "product_preferences": [
+          "规划工具：高质量的纸质计划本或数字工具如 Todoist",
+          "技术：苹果生态系统：iPhone, MacBook, iPad；偏爱极简设计",
+          "家用电器：iRobot 扫地机器人，意式咖啡机",
+          "产品应通过用户自身的权衡视角选择：决策、预订/行动、应急方案、责任归属。"
+        ],
+        "service_preferences": [
+          "食品配送：饮食准备服务，如 Sunbasket，健康选项",
+          "清洁：每两周一次的专业清洁服务",
+          "交通：Uber/Lyft，偶尔租自行车",
+          "只有在保持以下决策优先级时才接受服务：高管时间、可逆性和低维护执行优于个人探索。"
+        ],
+        "learning_preferences": {
+          "online_courses": "Coursera 或 LinkedIn Learning 上关于领导力和项目管理的课程",
+          "reading_material": "短文章、案例研究和摘要"
+        },
+        "travel_preferences": {
+          "accommodation": "设有商务中心且位置便利的酒店",
+          "transportation": "短途飞行为经济舱，提前预订",
+          "packing": "轻装出行，携带商务休闲装和运动服"
+        },
+        "food_preferences": {
+          "cuisine": "健康多样饮食：地中海菜、亚洲菜、沙拉",
+          "dining_out": "偏好口碑好的餐厅就餐，避免快餐",
+          "cooking_at_home": "喜欢30分钟以内的简单食谱"
+        },
+        "entertainment_preferences": {
+          "movies": "科幻片、纪录片、惊悚片",
+          "tv_shows": "可以一口气追完的剧集，如《继承之战》，有限剧集",
+          "music": "独立流行乐、古典乐、工作时听的低保真节奏"
+        },
+        "technology_preferences": {
+          "devices": "苹果生态系统（iPhone、MacBook、iPad、AirPods）",
+          "software": "Google Workspace、Slack、Zoom、Notion、Todoist、1Password",
+          "privacy_tools": "VPN（ProtonVPN）、加密通讯（Signal）、广告拦截器"
+        },
+        "privacy_preferences": {
+          "data_sharing": "非常谨慎，偏好分享最少个人数据",
+          "online_activity": "使用隐私浏览模式，屏蔽跟踪器",
+          "social_media": "有限在线存在：仅用LinkedIn，个人生活保持离线"
+        },
+        "budget_preferences": {
+          "spending_priority": "投资节省时间的工具和服务",
+          "monthly_budget": "每月分配500美元用于外出就餐，200美元用于订阅（软件、流媒体等）",
+          "savings_habit": "储蓄收入的20%，投资指数基金"
+        },
+        "personalization_directives": {
+          "style_contract": "行政助理模式：简洁、注重应急方案、以日程为先。",
+          "decision_priority": "行政时间、可逆性和低维护执行优先于个人探索。",
+          "evidence_contract": "清晰的理由和时间安排，而非引用。",
+          "format_contract": "决策、预订/行动、应急方案、责任人。",
+          "anti_default_assistant_behavior": "不要解释为何组织重要。",
+          "distinctive_quirks": [
+            "行程应包含缓冲时间和失败预案。",
+            "餐食准备需健康且几乎零摩擦。",
+            "订阅削减应避免干扰工作系统。"
+          ],
+          "hard_avoidances": [
+            "长篇叙述",
+            "无截止日期的选项",
+            "无备份的计划"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "dislikes": [
+          "杂乱无章",
+          "时间浪费",
+          "过于随意的沟通",
+          "不专业的行为"
+        ],
+        "constraints": [
+          "工作时间长，闲暇时间有限",
+          "不喜欢做复杂菜肴",
+          "必须在个人支出预算内"
+        ]
+      },
+      "communication_style": {
+        "general": "专业、直接、清晰；使用项目符号和列表；工作场合避免闲聊",
+        "email": "结构清晰：主题行、简短问候、行动项项目符号列表、签名",
+        "verbal": "冷静且表达清晰，说话节奏适中，会提出澄清性问题"
+      },
+      "decision_making": {
+        "style": "分析性和数据驱动，权衡利弊，尽可能寻求共识，但必要时可独立决策",
+        "speed": "中等程度：花时间收集信息，避免仓促决定",
+        "factors": "可靠性、效率、长期价值、与老板目标一致"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "安排会议",
+          "准备议程",
+          "供应商调研与比较",
+          "合同谈判",
+          "旅行规划",
+          "费用跟踪"
+        ],
+        "preference_conflicts": [
+          "效率与全面性之间的权衡（例如，希望快速得到答案但又需要数据支持）",
+          "成本与质量之间的权衡（注重预算，但愿意为节省时间的优质工具花钱）"
+        ],
+        "ambiguity_to_preserve": [
+          "对企业家具体偏好的不确定性，常需推断",
+          "在某些领域（如娱乐）可能没有强烈个人偏好，因优先考虑工作"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:45",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "专业但友好且平易近人",
+            "response_length": "简洁；偏好带有要点的简短回答",
+            "evidence_expectation": "偏好有数据或明确理由支持的建议",
+            "formatting": "偏好项目符号、列表和清晰的标题",
+            "proactive_behavior": "欣赏助理主动预判需求并在被提问前提供建议",
+            "things_to_avoid": [
+              "过于随意的语言（例如，工作语境中使用俚语、表情符号）",
+              "未经请求的个人建议",
+              "缺乏结构的长篇独白"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "为CEO规划去亚洲的多城市商务旅行",
+            "优化工作日饮食准备，在时间限制下健康饮食",
+            "审查并优化月度订阅支出"
+          ]
+        }
+      }
+    }
+  }
+}

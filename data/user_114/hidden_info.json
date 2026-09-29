@@ -1,0 +1,512 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_114",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:39:27",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 22,
+  "composition": {
+    "episodic_preference_trace": 22
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_010",
+      "hidden_indirect_018",
+      "hidden_indirect_021"
+    ],
+    "content": [
+      "hidden_indirect_002",
+      "hidden_indirect_012",
+      "hidden_indirect_015"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_010",
+      "hidden_indirect_016"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_013",
+      "hidden_indirect_014",
+      "hidden_indirect_022"
+    ],
+    "entertainment": [
+      "hidden_indirect_006",
+      "hidden_indirect_020"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_011"
+    ],
+    "food": [
+      "hidden_indirect_005",
+      "hidden_indirect_014",
+      "hidden_indirect_022"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_012"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_007",
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_015"
+    ],
+    "learning": [
+      "hidden_indirect_011",
+      "hidden_indirect_020"
+    ],
+    "privacy": [
+      "hidden_indirect_008",
+      "hidden_indirect_017"
+    ],
+    "product": [
+      "hidden_indirect_003",
+      "hidden_indirect_016"
+    ],
+    "role_context": [
+      "hidden_indirect_001",
+      "hidden_indirect_019"
+    ],
+    "service": [
+      "hidden_indirect_009",
+      "hidden_indirect_018",
+      "hidden_indirect_019"
+    ],
+    "technology": [
+      "hidden_indirect_007",
+      "hidden_indirect_017"
+    ],
+    "travel": [
+      "hidden_indirect_004",
+      "hidden_indirect_013",
+      "hidden_indirect_021"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天客户看了我们那个用在地文化视角的初稿，说太冒险，要求改回他们去年获奖的调性。"
+        },
+        {
+          "role": "assistant",
+          "content": "保留核心文化元素，但用更柔和的视觉语言包装。去年那条线已经过时了，我们只需在数据上加点本地市场增长案例。"
+        }
+      ],
+      "implicit_signal": "在提案中优先选择有文化特异性的角度，而非安全的行业趋势，即使风险较高"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "客户发来一份30页的市场调研，说我们的创意方向缺乏数据支撑。"
+        },
+        {
+          "role": "assistant",
+          "content": "挑出其中关于竞品视觉语言的五页，再找三个类似定位品牌的实际广告案例。调研数字堆砌不如实际案例有说服力。"
+        }
+      ],
+      "implicit_signal": "参考材料需要美学先例而非通用市场数据，倾向实际案例而非抽象报告"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我让实习生做了个情绪板，全是‘永恒优雅’的图片，标题也软绵绵的。"
+        },
+        {
+          "role": "assistant",
+          "content": "全删掉。换成三张有冲突感的构图，一句直白的核心主张。我们不要安全牌。"
+        }
+      ],
+      "implicit_signal": "要求输出格式更犀利直接，避免陈词滥调，倾向于有冲击力的表达"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次按你的推荐去了里斯本，商业区人挤人，体验不好。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次试试波尔图，住河边老城区，避开旅游团路线。我可以发你一个当地朋友的爵士酒吧名单。"
+        }
+      ],
+      "implicit_signal": "旅行偏好避开游客区，选择有文化深度的小众目的地"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那家新派法餐，厨师出来介绍菜品，但同桌的人都在聊网红打卡，没人听。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次选一家家族经营的老店，没有社交媒体菜单。重点邀请对厨艺真有兴趣的客人，环境安静便于交谈。"
+        }
+      ],
+      "implicit_signal": "晚宴重视工艺对话，餐饮选择有深度的场所"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "客户提案里用了太多‘致敬经典’的复古素材，感觉像在拍博物馆宣传片。"
+        },
+        {
+          "role": "assistant",
+          "content": "去掉那些，换成当代艺术家对同一主题的重新诠释。我们可以用一个年轻导演的短片，既尊重传统又不落入怀旧俗套。"
+        }
+      ],
+      "implicit_signal": "传承奢侈品应避免不带批判的怀旧，娱乐选择亦然，倾向有现代视角的作品"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周的团队会议上，有人说了五次‘颠覆’和三次‘赋能’，我差点离席。"
+        },
+        {
+          "role": "assistant",
+          "content": "会议前发一份术语禁用清单，再有人用就立刻纠正。我们可以用更具体的动词描述行动。"
+        }
+      ],
+      "implicit_signal": "厌恶行业套话和技术时髦词，避免在沟通中使用"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "公司新装了个数据收集软件，要求员工登录所有内部系统。"
+        },
+        {
+          "role": "assistant",
+          "content": "检查它的隐私协议，如果涉及创意过程跟踪就拒绝。建议用本地化的项目看板代替。"
+        }
+      ],
+      "implicit_signal": "注重数据隐私，避免不必要的共享"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那家网红寿司店，排队两小时，鱼生不够新鲜，价格虚高。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次预约银座的地下小店，主厨只做八席。不需要网红效应，味道会说话。"
+        }
+      ],
+      "implicit_signal": "避免网红打卡地和服务，倾向有真实品质的场所"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "客户砍了预算，要求我们用更便宜的库存视频替代实景拍摄。"
+        },
+        {
+          "role": "assistant",
+          "content": "缩减拍摄时长但保留核心镜头，用音乐和剪辑弥补。库存素材会让品牌显得廉价。"
+        }
+      ],
+      "implicit_signal": "愿意为品质和专业知识付费，但反感浪费和过度消费"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "人力资源部推了个在线课程，全是选择题和动画，说能提升创意效率。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成那本《文案圣经》和这周广告档案馆的案例研读会。实战比题库有用。"
+        }
+      ],
+      "implicit_signal": "学习方式偏好实际案例和深度阅读，而非应试化模块"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "他们把提案目录写成‘我们的愿景’和‘品牌故事’，老套得令人尴尬。"
+        },
+        {
+          "role": "assistant",
+          "content": "改成‘问题’和‘解决方案’，每个章节开头放一个挑衅性的观点。我们需要让读者有反应。"
+        }
+      ],
+      "implicit_signal": "偏好尖锐的视角，拒绝安全的情绪板形容词"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去维也纳，按照旅行团行程跑遍了所有宫殿，回来累到没灵感。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次只住两天，每天只去一个地方：第一天现代艺术博物馆，第二天在咖啡馆写生。休息才是补给。"
+        }
+      ],
+      "implicit_signal": "旅行以创意补充为动机，而非打卡"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "客户订了一家新开的居酒屋，菜单全是炸物，服务员说不出清酒产地信息。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次我安排去Sake Studio，有品鉴解说。美食应该能聊出故事，不是填饱肚子就行。"
+        }
+      ],
+      "implicit_signal": "注重餐饮中的知识交流和环境，避免快餐式体验"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "他们给文案加了一堆‘优质叙事’和‘永恒优雅’，说这是行业标准。"
+        },
+        {
+          "role": "assistant",
+          "content": "全划掉。用具体的细节描述代替抽象词。比如‘手工缝线’比‘匠心情怀’强一百倍。"
+        }
+      ],
+      "implicit_signal": "避免行业套路化的形容词"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想换一块日常佩戴的表，店员推荐最新智能款，但我嫌它一年后就会过时。"
+        },
+        {
+          "role": "assistant",
+          "content": "看看二手市场的古董劳力士，或独立制表人的手卷款。机械芯可以保养几十年，设计也不会被淘汰。"
+        }
+      ],
+      "implicit_signal": "选择产品时注重品质和持久价值，而非潮流"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "新系统要求用手机APP签到并授权定位，否则算旷工。"
+        },
+        {
+          "role": "assistant",
+          "content": "要求IT提供仅蓝牙打卡选项，拒绝位置共享。如果不行，我让法务介入。"
+        }
+      ],
+      "implicit_signal": "对新技术持怀疑态度，尤其涉及数据跟踪"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "会计部建议改用更便宜的云服务，说功能差不多。"
+        },
+        {
+          "role": "assistant",
+          "content": "多付的那点钱买的是支持和数据安全。不要为了省小钱给创意工作埋雷。"
+        }
+      ],
+      "implicit_signal": "愿意为专业服务支付溢价"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "新来的媒介代理发来一份排期，全是黄金时段插播，预算超支30%。"
+        },
+        {
+          "role": "assistant",
+          "content": "让他们重做一份聚焦数字和户外，压缩电视时长。代理得学会我们的媒介逻辑，不是照本宣科。"
+        }
+      ],
+      "implicit_signal": "基于职业经验，优先选择理解行业节奏的服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想找点东西看，但Netflix首页全是真人秀和超级英雄电影。"
+        },
+        {
+          "role": "assistant",
+          "content": "试试《广告狂人》纪录片版，或者Criterion频道放的老黑色电影。更有嚼头。"
+        }
+      ],
+      "implicit_signal": "偏好非虚构和有深度的内容，用于学习与消遣"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次用积分换了廉价航空，中转两次，到目的地已经没力气了。"
+        },
+        {
+          "role": "assistant",
+          "content": "宁可多花点钱直飞，订早班机抵达后直接check-in休息。旅行是为了充电，不是考验体力。"
+        }
+      ],
+      "implicit_signal": "旅行在预算上愿意投资体验"
+    },
+    {
+      "interaction_id": "hidden_indirect_022",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次晚宴请了几个客户，他们全程聊股票，我准备的爵士乐话题完全没用上。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次只邀对工艺真正感兴趣的人，控制在六人，先看半小时广告档案再开宴。让食物和讨论成为焦点。"
+        }
+      ],
+      "implicit_signal": "晚宴重视关于工艺的对话，而非社交应酬"
+    }
+  ]
+}

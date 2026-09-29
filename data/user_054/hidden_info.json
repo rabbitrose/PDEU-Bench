@@ -1,0 +1,512 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_054",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T12:46:43",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 22,
+  "composition": {
+    "episodic_preference_trace": 22
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_003",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "content": [
+      "hidden_indirect_011",
+      "hidden_indirect_014"
+    ],
+    "decision_priority": [
+      "hidden_indirect_002",
+      "hidden_indirect_003"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_010",
+      "hidden_indirect_022"
+    ],
+    "entertainment": [
+      "hidden_indirect_009",
+      "hidden_indirect_018"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_016"
+    ],
+    "food": [
+      "hidden_indirect_004",
+      "hidden_indirect_017",
+      "hidden_indirect_020"
+    ],
+    "format_contract": [
+      "hidden_indirect_006",
+      "hidden_indirect_007"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_011",
+      "hidden_indirect_012",
+      "hidden_indirect_013",
+      "hidden_indirect_021"
+    ],
+    "learning": [
+      "hidden_indirect_002",
+      "hidden_indirect_006",
+      "hidden_indirect_012",
+      "hidden_indirect_022"
+    ],
+    "privacy": [
+      "hidden_indirect_013",
+      "hidden_indirect_014",
+      "hidden_indirect_019"
+    ],
+    "product": [
+      "hidden_indirect_005",
+      "hidden_indirect_015"
+    ],
+    "role_context": [
+      "hidden_indirect_001"
+    ],
+    "service": [
+      "hidden_indirect_010",
+      "hidden_indirect_016",
+      "hidden_indirect_019"
+    ],
+    "technology": [
+      "hidden_indirect_007",
+      "hidden_indirect_018"
+    ],
+    "travel": [
+      "hidden_indirect_001",
+      "hidden_indirect_008",
+      "hidden_indirect_017",
+      "hidden_indirect_021"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次换班后赶去机场，没留缓冲，差点误机。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我把第一段行程定在班次结束后45分钟出发，并查好了备用深夜巴士。图书馆闭馆前也能赶回来。"
+        }
+      ],
+      "implicit_signal": "在工厂倒班间隙规划旅行，优先考虑实际时间约束"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "报了那个有名气的口语课，但只给录播，没练习反馈。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成带自动评分和错误分析的App，虽然小众，但每天能完成1个对话回合。"
+        }
+      ],
+      "implicit_signal": "优先练习和反馈，而非课程名气"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "游泳私教课一节就够买月卡了，但月卡没固定反馈。"
+        },
+        {
+          "role": "assistant",
+          "content": "选4次小班课加自助练习，费用在预算内，且每次有录视频回看。"
+        }
+      ],
+      "implicit_signal": "决策时权衡练习效果和长期成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推荐的餐厅只说高分，没说为什么适合我。"
+        },
+        {
+          "role": "assistant",
+          "content": "这家每道菜标注了烹饪时间和油盐用量，符合你午饭不油腻的需求。"
+        }
+      ],
+      "implicit_signal": "需要具体依据支撑推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买的行李箱轮子一个月就坏了，退货还麻烦。"
+        },
+        {
+          "role": "assistant",
+          "content": "对比了三个品牌的轮子承重测试，这款保修两年且可以当地维修。"
+        }
+      ],
+      "implicit_signal": "偏好可比较的性能数据和用户实际测试"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想学西班牙语的基础问候，但不知道每天练什么。"
+        },
+        {
+          "role": "assistant",
+          "content": "目标：掌握8句日常会话。今日练习：跟读5遍并录音。反馈点：对比原声评分。下一次复盘：周日晚上自测。"
+        }
+      ],
+      "implicit_signal": "需要结构化的学习格式"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次的笔记App不能导出，换手机全丢了。"
+        },
+        {
+          "role": "assistant",
+          "content": "改为用Markdown文件存储，设置每日自动备份到网盘。格式：今日练习 > 反馈点 > 复盘。"
+        }
+      ],
+      "implicit_signal": "喜欢可导出的笔记格式"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "规划了一个月的旅行路线，但第三周就累了想放弃。"
+        },
+        {
+          "role": "assistant",
+          "content": "拆成每3天一个小循环：完成一个城市就标记打卡，并安排半天自由时间。"
+        }
+      ],
+      "implicit_signal": "需要短周期里程碑来保持动力"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次看演出前忘了查交通，散场后等了半天车。活动散场后人流大。"
+        },
+        {
+          "role": "assistant",
+          "content": "给你一个行前检查清单：门票、交通、备用路线。散场前10分钟叫车。"
+        }
+      ],
+      "implicit_signal": "喜欢清单和模板来简化决策"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我在订接机服务，看了20家眼都花了，还没定。"
+        },
+        {
+          "role": "assistant",
+          "content": "先按安全评分和免费取消筛选出3家，你再挑顺眼的。"
+        }
+      ],
+      "implicit_signal": "选项过多会拖慢决策，需要预先筛选"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你给了8个游记链接，我一个都没点开。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只截取最适合你的两段：一段讲交通省钱法，一段讲泡面攻略。"
+        }
+      ],
+      "implicit_signal": "拒绝堆砌资源，只给最关键内容"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你说“多练习就行”，但没说练什么怎么练。"
+        },
+        {
+          "role": "assistant",
+          "content": "今日练动词变位：选出10个常用动词，每个造一个句。做完发我检查。"
+        }
+      ],
+      "implicit_signal": "拒绝空泛道理，需要具体步骤"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推荐的法语阅读文章是B1水平，我A2都吃力。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成A1+分级读物，每页带生词标注，这样午休结束前能读完一篇。"
+        }
+      ],
+      "implicit_signal": "拒绝忽略当前水平，调整难度"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个旅游攻略要我填家庭住址才给完整版，我退了。"
+        },
+        {
+          "role": "assistant",
+          "content": "用这个离线版PDF，不需要注册，里面已经删了你不想公开的信息。"
+        }
+      ],
+      "implicit_signal": "内容需贴合实际且保护隐私"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "这个背包比预算贵30刀，但说用五年。"
+        },
+        {
+          "role": "assistant",
+          "content": "算下来每年多6刀，但带终身保修，我倾向买。如果超总预算，可以降级住宿。"
+        }
+      ],
+      "implicit_signal": "考虑长期使用成本和替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次在购物车放了接机服务，漏掉取消入口被扣了钱。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次付款后立即在家庭群发截图并设置提醒：出发前24小时可免费取消。"
+        }
+      ],
+      "implicit_signal": "服务需要明确取消规则和响应速度"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次住酒店隔壁装修，晚上睡不好。周围餐馆也贵。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次选公寓式民宿，有厨房可自己做饭，并且确认无施工噪音。附近有超市。"
+        }
+      ],
+      "implicit_signal": "旅行中住宿和饮食优先考虑安静和可调整性"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个电影活动要下载专用App才能买票，还只能在线看。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成实体的独立影院，现场买票，不需要注册。评价说氛围好且人少。"
+        }
+      ],
+      "implicit_signal": "娱乐活动避开拥挤和营销，技术工具可导出数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "租车公司要填真实住址和工牌号才能预订。"
+        },
+        {
+          "role": "assistant",
+          "content": "用你的工作地址邮编代替详细门牌，工牌号不提供，选另一家只要求驾照的。"
+        }
+      ],
+      "implicit_signal": "只提供必要信息，匿名化处理"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "两个人吃饭预算只有34刀，但想尝尝本地菜。"
+        },
+        {
+          "role": "assistant",
+          "content": "去主厨推荐小店，一份套餐28刀，再加个小吃。剩余6刀可以买杯当地饮料。"
+        }
+      ],
+      "implicit_signal": "预算敏感且区分必须与可选花费"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推荐的那条徒步路线要46段阶梯，我膝盖不行。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成平缓的海滨步道，全程无障碍，而且下午有树荫。"
+        }
+      ],
+      "implicit_signal": "避免堆资源，只给当前水平能用的路线"
+    },
+    {
+      "interaction_id": "hidden_indirect_022",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "背单词时没有复习计划，一周后全忘了。"
+        },
+        {
+          "role": "assistant",
+          "content": "用这个复习模板：新词+昨日错词+周错词。每日10分钟，周日晚上测试本周总数。"
+        }
+      ],
+      "implicit_signal": "喜欢模板和清单，需要短周期里程碑"
+    }
+  ]
+}

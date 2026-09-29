@@ -1,0 +1,263 @@
+{
+  "user_id": "user_110",
+  "explicit_preferences": {
+    "user_profile": "邀请个人作为嘉宾演讲者分享故事的地方支持小组组织者",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Maria Rodriguez",
+        "age": 45,
+        "gender": "女性",
+        "location": "德克萨斯州奥斯汀",
+        "languages": [
+          "英语",
+          "西班牙语"
+        ],
+        "education_level": "社会工作学士",
+        "occupation": "支持小组协调员",
+        "industry": "非营利/医疗保健",
+        "seniority": "中级",
+        "household": "已婚并育有两子",
+        "life_stage": "全职工作的家长"
+      },
+      "physical_profile": {
+        "height_cm": 165,
+        "general_appearance": "中等身材，温暖的笑容，常穿休闲职业装",
+        "accessibility_needs": []
+      },
+      "personality": {
+        "concise_summary": "有同理心、有条理、以社区为中心；通过分享故事帮助他人治愈",
+        "big_five": {
+          "openness": 80,
+          "conscientiousness": 85,
+          "extraversion": 75,
+          "agreeableness": 90,
+          "neuroticism": 20
+        },
+        "strengths": [
+          "有同理心的",
+          "有条理的",
+          "善于倾听"
+        ],
+        "weaknesses": [
+          "有时承担过多",
+          "可能过于乐观"
+        ],
+        "values": [
+          "社区",
+          "治愈",
+          "真实"
+        ],
+        "motivations": [
+          "帮助他人找到安慰和力量",
+          "创造安全的分享空间"
+        ],
+        "stress_triggers": [
+          "小组中的冲突",
+          "资源不足",
+          "无礼的言论"
+        ]
+      },
+      "background": {
+        "brief_summary": "玛丽亚亲身经历了从创伤中恢复的历程，这激励她投身社会工作并后来组织支持小组。她协调当地小组已有五年多，邀请有不同经历的嘉宾演讲者。",
+        "lived_experience": "创伤幸存者和癌症幸存者",
+        "cultural_identity": "拉丁裔，第一代大学毕业生",
+        "significant_life_events": [
+          "完成了哀伤咨询培训",
+          "在自身康复后创办了支持小组"
+        ]
+      },
+      "lifestyle": {
+        "daily_routine": "早上与家人相处，在社区中心工作，下午处理小组事务，晚上经常参加会议或活动。",
+        "work_life_balance": "优先考虑家庭晚餐和周末自然徒步",
+        "social_life": "与其他组织者、志愿者和小组成员保持联系；参加社区活动",
+        "health_habits": "每天散步，素食，练习正念"
+      },
+      "interests": [
+        "个人发展",
+        "叙事疗法",
+        "社区园艺",
+        "民间音乐",
+        "阅读回忆录"
+      ],
+      "explicit_preferences": {
+        "content_preferences": [
+          "主题：自助、个人故事、创伤康复、社区组织",
+          "形式：书籍、播客、纪录片、工作坊",
+          "语气：鼓舞人心、实用、富有同理心",
+          "内容必须符合用户独特的运作模式：同伴支持引导者模式：温和但有界限，群体安全优先。",
+          "拒绝通用助手框架：不要像治疗师那样行事，也不让小组依赖专家。"
+        ],
+        "product_preferences": [
+          "类别：组织工具、舒适鞋类、书籍、办公用品",
+          "品牌：偏好本地和可持续品牌，对奢侈品持中立态度",
+          "特点：耐用、用户友好、价格实惠",
+          "产品应通过用户自身的权衡视角选择：小组需求、支持获取、界限、自愿参与、事后反思。"
+        ],
+        "service_preferences": [
+          "类型：打印服务、有会议空间的咖啡店、在线排程工具",
+          "特质：可靠、员工友好、性价比高",
+          "服务只有在保持以下决策优先级时才可接受：成员自主性、可及性和情感节奏优于令人印象深刻的规划。"
+        ],
+        "learning_preferences": {
+          "methods": [
+            "同伴间学习",
+            "实践工作坊",
+            "叙事和基于故事的培训"
+          ],
+          "subjects": [
+            "团体引导",
+            "危机干预",
+            "自我关怀"
+          ]
+        },
+        "travel_preferences": {
+          "destinations": [
+            "自然疗养地、国家公园"
+          ],
+          "style": [
+            "环保的",
+            "国内的",
+            "慢旅行"
+          ],
+          "activities": [
+            "徒步、文化交流、独自反思"
+          ]
+        },
+        "food_preferences": {
+          "diet": "素食，偶尔纯素",
+          "cuisines": [
+            "墨西哥料理",
+            "地中海",
+            "印度菜"
+          ],
+          "avoid": [
+            "高度加工食品、大型连锁餐厅"
+          ]
+        },
+        "entertainment_preferences": {
+          "genres": [
+            "纪录片、治愈系电影、独立电影"
+          ],
+          "activities": [
+            "现场戏剧、故事讲述活动、民间音乐会"
+          ],
+          "avoid": [
+            "过度暴力、恐怖片"
+          ]
+        },
+        "technology_preferences": {
+          "devices": [
+            "笔记本电脑、智能手机、电子阅读器"
+          ],
+          "software": [
+            "特雷洛、谷歌工作空间、平静应用"
+          ],
+          "attitude": "注重隐私，尽可能偏好开源软件"
+        },
+        "privacy_preferences": {
+          "sharing": "愿意分享个人故事但尊重他人隐私",
+          "data": "谨慎分享个人数据，使用双重验证"
+        },
+        "budget_preferences": {
+          "spending": "适度，重视品质和道德生产",
+          "saving": "优先考虑体验而非物质商品",
+          "charity": "向当地非营利组织和互助团体捐款"
+        },
+        "personalization_directives": {
+          "style_contract": "同伴支持引导模式：温和但边界清晰，群体安全第一。",
+          "decision_priority": "成员能动性、可及性和情绪节奏胜过令人印象深刻的议程安排。",
+          "evidence_contract": "生活经验和引导者匹配度比单纯的资历更重要。",
+          "format_contract": "群体需求、准入支持、边界、自愿活动、总结汇报。",
+          "anti_default_assistant_behavior": "不要像治疗师一样行事，也不要让群体依赖专家。",
+          "distinctive_quirks": [
+            "嘉宾演讲者不得主导群体。",
+            "自然静修需要安静空间和退出选项。",
+            "培训应强化同伴领导力，而非将其专业化而削弱。"
+          ],
+          "hard_avoidances": [
+            "强制脆弱性",
+            "临床标签",
+            "过于充实的议程"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "dislikes": [
+          "居高临下的态度",
+          "僵化的时间安排",
+          "缺乏真正的投入"
+        ],
+        "constraints": [
+          "嘉宾演讲者酬金预算有限",
+          "工作与家庭责任之间的平衡"
+        ]
+      },
+      "communication_style": {
+        "tone": "温暖鼓励，使用个人故事",
+        "response_length": "适度，包含背景和例子",
+        "evidence_expectation": "重视个人经验和实用技巧而非密集的研究",
+        "formatting": "偏好任务用要点，话题用清晰标题",
+        "proactive_behavior": "提出后续问题，提供额外资源",
+        "things_to_avoid": [
+          "听起来像临床医生",
+          "忽视情感方面",
+          "用数据压倒性"
+        ]
+      },
+      "decision_making": {
+        "style": "协作，寻求共识",
+        "influences": [
+          "社区需求、伦理考量、个人一致性"
+        ],
+        "speed": "谨慎但灵活应对紧急情况"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "安排嘉宾演讲者日程",
+          "为小组成员寻找资源",
+          "管理支持小组会议的后勤",
+          "为讨论选择相关内容"
+        ],
+        "preference_conflicts": [
+          "高效安排时间与迁就每个人的可用性之间的矛盾",
+          "平衡激励性故事与实用建议",
+          "预算限制与演讲者质量之间的矛盾"
+        ],
+        "ambiguity_to_preserve": [
+          "她角色的具体范围（例如，全职还是志愿者）",
+          "她是亲自引导小组还是仅协调",
+          "小组形式的灵活程度"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:45",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "支持性、亲切、非正式但尊重",
+            "response_length": "适中；被问到时可以提供细节",
+            "evidence_expectation": "轶事与实践证据的结合",
+            "formatting": "结构清晰，段落分隔，行动项用要点",
+            "proactive_behavior": "可建议相关资源或后续跟进，但不强求",
+            "things_to_avoid": [
+              "过于临床或权威的语言",
+              "对她的经历的假设"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "为支持小组安排嘉宾演讲系列",
+            "为小组成员策划一个周末自然静修",
+            "选择并报名参加一个同伴引导工作坊"
+          ]
+        }
+      }
+    }
+  }
+}

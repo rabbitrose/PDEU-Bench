@@ -1,0 +1,101 @@
+{
+  "user_id": "user_014",
+  "task": {
+    "task_id": "task_hard",
+    "title": "社区剧院表演的平衡评论",
+    "daily_life_domain": "work",
+    "scenario": "米尔布鲁克公报的艺术编辑请埃莉诺评论本地剧团的最新作品《夏至》。这出剧意图良好但节奏有问题且几处表演薄弱。埃莉诺必须写一篇诚实的评论，同时支持社区努力。她还需要采访导演和演员。",
+    "user_goal": "写一篇既能维护她正面声誉，又能提供真实、建设性反馈以帮助剧团改进的评论。",
+    "why_complex": "在善意与诚实之间取得平衡是埃莉诺的核心矛盾，她不喜欢负面评论。她必须收集意见、识别优缺点，并塑造一种鼓励而非打击的语气。截稿期带来压力，她必须考虑与戏剧社区的长期关系。",
+    "constraints": [
+      "截稿期三天",
+      "必须维持与本地艺术家的正面关系",
+      "不能完全忽视重大缺陷",
+      "评论长度：800-1000字"
+    ],
+    "required_reasoning_steps": [
+      "观看演出并详细记录表演、导演和舞台布置。",
+      "与导演和主要演员进行简短访谈，了解他们的创作意图。",
+      "识别至少三个优点（例如服装、情感时刻）和两个需要改进的方面（例如节奏、台词表达）。",
+      "起草一篇评论，开头先赞扬，然后温和地指出弱点，并给出具体、可行的建议。",
+      "向一位值得信赖的同事（例如编辑）征求对语气的反馈。",
+      "修改以确保整体信息是鼓励和支持性的。",
+      "提交最终文章以供发表。",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "演出期间观众的反应",
+      "导演的愿景及制作过程中面临的挑战",
+      "演员对自己表演的反思",
+      "该剧团以往的评论以保持一致性",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "一篇已完成、800-1000字的文章，准备发表，包含标题、署名、突出优点的段落以及建设性建议。",
+    "success_criteria": [
+      "评论在编辑不做重大修改的情况下发表。",
+      "该剧团对反馈表示赞赏。",
+      "没有来自社区或艺术家的负面反弹。",
+      "这篇评论保持了埃莉诺积极、建设性报道的声誉。",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "写一篇过度溢美的评论，失去可信度。",
+      "过于挑剔，冒犯了剧团。",
+      "因过度分析而错过截稿日期。",
+      "未能采访关键人物，导致信息不完整。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 7,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 8,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=10",
+        "constraints_capped=4",
+        "decision_points_capped=3",
+        "information_items_capped=6",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=29.75",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Eleanor Hartley",
+      "age": 45,
+      "gender": "女性"
+    }
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "user_id": "user_066",
+  "explicit_preferences": {
+    "user_profile": "一位相对新加入AOSSM的骨科外科医生",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Dr. Michael Torres",
+        "age": 45,
+        "gender": "男性",
+        "location": "美国科罗拉多州丹佛",
+        "languages": [
+          "英语",
+          "西班牙语"
+        ],
+        "education_level": "医学博士（MD），骨科运动医学专科培训",
+        "occupation": "骨科医生",
+        "industry": "医疗保健",
+        "seniority": "职业生涯中期（主治医师12年），但相对新加入AOSSM（2年前加入）",
+        "household": "已婚，有两个孩子（年龄14和16岁）",
+        "life_stage": "稳定的事业，积极的育儿，寻求职业成长和社区参与"
+      },
+      "physical_profile": {
+        "height_cm": 183,
+        "general_appearance": "运动型身材，经常穿手术服或商务休闲装，保持积极生活方式",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "一位高度尽责、精准的骨科外科医生，重视循证实践和患者福祉。他致力于自己的专业，但偶尔会因完美主义而挣扎。",
+        "big_five": {
+          "openness": 70,
+          "conscientiousness": 90,
+          "extraversion": 55,
+          "agreeableness": 65,
+          "neuroticism": 30
+        },
+        "strengths": [
+          "精确且注重细节",
+          "对患者富有同理心",
+          "团队合作者",
+          "持续学习者"
+        ],
+        "weaknesses": [
+          "完美主义倾向",
+          "偶尔过度工作",
+          "对效率不耐烦"
+        ],
+        "values": [
+          "以患者为中心的护理",
+          "外科技术创新",
+          "与同事合作",
+          "工作与生活平衡"
+        ],
+        "motivations": [
+          "改善手术结果",
+          "指导年轻外科医生",
+          "保持在运动医学前沿"
+        ],
+        "stress_triggers": [
+          "手术并发症",
+          "行政官僚主义",
+          "研究中的矛盾证据"
+        ]
+      },
+      "background": {
+        "medical_school": "加州大学旧金山分校（UCSF）",
+        "residency": "纽约特殊外科医院",
+        "fellowship": "Vail的Steadman Philippon研究所",
+        "current_hospital": "丹佛的OrthoColorado医院",
+        "professional_memberships": [
+          "AAOS",
+          "AOSSM（新会员）",
+          "ISAKOS"
+        ],
+        "research_interests": [
+          "前交叉韧带重建结果",
+          "重返运动标准",
+          "运动医学中的生物制剂"
+        ]
+      },
+      "lifestyle": {
+        "daily_routine": "清晨手术，下午门诊，晚上与家人相处或研究回顾",
+        "hobbies": [
+          "滑雪",
+          "山地自行车",
+          "弹吉他",
+          "阅读医学期刊"
+        ],
+        "social_activities": "周末与家人徒步，偶尔与同事聚餐",
+        "sleep_patterns": "每晚6.5-7小时睡眠，早上5:30起床"
+      },
+      "interests": {
+        "sports": [
+          "高山滑雪",
+          "篮球",
+          "越野跑"
+        ],
+        "reading": "运动医学期刊、历史传记",
+        "technology": "手术机器人、可穿戴健康技术、用于手术规划的3D打印",
+        "travel": "医学会议（AOSSM年会、AAOS），家庭国家公园旅行"
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "专题：运动医学、关节镜手术、生物骨科、康复方案",
+          "形式：同行评审期刊文章（尤其是AJSM、JOSPT）、手术视频技术、病例讨论、播客（例如OrthoJOE）",
+          "来源：PubMed、Orthobullets、AOSSM出版物、AAOS Now",
+          "内容必须匹配此用户的独特工作模式：外科医生管理者模式：高信号、证据分级、时间盒管理。",
+          "拒绝通用助手框架：不要讲授基础或产生面向患者的废话。"
+        ],
+        "product_preferences": [
+          "手术工具：Arthrex、Smith & Nephew、DePuy Synthes",
+          "患者监测：Apple Watch、Garmin用于活动追踪",
+          "电子健康记录：Epic Systems",
+          "首选设备：用于阅读和记笔记的iPad Pro",
+          "产品应通过用户自己的权衡视角选择：临床问题、证据等级、推荐、幻灯片/用例。"
+        ],
+        "service_preferences": [
+          "继续医学教育提供者：AOSSM、AAOS、Medscape",
+          "咨询服务：通过远程医疗提供第二诊疗意见",
+          "实践管理：Athenahealth",
+          "只有服务在保留以下决策优先级时才是可接受的：临床有效性、CME效率、家庭安全胜过新颖性。"
+        ],
+        "learning_preferences": {
+          "style": [
+            "视觉（观看手术）",
+            "基于案例",
+            "互动工作坊"
+          ],
+          "frequency": "每日期刊文章，每月课程",
+          "platforms": [
+            "VuMedi",
+            "YouTube（同行评审频道）",
+            "Orthobullets"
+          ],
+          "depth": "偏好高质量、循证资源；对轶事建议持怀疑态度"
+        },
+        "travel_preferences": {
+          "conference_travel": [
+            "目前仅限美国国内",
+            "偏好直飞航班",
+            "会议中心附近的酒店"
+          ],
+          "vacation": [
+            "山区目的地",
+            "国家公园",
+            "滑雪胜地"
+          ],
+          "airline": "联合航空（会员身份）",
+          "accommodation": "万豪或希尔顿"
+        },
+        "food_preferences": {
+          "diet": "均衡，无限制；喜欢牛排、沙拉和墨西哥菜",
+          "dining_out": "休闲但高质量；避免快餐",
+          "coffee": "黑咖啡、浓缩咖啡饮品",
+          "alcohol": "偶尔红葡萄酒或精酿啤酒"
+        },
+        "entertainment_preferences": {
+          "tv_shows": [
+            "医疗剧（例如《良医》）",
+            "纪录片系列",
+            "NFL比赛"
+          ],
+          "movies": "动作/冒险、历史剧",
+          "music": "经典摇滚、原声、爵士",
+          "books": "非虚构类、外科医生传记"
+        },
+        "technology_preferences": {
+          "smartphone": "iPhone 15 Pro Max",
+          "computer": "MacBook Pro",
+          "wearable": "Apple Watch Ultra",
+          "smart_home": "极简；使用Nest恒温器",
+          "privacy": "重视数据安全，尤其是患者信息和个人健康数据"
+        },
+        "privacy_preferences": {
+          "data_sharing": "仅在有明确同意的情况下；谨慎在公共论坛分享患者结果",
+          "social_media": "不使用个人社交媒体；仅使用专业LinkedIn",
+          "tracking": "接受匿名研究数据收集，但希望拥有控制权"
+        },
+        "budget_preferences": {
+          "spending_style": "愿意投资高质量的CME和设备；个人购买时注重价格",
+          "major_purchases": "购买前广泛研究",
+          "charity": "支持本地运动医学基金会和青少年体育项目"
+        },
+        "personalization_directives": {
+          "style_contract": "外科医生执行模式：高信号、证据层级、限时。",
+          "decision_priority": "临床有效性、CME效率和家庭安全优于新颖性。",
+          "evidence_contract": "首选同行评审的骨科资料和学会指南。",
+          "format_contract": "临床问题、证据层级、推荐、幻灯片/用例。",
+          "anti_default_assistant_behavior": "不讲解基础知识或制作面向患者的空洞内容。",
+          "distinctive_quirks": [
+            "滑雪旅行需要损伤风险物流和高级可靠性。",
+            "会议演示应视觉清晰且无冗余。",
+            "可穿戴设备只有在数据改变康复决策时才有用。"
+          ],
+          "hard_avoidances": [
+            "健康影响者来源",
+            "未经筛选的PubMed数据导出",
+            "忽视会议后疲劳的家庭计划"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "dislikes": [
+          "会议浪费时间",
+          "未经证实的声明",
+          "组织混乱的会议",
+          "重复性的行政任务"
+        ],
+        "constraints": [
+          "手术日程导致时间稀缺",
+          "前往非必要会议的有限预算",
+          "需要满足委员会认证要求"
+        ]
+      },
+      "communication_style": {
+        "preferred_channel": "正式请求用电子邮件，快速更新用短信",
+        "tone": "专业直接，但对同事友好",
+        "formality": "适度；正式场合使用'Dr.'，但对亲密同事直呼其名",
+        "response_time": "期望非紧急事项在24小时内回复"
+      },
+      "decision_making": {
+        "approach": "循证，与临床经验平衡；复杂病例咨询同事",
+        "speed": "有条理而非冲动；在承诺前寻求清晰",
+        "influences": [
+          "同行评审文献",
+          "导师建议",
+          "患者偏好"
+        ],
+        "risk_tolerance": "对手术错误容忍度低，对采用新技术的容忍度中等（如果有证据支持）"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "寻找关于ACL重建康复的最新系统综述",
+          "推荐关于肩袖修复的CME课程",
+          "比较不同的生物制剂用于软骨再生",
+          "准备AOSSM年会演讲",
+          "评估用于关节镜手术的新手术器械"
+        ],
+        "preference_conflicts": [
+          "平衡循证实践与个人临床经验；如果助理只引用理论，可能会质疑",
+          "渴望前沿信息，但受限于昂贵手术的预算",
+          "希望获得个性化推荐，但也重视隐私和数据控制"
+        ],
+        "ambiguity_to_preserve": [
+          "确切的亚专业方向（如膝 vs 肩）未指定；可能变化",
+          "对特定期刊订阅或会议参加的偏好可能改变",
+          "对新手术技术（如机器人）的采纳程度尚未完全确定"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:44",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "专业、尊重，但不过于正式；最初使用'Torres医生'",
+            "response_length": "简洁但全面；除非被问及，避免过多细节",
+            "evidence_expectation": "引用来源，尤其是医疗建议；偏好附带研究链接的高层概述",
+            "formatting": "列表使用要点符号；加粗关键发现；避免Markdown表格",
+            "proactive_behavior": "可以建议相关文章或提醒，但不打扰",
+            "things_to_avoid": [
+              "避免过度概括或做出无依据的断言",
+              "除非受邀，否则不要使用名字",
+              "避免推荐未经证实的治疗",
+              "不要分享患者信息"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "规划一个关于ACL重建康复的继续医学教育课程",
+            "准备AOSSM年会上关于软骨修复的演讲",
+            "计划春假期间去韦尔的家庭滑雪旅行"
+          ]
+        }
+      }
+    }
+  }
+}

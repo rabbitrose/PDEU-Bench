@@ -1,0 +1,504 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_134",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:49:21",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 22,
+  "composition": {
+    "episodic_preference_trace": 22
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_009",
+      "hidden_indirect_010",
+      "hidden_indirect_020"
+    ],
+    "content": [
+      "hidden_indirect_006",
+      "hidden_indirect_019"
+    ],
+    "decision_priority": [
+      "hidden_indirect_004",
+      "hidden_indirect_018"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_002",
+      "hidden_indirect_005",
+      "hidden_indirect_007",
+      "hidden_indirect_012",
+      "hidden_indirect_017"
+    ],
+    "entertainment": [
+      "hidden_indirect_011"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_005",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "food": [
+      "hidden_indirect_010"
+    ],
+    "format_contract": [
+      "hidden_indirect_004",
+      "hidden_indirect_012",
+      "hidden_indirect_022"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_003",
+      "hidden_indirect_006",
+      "hidden_indirect_019"
+    ],
+    "learning": [
+      "hidden_indirect_003",
+      "hidden_indirect_016"
+    ],
+    "privacy": [
+      "hidden_indirect_008"
+    ],
+    "product": [
+      "hidden_indirect_002",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "role_context": [
+      "hidden_indirect_001"
+    ],
+    "service": [
+      "hidden_indirect_009",
+      "hidden_indirect_015"
+    ],
+    "technology": [
+      "hidden_indirect_001",
+      "hidden_indirect_014",
+      "hidden_indirect_016",
+      "hidden_indirect_021"
+    ],
+    "travel": [
+      "hidden_indirect_007",
+      "hidden_indirect_017",
+      "hidden_indirect_021"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "书店库存系统更新后，新界面找不到手动输入条码的入口，发出去的教学邮件又撤回了一次。"
+        },
+        {
+          "role": "assistant",
+          "content": "我远程查看旧版备份，调整界面并把手动输入功能放到首页快捷键上。"
+        }
+      ],
+      "implicit_signal": "不喜欢界面变更后功能隐蔽，希望保留旧操作路径"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你同时推荐了八个笔记软件，我试了两天没定下来，反而耽误了记录。"
+        },
+        {
+          "role": "assistant",
+          "content": "下回只对比三个，先确保核心功能满足安全和导出需求，再让你试用。"
+        }
+      ],
+      "implicit_signal": "选项过多会拖慢决策，需要缩小到可处理的范围"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "learning",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个编程课给了几十篇文章链接，没有练习步骤，我看了三天还是不知道怎么开始。"
+        },
+        {
+          "role": "assistant",
+          "content": "改为每周三次小任务，每次完成后有自查清单，你检查反馈点。"
+        }
+      ],
+      "implicit_signal": "抵触只堆资源无练习的方式，需要具体任务和自查工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你给的学习安排只有日期和标题，我执行到一半不清楚进步在哪。"
+        },
+        {
+          "role": "assistant",
+          "content": "拆成四栏格式：先说目标，再写练了什么，然后哪里卡住，最后下次改进。"
+        }
+      ],
+      "implicit_signal": "需要结构化格式来追踪进步和下次改进"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "三个月计划太长，我第四周就松了，没有短激励。"
+        },
+        {
+          "role": "assistant",
+          "content": "改成两周一个里程碑，每阶段出个小作品可以检查进度。"
+        }
+      ],
+      "implicit_signal": "长期计划需要短周期里程碑保持动力"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那本摄影书讲了很多光圈原理，却没教怎么在书店昏暗环境拍好照片。"
+        },
+        {
+          "role": "assistant",
+          "content": "明天我带相机去店里实地调参数，你直接试不同光线下的效果。"
+        }
+      ],
+      "implicit_signal": "理论内容必须匹配实际应用场景才有用"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我收藏了十几条徒步路线，到现场反而不知道选哪条。"
+        },
+        {
+          "role": "assistant",
+          "content": "下回只保留两条：一条有树荫一条时间短，出发前再确认路况。"
+        }
+      ],
+      "implicit_signal": "路线选项太多会难以决定，需要事前精简"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次把健身记录截图发到群里，忘记涂掉地址栏的街道信息。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后这些截图我帮你自动打码再分享，避免个人信息泄露。"
+        }
+      ],
+      "implicit_signal": "对个人信息泄露敏感，需要自动防护"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个分析工具月付很便宜，但一年加起来比买断贵一倍，现在想取消还要人工审核。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次选服务前我先把年费和退订流程列出来，方便你比较。"
+        }
+      ],
+      "implicit_signal": "需要透明地了解长期成本，避免隐形费用"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周和朋友去网红餐厅，人均超预算两倍，晚上睡不好。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后选本地小餐馆或自己做饭，提前确认AA制，控制花费。"
+        }
+      ],
+      "implicit_signal": "外出饮食需平衡预算和身体状态"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "音乐节散场后叫车排队两小时，第二天精神很差。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次提前预约接送，或选离地铁近的场地，减少等待时间。"
+        }
+      ],
+      "implicit_signal": "休闲活动不能破坏第二天节奏"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买杂粮没带清单，回来发现少了好几样。"
+        },
+        {
+          "role": "assistant",
+          "content": "我做一个常用购物模板，每周日更新库存后打印出来带上。"
+        }
+      ],
+      "implicit_signal": "依赖清单和模板来减少遗漏"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "新规划的进货清单漏了条码列，还得翻旧版清单手工抄。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次直接在旧版基础上增加记录字段，不重新起格式。"
+        }
+      ],
+      "implicit_signal": "喜欢在旧数据基础上迭代而非从头新建"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次更新店铺App后连不上旧打印机，客服说没有回退版本。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后系统更新前先把驱动和固件备份到独立储存器里。"
+        }
+      ],
+      "implicit_signal": "需要保留降级或回退能力"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个会员试用七天只能用基础功能，正打算付费才发现导出要另付费。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次找有完整试用期或明确功能清单的服务，避免隐藏费用。"
+        }
+      ],
+      "implicit_signal": "服务功能必须透明公开，拒绝隐藏付费墙"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "地铁换乘时用背单词App，但界面太小老点错。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成语音跟读模式，下次换上蓝牙耳机，边走边练。"
+        }
+      ],
+      "implicit_signal": "移动学习需要适配窄小界面，避免误操作"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次在候机区才发现充电宝没带，手机快没电了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我设个出门前检查清单，自动提醒充电线和充电宝。"
+        }
+      ],
+      "implicit_signal": "出发前需要清单确认必需品"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "两份测试记录用了不同度量，没法直接对比进步。"
+        },
+        {
+          "role": "assistant",
+          "content": "统一为同一套评分标准，每完成一份先校准再记录。"
+        }
+      ],
+      "implicit_signal": "需要统一度量标准才能可靠比较"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个翻译练习直接给专业合同，我基础词汇还没掌握。"
+        },
+        {
+          "role": "assistant",
+          "content": "后续换成短句填空，逐步增加长度，再过渡到合同。"
+        }
+      ],
+      "implicit_signal": "练习难度必须匹配当前水平，不能跳跃太大"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次采购单第53条打折书品控不好，退货运费53块远超书价。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后预算表里单独列一笔退货备用金，先验一本再批量订购。"
+        }
+      ],
+      "implicit_signal": "采购预算需要考虑风险备用"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周去山区网断了，离线地图没下载，找路浪费一小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后出发前确认下载离线地图和备用路线的离线数据。"
+        }
+      ],
+      "implicit_signal": "旅行需提前准备离线备份以应对网络中断"
+    },
+    {
+      "interaction_id": "hidden_indirect_022",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你给的日程清单没写每日复盘时间，我常常拖到睡前才补。"
+        },
+        {
+          "role": "assistant",
+          "content": "固定每晚8点提醒复盘，清单加上完成时间字段和状态标记。"
+        }
+      ],
+      "implicit_signal": "复盘需要具体时间锚点和完成状态记录"
+    }
+  ]
+}

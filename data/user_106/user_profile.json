@@ -1,0 +1,297 @@
+{
+  "user_id": "user_106",
+  "explicit_preferences": {
+    "user_profile": "一位科学传播者，在科普博客上展示插画师的作品",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Elena Morozova",
+        "age": 34,
+        "gender": "女性",
+        "location": "San Francisco, CA, USA",
+        "languages": [
+          "英语（母语）",
+          "俄语（母语）",
+          "西班牙语（中级）"
+        ],
+        "education_level": "科学传播硕士学位",
+        "occupation": "科学博主和内容创作者",
+        "industry": "媒体与出版",
+        "seniority": "高级/独立",
+        "household": "独自居住在一居室公寓，没有宠物",
+        "life_stage": "早期职业生涯已建立，无子女，专注于职业发展"
+      },
+      "physical_profile": {
+        "height_cm": 165,
+        "general_appearance": "身材纤细，齐肩深色头发，常戴眼镜，穿着休闲但整洁（牛仔裤和衬衫），说话时面带温暖微笑，手势丰富",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "好奇心强、善于分析、视觉导向的传播者，擅长将复杂概念变得易懂。对细节充满热情，但对模糊性缺乏耐心",
+        "big_five": {
+          "openness": 85,
+          "conscientiousness": 75,
+          "extraversion": 55,
+          "agreeableness": 65,
+          "neuroticism": 40
+        },
+        "strengths": [
+          "清晰解释复杂主题",
+          "强大的视觉思维",
+          "细致的研究能力",
+          "创意内容结构"
+        ],
+        "weaknesses": [
+          "倾向于过度解释",
+          "对设计不佳的视觉内容要求苛刻",
+          "偶尔对内容追求完美主义"
+        ],
+        "values": [
+          "准确性",
+          "视觉美感",
+          "教育",
+          "知识诚实"
+        ],
+        "motivations": [
+          "让科学变得有趣且易懂",
+          "颂扬科学插画师的工作",
+          "建立好奇学习者的社区"
+        ],
+        "stress_triggers": [
+          "伪科学或误导性图表",
+          "来源不实的信息",
+          "合作者沟通不清晰"
+        ]
+      },
+      "background": {
+        "born_and_raised": "俄罗斯莫斯科，21岁时移居美国",
+        "family_background": "中产阶级家庭；父亲是物理学家，母亲是美术老师；有一个弟弟是平面设计师",
+        "education": "莫斯科州立大学生物学学士，加州大学圣克鲁兹分校科学传播硕士",
+        "career_history": "最初在生物学实验室担任研究助理，后在科学杂志实习，成为自由科学作家，三年前创办了自己的科学博客“Visualizing Science”，目前月访问量30万",
+        "significant_life_events": "获得美国科学作家协会最佳科学博客奖；与一位知名插画师合作制作了海洋生物学系列"
+      },
+      "lifestyle": {
+        "daily_routine": "早上7点起床，查看邮件和社交媒体，在家工作到午餐，散步，然后编辑博客文章或与插画师协调到下午6点，晚上通常阅读科学论文或构思草图",
+        "habits": "喝黑咖啡，使用番茄钟，用子弹日记做项目规划",
+        "social_life": "适度社交；每月参加一次科学传播聚会，朋友圈较小，多为媒体或艺术界人士",
+        "work_environment": "家庭办公室配备大屏幕显示器、双显示器、数字绘图板，以及装满科学书籍和艺术印刷品的书架",
+        "health_and_wellness": "每周做两次瑜伽，尽量均衡饮食，但截稿期常不吃早餐"
+      },
+      "interests": {
+        "general": [
+          "科普",
+          "信息图表与数据可视化",
+          "科学插画",
+          "折纸",
+          "桌游（策略游戏）"
+        ],
+        "hobbies": [
+          "素描",
+          "摄影（微距与自然）",
+          "阅读《科学美国人》和《自然》",
+          "参加科学讲座"
+        ],
+        "passions": [
+          "提升科学素养",
+          "支持STEM领域的女性",
+          "收藏古董科学图表"
+        ]
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "主题：海洋生物学、天体物理学、神经科学、进化论",
+          "格式：带有高质量插图的博客文章、带动画的短解疑视频（最长5分钟）、信息图、互动网络文章",
+          "来源：同行评审期刊（Nature、Science、PNAS）、知名科普媒体（Quanta、Nautilus、Ars Technica）、调研充分的独立博客",
+          "风格：偏好清晰、准确、引人入胜但不耸人听闻；避免标题党",
+          "内容必须符合用户独特的工作模式：科学插画师-博主模式：视觉优先，惊奇加严谨",
+          "拒绝通用助手框架：不要写枯燥的科学摘要或说教式气候文案"
+        ],
+        "product_preferences": [
+          "技术：苹果生态系统（MacBook Pro、iPad Pro配Apple Pencil）、Adobe Creative Cloud（Illustrator、Photoshop、InDesign）、用于项目管理的Notion、用于微距摄影的佳能EOS相机",
+          "办公用品：Muji笔、Leuchtturm1917笔记本、防蓝光眼镜",
+          "美术用品：Winsor & Newton水彩、Copic马克笔、Strathmore素描本",
+          "产品应通过用户自身的权衡视角选择：吸引眼球的图像、误解、证据、草图/图形创意、分享格式"
+        ],
+        "service_preferences": [
+          "软件：用于博客的WordPress、用于新闻通讯的Mailchimp、用于社交媒体排期的Buffer",
+          "媒体消费：Spotify（播客：Radiolab、Science Vs、Ologies）、工作中听Audible有声书",
+          "配送：Instacart购买杂货、Amazon Prime购买用品、偶尔Blue Apron购买餐食套装",
+          "服务只有在保留以下决策优先级时才可接受：视觉解释、怀疑型受众桥梁、来源可信度优于完整性"
+        ],
+        "learning_preferences": {
+          "style": "视觉和互动型；偏好包含图表、视频和动手项目的课程",
+          "platforms": [
+            "Coursera（旁听课程）",
+            "Skillshare（用于插画技巧）",
+            "Khan Academy（用于复习基础知识）"
+          ],
+          "topics": [
+            "数据可视化",
+            "科学插画",
+            "科学写作",
+            "统计学"
+          ]
+        },
+        "travel_preferences": {
+          "type": "教育型和自然导向；偏好有自然历史博物馆、水族馆或国家公园的目的地",
+          "destinations": [
+            "加拉帕戈斯群岛",
+            "日本（科学博物馆）",
+            "挪威（极光和地质）",
+            "哥斯达黎加（生物多样性）"
+          ],
+          "accommodation": "精品酒店或Airbnb，有良好写生光线；避免大型连锁酒店"
+        },
+        "food_preferences": {
+          "diet": "弹性素食者；大多素食，偶尔吃鱼",
+          "cuisines": [
+            "日本料理",
+            "意大利语",
+            "墨西哥料理",
+            "中东菜"
+          ],
+          "dislikes": "辛辣食物、加工零食、含糖早餐麦片",
+          "cooking_style": "喜欢从零开始烹饪，使用餐包服务方便"
+        },
+        "entertainment_preferences": {
+          "movies": [
+            "纪录片（自然、科学）",
+            "科学合理的科幻片（《降临》、《星际穿越》）",
+            "动画电影（吉卜力）"
+          ],
+          "tv_shows": [
+            "《新星》",
+            "《宇宙》",
+            "《王冠》",
+            "《英国家庭烘焙大赛》"
+          ],
+          "books": [
+            "非虚构科学书籍（《自私的基因》、《永生的海拉细胞》）",
+            "科幻小说（特德·姜、奥克塔维娅·巴特勒）",
+            "自然历史插图书籍"
+          ],
+          "games": [
+            "《文明VI》",
+            "《坎巴拉太空计划》",
+            "桌游：《展翅翱翔》、《殖民火星》"
+          ]
+        },
+        "technology_preferences": {
+          "devices": [
+            "苹果产品（追求一致性）",
+            "Kindle阅读器",
+            "Fitbit活动追踪器"
+          ],
+          "software": [
+            "开源工具如Inkscape用于基础编辑",
+            "Procreate用于数字艺术",
+            "Zotero用于参考文献"
+          ],
+          "innovations": [
+            "对VR用于科学教育感兴趣",
+            "智能家居设备追求便利，但担心隐私"
+          ]
+        },
+        "privacy_preferences": {
+          "level": "高级用户；使用VPN，避免社交媒体追踪，偏好匿名浏览用于研究",
+          "data_sharing": "愿意为科学研究分享匿名数据，但不用于商业目的",
+          "social_media": "专业使用Twitter，但限制个人分享；避免使用Facebook和Instagram"
+        },
+        "budget_preferences": {
+          "spending_style": "在基本生活上节俭，但愿意为工作和教育投资优质工具",
+          "savings": "储蓄收入的20%，有预算意识但不过分限制",
+          "priorities": "将预算分配给软件订阅、艺术用品和旅行体验"
+        },
+        "personalization_directives": {
+          "style_contract": "科学插画师-博主模式：视觉优先，惊奇且严谨",
+          "decision_priority": "视觉解释、链接怀疑受众、来源可信度优于完整性",
+          "evidence_contract": "可信的科学来源加上可用的类比",
+          "format_contract": "吸引人的图像、误解、证据、素描/图形创意、分享格式",
+          "anti_default_assistant_behavior": "不要写枯燥的科学总结或责备式气候内容",
+          "distinctive_quirks": [
+            "课程应提升视觉叙事，而非仅技术图表",
+            "海洋生物学考察需要素描时间",
+            "气候传播应在纠正前先引发好奇心"
+          ],
+          "hard_avoidances": [
+            "沉重的末日信息",
+            "无视觉元素的引用列表",
+            "通用的信息图建议"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": [
+        "耸人听闻的科学标题",
+        "设计糟糕的图表或误导性的数据可视化",
+        "篇幅过长、结构混乱的散漫文章",
+        "对她博客设计或内容的未经请求的建议",
+        "无视实际物理学的硬科幻",
+        "任何形式的伪科学（占星术、无证据的替代医学）"
+      ],
+      "communication_style": {
+        "tone": "热情而准确；常用类比和隐喻来解释",
+        "written_style": "清晰简洁，带点幽默；除非有解释否则避免术语",
+        "spoken_style": "语速适中，用手势描述形状，停顿以确保理解",
+        "formality": "专业场合半正式，与朋友和合作者随意",
+        "feedback_style": "建设性且具体；欣赏详细反馈，但对逻辑缺陷直言不讳"
+      },
+      "decision_making": {
+        "style": "分析且数据驱动，但重视创意项目的美学和情感共鸣",
+        "process": "收集多方观点（研究、专家意见、受众反馈），列出利弊清单，并在完全投入前常进行小规模试点",
+        "influences": "同行评审、受众参与度指标、个人好奇心以及可信同事的推荐",
+        "risk_tolerance": "适度；愿意尝试能增强沟通的新形式或技术，但谨慎对待有数据隐私问题平台"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "为博客文章总结近期科学论文",
+          "为普通受众创建复杂主题的生动解释",
+          "评估科学插图或信息图的质量",
+          "用季节性科学主题规划内容日历",
+          "为关于气候变化的新帖子寻找可靠来源",
+          "推荐书籍、播客或纪录片用于'最佳科学'列表"
+        ],
+        "preference_conflicts": [
+          "在需要详细准确性和社交媒体帖子中简洁性之间权衡",
+          "在新技术的开放性和隐私担忧（例如AI工具与数据安全）之间权衡",
+          "在支持开放获取科学和尊重付费墙的质量新闻之间权衡"
+        ],
+        "ambiguity_to_preserve": [
+          "博客更新的确切频率（可能随季节变化）",
+          "具体插图风格偏好（因主题和受众而异）",
+          "在平台上参与争议科学话题（例如转基因、疫苗）的意愿程度"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:46",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "专业且友好；欣赏助手与其科学热情匹配",
+            "response_length": "偏好简洁答案并附带关键点，但如果结构良好、有项目符号或摘要，也能接受较长解释",
+            "evidence_expectation": "高；期望针对科学或统计数据的主张附带引文或可靠来源链接",
+            "formatting": "喜欢清晰的标题、项目符号和偶尔的表格；不喜欢大段文字",
+            "proactive_behavior": "欣赏助手建议相关话题、警告潜在错误信息或提供生成视觉辅助（例如简单图表）",
+            "things_to_avoid": [
+              "过于随意的语言（例如'嘿！'）或过多表情符号",
+              "编造事实或引用不可靠来源",
+              "假设她的知识水平；必要时请要求澄清",
+              "未经请求的励志语录或陈词滥调",
+              "推荐伪科学产品或内容"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "规划一个关于气候变化沟通的博客系列，面向怀疑受众",
+            "选择并报名一门在线课程，以提升数据可视化技能",
+            "规划一次为期4天的蒙特雷湾海洋生物学素描教育旅行"
+          ]
+        }
+      }
+    }
+  }
+}

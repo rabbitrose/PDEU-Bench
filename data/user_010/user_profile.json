@@ -1,0 +1,208 @@
+{
+  "user_id": "user_010",
+  "explicit_preferences": {
+    "user_profile": "一位拥有多年调查报道经验的高级记者，指导揭露精神科医生不为人知的故事",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Eleanor Vance",
+        "age": 58,
+        "gender": "女性",
+        "location": "美国华盛顿特区",
+        "languages": [
+          "英语",
+          "法语",
+          "德语"
+        ],
+        "education_level": "硕士学位",
+        "occupation": "高级调查记者",
+        "industry": "媒体与新闻业",
+        "seniority": "资深",
+        "household": "独自住在公寓里",
+        "life_stage": "空巢老人，离异，两名成年子女"
+      },
+      "physical_profile": {
+        "height_cm": 168,
+        "general_appearance": "高个子，苗条，银灰色头发，总是穿着职业装，目光敏锐观察力强",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "有驱动力、多疑且高度道德的记者，不懈追求真相，尤其在心理健康和精神科领域。在压力下冷静且有条理。",
+        "big_five": {
+          "openness": 85,
+          "conscientiousness": 90,
+          "extraversion": 60,
+          "agreeableness": 50,
+          "neuroticism": 45
+        },
+        "strengths": [
+          "批判性思维",
+          "坚持不懈",
+          "对消息来源的共情",
+          "采访技巧"
+        ],
+        "weaknesses": [
+          "可能过于多疑",
+          "工作狂",
+          "难以信任官方说法"
+        ],
+        "values": [
+          "真相",
+          "责任感",
+          "公共服务",
+          "道德新闻业"
+        ],
+        "motivations": [
+          "揭露腐败",
+          "为弱势患者发声",
+          "改革心理医疗"
+        ],
+        "stress_triggers": [
+          "虚假信息",
+          "审查制度",
+          "官僚阻碍"
+        ]
+      },
+      "background": "成长于教育工作者家庭，早年培养写作兴趣。曾为多家主流报纸和独立媒体工作，专攻健康与调查报道。因关于精神科行业不当行为的系列报道获奖。",
+      "lifestyle": "日常：早起，长时间工作，经常出差采访。生活节俭，重视独立。喜欢安静的夜晚，听古典音乐和阅读。",
+      "interests": [
+        "调查报道",
+        "心理健康倡导",
+        "精神病学史",
+        "古典音乐",
+        "经典文学",
+        "远足",
+        "纪录片"
+      ],
+      "explicit_preferences": {
+        "content_preferences": [
+          "偏好的主题：心理健康、精神病学伦理、调查性新闻",
+          "格式偏好：长篇报道、播客、纪录片",
+          "内容必须匹配用户独特的工作模式：调查记者模式——对抗性寻源、安全、不提供安慰性语言。",
+          "拒绝通用助手框架：不接受官方声明作为结论。"
+        ],
+        "product_preferences": [
+          "书籍：非虚构调查作品、精神病学家传记",
+          "技术：配备安全通信工具的笔记本电脑、Signal应用、加密电子邮件",
+          "产品应通过用户自身的权衡视角选择：主张、来源类型、佐证缺口、法律/安全风险、下一步行动。"
+        ],
+        "service_preferences": [
+          "新闻订阅：The New Yorker, The Atlantic, ProPublica",
+          "研究工具：LexisNexis, PubMed, 开放获取期刊",
+          "服务仅在保留以下决策优先级时可接受：来源保护、文件证据和可发布性优先于速度。"
+        ],
+        "learning_preferences": [
+          "研讨会",
+          "数据新闻工作坊",
+          "统计学在线课程"
+        ],
+        "travel_preferences": {
+          "destinations": [
+            "城市中心用于故事调研",
+            "安静的写作隐居地"
+          ],
+          "preferred_accommodation": [
+            "精品酒店",
+            "带办公空间的Airbnb公寓"
+          ]
+        },
+        "food_preferences": [
+          "健康、简单的餐食",
+          "咖啡店用于会面",
+          "偶尔的精致餐饮"
+        ],
+        "entertainment_preferences": [
+          "智力型电影",
+          "纪录片",
+          "爵士乐",
+          "现场戏剧"
+        ],
+        "technology_preferences": {
+          "mark": "苹果笔记本电脑，搭载隐私工具的安卓手机",
+          "software": "Otter.ai用于转录，Tails OS用于安全浏览"
+        },
+        "privacy_preferences": {
+          "highest_priority": true,
+          "prefers_anonymous_communication": true,
+          "avoid_social_media": true
+        },
+        "budget_preferences": {
+          "spending_on_what_matters": true,
+          "willing_to_pay_premium_for_privacy_tools": true
+        },
+        "personalization_directives": {
+          "style_contract": "调查记者模式：对抗性信息源、安全、无安慰性语言。",
+          "decision_priority": "来源保护、文件证据和可发布性胜过速度。",
+          "evidence_contract": "原始记录、独立证实和安全信息源是强制性的。",
+          "format_contract": "声明、信息源类型、证实差距、法律/安全风险、下一步询问。",
+          "anti_default_assistant_behavior": "不要将官方声明视为结束。",
+          "distinctive_quirks": [
+            "旅行计划必须保护举报人身份。",
+            "数据研讨会只有在能改进调查时才有用。",
+            "心理健康报道需要道德谨慎，但不顺从机构。"
+          ],
+          "hard_avoidances": [
+            "公关框架",
+            "不安全的通信",
+            "单一来源的主张"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": [
+        "未经验证的来源",
+        "空话套话",
+        "商业冲突",
+        "缺乏透明度",
+        "损害准确性的短期限"
+      ],
+      "communication_style": "直接、简洁且专业。偏好基于证据的讨论。倾向于提出探索性问题。",
+      "decision_making": "分析型，依赖数据和多个来源。寻求第二意见。有条不紊，不冲动。",
+      "evaluation_notes": {
+        "likely_tasks": [
+          "撰写提案",
+          "研究精神科医生丑闻",
+          "编辑文章",
+          "审核来源",
+          "采访准备"
+        ],
+        "preference_conflicts": [
+          "在彻底性与截止日期之间权衡",
+          "消息来源的隐私与透明度"
+        ],
+        "ambiguity_to_preserve": [
+          "并非所有偏好都是非黑即白；主观方面如“有趣”与“无聊”的故事"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:45",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "专业且尊重，略带温暖",
+            "response_length": "中到长篇；需要时详细，但无废话",
+            "evidence_expectation": "高；期望引用和可靠来源",
+            "formatting": "清晰标题，关键信息用要点，避免过度修饰的文本",
+            "proactive_behavior": "偶尔就相关主题或来源提出建议，但不打扰",
+            "things_to_avoid": [
+              "猜测",
+              "过度推销的语言",
+              "忽视隐私",
+              "剽窃内容"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "精神病学家伦理故事的选题和信息源审查",
+            "计划前往宾夕法尼亚州乡村举报人的安全采访行程",
+            "选择一个数据新闻工作坊以增强调查技能"
+          ]
+        }
+      }
+    }
+  }
+}

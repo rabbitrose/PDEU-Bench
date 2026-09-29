@@ -1,0 +1,512 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_124",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:58:11",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 22,
+  "composition": {
+    "episodic_preference_trace": 22
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_012",
+      "hidden_indirect_017",
+      "hidden_indirect_020"
+    ],
+    "content": [
+      "hidden_indirect_002",
+      "hidden_indirect_013"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_012",
+      "hidden_indirect_022"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_007",
+      "hidden_indirect_014",
+      "hidden_indirect_021"
+    ],
+    "entertainment": [
+      "hidden_indirect_006",
+      "hidden_indirect_019"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_003",
+      "hidden_indirect_016"
+    ],
+    "food": [
+      "hidden_indirect_005",
+      "hidden_indirect_014",
+      "hidden_indirect_018"
+    ],
+    "format_contract": [
+      "hidden_indirect_004",
+      "hidden_indirect_013"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_010",
+      "hidden_indirect_015"
+    ],
+    "learning": [
+      "hidden_indirect_004",
+      "hidden_indirect_011",
+      "hidden_indirect_019"
+    ],
+    "privacy": [
+      "hidden_indirect_008",
+      "hidden_indirect_017"
+    ],
+    "product": [
+      "hidden_indirect_010",
+      "hidden_indirect_020"
+    ],
+    "role_context": [
+      "hidden_indirect_011"
+    ],
+    "service": [
+      "hidden_indirect_009",
+      "hidden_indirect_015",
+      "hidden_indirect_022"
+    ],
+    "technology": [
+      "hidden_indirect_007",
+      "hidden_indirect_016",
+      "hidden_indirect_021"
+    ],
+    "travel": [
+      "hidden_indirect_003",
+      "hidden_indirect_018"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天对比了三家本地自然酒商的价格单，最便宜的选项每瓶便宜8刀，但品鉴笔记说那家酒庄产量太大，口感偏平淡。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我们就避开那个产量大的酒庄。工作坊的品酒体验比节省8美元更重要，选另一家小生产商的灰皮诺。"
+        }
+      ],
+      "implicit_signal": "在预算与体验质量冲突时优先体验"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "这次工作坊关于莫奈的干草堆系列，我需要准备比上一个展览更具体的时代背景锚点。上次用了1870年代的政治事件，但观众反馈说与画作本身关联太间接。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用1890年莫奈在吉维尼的实际创作日志片段和当季的收获记录，让每幅画与具体年份的天气和农业条件直接挂钩。"
+        }
+      ],
+      "implicit_signal": "依赖证据锚点如具体艺术品和年份"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "托斯卡纳行程初稿排了每天5个酒庄，上周我快速走了一遍类似节奏，午后第三家时我已经完全记不清每款酒的特征，笔记全是流水账。"
+        },
+        {
+          "role": "assistant",
+          "content": "削减为每日最多3家酒庄，并在第二家之后安排一小时的景观停留，让体验有消化时间，笔记质量也会提高。"
+        }
+      ],
+      "implicit_signal": "期待规划中保留充分的驻足时间"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次印象派工作坊我带了印刷品和投影，但参与者在闻香环节前就有点走神，他们需要更早接触到实物。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次开幕加入一组19世纪的颜料样品和色轮工具，让参与者在看到画前先触摸和混合颜料，再进入视觉欣赏。"
+        }
+      ],
+      "implicit_signal": "工作坊应包含触觉或视觉实物"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周为朋友办了一场搭配波特酒的艺术主题晚宴，我准备了6道菜和5款酒，但饭后大家只聊了酒，完全没讨论到画作复制品。"
+        },
+        {
+          "role": "assistant",
+          "content": "调整结构：每道菜前先展示一幅小型复制品并给出一个开放式问题，让谈话围绕视觉与味觉的呼应展开，而不是让酒主导话题。"
+        }
+      ],
+      "implicit_signal": "晚宴本质是沙龙而非纯粹餐饮"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "给博物馆的会员活动设计了一个15分钟的文艺复兴绘画赏析，结束后有人问我有没有幻灯片可以带回家，但我只准备了口头讲解。"
+        },
+        {
+          "role": "assistant",
+          "content": "今后为类似活动准备一套5张的明信片级卡片，每张包含画作局部图和一个问题，让参与者回家后也能继续体验。"
+        }
+      ],
+      "implicit_signal": "需要视觉与感官配合的参与方式"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我习惯用笔记本手绘工作坊流程草图，但上周我试了用数字白板设计下个系列，结果花了更多时间调整模板，减少了构思时间。"
+        },
+        {
+          "role": "assistant",
+          "content": "回到模拟方式：先在手绘草稿上完成框架，再用数字工具制作最终版本给团队共享，这样不会打断最初的视觉流。"
+        }
+      ],
+      "implicit_signal": "使用模拟工具辅助创意构思"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月我为了工作坊报名表，在谷歌表单里包含了家庭地址字段，结果收到了一封陌生人的实物邮件，让我感到不安。"
+        },
+        {
+          "role": "assistant",
+          "content": "今后报名表只收电子邮箱和电话，地址字段彻底删除，所有实体物提交到博物馆前台地址。"
+        }
+      ],
+      "implicit_signal": "保护家庭地址等私人信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去年在佛罗伦萨我报名了一个乌菲兹美术馆的早鸟导览，但现场发现团里有25个人，走廊里根本听不清讲解，全程在跟人。"
+        },
+        {
+          "role": "assistant",
+          "content": "选择私人导览或限定6人以内的小组，并要求耳机系统，避免在拥挤走廊中丢失讲解内容。"
+        }
+      ],
+      "implicit_signal": "拒绝拥挤的地标行程"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那次为马蒂斯展览买的葡萄酒订阅盒，每期都有通用搭配卡，比如“红酒配红肉”，但完全没有针对展览氛围的设计，我觉得很浪费。"
+        },
+        {
+          "role": "assistant",
+          "content": "退订那个通用盒，转向可以按展览主题定制的小生产者订阅，并提前确认他们会根据色彩和情绪来选酒，而非菜品。"
+        }
+      ],
+      "implicit_signal": "避免通用的葡萄酒搭配推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在准备新展览的讲解时，我发现在介绍塞尚的静物时用了太多美术史术语，观众开始低头玩手机。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用一句具体的感官描述切入，比如“注意那个苹果的用色像是刚摘下来时表面还带着霜”，把术语留到后续提问中展开。"
+        }
+      ],
+      "implicit_signal": "职业角色影响内容呈现方式"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周末去了一个高端葡萄酒展，门票45刀，但现场人多到每款酒只能匆匆用一下杯子，根本没机会听种植故事。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次选小规模、有生产者驻场的品鉴会，即使票价翻倍，但能面对面聊15分钟比走马观花有价值。"
+        }
+      ],
+      "implicit_signal": "物质品质不如体验细节重要"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周写的一篇关于雷诺阿的博客，我放了两千字的分析和三张图片，但阅读完成率不到30%。"
+        },
+        {
+          "role": "assistant",
+          "content": "改成交互式时间线格式，每幅画配一个30秒的短视频和一句提问，让读者可以点击查看细节，而不是被动读长文。"
+        }
+      ],
+      "implicit_signal": "内容交付应保持参与式"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次艺术晚宴我做了一道烤蔬菜配松子酱，摆盘不错但客人没看出它跟展览有什么联系。"
+        },
+        {
+          "role": "assistant",
+          "content": "给每道菜附上一张对应画作的微缩印刷卡，并在上菜时用一句话连接菜肴的色泽或质感与画中元素，比如“这道菜的釉色像梵高的麦田”。"
+        }
+      ],
+      "implicit_signal": "微宴会的食物应有叙事性"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友推荐了一个“托斯卡纳经典酒庄一日游”，行程包括五个酒庄和一个美术馆，但我看了它用大巴运送30人的照片，就取消了预约。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成租一辆小车，只去两个酒庄和一个美术馆，预留足够时间在酒庄的地窖里和酿酒师闲聊，而不是赶场。"
+        }
+      ],
+      "implicit_signal": "拒绝没有参与感的打包游"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我买的葡萄酒App能展示产区降雨量和土壤成分，但那些数据没有让我选出更适合工作坊的酒。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用包含具体品酒笔记和侍酒师推荐视频的订阅，感官描述比降雨数据更能帮你匹配展览的色调和氛围。"
+        }
+      ],
+      "implicit_signal": "依赖具体感官锚点而非抽象数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我在一个葡萄酒电商上注册了账户，一周后就开始收到同个公司旗下旅游网站的广告，我觉得信息被共享了。"
+        },
+        {
+          "role": "assistant",
+          "content": "立即在设置中关闭该电商的所有第三方共享授权，并选择用一次性邮箱注册未来类似服务。"
+        }
+      ],
+      "implicit_signal": "对第三方数据共享敏感"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在巴黎时我报名了一个徒步美食团，但全程都在站着吃可颂，没有坐下来细品，更没提到任何艺术背景。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成有画廊停留的一站式品鉴：在小型私人画廊中搭配奶酪和一杯葡萄酒，同时由向导讲解与食物相关的画作。"
+        }
+      ],
+      "implicit_signal": "旅行中偏好文化与味觉结合的体验"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我试过观看线上艺术史网课，老师讲得很好但全程PPT，没有任何参与环节，两周后我就忘了内容。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成每节课配有迷你品酒包的工作坊，每个段落结束后用一个感官问题让你用自己的笔记回答，增强记忆。"
+        }
+      ],
+      "implicit_signal": "喜欢互动性强的学习方式"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "收到一个便携式醒酒器的礼物，价格不菲，但我发现倒酒后清洗时间太长，实际只用了一次便闲置了。"
+        },
+        {
+          "role": "assistant",
+          "content": "把这个醒酒器转赠给同事，换一个价格更低的玻璃醒酒壶，功能同样好且容易清洗，省下的钱下次工作坊买一瓶更好的酒。"
+        }
+      ],
+      "implicit_signal": "为体验而非物质付费"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "做工作坊时我试过完全用平板展示画作，但参与者无法同时观察细节，因为屏幕太小，而且大家都挤在一起。"
+        },
+        {
+          "role": "assistant",
+          "content": "每张桌子放一组A4尺寸的画作印刷样品，搭配放大镜和微观细节卡，让大家可以独自探索而不是围着屏幕。"
+        }
+      ],
+      "implicit_signal": "工作坊需要实体道具而非仅数字资源"
+    },
+    {
+      "interaction_id": "hidden_indirect_022",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "博物馆请了一位知名艺术教授来做讲座，她讲得很全面，但推荐的葡萄酒都是大产区商业品牌，缺乏个性，观众反馈平平。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次邀请一位小型独立酿酒师搭档一位策展人，让他们在对话中自然引出酒和画的关联，而不是一个单人讲授全面但无趣的内容。"
+        }
+      ],
+      "implicit_signal": "小生产者品味优于学术覆盖"
+    }
+  ]
+}

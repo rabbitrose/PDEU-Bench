@@ -1,0 +1,472 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_227",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:16:46",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_008",
+      "hidden_indirect_017",
+      "hidden_indirect_019"
+    ],
+    "content": [
+      "hidden_indirect_003",
+      "hidden_indirect_012",
+      "hidden_indirect_018"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_011"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_019"
+    ],
+    "entertainment": [
+      "hidden_indirect_011"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_012"
+    ],
+    "food": [
+      "hidden_indirect_006",
+      "hidden_indirect_014"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_013"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_014",
+      "hidden_indirect_018",
+      "hidden_indirect_020"
+    ],
+    "learning": [
+      "hidden_indirect_002",
+      "hidden_indirect_010",
+      "hidden_indirect_013"
+    ],
+    "privacy": [
+      "hidden_indirect_007",
+      "hidden_indirect_015"
+    ],
+    "product": [
+      "hidden_indirect_009",
+      "hidden_indirect_017"
+    ],
+    "role_context": [
+      "hidden_indirect_009",
+      "hidden_indirect_020"
+    ],
+    "service": [
+      "hidden_indirect_008",
+      "hidden_indirect_016"
+    ],
+    "technology": [
+      "hidden_indirect_007",
+      "hidden_indirect_015"
+    ],
+    "travel": [
+      "hidden_indirect_005",
+      "hidden_indirect_016",
+      "hidden_indirect_020"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买的那套法餐课程，第三周后就没碰了。月费还在扣，但每次想到要补前面漏掉的就觉得累。"
+        },
+        {
+          "role": "assistant",
+          "content": "那先取消下月自动续费，然后把前三周核心动作拆成一张便签，用午休结束前15分钟完成一个反馈点。"
+        }
+      ],
+      "implicit_signal": "优先可坚持的练习，而非一次高投入"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "试了上次推荐的口语App，每天10分钟练习，但不知道怎么才算进步。今天还是卡在同一个小对话上。"
+        },
+        {
+          "role": "assistant",
+          "content": "把那段小对话录下来，明天练之前先听今天的版本，标记出比昨天更顺利的两个音节作为反馈点。"
+        }
+      ],
+      "implicit_signal": "需要可观察的进步指标，而非笼统描述"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个Python教程又发了一整章列表，我已经有公司旧版清单了，用不上。堆着反而烦。"
+        },
+        {
+          "role": "assistant",
+          "content": "今天练习：从你的旧版清单里选一个最常卡住的函数，写三行测试代码。反馈点：看是否能不用文档直接运行。"
+        }
+      ],
+      "implicit_signal": "不重复冗余资源，只给可执行的下一条"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次游泳课因为设备发热，心率不准，我一直以为自己体力下降。下课后才发现是手表问题，但课已经过去了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次先用手测15秒心率再开始，设备数据作为参考。今天的练习以体感为准，不计入反馈点。"
+        }
+      ],
+      "implicit_signal": "避免引发自我怀疑的环节"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次徒步同行的人临时退出，我一个人走到一半发现地图离线没更新。在山上用两格信号重新下载，慌了一路。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次在出发前把离线地图截屏到相册，多存18%电量给导航。这条路线加一个午休结束前的Check-in缓冲段。"
+        }
+      ],
+      "implicit_signal": "偏好留出缓冲的计划"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "中午点了那家新开的黎巴嫩卷，结果油太大，下午两小时都犯困，第二个会议完全没跟上。"
+        },
+        {
+          "role": "assistant",
+          "content": "明天早餐桌边备一份生菜包蛋饼，提前带好。午休结束前如果饿再加一小份酸奶。"
+        }
+      ],
+      "implicit_signal": "吃饭不能打断节奏"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个日程同步App要求读取通讯录才能用共享日历功能。我只想同步家庭日历，不需要推荐联系人。"
+        },
+        {
+          "role": "assistant",
+          "content": "用系统自带日历共享家庭日程，另开一个禁通讯录权限的纯事件列表App做个人记录。"
+        }
+      ],
+      "implicit_signal": "默认使用最小权限方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "订了三个月云端笔记会员，今天才发现自动续费价格翻倍。取消按钮藏在三级菜单里，还要求填理由。"
+        },
+        {
+          "role": "assistant",
+          "content": "发一封退订邮件抄送自己，标记为已取消。切换到一个支持导出Markdown的本地笔记做日常练习记录。"
+        }
+      ],
+      "implicit_signal": "拒绝隐形长期成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "买过两个不同牌子的蓝牙耳机，一个半年后电池不行，一个连接不稳定。现在每次开会前要先重启耳机。"
+        },
+        {
+          "role": "assistant",
+          "content": "选一款可换电池的有线耳机作备用，把那个电池不行的寄回收，拿回19块抵扣券。"
+        }
+      ],
+      "implicit_signal": "选择工具时考虑长期维护和替代成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "英语阅读计划卡在第四周，每天看同一篇技术博客但读完就忘。没反馈点，继续不下去。"
+        },
+        {
+          "role": "assistant",
+          "content": "今天只读前三段，用自己的话写成三句笔记作为反馈点。明天复述这三句后再读下一段。"
+        }
+      ],
+      "implicit_signal": "需要小里程碑保持动力"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周末本来想去那个独立游戏展，但看到参展商名单有41家，而且必须提前注册入场时间。同行的人临时退出，我也不想一个人逛那么久。"
+        },
+        {
+          "role": "assistant",
+          "content": "只选三家最感兴趣的展位，每站最多40分钟。如果第一家排队超过15分钟就直接去咖啡区写笔记，不硬撑。"
+        }
+      ],
+      "implicit_signal": "娱乐选择必须可快速撤退"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那本产品设计书附录里全是推荐书单，但没说为什么选这些书。我现在没法判断是否适合自己当前的项目。"
+        },
+        {
+          "role": "assistant",
+          "content": "从附录书单里选一本有试读章节的，今天读一页，然后写下其中一个观点跟自己项目的具体差异。"
+        }
+      ],
+      "implicit_signal": "拒绝表面知识"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天的日语练习写了一大段句子，但不知道哪里错了。没模板，自己也不知道复盘该看什么。"
+        },
+        {
+          "role": "assistant",
+          "content": "今天练习：写三句包含昨天学过的两个语法点。反馈点：对照原句检查主谓结构。下次复盘时只改第一个错误。"
+        }
+      ],
+      "implicit_signal": "习惯固定的学习结构"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天晚饭吃了一大份麻辣烫，结果凌晨胃里反酸，第二天早上直接废掉，日程全乱。"
+        },
+        {
+          "role": "assistant",
+          "content": "今晚备一份清汤蔬菜面，控制辣度在微辣以内。早餐桌边放一包苏打饼干，如果胃还是不舒服就下午再补任务。"
+        }
+      ],
+      "implicit_signal": "避免因食物影响当日执行"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个健身App让我输入身高体重生日还要求相册权限，说用来生成报告。我只想记录当天运动时长。"
+        },
+        {
+          "role": "assistant",
+          "content": "用电话自带运动记录只保留时长数据，把健身App账户设为临时邮箱，相册权限关闭。"
+        }
+      ],
+      "implicit_signal": "默认开启隐私保护和使用独立账户"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "订了一个周末民宿，入住前两小时房东说水管坏了，但退款要等72小时，还没有替代方案。"
+        },
+        {
+          "role": "assistant",
+          "content": "找一家支持当天免费取消的连锁酒店，优先选带独立卫浴和安静街道的。把旅行保险可选加急取消条款记到旧版清单里。"
+        }
+      ],
+      "implicit_signal": "服务需要明确取消规则和响应速度"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想换那台游戏本，但现款还能用，只是风扇声音大。促销还剩两天，不确定是否真需要。"
+        },
+        {
+          "role": "assistant",
+          "content": "先清灰看看效果。如果还不行，等到下月预算定了再考虑，促销价不是必须花费。"
+        }
+      ],
+      "implicit_signal": "保守预算并区分可推迟花费"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "收到一份行业趋势报告，全是宏观统计，没有一条能直接用在工作复盘里。看完更不知道下一步做什么。"
+        },
+        {
+          "role": "assistant",
+          "content": "从中找一条与当前项目相关的趋势，今天写一个如果它成真会怎样影响下周会议的准备点。其他全部跳过。"
+        }
+      ],
+      "implicit_signal": "拒绝没有实践路径的建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在找一款家庭记账软件，搜到18个对比页面，越看越不知道选哪个。最后什么都没装。"
+        },
+        {
+          "role": "assistant",
+          "content": "先排除需要通讯录权限和第三方广告的，再从剩下5个里选一个支持CSV导出的，今天只记三笔支出试试。"
+        }
+      ],
+      "implicit_signal": "被过多选项拖慢决策时，用硬约束缩小范围"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周带家人去那个网红观景台，排队两小时，上去待了15分钟就被工作人员赶，因为是预约时段。回家路上小孩说一点都不好玩。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次换一个街区小公园加本地博物馆，不需要预约，有树荫和长椅。出行前查好当天的公厕位置作为最低保障。"
+        }
+      ],
+      "implicit_signal": "不把热门景点当作默认最佳"
+    }
+  ]
+}

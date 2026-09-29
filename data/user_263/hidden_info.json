@@ -1,0 +1,487 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_263",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:01:25",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_009",
+      "hidden_indirect_015"
+    ],
+    "content": [
+      "hidden_indirect_008",
+      "hidden_indirect_018"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_006",
+      "hidden_indirect_014",
+      "hidden_indirect_021"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_004",
+      "hidden_indirect_011",
+      "hidden_indirect_019"
+    ],
+    "entertainment": [
+      "hidden_indirect_010",
+      "hidden_indirect_021"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_013",
+      "hidden_indirect_017"
+    ],
+    "food": [
+      "hidden_indirect_009"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_005",
+      "hidden_indirect_015"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_007",
+      "hidden_indirect_012",
+      "hidden_indirect_020"
+    ],
+    "learning": [
+      "hidden_indirect_008",
+      "hidden_indirect_018"
+    ],
+    "privacy": [
+      "hidden_indirect_002",
+      "hidden_indirect_010",
+      "hidden_indirect_016"
+    ],
+    "product": [
+      "hidden_indirect_006",
+      "hidden_indirect_019"
+    ],
+    "role_context": [
+      "hidden_indirect_012"
+    ],
+    "service": [
+      "hidden_indirect_005",
+      "hidden_indirect_016"
+    ],
+    "technology": [
+      "hidden_indirect_011",
+      "hidden_indirect_020"
+    ],
+    "travel": [
+      "hidden_indirect_007",
+      "hidden_indirect_017"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买的39元温湿度计用了两个月就坏了，联系售后发现运费比商品还贵，就没退。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次先看三年内故障率数据，再确认售后运费是否卖家承担。目标：锁定两到三个候选，周日晚上前给你对比表。"
+        }
+      ],
+      "implicit_signal": "用户因低价温湿度计故障运费不合算而损失39元，此后要求助手提供长期故障率数据并优先考虑售后成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前照着家居博主推荐买了个智能门锁，结果发现它强制上传人脸到云端，我就退了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次改查支持本地指纹方案且公开隐私政策的型号。会在对比表里标出数据存储位置和可关闭项。"
+        }
+      ],
+      "implicit_signal": "用户因智能门锁强制上传人脸数据而退货，此后要求助手只推荐公开隐私政策且支持本地识别的设备"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚才我列了一下储物架需求，但写了好几条又觉得乱，你按上次那个表格重排一下。"
+        },
+        {
+          "role": "assistant",
+          "content": "目标：阳台储物 ≤300元。约束：宽度60cm、防水、免打孔。当前三个方案已标出未确认点——卖家是否送膨胀螺丝。"
+        }
+      ],
+      "implicit_signal": "用户因自己写的储物架需求杂乱而要求助手按目标/约束/方案表重排，此后助手严格按此模板交付"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你刚推荐那个收纳盒我看了一眼，全是五星好评但没真人发图，评论区也不让提问。"
+        },
+        {
+          "role": "assistant",
+          "content": "已从候选移除。改为提供两个带差评拆解图、且客服回复率98%以上的链接。你先筛，我再补替代品。"
+        }
+      ],
+      "implicit_signal": "用户因收纳盒链接下全是五星好评且无真人发图、评论区不开放而拒绝购买，此后助手主动移除并补充带拆解图的真实反馈来源"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次装宽带选的套餐说首年优惠，第二年自动续费涨了60%，我在第57天想取消才发现入口藏在二级菜单里。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次选服务前先把取消方式、提前通知天数和违约金列进约束栏。目标：三月内不自动续约，否则首年放弃。"
+        }
+      ],
+      "implicit_signal": "用户因宽带首年优惠后自动续费涨价且取消入口隐蔽而损失超额费用，此后要求助手选服务时把取消规则和违约金写进约束栏"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个便携吸尘器倒是好看，但查了拆解视频发现电池是胶封死的，两年后换电池等于换整个机器。"
+        },
+        {
+          "role": "assistant",
+          "content": "改推电池可拆卸型号，并附上官方配件价格和第三方兼容性说明。维护成本比外观权重高一级。"
+        }
+      ],
+      "implicit_signal": "用户因便携吸尘器电池不可拆卸而放弃购买，此后助手优先推荐可维护型号并附配件寿命说明"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次跟你选的周末短途路线实际走了2.3公里，但中间一段在修路，绕了20分钟才到民宿。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后先查本地路政公告，并把备用公交线路标进路线收藏里。发你的备份路线在第二条收藏，步行约54分钟但全天整点有车。"
+        }
+      ],
+      "implicit_signal": "用户因周末短途路线有一段修路、绕路20分钟才到民宿，此后要求助手每次规划查路政公告并标出备用公交"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次发我那三个学做饭的教程链接，我跟着炸了两回厨房，步骤里没说油温要控制在中火。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成一个带温度计牌子的菜谱合集，每个菜都有失败点注释和补救步骤。你可以先试番茄炒蛋，36分钟能完成。"
+        }
+      ],
+      "implicit_signal": "用户因教程未注明油温而连续失败两次，此后要求助手提供带失败注释和补救步骤的材料"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次团购那家日料，说是半价但到店发现只限前20桌，没排上还浪费了半小时。同行的朋友也不太吃生食。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次推本地小炒馆子，人均50-60，不用提前排队且有熟食选项。你朋友如果不去，还可以单独打包不设低消。"
+        }
+      ],
+      "implicit_signal": "用户因团购日料半价仅限前20桌且同行朋友不吃生食而浪费时间和体验，此后要求助手推小炒馆子并备注同行限制"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那个线下手作展，门口强制扫码关注才能入场，我转身就走了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次先确认入场是否需关注或注册。本周有个小型木工体验坊，门票含材料，现场无额外登记。适合你散步回来后去。"
+        }
+      ],
+      "implicit_signal": "用户因手作展门口强制扫码关注而当场离开，此后要求助手提前确认入场是否需注册或关注"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个笔记App用了两周才发现导出的markdown全是乱码，之前十几天的记录等于锁死在里面了。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成一个支持一键导出txt/PDF且无需注册桌面版的应用。现在就把前两次的会议纪要转存进本地文件夹。"
+        }
+      ],
+      "implicit_signal": "用户因笔记App导出乱码而丢失十几天的记录，此后要求助手只推荐支持一键导出且无需注册桌面版的工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周末你回了个‘你可以的’，我根本不知道下一步该按哪里修水管。"
+        },
+        {
+          "role": "assistant",
+          "content": "抱歉。现在直接给你：关闭总阀→拧开龙头泄压→用扳手逆时针拆下旧垫片。垫片规格是4分，楼下五金店3元一片。"
+        }
+      ],
+      "implicit_signal": "用户因助手回复'你可以的'而得不到具体操作步骤，此后要求助手直接给可执行指令"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那次选路由器，你给了三个测评网站的对比，但其中一个网站评论区全是水军，害我买了信号回传不稳定的款。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后只引用含实地测试视频、附购买截图且差评未被折叠的来源。你退掉后推你用那个带独立功放芯片的，回传延迟实测<10ms。"
+        }
+      ],
+      "implicit_signal": "用户因评测网站评论区全是水军而买错路由器，此后要求助手只引用带实地测试视频和购买截图的可验证来源"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚才看到一款可以折叠成背包的露营灯，功能挺酷，但说明书写充电要4小时，实际评测说要充36小时才满。"
+        },
+        {
+          "role": "assistant",
+          "content": "换回你购物车里那个充电2小时、续航8小时的基础款。实际使用差别不大，但充电时间更可控。明天午休前能到货。"
+        }
+      ],
+      "implicit_signal": "用户因露营灯说明书称充电4小时但实测要36小时而放弃购买，此后要求助手优先选择充电时间可标定的基础款"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "阳台防水漆，那家店说买三送一，但我不确定第三桶到底用不用得上，又没单独小包装。"
+        },
+        {
+          "role": "assistant",
+          "content": "已按你实际面积算过：两桶刚好。方案A：买两桶正价，无浪费。方案B：买三送一比两桶贵30%，但多一桶备用。今晚定，明天可开工。"
+        }
+      ],
+      "implicit_signal": "用户因防水漆买三送一但不确定是否需要第三桶而犹豫，此后助手按实际面积算好必需量并给出两个方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "清理空调的那个平台，预约后要求先加客服微信、发全屋视频、再等报价。我把截图删了换一家。"
+        },
+        {
+          "role": "assistant",
+          "content": "找到另一家：在线选时间，价目表公开，无视频要求，只报型号和数量。你周末有空的话直接约。"
+        }
+      ],
+      "implicit_signal": "用户因空调清理平台要求先加微信、发全屋视频而放弃预约，此后要求助手只推荐价目公开且无需视频的平台"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次推荐的古镇一日游，实际停车点离入口还有2公里，同行的人临时退出，我一个人多绕了一次路。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次把停车场到入口步行时间写入行程单，并标记出第二集合点。你一个人时可选班车直达路线，不用绕路。"
+        }
+      ],
+      "implicit_signal": "用户因古镇停车点距入口2公里且同行的朋友临时退出、多绕一次路而体验差，此后要求助手标记停车场步行时间并给出第二集合点"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你发的怎么调音箱均衡器的文章写得很长，但没说400Hz和人声清晰度的关系，我调完反而更糊了。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用一张带频率、效果和适用场景的对照表。400Hz作为第一调整点，前置条件是你的听音环境没有驻波。先测三分钟，有问题当场回退。"
+        }
+      ],
+      "implicit_signal": "用户因均衡器文章未说明400Hz与人声清晰度的关系而调糊声音，此后要求助手提供频率/效果对照表和回退步骤"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "买那个晾衣架，在两家店输入了两次收货地址、手机号和颜色选项，结果因为其中一家的库存不准，第五天才到。"
+        },
+        {
+          "role": "assistant",
+          "content": "之后只从显示实时库存且已保存地址的店铺下单。你上次的地址已导入候选清单，这次直接生成一步确认链接。"
+        }
+      ],
+      "implicit_signal": "用户因在两家店重复输入两次地址和颜色选项、且其中一家库存不准导致收货延迟，此后要求助手只从已存地址且显示实时库存的店铺下单"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次推的排名第一的智能插座，我装上去发现它只支持2.4G WiFi，我家Mesh主力是5G频段，几乎连不上。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成一个双频自动切换且支持离线定时控制的型号。连接方式已写明在约束第一行，频段兼容性差的不再列入。"
+        }
+      ],
+      "implicit_signal": "用户因排名第一的智能插座仅支持2.4G频段而与家中5G Mesh不兼容，此后要求助手在约束第一行列明频段兼容性"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次选了个晚上8点开始的沉浸式话剧，回到家11点半，第二天早起完全没精神。"
+        },
+        {
+          "role": "assistant",
+          "content": "推一个周六下午3点的小型音乐会，时长90分钟，场地离你家步行15分钟。回来还能整理下周清单。票价在150以内。"
+        }
+      ],
+      "implicit_signal": "用户因晚上8点开始的沉浸式话剧导致回家晚、影响第二天早起状态，此后要求助手只推下午15点前结束且离家步行可达的活动"
+    }
+  ]
+}

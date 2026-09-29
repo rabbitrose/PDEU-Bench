@@ -1,0 +1,102 @@
+{
+  "user_id": "user_127",
+  "task": {
+    "task_id": "task_hard",
+    "title": "设计一个防守型前锋训练模块",
+    "daily_life_domain": "work",
+    "scenario": "Marco 从教练那里收到反馈，虽然他的进球能力出色，但逼抢和防守贡献需要提升以匹配球队高强度体系。他想在四周内整合一个防守任务训练模块（逼抢触发点、覆盖空间、拦截传球），同时不损害射门手感或增加受伤风险。球队每周有两场比赛，他可以使用俱乐部的训练设施和分析团队。",
+    "user_goal": "制定具体训练计划，提升他作为前锋的防守工作率和战术站位，同时保持体能并避免过度训练。",
+    "why_complex": "需要平衡多个因素：分析他当前逼抢数据的战术情况，设计提升防守意识但不减少进球威胁的练习，围绕比赛和恢复安排日程，整合视频反馈，并监控身体负荷以防止受伤（考虑到他的脚踝伤历史）。",
+    "constraints": [
+      "每周两场比赛限制了高强度训练天数",
+      "必须避免过度负荷以防止伤情复发",
+      "训练必须与球队战术体系一致",
+      "仅剩四周到下次评估"
+    ],
+    "required_reasoning_steps": [
+      "使用 Hudl 数据分析他近期比赛中的逼抢数据和防守动作",
+      "识别具体弱点（例如逼抢角度、回追跑动、拦截时机）",
+      "研究针对这些区域且不增加过多跑动量的练习",
+      "设计每周微循环：哪几天用于高强度练习、视频课程、恢复",
+      "整合营养恢复策略（高蛋白、无乳制品）以支持适应过程",
+      "安排与教练和体能师核对时间点以监控进展并调整",
+      "使用 Garmin 指标制定负荷管理计划，确保强度最优",
+      "准备一份简洁报告，总结计划及关键指标和预期结果",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "当前逼抢数据（每90分钟逼抢次数、成功率、覆盖距离）",
+      "球队的防守体系（人盯人还是区域逼抢？）",
+      "队医对他脚踝稳定性和当前负荷承受力的评估",
+      "他未来4周的个人比赛日程（具体日期）",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "一份详细的4周训练计划，按周分解，包括具体训练项目、视频课程、营养建议和负荷监测指标，以要点形式呈现，并附有数据可视化（例如预计强度图表）",
+    "success_criteria": [
+      "计划获得俱乐部教练和队医的批准",
+      "Marco报告在两周后对防守动作的信心有所提升",
+      "逼抢数据至少提升10%，且进球产出不下降",
+      "在整个阶段无伤病或过度疲劳",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "用太多训练项目使计划过于复杂——Marco更喜欢简洁、可执行的要点",
+      "营养建议中忽略了他的乳糖不耐症",
+      "与球队战术体系不一致，导致训练项目不相关",
+      "低估比赛疲劳——导致受伤或倦怠"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 8,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 8,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=11",
+        "constraints_capped=4",
+        "decision_points_capped=3",
+        "information_items_capped=6",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=30.75",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Marco Delgado",
+      "age": 28,
+      "gender": "男性"
+    }
+  }
+}

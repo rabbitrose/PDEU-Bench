@@ -1,0 +1,325 @@
+{
+  "user_id": "user_026",
+  "explicit_preferences": {
+    "user_profile": "专注于政府事务的记者，报道广泛的政策议题",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Elena Martinez",
+        "age": 38,
+        "gender": "女性",
+        "location": "美国华盛顿特区",
+        "languages": [
+          "英语",
+          "西班牙语"
+        ],
+        "education_level": "公共政策硕士学位",
+        "occupation": "高级记者",
+        "industry": "新闻媒体",
+        "seniority": "资深",
+        "household": "独居",
+        "life_stage": "职业生涯稳定，无家属负担"
+      },
+      "physical_profile": {
+        "height_cm": 168,
+        "general_appearance": "职业化、整洁的着装，戴眼镜，常随身携带笔记本和录音机",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "严谨、善于分析且有进取心的记者，对细节敏锐，热衷于问责",
+        "big_five": {
+          "openness": 85,
+          "conscientiousness": 90,
+          "extraversion": 55,
+          "agreeableness": 40,
+          "neuroticism": 35
+        },
+        "strengths": [
+          "细致的研究",
+          "出色的写作技巧",
+          "批判性思维",
+          "人脉网络"
+        ],
+        "weaknesses": [
+          "对自身工作过于挑剔",
+          "对模棱两可的情况缺乏耐心",
+          "倾向于长时间工作"
+        ],
+        "values": [
+          "真相",
+          "准确性",
+          "公平",
+          "透明"
+        ],
+        "motivations": [
+          "告知公众",
+          "对权力进行问责",
+          "揭露系统性问题"
+        ],
+        "stress_triggers": [
+          "虚假信息",
+          "审查制度",
+          "紧迫的截止日期",
+          "不配合的消息源"
+        ]
+      },
+      "background": {
+        "early_life": "在德克萨斯州的双语家庭长大，早年即对政治和时事产生兴趣。",
+        "education": "顶尖大学新闻学学士和公共政策硕士。",
+        "career_history": "从地方记者起步，后调入华盛顿特区报道国家政治，现为一家主流媒体机构的高级通讯记者。",
+        "key_life_events": [
+          "报道过三届总统大选",
+          "因调查系列报道获得新闻奖项",
+          "就新闻自由在国会听证会上作证"
+        ]
+      },
+      "lifestyle": {
+        "daily_routine": "早间新闻简报、采访、写作、晚间政策活动或在家工作",
+        "health_and_fitness": "适度锻炼：晨跑、偶尔瑜伽；注重饮食但依赖咖啡",
+        "social_life": "与消息源和同事的社交活动频繁；密友圈较小",
+        "work_life_balance": "经常模糊工作与生活的界限；周末尝试断开工作联系但经常仍在工作",
+        "financial_habits": "收入舒适，投资于优质科技产品和订阅，消费适度"
+      },
+      "interests": {
+        "hobbies": [
+          "阅读非虚构类作品",
+          "纪录片",
+          "收听播客（政治分析类）",
+          "下国际象棋"
+        ],
+        "intellectual_pursuits": [
+          "参与政策辩论",
+          "进行事实核查",
+          "数据新闻"
+        ],
+        "cultural_interests": [
+          "参观博物馆",
+          "剧院",
+          "观看政治讽刺节目"
+        ],
+        "community_involvement": [
+          "支持新闻自由组织",
+          "指导年轻记者"
+        ]
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "体裁：政策分析、调查性新闻、政治非虚构、长篇文章",
+          "主题：政府事务、立法、监管政策、竞选资金",
+          "格式：深度报道、专栏文章、播客、纪录片",
+          "消息源：《纽约时报》、《华盛顿邮报》、《大西洋月刊》、《ProPublica》",
+          "内容必须符合此用户独有的风格：高级通讯记者模式——中立但带有怀疑态度，以记录文件为先。",
+          "拒绝通用助手型设定：不要撰写倡导性文案，也不要在缺乏可审计性的情况下信任AI工具。"
+        ],
+        "product_preferences": [
+          "技术：高性能笔记本电脑、降噪耳机、安全智能手机",
+          "办公室：站立式办公桌、人体工学椅、良好照明",
+          "订阅：新闻媒体、LexisNexis、VPN服务",
+          "应通过用户自身的权衡视角选择产品：主导、记录、利益相关方、未解问题、归档路径。"
+        ],
+        "service_preferences": [
+          "流媒体：播客应用、纪录片流媒体（如CuriosityStream）",
+          "生产力：云存储、加密通信（Signal）、笔记应用（Evernote）",
+          "专业：事实核查数据库、媒体监控工具",
+          "只有在保留以下决策优先级时，服务方可接受：法规文件、消息源平衡和编辑室实用性优于便利性。"
+        ],
+        "learning_preferences": {
+          "formats": [
+            "工作坊",
+            "在线课程",
+            "参加会议"
+          ],
+          "subjects": [
+            "政策分析",
+            "数据新闻",
+            "媒体法律"
+          ]
+        },
+        "travel_preferences": {
+          "purpose": [
+            "与工作相关的报道出差",
+            "新闻发布会"
+          ],
+          "style": [
+            "高效、不铺张",
+            "偏好直飞航班"
+          ],
+          "destinations": [
+            "华盛顿特区地区",
+            "进行政策报道的州首府"
+          ]
+        },
+        "food_preferences": {
+          "cuisine": [
+            "健康、快食餐食",
+            "沙拉",
+            "咖啡馆"
+          ],
+          "dietary": [
+            "无饮食限制，但避免丰盛的午餐"
+          ],
+          "dining": [
+            "偏好安静的咖啡馆用于工作",
+            "商务晚餐"
+          ]
+        },
+        "entertainment_preferences": {
+          "tv_movies": [
+            "政治剧（如《白宫风云》）",
+            "讽刺节目（如《每日秀》）"
+          ],
+          "music": [
+            "独立摇滚",
+            "古典音乐用于专注"
+          ],
+          "books": [
+            "非虚构政策著作",
+            "传记"
+          ],
+          "games": [
+            "国际象棋",
+            "策略棋盘游戏"
+          ]
+        },
+        "technology_preferences": {
+          "devices": [
+            "MacBook Pro",
+            "强加密iPhone"
+          ],
+          "software": [
+            "安全通讯",
+            "VPN",
+            "广告拦截器"
+          ],
+          "innovation": [
+            "对AI研究感兴趣但怀疑偏见"
+          ]
+        },
+        "privacy_preferences": {
+          "level": "非常高",
+          "practices": [
+            "使用加密邮件",
+            "极少使用社交媒体",
+            "避免被追踪"
+          ]
+        },
+        "budget_preferences": {
+          "spending_priority": [
+            "高质量工作工具",
+            "可靠的订阅服务"
+          ],
+          "splurge_on": [
+            "Good coffee",
+            "高品质耳机"
+          ],
+          "save_on": [
+            "时尚",
+            "豪华旅行"
+          ]
+        },
+        "personalization_directives": {
+          "style_contract": "高级记者模式：中立但怀疑，文件优先。",
+          "decision_priority": "监管文件、来源平衡和编辑部实用性胜过便利性。",
+          "evidence_contract": "主要文件和可靠渠道，尽可能附上链接。",
+          "format_contract": "导语、文件、利益相关者、未解答问题、归档路径。",
+          "anti_default_assistant_behavior": "不要撰写 advocacy copy 或信任没有可审计性的AI工具。",
+          "distinctive_quirks": [
+            "AI研究助手需要来源和引文可追溯性。",
+            "报道行程应最大化采访和文件数量。",
+            "EPA/投票法报道必须保持政策机制清晰。"
+          ],
+          "hard_avoidances": [
+            "活动家框架",
+            "没有来源的AI生成摘要",
+            "当政策为核心时，软化人情味偏离"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "content": [
+          "点击诱饵",
+          "煽情主义",
+          "未经核实的说法"
+        ],
+        "products": [
+          "低质量电子产品",
+          "不可靠的软件"
+        ],
+        "services": [
+          "缓慢的客户支持",
+          "侵入性广告"
+        ],
+        "behaviors": [
+          "歪曲事实",
+          "缺乏透明度",
+          "奉承"
+        ]
+      },
+      "communication_style": {
+        "tone": "专业、直接、简洁",
+        "vocabulary": "精确，除非解释否则避免行话",
+        "formality": "写作正式，对话稍放松",
+        "humor": "冷幽默，偶尔使用",
+        "conflict": "坚定但尊重，基于证据"
+      },
+      "decision_making": {
+        "approach": "分析性，数据驱动，寻求专家意见",
+        "speed": "深思熟虑但能在压力下快速决定",
+        "influences": [
+          "证据",
+          "可靠来源",
+          "长期影响"
+        ],
+        "delegation": "信任具有特定专业知识的同事"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "撰写关于政策变化的文章",
+          "核实政治家的声明",
+          "分析立法影响",
+          "采访准备"
+        ],
+        "preference_conflicts": [
+          "深度与速度",
+          "全面与简洁",
+          "怀疑与开放"
+        ],
+        "ambiguity_to_preserve": [
+          "具体政策领域可能变化",
+          "未明确的政治倾向",
+          "特定来源通常保密"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:45",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "专业、中立、避免奉承",
+            "response_length": "详细但简洁；偏好用要点列出事实",
+            "evidence_expectation": "始终引用可靠来源；尽可能提供链接",
+            "formatting": "使用清晰的标题、要点、表格进行比较",
+            "proactive_behavior": "建议角度，核实事实陈述，警告未经核实的信息",
+            "things_to_avoid": [
+              "有偏见的语言",
+              "无支持的声明",
+              "过于随意的语气",
+              "模糊的引用"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "调查新的EPA排放标准",
+            "评估AI驱动的研究助手工具",
+            "计划前往奥斯汀报道德克萨斯州投票法故事"
+          ]
+        }
+      }
+    }
+  }
+}

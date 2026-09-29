@@ -1,0 +1,101 @@
+{
+  "user_id": "user_093",
+  "task": {
+    "task_id": "task_hard",
+    "title": "策划社区孕产妇健康意识展",
+    "daily_life_domain": "work",
+    "scenario": "Elena 的非营利组织将于 6 周后在奥斯汀举办一场小型社区孕产妇健康意识展，目标人群是新妈妈和准妈妈。修订后任务聚焦首轮落地包：确定 1 个家庭友好场地、2-3 位循证健康嘉宾、1 页双语宣传材料、隐私最小化注册流程和当天基础后勤，不再要求完整供应商网络或大规模执行方案。",
+    "user_goal": "形成一份可在 6 周内推进的小型活动落地包，既能体现循证和双语包容，也不会超过 Elena 每周有限的规划时间。",
+    "why_complex": "任务仍需兼顾健康证据、双语沟通、家庭友好空间和隐私合规，但范围从完整展会执行压缩为可审核的最小可行活动方案。",
+    "constraints": [
+      "总预算仍为 5,000 美元，但本轮只需列出前三项预算大头和预留金。",
+      "活动在 6 周后举行，本轮只确定日期窗口和首选场地。",
+      "材料必须英西双语，但只需完成宣传页和注册说明草案。",
+      "信息必须来自循证来源，不纳入伪科学或商业化疗法。",
+      "Elena 每周规划时间控制在 10 小时以内。"
+    ],
+    "required_reasoning_steps": [
+      "锁定活动核心主题为产后警讯识别、心理健康支持和本地转介资源三项，不再扩展所有产后并发症。",
+      "比较 2-3 个交通方便、儿童可进入的社区场地，并选择一个首选和一个备选。",
+      "筛选 2-3 位可低成本参与的循证嘉宾，优先导乐、哺乳顾问或妇产科临床人员。",
+      "设计 90 分钟以内的紧凑议程：开场、短讲、故事分享、资源桌和问答。",
+      "制定隐私最小化注册和反馈流程，明确不收集敏感健康信息。",
+      "用 source_info 中的地点、餐饮/物资、天气或交通候选记录校准场地、用品和当天风险。",
+      "输出预算大项、责任人、下一步确认清单，而不是完整执行手册。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "2-3 个候选场地的费用、容量、交通可达性和儿童友好条件。",
+      "2-3 位循证嘉宾的可用时间、费用和语言能力。",
+      "双语宣传页需要包含的权威健康来源链接或名称。",
+      "基础物资成本：打印、指示牌、儿童安静区用品和简单茶点。",
+      "活动当天天气或交通风险的 source_info 候选记录。"
+    ],
+    "expected_deliverable": "一份首轮落地包：场地首选/备选、嘉宾短名单、90 分钟议程、预算大项、隐私注册说明、双语宣传页草案和下一步确认清单。",
+    "success_criteria": [
+      "方案总预算大项不超过 5,000 美元，并明确至少 10% 预留金。",
+      "至少列出 1 个首选场地和 1 个备选场地。",
+      "至少列出 2 位循证嘉宾或资源提供者。",
+      "注册流程不收集敏感健康信息。",
+      "最终方案至少引用 2 条 SandboxDB/source_info 真实候选记录。",
+      "材料明确体现双语和家庭友好要求。"
+    ],
+    "potential_failure_modes": [
+      "为了覆盖过多健康主题导致议程过满。",
+      "场地虽免费但交通或儿童友好条件不足。",
+      "嘉宾资质不足或带有商业化推销倾向。",
+      "注册表收集了不必要的敏感信息。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 5,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 8,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=7",
+        "constraints_capped=6",
+        "decision_points_capped=4",
+        "information_items_capped=5",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=29.3",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Elena Martinez",
+      "age": 34,
+      "gender": "女性"
+    }
+  }
+}

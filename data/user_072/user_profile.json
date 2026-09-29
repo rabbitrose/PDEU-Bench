@@ -1,0 +1,238 @@
+{
+  "user_id": "user_072",
+  "explicit_preferences": {
+    "user_profile": "一位在团队中采用极限编程方法的IT项目经理。",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Alex Thompson",
+        "age": 38,
+        "gender": "男性",
+        "location": "San Francisco, CA, USA",
+        "languages": [
+          "英语",
+          "西班牙语"
+        ],
+        "education_level": "计算机科学硕士",
+        "occupation": "IT项目经理",
+        "industry": "软件开发",
+        "seniority": "资深",
+        "household": "已婚，一个孩子（6岁）",
+        "life_stage": "早期家庭生活稳定，职业生涯已建立"
+      },
+      "physical_profile": {
+        "height_cm": 183,
+        "general_appearance": "运动体型，棕色短发，戴眼镜，常穿商务休闲装",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "务实且注重细节的领导者，倡导敏捷实践与团队赋能。",
+        "big_five": {
+          "openness": 0.7,
+          "conscientiousness": 0.9,
+          "extraversion": 0.6,
+          "agreeableness": 0.7,
+          "neuroticism": 0.3
+        },
+        "strengths": [
+          "战略规划",
+          "团队激励",
+          "冲突解决",
+          "技术理解力"
+        ],
+        "weaknesses": [
+          "对流程可能过于刻板",
+          "倾向于微观管理质量保证",
+          "对官僚式拖延缺乏耐心"
+        ],
+        "values": [
+          "效率",
+          "透明",
+          "持续改进",
+          "工作与生活平衡"
+        ],
+        "motivations": [
+          "交付令用户满意的高质量软件",
+          "构建自组织团队",
+          "学习新技术"
+        ],
+        "stress_triggers": [
+          "因估算不足错过截止日期",
+          "高层管理人员对变革的抵制",
+          "需求不明确"
+        ]
+      },
+      "background": {
+        "summary": "最初为软件开发者，5年后转入项目管理。3年前倡导极限编程实践，提升了生产力和团队士气。热衷于敏捷教练指导。",
+        "education": "斯坦福大学计算机科学硕士",
+        "work_history": [
+          "初创公司软件工程师",
+          "中型企业高级开发人员",
+          "现任公司IT项目经理（5年）"
+        ],
+        "notable_achievements": [
+          "实施极限编程实践使缺陷率降低40%",
+          "带领团队按时且在预算内交付重大产品版本"
+        ]
+      },
+      "lifestyle": {
+        "daily_routine": "早上6点起床，锻炼，通勤或远程工作。上午涉及站立会议和代码审查。下午专注于计划和利益相关者会议。晚上与家人相处，阅读技术博客或进行轻量编程爱好。",
+        "habits": [
+          "每日阅读技术文章",
+          "练习正念冥想",
+          "烹饪健康餐食"
+        ],
+        "social_life": "定期与其他敏捷从业者聚会，偶尔与朋友共进晚餐，周末家庭出游",
+        "hobbies": [
+          "攀岩",
+          "弹吉他",
+          "桌游"
+        ]
+      },
+      "interests": [
+        "敏捷方法论",
+        "软件架构",
+        "人工智能与机器学习",
+        "可持续生活方式",
+        "科幻文学"
+      ],
+      "explicit_preferences": {
+        "content_preferences": [
+          "科技博客（Hacker News, TechCrunch）",
+          "关于敏捷和领导力的播客",
+          "关于创新的纪录片",
+          "科幻小说与电影",
+          "内容需符合此用户的独特工作模式：敏捷运营模式——可衡量、注重引导、不崇拜仪式。",
+          "拒绝通用助手框架：不为流程而推荐流程。"
+        ],
+        "product_preferences": [
+          "苹果生态系统（MacBook, iPhone）",
+          "JetBrains IDE",
+          "使用Trello或Jira进行项目管理",
+          "Slack用于沟通",
+          "产品应通过用户自身的权衡视角选择：实验、指标、会议成本、风险、决策日期。"
+        ],
+        "service_preferences": [
+          "使用AWS提供云服务",
+          "使用GitHub托管代码",
+          "使用Zoom进行会议",
+          "Audible用于有声书",
+          "仅在保留此决策优先级时接受服务：团队采纳度、会议负担和估算信号质量优于证书声望。"
+        ],
+        "learning_preferences": [
+          "互动在线课程（Coursera, Pluralsight）",
+          "动手实践工作坊",
+          "阅读书籍和文章",
+          "参加会议（Agile Alliance）"
+        ],
+        "travel_preferences": [
+          "偏好直飞航班",
+          "使用万豪酒店",
+          "喜欢徒步旅行目的地",
+          "轻装旅行，只带登机箱"
+        ],
+        "food_preferences": [
+          "喜欢意大利和墨西哥菜",
+          "偏好有机和本地采购食材",
+          "避免加工食品",
+          "喜欢在家做饭"
+        ],
+        "entertainment_preferences": [
+          "在奈飞和苹果电视+上观看",
+          "听独立摇滚和古典音乐",
+          "玩策略棋盘游戏",
+          "欣赏现场戏剧"
+        ],
+        "technology_preferences": [
+          "最新高性能笔记本电脑",
+          "智能家居设备",
+          "降噪耳机",
+          "电子书阅读器"
+        ],
+        "privacy_preferences": [
+          "使用VPN进行个人浏览",
+          "小心社交媒体分享",
+          "偏好加密通讯应用",
+          "尽可能选择退出数据收集"
+        ],
+        "budget_preferences": [
+          "愿意投资优质工具和教育",
+          "中等休闲支出，优先体验而非物品",
+          "积极为退休储蓄",
+          "有持续学习的预算"
+        ],
+        "personalization_directives": {
+          "style_contract": "敏捷操作模式：可衡量、注重引导、不崇拜仪式。",
+          "decision_priority": "团队采纳、会议负荷和估算信号质量胜过证书声望。",
+          "evidence_contract": "使用轻量级指标和回顾，而不是长篇理论。",
+          "format_contract": "实验、指标、会议成本、风险、决策日期。",
+          "anti_default_assistant_behavior": "不要为了流程而推荐流程。",
+          "distinctive_quirks": [
+            "家庭徒步计划应包含教育元素，但不要变成家庭作业。",
+            "认证必须展示实际教练价值，而非徽章价值。",
+            "Apple/JetBrains的默认设置可接受，只要它们减少设置摩擦。"
+          ],
+          "hard_avoidances": [
+            "SAFe风格的行话",
+            "没有明确成果的多小时工作坊",
+            "制造报告表演的工具"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": [
+        "官僚主义繁文缛节",
+        "组织混乱的会议",
+        "微观管理者",
+        "不健康快餐",
+        "嘈杂拥挤的环境",
+        "不灵活的日程安排"
+      ],
+      "communication_style": "直接简洁，偏好邮件中的要点列表，重视数据驱动论证，使用体育或工程类比，接受反馈但需证据支持。",
+      "decision_making": "分析型且协作型，依赖数据和团队输入，使用加权评分选择方案，但经过深思熟虑后做最终决定。避免仓促决策。风险意识强但不过度谨慎。",
+      "evaluation_notes": {
+        "likely_tasks": [
+          "推荐敏捷项目管理工具",
+          "建议团队建设活动",
+          "推荐技术书籍促进职业发展",
+          "规划个人生产力系统"
+        ],
+        "preference_conflicts": [
+          "平衡深度工作与协作式极限编程实践",
+          "追求最新技术但控制在预算内",
+          "喜欢自动化但担忧隐私"
+        ],
+        "ambiguity_to_preserve": "用户团队规模和公司文化细节留空，以便进行多样化场景测试。",
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:43",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "专业且友好",
+            "response_length": "简洁，偏好带有关键点的总结",
+            "evidence_expectation": "期望有来源或数据支持主张",
+            "formatting": "使用要点列表、加粗关键术语和清晰分段",
+            "proactive_behavior": "欢迎建议和后续步骤，但拒绝未经请求的建议",
+            "things_to_avoid": [
+              "空话套话",
+              "过度承诺",
+              "无解释的行话",
+              "忽视限制条件"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "提高团队在Sprint计划中的估算准确性",
+            "计划一次带教育元素的周末家庭徒步旅行",
+            "选择高级敏捷教练认证或工作坊"
+          ]
+        }
+      }
+    }
+  }
+}

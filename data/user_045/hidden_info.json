@@ -1,0 +1,428 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_045",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:30:11",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 18,
+  "composition": {
+    "episodic_preference_trace": 18
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_015",
+      "hidden_indirect_018"
+    ],
+    "content": [
+      "hidden_indirect_009",
+      "hidden_indirect_016"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_010"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_017"
+    ],
+    "entertainment": [
+      "hidden_indirect_014"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_011"
+    ],
+    "food": [
+      "hidden_indirect_005",
+      "hidden_indirect_015",
+      "hidden_indirect_017"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_012"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_007",
+      "hidden_indirect_008",
+      "hidden_indirect_009"
+    ],
+    "learning": [
+      "hidden_indirect_006",
+      "hidden_indirect_016"
+    ],
+    "privacy": [
+      "hidden_indirect_011",
+      "hidden_indirect_018"
+    ],
+    "product": [
+      "hidden_indirect_003",
+      "hidden_indirect_012",
+      "hidden_indirect_014"
+    ],
+    "role_context": [
+      "hidden_indirect_010"
+    ],
+    "service": [
+      "hidden_indirect_007",
+      "hidden_indirect_013"
+    ],
+    "technology": [
+      "hidden_indirect_002",
+      "hidden_indirect_008"
+    ],
+    "travel": [
+      "hidden_indirect_004",
+      "hidden_indirect_013"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买的一批摄像头模组在测试中因为帧率抖动导致光流失败，损失了42块样品。这次需要重新采购，但大学预算只够买单价低的产品。"
+        },
+        {
+          "role": "assistant",
+          "content": "先锁定三款型号，要求厂家提供连续工作2小时以上帧率稳定性数据；只采购有工业级温湿度验证的批次，即使单价高35%也在预算内报备。"
+        }
+      ],
+      "implicit_signal": "愿意为高可靠性工具增加预算，但强调明确限制条件"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天收到一份供应商提供的电容传感器白皮书，声称性能提升50%，但只附了一张理想实验室条件下的截图。我之前在竞赛中吃过这种夸大宣传的亏。"
+        },
+        {
+          "role": "assistant",
+          "content": "要求对方提供完整测试报告：包括至少三种温度、湿度和电压下的原始数据，以及独立第三方复现的结果。数据不透明的不予考虑。"
+        }
+      ],
+      "implicit_signal": "要求决策建立在可复现的测试协议和数据基础上"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "研究生交的蜂群避撞方案只有流程图和代码片段，没有列出失效边界和测试协议。上次评审会就是因为缺少这些被委员会打回重写。"
+        },
+        {
+          "role": "assistant",
+          "content": "按照规则手册附件C的模板重写：明确通信延时上限、单机故障后的队形重构容差以及40米以上高度避撞失败的处理流程。"
+        }
+      ],
+      "implicit_signal": "文档必须按规范格式组织，包括约束条件和失败模式"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "春假只有7天，女儿列出要参观东岸5所大学，但其中两所在小镇，最近的机场在1.5小时车程外，还赶上马拉松封路。"
+        },
+        {
+          "role": "assistant",
+          "content": "缩减到3所：保留轨道交通枢纽站的学校，放弃两所小镇大学。用多出来的半天做校园活动时间窗口，避免转场压力影响判断。"
+        }
+      ],
+      "implicit_signal": "计划大学访问时优先考虑交通便利性，避免不切实际的旅行安排"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "下个月ICRA会议四天议程排满，会场附近餐厅队伍都很长，上次饿到下午三点才吃上三明治，血糖低影响了下午的评委讨论。"
+        },
+        {
+          "role": "assistant",
+          "content": "提前预订会场内部的健康套餐选项，并自备三份应急蛋白棒和坚果包。午餐固定预留25分钟，不加入临时聚餐讨论。"
+        }
+      ],
+      "implicit_signal": "会议期间采订可预测的固定餐饮方案，避免因饥饿影响工作"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "发现新修订的蜂群避撞条款里允许'紧急情况下暂停通信'，但没有定义紧急情况的判断标准，去年就有队伍利用类似模糊措辞钻空子。"
+        },
+        {
+          "role": "assistant",
+          "content": "建议新增'例外触发条件'子节：明确紧急状态必须由至少两个独立传感器同时确认，并在重新连接通信后自动记录事件日志供裁判审查。"
+        }
+      ],
+      "implicit_signal": "在规则修订中预先填补模糊措辞可能导致的漏洞"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "学校IT推介新协作平台，宣讲会上演示了理想网络环境下的操作，但我去年在图书馆用校园WiFi运行类似服务时延迟超过2秒。"
+        },
+        {
+          "role": "assistant",
+          "content": "要求平台方提供在校园网高峰期、机房内网和校外VPN三种网络条件下的响应时间实测数据，如果有一个条件高于500ms则暂不推广到全系。"
+        }
+      ],
+      "implicit_signal": "要求服务商提供多网络条件下的实测数据，拒绝理想环境演示"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "收到一篇声称用新算法将定位误差降低90%的论文，但代码和数据集都没公开。实验室试着重现，发现效果不到声称的一半。"
+        },
+        {
+          "role": "assistant",
+          "content": "给规则委员会发邮件：建议在评审指南中增加'非可复现结果不作为规则修改依据'条款。对这篇论文，等公开数据再评估。"
+        }
+      ],
+      "implicit_signal": "不采用无法独立复现的性能声明"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有团队提交了一份无人机编队表演方案，用了大量特效渲染图，但技术文档里没有提及避撞安全机制和单机故障处理逻辑。"
+        },
+        {
+          "role": "assistant",
+          "content": "退回材料，要求补充：编队密度小于1.5米时的通信冗余方案，以及任何单机退出后剩余飞机自动重排的协议。不满足安全基线则不允许参赛。"
+        }
+      ],
+      "implicit_signal": "拒绝缺乏安全基线的创新方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "裁判委员会希望无人机决赛采用更复杂的随机障碍图案来增加观赏性，但随机障碍的碰撞风险没法提前建模测试。上次全国赛就用过类似设计导致三架坠毁。"
+        },
+        {
+          "role": "assistant",
+          "content": "改为使用预先公布并独立验证的固定障碍图案序列，同时设置额外的35米安全缓冲区。观赏性靠编队精度评分权重提升来弥补。"
+        }
+      ],
+      "implicit_signal": "安全性和可复现性优先于观赏性"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一个基金申请要求提供过去三年实验室所有无人机飞控log，但部分log包含通过学生个人设备收集的位置轨迹，隐私协议没覆盖这个场景。"
+        },
+        {
+          "role": "assistant",
+          "content": "只提交匿名聚合统计，对涉及个人位置的数据严格按照协议拒绝。同时向基金委申请：允许使用独立的、无隐私冲突的测试数据子集代替。"
+        }
+      ],
+      "implicit_signal": "数据共享需严格遵循现有协议，必要时申请替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "买来新3D打印机试打了一个校准块，层高0.1mm时表面质量不错，但底板55℃加热导致PLA翘边，产品手册没提这个温度下的材料变形数据。"
+        },
+        {
+          "role": "assistant",
+          "content": "要求厂商发货前随附与所用耗材匹配的完整温度平台校准曲线，并列出TL-DR的失效条件表格。否则要求退换或明确标注适用温度范围。"
+        }
+      ],
+      "implicit_signal": "要求产品附带完整的失效条件数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "月底要去东京参会，发现官网推荐的租车公司评分4.8但客服回复只有日语，上次在德国因为语言不通搞错保险条款多付了200欧元。"
+        },
+        {
+          "role": "assistant",
+          "content": "选择另一家有24小时英语热线且评分4.7的租车公司，多花35美元但能确保紧急情况下沟通无障碍。提前打印双语保险对照表放手套箱。"
+        }
+      ],
+      "implicit_signal": "根据过往沟通障碍的经验选择能提供英语服务且可靠的商家"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "旧平板用来给学生展示ROS节点图越来越卡，新换ThinkPad X1因为缺HDMI接口没法外接实验室投影仪。上次借同事转换器浪费了10分钟调试。"
+        },
+        {
+          "role": "assistant",
+          "content": "换购一台带阅读模式的13寸平板，确认含USB-C转HDMI线并自带演示模式。不追求轻薄，确保护目镜投影和实验室三屏都能直连。"
+        }
+      ],
+      "implicit_signal": "根据过往外接兼容性故障选择多接口设备"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "会议午休只有1小时，去年自助餐排队太长，最后只吃了甜点和碳水，下午评委会犯困。今年换了场地，附近只有一家快餐和一家沙拉店。"
+        },
+        {
+          "role": "assistant",
+          "content": "和沙拉店提前预订每日固定搭配：鸡胸+藜麦+混合蔬菜，加一份苹果。提前15分钟离场取餐，避免高峰。放弃尝试未知的墨西哥卷摊位。"
+        }
+      ],
+      "implicit_signal": "利用可预订的固定套餐控制时间和支出"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "收到一门在线课程广告，标题是'AI for Drones'，但大纲全是通用机器学习入门，没有一次提到竞赛安全约束、通信冗余或传感器异常检测。"
+        },
+        {
+          "role": "assistant",
+          "content": "转而找IEEE Xplore上关于'竞赛无人机失效安全通信协议'的专题论文，以及ROS啃书计划公开课里关于节点错误处理的章节。"
+        }
+      ],
+      "implicit_signal": "优先选择直接涉及竞赛安全约束的专题资源"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次开会试了会场提供的日式便当，结果里面有花生酱酱料，对花生过敏的我在讨论环节一直分心担心误食。"
+        },
+        {
+          "role": "assistant",
+          "content": "提前两小时联系会场餐饮服务：要求每个荤菜和素菜分开包装，酱料单独附小包，并备注所有含花生成分的菜品用红色标签标注。"
+        }
+      ],
+      "implicit_signal": "因过敏问题要求餐饮服务对食材分离和过敏原标注做出明确安排"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "新赛季需要存储大量队伍的设计文档和现场录像，学校云存储免费额度不够。预算有限，但去年共享文件夹曾因权限漏配导致泄露两支队伍的图纸。"
+        },
+        {
+          "role": "assistant",
+          "content": "用系里剩余预算买一台带AES-256加密的本地NAS，只存放敏感文档；录像可压缩后上传到合规云，并启用双因素认证。不额外申请云存储升级。"
+        }
+      ],
+      "implicit_signal": "预算有限时优先投资加密硬件而非云存储额度"
+    }
+  ]
+}

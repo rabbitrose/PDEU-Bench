@@ -1,0 +1,493 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_046",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:20:00",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 19,
+  "composition": {
+    "episodic_preference_trace": 19
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_006",
+      "hidden_indirect_011",
+      "hidden_indirect_015",
+      "hidden_indirect_019"
+    ],
+    "content": [
+      "hidden_indirect_002",
+      "hidden_indirect_012",
+      "hidden_indirect_017"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_003",
+      "hidden_indirect_009",
+      "hidden_indirect_011",
+      "hidden_indirect_016",
+      "hidden_indirect_018"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_001",
+      "hidden_indirect_002",
+      "hidden_indirect_004",
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_011",
+      "hidden_indirect_012",
+      "hidden_indirect_013",
+      "hidden_indirect_015",
+      "hidden_indirect_017",
+      "hidden_indirect_018"
+    ],
+    "entertainment": [
+      "hidden_indirect_006",
+      "hidden_indirect_018"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_005",
+      "hidden_indirect_008",
+      "hidden_indirect_010",
+      "hidden_indirect_013",
+      "hidden_indirect_017"
+    ],
+    "food": [
+      "hidden_indirect_006",
+      "hidden_indirect_015"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_007",
+      "hidden_indirect_010",
+      "hidden_indirect_014",
+      "hidden_indirect_016"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_007",
+      "hidden_indirect_009",
+      "hidden_indirect_012",
+      "hidden_indirect_019"
+    ],
+    "learning": [
+      "hidden_indirect_005",
+      "hidden_indirect_013"
+    ],
+    "privacy": [
+      "hidden_indirect_005",
+      "hidden_indirect_014"
+    ],
+    "product": [
+      "hidden_indirect_003",
+      "hidden_indirect_019"
+    ],
+    "role_context": [
+      "hidden_indirect_008"
+    ],
+    "service": [
+      "hidden_indirect_001",
+      "hidden_indirect_010",
+      "hidden_indirect_011"
+    ],
+    "technology": [
+      "hidden_indirect_007",
+      "hidden_indirect_014",
+      "hidden_indirect_016"
+    ],
+    "travel": [
+      "hidden_indirect_004",
+      "hidden_indirect_015"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget",
+        "service",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周在书店后院办朗读会，原本租了便宜的大空间，但到场只有7人，声音在空房间发虚。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次改订你朋友那家只容15人的咖啡馆包间，虽然单价高40%，但紧凑空间能让大家靠得更近。"
+        }
+      ],
+      "implicit_signal": "选择情感安全的小场所而非低成本，确保亲密感优先于可负担性"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天收到海报初稿，把我一首关于大马士革的诗旁边放了骆驼剪影，感觉像异域风情明信片。"
+        },
+        {
+          "role": "assistant",
+          "content": "撤掉那个图案，改用诗句中出现的橙花与雨水意象，保留原文发音但加注德语直译。"
+        }
+      ],
+      "implicit_signal": "不愿阿拉伯诗歌被异域化展示，要求文化背景平等呈现"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "product",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次按你建议去了一家新开的大型文学节，但人太多，说话都要喊，我举着诗集站了20分钟也没人聊。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次舍弃那种大派对，筛选出三个柏林小场所——有手工纸灯的叙利亚茶馆、带庭院的书店、地下室诗歌沙龙。"
+        }
+      ],
+      "implicit_signal": "推荐活动时优先考虑社区伙伴和情感安全胜过规模"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友建议我带大家去游览柏林的阿拉伯市场，但那边小贩开始兜售“一千零一夜”主题纪念品，我觉得不舒服。"
+        },
+        {
+          "role": "assistant",
+          "content": "我们把公共行程改成先参观达累姆艺术馆的当代叙利亚摄影展，再去个人常去的那家叙利亚甜品店。"
+        }
+      ],
+      "implicit_signal": "拒绝旅游化的中东框架，强调生活化的文化日"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "learning",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次工作坊主持人要求所有人讲一段最痛苦的记忆，我用那首未完成的诗回避了，但有人追问具体时间地点。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次我带一个开放性问题单，只让选择是否回答；我开始前明确说，这幅作品只谈一种颜色，而非整场战争。"
+        }
+      ],
+      "implicit_signal": "在信任场所外保护个人创伤细节"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "entertainment",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周朗读会后带人去吃饭，选了一家连锁黎巴嫩快餐，大家都觉得酱料太工业，气氛也冷。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次订了Neukölln一家叙利亚家庭开的餐厅，店主同意给我们预留后院，每人预算是8欧元，有自酿酸奶和法图什。"
+        }
+      ],
+      "implicit_signal": "偏好家庭式小型中东餐厅，避免快餐，在预算内选择文化地标"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "hard_avoidance",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "推广文案让我写“欢迎所有灵魂加入这场改变生命的诗歌体验”，我觉得太像健身广告。"
+        },
+        {
+          "role": "assistant",
+          "content": "改成‘一次小型聚会，读几首过去的诗，也许有人分享一杯茶’，并移除所有感叹号。"
+        }
+      ],
+      "implicit_signal": "拒绝病毒式活动语言和过于欢快的语气"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "distinctive_quirk",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "活动页面有人留言要我介绍最传统的阿拉伯服装，我解释那是文化节目，不是我的诗歌朗读。"
+        },
+        {
+          "role": "assistant",
+          "content": "删除那条留言并置顶说明：“本场读的是阿拉伯语诗歌和德语译文，不是文化展览。”"
+        }
+      ],
+      "implicit_signal": "确认艺术不被异域化的边界：诗人不是导游"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "decision_priority",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次参加的写作小组收费很高但导师总打断我，说我的意象太“难民视角”。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找到一个社区中心推出的工作坊，收费6欧元，由一位散居巴勒斯坦诗人带领，每次开始前先建立安全边界。"
+        }
+      ],
+      "implicit_signal": "保证工作坊情感安全且可负担"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "service",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前你给我发了一份朗读会宣传邮件，排版像个促销横幅，还有倒计时按钮。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次重新设计：只用一段手写字母风格的引文和一张豆灯照片，回复确认用私人短信。"
+        }
+      ],
+      "implicit_signal": "交付氛围、诗句、社区伙伴而非营销推销"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget",
+        "service",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有人建议我申请一个大型艺术基金办阅读会，但必须凑够40人，我感觉像在凑数。"
+        },
+        {
+          "role": "assistant",
+          "content": "放弃基金报名，改用书店老板朋友提供的无申请费小型赞助，只要保证至少6个人有座位就行。"
+        }
+      ],
+      "implicit_signal": "社区亲密优先于规模透明显性"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "活动简介里有人写“体验真实的叙利亚之夜”，我觉得这像旅行手册话术。"
+        },
+        {
+          "role": "assistant",
+          "content": "改写成“一位来自大马士革的诗人朗读一组关于橙花和雨水的作品，配有德文投影”。"
+        }
+      ],
+      "implicit_signal": "拒绝旅游化的中东框架，要求真实文化参考"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "evidence_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次参加阿拉伯文学线上课，老师老用英语词压阿拉伯语词，大家都不敢用母语写。"
+        },
+        {
+          "role": "assistant",
+          "content": "我推荐柏林有一个阿拉伯语诗歌小组，每次只能提交一首诗，同伴用原语反馈，不收场地费。"
+        }
+      ],
+      "implicit_signal": "工作坊必须包含同伴反馈且情感安全"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朗读会报名表要求填真名和住址，我犹豫了，怕个人信息被公开。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用只需要笔名和邮箱的报名表，并在确认信中说明不会分享住址信息。"
+        }
+      ],
+      "implicit_signal": "保持在线匿名与真实身份分离"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "travel",
+        "food",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "原计划朗读会后带人去河边买快餐，结果大家人均吃出12欧元，有人抱怨贵。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次先预约了我常去的那家卖法拉费的小店，店主给出团体折扣每份4.5欧元，还搭免费鹰嘴豆泥。"
+        }
+      ],
+      "implicit_signal": "用紧凑预算优先支持文化和社区活动而非旅游化消费"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "decision_priority",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前你推荐我用一个写作App，结果界面上全是庆祝表情和写作成就奖杯。"
+        },
+        {
+          "role": "assistant",
+          "content": "换成了FocusWriter，纯文字界面，无弹窗，把你的诗以文件名保存，不展示任何评级标签。"
+        }
+      ],
+      "implicit_signal": "避免过于欢快的语气，使用极简工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "evidence_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "书店建议我进一批关于叙利亚的最新“热点”非虚构书，我翻了翻觉得只是新闻翻译。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐你进两本马哈茂德·达尔维什的诗集和一本关于阿勒颇市集的散文集，它们用细节而非标题谈战争。"
+        }
+      ],
+      "implicit_signal": "文学参考与现实文化背景比指标重要"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "decision_priority",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次看了评分很高的商业纪录片《中东之声》，但里面没有散居诗人的视角。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找到一个叙利亚独立电影人的短片集，在Kreuzberg一个有40座的小影院放映，票价5欧元。"
+        }
+      ],
+      "implicit_signal": "支持散居艺术家和小型场地"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "前天在艺术商店买了一本棕色皮面笔记本，封面烫金字样太闪，我觉得不适合写作时放在桌上。"
+        },
+        {
+          "role": "assistant",
+          "content": "退回那本，换无印良品再生纸本，封面留白，价格不到一半，你可以在上面画自己的橙花枝。"
+        }
+      ],
+      "implicit_signal": "选择可负担且安静的文具，避免花哨"
+    }
+  ]
+}

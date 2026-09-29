@@ -1,0 +1,512 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_059",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:30:05",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 22,
+  "composition": {
+    "episodic_preference_trace": 22
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_012",
+      "hidden_indirect_017"
+    ],
+    "content": [
+      "hidden_indirect_002",
+      "hidden_indirect_016",
+      "hidden_indirect_018"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_010",
+      "hidden_indirect_017",
+      "hidden_indirect_022"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_006",
+      "hidden_indirect_008",
+      "hidden_indirect_013",
+      "hidden_indirect_020"
+    ],
+    "entertainment": [
+      "hidden_indirect_011"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_007",
+      "hidden_indirect_014",
+      "hidden_indirect_019"
+    ],
+    "food": [
+      "hidden_indirect_006"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_011"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_009",
+      "hidden_indirect_015",
+      "hidden_indirect_018",
+      "hidden_indirect_021"
+    ],
+    "learning": [
+      "hidden_indirect_007",
+      "hidden_indirect_019"
+    ],
+    "privacy": [
+      "hidden_indirect_009",
+      "hidden_indirect_014"
+    ],
+    "product": [
+      "hidden_indirect_012",
+      "hidden_indirect_021"
+    ],
+    "role_context": [
+      "hidden_indirect_008",
+      "hidden_indirect_016"
+    ],
+    "service": [
+      "hidden_indirect_004",
+      "hidden_indirect_013",
+      "hidden_indirect_022"
+    ],
+    "technology": [
+      "hidden_indirect_005",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "travel": [
+      "hidden_indirect_010"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去年西班牙行程我订了最便宜的青旅，结果发现它和一家大型酒店集团合作，利润流向我不认同的投资者。最后几天我改住社区互助公寓。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次瓦伦西亚我保留30欧给当地租户协会推荐的合住空间，虽然比hostelworld贵，但钱留在社区。"
+        }
+      ],
+      "implicit_signal": "旅游预算中优先当地互助而非廉价但非道德选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次区选举我把柏林日报的候选人表发进群，第二天有人说它漏了Die Linke的住房部分，关键信息只在广告页出现。"
+        },
+        {
+          "role": "assistant",
+          "content": "新指南我用租户工会的对比矩阵，列了每位候选人租金上限投票记录——排版粗糙但直接从议会网站核实。"
+        }
+      ],
+      "implicit_signal": "基层组织的分析比主流媒体更受信任"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月反对豪华公寓时我花了15分钟画利益地图，标了房东、开发商和租户的盟友。开会时这张图帮我们找到突破口。"
+        },
+        {
+          "role": "assistant",
+          "content": "第二轮听证前我更新了地图，加入刚搬来的商户和附近教会——上次他们没表态，这次可能关键。"
+        }
+      ],
+      "implicit_signal": "会议前始终绘制权力地图以识别利益相关者"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次租户培训我用谷歌表单收集报名，有人抗议说谷歌会抓取数据。当晚我改到手动邮件列表。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次工作坊我提前建了ProtonMail管理的报名链接，附带一个声名说明何时删除名单——数据不再流入大型平台。"
+        }
+      ],
+      "implicit_signal": "拒绝企业背景的活动报名系统，即使更费力"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有次我推荐邻居用WhatsApp群协调垃圾分类，后来群里出现定向广告。我直接解散，改成了Signal群，逐个教他们安装。"
+        },
+        {
+          "role": "assistant",
+          "content": "新互助群用Signal，我把使用说明做成一页PDF附在邀请邮件——不需依赖大公司即时通讯协调轮值。"
+        }
+      ],
+      "implicit_signal": "避免强化企业平台依赖的工具，即使花时间教他人"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周和朋友去Neukölln新叙利亚餐厅，发现蔬菜来自连锁超市供应链，不是本地市场。后来我只去难民合作社运营的素食店。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次团队聚餐可以订Mensa am Kotti——食材来自社区农园，定价按收入浮动，符合团结原则。"
+        }
+      ],
+      "implicit_signal": "选择合作制或本地采购餐厅，即使选择少"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "研究柏林租金上限的论文只用官方数据得出政策无效。我把租户工会调查的523户实际租金变化发给教授，他后来修改了结论。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次简报我并列罗莎·卢森堡基金会报告与租户协会月度记录——两者显示短期租赁法有效，官方统计滞后两年。"
+        }
+      ],
+      "implicit_signal": "地方租户实地报告与学术文献同等重视"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有次从Neukölln到Pankow开会只剩23分钟，打Bolt很快但我骑共享单车加地铁，迟到了7分钟。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次我提前15分钟出门，留出BVG缓冲——自行车加地铁在白天比打车可靠，且不资助剥削司机的平台。"
+        }
+      ],
+      "implicit_signal": "赶时间也坚持公共交通而非打车"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一个气候活动app要求读取位置和联系人才能用紧急预警，我直接卸载——没人需要知道我去过哪些抗议来触发警报。"
+        },
+        {
+          "role": "assistant",
+          "content": "新活动日历工具可离线存储，手动同步才联网——预警通过Signal频道广播，不收集任何GPS数据。"
+        }
+      ],
+      "implicit_signal": "拒绝超出必要的数据收集，哪怕失去服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次飞巴塞罗那折扣票45欧，我算碳排后退票改FlixBus，花了15个小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次去莱比锡我查了夜火车——比早鸟票贵10欧，但排放只有长途汽车一半，车上能睡觉不浪费白天。"
+        }
+      ],
+      "implicit_signal": "碳排放硬约束优先于时间和价格"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我在社区中心放完纪录片《系统的敌人》，观众只鼓掌就走了。后来我改成映后讨论，留时间交换联系方式形成行动小组。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次放映我印了议题卡片，片后15分钟分组讨论，末尾每人写一个承诺——比如带一个邻居来下次租户会。"
+        }
+      ],
+      "implicit_signal": "电影放映必须附带行动环节"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "旧手机坏了，朋友推荐新机200欧，但查到供应链有强制劳动，我改买翻新Fairphone 4花了400欧。"
+        },
+        {
+          "role": "assistant",
+          "content": "备用机可看柏林维修咖啡馆的refurbished Pixel 4，搭载CalyxOS，约180欧且支持替换电池。"
+        }
+      ],
+      "implicit_signal": "电子产品购买必须查劳工记录与维修权利，哪怕多花"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我的储蓄账户在主流银行，后来发现它贷款给了物流园开发项目——就是我反对的。我立刻转去GLS，虽然界面很慢。"
+        },
+        {
+          "role": "assistant",
+          "content": "GLS房贷利率比商用银行低0.2%，贷款委员会有租户代表席位——可看他们最新可持续报告怎么写住宅投资。"
+        }
+      ],
+      "implicit_signal": "银行选择以贷放政策为唯一标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一个自称环保的清洁公司来社区推销，我用WikiLeaks泄密数据和调查记者X的博客查母公司，发现它投资了棕地项目。"
+        },
+        {
+          "role": "assistant",
+          "content": "我已更新二手房本的环保服务核查清单：第一条查公司注册地母公司是否存在土地投机记录——用OffeneRegister免费查。"
+        }
+      ],
+      "implicit_signal": "公司背景核实优先用替代媒体与开源工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "同事帮我装了Windows报名软件，三天后我发现自己没看隐私政策就用，删后重装Linux版Nextcloud表单。"
+        },
+        {
+          "role": "assistant",
+          "content": "新协作平台我选了基于Nextcloud的Framaforms，自托管，数据不存美国服务器——你工作站可直接接。"
+        }
+      ],
+      "implicit_signal": "坚持开源系统即使需从头学习"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我做过一份Neukölln绅士化报告，发出去有人回说内容好但不知能做什么。第二次我改成带电话和会议时间的行动指南，回收率高3倍。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次租户简报我按权力地图格式：每章末尾加‘你可以做什么’，附租户工会热线和下次公听时间。"
+        }
+      ],
+      "implicit_signal": "简报必须附具体行动而非仅信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我在网上买有机蔬菜包，选了最便宜的配送选项，后来发现它来自大型电商平台而非本地农协。我取消订阅换了社区支持的农场箱。"
+        },
+        {
+          "role": "assistant",
+          "content": "这个月蔬菜包我登记了柏林城市农场合作社的份额，价格高5欧但直接支持小型生产者且配送靠货运自行车。"
+        }
+      ],
+      "implicit_signal": "购物时支持合作社代替折扣链"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有人建议在传单上写‘我们与绿色企业合作’以吸引赞助，但我担心那会漂绿。最后传单只列了租户自身目标和行动步骤。"
+        },
+        {
+          "role": "assistant",
+          "content": "新传单我突出‘由租户集体出资和组织’，不提任何公司名称也不说‘伙伴关系’，避免企业语言稀释集体性。"
+        }
+      ],
+      "implicit_signal": "拒绝使用任何企业CSR语言宣传社区项目"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我报名了一个由联邦基金会资助的住房政策网课，上了两节后感觉内容偏向市场解决方案。我退掉改报了罗莎·卢森堡基金会的工作坊。"
+        },
+        {
+          "role": "assistant",
+          "content": "非暴力沟通培训我推荐由租户工会提供的同伴工作坊——免费，且使用真实案例而非商业模式中的抽象内容。"
+        }
+      ],
+      "implicit_signal": "选择学习材料时课程提供者的政治立场影响决策"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去参加全市租户集会，有同事提议拼车较快，但我坚持坐有轨电车，花了54分钟而拼车只需30分钟。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次集会我查了电车时刻表，提前15分钟出门，同时用那段时间读了分发的会前材料——不浪费任何时间。"
+        }
+      ],
+      "implicit_signal": "即便更慢也优先公共交通，此为习惯性选择"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我在考虑买一个二手书架，发现卖家是给高档公寓做配件的商店，即使便宜我也没买，改去免费分享群找了一个破旧书架重修。"
+        },
+        {
+          "role": "assistant",
+          "content": "社区物资交换平台上有几个书架可以免费领，其中一个需要打磨和上漆——周末我帮你带砂纸来。"
+        }
+      ],
+      "implicit_signal": "不购买任何对公有土地投机有利的产品"
+    },
+    {
+      "interaction_id": "hidden_indirect_022",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我的旧信用卡来自大众银行，年费低但它的母公司投资了武器生产。我取消卡转用GLS的借记卡，虽然海外取现手续费更高。"
+        },
+        {
+          "role": "assistant",
+          "content": "GLS的借记卡不关联任何武器或化石燃料投资，你旅行时可以用配套的预付卡欧元充值来降低手续费。"
+        }
+      ],
+      "implicit_signal": "金融服务必须与反压榨价值观一致"
+    }
+  ]
+}

@@ -1,0 +1,470 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_222",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:18:20",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_005",
+      "hidden_indirect_016",
+      "hidden_indirect_020"
+    ],
+    "content": [
+      "hidden_indirect_003",
+      "hidden_indirect_012"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_014"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_011",
+      "hidden_indirect_015"
+    ],
+    "entertainment": [
+      "hidden_indirect_008"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_010",
+      "hidden_indirect_017"
+    ],
+    "food": [
+      "hidden_indirect_002",
+      "hidden_indirect_008",
+      "hidden_indirect_019",
+      "hidden_indirect_020"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_009"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_012",
+      "hidden_indirect_016"
+    ],
+    "learning": [
+      "hidden_indirect_007",
+      "hidden_indirect_013"
+    ],
+    "privacy": [
+      "hidden_indirect_006",
+      "hidden_indirect_018"
+    ],
+    "product": [
+      "hidden_indirect_004",
+      "hidden_indirect_015"
+    ],
+    "role_context": [
+      "hidden_indirect_013"
+    ],
+    "service": [
+      "hidden_indirect_001",
+      "hidden_indirect_006",
+      "hidden_indirect_010",
+      "hidden_indirect_014",
+      "hidden_indirect_018"
+    ],
+    "technology": [
+      "hidden_indirect_009",
+      "hidden_indirect_017"
+    ],
+    "travel": [
+      "hidden_indirect_007",
+      "hidden_indirect_019"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次帮同事订了家咖啡馆包场，后来计划变了我硬着头皮付了全款，因为预订时没问取消规则。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次先把取消条款发我，我筛几家允许提前两小时免费退的，再给你看菜单。"
+        }
+      ],
+      "implicit_signal": "在服务选择中优先考虑可取消性和退改规则，避免因计划变动造成的经济损失"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周你说的那家评分4.8的三明治店，我去了发现根本坐不下，只能站着吃。"
+        },
+        {
+          "role": "assistant",
+          "content": "我按你上次要的‘出餐快且座位宽松’重新筛，这次找有实体餐位图片和排队时长的点评，不再只给评分。"
+        }
+      ],
+      "implicit_signal": "需要具体、可验证的座位和环境证据，不接受仅基于高评分数字的推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次推荐了五家店，我在地铁换乘时看那段话，根本没法快速对比，最后没选。"
+        },
+        {
+          "role": "assistant",
+          "content": "下回我按‘餐厅名 / 距你当前地铁站分钟 / 能安静坐多久 / 预算区间’列表发你，一行一家。"
+        }
+      ],
+      "implicit_signal": "偏好结构化、可快速对比的格式，拒绝堆砌文字段落"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你给的选项一页便签都写不下了，我又怕漏掉便宜的那家，结果在候机区里来回翻手机截图，最后还是没下单。"
+        },
+        {
+          "role": "assistant",
+          "content": "今晚只需你确认三点：1)愿意的价位区间；2)上门还是邮寄；3)最晚哪天要用。有这三点我再推两个选项。"
+        }
+      ],
+      "implicit_signal": "面对当前任务选项过多时决策瘫痪，需要通过前置问答强制缩减候选清单"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那家外卖套餐标价很便宜，结账时加了包装费和起送门槛，比堂食还贵40。"
+        },
+        {
+          "role": "assistant",
+          "content": "我再推之前会让商家先把总费用截图发来，包含服务费和最低消费，不到结算页不列进选项。"
+        }
+      ],
+      "implicit_signal": "极端反感隐藏费用和信息不透明的计价方式，认为标价不等于实际支出"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你推的订位App，非要我绑信用卡和家庭地址才能看菜单，我直接删了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次只推支持访客浏览菜单、电话预约时只说人数不漏地址的餐厅，我先确认对方不强制注册。"
+        }
+      ],
+      "implicit_signal": "坚决拒绝任何强迫注册或绑定银行卡才能查看服务详情的商家流程"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你建议的那条去机场路线，没留换乘余量，我多绕了一次路才到，差点误机。"
+        },
+        {
+          "role": "assistant",
+          "content": "我记住了，以后推路线时挑有备用站台的，并多给你标一个‘若前车延误 → 改乘XX路’的预案。"
+        }
+      ],
+      "implicit_signal": "路线规划必须包含缓冲时间和备选方案，不接受单一最优解"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周你推的夜市美食节，我到了发现挤得转不开身，同行的人临时退出说不如回家煮面。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次只推座位数>20且非高峰时段仍有空位的餐厅，并避开周末19-20点到的选项。"
+        }
+      ],
+      "implicit_signal": "坚决避免过于拥挤的场所，认为拥挤会直接导致同行人退出和活动失败"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次让我把备选店存到你推的App里，后来我想导出列表时发现只能图片截屏，没法转成表格。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只推支持CSV导出或至少能复制文字的服务，我直接在笔记里给你留一个模板字段。"
+        }
+      ],
+      "implicit_signal": "工具偏好要能导出可编辑数据，不能接受仅限截图保存的封闭系统"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "搬家后的租金对比你只说‘这家性价比高’，但我没看到电费账单往例和续租涨幅，不敢签。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后每项我都会附上近三个月相同房型的实际支出截图或物业公开数据，不单用形容词推。"
+        }
+      ],
+      "implicit_signal": "决策需要看到横向可比的历史支出数据，不接受单句定性评价"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你让我列一整季的家庭学习书单，我写了一半就没动力了，因为看不到每本读完的节点。"
+        },
+        {
+          "role": "assistant",
+          "content": "改成先只选一本，分‘第1天读到第三章 / 第3天写完摘要/ 第5天做练习’三条里程碑，完成后再下一本。"
+        }
+      ],
+      "implicit_signal": "需要短周期、可追踪的里程碑来维持行动动力，拒绝冗长的无节点计划"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次讲了一堆健康出行的道理，没给具体哪家还能安静办公的餐厅，我翻了三页手机截图都找不到真实的桌椅照片。"
+        },
+        {
+          "role": "assistant",
+          "content": "直接发你四家已确认有靠墙插座的店，各附一张非高峰时段店内照片和男生女生都能用的菜单标注。"
+        }
+      ],
+      "implicit_signal": "坚决拒绝泛泛而谈的大道理，只接受带有具体地点和实物图片的可执行信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我伴侣今晚加班到八点，孩子六点就放学，我一个人没法先在家开火等她一起。"
+        },
+        {
+          "role": "assistant",
+          "content": "那就找一家离公司步行8分钟内、安静有沙发位、七点半前还能单点的餐厅，我列好门牌号和平均等待时间。"
+        }
+      ],
+      "implicit_signal": "根据家庭角色的时间差和接送限制来调整餐饮方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你推荐的那个网红茶餐厅，吃完回家后我肚子不舒服，但评论都说好吃，我也不知道该不该怪它。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次只推我或有过实体打卡、能说明后厨干净程度和食材更新周期的店，不只看评分。"
+        }
+      ],
+      "implicit_signal": "名气和评分不能替代真实的卫生和食材信息，优先考虑可验证的实际体验"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你给了12种便携充电宝选择，我在地铁换乘时盯着手机截图看了半天，最后没买任何一款。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会先问你三个问题：一天充几次、最晚哪天用、能接受多大重量。按这三个答案只给你两款对比。"
+        }
+      ],
+      "implicit_signal": "容易被过多选项拖慢，需要前置问答过滤到仅剩两个候选品再展示"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次推的餐厅人均五万韩元，我说超预算后你就没下文了，我只好自己找便宜的。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次我会同时给一个预算内的直接链接和备注好‘这家24元差价能省在饮料自带’或‘每周三有折扣’。"
+        }
+      ],
+      "implicit_signal": "极端厌恶超预算后没有后续替代方案的推荐流程，必须强制附带预算内备选"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推的记账软件说月费低，但没给我看账单分类截图和免费版导出次数上限，我不敢绑卡试。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把软件数据导入模板样例和七天免费期间的分类功能限制一并做成截图发你，你确认后再试。"
+        }
+      ],
+      "implicit_signal": "需要看到真实功能限制和数据样例才能信任，不接受仅听口头承诺"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次用你推的餐厅预约服务，到店后说预约没成功，客服说要提供手机验证码才能查，很麻烦。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后只推预约成功后有短信确认码、且取消无需登录的渠道，我帮你先留存确认截图。"
+        }
+      ],
+      "implicit_signal": "预约服务必须有即时确认反馈，且取消流程不应要求再次登录或提供验证码"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我伴侣不吃辣，上次推荐的辣炒年糕店我两人去后她只能喝汤，感觉很尴尬。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次我先确认同行人口味限制，推菜单中有至少三道清蒸或非辣选项的餐厅，也标注可单独加菜。"
+        }
+      ],
+      "implicit_signal": "必须预先确认同行者的饮食限制，餐品范围需覆盖所有成员"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那家便宜但没空调的小吃店，夏天去了后热得根本吃不下，孩子也没耐心。"
+        },
+        {
+          "role": "assistant",
+          "content": "晚餐地点我会优先推有空调安静区且书包有地方放、人均不超过三万韩元的店，并附上今日室内温度截图。"
+        }
+      ],
+      "implicit_signal": "低价必须以实际就餐环境的可用性为前提，极端降质换低价会导致计划不可行"
+    }
+  ]
+}

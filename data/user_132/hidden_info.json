@@ -1,0 +1,470 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_132",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:01:52",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_006",
+      "hidden_indirect_018"
+    ],
+    "content": [
+      "hidden_indirect_001",
+      "hidden_indirect_012"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_006",
+      "hidden_indirect_013",
+      "hidden_indirect_020"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_002",
+      "hidden_indirect_008",
+      "hidden_indirect_010",
+      "hidden_indirect_020"
+    ],
+    "entertainment": [
+      "hidden_indirect_012",
+      "hidden_indirect_018"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_009",
+      "hidden_indirect_016"
+    ],
+    "food": [
+      "hidden_indirect_009",
+      "hidden_indirect_016"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_011"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_010",
+      "hidden_indirect_014"
+    ],
+    "learning": [
+      "hidden_indirect_007",
+      "hidden_indirect_017"
+    ],
+    "privacy": [
+      "hidden_indirect_005",
+      "hidden_indirect_013",
+      "hidden_indirect_019"
+    ],
+    "product": [
+      "hidden_indirect_003",
+      "hidden_indirect_014"
+    ],
+    "role_context": [
+      "hidden_indirect_007",
+      "hidden_indirect_019"
+    ],
+    "service": [
+      "hidden_indirect_004",
+      "hidden_indirect_015"
+    ],
+    "technology": [
+      "hidden_indirect_005",
+      "hidden_indirect_011",
+      "hidden_indirect_017"
+    ],
+    "travel": [
+      "hidden_indirect_008",
+      "hidden_indirect_015"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周审阅的医疗设备案中，引用了一份行业白皮书，结果对方律师指出其中一项数据有误，导致我方动议被推迟。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后所有引用的白皮书需先对照《联邦法规》第21篇核实关键数据，董先生会跟进交叉检查。"
+        }
+      ],
+      "implicit_signal": "对信息源选择严格，优先使用权威法律报告"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "预定下周三去芝加哥的航班，原本计划周日长跑被排到周六，但周六有一整天的调解会。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会将航班改至周五晚班，确保周六早晨长跑可在当地公园完成，周一返回前仍有时间休息。"
+        }
+      ],
+      "implicit_signal": "马拉松备赛计划必须考虑出差中断"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "收到三份合规软件供应商的方案，都是逐页PDF，第7页和第12页数据还自相矛盾。"
+        },
+        {
+          "role": "assistant",
+          "content": "已重新整理为矩阵对比表，按部署成本、更新频率和监管审计案例排序；矛盾处标注红色，我直接电话厂商澄清。"
+        }
+      ],
+      "implicit_signal": "要求使用详细对比表格格式"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次马拉松注册时自己填了医疗豁免表，结果漏了一个签字，只能现场补办，差点错过起跑。"
+        },
+        {
+          "role": "assistant",
+          "content": "今后所有赛事注册和表格提交由我预审，签批完成后直接发给组委会，确保您只跑不操心流程。"
+        }
+      ],
+      "implicit_signal": "不愿意自己完成可委派的差事"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "律所IT推荐的新项目管理工具需要读取我整个日历和联系人列表，连孩子学校日程都能看到。"
+        },
+        {
+          "role": "assistant",
+          "content": "我已要求IT启用仅会议事件的只读权限，并生成一份权限摘要留档；必要时使用本地替代方案。"
+        }
+      ],
+      "implicit_signal": "拒绝使用需要过多权限的应用"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "丈夫生日想订一家米其林，但对方最低包场费2万，只够容纳我们两人。"
+        },
+        {
+          "role": "assistant",
+          "content": "已预订另一家私密包间，固定套餐1.2万，酒水单预先确认，不浪费预算在空位上。"
+        }
+      ],
+      "implicit_signal": "在质量达标时控制非必要成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "刚收到一份医疗数据隐私改革草案，要求60天内合规；之前的研讨会只讲了理论案例。"
+        },
+        {
+          "role": "assistant",
+          "content": "已为您预约下周三由前HHS官员主讲的深度研修班，附带草案逐条实操指南，名额有限但已锁位。"
+        }
+      ],
+      "implicit_signal": "选择高强度、可立即应用的研讨会"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去波士顿见客户，酒店商务中心打印机坏了，行程单和证据全得去外面打印店弄。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次两日行程已提前确认酒店商务中心设备清单，并备份电子文档至您的iPad，设置好打印队列。"
+        }
+      ],
+      "implicit_signal": "出行计划需极低管理成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次在法庭附近随便进一家餐厅吃午餐，结果食材过敏，下午庭审状态很糟。"
+        },
+        {
+          "role": "assistant",
+          "content": "所有外勤午餐已锁定三家通过卫生评级A且标注过敏原的餐厅，菜单与厨房直接确认后再推荐。"
+        }
+      ],
+      "implicit_signal": "对餐饮选择要求有可靠来源证据"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上回周末短途游，我亲自订了Airbnb和租车，结果地址对不上，差点睡车里。"
+        },
+        {
+          "role": "assistant",
+          "content": "所有短期出游行程我统一预订，预订确认需经您最终许可才付款，不再让您操作中间环节。"
+        }
+      ],
+      "implicit_signal": "避免任何没有明确授权点的计划"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "收到一份21页的电子健康记录系统合规审查，结论埋在附录B里，我没时间翻。"
+        },
+        {
+          "role": "assistant",
+          "content": "已改为两页执行摘要，用红色标记高风险项和监管截止日，背景说明和附录作为超链接附后。"
+        }
+      ],
+      "implicit_signal": "只接受结构化摘要格式"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "候机区里刷到一部医疗剧，发现案情程序全错，但弹幕都在夸真实。"
+        },
+        {
+          "role": "assistant",
+          "content": "已筛选三部获得美国律师协会认可的真实医疗诉讼纪录片，观看链接和每集关键法律点说明一并列出。"
+        }
+      ],
+      "implicit_signal": "娱乐内容需与专业领域相关"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "地铁换乘时用手机处理了一份客户邮件，旁边有人偷瞄，回去后发现邮箱被异地登录。"
+        },
+        {
+          "role": "assistant",
+          "content": "已要求IT启用全设备屏幕隐私膜和会话超时密码锁，您以后外出时仅通过加密通话处理敏感事项。"
+        }
+      ],
+      "implicit_signal": "监管风险优先于个人便利"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次律所采购会议平板时，我花了两小时研究各种品牌，结果买回来连接不稳。"
+        },
+        {
+          "role": "assistant",
+          "content": "已有评估简报，只列出三个通过ISO认证的型号，安排厂商现场演示，由您决定后再采购。"
+        }
+      ],
+      "implicit_signal": "拒绝尝试需要自己上手研究的电子产品"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上回飞芝加哥出差，临时改签，自己打客服等了25分钟，回程错过家人晚餐。"
+        },
+        {
+          "role": "assistant",
+          "content": "所有机票和改签事宜由我与律所旅行部直接对接，设定变更规则，不再需要您亲自等待客服。"
+        }
+      ],
+      "implicit_signal": "出差安排需有专业助手全程处理"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "回家路上看到一家新开的低碳水餐厅，网上有30条好评，但账单里含糖酱料却没标注。"
+        },
+        {
+          "role": "assistant",
+          "content": "已更新常驻低碳水餐厅名单，要求每家提交食材配方与营养检测报告，未提供者不列入推荐。"
+        }
+      ],
+      "implicit_signal": "拒绝未经核实的餐饮推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "多年前学的电子病历法规，现在更新了，临时报班，结果老师还在讲旧版第42篇。"
+        },
+        {
+          "role": "assistant",
+          "content": "已筛选出下月由联邦检察官授课的更新课程，课件发布日期在本周，封面有HHS最新备忘录引用。"
+        }
+      ],
+      "implicit_signal": "继续教育课程必须直接针对合规实务"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "预约确认前发现百老汇《苏格拉底》票价150，但剧情简介只有两行，不确定值不值。"
+        },
+        {
+          "role": "assistant",
+          "content": "已收集《纽约时报》和《纽约客》的深度评论，并附上剧情冲突梗概与时长；优等座位可锁定。"
+        }
+      ],
+      "implicit_signal": "娱乐支出愿意花钱但要求明确价值"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "候机区收到一位自称某药企法务的电话，说更新合规条款，但对方背景声像咖啡馆。"
+        },
+        {
+          "role": "assistant",
+          "content": "已要求该人士通过律所专用加密渠道发送书面委托函，并在律师名录库中交叉核实其注册信息。"
+        }
+      ],
+      "implicit_signal": "对客户代表的身份核实有高标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次团队直接把调解方案发给了对方，但我还没签批，结果对方直接接受，少了争取空间。"
+        },
+        {
+          "role": "assistant",
+          "content": "已设定流程：所有对外协同文件需经VIP电子签章、确定版本号后才可发出，否则一律拦截。"
+        }
+      ],
+      "implicit_signal": "委托授权后再行动，不偏离预先设定"
+    }
+  ]
+}

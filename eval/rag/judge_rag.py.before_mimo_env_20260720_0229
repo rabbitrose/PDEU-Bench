@@ -1,0 +1,181 @@
+#!/usr/bin/env python3
+"""Judge RAG hidden-preference eval results with LLM-as-judge."""
+
+from __future__ import annotations
+
+import json
+import sys
+from pathlib import Path
+
+EVAL_DIR = Path(__file__).resolve().parents[1]
+if str(EVAL_DIR) not in sys.path:
+    sys.path.insert(0, str(EVAL_DIR))
+
+import judge
+
+
+# =========================
+# 用户长期可调 judge 超参数
+# =========================
+
+# 为空表示使用 api.py 中的 GEN_MODEL。
+TARGET_GEN_LLM = "gemini-3.1-flash-lite"
+
+# 选择要 judge 的 eval pass 目录；例如 1 读取 pass_1。
+PASS_N = 1
+
+# 长上下文结果目录控制。rag 默认读取
+# runresult/<模型>/<难度>/rag/pass_<PASS_N>/。
+ENABLE_LONG_CONTEXT = False
+LONG_CONTEXT_TURNS = 0
+
+# 批量 judge 多个长上下文轮次；非空时会依次覆盖 LONG_CONTEXT_TURNS。
+LONG_CONTEXT_TURNS_LIST: list[int] = []
+
+# 指定后只 judge 对应 eval run_id；为空时默认 judge 目标目录下最新一轮 eval。
+TARGET_EVAL_RUN_ID = ""
+# RAG 正式评测允许断点补跑跨多个 run_id；按 case 去重后选择最新记录。
+JUDGE_LATEST_EVAL_RUN_ONLY = False
+
+# DeepSeek 官方接口按项目约定随任务难度设置；Qingyun 固定为 20。
+DEEPSEEK_CONCURRENCY_BY_DIFFICULTY = {"easy": 68, "hard": 75, "all": 75}
+DEFAULT_JUDGE_CONCURRENCY = 8
+
+# Qingyun 代理地址按项目约定固定使用较低并发。
+QINGYUN_JUDGE_CONCURRENCY = 20
+
+# 为空表示评估全部用户/任务；例如 ["user_001"]、["task_001"]。
+USER_ID_FILTER: list[str] = []
+TASK_ID_FILTER: list[str] = []
+
+# 单难度调试配置；非空列表用于依次 judge 多个正式难度。
+TASK_DIFFICULTY = "hard"
+TASK_DIFFICULTY_LIST: list[str] = ["hard"]
+
+
+RAG_MODE = "rag"
+
+
+def _register_rag_mode() -> None:
+    judge.VALID_PREFERENCE_INJECTION_MODES.add(RAG_MODE)
+    judge.PREFERENCE_INJECTION_LABELS[RAG_MODE] = "用户交互历史 RAG Top-3"
+
+
+def _patch_judge_context() -> None:
+    if getattr(judge, "_RAG_BEHAVIOR_INSTALLED", False):
+        return
+
+    original_preference_source_description = judge.preference_source_description
+    original_profile_core = judge.profile_core
+
+    def preference_source_description_with_rag(record: dict) -> str:
+        mode = str(record.get("preference_injection_mode") or judge.PREFERENCE_INJECTION_MODE)
+        if mode == RAG_MODE:
+            return "从 hidden info 中检索得到的与当前任务最相关 Top-3 历史 QA 记录及其隐式偏好"
+        return original_preference_source_description(record)
+
+    def profile_core_with_rag(record: dict) -> dict:
+        core = original_profile_core(record)
+        mode = str(record.get("preference_injection_mode") or judge.PREFERENCE_INJECTION_MODE)
+        provided = (
+            record.get("provided_eval_context")
+            if isinstance(record.get("provided_eval_context"), dict)
+            else record.get("provided_preference_context")
+            if isinstance(record.get("provided_preference_context"), dict)
+            else {}
+        )
+        provided_context = provided.get("context") if isinstance(provided.get("context"), dict) else {}
+        if mode == RAG_MODE and isinstance(core, dict):
+            rag_history = provided_context.get("rag_retrieved_user_interaction_history")
+            if rag_history is not None:
+                core["rag_retrieved_user_interaction_history"] = rag_history
+        return core
+
+    judge.preference_source_description = preference_source_description_with_rag
+    judge.profile_core = profile_core_with_rag
+    setattr(judge, "_RAG_BEHAVIOR_INSTALLED", True)
+
+
+def _patch_qingyun_concurrency() -> None:
+    if getattr(judge, "_RAG_QINGYUN_CONCURRENCY_PATCH_INSTALLED", False):
+        return
+
+    original_calibrate_concurrency = judge.calibrate_concurrency
+
+    def calibrate_concurrency_with_qingyun_limit(
+        client: judge.LLMClient,
+        logger,
+    ) -> int:
+        if client.base_url == "https://api.qingyuntop.top/v1":
+            logger.info("根据项目 API 约定，Qingyun judge 并发采用 %s。", QINGYUN_JUDGE_CONCURRENCY)
+            return QINGYUN_JUDGE_CONCURRENCY
+        return original_calibrate_concurrency(client, logger)
+
+    judge.calibrate_concurrency = calibrate_concurrency_with_qingyun_limit
+    setattr(judge, "_RAG_QINGYUN_CONCURRENCY_PATCH_INSTALLED", True)
+
+
+def _install_rag_behavior() -> None:
+    _register_rag_mode()
+    _patch_judge_context()
+    _patch_qingyun_concurrency()
+
+
+def _target_gen_model_name() -> str:
+    if TARGET_GEN_LLM:
+        return TARGET_GEN_LLM
+    return str(getattr(judge.load_api_config(), "GEN_MODEL"))
+
+
+def _rename_rag_html_and_update_summary(previous_htmls: set[Path]) -> None:
+    target_model = _target_gen_model_name()
+    html_dir = judge.html_dir_for_model(target_model, RAG_MODE, PASS_N)
+    judge_dir = judge.judge_result_dir_for_model(target_model, RAG_MODE, PASS_N)
+    for old_path in sorted(set(html_dir.glob("judge_report_*.html")) - previous_htmls):
+        run_id = old_path.stem.removeprefix("judge_report_")
+        new_path = old_path.with_name(f"RAG评测报告_{run_id}.html")
+        old_path.replace(new_path)
+        summary_path = judge_dir / f"judge_summary_{run_id}.json"
+        if not summary_path.exists():
+            continue
+        summary = json.loads(summary_path.read_text(encoding="utf-8"))
+        outputs = summary.get("outputs") if isinstance(summary.get("outputs"), dict) else {}
+        outputs["html_report"] = str(new_path)
+        summary["outputs"] = outputs
+        temporary = summary_path.with_suffix(summary_path.suffix + ".tmp")
+        temporary.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
+        temporary.replace(summary_path)
+
+
+def _configure_judge(task_difficulty: str, turns: int) -> None:
+    difficulty = judge.normalize_task_difficulty(task_difficulty)
+    judge.TARGET_GEN_LLM = TARGET_GEN_LLM
+    judge.PREFERENCE_INJECTION_MODE = RAG_MODE
+    judge.PASS_N = PASS_N
+    judge.ENABLE_LONG_CONTEXT = ENABLE_LONG_CONTEXT
+    judge.LONG_CONTEXT_TURNS = turns
+    judge.TARGET_EVAL_RUN_ID = TARGET_EVAL_RUN_ID
+    judge.JUDGE_LATEST_EVAL_RUN_ONLY = JUDGE_LATEST_EVAL_RUN_ONLY
+    judge.AUTO_TUNE_CONCURRENCY = False
+    judge.DEFAULT_JUDGE_CONCURRENCY = DEFAULT_JUDGE_CONCURRENCY
+    judge.DEEPSEEK_JUDGE_CONCURRENCY = DEEPSEEK_CONCURRENCY_BY_DIFFICULTY[difficulty]
+    judge.QINGYUN_DEEPSEEK_JUDGE_CONCURRENCY = QINGYUN_JUDGE_CONCURRENCY
+    judge.USER_ID_FILTER = USER_ID_FILTER
+    judge.TASK_ID_FILTER = TASK_ID_FILTER
+    judge.TASK_DIFFICULTY = difficulty
+
+
+def main() -> None:
+    _install_rag_behavior()
+    turns_list = LONG_CONTEXT_TURNS_LIST or [LONG_CONTEXT_TURNS]
+    for task_difficulty in TASK_DIFFICULTY_LIST or [TASK_DIFFICULTY]:
+        for turns in turns_list:
+            _configure_judge(task_difficulty, turns)
+            html_dir = judge.html_dir_for_model(_target_gen_model_name(), RAG_MODE, PASS_N)
+            previous_htmls = set(html_dir.glob("judge_report_*.html")) if html_dir.exists() else set()
+            judge.main()
+            _rename_rag_html_and_update_summary(previous_htmls)
+
+
+if __name__ == "__main__":
+    main()

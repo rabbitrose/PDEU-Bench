@@ -1,0 +1,470 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_137",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:03:02",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_002",
+      "hidden_indirect_008",
+      "hidden_indirect_013"
+    ],
+    "content": [
+      "hidden_indirect_009"
+    ],
+    "decision_priority": [
+      "hidden_indirect_002",
+      "hidden_indirect_009",
+      "hidden_indirect_018"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_014",
+      "hidden_indirect_020"
+    ],
+    "entertainment": [
+      "hidden_indirect_008",
+      "hidden_indirect_015"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_001",
+      "hidden_indirect_007",
+      "hidden_indirect_016"
+    ],
+    "food": [
+      "hidden_indirect_005",
+      "hidden_indirect_014",
+      "hidden_indirect_020"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_011"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_006",
+      "hidden_indirect_012",
+      "hidden_indirect_015"
+    ],
+    "learning": [
+      "hidden_indirect_007",
+      "hidden_indirect_016"
+    ],
+    "privacy": [
+      "hidden_indirect_004",
+      "hidden_indirect_017"
+    ],
+    "product": [
+      "hidden_indirect_001",
+      "hidden_indirect_018"
+    ],
+    "role_context": [
+      "hidden_indirect_013"
+    ],
+    "service": [
+      "hidden_indirect_003",
+      "hidden_indirect_010",
+      "hidden_indirect_019"
+    ],
+    "technology": [
+      "hidden_indirect_004",
+      "hidden_indirect_011",
+      "hidden_indirect_017"
+    ],
+    "travel": [
+      "hidden_indirect_006",
+      "hidden_indirect_012",
+      "hidden_indirect_019"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买监控摄像头，到付款才发现月费是分开的，预算最后一步失控。现在要买一个新路由器，我怎么避免同样的事情？"
+        },
+        {
+          "role": "assistant",
+          "content": "先确认这是否含终身维护，月费是多少，有没有隐藏激活费。我可以列个表格，把总成本摊到24个月再决定。"
+        }
+      ],
+      "implicit_signal": "购买前要求价格范围和假设条件"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "客户回复前我需要一个快速方案，但手头只有两个报价：一个便宜但得马上付，另一个贵点但可分三期。"
+        },
+        {
+          "role": "assistant",
+          "content": "选可分期的。短期支付不影响现金流，总成本除以12个月后差额不到50比索，长期负担更轻。"
+        }
+      ],
+      "implicit_signal": "总成本和长期负担优先于短期便利"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "退订了一个月前买的在线课程，结果发现取消要提前48小时，我已经超时了，扣了下月费。"
+        },
+        {
+          "role": "assistant",
+          "content": "现在取消当前订阅还剩24小时窗口，下月自动续费。我可以把取消按钮路径存成截图，下次不再超时。"
+        }
+      ],
+      "implicit_signal": "需要取消规则和响应速度说明"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "设备更新后，手写笔记应用要求读取位置和联系人才能同步，我拒绝了，但离线副本还在旧设备上。"
+        },
+        {
+          "role": "assistant",
+          "content": "用USB迁移离线副本到新设备，不要开启位置权限。如果需要同步，用WebDAV自托管，数据不出本地网络。"
+        }
+      ],
+      "implicit_signal": "只提供完成任务必要的信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "回家路上经过一家本地小店，菜单看起来不错，但有同行者不吃辣，上次多绕了一次路去找替代餐。"
+        },
+        {
+          "role": "assistant",
+          "content": "先看菜单有没有不辣选项，如果有4个以上无辣菜，预算控制在每人120比索内，就不用绕路了。我列出来。"
+        }
+      ],
+      "implicit_signal": "偏好保守估算并考虑同行限制"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "订了去瓦哈卡的巴士票，网站没说是经济舱有行李附加费，到站多付了250比索。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次订票前先检查行李限额和附加费，我会在候选文件夹里保存两个包含总价和取消政策的PDF再下单。"
+        }
+      ],
+      "implicit_signal": "避免隐藏费用"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "前一天学得还可以，但没做复盘，第二天又忘了。今天我想试新的学习法，但只有38分钟空闲。"
+        },
+        {
+          "role": "assistant",
+          "content": "用间隔重复卡片，38分钟可以做3轮测试和1次错题记录。我准备3个工业革命案例，每个带一个失败原因，你试完能直接对比。"
+        }
+      ],
+      "implicit_signal": "需要示例和可复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周末有个小型历史讲座，门票250比索，但交通和餐费另算，总预算到500。这个月已经超了日常娱乐线。"
+        },
+        {
+          "role": "assistant",
+          "content": "讲座是必须还是可推迟？如果是可推迟，建议选下个月场次，现金流更宽裕。这张成本表把250门票和50交通标记为必选，餐食可自备。"
+        }
+      ],
+      "implicit_signal": "区分必须和可推迟花费"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "图书馆闭馆前半小时，我才从一本工业革命书里找到线索，但网上有很多种解释，我不知道信哪个。"
+        },
+        {
+          "role": "assistant",
+          "content": "把书中数据来源和三个网页冲突点列成表格，标出假设条件。闭馆后我们只对比这5个数字即可定论。"
+        }
+      ],
+      "implicit_signal": "拒绝通用建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "订阅了一个月试用的档案数据库，忘取消，第29天扣了全款。现在我想换个平台。"
+        },
+        {
+          "role": "assistant",
+          "content": "新平台试用期是48小时自动续费。我设个日历提醒29天后取消，并把取消规则存入项目看板备注。"
+        }
+      ],
+      "implicit_signal": "需要提醒取消规则"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "两个笔记应用候选，一个免费但只能导PDF，另一个收费支持Markdown。手头有离线副本需要迁移。"
+        },
+        {
+          "role": "assistant",
+          "content": "列成本表，免费版导出限制在未来可能产生额外工时。收费应用每年维护费约120比索，但迁移零成本。必要项：支持Markdown，可推迟：主题自定义。"
+        }
+      ],
+      "implicit_signal": "成本表格式优先"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去莫雷利亚，说好按人均住宿预算找，结果网上标价不含清洁费，到店多付了48比索。"
+        },
+        {
+          "role": "assistant",
+          "content": "找到三家含清洁费且可取消的民宿，总价逐一列在成本表第三列。先看绝对值最低的，再确认没有其他附加费。"
+        }
+      ],
+      "implicit_signal": "避免含糊预算"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "独立咨询项目需要短期租用一台旧式机床做演示，预算从项目费里出，但我不熟悉租赁条款里的罚款条件。"
+        },
+        {
+          "role": "assistant",
+          "content": "三个租赁商报价都含逾期日租和损坏赔偿上限。选48小时标准期无罚款的，风险阈值设为总预算的15%。我把条款截图到项目看板。"
+        }
+      ],
+      "implicit_signal": "职业场景影响预算决策"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "手机截图里存了7家本地馆子，想带朋友去，但每家评论都有差评，我纠结了一个小时还没决定。"
+        },
+        {
+          "role": "assistant",
+          "content": "用阈值排除：排除3家有低分关于服务速度的，剩下4家里选最近去过的两家做个最终对比表，30分钟内选一个。"
+        }
+      ],
+      "implicit_signal": "愿意比较但不想无限选择"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周末音乐节门票在打折，但现场说要提前2小时排队入场，第二天还有工作，上次多绕了一次路已经打乱作息了。"
+        },
+        {
+          "role": "assistant",
+          "content": "音乐节排队和散场可能影响次日。建议取消音乐节，换成本地博物馆晚上的特展，票价便宜128比索，且9点前结束。"
+        }
+      ],
+      "implicit_signal": "避免过度拥挤活动"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天你说给我找工业革命能源效率的案例，结果只给了3个维基链接，我打开后还要自己挑数据对比。"
+        },
+        {
+          "role": "assistant",
+          "content": "修正：我筛出蒸汽机和电动机前后各5年效率数据，附带两个失败的改进案例。表格列出前提条件，你直接用来做项目报告。"
+        }
+      ],
+      "implicit_signal": "不接受只堆材料链接"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "回家路上手机没电了，用朋友的电脑查路线，历史记录被记住了。我不想共享我的实时位置给任何人。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次用离线地图保存区域，断网也能查。这台电脑清除历史记录即可，我写成操作步骤，你回家后执行。"
+        }
+      ],
+      "implicit_signal": "对位置保持谨慎"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "客户回复前我要买一个便携白板，能折叠和磁吸的，预算500比索内。看中两个，一个含笔和擦布但贵80，一个只有白板。v"
+        },
+        {
+          "role": "assistant",
+          "content": "必要项：折叠和磁吸。两个都符合。可推迟项：配件自行购买成本低于80比索，选便宜白板省下预算买国产笔和擦布，总成本更低。"
+        }
+      ],
+      "implicit_signal": "按必要项和可推迟项筛选"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "设备更新后，要订下个月去瓜纳华托的巴士和住宿，之前我用三个不同App比价，每个都要重新注册和验证。"
+        },
+        {
+          "role": "assistant",
+          "content": "用单一聚合平台查，只注册一次。一次付款锁定报价，取消政策需48窗口。我把两个必要选项的对比放到项目看板。"
+        }
+      ],
+      "implicit_signal": "少中转少注册"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "回家路上菜店土豆特价，但冰箱里还有上周末的玉米，不吃完会坏。预算在最后一步失控过，这次不想多买。v"
+        },
+        {
+          "role": "assistant",
+          "content": "先消耗玉米，两天内食材不重复。土豆可以放一周且特价省18比索，但如果你错过冰箱清理日，多买只会增加浪费。先清理旧库存。"
+        }
+      ],
+      "implicit_signal": "愿意自己做饭减少成本"
+    }
+  ]
+}

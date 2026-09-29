@@ -1,0 +1,286 @@
+{
+  "user_id": "user_115",
+  "explicit_preferences": {
+    "user_profile": "一位离异父亲，有三个孩子，正在寻求儿童监护事宜的法律代表。",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "David Miller",
+        "age": 45,
+        "gender": "男性",
+        "location": "美国伊利诺伊州芝加哥",
+        "languages": [
+          "英语"
+        ],
+        "education_level": "计算机科学学士学位",
+        "occupation": "软件工程师",
+        "industry": "技术",
+        "seniority": "资深",
+        "household": "离异，三个孩子的父亲（年龄12、10、8），正在执行共同监护安排",
+        "life_stage": "中年人，积极抚养孩子，处理离婚后家庭动态。"
+      },
+      "physical_profile": {
+        "height_cm": 178,
+        "general_appearance": "中等身材，休闲整洁着装，简约风格，常显疲惫但警觉。",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "负责任、公正、略显内向。优先考虑稳定和孩子的福祉，但在法律压力下会焦虑。",
+        "big_five": {
+          "openness": 50,
+          "conscientiousness": 85,
+          "extraversion": 30,
+          "agreeableness": 75,
+          "neuroticism": 60
+        },
+        "strengths": [
+          "有条理且注重细节。",
+          "富有同理心和关怀。",
+          "问题解决型思维。",
+          "在常规压力下有耐心。"
+        ],
+        "weaknesses": [
+          "倾向过度思考决定。",
+          "难以委托重要任务。",
+          "睡眠不足时易怒。"
+        ],
+        "values": [
+          "家庭凝聚力。",
+          "公平公正。",
+          "诚实透明。",
+          "财务安全。"
+        ],
+        "motivations": [
+          "争取公平的监护安排。",
+          "为孩子维持一个稳定的家。",
+          "成为积极的榜样。",
+          "与前配偶达成和解。"
+        ],
+        "stress_triggers": [
+          "法律程序的延误。",
+          "不可预测的法院裁决。",
+          "与前配偶的冲突或敌意。",
+          "法律费用带来的财务压力。"
+        ]
+      },
+      "background": {
+        "hometown": "伊利诺伊州埃文斯顿。",
+        "family_upbringing": "中产阶级，父母结婚35年，有一姐。",
+        "education": "伊利诺伊大学厄巴纳-香槟分校计算机科学学士。",
+        "career_history": "在一家中型科技公司工作15年，现为一家更大公司的高级软件工程师；每个孩子都休过陪产假。",
+        "significant_life_events": [
+          "2005年结婚。",
+          "2022年离婚，分居两年后。",
+          "目前与前妻共同抚养孩子，前妻住在10英里外。",
+          "最近开始接受治疗以应对共同抚养的压力。"
+        ],
+        "community_involvement": "在孩子的学校编程俱乐部做志愿者，偶尔参加本地爸爸小组。"
+      },
+      "lifestyle": {
+        "daily_routine": "早上6点起床，准备孩子早餐和书包，9-5工作，偶尔远程办公，下午5:30接孩子，家庭晚餐，辅导作业，晚上10点熄灯。",
+        "hobbies": [
+          "周末与孩子徒步。",
+          "阅读法律和育儿书籍。",
+          "烹饪简单饭菜。",
+          "在线下国际象棋。"
+        ],
+        "social_life": "因监护安排受限；每两周见一次密友，避免大型聚会。",
+        "health_and_wellness": "每天散步30分钟，偶尔去健身房，尝试冥想但不规律。"
+      },
+      "interests": {
+        "books": [
+          "共同抚养指南。",
+          "儿童心理学。",
+          "科幻。",
+          "法律惊悚小说。"
+        ],
+        "movies": [
+          "适合家庭观看的动画片。",
+          "关于自然和科技的纪录片。",
+          "有强烈道德主题的剧情片。"
+        ],
+        "music": [
+          "古典音乐。",
+          "独立民谣。",
+          "专注用的Lo-fi节拍。"
+        ],
+        "sports": [
+          "足球（与孩子一起观看）。",
+          "远足",
+          "国际象棋（竞技在线）。"
+        ],
+        "other": [
+          "DIY家居项目。",
+          "预算和个人理财。",
+          "学习人工智能和自动化。"
+        ]
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "家庭法改革新闻",
+          "单亲爸爸育儿技巧",
+          "离异父母的财务规划",
+          "适合家庭使用的科技产品评测。",
+          "共同抚养沟通策略。",
+          "内容必须符合此用户独特的工作模式：单亲爸爸工程模式：中立、务实、情感克制。",
+          "拒绝通用的助手框架：不要情感化离婚或推广通用的治疗语言。"
+        ],
+        "product_preferences": [
+          "可靠的中端智能手机（首选安卓）",
+          "降噪耳机用于专注",
+          "电池续航良好的笔记本电脑，用于工作和家庭",
+          "棋盘游戏和益智玩具。",
+          "备餐容器。",
+          "产品应通过用户自己的权衡视角选择：选项、成本暴露、对孩子的影响、下一步行动、所需文件。"
+        ],
+        "service_preferences": [
+          "有父亲权利经验的家事法律师",
+          "儿童治疗服务",
+          "在线共同育儿课程",
+          "预算友好型餐食配送服务。",
+          "法律文件存储应用。",
+          "只有当服务保持此决策优先级时才可接受：孩子稳定、法律可辩护性和可预测成本优于理想方案。"
+        ],
+        "learning_preferences": [
+          "带有实际示例的自定进度在线课程",
+          "来自可信法律专家的网络研讨会",
+          "阅读带有可操作建议的文章",
+          "避免长时间视频讲座"
+        ],
+        "travel_preferences": [
+          "带孩子自驾游去国家公园",
+          "全包式家庭度假村（预算范围内）",
+          "偏好直飞以避免延误",
+          "携带最少行李以减少压力"
+        ],
+        "food_preferences": [
+          "在家做饭而非外出就餐",
+          "健康但适合孩子的选择",
+          "意大利和墨西哥菜",
+          "因孩子偏好避免辛辣食物"
+        ],
+        "entertainment_preferences": [
+          "家庭电影之夜。",
+          "棋盘游戏和拼图。",
+          "细腻的剧情片和纪录片。",
+          "避免暴力或过于复杂的情节。"
+        ],
+        "technology_preferences": [
+          "注重隐私的软件",
+          "尽可能使用开源工具",
+          "Android 生态系统",
+          "个人使用的广告拦截器和 VPN",
+          "生产力方面偏好笔记本电脑而非平板电脑"
+        ],
+        "privacy_preferences": [
+          "对分享个人细节极其谨慎",
+          "使用隐身模式和加密消息",
+          "避免社交媒体，除了偶尔使用 LinkedIn",
+          "除非必要，从不启用位置服务"
+        ],
+        "budget_preferences": [
+          "谨慎消费，比较价格",
+          "愿意投资于孩子的教育和法律需求",
+          "偏好订阅模式而非一次性大额购买",
+          "追求价值而非品牌"
+        ],
+        "personalization_directives": {
+          "style_contract": "单亲爸爸工程模式：中立、实际、情感克制。",
+          "decision_priority": "孩子稳定性、法律防御性和可预测成本胜过理想解决方案。",
+          "evidence_contract": "希望有例子和有来源支持的推理，但使用平实的语言。",
+          "format_contract": "选项、成本敞口、孩子影响、下一步通话、所需文件。",
+          "anti_default_assistant_behavior": "不要情感化离婚或推行通用的治疗语言。",
+          "distinctive_quirks": [
+            "安卓和中端可靠性可以胜过高端设计。",
+            "调解选择必须避免权力不平衡。",
+            "预算削减不应首先触及孩子的日常安排。"
+          ],
+          "hard_avoidances": [
+            "愉快的安慰",
+            "性别假设",
+            "没有父亲参与经验的服务提供商"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "dislikes": [
+          "惊喜或临时变更。",
+          "激进的销售策略。",
+          "情感操控。",
+          "非专业人士的主动建议。",
+          "过于复杂的法律术语。"
+        ],
+        "constraints": [
+          "因监护安排而空闲时间有限。",
+          "离婚后预算紧张。",
+          "必须考虑孩子的日程（学校、活动）。",
+          "情感紧张，避免冲突。"
+        ]
+      },
+      "communication_style": {
+        "tone": "礼貌、尊重且直接。",
+        "preferred_channel": "正式事宜用电子邮件，时间敏感的协调用短信。",
+        "abstraction_level": "偏爱具体例子和可行步骤，而非抽象概念。",
+        "emotional_expression": "内向，但愿意在治疗情境中谈论感受。",
+        "language_complexity": "简单清晰的语言；除非另有解释，避免法律术语。"
+      },
+      "decision_making": {
+        "process": "分析型：收集信息，列出利弊，咨询可靠来源，深思熟虑后做决定。",
+        "speed": "中等程度；避免匆忙做重要决定。",
+        "risk_tolerance": "低风险偏好；偏爱安全、经过验证的选项。",
+        "delegation_style": "不愿委托个人事务（法律决定），但乐于接受专业建议。"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "研究芝加哥的家庭法律师。",
+          "比较监护调解与诉讼。",
+          "寻找负担得起的儿童治疗服务。",
+          "了解伊利诺伊州儿童监护法律。",
+          "预算法律费用",
+          "管理共同养育沟通工具"
+        ],
+        "preference_conflicts": [
+          "高隐私需求与需要与律师分享敏感细节的矛盾",
+          "追求成本效益解决方案与希望获得最佳法律代表的矛盾",
+          "有限时间与需要大量研究的矛盾"
+        ],
+        "ambiguity_to_preserve": [
+          "确切的法律策略（可能根据建议调整）",
+          "具体的监护时间安排偏好（仍在协商中）",
+          "对某些育儿技巧的情感准备程度"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:43",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "尊重、中立、共情但不煽情",
+            "response_length": "简洁但全面；选项倾向用要点列表",
+            "evidence_expectation": "高；希望有来源、引用和案例支持建议",
+            "formatting": "组织良好，有标题、列表和清晰部分",
+            "proactive_behavior": "欢迎关于截止日期和约会的提醒，但不要过度打扰",
+            "things_to_avoid": [
+              "过于情绪化的语言",
+              "笼统或模糊的建议",
+              "假设经济宽裕",
+              "催促快速做决定",
+              "分散注意力的幽默"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "选择家庭法律律师和调解方式",
+            "制定法律费用预算并调整家庭支出",
+            "寻找并安排离婚后调整的儿童治疗服务"
+          ]
+        }
+      }
+    }
+  }
+}

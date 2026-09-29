@@ -1,0 +1,491 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_018",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:59:29",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_008",
+      "hidden_indirect_012",
+      "hidden_indirect_016"
+    ],
+    "content": [
+      "hidden_indirect_007",
+      "hidden_indirect_021"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_010",
+      "hidden_indirect_016"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_004",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "entertainment": [
+      "hidden_indirect_013"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_007",
+      "hidden_indirect_011",
+      "hidden_indirect_018"
+    ],
+    "food": [
+      "hidden_indirect_012"
+    ],
+    "format_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_004",
+      "hidden_indirect_009",
+      "hidden_indirect_017"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_003",
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_015"
+    ],
+    "learning": [
+      "hidden_indirect_010",
+      "hidden_indirect_020"
+    ],
+    "privacy": [
+      "hidden_indirect_006",
+      "hidden_indirect_014",
+      "hidden_indirect_015",
+      "hidden_indirect_019"
+    ],
+    "product": [
+      "hidden_indirect_008"
+    ],
+    "role_context": [
+      "hidden_indirect_005",
+      "hidden_indirect_017"
+    ],
+    "service": [
+      "hidden_indirect_009",
+      "hidden_indirect_019"
+    ],
+    "technology": [
+      "hidden_indirect_014",
+      "hidden_indirect_020"
+    ],
+    "travel": [
+      "hidden_indirect_011",
+      "hidden_indirect_021"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买了一个便宜的在线协作白板，用了两周发现版本没法回退，团队卡在旧界面。退订还得额外发邮件，不如多花点钱买稳定版。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次选Miro的Starter套餐，月费比免费版高但支持版本历史，取消能直接在设置里操作。只买一个席位数，确认演示给团队看再扩。"
+        }
+      ],
+      "implicit_signal": "在多个选项中选择最可靠且维护成本低的，即使初始价格更高。"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次用清单对比了三家邮件服务，只看功能表没注意回滚时间和隐私政策，后来迁移时发现数据取不出来。我希望能直接看到结论依据和不确定点。"
+        },
+        {
+          "role": "assistant",
+          "content": "今天就按三个维度对比：数据导出方式、取消后保留天数、最小权限要求。每个结论标出信息来源和未确认项，最后给一个目标-约束-方案表。"
+        }
+      ],
+      "implicit_signal": "需要清晰的评估框架和可验证的结论依据。"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周注册一个会议工具，注册完又要填写同样的团队信息，还不能从旧账号导入。网上都说它功能多，但实际用起来一次会议都没开成。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次先检查能否用谷歌账号登录，团队信息用共享表格一次性填充，不需要重复填。热度推荐的选项先搁置，只看真实同行使用案例。"
+        }
+      ],
+      "implicit_signal": "讨厌重复录入信息，回避只看热度的推荐。"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次的采购计划里没标注哪个供应商的报价只是预估价，结果签约时多了15%附加费。我想在每一步都看到哪里还没确认。"
+        },
+        {
+          "role": "assistant",
+          "content": "今天的方案表每个单元格加一个标记栏：已确认、待验证、假设。你将收到一张目标-约束-方案表，所有未确认点用黄色高亮标出。"
+        }
+      ],
+      "implicit_signal": "需要清楚标出未确认点，不喜欢泛化建议。"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次为课程合作谈方案，对方只说‘加油，你可以的’就绕开了具体分工。我浪费了一周等确认，最后课程延期。"
+        },
+        {
+          "role": "assistant",
+          "content": "明天直接发一份合作模板，包含角色分工、时间节点和最晚确认日期。不讨论‘可能性’，只要求回复‘接受’或‘修改某一条’。"
+        }
+      ],
+      "implicit_signal": "回避空泛鼓励，需要明确下一步。"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "以前用了一个课堂互动工具，免费版功能够，但突然要求绑定真实手机号和位置权限，不更新就不能登录旧课程数据。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只考虑支持一次性注册码且不强制绑定手机号的工具。长期维护看两点：取消后数据能否导出、权限是否能逐项拒绝。"
+        }
+      ],
+      "implicit_signal": "避免忽略维护成本，对个人数据保持谨慎。"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天看了五篇‘最好用的笔记软件’推荐文章，每篇推荐理由就一句话‘功能丰富’，没一个提到同步延迟或数据导出限制。"
+        },
+        {
+          "role": "assistant",
+          "content": "今天只比较Notion和Obsidian在50M笔记时的同步速度、导出格式和离线打开时间。结论会说明测试环境和假设条件，不会直接说‘哪个最好’。"
+        }
+      ],
+      "implicit_signal": "内容需要依据和场景贴合，不接受通用榜单。"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "三个月前买了一个电商分析插件，按年付$240，第三个月发现它不更新购物车数据，但取消按全年不退。多付了一笔费用。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次选按月付的同类工具，并且插件市场上必须有至少两条过去一年的差评回复。如果第三个月效果不行，立即换用另一个免费替代。"
+        }
+      ],
+      "implicit_signal": "产品选择需说明长期使用成本以及替代方案。"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "预约了上门维修电脑，页面写着‘准时上门’，但到预约确认前一刻才短信说工程师只能下午来。我那天整个上午空等。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次预约时先问两个问题：取消政策是否免费、上门时间误差窗口是否小于30分钟。不回答的一律不选，并在备注写上‘若当日变更需电话通知’。"
+        }
+      ],
+      "implicit_signal": "服务需要明确取消规则和响应速度。"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "买了套Python网课，前十节课全讲历史发展，没有代码示例，我学到第二周都没法自己写一个脚本。"
+        },
+        {
+          "role": "assistant",
+          "content": "今天只看前两节是否直接有可运行练习。优先选提供小测验和自动评分的课程，不含‘下一章预告’或大段背景铺垫。"
+        }
+      ],
+      "implicit_signal": "学习需短周期反馈、示例和可复盘标准。"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去多伦多出差，按距离选了一个便宜旅馆，结果退房时发现它紧邻酒吧街，凌晨两点还吵，第二天开会完全没精神。同行的人临时退出，订的双人房也浪费了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次筛选条件是：距会议地点步行不超过15分钟、入住前24小时免费取消、评价里必须提到‘安静’‘安全’。优先选可单独更换房型的连锁店。"
+        }
+      ],
+      "implicit_signal": "路线需留缓冲，住宿需考虑安全与可取消性。"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次培训午餐点了一份油腻的炸鸡桶，结果下午胃不舒服，计划全打乱了。多付了一笔费用还没吃完。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次午餐只点本地小店的轻食拼盘，提前一天预选三个选项（鸡胸沙拉、汤面、米饭套餐），每份不超过$12。不会临时加单或升级。"
+        }
+      ],
+      "implicit_signal": "饮食需稳定执行当天安排，预算敏感。"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周末跟朋友去了音乐节，人潮挤得站不直，回家路上还堵了两小时，第二天说好改课程大纲完全没精力。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次只考虑小型现场演出（容量<200人），位置选离家不超过半小时车程。结束时间严格控制在晚上九点前，不影响第二天早晨安排。"
+        }
+      ],
+      "implicit_signal": "偏好小型真实活动，不喜欢破坏第二天节奏。"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "用了两年某笔记软件，某天它强制更新并默认开启了位置同步，我的图书馆闭馆前的笔记被自动上传了位置标签。设置里还没完全关闭入口。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只考虑开源或声明不收集位置数据的笔记软件。安装后第一件事是检查数据导出格式和权限开关截图，并存一份离线备份。"
+        }
+      ],
+      "implicit_signal": "工具需跨设备同步、可导出且最小权限。"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次填一份健康问卷，里面有‘居住街道’和‘家庭成员职业病’，我觉得没必要，但跳过就不能提交。退出后发现它自动将数据用于推广。"
+        },
+        {
+          "role": "assistant",
+          "content": "今后任何需要家庭信息的表单，先填一个概括性的区域名（例如‘温哥华西区’），职业健康栏写‘家族无记录’。不回答强制隐私问题就放弃该服务。"
+        }
+      ],
+      "implicit_signal": "涉及家庭健康财务信息需匿名化或概括。"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "为参加一个行业会议，报名时直接选了197的早鸟票。后来发现还有免费直播通道，只是不能现场提问。多付了一笔费用。"
+        },
+        {
+          "role": "assistant",
+          "content": "这个月只支付必须线下出席的会议，其余先注册免费直播。如果确认需要提问权限，会单独购买单次出席票（$29），不会一次性付全价。"
+        }
+      ],
+      "implicit_signal": "区分必须与可推迟花费，超预算需替代方案。"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "这周要交付一个课程大纲给合作方，但我把所有想法堆在一个旧版清单里，完全看不出哪些是必填、哪些是可选。"
+        },
+        {
+          "role": "assistant",
+          "content": "花15分钟将课程大纲拆成目标-约束-方案表。目标列：学员获得能力；约束列：课时、预算、技术限制；方案列按重要度标P0/P1。你从P0开始写，不填无用细节。"
+        }
+      ],
+      "implicit_signal": "用目标/约束/方案表拆分工作任务。"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "试用了一个打卡应用，注册要填手机号和目标标签，加入后不能自动同步日历，还得手动每天录入。排到一半才发现不合适，干脆删了。"
+        },
+        {
+          "role": "assistant",
+          "content": "今早直接在已有日历软件里设一个27分钟的日程块，不另装应用。只记录每日完成项和未完成原因，两周后回顾哪些环节需要调整。"
+        }
+      ],
+      "implicit_signal": "喜欢低摩擦工具，需要清楚标出未确认点。"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想找一个兼职教师对接平台，结果注册要绑LinkedIn和邀请码，取消时却发现不能彻底删账号，只能冻结。我的联系方式和教学视频还在上架状态。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次直接联系本地两家社区中心，用邮件确认需求。不注册任何需要社交账号登录的中介平台，合同写清楚数据删除条款。"
+        }
+      ],
+      "implicit_signal": "服务需少中转、少注册、数据边界清楚。"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "以前用了一个题库app，做了37题后发现它不支持题目导出，想做复习卡片就得全部手动复制。而且它没有错题复盘提示。"
+        },
+        {
+          "role": "assistant",
+          "content": "今天换用Anki，本地存储题库，每做完一个小节自动生成错题清单。只导入本周课程相关的29个核心概念，不一次性塞满。"
+        }
+      ],
+      "implicit_signal": "偏好可导出数据、短周期反馈的工具。"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月根据博客‘温哥华必去景点’安排周末，结果格兰维尔岛人多到水泄不通，停车费$27还没车位，一个地方都没逛完。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次选北温哥华一个安静的小径图书馆区域，先查看实时人流和停车场余位。目的地不超过日常车程45分钟，留出早餐桌边的30分钟缓冲再出发。"
+        }
+      ],
+      "implicit_signal": "内容需贴合自身场景，旅行避免热门默认。"
+    }
+  ]
+}

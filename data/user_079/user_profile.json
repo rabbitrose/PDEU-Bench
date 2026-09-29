@@ -1,0 +1,286 @@
+{
+  "user_id": "user_079",
+  "explicit_preferences": {
+    "user_profile": "一名在高等教育领域工作的黎巴嫩裔美国人",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "纳迪亚·哈基姆",
+        "age": 40,
+        "gender": "女性",
+        "location": "美国密歇根州迪尔伯恩",
+        "languages": [
+          "英语",
+          "阿拉伯语"
+        ],
+        "education_level": "教育学博士",
+        "occupation": "副教授",
+        "industry": "高等教育",
+        "seniority": "职业生涯中期",
+        "household": "已婚，有两个孩子（10岁和7岁）",
+        "life_stage": "资深专业人士，家长"
+      },
+      "physical_profile": {
+        "height_cm": 168,
+        "general_appearance": "橄榄色皮肤，深色卷发，棕色眼睛，戴眼镜，休闲商务风格",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "分析型、直接且具有文化意识的教师，重视效率和公平。",
+        "big_five": {
+          "openness": "高",
+          "conscientiousness": "高",
+          "extraversion": "适中",
+          "agreeableness": "low",
+          "neuroticism": "low"
+        },
+        "strengths": [
+          "分析性思维",
+          "有条理",
+          "对学生怀有同理心"
+        ],
+        "weaknesses": [
+          "对效率不耐烦",
+          "有时过于挑剔"
+        ],
+        "values": [
+          "教育",
+          "文化遗产",
+          "公平",
+          "家庭"
+        ],
+        "motivations": [
+          "促进少数族裔学生的教育机会",
+          "保护黎巴嫩文化"
+        ],
+        "stress_triggers": [
+          "官僚主义",
+          "课程缺乏多样性",
+          "守时问题"
+        ]
+      },
+      "background": {
+        "birthplace": "黎巴嫩贝鲁特",
+        "immigration_story": "青少年时期移居美国",
+        "education_history": [
+          "贝鲁特美国大学（英语文学学士）",
+          "密歇根大学（教育硕士，高等教育管理博士）"
+        ],
+        "career_path": "在密歇根大学迪尔伯恩分校担任助理教授6年，2年前晋升为副教授",
+        "current_residence": "密歇根州迪尔伯恩的郊区住宅"
+      },
+      "lifestyle": {
+        "daily_routine": "早起者，早间通勤到安娜堡，上课和开会，晚上与家人相处",
+        "family_role": "主要负责做饭和安排孩子的活动",
+        "hobbies": [
+          "烹饪黎巴嫩美食",
+          "阅读中东文学",
+          "与家人一起徒步",
+          "观看纪录片"
+        ],
+        "social_life": "活跃于当地阿拉伯裔美国人文化中心，偶尔与同事举办晚宴",
+        "health_and_wellness": "定期散步，尽量吃有机食品，每年体检"
+      },
+      "interests": {
+        "academic_fields": [
+          "多元文化教育",
+          "阿拉伯裔美国人研究",
+          "高等教育政策"
+        ],
+        "cultural_interests": [
+          "黎巴嫩民间音乐",
+          "阿拉伯书法",
+          "中东电影"
+        ],
+        "outdoor_activities": [
+          "在州立公园远足",
+          "园艺（香草和蔬菜）"
+        ],
+        "community_involvement": [
+          "在阿拉伯裔美国人博物馆做志愿者",
+          "指导第一代大学生"
+        ]
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "新闻来源：NPR、半岛电视台英语频道、高等教育纪事报",
+          "阅读材料：多元文化教育学术期刊、阿拉伯裔美国作家小说、黎巴嫩菜谱",
+          "视频内容：纪录片（历史、文化、教育）、独立电影（尤其是中东题材）",
+          "内容必须符合该用户独特的工作模式：阿拉伯裔美国人研究教授模式：注重关系、文化精确、关注来源。",
+          "拒绝通用助手的框架：不要将身份扁平化为多样性语言。"
+        ],
+        "product_preferences": [
+          "电子产品：苹果MacBook Pro、iPhone 15、用于阅读的iPad",
+          "服装：Allbirds运动鞋、Eileen Fisher基本款、当地工匠手工围巾",
+          "厨房电器：KitchenAid厨师机、Breville烤箱、Instant Pot电压力锅",
+          "产品应通过用户自身的权衡视角选择：主题、文本/社区锚点、活动、可能的危害、修复措施。"
+        ],
+        "service_preferences": [
+          "流媒体：Netflix、Mubi、Kanopy（学术访问）",
+          "生鲜配送：Instacart（每周从Whole Foods或本地中东市场订购杂货）",
+          "语言学习：Duolingo（给她的孩子用）",
+          "只有在保留此决策优先级时才接受服务：学生归属感、家庭节奏和文化特性优先于机构整齐性。"
+        ],
+        "learning_preferences": {
+          "format": "互动式工作坊和研讨会优于讲座",
+          "topics": [
+            "高等教育领导力",
+            "多元与包容",
+            "针对遗产学习者的阿拉伯语"
+          ]
+        },
+        "travel_preferences": {
+          "destinations": [
+            "黎巴嫩（每两年一次探亲）",
+            "历史名城（如伊斯坦布尔、开罗、塞维利亚）",
+            "国家公园（如黄石、大峡谷）"
+          ],
+          "transport": "优先直飞航班；短途经济舱，长途商务舱",
+          "accommodation": "带厨房的精品酒店或度假租赁",
+          "activities": [
+            "参观博物馆",
+            "美食之旅",
+            "文化节庆"
+          ]
+        },
+        "food_preferences": {
+          "cuisines": [
+            "黎巴嫩（最爱）",
+            "地中海",
+            "意大利语"
+          ],
+          "ingredient_quality": "偏好有机、本地食材，避免加工和快餐",
+          "dietary_restrictions": "无禁忌，但减少红肉"
+        },
+        "entertainment_preferences": {
+          "music": [
+            "Fairuz（经典黎巴嫩）",
+            "世界音乐融合"
+          ],
+          "podcasts": [
+            "《美国生活》",
+            "《转换代码》",
+            "《高等教育教学》"
+          ],
+          "events": "戏剧、舞蹈表演（拉希德风格）、艺术开幕式"
+        },
+        "technology_preferences": {
+          "devices": "苹果生态系统（手机、笔记本、平板）",
+          "software": "Microsoft Office、Evernote、Zoom、Google日历",
+          "tech_traits": [
+            "可靠",
+            "用户友好",
+            "注重隐私"
+          ]
+        },
+        "privacy_preferences": {
+          "data_sharing": "最小化使用；使用VPN、定期清除缓存、退出数据收集",
+          "social_media": "有限使用（仅限职业LinkedIn，无个人Facebook或Instagram）"
+        },
+        "budget_preferences": {
+          "spending_behavior": "中等消费，投资于优质教育资源和旅行",
+          "splurge_categories": [
+            "有机食品杂货",
+            "旅行",
+            "书籍"
+          ],
+          "save_categories": [
+            "服装",
+            "娱乐（偏好免费博物馆日或图书馆活动）"
+          ]
+        },
+        "personalization_directives": {
+          "style_contract": "阿拉伯裔美国人研究教授模式：关系型、文化精准、来源明确。",
+          "decision_priority": "学生归属感、家庭节奏和文化特异性优先于机构化整齐划一。",
+          "evidence_contract": "学术和社区声音都很重要。",
+          "format_contract": "主题、文本/社区锚点、活动、潜在伤害、修复动作。",
+          "anti_default_assistant_behavior": "不要将身份扁平化为多样性语言。",
+          "distinctive_quirks": [
+            "黎巴嫩花园规划既是文化记忆，也是园艺。",
+            "家庭出游需要食物、休息和适合儿童的自然环境。",
+            "课程提案必须避免象征性点缀。"
+          ],
+          "hard_avoidances": [
+            "通用多元文化措辞",
+            "引用堆砌",
+            "忽视家庭用餐的计划"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "general_dislikes": [
+          "低效和官僚主义",
+          "缺乏守时",
+          "文化刻板印象和象征性行为",
+          "快餐连锁店（如麦当劳、肯德基）",
+          "过度商业化的旅游",
+          "标题党新闻和煽情主义"
+        ],
+        "constraints": [
+          "因工作和家庭责任时间有限",
+          "晚间活动需要托儿服务",
+          "坚果过敏（避免生坚果，但熟坚果可以）"
+        ]
+      },
+      "communication_style": {
+        "tone": "直接、基于证据、礼貌但坚定",
+        "formality": "学术场合正式，与朋友和家人温暖随意",
+        "language_use": "偶尔插入阿拉伯语短语（如'inshallah'、'yalla'），偏好清晰简洁的写作",
+        "response_to_opinions": "尊重地参与讨论，但质疑未经支持的论断"
+      },
+      "decision_making": {
+        "process": "以研究为导向；查阅多个可靠来源、向信任的同伴寻求建议、重要决定让家人参与",
+        "speed": "重大购买/计划时速度中等偏慢，日常事务快",
+        "tools": "列利弊清单、使用日历安排、必要时查阅学术文献"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "推荐多元文化教育的学术文章或书籍",
+          "规划前往黎巴嫩或国家公园的家庭旅行行程",
+          "建议晚餐的黎巴嫩食谱",
+          "安排每周家庭日程",
+          "寻找专业发展工作坊"
+        ],
+        "preference_conflicts": [
+          "追求效率与对高质量家庭时间的需求之间的冲突",
+          "预算意识与在旅行和有机食品上挥霍的意愿之间的冲突",
+          "注重隐私与数字工具便利性之间的冲突"
+        ],
+        "ambiguity_to_preserve": [
+          "她对阿拉伯语内容（如音乐、新闻）的偏好可能取决于心情或语境",
+          "与助手互动时的正式程度可能因话题（工作与休闲）而异"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:45",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "专业且友好，尊重她的时间",
+            "response_length": "简洁但全面；提供带有理由的选项",
+            "evidence_expectation": "高；偏好推荐的来源（如引用、研究链接或评论）",
+            "formatting": "列表用项目符号、清晰标题、避免过多细节",
+            "proactive_behavior": "欣赏截止日期提醒和基于过往行为的建议，但不侵入",
+            "things_to_avoid": [
+              "华而不实的语言或营销噱头",
+              "未经请求的个人建议",
+              "基于刻板印象对她文化背景的假设",
+              "选项过多且缺乏明确理由"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "提出一门新的阿拉伯裔美国人研究跨学科课程",
+            "规划一个前往睡熊沙丘国家湖岸的家庭周末游",
+            "设计一个春季种植的黎巴嫩香草蔬菜花园"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,474 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_109",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:04:53",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 22,
+  "composition": {
+    "episodic_preference_trace": 22
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_020"
+    ],
+    "content": [
+      "hidden_indirect_011"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_022"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_007"
+    ],
+    "entertainment": [
+      "hidden_indirect_017"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_003"
+    ],
+    "food": [
+      "hidden_indirect_016"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_004"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_010",
+      "hidden_indirect_021"
+    ],
+    "learning": [
+      "hidden_indirect_014"
+    ],
+    "privacy": [
+      "hidden_indirect_019"
+    ],
+    "product": [
+      "hidden_indirect_012"
+    ],
+    "role_context": [
+      "hidden_indirect_021"
+    ],
+    "service": [
+      "hidden_indirect_013"
+    ],
+    "technology": [
+      "hidden_indirect_018"
+    ],
+    "travel": [
+      "hidden_indirect_015"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前那个路由器，说是速度快，但用了一个月就断流。我查了评测才发现它散热设计有问题，评测里却没提。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我把三款候选的拆机评测和用户长期反馈都整理给你。第一款散热有争议我标了冲突点，你根据那个做判断。"
+        }
+      ],
+      "implicit_signal": "偏好先排除硬约束不匹配项，再比较少量候选方案；预算敏感且要求来源可靠"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周日晚上整理会议纪要，发现下午引用的那个数据，后来查原始报告其实有更正。我发出去后又撤回了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这是那场报告的PDF离线副本，我标注了发布日期和更正声明页码。下次引用前我先把来源层标记出来，分一手报告、二次解读、论坛讨论三级。"
+        }
+      ],
+      "implicit_signal": "每个关键判断都要说明来源层级和可验证路径"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次订的付费在线课程，介绍写的是每周直播，结果录播回放比直播晚了三天才给。我取消续费了。"
+        },
+        {
+          "role": "assistant",
+          "content": "确认新课程前，我把它的课程交付时间表和用户反馈里的实际延迟数据做了对比。来源是Reddit和Trustpilot，分事实和推断两栏列给你。"
+        }
+      ],
+      "implicit_signal": "要求区分事实和推断，格式上先证据后结论"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你给的那个工具对比，左边列功能右边列价格，但我看不出来哪些数据是官方说的，哪些是用户测的。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我改成四栏：证据层级（官方/实测/推测）、冲突点（比如续航官方标13h实测8h）、判断、待验证项。你先看冲突点那栏。"
+        }
+      ],
+      "implicit_signal": "交付格式偏好：证据层级 / 冲突点 / 判断 / 待验证项"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那个健身App，两个评测源都说心率准，但一个说夜间校准有问题，另一个说没提这事。我把纸质收据翻出来看购买日期，发现他们是不同版本。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把两个版本的软件版本号、评测日期和矛盾点单独拉了一行日志。原始字段保留，不做平均。你之后可以回头核对哪个版本修了这个bug。"
+        }
+      ],
+      "implicit_signal": "喜欢矛盾日志，保留少量原始字段"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次说那个旅行保险“很多人选”，但我搜了一下只觉得是广告软文。有没有用户真的理赔成功或失败的具体案例？"
+        },
+        {
+          "role": "assistant",
+          "content": "找到4个Reddit帖子，我标了事实（赔付金额、时间线）和推断（原因是否合理）。示例：一个人因同行的人临时退出想取消，被拒赔；另一个因医院收据原件丢失被要求补材料。你判断标准在哪。"
+        }
+      ],
+      "implicit_signal": "要求区分事实和推断"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天买了个降噪耳机，回来发现连手机时切换模式有延迟。但评测里没人提这细节。"
+        },
+        {
+          "role": "assistant",
+          "content": "这是你那个型号的测评链接，我保留了一句原始用户评价：“切换模式延迟约2-3秒，固件1.2.3。已联系客服确认无补丁。”我不做推断，你把原始字段放一边。"
+        }
+      ],
+      "implicit_signal": "保留少量原始字段，不做过度泛化"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前看两个博客评同一台打印机，一个说耗材便宜，一个说易卡纸。你上次直接给了个“性价比中等”的结论，我觉得没帮助。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次不平均。我把耗材便宜列为优势（来源是官方价格页），易卡纸列为劣势（来源是43个用户评价）。冲突点不合并，你自己权衡哪边更影响你。"
+        }
+      ],
+      "implicit_signal": "拒绝把冲突平均掉"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个本地洗衣服务，你说“评价不错”，我查了只看到两条五星。没来源的推荐我不敢用。"
+        },
+        {
+          "role": "assistant",
+          "content": "这是它的Google Maps页面，目前只有2条五星（来源可点击），另有一个用户在Facebook提到取送时间不准。我列出原始链接和评论发布时间，不做“评价不错”的断言。"
+        }
+      ],
+      "implicit_signal": "拒绝无来源断言"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "预约确认前你发那个餐厅行程，说“步行10分钟”，但那天是雨天，实际走了快20分钟。你之前没提天气变量。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次我把步行时间标注为“干地/雨天”两个估计（来源：Google Maps + 24小时内天气预报）。不确定性直接写，不为了好看写一个数。"
+        }
+      ],
+      "implicit_signal": "为了流畅掩盖不确定性→不可接受"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你推荐那个邮件客户端，说“安全”。但我看了你给的来源，那篇评测最后也提到了两次数据泄露历史，你没提。"
+        },
+        {
+          "role": "assistant",
+          "content": "这是更新后的判断：安全评级中等（来源：创始人采访→事实，两次泄露→事实，2019-2023年度报告→推断）。不确定点：最近一次补丁是否彻底修复没有第三方审计。你看完再决定。"
+        }
+      ],
+      "implicit_signal": "结论必须说明依据和不确定点"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "前年买了个智能灯，用了半年坏了，因为厂商第二年就停止固件更新。我看你上次推荐的也有这个问题，只写了首批价格。"
+        },
+        {
+          "role": "assistant",
+          "content": "我给你标注了三款智能灯的三年维护记录：第一款固件更新满2年、第二款第13个月停产、第三款可刷开源系统。替代方案写在待验证项里。你先看长期成本那栏。"
+        }
+      ],
+      "implicit_signal": "产品选择要说明长期使用成本、维护和替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个线上备份服务，我取消订阅后才发现他们把取消规则藏在了三级菜单里。结果多扣了一个月。"
+        },
+        {
+          "role": "assistant",
+          "content": "这是三个候选服务的取消流程截图和响应速度统计（来源：用户实测+官网条款）。我把隐藏费用和取消窗口期用红字标在一开始，你不需要点进二级页面。"
+        }
+      ],
+      "implicit_signal": "服务需要明确取消规则和响应速度"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那个编程教程，说是一天内能搭建环境，结果我花了半天在安装依赖上。第二天又重做一遍才发现是版本冲突。"
+        },
+        {
+          "role": "assistant",
+          "content": "这个教程我把环境搭建部分拆成可验证的小步骤：第1节是否跑通（预计30分钟）、第2节是否有依赖冲突记录。你跑完每个步骤标注完成时间，我们复盘时间偏差。"
+        }
+      ],
+      "implicit_signal": "偏好短周期反馈和可复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周末去那个公园，你说推荐走1号路线，结果排队花了40分钟。你之前没写“周末热门”这个前提。"
+        },
+        {
+          "role": "assistant",
+          "content": "这是更新后的周六方案：路线A（确认有排队，来源是官网预约确认前流量数据）+路线B（人少但多走15分钟）。我标注了每条路线的缓冲时间和“如果下雨/散场后”备选。"
+        }
+      ],
+      "implicit_signal": "路线要留出缓冲，避免把热门景点当作默认最佳"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次推荐的餐厅，我在回家路上绕了20分钟不说，那家店还只收现金。我到了才发现。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次推荐三家里距离你公司15分钟内的本地小店。我标注了支付方式、高峰等待时间和预算区间。第一家是现金+可打包，第二家二维码支付但高峰期排队较长。你先看预算和支付方式那栏。"
+        }
+      ],
+      "implicit_signal": "偏好预算敏感、能稳定执行当天安排的餐食"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那个电影节活动，你说“氛围好”，结果现场挤得没法转身。我提前三天买的票还不能退。"
+        },
+        {
+          "role": "assistant",
+          "content": "这是本周末的放映活动，我选了座位数<50人的场次。来源是活动官方页面和最后一届参与者的反馈（提到“散场后不拥挤”）。我把容量和退改规则放在判断前面。"
+        }
+      ],
+      "implicit_signal": "偏好小型、真实、有内容密度的活动，避免过度拥挤"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个笔记软件，我用了半年，跨设备同步经常丢格式。后来我想导出Markdown，发现要手动一篇篇选。"
+        },
+        {
+          "role": "assistant",
+          "content": "这是一次导出全部笔记测试：App A支持单次zip导出Markdown+附件，App B只支持逐篇PDF且不能带标签。我把导出耗时和数据完整性写在结论上一栏。"
+        }
+      ],
+      "implicit_signal": "偏好跨设备同步但能导出数据的工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个天气App，安装时要读取我通讯录。我拒绝授权后它就不显示本地天气了。我直接删了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这三个天气App我用模拟账户测试了最小权限下的功能：第一个无通讯录不显示位置（不推荐），第二个权限要求仅位置（推荐），第三个需要注册+位置。我把敏感权限列在开头一栏。"
+        }
+      ],
+      "implicit_signal": "对位置、联系人和敏感历史保持谨慎"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次那个备份硬盘，你说400元，我去店里看到标价459。回来问才知道是线上限时价，我那个时间点已过期。"
+        },
+        {
+          "role": "assistant",
+          "content": "这是两个替代方案：预算400内——方案A是上一代型号（价格稳定，来源：三家实体店纸质收据），方案B是找我认识的服务商借一个测试。超预算的官方链接我放在待验证项里。"
+        }
+      ],
+      "implicit_signal": "若超预算必须给出替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周一早上你给的那个设备采购清单，推荐了三款打印机，说价格差不多。但我手动搜才发现有一款墨盒停产了。你要是只说“都可用”我就买了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次清单我标注了每款的墨盒停产年份和第三方替代墨盒兼容性。来源是厂商公告+线下耗材店老板确认。我不写“可用”，只写事实层“在售/停产/兼容”，推断层“推荐/不推荐”分开。"
+        }
+      ],
+      "implicit_signal": "在预算和时间同时受限的工作场景下拒绝缺乏来源的拖延"
+    },
+    {
+      "interaction_id": "hidden_indirect_022",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前那个线上课，你说“报名作业指导很好”，但没说是哪几期作业。我想翻来源翻半天。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把三期作业的原始批改截图（已隐去其他学员信息）和用户反馈链接放在这里。来源层级：截图是一手证据，反馈是二手机制（收集了13条，其中3条提了具体改进点）。你可以复核每张截图的时间戳。"
+        }
+      ],
+      "implicit_signal": "来源质量、可复核性和不确定性表达优先于速度"
+    }
+  ]
+}

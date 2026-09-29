@@ -1,0 +1,101 @@
+{
+  "user_id": "user_100",
+  "task": {
+    "task_id": "task_hard",
+    "title": "准备一个排练时间紧张的苛刻新角色",
+    "daily_life_domain": "work",
+    "scenario": "埃琳娜将在 5 周后出演百老汇新音乐剧女主角。修订后任务聚焦前两周高压适应计划：独白、舞蹈、嗓音耐力、冲突日程和自我护理底线，不再要求完整 5 周逐日排练管理。",
+    "user_goal": "制定前两周的准备框架，让她快速进入角色并降低过载风险。",
+    "why_complex": "仍需处理临时更改、媒体安排、慈善晚会冲突和身体限制，但范围从完整演出准备压缩为前两周关键控制。",
+    "constraints": [
+      "开演前 5 周，但本轮只规划前两周。",
+      "第二周慈善晚会与早期排练冲突。",
+      "导演可能临时更改排练内容。",
+      "餐饮需无麸质选项。",
+      "演出间隙需要安静空间。",
+      "过敏原因不能使用香薰产品。"
+    ],
+    "required_reasoning_steps": [
+      "识别前两周最关键的三项能力：独白记忆、舞蹈基础和嗓音耐力。",
+      "把每天训练拆成短块，预留导演临时更改缓冲。",
+      "处理慈善晚会冲突：保留、调整或委托替代。",
+      "列出需要的教练或材料，但只筛选优先级最高的 1-2 项。",
+      "建立无麸质餐饮、安静空间和无香环境的底线清单。",
+      "用 source_info 的地点、餐饮、天气或媒体记录校准日程和后勤。",
+      "输出前两周周表和应急规则。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "前两周正式排练、采访和摄影安排。",
+      "慈善晚会可调整的时间或替代方案。",
+      "可用声乐/舞蹈教练的费用和时间。",
+      "无麸质餐饮和安静空间选项。",
+      "需要优先记忆的独白和曲目清单。"
+    ],
+    "expected_deliverable": "前两周准备计划：训练块周表、冲突处理建议、教练/材料优先级、无麸质与无香后勤清单、自我护理底线。",
+    "success_criteria": [
+      "覆盖独白、舞蹈和嗓音耐力三项。",
+      "明确慈善晚会冲突处理方案。",
+      "每天保留恢复和缓冲时间。",
+      "列出无麸质、安静空间和无香要求。",
+      "最终方案至少引用 2 条 SandboxDB/source_info 真实候选记录。"
+    ],
+    "potential_failure_modes": [
+      "前两周安排过满导致嗓音或身体疲劳。",
+      "忽视导演临时更改缓冲。",
+      "慈善晚会冲突处理过晚。",
+      "后勤限制没有提前告知制作团队。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 6,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 8,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=7",
+        "constraints_capped=6",
+        "decision_points_capped=3",
+        "information_items_capped=5",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=27.9",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Elena Martinez",
+      "age": 34,
+      "gender": "女性"
+    }
+  }
+}

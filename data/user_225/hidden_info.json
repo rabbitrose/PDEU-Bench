@@ -1,0 +1,428 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_225",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T04:42:00",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 18,
+  "composition": {
+    "episodic_preference_trace": 18
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_006",
+      "hidden_indirect_013"
+    ],
+    "content": [
+      "hidden_indirect_005",
+      "hidden_indirect_016"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_008",
+      "hidden_indirect_014"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_007",
+      "hidden_indirect_011"
+    ],
+    "entertainment": [
+      "hidden_indirect_009"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_010",
+      "hidden_indirect_017"
+    ],
+    "food": [
+      "hidden_indirect_010",
+      "hidden_indirect_013"
+    ],
+    "format_contract": [
+      "hidden_indirect_004",
+      "hidden_indirect_016"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_003",
+      "hidden_indirect_005",
+      "hidden_indirect_009"
+    ],
+    "learning": [
+      "hidden_indirect_002",
+      "hidden_indirect_014"
+    ],
+    "privacy": [
+      "hidden_indirect_003",
+      "hidden_indirect_012"
+    ],
+    "product": [
+      "hidden_indirect_008",
+      "hidden_indirect_017"
+    ],
+    "role_context": [
+      "hidden_indirect_015",
+      "hidden_indirect_018"
+    ],
+    "service": [
+      "hidden_indirect_006",
+      "hidden_indirect_012"
+    ],
+    "technology": [
+      "hidden_indirect_001",
+      "hidden_indirect_011"
+    ],
+    "travel": [
+      "hidden_indirect_007",
+      "hidden_indirect_015",
+      "hidden_indirect_018"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次用某笔记应用半年，导出时发现只能逐页复制，多花了两小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次只推荐支持原生导出为Markdown或HTML的工具，我会先列出每种格式的导出步骤和限制。"
+        }
+      ],
+      "implicit_signal": "选择工具时优先考虑数据可导出和跨平台同步，避免单一平台锁定"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "为了做好祖母的酱汁，周五试了两个在线食谱：一个来自个人博客，一个来自烹饪学校官网。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会把官网版本作为主参考，因为标注了失效原因和替代替代食材，个人博客缺这个可验证信息。"
+        }
+      ],
+      "implicit_signal": "学习新东西时基于可验证的材料来源来选择，而非偏好某个平台"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周想试用一个食谱规划应用，注册时要求提供手机号、生日和饮食习惯。"
+        },
+        {
+          "role": "assistant",
+          "content": "那就跳过那个。我可以用本地离线应用或手写清单替代，只需要标注食材类别，不需要分享任何个人数据。"
+        }
+      ],
+      "implicit_signal": "避免需要过度披露个人信息才能使用的服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "关于地铁换乘时间，我从两个来源得到不同数字：官方地图说15分钟，乘客论坛说需要38分钟。我不确定该信哪个。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会列出：来源和置信度。官方地图（低置信度，可能没算晚点），论坛中位30分钟（高置信度但不代表所有情况）。建议预留30分钟缓冲。"
+        }
+      ],
+      "implicit_signal": "喜欢保留矛盾信息，并在输出时区分事实与推断"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我找到了一个意大利面的文章，但它开头说“根据广泛研究”，但没有任何引用。"
+        },
+        {
+          "role": "assistant",
+          "content": "不采用。没有可验证来源的建议可能在关键步骤导致失败。也许用你自己测试记录中成功的发酵时间会更可靠。"
+        }
+      ],
+      "implicit_signal": "拒绝没有来源的断言，即使看似有用"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我注册了一个烹饪课程，预约确认前发现它取消要提前48小时，且退款只退一半。"
+        },
+        {
+          "role": "assistant",
+          "content": "那就不注册。另一个选项是按次付费的本地小店，提前一天可免费取消，多付的一笔费用只是预授权，不会实际扣款。"
+        }
+      ],
+      "implicit_signal": "选择服务时看重取消规则透明度和短期成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去巴厘岛的航班信息：A网站说中转1小时够，B说至少要2小时。都是今天的信息。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会标注：A是中转站官方数据，B是最近旅客实际数据。如果采用B，需要提前下载离线副本以便在机场实时核对。"
+        }
+      ],
+      "implicit_signal": "规划时保留矛盾日志，检查不同来源的冲突点"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我需要买一个电蒸锅，但店铺推荐的型号无法拆洗密封圈，而且没有独立开关。我不能负担设备发热后表现下降。"
+        },
+        {
+          "role": "assistant",
+          "content": "那就选可拆洗密封圈、有独立开关的型号，虽然贵一点，但维护成本低，而且不会因为性能下降影响做饭。"
+        }
+      ],
+      "implicit_signal": "购买产品时优先考虑长期维护成本和替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周日晚上有个电影放映，但评价说人多嘈杂，我担心第二天早起会精神不好。"
+        },
+        {
+          "role": "assistant",
+          "content": "那就不去。可以改为周六中午去小型独立影院，人少，且不会打乱周日晚上整理厨房的任务。"
+        }
+      ],
+      "implicit_signal": "周末活动选择上避免拥挤和影响第二天节奏的选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我上周用新买的意大利面粉做披萨，发酵时间按包装说明15分钟，但面团没发起来。第二天又重做一遍，多花了30分钟。"
+        },
+        {
+          "role": "assistant",
+          "content": "停止使用那款面粉。我用测试记录找出合适发酵时间：本地一个面包师论坛说同为新加坡气候，达到理想状态需要38分钟。下次就按这个试。"
+        }
+      ],
+      "implicit_signal": "饮食方面根据实际失败记录调整，而非依赖单一推荐"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在列意大利食材清单时，我不想全用同意替换。比如“pecorino Romano”，我不喜欢被助手换成“罗马羊奶酪”。"
+        },
+        {
+          "role": "assistant",
+          "content": "保留原字段。清单里只写“pecorino Romano 300g”，旁边用小字标注中文译名（可选），不擅自修改。"
+        }
+      ],
+      "implicit_signal": "喜欢保留少量原始字段，即使文本更冗长"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "因为做研究需要比较，我打开了一个食谱比较网站，但注册时需要提供邮箱、性别、喜好三页。"
+        },
+        {
+          "role": "assistant",
+          "content": "不注册。手机截图保存关键对比页就行，需要时我帮你离线整理成结构化的表格。"
+        }
+      ],
+      "implicit_signal": "避免需要过多个人信息才能使用的在线服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "超市里一罐进口香草番茄酱卖将近10元，包装上没写具体成分比例。我习惯自己调。"
+        },
+        {
+          "role": "assistant",
+          "content": "那就自己做。我用30元买三个柠檬和一瓶橄榄油，至少能做两次酱料。成本更低且成分可调整。"
+        }
+      ],
+      "implicit_signal": "饮食预算敏感，愿意用自制方案代替购买"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有两个视频讲如何做提拉米苏，一个是认证厨师，一个是业余博主。博主说打发时间只需5分钟，但没展示过程。"
+        },
+        {
+          "role": "assistant",
+          "content": "选认证厨师视频。虽然博主说得简洁，但无法验证。厨师视频里所有步骤都有特写，可逐帧核对。"
+        }
+      ],
+      "implicit_signal": "学习材料选择上优先考虑可复核性"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我要去短期出差，但公司说可能到了就要处理一个紧急任务，所以得准备随时能工作的地方。上次因为网络不好，多付了一笔费用。"
+        },
+        {
+          "role": "assistant",
+          "content": "订酒店时优先选有备用宽带和安静书桌的，并提前下载离线副本以备断网。退订政策必须灵活。"
+        }
+      ],
+      "implicit_signal": "因为职业身份（需要带离线任务），旅行计划要考虑边工作边备选"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我看到两个笔记工具对比，一个说容量无限，另一个说每月有限额但能用本地同步。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会用格式：证据层级（官方条款 vs 用户实测）、冲突点（容量与同步方式冲突）、判断（选择本地同步）。待验证项：本地同步是否支持手机截图导入。"
+        }
+      ],
+      "implicit_signal": "输出内容需要结构化层次：先给冲突点再判断"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我在买研磨器时参考了旧版清单上的品牌，但发现它已经停产，替代款更贵且没有保固。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会根据你的预算和长期成本重新筛选，优先看维修便利且评价可复核的型号，并标记停产建议的可靠性低。"
+        }
+      ],
+      "implicit_signal": "选择产品时优先考虑可复核的长期成本和维修途径，并会参考旧清单但调整推荐置信度"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次旅行时因为手机无法离线读取地图，我在路口多绕了30分钟，而且没找到安静地点处理工作。"
+        },
+        {
+          "role": "assistant",
+          "content": "现在出发前我会将关键地图和住宿凭证下载为离线副本，并把工作需要的资料存入笔记的离线模式。"
+        }
+      ],
+      "implicit_signal": "旅行计划同时考虑工作需求和离线可访问性，倾向提前准备离线副本"
+    }
+  ]
+}

@@ -1,0 +1,316 @@
+{
+  "user_id": "user_050",
+  "explicit_preferences": {
+    "user_profile": "在流行在线平台上分享其体验和创作的虚拟现实内容创作者",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Mia Chen",
+        "age": 29,
+        "gender": "女性",
+        "location": "美国旧金山",
+        "languages": [
+          "英语",
+          "普通话"
+        ],
+        "education_level": "计算机科学学士学位",
+        "occupation": "VR内容创作者与开发者",
+        "industry": "科技/娱乐",
+        "seniority": "中级（5年经验）",
+        "household": "独居一居室公寓",
+        "life_stage": "年轻专业人士，无家属"
+      },
+      "physical_profile": {
+        "height_cm": 165,
+        "general_appearance": "苗条身材，黑色长发常扎起，戴眼镜，休闲风格（卫衣牛仔裤），富有表现力的眼睛",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "富有创造力且精通技术，内向但对分享她的VR世界充满热情。注重细节，以创新为驱动力，重视真实性。",
+        "big_five": {
+          "openness": "高",
+          "conscientiousness": "高",
+          "extraversion": "low",
+          "agreeableness": "适中",
+          "neuroticism": "low"
+        },
+        "strengths": [
+          "创造性解决问题",
+          "VR开发技术熟练度",
+          "对复杂项目有耐心",
+          "通过视频清晰沟通"
+        ],
+        "weaknesses": [
+          "可能过于完美主义",
+          "活动后社交疲劳",
+          "难以平衡工作与生活"
+        ],
+        "values": [
+          "真实性",
+          "创新",
+          "VR空间的包容性",
+          "社区反馈"
+        ],
+        "motivations": [
+          "创造沉浸式体验",
+          "激励他人探索VR",
+          "建立忠实观众",
+          "推动技术边界"
+        ],
+        "stress_triggers": [
+          "紧迫截止日期与bug",
+          "对她作品的负面评论",
+          "录制中的硬件故障"
+        ]
+      },
+      "background": "Mia在加州大学伯克利分校获得计算机科学学位，随后在一家VR初创公司工作了3年。她开设了一个展示其VR作品的YouTube频道，粉丝增长至20万。现在她全职专注于内容创作，与独立开发者合作，偶尔为科技公司做自由职业。",
+      "lifestyle": {
+        "typical_day": "上午晚些时候起床，查看分析数据和评论。下午开发VR环境或编写脚本。晚上录制和编辑视频。经常在夜间直播创作过程。周末探索新的VR发行版或参加虚拟聚会。",
+        "social_life": "主要是VR社区中的在线朋友。很少去拥挤的地方。更喜欢小聚会或与创作者朋友一对一相处。",
+        "routines": "每日冥想以保持专注。由于长时间工作定期进行背部拉伸。在线订购杂货以节省时间。"
+      },
+      "interests": [
+        "虚拟现实开发（Unity, Unreal Engine）",
+        "3D建模和动画",
+        "独立游戏",
+        "科技小工具和可穿戴设备",
+        "合成波音乐",
+        "科幻文学",
+        "极简室内设计",
+        "烹饪快速健康餐点"
+      ],
+      "explicit_preferences": {
+        "content_preferences": [
+          "类型：教程、幕后开发、VR游戏评测、体验式叙事",
+          "平台：YouTube、Twitch、GitHub",
+          "语调：信息丰富、热情、诚实",
+          "时长：教程10-20分钟，直播30-60分钟",
+          "格式：高质量视觉、清晰音频、隐藏式字幕",
+          "内容必须匹配该用户独特的工作模式：独立VR开发者模式：原型优先，可视化管线，具体的引擎设置。",
+          "拒绝通用助手框架：不要给出隐藏技术权衡的精致创作者建议。"
+        ],
+        "product_preferences": [
+          "电子产品：高性能笔记本、VR头显 (Valve Index、Quest 3)、降噪耳机",
+          "软件：Unity Pro、Blender、Adobe Creative Cloud",
+          "品牌：Razer、Logitech、Samsung",
+          "quality_over_price: True",
+          "eco_friendly: 中等兴趣，偏好节能设备",
+          "产品应通过用户自身的权衡视角来选择：构建目标、瓶颈、工具设置、测试场景、发布产物。"
+        ],
+        "service_preferences": [
+          "流媒体：YouTube Premium、Spotify",
+          "云存储：Google Drive、Dropbox",
+          "云计算：AWS、Azure用于VR流媒体测试",
+          "配送：Amazon Prime，偶尔Uber Eats",
+          "只有当服务保留此决策优先级时才可接受：帧率、可复现性、资产工作流和观众沉浸感胜过潮流。"
+        ],
+        "learning_preferences": {
+          "style": [
+            "动手项目",
+            "视频教程",
+            "文档"
+          ],
+          "subjects": [
+            "VR优化",
+            "程序化生成",
+            "VR中的UI/UX"
+          ],
+          "pace": "自主节奏加里程碑",
+          "resources": [
+            "在线课程（Coursera, Udemy）",
+            "社区论坛"
+          ]
+        },
+        "travel_preferences": {
+          "frequency": "很少，每年1-2次",
+          "type": [
+            "技术会议",
+            "自然静修"
+          ],
+          "destinations": [
+            "Tokyo",
+            "Reykjavik",
+            "偏远小屋"
+          ],
+          "accommodation": "有良好WiFi的Airbnb",
+          "activities": [
+            "参观VR游戏厅",
+            "远足",
+            "摄影"
+          ]
+        },
+        "food_preferences": {
+          "diet": "弹性素食，以植物为主，偶尔吃鱼",
+          "cuisine": [
+            "日本料理",
+            "意大利语",
+            "墨西哥料理"
+          ],
+          "cooking_at_home": "经常在周末准备餐食",
+          "eating_out": "每周一次，偏好安静的餐厅",
+          "avoid": [
+            "快餐连锁店",
+            "辣菜"
+          ]
+        },
+        "entertainment_preferences": {
+          "movies": [
+            "科幻",
+            "纪录片",
+            "艺术片"
+          ],
+          "tv_shows": [
+            "Black Mirror",
+            "Love Death + Robots",
+            "The Expanse"
+          ],
+          "music": [
+            "Synthwave",
+            "Ambient",
+            "Lo-fi"
+          ],
+          "books": [
+            "Neuromancer",
+            "Snow Crash",
+            "Ready Player One"
+          ],
+          "gaming": [
+            "VR游戏（Half-Life: Alyx, Beat Saber）",
+            "独立解谜游戏"
+          ]
+        },
+        "technology_preferences": {
+          "os": [
+            "Windows",
+            "Android"
+          ],
+          "browser": "Firefox（注重隐私）",
+          "social_media": [
+            "Twitter",
+            "Reddit",
+            "Discord"
+          ],
+          "devices": [
+            "定制PC",
+            "Quest 3",
+            "Pixel phone"
+          ],
+          "privacy_tools": [
+            "VPN",
+            "Signal",
+            "ProtonMail"
+          ]
+        },
+        "privacy_preferences": {
+          "data_sharing": "极简，尽可能选择退出",
+          "tracking": "使用广告拦截器，禁用跨应用跟踪",
+          "anonymity": "在线使用化名",
+          "preference_learning": "如果不出售数据，则接受个性化推荐"
+        },
+        "budget_preferences": {
+          "income_range": "每年$70k-$90k",
+          "spending_priorities": [
+            "VR硬件",
+            "软件订阅",
+            "高质量外设"
+          ],
+          "saving_goal": "应急基金和未来VR初创公司",
+          "financial_cautiousness": "中等，在技术上挥霍但在家做饭"
+        },
+        "personalization_directives": {
+          "style_contract": "独立VR开发者模式：原型优先、可视化流程、具体引擎设置。",
+          "decision_priority": "帧率、可复现性、资源工作流和观众沉浸感胜过追逐潮流。",
+          "evidence_contract": "基准测试、引擎文档和创作者范例优于泛泛评论。",
+          "format_contract": "构建目标、瓶颈、工具设置、测试场景、发布产物。",
+          "anti_default_assistant_behavior": "不要给出掩盖技术权衡的粉饰性创作者建议。",
+          "distinctive_quirks": [
+            "如果更丑的工具能保留版本控制和可复现性，我会选它。",
+            "教程必须包含失败状态和调试片段。",
+            "会议计划需要动手演示，而不是主题演讲观光。"
+          ],
+          "hard_avoidances": [
+            "元宇宙流行词",
+            "没有导出路径的封闭工作流",
+            "没有散热或VR帧率影响的硬件推荐"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "dislikes": [
+          "过于商业化的内容",
+          "标题党",
+          "嘈杂环境",
+          "未优化的VR体验"
+        ],
+        "constraints": [
+          "因内容创作日程而时间有限",
+          "非必需技术预算上限为每月$2k",
+          "社交精力每周仅限几小时"
+        ]
+      },
+      "communication_style": {
+        "formality": "非正式但尊重",
+        "vocabulary": "精通技术，使用行业术语但必要时解释",
+        "tone": "热情、支持、直接",
+        "non_verbal": "经常在文本中使用表情符号（👍, 🔥, 😊）和动图，在视频中表现力强"
+      },
+      "decision_making": {
+        "process": "深入研究（评论、规格、社区反馈），然后建立候选清单并在可能时测试。重视同行推荐而非广告。",
+        "factors": [
+          "性能",
+          "社区支持",
+          "长期价值",
+          "用户体验"
+        ],
+        "speed": "慎重，大额购买通常需要几天到一周"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "推荐VR游戏或工具",
+          "建议合作创作者",
+          "优化内容制作工作流",
+          "规划技术会议的旅行行程"
+        ],
+        "preference_conflicts": [
+          "想要高质量但注重预算",
+          "寻求社区但内向",
+          "喜欢创新但需要可靠性"
+        ],
+        "ambiguity_to_preserve": [
+          "特定VR头显偏好可能因上下文而异",
+          "确切收入为近似值",
+          "食物偏好可因社交活动而灵活调整"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:43",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "友好且知识渊博，如同事",
+            "response_length": "事实简洁，解释详细",
+            "evidence_expectation": "为推荐提供来源或推理",
+            "formatting": "列表使用项目符号，关键信息加粗，避免大段文字",
+            "proactive_behavior": "提供提示或相关资源，但不要过度推销",
+            "things_to_avoid": [
+              "营销言论",
+              "对其性别或背景的假设",
+              "过于复杂且没有解释的技术术语"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "策划一个关于程序化生成的VR开发教程系列",
+            "升级定制PC以提升VR渲染性能",
+            "计划参加VR/科技大会 (如GDC或AWE)"
+          ]
+        }
+      }
+    }
+  }
+}

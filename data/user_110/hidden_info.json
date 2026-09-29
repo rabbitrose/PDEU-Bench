@@ -1,0 +1,428 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_110",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:50:05",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 18,
+  "composition": {
+    "episodic_preference_trace": 18
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_007",
+      "hidden_indirect_015"
+    ],
+    "content": [
+      "hidden_indirect_002",
+      "hidden_indirect_014",
+      "hidden_indirect_018"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_017"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_005",
+      "hidden_indirect_010"
+    ],
+    "entertainment": [
+      "hidden_indirect_011"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_013"
+    ],
+    "food": [
+      "hidden_indirect_010"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_006",
+      "hidden_indirect_016"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_012"
+    ],
+    "learning": [
+      "hidden_indirect_009",
+      "hidden_indirect_017"
+    ],
+    "privacy": [
+      "hidden_indirect_008",
+      "hidden_indirect_018"
+    ],
+    "product": [
+      "hidden_indirect_007",
+      "hidden_indirect_013",
+      "hidden_indirect_014"
+    ],
+    "role_context": [
+      "hidden_indirect_004"
+    ],
+    "service": [
+      "hidden_indirect_005",
+      "hidden_indirect_012",
+      "hidden_indirect_016"
+    ],
+    "technology": [
+      "hidden_indirect_008",
+      "hidden_indirect_015"
+    ],
+    "travel": [
+      "hidden_indirect_009"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次请一位高价演讲者，预算在最后一步失控，结果只来了一半的人。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我筛选了本地愿意免费分享的嘉宾，费用全用在提供简单茶点和打印材料上。"
+        }
+      ],
+      "implicit_signal": "优先考虑成员的可及性和情绪安全，而非高昂的演讲者费用"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我翻看了几本回忆录，发现作者都有亲属患病的经历，但后来得知其中一位没有亲身经历。"
+        },
+        {
+          "role": "assistant",
+          "content": "那我邀请另一位写过疗愈日记的非专业作者吧，她分享的实际行动比头衔更能启发大家。"
+        }
+      ],
+      "implicit_signal": "选择演讲者优先考虑生活经验而非资历"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次演讲者讲了45分钟，小组里有人后来悄悄说感觉被灌输了，没机会分享自己的反应。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次把演讲时间缩到20分钟，后面留30分钟给成员提问和简短分享自己的故事。"
+        }
+      ],
+      "implicit_signal": "演讲者不能主导整个过程，要保持群体互动"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "role_context"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次自愿分享环节，有人因为紧张直接离开了房间。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次准备一个安静角落和一页便签，让不想说话的人写下感受，不强迫开口。"
+        }
+      ],
+      "implicit_signal": "拒绝强制脆弱性的方式，用自愿参与替代点名分享"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次静修安排了密集日程，一位成员因为空间狭小中途退出。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次选了有多个分散休息区的场地，并在开场时就强调随时可以去散步。"
+        }
+      ],
+      "implicit_signal": "静修空间必须提供退出选项，尊重个人边界"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有成员反馈上次宣传单用了‘创伤后应激’这个词，有人觉得太医疗化不敢来。"
+        },
+        {
+          "role": "assistant",
+          "content": "我重新写了描述，改用‘经历艰难时期后的恢复’，附上简单的茶饮信息。"
+        }
+      ],
+      "implicit_signal": "避免临床标签，用日常语言描述问题"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买的文件夹太贵，而且夹子很容易坏，两个月就换了。"
+        },
+        {
+          "role": "assistant",
+          "content": "我去本地折扣店买了加厚纸板文件夹，每个省了5元，够用一整年。"
+        }
+      ],
+      "implicit_signal": "选择耐用且廉价的办公用品，注重实用而非外观"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "小组共享文档里出现了陌生人，因为免费软件有广告追踪。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把全部资料迁移到了开源的OnlyOffice，关闭了远程访问权限，只对邀请成员开放。"
+        }
+      ],
+      "implicit_signal": "偏好开源软件以保护隐私，同时满足基本协作需求"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去国家公园的静修，白天是讲座式培训，大家反映很累。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次安排上午小组徒步，下午在安静角落独自写日记，晚上围坐分享一条收获。"
+        }
+      ],
+      "implicit_signal": "学习方式偏好实践和同伴互动，旅行偏好自然和主动反思"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次静修附近只有连锁快餐，一位素食成员几乎没吃东西。"
+        },
+        {
+          "role": "assistant",
+          "content": "我提前联系了本地一家墨西哥素食小摊，预定了33份加了黑豆和芒果的碗。"
+        }
+      ],
+      "implicit_signal": "素食，避免大型连锁餐厅，支持本地可持续饮食"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次小组放映了一部纪录片，有人觉得动物画面太血腥中途离场。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次改放一部关于社区园艺的独立电影，节奏平和，结束后有轻音乐放松。"
+        }
+      ],
+      "implicit_signal": "娱乐选择以治愈和真实为基础，避免刺激内容"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次活动安排得满满当当，有一位妈妈因为每天接送孩子只能参加下午场，觉得错过了重要环节。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把核心分享放在下午，并在早上预留了自由交流时间，让大家按自己节奏来。"
+        }
+      ],
+      "implicit_signal": "避免过于充实的议程，留出缓冲时间"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买的舒适鞋，款式好看但底太硬，走路17分钟就脚疼。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次去了一家可持续鞋店，试穿了带软垫支撑的环保款，适合长时间站立引导。"
+        }
+      ],
+      "implicit_signal": "选择产品时优先考虑引导者匹配度与成员需求"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周给小组推荐了一本自助书，有人反馈太理论化，像教授的讲义。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次改推荐一本讲普通人在离婚后重建生活的回忆录，附带一个讨论问题清单。"
+        }
+      ],
+      "implicit_signal": "内容选择侧重自助和个人故事，避免说教"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "订阅了某个在线排程工具，结果设备更新后不支持，退款也麻烦。"
+        },
+        {
+          "role": "assistant",
+          "content": "我换成用开源日历+群聊提醒，零费用，且成员自己就能修改时间。"
+        }
+      ],
+      "implicit_signal": "技术工具注重隐私和性价比"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次郊区打印店便宜但远，地铁换乘时才发现忘改时间，结果重印多花了钱。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次用步行就能到的社区打印铺，让他们只印一份样板让我核对后再批量做。"
+        }
+      ],
+      "implicit_signal": "打印服务选择靠近社区中心，且能快速修改"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次参加工作坊后，一位成员反而更依赖专家，不再自己写会议纪要。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次培训强调引导技巧，结束后布置每人轮流整理一次小组记录并分享。"
+        }
+      ],
+      "implicit_signal": "培训内容强化同伴领导力，而非削弱成员自主性"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有人在小组里主动分享了ID和地址，后来担心安全。"
+        },
+        {
+          "role": "assistant",
+          "content": "我修改了开场说明，强调分享只使用化名和模糊地点，并设有离线副本存档。"
+        }
+      ],
+      "implicit_signal": "分享个人故事时尊重他人隐私，匿名化处理"
+    }
+  ]
+}

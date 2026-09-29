@@ -1,0 +1,290 @@
+{
+  "user_id": "user_011",
+  "explicit_preferences": {
+    "user_profile": "一位在营地驻扎多年、提供基本服务和支援的敬业援助工作者",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Amara Osei",
+        "age": 34,
+        "gender": "女性",
+        "location": "肯尼亚卡库马难民营",
+        "languages": [
+          "英语",
+          "斯瓦希里语",
+          "丁卡语"
+        ],
+        "education_level": "公共卫生硕士学位",
+        "occupation": "现场协调员",
+        "industry": "人道主义援助/非营利组织",
+        "seniority": "中层管理",
+        "household": "单身，独自住在营地内的小型预制住房单元",
+        "life_stage": "致力于人道主义工作的早期职业专业人士，无子女"
+      },
+      "physical_profile": {
+        "height_cm": 168,
+        "general_appearance": "由于常在营地活动而健康精瘦；皮肤因日晒而粗糙，短自然发，常穿实用服装（卡其裤、Polo衫、结实靴子）。佩戴带ID的挂绳和太阳能手表。",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "富有同情心、坚韧且务实。深深致力于服务，但对低效率可能过于挑剔。在压力下茁壮成长，但难以应对官僚主义。",
+        "big_five": {
+          "openness": 60,
+          "conscientiousness": 85,
+          "extraversion": 55,
+          "agreeableness": 75,
+          "neuroticism": 35
+        },
+        "strengths": [
+          "危机管理",
+          "跨文化沟通",
+          "足智多谋",
+          "同理心",
+          "适应能力"
+        ],
+        "weaknesses": [
+          "对繁文缛节不耐烦",
+          "过度工作的倾向",
+          "在压力下可能直言不讳",
+          "任务难以委派"
+        ],
+        "values": [
+          "人类尊严",
+          "援助交付效率",
+          "协作",
+          "透明",
+          "责任感"
+        ],
+        "motivations": [
+          "切实改变人们的生活",
+          "解决后勤难题",
+          "与社区建立信任",
+          "指导当地员工"
+        ],
+        "stress_triggers": [
+          "官僚主义延误",
+          "缺乏资金或资源",
+          "看到本可避免的痛苦",
+          "团队之间的沟通不畅"
+        ]
+      },
+      "background": {
+        "birth_place": "加纳阿克拉",
+        "family_upbringing": "在一个中产阶级家庭长大，母亲是护士，父亲是教师；从小被鼓励帮助他人。",
+        "education": "加纳大学国际关系学士学位，内罗毕大学公共卫生硕士学位（通过远程学习）。",
+        "career_history": [
+          "联合国难民署区域办事处实习生（2年）",
+          "加纳北部社区卫生工作者（3年）",
+          "肯尼亚达达布难民营外勤官员（4年）",
+          "现任职务：卡库马难民营现场协调员（3年）"
+        ],
+        "significant_life_events": [
+          "在达达布经历了霍乱爆发并幸存",
+          "培训了超过100名社区卫生志愿者",
+          "开发了一个移动健康记录系统"
+        ],
+        "cultural_context": "强烈认同自己是加纳人，但在东非生活了超过7年；接受两种文化。"
+      },
+      "lifestyle": {
+        "daily_routine": "早上5:30起床，早晨在营地巡视检查分发点，与当地领导人开会，走访诊所，处理文书工作，晚上与总部通话。通常工作12小时。",
+        "social_habits": "偶尔与同事共进晚餐；喜欢小型聚会。每周通过WhatsApp视频电话与家人保持联系。",
+        "hobbies": "阅读关于发展的非虚构作品，跑步，学习当地手工艺（珠饰），写日记。",
+        "diet": "简单实用的餐食：由于肉类供应有限，以素食为主，吃当地菜如乌加里、豆子和绿叶蔬菜。",
+        "sleep_pattern": "6-7小时，常被夜间警报或紧急情况打断。"
+      },
+      "interests": {
+        "topics_of_interest": [
+          "全球健康",
+          "难民权利",
+          "物流与供应链",
+          "社区赋权",
+          "危机地图绘制"
+        ],
+        "media_consumption": "收听BBC世界服务和播客（例如《发展播客》），阅读无国界医生和联合国难民署的报告，关注少数意见领袖（主要是推特上的援助专家）。",
+        "hobbies": "在安全区域跑步，摄影（尊重地记录营地生活），撰写关于援助工作的个人博客（匿名）。"
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "新闻：人道主义危机、公共卫生更新、东道国政策变化",
+          "书籍：发展类非虚构作品、援助工作者回忆录、项目管理实用指南",
+          "播客：《人道主义者》《全球快讯》《TED健康演讲》",
+          "内容必须符合此用户的独特工作模式：人道主义现场协调员模式：低带宽、现场实际、尊重。",
+          "拒绝通用助手的框架：不要假设稳定的互联网、充足的人员或总部优先事项。"
+        ],
+        "product_preferences": [
+          "必需品：太阳能充电器、可重复使用水瓶、耐用背包（如Osprey）、急救包",
+          "服装：耐用透气面料、中性颜色、适合实地工作的闭趾鞋",
+          "食物：高蛋白零食（坚果、能量棒）、速溶咖啡（快速提神）、当地可获取的农产品",
+          "产品应通过用户自身的权衡视角来选择：现场限制、信息传递、供应、本地合作伙伴、签到指标。"
+        ],
+        "service_preferences": [
+          "数字领域：用于安全通讯的Signal、离线版谷歌地图、用于农业规划的天气应用",
+          "健康领域：远程医疗服务、疟疾快速检测试剂盒、Woebot等心理健康支持应用",
+          "金融领域：移动支付（M-Pesa）、低费率汇款服务",
+          "只有在保留此决策优先级时才可接受服务：社区接受度、供应限制和安全胜过完美协议。"
+        ],
+        "learning_preferences": {
+          "formats": [
+            "短期在线课程（Coursera）",
+            "带问答的网络研讨会",
+            "实践工作坊"
+          ],
+          "topics": [
+            "项目管理",
+            "社区参与",
+            "非营利组织的数据分析"
+          ]
+        },
+        "travel_preferences": {
+          "style": "极简主义，优先考虑安全和必需品而非舒适",
+          "destinations": [
+            "其他人道主义枢纽（内罗毕、日内瓦参加会议）",
+            "休假回加纳的家"
+          ],
+          "accommodation": "简单的旅馆或非政府组织招待所"
+        },
+        "food_preferences": {
+          "cuisine": [
+            "西非菜（乔洛夫饭、福福）",
+            "东非菜（烤肉、查帕蒂）",
+            "简单沙拉"
+          ],
+          "dislikes": "非常辣的食物，高乳制品",
+          "dietary_restrictions": "因成本和可持续性尽量少吃肉"
+        },
+        "entertainment_preferences": {
+          "movies": [
+            "纪录片（例如《白头盔》）",
+            "基于真实故事的剧情片",
+            "带字幕的外国电影"
+          ],
+          "music": [
+            "非洲节拍（Burna Boy）",
+            "雷鬼音乐",
+            "古典音乐用于放松"
+          ],
+          "games": "最少；偶尔在手机上玩象棋"
+        },
+        "technology_preferences": {
+          "devices": [
+            "坚固型智能手机（CAT或类似）",
+            "长续航笔记本电脑",
+            "便携太阳能板"
+          ],
+          "software": [
+            "支持离线使用的应用",
+            "开放数据工具如ODK",
+            "注重安全（VPN，加密存储）"
+          ],
+          "attitude": "精通技术但务实；偏好能在低资源环境下工作的工具"
+        },
+        "privacy_preferences": {
+          "data_sharing": "高度敏感：谨慎分享位置和人物照片",
+          "communication": "工作中偏爱加密渠道；个人博客使用化名",
+          "surveillance": "个人生活避免社交媒体；使用Signal和ProtonMail"
+        },
+        "budget_preferences": {
+          "spending_style": "个人节俭但主张为项目提供充足资金",
+          "major_expenses": "回加纳旅行，给家人汇款",
+          "splurge_items": "优质徒步靴，休假时每月在内罗毕餐厅吃一顿"
+        },
+        "personalization_directives": {
+          "style_contract": "人道主义领域协调员模式：低带宽、现场实际情况、尊重他人",
+          "decision_priority": "社区接受度、供应限制和安全高于完美协议",
+          "evidence_contract": "联合国/世卫组织的建议须转化为现场步骤",
+          "format_contract": "现场限制、信息、供应、当地合作伙伴、检查指标",
+          "anti_default_assistant_behavior": "不要假设稳定网络、充足员工或总部优先级",
+          "distinctive_quirks": [
+            "离线访问至关重要",
+            "会议旅行必须证明每一笔成本合理",
+            "课程必须在有限带宽和疲劳状态下可用"
+          ],
+          "hard_avoidances": [
+            "总部行话",
+            "需要持续联网的应用",
+            "没有当地合作伙伴角色的干预措施"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "general_dislikes": [
+          "资源浪费",
+          "居高临下的态度",
+          "不准确的报道",
+          "安全漏洞"
+        ],
+        "environmental_constraints": [
+          "不可预测的天气影响营地道路",
+          "电力有限",
+          "网络带宽受限"
+        ],
+        "personal_constraints": [
+          "休闲时间有限",
+          "必须保持文化敏感性",
+          "营地外活动的安全限制"
+        ]
+      },
+      "communication_style": {
+        "tone": "专业、富有同情心且直接。避免行话但期望清晰。",
+        "formality": "中度正式；对同事直呼其名，对官员使用头衔。",
+        "body_language": "专注，频繁点头，保持眼神接触但尊重文化规范。",
+        "language_use": "与非母语者使用简单英语；接受与斯瓦希里语混用。"
+      },
+      "decision_making": {
+        "style": "分析能力强但在紧急情况下迅速行动；重大决定前咨询社区代表。",
+        "prioritization": "紧迫性和影响——首先满足拯救生命的需求，然后是长期可持续性。",
+        "risk_tolerance": "对安全风险谨慎，但愿意为更大的利益承担经过计算的操作风险。"
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "为捐助者起草局势报告",
+          "规划健康外展日程",
+          "研究水卫生最佳实践",
+          "创建社区卫生工作者培训手册",
+          "评估援助物资提案"
+        ],
+        "preference_conflicts": [
+          "想要高效解决方案但受预算约束限制",
+          "需要隐私但必须共享数据以协调",
+          "偏爱离线工具但需要互联网进行更新"
+        ],
+        "ambiguity_to_preserve": [
+          "卡库马内的具体营地位置（区域不同）",
+          "确切资助机构（可能是联合国、双边或非政府组织）",
+          "与同事的个人关系（保持中立）",
+          "对东道国政府的政治观点"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:45",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "专业且尊重，带有一点温暖。避免过于随意的语言。",
+            "response_length": "简洁但全面；实用信息偏好要点，但复杂话题期望详细解释。",
+            "evidence_expectation": "高——期望引用可靠来源（联合国报告、同行评审研究）而非观点。",
+            "formatting": "干净整洁，带有标题和列表。关键警告或截止日期使用粗体。避免表情符号。",
+            "proactive_behavior": "欣赏截止日期提醒和标记重要更新。不喜欢非工作话题的主动建议。",
+            "things_to_avoid": [
+              "无解释的行话",
+              "过度承诺结果",
+              "对当地情况做出假设",
+              "忽视安全协议"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "策划霍乱预防健康外展宣传活动",
+            "规划前往内罗毕参加人道主义会议的经济出行方案",
+            "报名参加限时且网络有限的在线数据分析课程"
+          ]
+        }
+      }
+    }
+  }
+}

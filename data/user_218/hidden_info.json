@@ -1,0 +1,491 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_218",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:16:27",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_009",
+      "hidden_indirect_012",
+      "hidden_indirect_017",
+      "hidden_indirect_021"
+    ],
+    "content": [
+      "hidden_indirect_006",
+      "hidden_indirect_016"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_002",
+      "hidden_indirect_019"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_005",
+      "hidden_indirect_015"
+    ],
+    "entertainment": [
+      "hidden_indirect_012"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_005",
+      "hidden_indirect_015",
+      "hidden_indirect_019"
+    ],
+    "food": [
+      "hidden_indirect_011",
+      "hidden_indirect_014",
+      "hidden_indirect_021"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_004",
+      "hidden_indirect_016"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_007",
+      "hidden_indirect_018",
+      "hidden_indirect_020"
+    ],
+    "learning": [
+      "hidden_indirect_010"
+    ],
+    "privacy": [
+      "hidden_indirect_007",
+      "hidden_indirect_013"
+    ],
+    "product": [
+      "hidden_indirect_008",
+      "hidden_indirect_017"
+    ],
+    "role_context": [
+      "hidden_indirect_014"
+    ],
+    "service": [
+      "hidden_indirect_009",
+      "hidden_indirect_018"
+    ],
+    "technology": [
+      "hidden_indirect_008",
+      "hidden_indirect_013"
+    ],
+    "travel": [
+      "hidden_indirect_010",
+      "hidden_indirect_011",
+      "hidden_indirect_020"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买蜂蜡时，选了最便宜的两种，结果融化后杂质太多，肥皂脱模时裂了，多花时间重做。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次采购先查了蜂蜡供应商的熔点数据和客户返工率，筛掉两家无纯度标注的，再比价。预算按15kg起订，单价高8%但损耗少。你要的蜂蜜皂配方，我按这家蜡的熔点调整了温度步骤。"
+        }
+      ],
+      "implicit_signal": "决策时优先排除隐性成本，而非单纯看标价"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "线上会议间隙，你说某精油供应商不错，但我没看到出处，上次信任推荐结果过敏。"
+        },
+        {
+          "role": "assistant",
+          "content": "该供应商的薰衣草精油有第三方批次GC/MS报告，链接在备注列。另外找到两篇对比文提到该厂曾因运输问题延迟，所以我优先推荐可30天内退款的渠道。你需要我复制报告里关键指标吗？"
+        }
+      ],
+      "implicit_signal": "判断必须附带可验证来源，拒绝泛化建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上次给的配方表把每种材料的农场名全删了，我想对照之前蜂蜜批次看差异。"
+        },
+        {
+          "role": "assistant",
+          "content": "新表恢复‘原始供应商’列，另加了‘冲突点’行：两家蜂农的蜜在低温下结晶速度差异明显。推断栏写的是基于10月样本。待验证项标记了‘需要下一次复测’。"
+        }
+      ],
+      "implicit_signal": "输出保留矛盾日志和原始字段"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "活动散场后我清点卖剩的蜡烛，发现两款配方标签一样但燃烧时间差15分钟。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把两批原数据并列，差异定位在‘搅拌时长’一列。未直接取平均值，而是标注‘推断：因手法不一致导致，待验证项：统一搅拌后重测。’"
+        }
+      ],
+      "implicit_signal": "拒绝掩盖不确定性；呈现冲突而非平均"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你之前说某蜂农流蜜量稳定，但我发现他5月断过一次供。"
+        },
+        {
+          "role": "assistant",
+          "content": "确认事实：5月缺货28天，原因是花期异常（来源：蜂农发货记录及当地农协通知）。推断是‘短期冲击，非系统风险’。待验证项是‘观察明年同期是否复发’。我把这条补在供应商冲突日志里了。"
+        }
+      ],
+      "implicit_signal": "区分事实和推断；事实附带来源层级"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "回家路上听播客推荐了一款万能清洁剂，但配方里含硼砂，不适合我接触食品的表面。"
+        },
+        {
+          "role": "assistant",
+          "content": "已滤掉含硼砂方案。按你的工作台材质（不锈钢+实木），整理了三款清洁剂：一款过氧化氢基、一款柑橘基底、一款蒸汽方案。每款都标注了pH、残留验证来源（EPA 注册号，或同用户测评链接）。"
+        }
+      ],
+      "implicit_signal": "不接受无来源断言；内容必须贴合场景"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那个库存软件注册时要求读取我的通讯录，不然不让用云同步。"
+        },
+        {
+          "role": "assistant",
+          "content": "已替换为另一款库存应用，同步只通过加密文件导入导出，不需要通讯录权限。代价是需要手动上传CSV。操作步骤写在‘待验证项’下：‘确认导入后字段对齐性’。"
+        }
+      ],
+      "implicit_signal": "拒绝模糊承诺；隐私操作必须明确边界"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次试的香皂跟踪软件，改配方后旧数据导出要逐个复制。"
+        },
+        {
+          "role": "assistant",
+          "content": "候选文件夹三个应用：一是本地产、一键导出JSON；二是云端但有OAuth+可取消；三是自建Notion模板无导出限制。推荐方案一，导出项含批次号、蜂农ID、测试室温，且手机和电脑实时同步。"
+        }
+      ],
+      "implicit_signal": "产品选择看重数据可导出和跨设备同步"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "预约确认前30天忘了取消，被扣了一整月费用。"
+        },
+        {
+          "role": "assistant",
+          "content": "新工具采购清单只列两项：蜜蜡分销商年费（按桶计算，月底可取消）；物流插件固定月费9.81新元，无隐藏按次费，取消入口在订阅页顶部。差额写入‘必须花费’列，另一项包装升级标为‘可推迟’。"
+        }
+      ],
+      "implicit_signal": "服务选择看重取消规则和成本透明度"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去农场学蜂蜡过滤，主人只给了手册和网址，回家试了三次都不成功。"
+        },
+        {
+          "role": "assistant",
+          "content": "明天下午你有30分钟日历空档。我准备了3个短教程（5-7分钟/个），每个对应你上次失败环节：温度控制、滤网层数、冷却速率。每节末尾附带‘常见偏移指标’。路线保留15分钟缓冲以防超时。"
+        }
+      ],
+      "implicit_signal": "学习偏好：短反馈周期和可复盘示例"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次活动住宿选了便宜的民宿，结果取消要扣40%，早午餐全是炸物，下午犯困。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次出差选青旅独立间（可免费取消至入住当天）。餐标避开油炸类：附近有一家海南鸡饭档口（$4.5-$6），另一家自煮超市。同行者要求米饭，已标注。"
+        }
+      ],
+      "implicit_signal": "交通住宿优先考虑可取消性；食物不过度油腻且预算敏感"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次市集手工皂体验，排队40分钟，实际就捏了5分钟，到家还晚于平时入睡时间，次日进度全泡汤。"
+        },
+        {
+          "role": "assistant",
+          "content": "筛选了3个本周末本地活动：蜂蜡雕塑工作坊（2小时，上限8人，< $25）、独立纪录片私放映（1.5小时，散场早）、市集DIY材料包（可带回家做，最便宜）。按你指标排除了强营销和大排队的选项。待验证项是‘确认场地是否允许安静离场’。"
+        }
+      ],
+      "implicit_signal": "娱乐活动要求内容密度高且不影响第二天作息"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "检索新皂模设计时，网站要求登录Google账号且一次授权读取全部相册。"
+        },
+        {
+          "role": "assistant",
+          "content": "替代方案：离线OpenSCAD设计，导出STL文件线下打印；或选择只读邮箱注册的第三方Bomber平台，该站隐私政策写明‘不追踪点击路径’。冲突点：前者学习曲线2天，后者零引导。待验证：Bomber是否支持本地缓存设计？"
+        }
+      ],
+      "implicit_signal": "拒绝单一平台锁定；默认开启最小权限"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "开会迟到了，因为午饭选了很辣的重油炒面，下午胃不舒服，搬蜜桶时漏了一桶。"
+        },
+        {
+          "role": "assistant",
+          "content": "下周你有两天室外操作，午餐食谱已调：清汤米粉配鸡蛋和烫蔬菜（$3.50，咖啡店档口可买），下午加餐带一包干果。距离操作区域步行2分钟。取消了大排档选项。"
+        }
+      ],
+      "implicit_signal": "用户作为农场主，饮食要为当天体力任务服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推荐那款模具说耐温200度，但包装只写100度。"
+        },
+        {
+          "role": "assistant",
+          "content": "证据层级：L1—制造商标注（100°C）；L2—三人DIY论坛实测说能到180°C但边缘变形；我的判断‘建议不超过160°C’。待验证项：自行做一次热循环测试。冲突日志已更新。"
+        }
+      ],
+      "implicit_signal": "要求关键判断附带来源层级和可验证路径"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你给的香皂配方改进建议里，夹了一段无关的装修tips。"
+        },
+        {
+          "role": "assistant",
+          "content": "新报告仅包含：证据层级（香皂硬度测试数据）、冲突点（三种油脂比例下的脱模成功率）、判断（推荐B配比）、待验证项（湿度>80%时表面现象）。无其他领域建议。"
+        }
+      ],
+      "implicit_signal": "内容输出必须贴合具体工作模式且不包含无关建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那款包装机售价比市场价低30%，但耗材只能从原厂买，一年下来等于总费用更高。"
+        },
+        {
+          "role": "assistant",
+          "content": "新评级表：初始成本 / 半年耗材 / 一年总拥有成本 / 替代耗材通用性。排名第一是初代机型（贵$150），但接受通用热缩膜，且本地维修点3家。原厂锁定型列入冲突点，判断‘不推荐除非产量翻倍’。待验证项为‘通用膜厚度是否匹配’。"
+        }
+      ],
+      "implicit_signal": "产品选择必须说明长期使用成本和替代方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "物流客服说当天能送达，结果拖了3天，蜂蜡在闷热仓库放坏了。"
+        },
+        {
+          "role": "assistant",
+          "content": "新物流选项：本地同城当天达（官网写‘2小时内响应延迟赔付’，客服入口有实时人，无注册可查单）；另一家次日达但全程温控。推第一家，因为第二家运费多35%。关键判断含‘延迟后赔付执行透明’，待验证项‘实际赔付边界’。"
+        }
+      ],
+      "implicit_signal": "服务选择需明确响应速度和数据边界"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上季蜂蜜追踪表，你把产量估高了一截，我说按保守数排生产计划才对。"
+        },
+        {
+          "role": "assistant",
+          "content": "新计划中，产量统一用‘可复核最低值’：蜂农近3年最小值而非平均。冲突点标出‘最坏情形比平均少28%’。判断：优先保证基础订单。待验证：11月收割后复查实际数据再调整。"
+        }
+      ],
+      "implicit_signal": "不确定性表达优先于速度"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那次培训选‘距离最近’的公交方案，结果换乘通道维修，多绕了40分钟。"
+        },
+        {
+          "role": "assistant",
+          "content": "新路线分A/B：A线直达但单车程50分钟，B线换乘1次但都有无线候补班次，预留20分钟缓冲。冲突点：B线早班更稳，晚班车间隔大一倍。判断：早间培训用B，回程如果错过前班改打车预算$9。待验证项：时间表是否有试运营调整。"
+        }
+      ],
+      "implicit_signal": "出行路线预留缓冲，不把热门景点当默认"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次团建餐选了汉堡店，薯条和碳酸饮料占了35元，我吃不完还耽误回来调蜡烛配方的时间。"
+        },
+        {
+          "role": "assistant",
+          "content": "团建备选：附近印尼档口（自选米饭配菜$4起，无油炸主食），30分钟吃完，距场地步行3分钟；如友人坚持快餐，则选可单点烤鸡腿去薯条的店。预算上限$6。冲突点：烹饪时间可能排队，判断选档口更可控。待验证：当天是否促销。"
+        }
+      ],
+      "implicit_signal": "饮食预算敏感且需兼顾同行人限制"
+    }
+  ]
+}

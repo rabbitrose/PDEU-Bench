@@ -1,0 +1,402 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_050",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:03:22",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 18,
+  "composition": {
+    "episodic_preference_trace": 18
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001"
+    ],
+    "content": [
+      "hidden_indirect_014"
+    ],
+    "decision_priority": [
+      "hidden_indirect_002",
+      "hidden_indirect_003"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_010"
+    ],
+    "entertainment": [
+      "hidden_indirect_018"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_004",
+      "hidden_indirect_005"
+    ],
+    "food": [
+      "hidden_indirect_018"
+    ],
+    "format_contract": [
+      "hidden_indirect_006",
+      "hidden_indirect_007"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_011",
+      "hidden_indirect_012",
+      "hidden_indirect_013"
+    ],
+    "learning": [
+      "hidden_indirect_017"
+    ],
+    "privacy": [
+      "hidden_indirect_016"
+    ],
+    "product": [
+      "hidden_indirect_015"
+    ],
+    "role_context": [
+      "hidden_indirect_001"
+    ],
+    "service": [
+      "hidden_indirect_016"
+    ],
+    "technology": [
+      "hidden_indirect_014"
+    ],
+    "travel": [
+      "hidden_indirect_017"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天在家庭群看到表妹想学VR开发，让我推荐免费引擎。我说Unity个人版够用了，但她说想用CryEngine因为画面好。"
+        },
+        {
+          "role": "assistant",
+          "content": "那帮她拉一个对比表格：Unity个人版零成本、商店资源多，CryEngine需要提成且教程少。把链接发群里。"
+        }
+      ],
+      "implicit_signal": "作为VR内容创作者，预算限制会影响工具链选择"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "Unity 6推出了实时渲染的新管线，我升级后旧项目的光照贴图全失效，回滚花了两小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "新项目再用新管线。当前教程系列保持2022 LTS版，先把那套程序化洞穴的帧率测稳定了再迁移。"
+        }
+      ],
+      "implicit_signal": "决策时帧率和可复现性优先于新功能"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看到很多VR播主在用眼球追踪做交互，我想跟风加一集。但测试发现中低端头显不支持，弹幕会抱怨设备歧视。"
+        },
+        {
+          "role": "assistant",
+          "content": "这集保留为付费番外，正片还是做手部射线交互，覆盖Quest 2和Valve Index用户。"
+        }
+      ],
+      "implicit_signal": "观众沉浸感优先于技术潮流"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次在视频里说Instanced Mesh比合并Mesh省显存，结果有观众贴了Profiler截图说合并更优。"
+        },
+        {
+          "role": "assistant",
+          "content": "用同一场景跑两种方案的GPU帧时间折线图，把CSV链接放到视频简介。"
+        }
+      ],
+      "implicit_signal": "用基准测试数据验证观点，而非主观感受"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "看到一篇博客说VR中禁用动态光影性能提升50%，但我查了Unreal官方文档说半动态混合更省带宽。"
+        },
+        {
+          "role": "assistant",
+          "content": "按文档建一个半动态光照测试场景，对比两种方案的帧率曲线，把结果更新到视频修正档。"
+        }
+      ],
+      "implicit_signal": "依赖创作者范例和引擎文档，不信网络评测"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前录程序化城市生成，直接讲代码，结果弹幕都在问“这个建筑要怎么对齐街道网格”。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次先展示最终效果（构建目标），再讲网格对齐的瓶颈，然后录一遍Unity中设置Building Placer组件的完整操作。"
+        }
+      ],
+      "implicit_signal": "教程结构遵循构建目标→瓶颈→工具→测试→发布"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有观众私信说我的地形生成教程跟着做到一半报错，因为我的Shader Graph节点版本和他不一样。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后每期教程在GitHub Release里同时传UnityPackage和Blender文件两个产物包，README里标引擎版本。"
+        }
+      ],
+      "implicit_signal": "发布产物需要附带可下载工程"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "录完一集后才发现有一个持续出现NullReferenceException，我本来想剪掉那段。"
+        },
+        {
+          "role": "assistant",
+          "content": "保留那一段，加上画外音说明“这里遇到空引用，因为数组越界，解决方案是把索引改成动态长度”。"
+        }
+      ],
+      "implicit_signal": "教程包含失败状态和调试过程"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去年GDC结束时手边一个Build都没留下，只有几张餐巾纸上的笔记。"
+        },
+        {
+          "role": "assistant",
+          "content": "今年只报那些参与后能拿到UnityPackage或GitHub代码库的工作坊，演讲场次一个都不排。"
+        }
+      ],
+      "implicit_signal": "会议选择动手工坊而非主题演讲"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有一个新的VR场景编辑器是Web界面的，拖拽很方便，但导出的只有二进制的.scene文件，没法在Git中做diff。"
+        },
+        {
+          "role": "assistant",
+          "content": "继续用Unity的YAML场景文件，虽然每次改字段要测半天，但至少能通过文本diff看到改动。"
+        }
+      ],
+      "implicit_signal": "选工具时版本控制能力优先于美观"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "用Quill做了个VR动画草稿，结果想导入Unity时发现只能导出成Quill专有格式，Blender读不了。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后草图阶段也先在Blender里做基础动画，再导FBX进Unity加特效，确保每个环节都能解耦导出。"
+        }
+      ],
+      "implicit_signal": "避免不提供导出路径的封闭工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "合作方给视频脚本写了一段“进入Metaverse的Web3体验”，但我只做了个可邀请朋友联机的VR沙盒。"
+        },
+        {
+          "role": "assistant",
+          "content": "把那段改成“基于Unity Netcode的多人VR房间”，避免使用未实现的技术术语。"
+        }
+      ],
+      "implicit_signal": "避免元宇宙行话"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "有粉丝依据我的推荐买了RTX 4060笔记本，结果发现在VR中烫到降频，帧率跌到45fps。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次推荐前先查notebookcheck的散热评测，并在视频里跑10分钟VR基准测试，展示实时温度。"
+        }
+      ],
+      "implicit_signal": "硬件推荐必须评估散热和VR帧率影响"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上一期讲通用编程技巧，评论区说“想看怎么把这段C#挂到VR手柄触发上”。"
+        },
+        {
+          "role": "assistant",
+          "content": "下期改成从创建XR Interaction Manager开始，每一步都截Inspector的完整设置面板。"
+        }
+      ],
+      "implicit_signal": "教程内容针对VR开发的具体引擎设置"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我的Quest 3电池续航跌破一小时，想换Pico 4但看Reddit说它的手部追踪延迟更高。"
+        },
+        {
+          "role": "assistant",
+          "content": "先买一个Quest 3的第三方电池头带延长续航，等Pico 5的社区延迟测试结果出来再考虑换。"
+        }
+      ],
+      "implicit_signal": "硬件选择看重性能与可维护性"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我把测试场景传到Google Drive让合作者下载，但他反映下载限速导致等了一小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用Sync.com，端到端加密且不限速，链接设七天过期。上传前把测试数据CSV也一起打包。"
+        }
+      ],
+      "implicit_signal": "云存储选择兼顾帧率测试的可复现性和数据隐私"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去SIGGRAPH之前列了一堆演讲，但第一天下午就觉得信息过载，后面两天都在咖啡厅刷手机。"
+        },
+        {
+          "role": "assistant",
+          "content": "只报一个全天Unreal Workshop，其他时间留着去Demo区亲手试新硬件，晚上回Airbnb整理笔记。"
+        }
+      ],
+      "implicit_signal": "学习通过参加会议的动手体验，而非被动听讲"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周末录完视频想放松，打开薯片和网飞漫威剧，结果油弄脏了手柄摇杆。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次备一盒切好的苹果和坚果，打开一部九零年代赛博朋克电影，避免油腻零食损坏设备。"
+        }
+      ],
+      "implicit_signal": "娱乐和饮食选择考虑工作效率和沉浸感"
+    }
+  ]
+}

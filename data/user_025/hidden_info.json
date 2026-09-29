@@ -1,0 +1,428 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_025",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:14:40",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 18,
+  "composition": {
+    "episodic_preference_trace": 18
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_010",
+      "hidden_indirect_015"
+    ],
+    "content": [
+      "hidden_indirect_009",
+      "hidden_indirect_018"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_002",
+      "hidden_indirect_014"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_014",
+      "hidden_indirect_017"
+    ],
+    "entertainment": [
+      "hidden_indirect_008",
+      "hidden_indirect_018"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_003",
+      "hidden_indirect_013"
+    ],
+    "food": [
+      "hidden_indirect_006"
+    ],
+    "format_contract": [
+      "hidden_indirect_004",
+      "hidden_indirect_005"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_005",
+      "hidden_indirect_007",
+      "hidden_indirect_008",
+      "hidden_indirect_012",
+      "hidden_indirect_016"
+    ],
+    "learning": [
+      "hidden_indirect_009",
+      "hidden_indirect_017"
+    ],
+    "privacy": [
+      "hidden_indirect_007",
+      "hidden_indirect_015"
+    ],
+    "product": [
+      "hidden_indirect_010"
+    ],
+    "role_context": [
+      "hidden_indirect_013"
+    ],
+    "service": [
+      "hidden_indirect_011"
+    ],
+    "technology": [
+      "hidden_indirect_012"
+    ],
+    "travel": [
+      "hidden_indirect_011",
+      "hidden_indirect_016"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那瓦拉特里最后一天清扫时发现，上周供应商的酥油每罐贵了40卢比，三罐多付了120卢比，而且不是传统手工搅制的。"
+        },
+        {
+          "role": "assistant",
+          "content": "明天去卡特拉老市场找手工酥油店，多付的钱从下周蔬菜采购里省出来。阿尔提用的酥油必须手工搅制，不能因为价格换工厂货。"
+        }
+      ],
+      "implicit_signal": "仪式纯洁约束优先于预算，但预算缺口通过调整其他开支弥补"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "助手在预约确认前用手机App生成了阿尔提时间表，但表中傍晚阿尔提比占星师算的吉祥时刻早了27分钟。已经发给约30个家庭。"
+        },
+        {
+          "role": "assistant",
+          "content": "撤回所有App通知，让助手手写更正后的时间条，在圣地入口逐人分发。App时间作废，所有人按占星时刻到场。"
+        }
+      ],
+      "implicit_signal": "吉祥时刻（muhurta）权威高于现代排程方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一位香客质疑仪式中洒圣水的方向不对，说我违反了传统。我翻出随身笔记里《往世书》关于洒水方向的那段抄录，指着梵文原句给他看。"
+        },
+        {
+          "role": "assistant",
+          "content": "他看完经文后合十行礼。我继续按传统方向完成仪式，之后多花5分钟为他单独解释那段经文的上下文。"
+        }
+      ],
+      "implicit_signal": "经文章节是争端最终裁断依据"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一个家庭预约周日特别阿尔提，只给我一张写有日期的纸条，没有说明供奉意图和参与者饮食禁忌。我主持时临时询问才发现有成员刚吃过洋葱。"
+        },
+        {
+          "role": "assistant",
+          "content": "我用一页便签重新写了一份详细流程：Sankalp部分、各环节顺序、每位参与者24小时纯净饮食要求、开始时辰。下次预约必先交这份确认。"
+        }
+      ],
+      "implicit_signal": "仪式设计必须包含Sankalp、纯洁规则与吉祥时辰"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "回家路上遇到一位组织者，建议把晨间阿尔提的洒水、点灯、摇铃三个环节交给不同志愿者并行完成，说可以“提高效率”节省时间。"
+        },
+        {
+          "role": "assistant",
+          "content": "我告诉他三个环节分别对应经文里三个不同祝福阶段，顺序不能打乱也不能并行。志愿者只需按步骤协助，我仍亲自主持每步间歇。"
+        }
+      ],
+      "implicit_signal": "拒绝将仪式简化为活动后勤，必须保留神圣框架"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "信徒在那瓦拉特里期间带了洋葱土豆馅饼来供奉，我在超市结账前看到配料表，便轻轻放回了他带来的篮子。"
+        },
+        {
+          "role": "assistant",
+          "content": "我说明那瓦拉特里期间只收无洋葱无大蒜的纯净食物，同时分给他一份自己做的甜米糕。他点头理解，次日改带了水果。"
+        }
+      ],
+      "implicit_signal": "萨特维克饮食要求在即使供奉场合也严格执行"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一位香客在WhatsApp说“嘿大师，我能否插队参加明天的阿尔提？我可以帮你把仪式视频发到Instagram上引流。”"
+        },
+        {
+          "role": "assistant",
+          "content": "我没有回复那条信息。第二天当面对他说：登记按到达顺序，不接受任何插队；仪式不拍摄也不上传。他的姓名我只在祈祷名册上写一次，用后收回。"
+        }
+      ],
+      "implicit_signal": "拒绝随意俚语和信徒数据用于宣传"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "那瓦拉特里结束后，几个年轻朝圣者商量去附近餐厅庆祝，说那里有“特色套餐”包含酒类。问我能不能推荐。"
+        },
+        {
+          "role": "assistant",
+          "content": "我推荐圣地内部的素食餐厅，那里有传统甜点。如果喜欢音乐，我送他们一张bhajan录音带，建议聚会改为集体唱诵。"
+        }
+      ],
+      "implicit_signal": "拒绝非素食或酒精相关建议，娱乐应有精神框架"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我想学习如何用梵文撰写祈福证书，朋友推荐了一款来自手机应用的自学课程。但课程以商业信件范例为主，完全不涉及经文用语。"
+        },
+        {
+          "role": "assistant",
+          "content": "我放弃了应用，请寺院退休老师每两周来我家一次，用纸质经文教我写传统祈福证书。他手写范例，我跟着抄录在笔记本上。"
+        }
+      ],
+      "implicit_signal": "学习内容必须与宗教传统直接相关，方式偏好传统面授"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "圣地商店有两种香：一种机器压制含香精，价格低一半；另一种手工卷制纯檀香，价格高。我拿着两种盒子来回比了两次。"
+        },
+        {
+          "role": "assistant",
+          "content": "买了纯檀香手工香，机器香含化学粘合剂，不适用于阿尔提。多付的金额从本月茶叶预算中节省，茶改喝本地草药茶。"
+        }
+      ],
+      "implicit_signal": "产品选择以传统和纯净为优先，价格可接受但需调整其他预算"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "全家计划去瑞诗凯诗朝圣，旅行社发来行程：含恒河边鸡尾酒欢迎会、精品酒店和瑜伽商业课程。我看到后直接合上了报价单。"
+        },
+        {
+          "role": "assistant",
+          "content": "改用圣地推荐的ashram住宿套餐，每天清晨参加恒河阿尔提，下午由ashram老师带领传统冥想。费用只有旅行社报价的三分之一。"
+        }
+      ],
+      "implicit_signal": "旅行服务必须专注朝圣，拒绝奢华娱乐"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "助手将一页便签上的阿尔提流程拍下来发到WhatsApp群，群里除了工作人员还有40个陌生香客。我看到时已经发了两个小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "要求他立即撤回，并到圣地公告栏手抄一份张贴。以后所有流程只写在纸质收据背面当面交给香客，不发任何数字群组。"
+        }
+      ],
+      "implicit_signal": "技术仅在必要时使用，且不能用于传播仪式信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "初级祭司安排座位时让报告厅内年长香客坐角落，说“拍集体照时大家露脸好看”。我在候机区里越想越不安。"
+        },
+        {
+          "role": "assistant",
+          "content": "第二天仪式前我叫住他，打开随身笔记翻到《摩奴法典》关于尊敬长者的段落让他念一遍，然后亲手将年长香客请到前排。"
+        }
+      ],
+      "implicit_signal": "作为祭司，权威来自经文和师徒传承，需纠正助手"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "离傍晚阿尔提开始还有29分钟，一位拄拐老妇人刚到。按登记顺序她排在后面，但开始时间已定。助手问是否让她等。"
+        },
+        {
+          "role": "assistant",
+          "content": "我让助手扶她到前排座椅，单独为她点燃一盏酥油灯，然后立即按原定吉祥时刻开始阿尔提。她不必排队，仪式也未延误。"
+        }
+      ],
+      "implicit_signal": "长者舒适和吉祥时刻压倒常规流程效率"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "一家在线支付公司打来电话，说可以分析香客捐赠数据来优化捐款话术，每月分成我15%的收入。我听到“数据”二字就挂断了。"
+        },
+        {
+          "role": "assistant",
+          "content": "继续使用传统模式：香客亲自投入捐款箱，我当面念名祈福。所有记录只写在当天收据上，仪式结束后销毁。"
+        }
+      ],
+      "implicit_signal": "个人财务数据不用于商业，预算优先用于宗教目的"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去Char Dham，同行人临时退出只剩我和两个孩子。已经订了不可退的河景房，多绕了一次路才换到寺院宿舍。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次出行我直接用圣地办公室推荐的yatra计划，只订寺院简朴房间。抵达后先到办公室登记，再按传统路线参拜，全程无商业住宿。"
+        }
+      ],
+      "implicit_signal": "朝圣应避免奢华，注重宗教体验"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想背诵《薄伽梵歌》特定章节，手机上有带朗诵音频的应用。但回家路上信号不稳定，音频总是断。"
+        },
+        {
+          "role": "assistant",
+          "content": "放弃应用，请老祭司每周两次来家，用梵文原文手抄诗句在一张纸上，我跟着念并标注发音。每次抄一页，贴在祈祷室墙上每天复习。"
+        }
+      ],
+      "implicit_signal": "学习方式偏好面授和纸本抄写，不接受数字课程"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "孩子们周末想看电视，遥控器滑到一个频道在播超级英雄动画，有打斗爆炸场景。在预约确认前我赶紧关了电视。"
+        },
+        {
+          "role": "assistant",
+          "content": "我换到播放《摩诃婆罗多》电视剧的频道，和他们一起看了一集。结束后用15分钟解释其中的法理，孩子们都安静听。"
+        }
+      ],
+      "implicit_signal": "娱乐内容需有宗教教育意义"
+    }
+  ]
+}

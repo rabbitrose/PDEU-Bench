@@ -1,0 +1,102 @@
+{
+  "user_id": "user_010",
+  "task": {
+    "task_id": "task_hard",
+    "title": "精神病学家伦理故事的选题和信息源审查",
+    "daily_life_domain": "work",
+    "scenario": "埃莉诺发现了马里兰州贝塞斯达一位著名精神病医生不当开药和伪造研究数据的初步证据。她需要为《大西洋月刊》的编辑撰写一份有说服力的提案，识别并审查潜在来源（包括前患者和同事），规划安全采访，并勾勒出故事的叙事弧线。她还必须考虑法律风险和事实核查要求。",
+    "user_goal": "制作一份精雕细琢、研究充分的提案，说服编辑批准调查，同时确保所有来源得到保护，且故事在伦理上合理。",
+    "why_complex": "需要多步骤推理：选择可信来源、核实线索、规划安全通信、平衡新闻伦理与法律风险，以及构建既引人入胜又准确的叙事。",
+    "constraints": [
+      "提案截止日期：3天",
+      "对弱势来源严格保密",
+      "必须使用加密通信工具（Signal，加密电子邮件）",
+      "初步研究预算有限（尚无差旅）",
+      "编辑要求至少三个佐证来源",
+      "如有指名道姓的个人，法律团队必须审查"
+    ],
+    "required_reasoning_steps": [
+      "从公共记录和医疗数据库中识别潜在来源",
+      "评估每个来源的可信度和潜在偏见",
+      "规划初步接触策略：通过 Signal 或加密电子邮件进行电话联系",
+      "起草安全的事实核查协议（交叉引用记录、采访）",
+      "概述故事弧线：线索、证据、人文影响、改革呼吁",
+      "评估法律风险：诽谤、患者保密（HIPAA）",
+      "准备提案文件：摘要、主要发现、来源列表、伦理保障",
+      "先根据当前任务目标、位置、预算、时间窗口和任务条件构造 BM25 查询，检索 SandboxDB/source_info 中的真实世界候选记录。",
+      "把真实候选环境中的价格、评分、天气、地点、航班、媒体或商品字段与任务成功标准逐项对齐，不能只依赖通用建议。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "伪造研究的确切标题和发表日期",
+      "潜在举报同事的姓名和联系方式（若安全）",
+      "关于马里兰州医疗伦理违规报道的法律先例",
+      "SandboxDB/source_info 中与任务主题最相关的真实候选记录及其 doc_id、domain、source.name、关键 attributes。"
+    ],
+    "expected_deliverable": "一份结构化的提案文件，包括故事摘要、来源列表（必要时匿名化）、验证计划和风险评估，以及完整调查的拟议时间表。",
+    "success_criteria": [
+      "提案被编辑接受",
+      "至少三个独立来源同意接受采访",
+      "获得法律许可，无重大删改",
+      "所有通信渠道均已加密并经过审查",
+      "最终方案至少引用 3 条 SandboxDB/source_info 真实候选记录，说明 domain、source.name 和关键 attributes。"
+    ],
+    "potential_failure_modes": [
+      "未经核实过度信任来源",
+      "忽视隐私保护，暴露来源",
+      "包含未经证实的说法导致法律风险",
+      "因过度研究错过截止日期"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "food",
+        "travel_flights",
+        "weather",
+        "music_media"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段",
+        "travel_flights": "真实航班快照：出发地、目的地、日期、起降时间、航程、价格等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段",
+        "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 8,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 8,
+      "human_verifier_estimation_basis": [
+        "domain=work",
+        "source_domains_capped=6",
+        "reasoning_steps_capped=10",
+        "constraints_capped=6",
+        "decision_points_capped=3",
+        "information_items_capped=5",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=30.55",
+        "hard_revision: 主体任务校准为 7-8 轮 human verifier 工作量",
+        "hard_revision: 高风险或高责任任务域"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "Eleanor Vance",
+      "age": 58,
+      "gender": "女性"
+    }
+  }
+}

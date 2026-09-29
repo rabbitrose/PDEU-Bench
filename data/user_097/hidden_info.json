@@ -1,0 +1,470 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_097",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:44:35",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_017"
+    ],
+    "content": [
+      "hidden_indirect_002",
+      "hidden_indirect_019"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_012",
+      "hidden_indirect_014"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_006",
+      "hidden_indirect_013"
+    ],
+    "entertainment": [
+      "hidden_indirect_013"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_003",
+      "hidden_indirect_018"
+    ],
+    "food": [
+      "hidden_indirect_012"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_014",
+      "hidden_indirect_018"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_004",
+      "hidden_indirect_007",
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_019"
+    ],
+    "learning": [
+      "hidden_indirect_010",
+      "hidden_indirect_020"
+    ],
+    "privacy": [
+      "hidden_indirect_006",
+      "hidden_indirect_008",
+      "hidden_indirect_016"
+    ],
+    "product": [
+      "hidden_indirect_011"
+    ],
+    "role_context": [
+      "hidden_indirect_010",
+      "hidden_indirect_015"
+    ],
+    "service": [
+      "hidden_indirect_009",
+      "hidden_indirect_015"
+    ],
+    "technology": [
+      "hidden_indirect_005",
+      "hidden_indirect_016",
+      "hidden_indirect_020"
+    ],
+    "travel": [
+      "hidden_indirect_007",
+      "hidden_indirect_017"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次购买La Prensa Gráfica订阅时，我选了最便宜的年费方案，结果关键选举专栏被锁在付费墙后，错过了一篇关于市政候选人的实地报道。"
+        },
+        {
+          "role": "assistant",
+          "content": "那这次续费时，我们直接选包含完整数据库访问的Premium方案，多出的$35从项目资金中预拨，避免再次因信息缺口导致分析延迟。"
+        }
+      ],
+      "implicit_signal": "在预算分配中优先验证关键数据来源，而非节省成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天收到的竞选融资报告里提到‘某政党违规’但没注明是引用法院文件还是新闻披露，我在写评估时没法直接引用。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会要求原始数据方在每一行旁标注来源类型：司法裁决、正式审计或媒体报道。如果无法提供，就从正文移至备注栏，并标注‘证据层级：未确认’。"
+        }
+      ],
+      "implicit_signal": "要求每个主张附带来源层级与透明度，不接受笼统陈述"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次给你的市政选举风险初稿你直接写了‘以下是分析’开头，但我要的是先列出风险矩阵，然后假设账本，最后验证行动。"
+        },
+        {
+          "role": "assistant",
+          "content": "明白。现在重新输出：风险矩阵（威胁/概率/影响）、假设账本（假设/置信区间/反证信号）、下一步验证行动（需在11月15日前完成）。"
+        }
+      ],
+      "implicit_signal": "输出格式严格遵循风险矩阵加验证步骤，拒绝友好开场白"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次给国际非政府组织发简报时，我默认写了英文，后来客户说现场团队看不懂，要求重译，浪费了两天。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后客户首次对接时，我会先确认受众语言配置。若未明确说明，默认西班牙语输出，并在附件标题注明'Español'。"
+        }
+      ],
+      "implicit_signal": "面向客户的材料坚持使用西班牙语，除非明确被告知受众为双语"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周两家民调机构对同一选区的结果差了8%，我本来想直接取中间值做报告，但数据矛盾日志里需要记录原始差异。"
+        },
+        {
+          "role": "assistant",
+          "content": "我会在风险矩阵附件中新增一个'民调矛盾追踪表'，保留两个数值及其方法差异（样本量/调查时段），不做平滑处理。"
+        }
+      ],
+      "implicit_signal": "保留冲突民调结果而非平均化，用于追踪数据矛盾"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去圣米格尔做田野调查，你帮我订了镇中心带泳池的酒店，结果前台要登记护照扫描件并上传到公共系统，我取消了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次出差我会预订非连锁、只接受现金的私人旅馆，即使房间没有空调，也确保不留任何数字入住记录。"
+        }
+      ],
+      "implicit_signal": "偏好低调保护隐私的后勤安排，即使牺牲舒适度"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去查尔特南戈采访，你推荐了旅游手册上标星的餐馆，结果整个下午都被游客包围，根本约不到本地人做非正式访谈。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次出行前我会先通过本地联系人打听社区食堂或教区活动后的聚餐点，避开旅游区域，确保你能在自然环境中接触选民。"
+        }
+      ],
+      "implicit_signal": "拒绝任何游客便利性安排，优先本地融入和采访机会"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你上回用公开的Google Calendar邀约会议，结果与会者列表里有人经纪人头像直接关联到真实姓名，我担心关联到客户。"
+        },
+        {
+          "role": "assistant",
+          "content": "已经切换到Proton Calendar并使用加密别名，所有会议邀请只通过Signal发送，不附带位置或参与者真实身份。"
+        }
+      ],
+      "implicit_signal": "避免使用暴露联系人信息或位置的平台"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次读取El Faro的时政分析，开头三段全是‘当前局势复杂’‘各方应保持冷静’，浪费了20分钟阅读无信息段落。"
+        },
+        {
+          "role": "assistant",
+          "content": "已调整新闻聚合过滤器，剔除任何标题或摘要中出现‘复杂局势’‘展望未来’类套话的文章，只保留带具体时间地点人物事件的条目。"
+        }
+      ],
+      "implicit_signal": "拒绝听起来中立的填充内容和通用建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月报了一个萨尔瓦多选举制度的录播视频课，看了两节就放弃了，没有互动环节没法检验我理解的数据偏差问题。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次选择工作坊时，我会筛选明确提供小组讨论或Q&A环节的项目，即使费用高出35美元，也确保能直接向讲师挑战方法论。"
+        }
+      ],
+      "implicit_signal": "作为分析师，优先学习带互动问答的工作坊而非视频课程"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推荐的那款电源不足的轻薄本在实地笔记时两次关机，导致我丢失了一段采访记录，还错过录音的完整保存。"
+        },
+        {
+          "role": "assistant",
+          "content": "已下单一台ThinkPad T系列，配备长续航电池和离线备份功能，预算超过原计划，但这是在现场数据安全上的必要投入。"
+        }
+      ],
+      "implicit_signal": "愿意为可靠硬件投入预算，而非节省开支使用低配设备"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "早上在街边摊买了油炸的普普萨，结果在会上胃不舒服，导致下午的听证会分析集中不了注意力。"
+        },
+        {
+          "role": "assistant",
+          "content": "以后会议当天的早餐我们提前一天备好清淡煮豆子和玉米饼，避免临时选择高油摊位。11点后饿了可以吃自备的香蕉。"
+        }
+      ],
+      "implicit_signal": "工作前避免油腻餐食，即便方便快速也不选影响工作状态的选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周看的Netflix中美洲剧把游击队领袖写成了浪漫化的英雄，与史实不符，我花了两晚查文献才确认细节。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次选片时我会先查BBC或学术期刊的剧评，确认历史顾问名单后再推荐。最近在Netflix上找到一部基于IAHRC档案的纪录片。"
+        }
+      ],
+      "implicit_signal": "在政治分析外，保留看历史剧的习惯但偏好准确度高的作品"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次你给我的选举风险评估没有使用要点，而是写了三段文字，我在整理项目看板时还要重新拆解。"
+        },
+        {
+          "role": "assistant",
+          "content": "现已重新排版：每项威胁独立成行，包含概率（百分比）、影响（1-5分）、控制措施，并直接链接到假设账本。"
+        }
+      ],
+      "implicit_signal": "报告格式必须结构化，不接受无要点的叙述"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你推荐的某聚合软件没有对外链日期和原文标题，我在核对现实事件时发现一条2021年的旧闻被当成最新动态。"
+        },
+        {
+          "role": "assistant",
+          "content": "已切换至Feedly并设置以‘El Faro/La Prensa Gráfica’为源，每篇文章附带发布日期和原始URL。过时内容自动标注归档。"
+        }
+      ],
+      "implicit_signal": "新闻聚合服务必须提供可追溯的源链接和目标摘要"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前使用的某数据可视化工具在免费版中嵌入了Cookie追踪器，被客户安全审核抓包，导致整体项目报告被质疑。"
+        },
+        {
+          "role": "assistant",
+          "content": "已经迁移至R语言和Datawrapper，全部数据在本地处理，图表导出格式为SVG，不发送任何元数据到第三方服务器。"
+        }
+      ],
+      "implicit_signal": "优先使用开源软件和加密通信，拒绝有数据收集的服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在乡间社区做采访期间，你建议用咖啡店免费Wi-Fi发文件，结果连接中断了三次，流失了一条重要线索的时间戳。"
+        },
+        {
+          "role": "assistant",
+          "content": "已采购一个乌拉圭的eSIM卡加上自建WireGuard VPN，月费高但保证在农村LTE信号下稳定约21天不间断。"
+        }
+      ],
+      "implicit_signal": "为可靠网络和VPN付费，而非在旅途中使用免费公共Wi-Fi"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "这次议会表决记录有两份来源，结果权限不一样，你建议提‘差异可能源于计时规则’但没写在正文里。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次在风险矩阵中新增'来源矛盾日志'，包括两条记录、差异关键字段、初步归因，并在报告中标注‘置信度中等’。"
+        }
+      ],
+      "implicit_signal": "保留矛盾日志，不隐藏数据间不一致"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "某地方新闻主页把‘市政预算赤字’写成‘市长掏空国库’，我点进去发现全文都是情绪词，没有任何财务数据。"
+        },
+        {
+          "role": "assistant",
+          "content": "已把该域名加入黑名单，并定制RSS筛选规则：标题若含‘震惊’‘真相’‘腐败’等词，直接丢入垃圾箱不予展示。"
+        }
+      ],
+      "implicit_signal": "拒绝任何耸人听闻或过度简化的标题"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "你之前发送的YouTube教程系列没有大纲或作业，我看了三集后无法验证自己的理解是否准确，最终放弃。"
+        },
+        {
+          "role": "assistant",
+          "content": "已报名UCA大学在线课程‘中美洲选举系统比较’，每模块含测验和最终证书，文本材料PDF可下载，与你的学术风格匹配。"
+        }
+      ],
+      "implicit_signal": "偏好有证书的结构化课程，认可学术报告而非视频内容"
+    }
+  ]
+}

@@ -1,0 +1,472 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_257",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T06:24:27",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_010",
+      "hidden_indirect_015",
+      "hidden_indirect_019"
+    ],
+    "content": [
+      "hidden_indirect_006",
+      "hidden_indirect_012",
+      "hidden_indirect_018"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_007",
+      "hidden_indirect_014",
+      "hidden_indirect_020"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_004",
+      "hidden_indirect_005",
+      "hidden_indirect_006"
+    ],
+    "entertainment": [
+      "hidden_indirect_012",
+      "hidden_indirect_017"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_008"
+    ],
+    "food": [
+      "hidden_indirect_008",
+      "hidden_indirect_015",
+      "hidden_indirect_019"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_009",
+      "hidden_indirect_019"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_010",
+      "hidden_indirect_011",
+      "hidden_indirect_016"
+    ],
+    "learning": [
+      "hidden_indirect_009",
+      "hidden_indirect_017"
+    ],
+    "privacy": [
+      "hidden_indirect_004",
+      "hidden_indirect_011"
+    ],
+    "product": [
+      "hidden_indirect_007",
+      "hidden_indirect_018"
+    ],
+    "role_context": [
+      "hidden_indirect_020"
+    ],
+    "service": [
+      "hidden_indirect_005",
+      "hidden_indirect_013"
+    ],
+    "technology": [
+      "hidden_indirect_003",
+      "hidden_indirect_013",
+      "hidden_indirect_016"
+    ],
+    "travel": [
+      "hidden_indirect_002",
+      "hidden_indirect_014"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去特拉克帕克坐大巴花了45比索，这次听说有拼车只要30，但到站要走一段。先帮我查查拼车今天还有没有位置？"
+        },
+        {
+          "role": "assistant",
+          "content": "拼车平台显示15分钟后有一班，还剩2座，30比索。大巴9点发车，45比索。如果你现在出发，拼车能省15比索，但到站后步行7分钟；大巴直达门口。你选哪个？"
+        }
+      ],
+      "implicit_signal": "短期总成本优先；非必要花销留余地"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次订青旅只看图片，到了发现没窗户，晚上闷得睡不着。第二天又重做一遍住宿。现在看查帕拉湖边一家民宿标价一晚，但没写清洁费，你帮我算算实际总共要付多少？"
+        },
+        {
+          "role": "assistant",
+          "content": "民宿详情页底部有行小字：额外清洁费350比索，押金200比索。实付每晚900+350+200=1450，押金退房后7工作日退还。另有两家同价位的标价已含清洁费，分别是La Cabaña 1100/晚和El Lago 1050/晚。要列出它们的具体条款吗？"
+        }
+      ],
+      "implicit_signal": "需要价格范围与假设条件"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我要选一个离线地图App，上次试用账号那种全功能7天后锁了数据，版本没法回退，重新找路径特别烦。你直接给我三个选项，标出长期使用总成本？"
+        },
+        {
+          "role": "assistant",
+          "content": "好。1) Maps.Me: 免费，但离线更新限5次/月，超出单次15比索；2) Organic Maps: 完全免费开源，无公交数据；3) Guru Maps Pro: 年费250比索，含等高线。长期总成本（按12个月）：Maps.Me若月更新超5次则为180比索，Organic 0，Guru 250。你需要等高线吗？不需要则选Organic总成本最低。"
+        }
+      ],
+      "implicit_signal": "交付格式需成本表；要求量化取舍"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在候机区里想查一个环保组织的联系电话，搜到一个网站说要填手机号才能看完整页面。我填了假号，结果它锁了我三个小时不能继续查。有什么办法绕过？"
+        },
+        {
+          "role": "assistant",
+          "content": "可以让我用无痕浏览器模式直接截取页面内容转成纯文本发你。或者搜索该组织在社交媒体上的公开联系页，通常那里不需要注册。我帮你查到了Twitter上的官方账号，直接发了私信给你。先看那个？"
+        }
+      ],
+      "implicit_signal": "拒绝强注册；能导出数据才用"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "订了周日晚上一个生态导览，结果同行的人临时退出。网站说24小时前可免费退，但我数了数实际只剩22小时。你帮我现在马上发退订邮件？"
+        },
+        {
+          "role": "assistant",
+          "content": "邮件已草拟，引用你的购买时间（周四20:00）和导览时间（周日18:00），实际间隔22小时。我加了这句话：“根据条款第4条，退订窗口从付款时间起算，不足24小时。”先发出去，若被拒我再按当地消费者权益法帮你写申诉。要现在发送吗？"
+        }
+      ],
+      "implicit_signal": "取消规则必须标记；拒绝隐藏条款"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "写太阳能项目计划书，看到瓜达拉哈拉年日照两个数据：一个2200小时，一个1800小时。上次我信了高的那个，结果实际发电量差很多，数据要重新算。这次你用哪个？"
+        },
+        {
+          "role": "assistant",
+          "content": "用1800小时。那个来自本地气象站2019-2023年实测，2200是卫星模型含外推。如果用1800算，你需要多装一块260W的板子（约3000比索），但不会出现目标落空。我已经在预算表里加了一列‘保守值方案’，你要看看吗？"
+        }
+      ],
+      "implicit_signal": "需保守估算；拒绝泛化建议"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "需要一个能远程监控太阳能板的小气象站，看到一款卖1200比索，但需要蓝牙网关才能联网，网关另售500比索。你帮我算算一年下来月均维护成本？"
+        },
+        {
+          "role": "assistant",
+          "content": "设备1200+网关500=1700一次性。网关用两节AA电池，月均换一次约20比索。另有两款替代：A款带WiFi一体1500比索，不需网关，但需每年240比索的云服务费；B款纯本地2000比索，无月费。综合三年总成本：A 2220，B 2400，网关款 2420。但A款最省事，月均61.7比索。要选A吗？"
+        }
+      ],
+      "implicit_signal": "长期维护成本优先；替代方案要列"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "集市吃午饭，上次随便进一家被收了150比索一份torta，对面店同样东西只卖80。你帮我查查哪个摊位评分高而且价格公道？"
+        },
+        {
+          "role": "assistant",
+          "content": "查到两家固定摊位：12号卖torta，评分4.3，价格60-90比索；7号卖enchiladas套餐，评分4.5，110比索。两家卫生评级都是B以上，都在早餐桌边那排，中午不涨价。12号的torta最低60比索，比上次省90。要现在去12号吗？需要先看一下菜单吗？"
+        }
+      ],
+      "implicit_signal": "需价格范围和替代方案；不考虑不透明信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想报一个线上能源建模短课，有个平台说全套24小时视频，但评论区有人反复说找不到取消订阅的入口。你帮我筛几个能一周内学完、且取消路径清楚的课程？"
+        },
+        {
+          "role": "assistant",
+          "content": "筛出三个：1) Coursera 'Solar Energy Basics' 5小时，免费旁听，随时可退；2) edX 'Energy Modeling in Python' 8小时，49美元，取消需在购买后14天内在线操作，路径明确；3) Udemy 'Renewable Energy 101' 3小时，200比索，30天内无条件退款。三个都是短周期。风险最低的是Coursera免费旁听，即学即退。要哪个链接？"
+        }
+      ],
+      "implicit_signal": "交付需成本表/风险阈值；偏好短反馈周期"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买二手笔记本，卖家说含正版Office，结果用了一个月跳出来要我付订阅费。现在看一台新的15000比索，你帮我把三年下来所有必花的钱列清楚？"
+        },
+        {
+          "role": "assistant",
+          "content": "好的。三年总成本表：笔记本15000一次性；若用免费LibreOffice则0元，若用Office家庭版年订899x3=2697。必要项：笔记本15000。可推迟项：Office订阅2697（LibreOffice免费替代）。风险：LibreOffice学习曲线约10小时，但数据互通。建议先装LibreOffice试两周，确认习惯再省下那2697。要现在装吗？"
+        }
+      ],
+      "implicit_signal": "拒绝隐性成本；必须区分必须项与可推迟项"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去保护区做志愿者要填紧急联系人电话和完整住址。我给了大概街区，对方要求必须门牌号。我有点不舒服但很想去。怎么处理？"
+        },
+        {
+          "role": "assistant",
+          "content": "先问他们能否接受工作单位电话代替，或写旅馆地址（你有24小时前台）。我帮你草拟了邮件，建议提供旅馆地址和前台电话。如果坚持要家庭住址，你可以说‘出于隐私考虑，提供以上信息可否？’绝不给真实家庭门牌。发邮件问问看？"
+        }
+      ],
+      "implicit_signal": "对位置和联系人保持谨慎；匿名化处理"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周六看到个免费户外电影活动，兴奋地去了，结果前45分钟全是房地产广告，电影只放了不到一小时就结束了。瓜达拉哈拉真有老老实实放电影的地方吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "有的。Cineteca FICG每周末有免费露天电影，无广告，片长约1.5小时。本周六19:00放一部关于沙漠生态的纪录片，西班牙语字幕。另外Centro Cultural de la 33也有每月一次电影夜，提前公布片单，从不插广告。你这周六去Cineteca？需要我查片名吗？"
+        }
+      ],
+      "implicit_signal": "偏好小型有内容密度活动；拒绝强营销"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "用ParqueSolar App跟踪发电量，免费版突然说下个月开始限功能，支付界面只有年付899比索，没有按月选项。我怀疑取消也麻烦，你帮我找找替代？"
+        },
+        {
+          "role": "assistant",
+          "content": "好。替代1：SolMonitor免费版不锁历史数据，可导出CSV，无取消烦恼；替代2：SolarEdge月付79比索/月，官网明确写‘可在任何时候取消’。差别是SolMonitor没有实时警报，但你之前说不需要。建议先装SolMonitor，用一周看导出数据是否够用，完全免费。要下载链接吗？"
+        }
+      ],
+      "implicit_signal": "服务需明确响应速度和取消路径"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去巴亚尔塔港的直达大巴每天只有一班6:30发车，我如果睡过头就得等第二天。有没有更灵活的方式？"
+        },
+        {
+          "role": "assistant",
+          "content": "有。先坐9:00大巴到特皮克（4小时），再转当地巴士到巴港（2小时），总耗时6小时，比直达多1.5小时但多了125比索。当天有3趟中转可选，末班是18:00。如果再延误，特皮克有一家可取消旅馆350比索/晚。这样就算同行的人临时退出也不影响计划。要查第一段票的班次吗？"
+        }
+      ],
+      "implicit_signal": "路线留缓冲；住宿优先安全安静可取消"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "早餐桌边那家小店把chilaquiles涨到90比索了，自己做大概30，但要多花20分钟备餐和洗锅。我明天早上行程很紧，你帮算算值不值？"
+        },
+        {
+          "role": "assistant",
+          "content": "如果你明天8:00前要出门，自己做会占用20分钟，可能导致迟到。时间成本折合你平时时薪约100比索/小时，20分钟即33比索。自己做的实际成本30+33=63比索，比90省27比索但增加了赶路压力。建议直接买，多花27但保准时。你的出发时间可以改吗？如果能推到8:30，自己做就划算。"
+        }
+      ],
+      "implicit_signal": "不过度油腻；预算敏感；本地小店优先"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我的笔记软件里有旧版清单100多条，它只允许导出成单个PDF，不能按标签拆分。而且非得网页登录才能访问旧数据。我不想把所有内容暴露给它的服务器。有没有办法直接本地处理？"
+        },
+        {
+          "role": "assistant",
+          "content": "可以用它的桌面客户端，在离线模式下将笔记复制粘贴到本地Markdown文件。然后我帮你写个Python脚本按标签拆分成三个文件。总共半小时操作，不需要联网登录。你电脑上安装了Python吗？没装的话我可以用另一种笨办法手动拆分。要开始吗？"
+        }
+      ],
+      "implicit_signal": "拒绝被锁定在单一平台；需导出数据"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想用Arduino做环境数据记录器，网上教程全是英文又很长。我需要一个今晚能动手、明天就能看到数据的流程，越短越好。"
+        },
+        {
+          "role": "assistant",
+          "content": "好，选DHT11温湿度传感器+Arduino UNO项目。我压缩成三步：1) 接4根线（正、负、数据、空），2) 烧录我给你的样例代码（已注释西语），3) 打开串口监视器看到温度湿度。如果你手里有面包板，整个过程大约30分钟。明天能拿到24小时数据曲线。第一步需要接线图吗？"
+        }
+      ],
+      "implicit_signal": "短周期反馈；示例和复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买一个便携太阳能充电板，搜到篇测评说某品牌效率最高，但没写测试时的天气和倾斜角。这种空口结论我不敢信。你推荐之前能不能把测试条件也给我？"
+        },
+        {
+          "role": "assistant",
+          "content": "可以。我找到两个有详细测试条件的选项：A品牌在30度倾斜、无云条件下效率21%，实测450W/天；B品牌在同样条件下效率19%，但集成支架更适合不平地面。不确定点：你的主要使用场景是平放还是可调倾斜？如果平放，B品牌更实用。要我把两个的数据和价格一起列成表格吗？"
+        }
+      ],
+      "implicit_signal": "结论需说明依据和不确定点；拒绝通用榜单"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "超市结账前看到有机番茄比普通贵一倍，我正犹豫要不要买来接下来三天做沙拉。今天账户只剩这个月的餐费余款了。你帮我快速算算划算不？"
+        },
+        {
+          "role": "assistant",
+          "content": "给你成本表：有机40比索/公斤x3天=120；普通20比索/公斤x3=60。必要项：你需要三天蔬菜量，普通也能满足。可推迟项：有机标签不是必要。风险：买有机后明天午餐预算会少10比索。如果用普通番茄加自己种的香料，口味差别不大，省下的60比索可买鸡蛋。推荐买普通。要列几种其他的沙拉材料组合价格吗？"
+        }
+      ],
+      "implicit_signal": "每项说明取舍；成本表含必要可推迟风险阈值"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "我正在规划可再生能源研究中心的第一期预算，有份报价清单列出了12项设备，但每项只有总价，没有单价和型号。这样我看不出哪些可以替换或砍掉。你帮我把这份清单细化一下？"
+        },
+        {
+          "role": "assistant",
+          "content": "好。我已经把清单拆成成本表，分为三列：必要项（如逆变器、蓄电池）、可推迟项（如备用监测屏）、可替换项（如面板品牌A vs B）。每行我补上了实体店参考单价和网上最低价区间。风险项：其中一项‘智能网关’报价4500，但替代方案仅2500且功能一致。你要先把这一项标记为可替换吗？"
+        }
+      ],
+      "implicit_signal": "项目预算审计模式；克制、数字优先"
+    }
+  ]
+}

@@ -1,0 +1,489 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_078",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:30:10",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 21,
+  "composition": {
+    "episodic_preference_trace": 21
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_014",
+      "hidden_indirect_018"
+    ],
+    "content": [
+      "hidden_indirect_009"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_005",
+      "hidden_indirect_016"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_006",
+      "hidden_indirect_007",
+      "hidden_indirect_009",
+      "hidden_indirect_015",
+      "hidden_indirect_017",
+      "hidden_indirect_020",
+      "hidden_indirect_021"
+    ],
+    "entertainment": [
+      "hidden_indirect_015"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_004",
+      "hidden_indirect_012",
+      "hidden_indirect_019"
+    ],
+    "food": [
+      "hidden_indirect_014"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_019"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_002",
+      "hidden_indirect_005",
+      "hidden_indirect_008",
+      "hidden_indirect_013"
+    ],
+    "learning": [
+      "hidden_indirect_012"
+    ],
+    "privacy": [
+      "hidden_indirect_008",
+      "hidden_indirect_017"
+    ],
+    "product": [
+      "hidden_indirect_010"
+    ],
+    "role_context": [
+      "hidden_indirect_004",
+      "hidden_indirect_021"
+    ],
+    "service": [
+      "hidden_indirect_011"
+    ],
+    "technology": [
+      "hidden_indirect_010",
+      "hidden_indirect_013",
+      "hidden_indirect_016",
+      "hidden_indirect_018"
+    ],
+    "travel": [
+      "hidden_indirect_007",
+      "hidden_indirect_020"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周生产环境因为第三方API升级不兼容挂了，花了6小时回滚。预算审批卡住，团队不肯为候选API多付20%月费。"
+        },
+        {
+          "role": "assistant",
+          "content": "我们选另一个文档转存API，年费略高但保证向后兼容。多付的部分从工具订阅里砍掉Netflix企业版。"
+        }
+      ],
+      "implicit_signal": "愿意为稳定API支付更高费用，但会放弃看似便宜但有风险的选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次评测博客说这个OCR库并行处理快3倍，我直接集成，结果压测崩溃，才发现官方文档根本没提并发支持。"
+        },
+        {
+          "role": "assistant",
+          "content": "我重读官方API参考，发现一个隐藏的batch参数对延迟有约束。先上staging验证，再考虑切主库。"
+        }
+      ],
+      "implicit_signal": "只信任官方文档和issue tracker，不采信第三方总结"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "团队把评估报告只写了新功能列表和报价，我没法决定是否切换。上次切存储后端差点因为缺少回滚步不能还原。"
+        },
+        {
+          "role": "assistant",
+          "content": "我补了一节迁移路线图”：从旧库导出、字段映射、增量同步、以及24小时窗口可一键回退到原版。"
+        }
+      ],
+      "implicit_signal": "要求交付内容包含迁移路径与回滚计划"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "设计同事给的按钮坐标用了Figma绝对像素，而我后端用逻辑点渲染，导致对话框在部分屏幕错位。"
+        },
+        {
+          "role": "assistant",
+          "content": "我改了监听器把逻辑点映射到设计稿坐标系，然后与他们商定从共享表格里统一DPI常量，避免再手工转换。"
+        }
+      ],
+      "implicit_signal": "作为工程师会检查底层数据格式是否与团队设计稿一致"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "销售推了一个文档协同SaaS，导出格式是专有二进制，我们的历史文件存的是Markdown。迁移后双向同步无法保证。"
+        },
+        {
+          "role": "assistant",
+          "content": "不采用。我们自己搭了一个自托管服务，走开放XML规范，设计组也能用Figma插件直接导入。"
+        }
+      ],
+      "implicit_signal": "拒绝闭源数据格式，即使它功能更全"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "副业项目跑在树莓派上，前端很丑但后端日志一直正常。有朋友建议换Vercel一条龙部署，我不乐意。"
+        },
+        {
+          "role": "assistant",
+          "content": "那就继续用本地docker-compose，我只要把Nginx配置从80端口改成443，再挂个自签名证书就行。"
+        }
+      ],
+      "implicit_signal": "在业余项目中更注重部署环境整洁，UI可粗糙"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "桌游夜有人带来一新扩，规则书排版乱，set up花了40分钟，扔骰子都要等排序。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把玩家顺序表做成共享看板，每人指派色块；芯片和计分用离线副本提前算好，下次直接入座开玩。"
+        }
+      ],
+      "implicit_signal": "优化桌游之夜桌面流程而非追求新奇规则"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "供应商说他们‘行业标准加密’，但没给SOC2报告，也不肯透露密钥轮换周期。老系统数据量大，迁移成本高。"
+        },
+        {
+          "role": "assistant",
+          "content": "要求他们在期限内出具渗透测试结果和密钥托管文档，不然我们切换到一个有公开安全白皮书的替代方案。"
+        }
+      ],
+      "implicit_signal": "拒绝含糊的安全性承诺，坚持具体审计证据"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周看了一个关于PDF水印的教程，全程演示成功路径，但不提大文件处理会超时、内存泄漏怎么修。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找到一个官方排查帖：在文档生成批次里限制页数，超过400页分割，用临时文件防OOM。"
+        }
+      ],
+      "implicit_signal": "技术内容要包含故障模式说明"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "几年前买过一台只支持某品牌私有协议的打印机，换路由器后没法重新配对，整台报废。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次买扫描仪只考虑AirPrint或RAW over USB，裸协议能用后续托管脚本驱动。"
+        }
+      ],
+      "implicit_signal": "选择消费电子产品时优先考虑集成风险和后续维护"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "当时贪便宜选了某个对象存储冷归档，结果每月取回费用算错，多付了一笔费用，API也常限流。"
+        },
+        {
+          "role": "assistant",
+          "content": "我算了三年TCO，换到另一家标准S3兼容接口，提前准备好迁移脚本和离线副本缓存。"
+        }
+      ],
+      "implicit_signal": "云计算服务选型优先API稳定性和维护负担"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "跟了一个Rust视频教程，结果他用的库版本已停维，编译过不了，折腾一天无果。"
+        },
+        {
+          "role": "assistant",
+          "content": "换读《Rust Book》官方指南，然后做LeetCode前缀求模板，已能自己写解析器。"
+        }
+      ],
+      "implicit_signal": "学习新语言时优先看官方文档和题目，不看视频"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "项目经理推荐一个知识库工具，用私有Markdown变体存储，导出后格式全乱，没法迁移。"
+        },
+        {
+          "role": "assistant",
+          "content": "这违反协作要求。我可以搭一个Wiki.js自托管，内容存标准md文件，设计同事也能直接读取。"
+        }
+      ],
+      "implicit_signal": "避免封闭格式和供应商绑定"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次在联合广场随便进一家餐厅，拉面19美元但汤底全是味精，结账时小费+税超预算。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次选日本城一家点心店，提前看了菜单价格，午餐特价12美元，味道评价也不错。"
+        }
+      ],
+      "implicit_signal": "外出吃饭在保证美味的前提下控制开支"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "朋友推荐一个在线合作推理解谜，每关要手动下载PDF，不能记录进度，我们连错三关也没存档。"
+        },
+        {
+          "role": "assistant",
+          "content": "弃用。改用已经有的剧本杀套件，我把线索做成共享看板，跑一轮只需40分钟。"
+        }
+      ],
+      "implicit_signal": "解谜游戏优先考虑能自搭建评分系统的游戏"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "试用了一款新的移动SDK，号称秒级同步，结果数据库迁移文档不全，版本没法回退。"
+        },
+        {
+          "role": "assistant",
+          "content": "我用他们提交的镜像写一个转换脚本，保证切换后2小时内能回滚到本地存储。"
+        }
+      ],
+      "implicit_signal": "移动端API评估先确认迁移路径再讲效益"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "家人习惯在群里发定位和照片原图，我觉得不安全。之前提醒过，他们不理解元数据。"
+        },
+        {
+          "role": "assistant",
+          "content": "我写了一个自动化脚本：上传到群前剥离EXIF并模糊地图缩略图，再用家庭NAS离线副本存档。"
+        }
+      ],
+      "implicit_signal": "家庭群消息防滥用：用离线处理后再上传"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去年黑五买了一台特价安卓平板，结果没几个月系统不再更新，应用不兼容，相当于白花300美元。"
+        },
+        {
+          "role": "assistant",
+          "content": "换回iPad，虽然贵一倍，但有最少三年OS更新，而且我的开发者工具也能装。"
+        }
+      ],
+      "implicit_signal": "个人设备更新前计算总拥有成本，不只比首发价"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "技术候选工具的功能清单很亮眼，但一问并发限制和冷启动时间，对方说‘客户案例里没测过’。"
+        },
+        {
+          "role": "assistant",
+          "content": "要求他们出具负载测试报告和在大文件下的延迟数据。如果给不出，归档候选。"
+        }
+      ],
+      "implicit_signal": "评估第三方服务要求提供功能约束和已知限制文档"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去东京按热门路线走，结果在浅草寺花了一小时排队，下午时间不够去秋叶原。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把行程调成：早上先奔筑地吃点心，再绕去人少的博物馆，最后秋叶原直到关门。"
+        }
+      ],
+      "implicit_signal": "旅行计划优化走线路径而非打卡地图"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "销售说一键迁移至他们云平台，但我发现导出功能只支持全量快照，增量数据在迁移期会丢。"
+        },
+        {
+          "role": "assistant",
+          "content": "拒绝。需要求提供增量导出API和并行运行过渡期的SDK，否则仍走自托管方案。"
+        }
+      ],
+      "implicit_signal": "SaaS好处自己评估后再加上迁移回退策略才接受"
+    }
+  ]
+}

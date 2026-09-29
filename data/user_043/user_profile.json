@@ -1,0 +1,174 @@
+{
+  "user_id": "user_043",
+  "explicit_preferences": {
+    "user_profile": "在手术过程中协助并确保诊所工作流程顺畅的牙科助理",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Maria Lopez",
+        "age": 34,
+        "gender": "女性",
+        "location": "美国德克萨斯州奥斯汀",
+        "languages": [
+          "英语",
+          "西班牙语"
+        ],
+        "education_level": "牙科助理副学士学位",
+        "occupation": "注册牙医助理",
+        "industry": "医疗 / 牙科",
+        "seniority": "中级",
+        "household": "已婚，有两个孩子（6岁和9岁）",
+        "life_stage": "忙碌的父母平衡事业和家庭"
+      },
+      "physical_profile": {
+        "height_cm": 165,
+        "general_appearance": "身材匀称，干净专业的形象；修剪整齐的短指甲，淡妆，头发经常扎起来。",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "有条理、有同理心、注重细节；在有结构的环境中茁壮成长，并以帮助他人为荣。",
+        "big_five": {
+          "openness": 60,
+          "conscientiousness": 90,
+          "extraversion": 55,
+          "agreeableness": 85,
+          "neuroticism": 30
+        },
+        "strengths": [
+          "出色的时间管理",
+          "在压力下保持冷静",
+          "团队合作者",
+          "手部灵巧"
+        ],
+        "weaknesses": [
+          "倾向于过度分析日常事务",
+          "难以应对最后一刻的变化",
+          "偶尔难以授权"
+        ],
+        "values": [
+          "可靠性",
+          "患者舒适",
+          "卫生和安全",
+          "家庭时间"
+        ],
+        "motivations": [
+          "帮助患者感到放松",
+          "高效的诊所运营",
+          "学习新的牙科技术",
+          "养家糊口"
+        ],
+        "stress_triggers": [
+          "意外的设备故障",
+          "粗鲁或焦虑的患者",
+          "匆忙的手术",
+          "育儿冲突"
+        ]
+      },
+      "background": {
+        "hometown": "德克萨斯州圣安东尼奥",
+        "education": "当地社区大学的副学士学位，以及放射学和感染控制认证。",
+        "career_history": "在牙科诊所担任接待员2年，然后成为牙科助理；在现在的诊所工作8年。",
+        "family": "丈夫是一名高中教师；有两个孩子；与住在附近的父母关系密切。",
+        "key_life_events": "搬到奥斯汀寻找更好的工作机会；在工作中发生医疗紧急情况后参加了CPR课程。"
+      },
+      "lifestyle": {
+        "daily_routine": "早上6点起床，让孩子准备好上学，工作8点到5点，接孩子，准备晚餐，帮助做作业，晚上9点放松。",
+        "hobbies": "园艺、读小说、周末慢跑、DIY家居项目。",
+        "social_life": "偶尔与朋友共进晚餐，活跃在当地家长群中，每月去教堂两次。",
+        "diet": "均衡饮食，注重全食物；大部分在家做饭。",
+        "sleep": "每晚7小时，但有时忙碌的夜晚会少一些。"
+      },
+      "interests": {
+        "professional_development": "参加牙科会议，阅读行业期刊，对激光牙科和数字印模感兴趣。",
+        "leisure": "真实犯罪播客、烹饪节目、园艺（多肉植物和草药）。",
+        "cultural": "喜欢周末农贸市场，偶尔带孩子参观博物馆，拉丁音乐。",
+        "sports": "慢跑、每周两次瑜伽课、看大学橄榄球。"
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "偏好清晰、分步的教学内容；喜欢医疗专业人士的 relatable 故事；避免过度夸张或耸人听闻的医学内容。",
+          "内容必须匹配该用户独特的工作模式：牙科诊所实用模式：干净、逐步、关注患者流程。",
+          "拒绝通用的助理框架：不要让她淹没在规格或保险术语中。"
+        ],
+        "product_preferences": [
+          "可靠且易于清洁的牙科用品；人体工学器械；环保办公产品；耐用的儿童玩具。",
+          "产品应通过用户自己的权衡视角来选择：需求、必备、红旗、成本/覆盖问题。"
+        ],
+        "service_preferences": [
+          "快速透明的医保账单；在线预约安排；家庭公用事业的高效客服。",
+          "只有当服务保留此决策优先级时才可接受：可清洁性、人体工学使用、账单清晰度和家庭覆盖胜过高级功能。"
+        ],
+        "learning_preferences": "动手实践工作坊优于在线讲座；偏好带字幕的视频教程；喜欢用闪卡快速复习。",
+        "travel_preferences": "具有教育意义的家庭友好型目的地（如国家公园、历史遗址）；偏好直飞航班；看重干净住宿。",
+        "food_preferences": "热爱墨西哥菜；偏好家常烹饪；避免过辣食物；喜欢尝试新食谱。",
+        "entertainment_preferences": "真实犯罪纪录片、家庭友好喜剧、真人烹饪秀、通勤时的播客。",
+        "technology_preferences": "使用iPhone，喜欢直观UI的应用；使用基于云的管理软件；对可穿戴健康科技感兴趣。",
+        "privacy_preferences": "谨慎在线分享健康数据；使用强密码；避免不必要的应用权限。",
+        "budget_preferences": "注重成本但愿意为质量和便利付费；使用优惠券和会员计划；每周规划家庭预算。",
+        "personalization_directives": {
+          "style_contract": "牙科诊所实用模式：清洁、分步、患者流程意识。",
+          "decision_priority": "清洁性、人体工学使用、账单清晰度和家庭保障胜过高端功能。",
+          "evidence_contract": "健康声明需要来源，但实际诊所经验更算数。",
+          "format_contract": "需求、必备、危险信号、费用/保险问题。",
+          "anti_default_assistant_behavior": "不要用规格或保险术语淹没她。",
+          "distinctive_quirks": [
+            "牙科椅必须易于消毒和维护。",
+            "家庭旅行需要孩子耐用性和可预测的后勤。",
+            "保险建议应从正畸保险的现实情况开始。"
+          ],
+          "hard_avoidances": [
+            "过度夸张的医学术语",
+            "数据密集的解释",
+            "没有清洁流程的设备推荐"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "dislikes": "杂乱的工作空间、意外的日程变更、居高临下的同事、过甜的食物。",
+        "constraints": "长时间阅读的时间有限；学年期间无法旅行；预算用于度假等大额支出。"
+      },
+      "communication_style": {
+        "tone": "温暖而专业，使用简单语言，对患者说话时避免行话。",
+        "formality": "适中；使用“请”和“谢谢”，但不过于正式。",
+        "directness": "直接但友善；偏好清晰的指示。",
+        "emotional_expression": "公开表达同理心；不羞于表示关心。"
+      },
+      "decision_making": {
+        "style": "分析性强且有方法，从可信来源收集信息，重大决策与配偶商量。",
+        "speed": "适中；花时间权衡选项，但在紧急情况下能快速决定。",
+        "risk_tolerance": "低；偏好经过验证的解决方案而非实验性的。",
+        "influencers": "来自牙科助理同行的在线评论、同事推荐、家人意见。"
+      },
+      "evaluation_notes": {
+        "likely_tasks": "比较牙科产品、规划工作日程、研究育儿选项、寻找健康食谱。",
+        "preference_conflicts": "想要环保产品但也要求成本效益；渴望专业发展但时间有限；喜欢秩序但偶尔享受自发活动。",
+        "ambiguity_to_preserve": "确切的最爱品牌、软件的具体痛点、精确的预算金额、确切的度假目的地。",
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:46",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "友好且尊重，不过于随意。",
+            "response_length": "简洁但全面；偏好要点列表或短段落。",
+            "evidence_expectation": "想要健康相关声明的来源；信任数据但不会被统计淹没。",
+            "formatting": "清晰的标题、列表、关键点加粗。",
+            "proactive_behavior": "欣赏关于订购用品或继续教育截止日期等任务的提醒。",
+            "things_to_avoid": "过于复杂的解释、不请自来的个人建议、工作时间的打扰。"
+          },
+          "task_titles_used_for_context": [
+            "研究和推荐用于诊所升级的新牙科椅设备",
+            "计划春假家庭国家公园之旅",
+            "评估家庭正畸保险选项"
+          ]
+        }
+      }
+    }
+  }
+}

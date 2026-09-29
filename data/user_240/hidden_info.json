@@ -1,0 +1,464 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_240",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:46:54",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 18,
+  "composition": {
+    "episodic_preference_trace": 18
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_003",
+      "hidden_indirect_009",
+      "hidden_indirect_014",
+      "hidden_indirect_018"
+    ],
+    "content": [
+      "hidden_indirect_013",
+      "hidden_indirect_015"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_002",
+      "hidden_indirect_004",
+      "hidden_indirect_012",
+      "hidden_indirect_018"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_006",
+      "hidden_indirect_007",
+      "hidden_indirect_008",
+      "hidden_indirect_016"
+    ],
+    "entertainment": [
+      "hidden_indirect_011",
+      "hidden_indirect_015"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_005",
+      "hidden_indirect_013",
+      "hidden_indirect_016"
+    ],
+    "food": [
+      "hidden_indirect_008",
+      "hidden_indirect_011",
+      "hidden_indirect_014"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_004"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_009",
+      "hidden_indirect_010",
+      "hidden_indirect_011"
+    ],
+    "learning": [
+      "hidden_indirect_006",
+      "hidden_indirect_013"
+    ],
+    "privacy": [
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_017"
+    ],
+    "product": [
+      "hidden_indirect_003"
+    ],
+    "role_context": [
+      "hidden_indirect_012"
+    ],
+    "service": [
+      "hidden_indirect_005",
+      "hidden_indirect_008",
+      "hidden_indirect_010",
+      "hidden_indirect_017"
+    ],
+    "technology": [
+      "hidden_indirect_007",
+      "hidden_indirect_016"
+    ],
+    "travel": [
+      "hidden_indirect_001",
+      "hidden_indirect_002",
+      "hidden_indirect_004",
+      "hidden_indirect_006",
+      "hidden_indirect_007",
+      "hidden_indirect_009",
+      "hidden_indirect_012",
+      "hidden_indirect_014",
+      "hidden_indirect_015",
+      "hidden_indirect_017",
+      "hidden_indirect_018"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次订Guadalajara的民宿，预订页标价850比索，确认后加清洁费、服务费，最后实付1240。没地方取消。"
+        },
+        {
+          "role": "assistant",
+          "content": "明白。这次只选总价确认前就显示明细的选项。这家旅馆清单页面有强制税费总额，你先看。3553？"
+        }
+      ],
+      "implicit_signal": "隐藏费用触发否决，优先总成本"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "travel",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天想订Tequila过夜，三家看起来差不多，但Google Maps上价格没更新。去年11月也出现过类似差价问题。"
+        },
+        {
+          "role": "assistant",
+          "content": "我调了Booking和Hotels.com当前报价做对比表，含税含早餐。第一晚临界成本在你设定的650–950之间，有一家超出。要列风险吗？"
+        }
+      ],
+      "implicit_signal": "决策前需要价格范围与假设条件"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "线上会议间隙，翻到一个行李电子秤，好几款功能一样，价格差一倍。旧版清单上我记过一款，但没写价差。"
+        },
+        {
+          "role": "assistant",
+          "content": "我把三款放入成本表：必要项（精度±1g）、可推迟项（蓝灯夜显）、风险值（电池不可换）。1765的那款排除，408的那款精度不符。推荐中间款849。48？"
+        }
+      ],
+      "implicit_signal": "交付格式需要成本表与必要可推迟风险阈值"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "计划Zapopan住两晚，能改期，但Airbnb上同一房源有两个报价——标准价和预付不可退。回不去出差预算了。53？"
+        },
+        {
+          "role": "assistant",
+          "content": "列成本表。标准可取消价1210/晚，预付价975但不可改。按出行章程，不可改选的假设条件≤15%风险才接受。这次行程变数18%，建议保留标准。36小时取消窗口。3553？"
+        }
+      ],
+      "implicit_signal": "交付格式与决策优先级一致"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "privacy",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想订有厨房的短租，Hostelworld要求上传身份证正面照才能预订。活动散场后我没传，觉得不对劲。关键信息只有广告页提到要传照片，别处没写。"
+        },
+        {
+          "role": "assistant",
+          "content": "那家我不推。我找到另一家同区间、押金退还规则清楚的房源，只要预订人姓名，不需要实名证件扫描。要发给你列表吗？"
+        }
+      ],
+      "implicit_signal": "需要明示数据边界和取消规则"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "手机截图里存了三个Chapala湖边旅馆，都是步行到码头。但地图上说其中一家实际走到要15分钟，截图没写距离。去年有次定错就是这个原因。53？"
+        },
+        {
+          "role": "assistant",
+          "content": "我量了步行距离。标750的那家走到码头实测9分钟，不是15。我建议你保留这两家，第三家1250但超预算，可以删掉。保守选第一家？36？"
+        }
+      ],
+      "implicit_signal": "保守估算与比较但不过度选择"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "travel",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "旧版清单上的Tlaquepaque旅馆昨天看还有房，但取消政策没写。预约确认前我返回找细则，找不到。版本没法回退，上次退订吃过亏。18？"
+        },
+        {
+          "role": "assistant",
+          "content": "我用快照查了它的历史条款，确认入住前48小时免费取消。一页便签帮你记了截止时间，稍微容后处理。今天不改价差。同意？36？"
+        }
+      ],
+      "implicit_signal": "需要提醒取消规则"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "今天在Santa Tere附近找午饭，手机截了三个餐厅菜单。第一家要排队，第二家分量太大，第三家比评分高但没意面选项。活动散场后没时间一个一个试。3553？"
+        },
+        {
+          "role": "assistant",
+          "content": "我帮你缩小：第一家等位平均18分钟，第三家本地人评论说有‘今日面食’但不在菜单板。你赶下午会议，选第三家单人份那不勒斯面，预算控制在110比索内。3536？"
+        }
+      ],
+      "implicit_signal": "愿意多比较但不想无限选择"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "budget",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "活动散场后翻到Guadalajara到Morelia的夜车，网站广告写295起，点进去加保险和座位险变成440。没有其他价格信息，预算在最后一步失控。53？"
+        },
+        {
+          "role": "assistant",
+          "content": "我查了另一家直达车，含基本保险379，无隐藏选座费。发车时间和夜宿时间跟你的行程匹配。要浏览时刻表？18？"
+        }
+      ],
+      "implicit_signal": "避免隐藏费用，拒绝含糊预算"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "设备更新后，电动车租赁App要我授权通讯录和相册才能看车价。关键信息只有广告页提到要授权，没写不授权能不能看价格。预约确认前我放弃了。3553？"
+        },
+        {
+          "role": "assistant",
+          "content": "那App不推荐。我找到另一家提供同款车型、线上报价不需要通讯录权限，仅需城市和日期。信用预订但可无责取消店付。要列工具对比吗？36？"
+        }
+      ],
+      "implicit_signal": "避免超前消费和强制注册"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "计划周六去Tonalá市集，旅馆前台说那里有传统表演，但现场网络断了，不能现场买票也不能查备选。上次干等过类似的，不想再重复。48？"
+        },
+        {
+          "role": "assistant",
+          "content": "我离线准备了公交路线、周边两个有WiFi的咖啡馆，还有一个户外观演点不用购票，下午2点开始。你到了若市集太吵直接按2号备选。要发离线地图？3553？"
+        }
+      ],
+      "implicit_signal": "拒绝无备选方案的计划"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "客户临时让我去León出差，但住宿只报800比索以下才报销。旧版清单上有几家廉价酒店，列了两家但没写税后是否超线。设备更新后还在找电子版收据。53？"
+        },
+        {
+          "role": "assistant",
+          "content": "按差旅约束做成本表。第一家含税770，符合，但要步行14分钟；第二家含税840，超报销线。必要项：距离；可推迟项：含早；风险：无取消。建议第一家并打印备选公交。36？"
+        }
+      ],
+      "implicit_signal": "作为独立咨询分析师，旅行任务需要遵循预算审计模式"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "learning",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "在线上会议间隙，看到一个关于墨西哥铁路历史的播客单集，封面是纪念性图片。我担心内容偏向突出争议话题。18分钟前试听了5分钟，确实有不少对立叙述。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找到另一个播客同一主题，它引用了三家档案馆原始材料，并在简介注明‘不完全覆盖争议方’。依据来源更清晰。不确定点：它长度53分钟，你只有18分钟空档，要切两次听？"
+        }
+      ],
+      "implicit_signal": "内容需说明依据和不确定点"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天在Tlaquepaque吃了一家装潢很高的饭店，三道菜加小费540比索，比预算多一倍。吃完胃也不舒服，影响第二天徒步。现场网络断了，没法查评价。53？"
+        },
+        {
+          "role": "assistant",
+          "content": "下次建议你去附近市场固定摊，类似分量但油少，人均160到210。我帮你记三个摊距离你的落脚点都在8分钟步行内。明天早餐从35拉开，补回昨晚超支。36？"
+        }
+      ],
+      "implicit_signal": "饮食偏重预算优先、不过度油腻"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "travel",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "Guadalajara国际书展周末有免费讲座，但列表里有一个是大型签售会场，要我提前注册并授权手机号。活动散场后收到3条促销短信。53？"
+        },
+        {
+          "role": "assistant",
+          "content": "我筛选出独立展区的小型对谈，容量限50人，主题19世纪的铁路对周边小镇影响。直接入场不需要注册。要帮你记展厅号和开始时间？18？样？"
+        }
+      ],
+      "implicit_signal": "偏好小型真实活动，避免拥挤"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "evidence_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "手机里的行程管理App设备更新后不再同步旧笔记，重要便签和截图都在本地。一页便签的日历标记也丢了。它不提供导出功能。53？"
+        },
+        {
+          "role": "assistant",
+          "content": "换为Notion或Trello免费层，支持导出为CSV或Markdown。保守估算转移时间占用你36分钟，但后续跨设备同步稳定。要导出步骤的剪贴版笔记？3553？"
+        }
+      ],
+      "implicit_signal": "偏好可导出数据的跨平台工具，并按保守估算选"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "travel",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "买去San Miguel de Allende的巴士票，网站在付款前要我输入家庭住址，说用于发票。关键信息只有广告页提到发票选项，没写提供地址才能出票。预约确认前我停住了。53？"
+        },
+        {
+          "role": "assistant",
+          "content": "那程票另一家叫Conexiones的站只收姓名和电子邮箱，实时出票，车厢有WiFi。价格一样。我核实过发票请求不需要地址，直接在后台申请电子版。要帮你操作？48？"
+        }
+      ],
+      "implicit_signal": "只提供完成任务必要信息，位置谨慎"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "decision_priority",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "Huatulco飞回Guadalajara的航班，一个周三早上时间很合适，但票价2050，另一个挤周五下午中转一次才1750。36天前家里账单要出，钱有点紧。3553？"
+        },
+        {
+          "role": "assistant",
+          "content": "列现金流：周三直飞虽然少耽误那半天，但加上去机场打车的550，变成2600。周五中转含机票、市内公交总价2080，多耗3小时。假设工作能调度，选了周五方案，节省520。要帮你锁位？36？"
+        }
+      ],
+      "implicit_signal": "总成本优先于短期便利"
+    }
+  ]
+}

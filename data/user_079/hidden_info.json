@@ -1,0 +1,512 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_079",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T05:02:47",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 22,
+  "composition": {
+    "episodic_preference_trace": 22
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_009",
+      "hidden_indirect_013",
+      "hidden_indirect_017",
+      "hidden_indirect_020"
+    ],
+    "content": [
+      "hidden_indirect_002",
+      "hidden_indirect_016",
+      "hidden_indirect_019"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_012",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_005",
+      "hidden_indirect_008",
+      "hidden_indirect_011"
+    ],
+    "entertainment": [
+      "hidden_indirect_011",
+      "hidden_indirect_021"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_006",
+      "hidden_indirect_016"
+    ],
+    "food": [
+      "hidden_indirect_008",
+      "hidden_indirect_014"
+    ],
+    "format_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_004"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_006",
+      "hidden_indirect_007",
+      "hidden_indirect_014",
+      "hidden_indirect_019"
+    ],
+    "learning": [
+      "hidden_indirect_012"
+    ],
+    "privacy": [
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_022"
+    ],
+    "product": [
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ],
+    "role_context": [
+      "hidden_indirect_004",
+      "hidden_indirect_021"
+    ],
+    "service": [
+      "hidden_indirect_009",
+      "hidden_indirect_017"
+    ],
+    "technology": [
+      "hidden_indirect_010",
+      "hidden_indirect_018",
+      "hidden_indirect_022"
+    ],
+    "travel": [
+      "hidden_indirect_007",
+      "hidden_indirect_015"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周课程委员会说新课程预算超了，建议砍掉社区口述历史项目模块。那是学生最可能参与的部分。"
+        },
+        {
+          "role": "assistant",
+          "content": "保留口述历史模块，我从自己的研究经费里补录设备租赁差额。课程逻辑不能为了整齐而失去直接触动。"
+        }
+      ],
+      "implicit_signal": "决策时优先考虑课程的学生归属感而非预算限制"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前那个阿拉伯裔文学书单被同事说缺少批评性。我重新查了《高等教育纪事报》和两个社区组织的推荐。"
+        },
+        {
+          "role": "assistant",
+          "content": "把社区推荐的《盐之城》加进去，替换掉那本1980年代选集。学术引用和社区声音都要在场。"
+        }
+      ],
+      "implicit_signal": "证据标准要求学术与社区声音并重"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "昨天课程提案交上去，院长说章节逻辑很顺，但末尾缺了一个部分：如果某次讨论引发文化敏感怎么办。"
+        },
+        {
+          "role": "assistant",
+          "content": "我在每个模块后加上'潜在伤害与修复动作'一栏。第一周的修复动作是：提前发社区准则并由学生修正。"
+        }
+      ],
+      "implicit_signal": "要求课程提案结构包含主题、锚点、活动、潜在伤害、修复措施"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "format_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前那门多元文化课的大纲用了传统章节结构，学生反馈说不够落地。这次想重新排。"
+        },
+        {
+          "role": "assistant",
+          "content": "每个单元先写主题锚点（一首诗、一个社区事件），然后列学生活动，最后加修复措施。像第二单元锚定在底特律的阿拉伯移民小企业。"
+        }
+      ],
+      "implicit_signal": "在课程提案中使用主题-文本/社区锚点-活动-潜在伤害-修复动作结构"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "课程平台供应商想收集学生讨论分析用于改进课程设计。我看到数据分享条款很宽泛。"
+        },
+        {
+          "role": "assistant",
+          "content": "选择最小数据采集方案，只保留匿名参与度统计。学生讨论内容不应该成为产品训练集。"
+        }
+      ],
+      "implicit_signal": "课程中关于数据收集的决策体现隐私优先"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "同事建议在课程简介里加一句'拥抱多样性'并引用五篇政策文献。我觉得那听起来像在填表。"
+        },
+        {
+          "role": "assistant",
+          "content": "删掉通用标语，只保留一句来自社区口述历史项目的原话。引用文献最多两篇，其余放在附录阅读清单。"
+        }
+      ],
+      "implicit_signal": "避免象征性点缀和堆砌引用"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次去睡熊沙丘，到下午两点孩子没吃午饭路也走不动，最后全程在车里吃薯片。这次不想重演。"
+        },
+        {
+          "role": "assistant",
+          "content": "出发前先去中东市场买好黎巴嫩皮塔饼和鹰嘴豆泥，中途在Empire Bluff步道入口野餐。下午只走1.5英里环线。"
+        }
+      ],
+      "implicit_signal": "家庭出游必须安排食物、休息和儿童适宜的自然环境"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去年种了薄荷和番茄，但长出来的味道不对。我在网上查了黎巴嫩气候数据，发现老家贝鲁特冬季平均温高10度。"
+        },
+        {
+          "role": "assistant",
+          "content": "选耐寒的黎巴嫩品种：Zaatar百里香和叙利亚黄瓜。春季先种在raised bed里，六月再移栽到靠墙处保温度。"
+        }
+      ],
+      "implicit_signal": "黎巴嫩花园规划融合文化记忆与园艺"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "Whole Foods这周有机草莓比上周贵了三美元。Instacart订单总价超了预算线15美元。"
+        },
+        {
+          "role": "assistant",
+          "content": "保留草莓，取消那包预制零食。孩子放学后可以吃苹果片和自家花园的薄荷酸奶蘸料。"
+        }
+      ],
+      "implicit_signal": "在预算和服务质量之间倾向于投资有机食品"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上个月课程平台在后台生成了一份'学生注意力热图'，涉及他们的行为数据。我觉得越界了。"
+        },
+        {
+          "role": "assistant",
+          "content": "在设置里关闭所有遥测开关，并要求供应商书面承诺不将学生数据用于任何非必要分析。"
+        }
+      ],
+      "implicit_signal": "主动关闭应用的跨站追踪并清理缓存"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "distinctive_quirk"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "Netflix新上的一部黎巴嫩电影预告片里出现了贝鲁特街景，但对话用的是埃及方言。孩子们听不懂。"
+        },
+        {
+          "role": "assistant",
+          "content": "换Kanopy上那部《黎巴嫩山之声》，阿拉伯语配音是黎巴嫩口音，周日晚上可以全家一起看。"
+        }
+      ],
+      "implicit_signal": "对文化精准度要求高的娱乐选择"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "专业发展的培训通知发来了，主讲人只是念幻灯片。上次我坐了五十分钟什么也没记住。"
+        },
+        {
+          "role": "assistant",
+          "content": "回复邮件建议改为下午先做小组案例讨论，再回来共享发现。如果时间冲突，我选下午那场工作坊。"
+        }
+      ],
+      "implicit_signal": "工作坊优于讲座形式"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "product",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "Eileen Fisher网站打折区有一条裤子，但还需要更新iPad皮套，两个加起来接近两百。"
+        },
+        {
+          "role": "assistant",
+          "content": "裤子等下一季折扣。iPad皮套在亚马逊历史价格跟踪显示已比去年降了18美元，现在入。"
+        }
+      ],
+      "implicit_signal": "在服装上节省预算，投资于教育材料和旅行"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周日晚上开会开到六点半，按照往常孩子会饿到直接要求去麦当劳。上次他们闹得很厉害。"
+        },
+        {
+          "role": "assistant",
+          "content": "提前两小时把鹰嘴豆泥和烤鸡肉卷放进冰箱冷藏，让孩子爸爸五点半先热给他们吃。你回来只用加热自制labneh。"
+        }
+      ],
+      "implicit_signal": "避免快餐，提前计划家庭用餐"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "去伊斯坦布尔的直飞机票一个人贵近300块，转机可以省800。但带着七岁和十岁的孩子转机很累。"
+        },
+        {
+          "role": "assistant",
+          "content": "直飞。在飞机上让他们先把学校功课做完，落地直接去酒店附近找到一家带庭院的黎巴嫩餐厅吃晚饭。"
+        }
+      ],
+      "implicit_signal": "家庭节奏和文化特性优先于旅行效率"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "写课程参考文献时发现一篇新论文关于阿拉伯裔大学生归属感，但样本全是加州公立学校，和密歇根差异大。"
+        },
+        {
+          "role": "assistant",
+          "content": "加一篇，同时补充迪尔伯恩当地一家文化中心的2023年调查报告。两篇对照说明地域差异。"
+        }
+      ],
+      "implicit_signal": "学术文献与社区声音同为证据来源"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周Instacart订单里有机菠菜到了已经开始发黄，而且替换的大葱比我下单那种贵两美元。"
+        },
+        {
+          "role": "assistant",
+          "content": "联系客服申请菠菜退款并备注禁止自动替换。以后只选'如缺货则取消该单品'。"
+        }
+      ],
+      "implicit_signal": "生鲜配送服务用于节省时间，但不超出预算"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "technology",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "iPhone 15的夜景模式在最近一次更新后偶尔闪退。我拍了三个课程活动的照片都模糊了。"
+        },
+        {
+          "role": "assistant",
+          "content": "先把iCloud照片备份，然后重置相机设置。如果周末前去Genius Bar预约检测，他们线下可以加急处理。"
+        }
+      ],
+      "implicit_signal": "偏好可靠、用户友好的苹果生态"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "系里模板要求在课程目标里加一句'培养学生全球竞争力'。我感觉这样放进去很空洞。"
+        },
+        {
+          "role": "assistant",
+          "content": "删掉全球竞争力，改为'学生能分析特定阿拉伯裔社区如何通过口述历史保存文化记忆'。具体才不会符号化。"
+        }
+      ],
+      "implicit_signal": "避免课程中的象征性点缀"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "每年去黎巴嫩探亲的开销都超出预算线2000美元，但两个孩子今年第一次见祖父母。"
+        },
+        {
+          "role": "assistant",
+          "content": "缩减今年服装和娱乐预算，把省下的1500填进去。剩下差额用学术旅行补贴申请补足。"
+        }
+      ],
+      "implicit_signal": "虽在意预算，但投资于优质教育资源和旅行"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上周用Kanopy账号给学生放了一段关于阿拉伯移民史的纪录片，但发现有十五分钟画面比例出错。"
+        },
+        {
+          "role": "assistant",
+          "content": "在Kanopy后台提交问题报告，同时从大学图书馆获取另一份DVD备用。下次课前自己先全片预览一遍。"
+        }
+      ],
+      "implicit_signal": "在高等教育工作语境下使用Kanopy学术访问资源"
+    },
+    {
+      "interaction_id": "hidden_indirect_022",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周末用Safari搜索黎巴嫩食谱后，第二天Instagram推送了相关广告。我记得关闭了跨站追踪。"
+        },
+        {
+          "role": "assistant",
+          "content": "检查iPhone隐私设置里的App Tracking Transparency，发现最近一次系统更新后部分权限重置了。重新关掉所有不必要追踪。"
+        }
+      ],
+      "implicit_signal": "严格管理个人数据追踪"
+    }
+  ]
+}

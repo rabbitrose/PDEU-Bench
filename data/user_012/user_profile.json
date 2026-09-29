@@ -1,0 +1,296 @@
+{
+  "user_id": "user_012",
+  "explicit_preferences": {
+    "user_profile": "CNN的一名新媒体记者",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Elena Vasquez",
+        "age": 29,
+        "gender": "女性",
+        "location": "New York, NY, USA",
+        "languages": [
+          "英语",
+          "西班牙语"
+        ],
+        "education_level": "新闻学学士学位",
+        "occupation": "多媒体记者",
+        "industry": "新闻媒体",
+        "seniority": "中级",
+        "household": "单身，独居一室公寓",
+        "life_stage": "早期职业专业人士，专注于职业发展"
+      },
+      "physical_profile": {
+        "height_cm": 165,
+        "general_appearance": "体格健壮，深色头发，穿着专业但实用的实地报道服装",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "埃琳娜是一个好奇、有动力、有同情心的记者，重视准确性和故事性。她适应性强，但可能对低效没有耐心。",
+        "big_five": {
+          "openness": 85,
+          "conscientiousness": 80,
+          "extraversion": 70,
+          "agreeableness": 65,
+          "neuroticism": 45
+        },
+        "strengths": [
+          "优秀的研究能力",
+          "出色的写作技巧",
+          "学习能力强",
+          "有同理心的采访者"
+        ],
+        "weaknesses": [
+          "可能对自己的作品过度挑剔",
+          "倾向于工作狂",
+          "对缓慢的过程不耐烦"
+        ],
+        "values": [
+          "真相",
+          "社会正义",
+          "多样性",
+          "透明",
+          "持续学习"
+        ],
+        "motivations": [
+          "揭露有影响力的报道",
+          "做出改变",
+          "职业认可",
+          "掌握新媒体工具"
+        ],
+        "stress_triggers": [
+          "突发新闻压力",
+          "紧迫的截止日期",
+          "现场报道时的技术问题",
+          "审查或阻挠"
+        ]
+      },
+      "background": {
+        "hometown": "佛罗里达州迈阿密",
+        "family": "父母是小企业主，有一个在上大学的弟弟",
+        "education": "佛罗里达大学新闻学学士",
+        "career_history": "曾在当地迈阿密电视台实习，然后在地区网络担任全能记者，两年前加入CNN",
+        "significant_life_events": "报道过飓风救援工作，这巩固了她对新闻事业的承诺"
+      },
+      "lifestyle": {
+        "daily_routine": "早上6点起床，查看新闻电讯和社交媒体，接收编辑分配任务，通常8点前外出采访，下午返回办公室撰稿/编辑，晚间可能包括现场连线或活动，通过看网飞或阅读放松",
+        "habits": "喝咖啡，偶尔做瑜伽，保持详细的笔记本",
+        "social_life": "寻求与同行记者或亲密朋友的低调社交；避免大型聚会",
+        "work_life_balance": "对此感到挣扎；经常周末工作，但尽量休息一天"
+      },
+      "interests": {
+        "hobbies": [
+          "摄影",
+          "看纪录片",
+          "跑步",
+          "烹饪（尝试新食谱）"
+        ],
+        "sports": "瑜伽、跑步",
+        "arts": "独立电影、摄影展",
+        "reading": "非虚构类（历史、政治、真实犯罪），部分文学小说",
+        "music": "播客（新闻、真实犯罪）、独立摇滚、拉丁音乐"
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "news_sources: CNN, NPR, 纽约时报, 路透社",
+          "podcasts: The Daily, Serial, Up First, Criminal",
+          "books: 非虚构调查新闻, 政治回忆录",
+          "内容必须匹配此用户独特的工作模式：多媒体记者模式：截止日期优先、来源可见、平台意识强",
+          "拒绝通用助手框架：当需要发布更新时，不要过度构建研究计划"
+        ],
+        "product_preferences": [
+          "tech_gadgets: 最新款iPhone, MacBook Pro, 索尼无线耳机, 用于采访的RØDE麦克风",
+          "clothing: 舒适且专业（运动西装外套、牛仔裤、舒适的鞋子），户外装备用于现场报道",
+          "home: 极简装饰，智能家居设备以方便",
+          "产品应通过用户自己的权衡视角选择：关键信息、核实事实、媒体资产、缺失来源、下次更新时间"
+        ],
+        "service_preferences": [
+          "streaming: Netflix, HBO Max, Spotify",
+          "food_delivery: Seamless, Uber Eats",
+          "news_subscriptions: 纽约时报数字版, 华盛顿邮报数字版",
+          "服务只有在保留此决策优先级时才可接受：核实可发布事实、可用媒体和截止日期适配优于深度"
+        ],
+        "learning_preferences": {
+          "formats": [
+            "在线课程（Coursera、LinkedIn Learning）",
+            "工作坊",
+            "导师指导"
+          ],
+          "topics": [
+            "数据新闻",
+            "视频剪辑",
+            "调查技巧",
+            "外交政策"
+          ]
+        },
+        "travel_preferences": {
+          "destinations": [
+            "文化丰富的城市中心",
+            "冲突地区或有未讲述故事的区域"
+          ],
+          "accommodation": [
+            "中档酒店或Airbnb",
+            "偏好靠近新闻中心"
+          ],
+          "travel_style": [
+            "高效、专注于工作，但努力探索当地美食和文化"
+          ]
+        },
+        "food_preferences": {
+          "cuisine": [
+            "墨西哥料理",
+            "泰国",
+            "意大利语",
+            "从农场到餐桌的美国菜"
+          ],
+          "dietary_restrictions": "无",
+          "dining_out": "偏好氛围好的休闲场所，愿意尝试新地方"
+        },
+        "entertainment_preferences": {
+          "movies": [
+            "惊悚片",
+            "纪录片",
+            "基于真实故事的剧情片"
+          ],
+          "tv_shows": [
+            "《早间新闻》",
+            "《国土安全》",
+            "《王冠》"
+          ],
+          "live_events": [
+            "音乐会（独立乐队）",
+            "剧院",
+            "博物馆开幕"
+          ]
+        },
+        "technology_preferences": {
+          "devices": [
+            "苹果生态系统（iPhone、Mac、iPad、Apple Watch）"
+          ],
+          "software": [
+            "Adobe Premiere Pro",
+            "Final Cut Pro",
+            "Slack",
+            "Trello",
+            "Notion"
+          ],
+          "social_media": [
+            "Twitter用于突发新闻",
+            "Instagram用于幕后内容",
+            "职业社交的LinkedIn"
+          ]
+        },
+        "privacy_preferences": {
+          "data_sharing": "谨慎；使用VPN、加密消息、限制应用权限",
+          "social_media_visibility": "个人账户保密，工作账户公开但有策划"
+        },
+        "budget_preferences": {
+          "spending_style": "适度；在优质鞋子和科技产品上挥霍，为旅行存钱",
+          "financial_goals": "建立应急基金，投资退休，为未来购房储蓄"
+        },
+        "personalization_directives": {
+          "style_contract": "多媒体记者模式：截止日期快、来源可见、平台意识。",
+          "decision_priority": "经过验证的可发布事实、可用媒体和截止日期契合度优于深度。",
+          "evidence_contract": "知名新闻和主要来源；只引用将要展示的内容。",
+          "format_contract": "核心段、经过验证的事实、媒体素材、缺失来源、下次更新时间。",
+          "anti_default_assistant_behavior": "当需要可发布的更新时，不要过度构建研究计划。",
+          "distinctive_quirks": [
+            "健康习惯必须适应不规律的报道轮班。",
+            "数据新闻学习应快速产出故事资产。",
+            "装备选择应支持现场采集。"
+          ],
+          "hard_avoidances": [
+            "学术弯路",
+            "冗长的来源文章",
+            "错过提交窗口的计划"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "content": [
+          "煽情主义",
+          "未经核实的说法",
+          "点击诱饵"
+        ],
+        "products": [
+          "花哨或不实用的小工具",
+          "合成面料"
+        ],
+        "services": [
+          "低效的客户服务",
+          "高峰时段打车"
+        ],
+        "dietary": "无特定",
+        "environmental": [
+          "过度包装",
+          "一次性塑料"
+        ]
+      },
+      "communication_style": {
+        "tone": "专业但平易近人、直接、清晰",
+        "formality": "视情况而定；写作时正式，与同事面对面时随意",
+        "preferred_channels": "官方事宜用邮件、快速沟通用Slack、深入讨论当面交流",
+        "response_time": "紧急事项期待快速回复，非紧急事项表示理解"
+      },
+      "decision_making": {
+        "approach": "以数据驱动但考虑人文影响；寻求多元视角",
+        "speed": "低风险事务快速决策，职业或财务决策谨慎处理",
+        "factors": [
+          "可靠性",
+          "可信度",
+          "社会责任",
+          "成本效益"
+        ]
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "推荐背景研究用的新闻文章/播客",
+          "为报道建议来源或专家",
+          "帮助报道行程的后勤安排",
+          "推荐生产力工具和工作流程优化",
+          "提供快速事实核查或数据可视化"
+        ],
+        "preference_conflicts": [
+          "重视速度和准确性，在截止日期压力下可能冲突",
+          "渴望工作生活平衡，但经常加班",
+          "偏好极简科技，但需要高性能设备"
+        ],
+        "ambiguity_to_preserve": [
+          "她具体负责的领域或主题（一般兴趣，但可能涉及政治/国内事务）",
+          "她的具体社交圈动态",
+          "特定政治倾向（尽管她看重客观性）"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:45",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": "专业、简洁、中立；避免过于随意或过于正式的语言",
+            "response_length": "偏好简短回答并附关键事实；需要深度时提供更详细内容",
+            "evidence_expectation": "为事实性声明注明来源；链接到可靠新闻机构或主要来源",
+            "formatting": "使用要点列表、关键术语加粗、清晰标题组织结构",
+            "proactive_behavior": "提醒与她领域相关的突发新闻，建议报道角度，提醒截止日期",
+            "things_to_avoid": [
+              "将推测性观点当作事实呈现",
+              "过度宣传的内容",
+              "忽视她对简洁的要求",
+              "基于职业的刻板印象"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "以专家寻源和事实核查调查一个正在发展的故事",
+            "在繁忙日程中设计可持续的健康习惯",
+            "在紧迫截止日期下规划数据新闻技能的学习路径"
+          ]
+        }
+      }
+    }
+  }
+}

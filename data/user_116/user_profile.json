@@ -1,0 +1,353 @@
+{
+  "user_id": "user_116",
+  "explicit_preferences": {
+    "user_profile": "重视配音演员为国际电视节目带来真实感的制片人",
+    "detailed_user_profile": {
+      "basic_profile": {
+        "fictional_name": "Elena Marchetti",
+        "age": 42,
+        "gender": "女性",
+        "location": "美国加利福尼亚州洛杉矶",
+        "languages": [
+          "英语",
+          "意大利语",
+          "西班牙语"
+        ],
+        "education_level": "电影与媒体研究学士学位",
+        "occupation": "配音选角制片人",
+        "industry": "娱乐 / 电视配音",
+        "seniority": "高级制片人（12年经验）",
+        "household": "独居两居室公寓",
+        "life_stage": "资深专业人士，无子女，专注事业与旅行"
+      },
+      "physical_profile": {
+        "height_cm": 168,
+        "general_appearance": "身材苗条，深色短发，常穿商务休闲装。通过围巾等配饰表达风格。",
+        "accessibility_needs": "无"
+      },
+      "personality": {
+        "concise_summary": "注重细节，有文化敏感度，热衷于语言真实性。可能追求完美但善于合作。",
+        "big_five": {
+          "openness": 0.85,
+          "conscientiousness": 0.9,
+          "extraversion": 0.6,
+          "agreeableness": 0.7,
+          "neuroticism": 0.3
+        },
+        "strengths": [
+          "对方言和口音有敏锐的听觉",
+          "强大的项目管理能力",
+          "文化同理心",
+          "跨语言社区的人脉网络"
+        ],
+        "weaknesses": [
+          "对细微不准确之处过于挑剔",
+          "对紧迫截止日期缺乏耐心",
+          "倾向于微观管理配音指导"
+        ],
+        "values": [
+          "真实的呈现",
+          "语言多样性",
+          "尊重原素材",
+          "协作创造力"
+        ],
+        "motivations": [
+          "确保非英语电视节目在配音中保留情感冲击力",
+          "指导新配音人才",
+          "推广代表性不足的语言"
+        ],
+        "stress_triggers": [
+          "仓促的选角决定",
+          "不研究节目背景的配音演员",
+          "优先考虑成本而非质量的高管"
+        ]
+      },
+      "background": {
+        "origin": "出生于意大利米兰，为上大学移居美国。",
+        "family": "父母是退休教师；弟弟是音效工程师。",
+        "career_path": "从配音工作室助理做起，晋升为选角协调员，现为高级制片人，负责国际系列的本地化。",
+        "notable_achievements": "凭借一部日剧改编的配音作品获得地区艾美奖杰出成就奖。",
+        "cultural_exposure": "在欧洲、亚洲和拉丁美洲广泛旅行；流利使用意大利语和西班牙语，日语可对话。"
+      },
+      "lifestyle": {
+        "daily_routine": "上午审查试镜录音，下午在录音棚工作，晚上观看她参与的节目的国际版本。",
+        "social_life": "定期与行业同仁共进晚餐，参加电影节和配音工作坊。",
+        "wellness": "每周练习两次瑜伽，看电影放松。",
+        "work_environment": "拥有配备高端音频设备的家庭工作室，也在配音工作室现场工作。"
+      },
+      "interests": {
+        "professional_interests": [
+          "配音技术",
+          "方言指导",
+          "跨文化叙事",
+          "翻译理论"
+        ],
+        "personal_interests": [
+          "前往小众地区旅行",
+          "通过沉浸式学习语言",
+          "收集电影原声黑胶唱片",
+          "烹饪意大利地方菜肴"
+        ],
+        "hobbies": [
+          "撰写关于配音行业趋势的博客",
+          "参加语言聚会",
+          "城市景观摄影"
+        ]
+      },
+      "explicit_preferences": {
+        "content_preferences": [
+          "娱乐：国际电视剧（剧情片、犯罪、科幻）、关于语言和文化的纪录片、经典意大利电影",
+          "阅读：翻译和语言学书籍、旅行回忆录、行业行业杂志",
+          "新闻来源：BBC文化、Variety、《卫报》电影板块",
+          "内容必须匹配此用户的独特工作模式：配音制片人模式：先听音选角，简洁，以实例为重。",
+          "拒绝通用助手架构：不要将配音表演简化为名人认知。"
+        ],
+        "product_preferences": [
+          "电子产品：高品质耳机（索尼、森海塞尔）、专业麦克风（罗德、诺依曼）、流媒体设备（Apple TV 4K）",
+          "时尚：简约配饰、舒适但专业的鞋履、意大利皮具",
+          "产品应通过用户自身的权衡视角选择：角色需求、声音特色、口音风险、需要请求的样本、替补演员。"
+        ],
+        "service_preferences": [
+          "流媒体：Netflix（国际内容）、Mubi、标准频道",
+          "配送：当地民族食品配送、全食超市",
+          "专业：自由配音人才平台（Voices.com）、字幕服务（Rev.com）",
+          "只有当服务保持此决策优先级时才可接受：声音质感、文化契合度和工作室实用性高于明星效应。"
+        ],
+        "learning_preferences": {
+          "formats": [
+            "互动工作坊",
+            "带实践作业的在线课程",
+            "语言播客"
+          ],
+          "topics": [
+            "方言指导",
+            "音频工程基础",
+            "媒体中的文化敏感性"
+          ],
+          "platforms": [
+            "Coursera",
+            "MasterClass（例如沃纳·赫尔佐格）",
+            "Duolingo用于语言练习"
+          ]
+        },
+        "travel_preferences": {
+          "destinations": [
+            "非主流欧洲村庄",
+            "电影产业发达的亚洲城市（东京、首尔）",
+            "拉丁美洲用于发掘配音人才"
+          ],
+          "accommodation": [
+            "具有当地特色的精品酒店",
+            "工作空间良好的Airbnb"
+          ],
+          "activities": [
+            "参观当地电影制片厂",
+            "参加语言交流活动",
+            "文化沉浸之旅"
+          ]
+        },
+        "food_preferences": {
+          "cuisine": [
+            "意大利方言（尤其是伦巴第和西西里方言）",
+            "日本拉面和寿司",
+            "墨西哥街头小吃"
+          ],
+          "dietary_restrictions": [
+            "无"
+          ],
+          "dining": [
+            "偏爱休闲地道餐厅而非高级餐饮",
+            "喜欢在家烹饪意大利菜"
+          ]
+        },
+        "entertainment_preferences": {
+          "movies": [
+            "国际剧集和惊悚片",
+            "动漫（字幕版，非配音版）",
+            "独立电影"
+          ],
+          "music": [
+            "意大利流行和独立音乐",
+            "电影原声",
+            "世界音乐"
+          ],
+          "events": [
+            "电影节",
+            "语言和文化博览会",
+            "配音行业会议"
+          ]
+        },
+        "technology_preferences": {
+          "devices": [
+            "MacBook Pro",
+            "iPhone",
+            "用于剧本和笔记的iPad"
+          ],
+          "software": [
+            "用于音频编辑的Pro Tools",
+            "用于视频参考的Final Cut Pro",
+            "用于团队沟通的Slack"
+          ],
+          "ai_tools": [
+            "用于转录的Descript",
+            "用于语音原型的Sonantic（测试用）"
+          ]
+        },
+        "privacy_preferences": {
+          "data_sharing": [
+            "不愿分享联系人名单或专有选角数据",
+            "愿意接受匿名使用统计"
+          ],
+          "social_media": [
+            "活跃于LinkedIn和Instagram以进行专业网络交流",
+            "没有Facebook，偶尔使用Twitter"
+          ]
+        },
+        "budget_preferences": {
+          "spending_style": [
+            "愿意投资优质设备和旅行",
+            "日常物品注重成本"
+          ],
+          "splurge_areas": [
+            "高端耳机",
+            "海外语言课程",
+            "限量版黑胶唱片"
+          ],
+          "saving_areas": [
+            "服装（偏爱少量优质单品）",
+            "外出就餐（经常在家做饭）"
+          ]
+        },
+        "personalization_directives": {
+          "style_contract": "配音制片人模式：耳朵优先、简洁、以例驱动。",
+          "decision_priority": "声音质感、文化契合度和工作室实用性优先于明星影响力。",
+          "evidence_contract": "可比角色和试镜片段比履历更有说服力。",
+          "format_contract": "角色需求、音色、口音风险、需索要的样本、备选演员。",
+          "anti_default_assistant_behavior": "不要将配音降低为名人识别。",
+          "distinctive_quirks": [
+            "语言沉浸是为耳朵训练，而非旅游。",
+            "耳机和麦克风应根据对话细节来评判。",
+            "韩国/日本行程需要工作室访问和当地听力环境。"
+          ],
+          "hard_avoidances": [
+            "一般观光旅游",
+            "根据知名度选角",
+            "冗长的文化背景介绍"
+          ],
+          "profile_revision_note": "添加此内容以使基准用户具有明显独特性；基于用户现有角色、任务、生活方式说明和互动偏好生成，而非来自金标准轨迹"
+        }
+      },
+      "dislikes_and_constraints": {
+        "pet_peeves": [
+          "外语名字发音错误",
+          "过于同质化的配音阵容",
+          "配音中口型同步差"
+        ],
+        "dealbreakers": [
+          "使用AI生成的声音作为主角",
+          "忽视原素材的文化背景"
+        ],
+        "limitations": [
+          "制作计划导致的时间限制",
+          "聘请专门人才的预算限制",
+          "偶尔来自工作室对真实但非商业声音的抵制"
+        ]
+      },
+      "communication_style": {
+        "preferred_channels": [
+          "通过电子邮件发送详细的选角笔记",
+          "通过Slack进行快速更新",
+          "亲自进行配音指导"
+        ],
+        "tone": [
+          "专业且温暖",
+          "在反馈试镜时直接",
+          "对新人才给予鼓励"
+        ],
+        "formality": [
+          "书面沟通中适中正式度",
+          "与长期合作者非正式交流"
+        ],
+        "response_time": [
+          "电子邮件24小时内回复",
+          "紧急工作室问题立即回复"
+        ]
+      },
+      "decision_making": {
+        "approach": [
+          "数据驱动但凭直觉判断真实性",
+          "在最终选角前咨询语言专家"
+        ],
+        "factors": [
+          "配音演员的口音准确度",
+          "目标语言中的情感范围",
+          "与其他演员的化学反应",
+          "可用性和可靠性"
+        ],
+        "risk_tolerance": [
+          "主要角色低风险，实验性次要角色高风险"
+        ],
+        "speed": [
+          "深思熟虑，通常花时间面试多位候选人"
+        ]
+      },
+      "evaluation_notes": {
+        "likely_tasks": [
+          "为将意大利犯罪剧集配音成英语挑选配音演员",
+          "评估日本动漫西班牙语配音的真实性",
+          "推荐国际节目以拓展市场",
+          "介绍来自不同地区的配音人才"
+        ],
+        "preference_conflicts": [
+          "对真实性的渴望与稀有方言配音者的预算限制",
+          "及时性 vs. 全面的选角过程",
+          "偏好人类配音演员 vs. 新兴AI工具"
+        ],
+        "ambiguity_to_preserve": [
+          "根据项目对特定方言的偏好或容忍度",
+          "艺术愿景与市场需求之间的平衡",
+          "对来自非传统背景的新配音人才的开放态度"
+        ],
+        "personalization_revision": {
+          "method": "scripts/revise_personalization_data.py",
+          "revision_goal": "最大化用户间偏好差异，减少通用助手偏好重叠",
+          "created_at": "2026-06-28T17:39:44",
+          "changed_fields": [
+            "assistant_interaction_preferences",
+            "explicit_preferences.personalization_directives",
+            "explicit_preferences.content_preferences",
+            "explicit_preferences.product_preferences",
+            "explicit_preferences.service_preferences"
+          ],
+          "old_assistant_interaction_preferences": {
+            "tone": [
+              "礼貌、简洁，并尊重她的专业知识"
+            ],
+            "response_length": [
+              "对于事实查询简短直接；对于分析需提供示例则更长"
+            ],
+            "evidence_expectation": [
+              "提供推荐的来源或示例（例如，哪位配音演员曾扮演过类似角色）"
+            ],
+            "formatting": [
+              "比较用要点，背景用段落"
+            ],
+            "proactive_behavior": [
+              "提醒她有关潜在配音需求的新国际节目，或热门的配音人才"
+            ],
+            "things_to_avoid": [
+              "未经请求的AI语音替换建议",
+              "过于随意的语言",
+              "忽视她的文化敏感性提醒"
+            ]
+          },
+          "task_titles_used_for_context": [
+            "为一部意大利犯罪剧集英语配音选角配音演员",
+            "规划在东京的日语沉浸课程以提升动漫配音理解",
+            "规划首尔配音人才选拔之旅，包括工作室访问和文化沉浸"
+          ]
+        }
+      }
+    }
+  }
+}

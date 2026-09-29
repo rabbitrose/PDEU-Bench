@@ -1,0 +1,470 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_117",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:58:21",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 20,
+  "composition": {
+    "episodic_preference_trace": 20
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_008",
+      "hidden_indirect_014"
+    ],
+    "content": [
+      "hidden_indirect_012"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_008",
+      "hidden_indirect_013",
+      "hidden_indirect_020"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_003",
+      "hidden_indirect_005",
+      "hidden_indirect_010",
+      "hidden_indirect_015",
+      "hidden_indirect_018"
+    ],
+    "entertainment": [
+      "hidden_indirect_009",
+      "hidden_indirect_020"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_001",
+      "hidden_indirect_011",
+      "hidden_indirect_017"
+    ],
+    "food": [
+      "hidden_indirect_018"
+    ],
+    "format_contract": [
+      "hidden_indirect_002",
+      "hidden_indirect_011"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_002",
+      "hidden_indirect_007",
+      "hidden_indirect_009",
+      "hidden_indirect_019"
+    ],
+    "learning": [
+      "hidden_indirect_005",
+      "hidden_indirect_012"
+    ],
+    "privacy": [
+      "hidden_indirect_004",
+      "hidden_indirect_013",
+      "hidden_indirect_019"
+    ],
+    "product": [
+      "hidden_indirect_003",
+      "hidden_indirect_015"
+    ],
+    "role_context": [
+      "hidden_indirect_006"
+    ],
+    "service": [
+      "hidden_indirect_004",
+      "hidden_indirect_010",
+      "hidden_indirect_016",
+      "hidden_indirect_017"
+    ],
+    "technology": [
+      "hidden_indirect_006",
+      "hidden_indirect_016"
+    ],
+    "travel": [
+      "hidden_indirect_007",
+      "hidden_indirect_014"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次订旅馆被“生态认证”骗了，到店发现只是普通酒店挂个牌子。这次哥斯达黎加两家候选都自称碳中和。"
+        },
+        {
+          "role": "assistant",
+          "content": "查了其中一家的第三方审计报告，认证已过期；另一家附了最近一年的碳抵消账单。选后者更可靠。"
+        }
+      ],
+      "implicit_signal": "拒绝无透明度的生态标签，倾向经审计的绿色住宿"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "hard_avoidance"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "翻译App要求读取通讯录才能用离线词典，我直接删了。现在飞东京航班上看不懂菜单。"
+        },
+        {
+          "role": "assistant",
+          "content": "用这个开源离线模型，只需存储权限，大小57MB。菜单拍照翻译够用。"
+        }
+      ],
+      "implicit_signal": "拒绝需要通讯录权限的工具，即使功能更便利"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "徒步摔坏旧相机，预算两千五看中一台翻新富士XT30，快门不到两千，怕出故障。"
+        },
+        {
+          "role": "assistant",
+          "content": "卖家提供30天退货和6个月保修，工厂翻新有检测记录。预算多出的钱买电池和卡，比新机身值。"
+        }
+      ],
+      "implicit_signal": "翻新设备若功能可靠，比新品更佳"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "信用卡订火车票会被记下姓名住址，上次被广告轰炸。这次用预付费礼品卡付款。"
+        },
+        {
+          "role": "assistant",
+          "content": "礼品卡已用，但剩20美元无法退。下次选匿名加密货币，那家票务接受Monero。"
+        }
+      ],
+      "implicit_signal": "支付须避免身份追踪，采用匿名手段"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "清迈烹饪课在城外老市场，搭40分钟双条车，但食材是当地有机市场买的，不用一次性包装。"
+        },
+        {
+          "role": "assistant",
+          "content": "多绕路但支持本地农户，值得去。记得自带饭盒打包剩菜。"
+        }
+      ],
+      "implicit_signal": "生态旅行中接受不便利的烹饪课，因减少排放且避开游客"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "线上会议间隙，同事要Word格式方案，我只用本地Markdown编辑器。最后紧急装LibreOffice转格式，同事说插件换成字体。"
+        },
+        {
+          "role": "assistant",
+          "content": "用Pandoc转.docx更干净，发前用检查器删掉元数据中的作者和编辑时间。再传加密离线副本自用。"
+        }
+      ],
+      "implicit_signal": "工作中拒绝云端协作套件，使用开源本地工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "花莲民宿在Airbnb上周末翻倍，官网只能电话订。我打了电话，老板说平台扣两成，官价低可以留着零头买当地特产。"
+        },
+        {
+          "role": "assistant",
+          "content": "电话预订后确认他们不用第三方支付。用Skype拨打，避免公共Wi-Fi。今后直接官网不返回平台。"
+        }
+      ],
+      "implicit_signal": "避开大数据定价的中介平台，直接联系当地"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "旧登山包拉链坏了，师傅说修好能撑一年，但费用200；新包特价500。我选了修，但师傅报价后才发现多绕了一次路去取布料，不过最终没超支。"
+        },
+        {
+          "role": "assistant",
+          "content": "花200修，再用一年少垃圾。新包碳足迹高且品牌数据收集不明。选维修。"
+        }
+      ],
+      "implicit_signal": "可持续性优先，即使初始修复成本高于短期替代品"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "独立纪录片在某新平台限时独播，注册要填生日和手机号，我点了取消按钮。三天后平台短信发来促销广告，我直接屏蔽域名。"
+        },
+        {
+          "role": "assistant",
+          "content": "直接联系制片方买DRM-free版，或等离线放映场次用现金购票。"
+        }
+      ],
+      "implicit_signal": "拒绝注册时要求个人数据的流媒体平台"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "攻略推荐的挪威旅行社都要求填乘客资料，但一家本地合作社只收现金直接提供服务。去问了，他们说三个峡湾路线没压力，可以在候机区里直接找他们领队碰头。"
+        },
+        {
+          "role": "assistant",
+          "content": "合作社路线覆盖三个峡湾，无需身份信息。只是在候机区多等一班接驳巴士，但值得。"
+        }
+      ],
+      "implicit_signal": "不依赖算法推荐，优先选择不收集乘客资料的本地服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "evidence_contract"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "露营时笔记本风扇狂转后降频，照片导出半途死机，损失57张未存。"
+        },
+        {
+          "role": "assistant",
+          "content": "接下来的行程用随身笔记记录，照片存SD卡回家处理。或镇上租台式机按小时付费。"
+        }
+      ],
+      "implicit_signal": "设备发热降频导致改用离线记录方案"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "主流西语App都订阅且存进度在服务器，我找到的离线开源教程却把练习闪卡存成CSV。担心数据丢失没买新本子，结果漏掉了取消入口忘了取消旧订阅，多扣一个月。"
+        },
+        {
+          "role": "assistant",
+          "content": "项目GitHub两千星，可离线用LocalStorage存进度再手动同步备份。省钱买西语原版书。"
+        }
+      ],
+      "implicit_signal": "选择离线开源教程而非订阅制大平台"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "decision_priority"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "邮件商改政策要扫描邮件做广告，我用了四年存了三千多封。手动导出时发现有20%的邮件附件名乱码，花了一个周末修复。"
+        },
+        {
+          "role": "assistant",
+          "content": "用Thunderbird导出为本地MBOX，转发规则逐月迁移。选端到端加密新服务并通知可信联系人。"
+        }
+      ],
+      "implicit_signal": "即使迁移成本高，也坚决离开数据收集不明的服务"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "travel",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "冰岛行程加了两晚玻璃屋后总价超支57%，伙食费没了。只好取消玻璃屋，但已招惹违约金20美元。"
+        },
+        {
+          "role": "assistant",
+          "content": "撤回玻璃屋。用总预算除以天数得每日26美元，找带厨房公寓买菜自煮，避免餐厅数据收集。"
+        }
+      ],
+      "implicit_signal": "预算失控前设定每日上限，放弃冲动消费"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "手机充电口松了，维修店要换整个尾插排线报价300。网上买的模块化替换件到了，装好却因为焊点虚接又返工一次。"
+        },
+        {
+          "role": "assistant",
+          "content": "你的型号有模块化替换件，网上80块买模组加工具自己换。省下的钱买翻新平板，以后优先可修复设备。"
+        }
+      ],
+      "implicit_signal": "选择模块化可修复产品而非一次性维修"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "service",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "公司网盘到期前一天文件被锁，里面存着20G登山照片和笔记。我去取测试记录时才发现漏掉了取消入口，多扣了一月费用。"
+        },
+        {
+          "role": "assistant",
+          "content": "用Syncthing同步到树莓派，再离线备份到随身笔记。解约时别漏掉了取消入口导致多扣一月。"
+        }
+      ],
+      "implicit_signal": "云存储选择自托管同步，避免第三方服务器"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想去南美，但有些国家要求入境交手机密码。查到智利没有这个要求，还立法限制旅馆分享客户数据。不过订房平台要求填全名和护照号才能确认。"
+        },
+        {
+          "role": "assistant",
+          "content": "智利个人数据保护法去年更新，住宿平台不能随意分享客户数据。预订前用隐私条款清单核查旅馆。"
+        }
+      ],
+      "implicit_signal": "目的地选择优先考虑隐私法律严格的国家"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "印度小城街边素食老板保证不用油重炸，只收现金无菜单。我吃了两次发现他用的豆子是自己种的，但等餐时间太长，预算在最后一步失控导致没赶上回程班车。"
+        },
+        {
+          "role": "assistant",
+          "content": "食材当季当地且无线上数据外流，比网红店可靠。多带零钱继续光顾。"
+        }
+      ],
+      "implicit_signal": "接受素食旅行不便，但要求食材透明"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "机场Wi-Fi要求刷脸登入，我选择等落地买SIM卡。目前在候机区没网，离线地图没提前下载，只能靠随身笔记上的手绘路线换乘地铁。"
+        },
+        {
+          "role": "assistant",
+          "content": "离线地图和离线副本够用两小时。到当地用现金买预付费卡，或对照随身笔记手动找换乘点。"
+        }
+      ],
+      "implicit_signal": "拒绝人脸识别Wi-Fi，提前备好离线选项"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "路边纪念品全是塑料且标着Made in China，又贵又占行李。我放弃购买，却因为犹豫太久错过了工作坊的报名时间，只能下午才去。"
+        },
+        {
+          "role": "assistant",
+          "content": "不如报当地手工艺工作坊学做陶器，成品实用且无碳足迹，比冰箱贴有意义。"
+        }
+      ],
+      "implicit_signal": "体验价值优先于物质，选择活动而非纪念品"
+    }
+  ]
+}

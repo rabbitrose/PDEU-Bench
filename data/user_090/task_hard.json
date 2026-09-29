@@ -1,0 +1,89 @@
+{
+  "user_id": "user_090",
+  "task": {
+    "task_id": "task_hard",
+    "title": "处理一个居家维护或采购问题并控制成本",
+    "daily_life_domain": "home",
+    "scenario": "林知远需要在未来 7 天内处理一个居家维护或采购问题。修订后任务聚焦工程化决策表：目标、约束、3 个方案、风险和下一步检查，不再要求完整采购、安装或项目排期。",
+    "user_goal": "完成「处理一个居家维护或采购问题并控制成本」，并给出满足约束、证据要求和截止时间的可执行结果。",
+    "why_complex": "仍需权衡成本、可靠性和隐私，但范围压缩为方案选择和检查清单。",
+    "constraints": [
+      "预算上限 135 本地货币单位。",
+      "时间窗口为未来 7 天。",
+      "不暴露精确住址、健康或财务细节。",
+      "可靠性、可维护性和时间边界优先。"
+    ],
+    "required_reasoning_steps": [
+      "定义居家问题的功能目标和失败风险。",
+      "比较修复、低价替换和可靠替换 3 个方案。",
+      "检查预算、维护成本和时间边界。",
+      "列出购买或预约前必须确认的规格。",
+      "用 source_info 商品、地点或天气记录校准可获得性。",
+      "输出下一步检查，而不进入完整执行排程。"
+    ],
+    "decision_points": [
+      "哪些候选满足任务中的硬约束和交付要求。",
+      "哪些证据冲突或信息缺口会改变候选可行性。",
+      "是否需要补充核对、启用备选方案或触发回退条件。"
+    ],
+    "information_to_collect": [
+      "3 个方案的费用、可靠性和维护要求。",
+      "必要规格、尺寸或兼容性。",
+      "未来 7 天采购或服务可用性。",
+      "隐私边界和不提交的信息。"
+    ],
+    "expected_deliverable": "工程化方案表：目标、硬约束、修复/低价替换/可靠替换对比、风险和下一步检查。",
+    "success_criteria": [
+      "至少比较 3 个方案。",
+      "推荐不超过 135 本地货币单位，或明确超支理由。",
+      "下一步检查可在 7 天内完成。",
+      "最终方案至少引用 2 条 SandboxDB/source_info 真实候选记录。"
+    ],
+    "potential_failure_modes": [
+      "只看低价忽视可维护性。",
+      "规格未确认导致购买错误。",
+      "过早预约或购买暴露住址。",
+      "没有定义失败风险。"
+    ],
+    "real_environment_grounding": {
+      "schema_version": "realEnvironmentGrounding.v1",
+      "source_info_dir": "SandboxDB/source_info/records",
+      "required_source_domains": [
+        "shopping",
+        "navigation",
+        "weather"
+      ],
+      "domain_descriptions": {
+        "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段",
+        "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+        "weather": "真实天气快照：Open-Meteo 与 ETApp WeatherAPI 格式天气、降水、风、UV 等字段"
+      },
+      "retrieval_policy": "先从 SandboxDB/source_info 的真实世界记录中 BM25 检索候选环境，再结合预算、隐私、语言、风险容忍度、可达性和时间约束筛选。",
+      "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+    },
+    "difficulty": "hard",
+    "difficulty_metadata": {
+      "expected_tool_calls": 9,
+      "expected_tool_call_range": "5-10",
+      "eval_max_tool_calls": 15,
+      "human_verifier_estimated_work_rounds": 6,
+      "human_verifier_estimation_basis": [
+        "domain=home",
+        "source_domains_capped=3",
+        "reasoning_steps_capped=6",
+        "constraints_capped=5",
+        "decision_points_capped=3",
+        "information_items_capped=4",
+        "hard_target_distribution=6:10,7:58,8:62,9:16",
+        "content_complexity_rank_score=20.5",
+        "hard_revision: 结构较轻，低于主体峰值但仍高于 easy"
+      ],
+      "human_verifier_estimation_note": "hard 难度已串行校准：human verifier 预计工作轮数以 7-8 轮为主体，少量 6/9 轮仅表示内容复杂度下尾与上尾；不改写任务正文或 workflow 示例调用。"
+    },
+    "user_basic_profile": {
+      "name": "林知远",
+      "age": 49,
+      "gender": "男性"
+    }
+  }
+}

@@ -1,0 +1,514 @@
+{
+  "schema_version": "hiddeninfo.indirect_unique",
+  "user_id": "user_034",
+  "generation_metadata": {
+    "method": "scripts/regenerate_hidden_info_indirect_unique.py",
+    "created_at": "2026-07-14T03:14:51",
+    "policy": "具体经历与行为后果表达隐式偏好；可见 QA 不直接复述画像；覆盖式更新。",
+    "model": "deepseek-v4-flash"
+  },
+  "interaction_count": 22,
+  "composition": {
+    "episodic_preference_trace": 22
+  },
+  "coverage_matrix": {
+    "budget": [
+      "hidden_indirect_001",
+      "hidden_indirect_014",
+      "hidden_indirect_017"
+    ],
+    "content": [
+      "hidden_indirect_009",
+      "hidden_indirect_016"
+    ],
+    "decision_priority": [
+      "hidden_indirect_001",
+      "hidden_indirect_002",
+      "hidden_indirect_020"
+    ],
+    "distinctive_quirk": [
+      "hidden_indirect_007",
+      "hidden_indirect_008",
+      "hidden_indirect_009",
+      "hidden_indirect_022"
+    ],
+    "entertainment": [
+      "hidden_indirect_006",
+      "hidden_indirect_018",
+      "hidden_indirect_021"
+    ],
+    "evidence_contract": [
+      "hidden_indirect_003",
+      "hidden_indirect_004",
+      "hidden_indirect_021"
+    ],
+    "food": [
+      "hidden_indirect_001",
+      "hidden_indirect_007",
+      "hidden_indirect_017"
+    ],
+    "format_contract": [
+      "hidden_indirect_005",
+      "hidden_indirect_006"
+    ],
+    "hard_avoidance": [
+      "hidden_indirect_010",
+      "hidden_indirect_011",
+      "hidden_indirect_012"
+    ],
+    "learning": [
+      "hidden_indirect_005",
+      "hidden_indirect_011",
+      "hidden_indirect_019"
+    ],
+    "privacy": [
+      "hidden_indirect_003",
+      "hidden_indirect_015",
+      "hidden_indirect_020"
+    ],
+    "product": [
+      "hidden_indirect_010",
+      "hidden_indirect_019"
+    ],
+    "role_context": [
+      "hidden_indirect_013"
+    ],
+    "service": [
+      "hidden_indirect_002",
+      "hidden_indirect_012",
+      "hidden_indirect_015"
+    ],
+    "technology": [
+      "hidden_indirect_008",
+      "hidden_indirect_014",
+      "hidden_indirect_016",
+      "hidden_indirect_022"
+    ],
+    "travel": [
+      "hidden_indirect_004",
+      "hidden_indirect_013",
+      "hidden_indirect_018"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction_id": "hidden_indirect_001",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "budget",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次买蛋白粉，选了最便宜的桶装，结果冲不开还胀气，剩下半桶浪费了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次换小包装试吃装，单克贵一点但总成本更低。我先把三家本地运动营养店的试用装清单列给你。"
+        }
+      ],
+      "implicit_signal": "优先评估长期成本与替代方案，而非只看初期价格"
+    },
+    {
+      "interaction_id": "hidden_indirect_002",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次用试用账号约理疗师，取消后还被扣了月费，客服说要满30天才能退。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只选写明了随时可取消且首月免费的服务。我先查清三家平台的取消流程和响应时间再给你。"
+        }
+      ],
+      "implicit_signal": "需要明确的取消规则与数据权限，不接受模糊条款"
+    },
+    {
+      "interaction_id": "hidden_indirect_003",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次看社区康复课，广告写治愈率90%，但熟人去了说根本没效果，白花800。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次我找三个真实学员的视频体验，不透露全名。先把他们发布在本地论坛的反馈截给你。"
+        }
+      ],
+      "implicit_signal": "需要真实样例，且不暴露家庭信息"
+    },
+    {
+      "interaction_id": "hidden_indirect_004",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "之前按在线排名订酒店，位置偏，晚上叫不到车，第二天训练打乱。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次只看靠近地铁且附近有24小时便利店的地段。我先按你训练场半径画三个候选住宿圈。"
+        }
+      ],
+      "implicit_signal": "场景细节比通用推荐可靠，本地语境更重要"
+    },
+    {
+      "interaction_id": "hidden_indirect_005",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "拉伤后搜康复教程，出来一堆半小时视频，看完不知道哪个动作适合自己。"
+        },
+        {
+          "role": "assistant",
+          "content": "我整理一个三动作对照表：每个动作标注禁忌和判断标准，你试两天再选方向。"
+        }
+      ],
+      "implicit_signal": "反榜样与可复盘标准比堆材料更有用"
+    },
+    {
+      "interaction_id": "hidden_indirect_006",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "format_contract",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "周末想找个不吵的地方恢复，看推荐都是大店，去了人挤人。"
+        },
+        {
+          "role": "assistant",
+          "content": "圈三个安静备选：瑜伽室、社区图书馆、植物园的晨间长廊。我把各时段人流和座位数标出来。"
+        }
+      ],
+      "implicit_signal": "需要氛围与人群信息而不是热度排行"
+    },
+    {
+      "interaction_id": "hidden_indirect_007",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "food"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "早餐桌边只有15分钟，上次找的小摊便宜但油大，训练前胃不舒服。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次推荐街角那家蒸菜馆的套餐：鸡蛋加杂粮饭，3分钟出餐。我先确认他们7点开门。"
+        }
+      ],
+      "implicit_signal": "喜欢小型场所，不选油腻但速度快"
+    },
+    {
+      "interaction_id": "hidden_indirect_008",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "用商家App记训练数据，换手机后数据全丢了，客服说不能导出。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次用能同步到系统日历的工具，且每周自动发一份CSV到你邮箱。"
+        }
+      ],
+      "implicit_signal": "偏好能跨设备导出数据的工具"
+    },
+    {
+      "interaction_id": "hidden_indirect_009",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "content"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "活动散场后，拍了几段球场视频想剪个复盘，发现角度全是人群背影。"
+        },
+        {
+          "role": "assistant",
+          "content": "选择早场训练，人少能固定机位。我把场边电源和支架使用规则先确认一遍。"
+        }
+      ],
+      "implicit_signal": "优先留下可作为创作素材的安排"
+    },
+    {
+      "interaction_id": "hidden_indirect_010",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "康复师推荐一款筋膜枪，写着冠军同款，我查了一下是贴牌货，售后差。"
+        },
+        {
+          "role": "assistant",
+          "content": "我找两个真正有维修站的本土品牌，把保修条款和电机寿命对比列出来。"
+        }
+      ],
+      "implicit_signal": "拒绝营销腔与网红化表达"
+    },
+    {
+      "interaction_id": "hidden_indirect_011",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "learning"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "搜拉伸教程，每页都弹窗卖课，视频内容只有两分钟干货。"
+        },
+        {
+          "role": "assistant",
+          "content": "绕开那些教程站，直接找大学体育系公开课，只有文字加动作图，无广告。"
+        }
+      ],
+      "implicit_signal": "拒绝过度商业化与干扰式广告"
+    },
+    {
+      "interaction_id": "hidden_indirect_012",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "hard_avoidance",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想试一节线上课，要求填手机号、地址、紧急联系人，我直接关了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次只联系那家只需邮箱和昵称预约的工作室，我已经确认他们三天内可免费取消。"
+        }
+      ],
+      "implicit_signal": "避免频繁注册与额外沟通"
+    },
+    {
+      "interaction_id": "hidden_indirect_013",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "role_context",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "线上会议间隙看路线，选了看似最近的但多绕了一次路，迟到半小时。"
+        },
+        {
+          "role": "assistant",
+          "content": "按你训练结束时间往后留40分钟缓冲，只选一条直达地铁加步行的方案。"
+        }
+      ],
+      "implicit_signal": "根据训练节奏留出缓冲时间"
+    },
+    {
+      "interaction_id": "hidden_indirect_014",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "budget",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "想买心率带，最便宜那款好评多但材质硬，训练时磨得皮肤红。"
+        },
+        {
+          "role": "assistant",
+          "content": "找织物软带的型号，比硬胶款贵56块但长期更省。先买一条试用，不合适7天内退。"
+        }
+      ],
+      "implicit_signal": "区分必须开销与可推迟项"
+    },
+    {
+      "interaction_id": "hidden_indirect_015",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "privacy",
+        "service"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "群消息里家人问康复进展，我不想公开具体疼痛部位，只说了好多了。"
+        },
+        {
+          "role": "assistant",
+          "content": "下次把恢复计划概要写出来，只说整体进度不列细节，方便你直接转发。"
+        }
+      ],
+      "implicit_signal": "家庭健康信息须概括或匿名"
+    },
+    {
+      "interaction_id": "hidden_indirect_016",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "content",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次找跑步机评测，结论只说好，没提42分钟会自动关机且发热后速度降了。"
+        },
+        {
+          "role": "assistant",
+          "content": "这轮只列出三款评测：标注发热阈值、连续使用上限和维修点密度。"
+        }
+      ],
+      "implicit_signal": "结论需说明局限与不确定点"
+    },
+    {
+      "interaction_id": "hidden_indirect_017",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "food",
+        "budget"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "活动散场后和队友吃饭，去连锁店贵又等位，大家饿到训练状态差。"
+        },
+        {
+          "role": "assistant",
+          "content": "选场馆对面两家本地小店：一家做蒸菜套餐人均25，另一家快餐碗18。先确认营业到22点。"
+        }
+      ],
+      "implicit_signal": "本地小店优先，需考虑同行者限制"
+    },
+    {
+      "interaction_id": "hidden_indirect_018",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "entertainment",
+        "travel"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "上次周末逛市集，太拥挤，回来累得第二天没爬起来训练。"
+        },
+        {
+          "role": "assistant",
+          "content": "这次找小路边的旧书店或小画廊，人少且在2公里内；我选三个备选让你挑。"
+        }
+      ],
+      "implicit_signal": "休闲活动不破坏次日节奏、避开网红地"
+    },
+    {
+      "interaction_id": "hidden_indirect_019",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "learning",
+        "product"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "跟App练动作总是做错，它只打分不告诉我错在哪。"
+        },
+        {
+          "role": "assistant",
+          "content": "换一个带录制对比功能的App，而且每次练习后你能看到自己动作和标准动作的叠加。"
+        }
+      ],
+      "implicit_signal": "短周期反馈与复盘标准"
+    },
+    {
+      "interaction_id": "hidden_indirect_020",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "decision_priority",
+        "privacy"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "大平台推的团课教练，人太多根本看不到示范，不如小班有效。"
+        },
+        {
+          "role": "assistant",
+          "content": "找能约到的一对一教练或个人训练室，保证每次互动时间；先筛三个离家近的。"
+        }
+      ],
+      "implicit_signal": "质感与个人表达优先于规模"
+    },
+    {
+      "interaction_id": "hidden_indirect_021",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "evidence_contract",
+        "entertainment"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "游览地图推荐的全是知名景点，结果现场网络断了，路线没法实时调整。"
+        },
+        {
+          "role": "assistant",
+          "content": "提前把路线截屏保存，标注出沿途有免费Wi-Fi的咖啡馆。下载离线地图备用。"
+        }
+      ],
+      "implicit_signal": "真实场景语境优于排行榜"
+    },
+    {
+      "interaction_id": "hidden_indirect_022",
+      "kind": "episodic_preference_trace",
+      "coverage_tags": [
+        "distinctive_quirk",
+        "technology"
+      ],
+      "turns": [
+        {
+          "role": "user",
+          "content": "训练后想找个安静地方做拉伸，健身房休息室总有人聊电话。"
+        },
+        {
+          "role": "assistant",
+          "content": "推荐附近社区公园的凉亭，从更衣室走路8分钟，我带隔音耳机和瑜伽垫给你定位。"
+        }
+      ],
+      "implicit_signal": "偏好小型场所与独处恢复空间"
+    }
+  ]
+}
