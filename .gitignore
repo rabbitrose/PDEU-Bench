@@ -1,7 +1,8 @@
 /*
 !/.gitignore
 !/.gitattributes
-!/requirements-freeze.txt
+!/requirements.txt
+!/README.md
 
 # 需要上传的目录
 !/eval/
