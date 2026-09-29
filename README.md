@@ -1,6 +1,6 @@
 <a id="top"></a>
 
-## PDEU-Bench: Benchmarking Personalized Planning of LLM Agents under Explicit and Implicit User Preferences
+## PDEU-Bench: Benchmarking the Personalized Planning Lifecycle of Tool-Calling LLM Agents
 
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](https://github.com/rabbitrose/PDEU-Bench/blob/main/LICENSE)
 
