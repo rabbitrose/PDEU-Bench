@@ -1,0 +1,104 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_059",
+  "user_context": {
+    "fictional_name": "Lena Müller",
+    "age": 32,
+    "location": "德国柏林",
+    "languages": [
+      "德语（母语）",
+      "英语（流利）",
+      "西班牙语（会话水平）"
+    ],
+    "occupation": "社会工作者",
+    "industry": "非营利/社会服务",
+    "household": "独居在Neukölln租来的公寓里",
+    "accessibility_needs": "无",
+    "privacy_preferences": [
+      "加密通信",
+      "匿名浏览（Tor）",
+      "反对用于广告的数据收集",
+      "谨慎分享位置信息"
+    ],
+    "budget_preferences": [
+      "节俭，优先把开支花在体验和团结互助上",
+      "偏好二手或协作消费",
+      "将部分收入分配给政治捐款或互助"
+    ],
+    "technology_preferences": [
+      "开源操作系统（Linux）",
+      "注重隐私的应用",
+      "最小化数字足迹",
+      "避开亚马逊、谷歌、Facebook"
+    ],
+    "food_preferences": [
+      "素食/纯素餐厅",
+      "本地和有机",
+      "避开连锁快餐",
+      "喜爱民族美食（尤其是叙利亚、越南料理）"
+    ],
+    "travel_preferences": [
+      "坐火车或巴士的预算旅行",
+      "生态友好型住宿（青旅、沙发客）",
+      "目的地：有历史或政治意义的地方（如拉丁美洲、西班牙）"
+    ],
+    "learning_preferences": [
+      "工作坊和研讨会",
+      "同伴学习",
+      "来自大学或左翼平台（如罗莎·卢森堡基金会）的在线课程"
+    ],
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "civic.find_services",
+    "civic.submit_request",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "legal.search_documents",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "translation.translate_text",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

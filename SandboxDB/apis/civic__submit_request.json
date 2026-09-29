@@ -1,0 +1,92 @@
+{
+  "api_name": "civic.submit_request",
+  "category": "civic",
+  "action": "submit_request",
+  "description": "Submit a civic, municipal, school, or community request.",
+  "interface": {
+    "type": "function_call",
+    "function": "civic.submit_request",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "service_id",
+        "type": "string",
+        "required": true,
+        "description": "Service or agency identifier.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "request_type",
+        "type": "string",
+        "required": true,
+        "description": "Request type.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "required": true,
+        "description": "Request description.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "attachments",
+        "type": "array[string]",
+        "required": false,
+        "description": "Supporting attachments.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "preferred_contact_method",
+        "type": "string",
+        "required": true,
+        "description": "Contact preference.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "language",
+        "type": "string",
+        "required": true,
+        "description": "Preferred language.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "required": true,
+        "description": "Privacy level.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "request_id": "string",
+      "status": "string",
+      "expected_response_time": "string"
+    },
+    "preference_sensitive_parameters": [
+      "preferred_contact_method",
+      "language",
+      "privacy_mode"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "preferred_contact_method",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "language",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

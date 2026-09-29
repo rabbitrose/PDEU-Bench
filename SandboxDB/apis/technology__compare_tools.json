@@ -1,0 +1,85 @@
+{
+  "api_name": "technology.compare_tools",
+  "category": "technology",
+  "action": "compare_tools",
+  "description": "Compare software, hardware, AI tools, hosting options, or technical services against constraints and preferences.",
+  "interface": {
+    "type": "function_call",
+    "function": "technology.compare_tools",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "tool_category",
+        "type": "string",
+        "required": true,
+        "description": "Category of tools or products.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "candidate_tools",
+        "type": "array[string]",
+        "required": true,
+        "description": "Candidate tools to compare.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "requirements",
+        "type": "array[string]",
+        "required": true,
+        "description": "Functional and technical requirements.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "required": true,
+        "description": "Maximum budget.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "privacy_security_requirements",
+        "type": "array[string]",
+        "required": false,
+        "description": "Privacy, security, data, or licensing requirements.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "platform_constraints",
+        "type": "array[string]",
+        "required": false,
+        "description": "OS, device, integration, or hosting constraints.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "tool_comparison": "array",
+      "recommendation": "object",
+      "migration_notes": "array"
+    },
+    "preference_sensitive_parameters": [
+      "budget_limit",
+      "privacy_security_requirements",
+      "platform_constraints"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "privacy_security_requirements",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "platform_constraints",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

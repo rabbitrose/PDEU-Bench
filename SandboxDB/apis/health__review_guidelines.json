@@ -1,0 +1,85 @@
+{
+  "api_name": "health.review_guidelines",
+  "category": "health",
+  "action": "review_guidelines",
+  "description": "Review health guidelines and clinical recommendations with source quality, recency, and safety caveats.",
+  "interface": {
+    "type": "function_call",
+    "function": "health.review_guidelines",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "topic",
+        "type": "string",
+        "required": true,
+        "description": "Health topic or protocol area.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "source_requirements",
+        "type": "array[string]",
+        "required": true,
+        "description": "Required source types such as official bodies or peer-reviewed studies.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "recency_requirement",
+        "type": "string",
+        "required": true,
+        "description": "How current the guidance must be.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "audience",
+        "type": "string",
+        "required": true,
+        "description": "Audience for the summary.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "required": true,
+        "description": "Safety and caveat level.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "language",
+        "type": "string",
+        "required": false,
+        "description": "Preferred language.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "guideline_summary": "array",
+      "source_notes": "array",
+      "safety_caveats": "array"
+    },
+    "preference_sensitive_parameters": [
+      "source_requirements",
+      "risk_tolerance",
+      "language"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "source_requirements",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "language",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

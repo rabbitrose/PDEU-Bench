@@ -1,0 +1,96 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_055",
+  "user_context": {
+    "fictional_name": "Mateo Garcia",
+    "age": 6,
+    "location": "美国加利福尼亚州洛杉矶",
+    "languages": [
+      "英语",
+      "西班牙语"
+    ],
+    "occupation": "学生",
+    "industry": "教育",
+    "household": "与父母和妹妹同住",
+    "accessibility_needs": "无",
+    "privacy_preferences": "家长管理所有账户，最小化数据共享",
+    "budget_preferences": "家长注重成本，但愿意在开发工具上花钱",
+    "technology_preferences": [
+      "带有家长控制的平板电脑",
+      "教育类应用如 ABCmouse",
+      "用于简单问题的语音助手"
+    ],
+    "food_preferences": [
+      "塔可",
+      "水果零食",
+      "芝士通心粉",
+      "温和口味"
+    ],
+    "travel_preferences": [
+      "短途公园游玩",
+      "去墨西哥探望祖父母",
+      "避免长途飞行"
+    ],
+    "learning_preferences": [
+      "动手操作活动",
+      "视觉辅助工具",
+      "重复和歌曲"
+    ],
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "education.build_study_plan",
+    "education.search_courses",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "translation.translate_text",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "calendar": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event"
+  ],
+  "civic": [
+    "civic.find_services",
+    "civic.submit_request"
+  ],
+  "communications": [
+    "communications.plan_outreach"
+  ],
+  "contacts": [
+    "contacts.create_or_update",
+    "contacts.find_experts",
+    "contacts.search"
+  ],
+  "documents": [
+    "documents.create",
+    "documents.create_checklist",
+    "documents.extract_requirements",
+    "documents.generate_presentation",
+    "documents.search",
+    "documents.summarize",
+    "documents.translate_localize",
+    "documents.update"
+  ],
+  "education": [
+    "education.build_study_plan",
+    "education.create_assessment",
+    "education.find_learning_resources",
+    "education.search_courses"
+  ],
+  "email": [
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message"
+  ],
+  "entertainment": [
+    "entertainment.recommend_media",
+    "entertainment.search_events"
+  ],
+  "events": [
+    "events.manage_rsvp",
+    "events.plan_event",
+    "events.search_venues"
+  ],
+  "finance": [
+    "finance.compare_prices",
+    "finance.compare_services",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.plan_payments",
+    "finance.search_transactions"
+  ],
+  "food": [
+    "food.create_meal_plan",
+    "food.plan_catering",
+    "food.search_recipes",
+    "food.search_restaurants"
+  ],
+  "health": [
+    "health.find_wellness_options",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.review_guidelines",
+    "health.schedule_appointment",
+    "health.search_providers"
+  ],
+  "legal": [
+    "legal.create_checklist",
+    "legal.prepare_forms",
+    "legal.review_requirements",
+    "legal.search_documents"
+  ],
+  "maps": [
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places"
+  ],
+  "media": [
+    "media.search_assets"
+  ],
+  "messaging": [
+    "messaging.create_group",
+    "messaging.send_message"
+  ],
+  "notes": [
+    "notes.create_note"
+  ],
+  "privacy": [
+    "privacy.redact_data"
+  ],
+  "procurement": [
+    "procurement.compare_vendor_quotes",
+    "procurement.search_vendors"
+  ],
+  "project": [
+    "project.assign_tasks",
+    "project.create_task_list",
+    "project.plan_milestones",
+    "project.track_risks",
+    "project.update_status"
+  ],
+  "reminders": [
+    "reminders.create"
+  ],
+  "research": [
+    "research.analyze_table",
+    "research.compare_options",
+    "research.fact_check",
+    "research.monitor_updates",
+    "research.retrieve_dataset",
+    "research.review_evidence",
+    "research.search_sources",
+    "research.web_search"
+  ],
+  "security": [
+    "security.configure_2fa",
+    "security.evaluate_tools",
+    "security.password_audit"
+  ],
+  "shopping": [
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products"
+  ],
+  "smart_home": [
+    "smart_home.get_devices",
+    "smart_home.set_device_state"
+  ],
+  "technology": [
+    "technology.check_compatibility",
+    "technology.compare_tools",
+    "technology.plan_migration"
+  ],
+  "translation": [
+    "translation.translate_text"
+  ],
+  "travel": [
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.check_requirements",
+    "travel.optimize_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "travel.search_transportation"
+  ],
+  "weather": [
+    "weather.get_forecast"
+  ]
+}

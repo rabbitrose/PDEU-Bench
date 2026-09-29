@@ -1,0 +1,78 @@
+{
+  "api_name": "documents.extract_requirements",
+  "category": "documents",
+  "action": "extract_requirements",
+  "description": "Extract requirements, constraints, deadlines, stakeholders, deliverables, and risks from documents or task text.",
+  "interface": {
+    "type": "function_call",
+    "function": "documents.extract_requirements",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "source_text_or_doc_ids",
+        "type": "array[string]",
+        "required": true,
+        "description": "Document ids or source text to analyze.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "requirement_types",
+        "type": "array[string]",
+        "required": true,
+        "description": "Types to extract, such as deadlines, budget, legal, safety, or format.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "strictness",
+        "type": "string",
+        "required": true,
+        "description": "How strictly implied requirements should be included.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "language",
+        "type": "string",
+        "required": false,
+        "description": "Language for extracted requirements.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "required": false,
+        "description": "Redaction or minimization level for sensitive content.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "requirements": "array",
+      "ambiguities": "array",
+      "risk_flags": "array"
+    },
+    "preference_sensitive_parameters": [
+      "source_text_or_doc_ids",
+      "requirement_types",
+      "language"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "source_text_or_doc_ids",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "requirement_types",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "language",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

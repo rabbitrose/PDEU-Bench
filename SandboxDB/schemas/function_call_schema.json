@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sandboxdb:function-call-schema:v1",
+  "schema_version": "SandboxDB.v1",
+  "title": "SandboxDB Function Call",
+  "description": "Generic schema for a SandboxDB function-call request. The arguments object must satisfy the selected API definition.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "arguments"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*\\.[a-z][a-z0-9_]*$",
+      "description": "Must match an api_name from SandboxDB/api_index.json."
+    },
+    "arguments": {
+      "type": "object",
+      "description": "JSON object matching the selected API parameter definitions."
+    }
+  }
+}

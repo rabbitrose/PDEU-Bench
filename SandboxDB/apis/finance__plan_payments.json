@@ -1,0 +1,85 @@
+{
+  "api_name": "finance.plan_payments",
+  "category": "finance",
+  "action": "plan_payments",
+  "description": "Plan payments, savings, subscriptions, debt, or staged expenses around income, deadlines, and risk constraints.",
+  "interface": {
+    "type": "function_call",
+    "function": "finance.plan_payments",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "payment_goal",
+        "type": "string",
+        "required": true,
+        "description": "Payment or savings goal.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "amounts_due",
+        "type": "array[object]",
+        "required": true,
+        "description": "Amounts, due dates, and priority details.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "income_or_cashflow",
+        "type": "object",
+        "required": true,
+        "description": "Income, balances, or cashflow context.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "constraints",
+        "type": "array[string]",
+        "required": true,
+        "description": "Budget, family, legal, or risk constraints.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "required": true,
+        "description": "Preference for cash buffer and risk exposure.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "required": false,
+        "description": "Sensitive detail handling.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "payment_plan": "array",
+      "cashflow_summary": "object",
+      "risk_flags": "array"
+    },
+    "preference_sensitive_parameters": [
+      "amounts_due",
+      "constraints",
+      "risk_tolerance"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "amounts_due",
+        "type": "array[object]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "constraints",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

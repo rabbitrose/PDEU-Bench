@@ -1,0 +1,114 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "created_at": "2026-07-07T18:06:12",
+  "user_count": 214,
+  "workflow_count": 214,
+  "api_record_count": 10262,
+  "theme_count": 21,
+  "top_20_api_usage": [
+    [
+      "calendar.find_availability",
+      214
+    ],
+    [
+      "calendar.create_event",
+      214
+    ],
+    [
+      "calendar.search_events",
+      214
+    ],
+    [
+      "reminders.create",
+      214
+    ],
+    [
+      "calendar.update_event",
+      214
+    ],
+    [
+      "contacts.search",
+      214
+    ],
+    [
+      "contacts.create_or_update",
+      214
+    ],
+    [
+      "documents.search",
+      214
+    ],
+    [
+      "documents.summarize",
+      214
+    ],
+    [
+      "documents.create",
+      214
+    ],
+    [
+      "documents.update",
+      214
+    ],
+    [
+      "email.search_messages",
+      214
+    ],
+    [
+      "email.draft_message",
+      214
+    ],
+    [
+      "email.send_message",
+      214
+    ],
+    [
+      "finance.get_accounts",
+      214
+    ],
+    [
+      "finance.search_transactions",
+      214
+    ],
+    [
+      "finance.create_budget_plan",
+      214
+    ],
+    [
+      "finance.compare_prices",
+      214
+    ],
+    [
+      "health.search_providers",
+      214
+    ],
+    [
+      "health.schedule_appointment",
+      214
+    ]
+  ],
+  "files": {
+    "user_index": "user_index.json",
+    "workflow_index": "workflow_index.json",
+    "theme_index": "theme_index.json",
+    "api_cache_index": "api_cache_index.json",
+    "users_dir": "users",
+    "workflows_dir": "workflows",
+    "themes_dir": "themes",
+    "api_records_dir": "api_records"
+  },
+  "design_contract": {
+    "single_global_database": "All sandbox records are stored under SandboxDB/database.",
+    "no_per_user_sandbox": "data/user_xxx/sandbox and data/user_xxx/sandboxDB.json are legacy and removed after migration.",
+    "runtime_lookup": "Evaluators resolve user_id/task_id through workflow_index.json.",
+    "cache_keys": "Each API record keeps an API+argument key and a personalized key for deterministic replay."
+  },
+  "updated_at": "2026-07-14T14:52:45",
+  "migration_history": [
+    {
+      "script": "scripts/migrate_mid_to_hard_dataset.py",
+      "updated_at": "2026-07-14T14:52:45",
+      "operation": "remove former hard users 147-199 and migrate former mid users 001-146 to hard"
+    }
+  ]
+}

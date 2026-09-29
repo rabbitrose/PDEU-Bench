@@ -1,0 +1,106 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_025",
+  "user_context": {
+    "fictional_name": "拉维·香卡·潘迪",
+    "age": 35,
+    "location": "印度查谟和克什米尔卡特拉",
+    "languages": [
+      "印地语",
+      "梵文",
+      "英语"
+    ],
+    "occupation": "祭司（Pujari）",
+    "industry": "宗教服务",
+    "household": "已婚有两个孩子",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "sharing": "保持个人生活私密，避免在线曝光",
+      "data": "不希望收集任何个人数据或用于营销",
+      "communication": "更喜欢面对面或电话，而不是数字消息"
+    },
+    "budget_preferences": {
+      "spending": "节俭，优先考虑捐赠给寺庙和家庭需求",
+      "splurge": "很少，用于宗教书籍或为家庭朝圣",
+      "attitude": "将金钱视为服务的资源，而非个人享受"
+    },
+    "technology_preferences": {
+      "devices": "基本智能手机（仅用于通话和偶尔的WhatsApp），不喜欢使用社交媒体",
+      "software": "用于咒语、寺庙时间、简单笔记的应用程序",
+      "attitude": "勉强采用，仅在必要时使用"
+    },
+    "food_preferences": {
+      "diet": "乳素食、萨提克（无洋葱、大蒜、重香料）",
+      "cuisines": "北印度、南印度（传统塔利）",
+      "avoid": "非素食、酒精、咖啡因"
+    },
+    "travel_preferences": {
+      "destinations": "其他Shakti Peethas、Char Dham、瓦拉纳西、瑞诗凯诗",
+      "style": "简单、注重宗教，避免豪华住宿"
+    },
+    "learning_preferences": {
+      "subjects": [
+        "梵语",
+        "占星学（Jyotisha）",
+        "阿育吠陀",
+        "高级仪式技巧"
+      ],
+      "methods": "与古鲁面授课程、自学古代文本"
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "education.build_study_plan",
+    "education.search_courses",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

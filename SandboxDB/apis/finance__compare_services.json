@@ -1,0 +1,85 @@
+{
+  "api_name": "finance.compare_services",
+  "category": "finance",
+  "action": "compare_services",
+  "description": "Compare banks, insurance, subscriptions, payment methods, legal services, or financial products.",
+  "interface": {
+    "type": "function_call",
+    "function": "finance.compare_services",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "service_category",
+        "type": "string",
+        "required": true,
+        "description": "Financial service category.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "candidate_services",
+        "type": "array[string]",
+        "required": true,
+        "description": "Candidate services or providers.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "comparison_criteria",
+        "type": "array[string]",
+        "required": true,
+        "description": "Criteria such as fees, ethics, privacy, access, risk, and usability.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "budget_or_fee_limit",
+        "type": "number",
+        "required": true,
+        "description": "Maximum acceptable cost or fees.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "required": true,
+        "description": "Risk preference for financial decisions.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "privacy_or_ethics_requirements",
+        "type": "array[string]",
+        "required": false,
+        "description": "Privacy, ethics, or sustainability constraints.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "service_comparison": "array",
+      "recommendation": "object",
+      "fee_summary": "object"
+    },
+    "preference_sensitive_parameters": [
+      "comparison_criteria",
+      "risk_tolerance",
+      "privacy_or_ethics_requirements"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "comparison_criteria",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "privacy_or_ethics_requirements",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

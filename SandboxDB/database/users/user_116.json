@@ -1,0 +1,159 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_116",
+  "user_context": {
+    "fictional_name": "Elena Marchetti",
+    "age": 42,
+    "location": "美国加利福尼亚州洛杉矶",
+    "languages": [
+      "英语",
+      "意大利语",
+      "西班牙语"
+    ],
+    "occupation": "配音选角制片人",
+    "industry": "娱乐 / 电视配音",
+    "household": "独居两居室公寓",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "data_sharing": [
+        "不愿分享联系人名单或专有选角数据",
+        "愿意接受匿名使用统计"
+      ],
+      "social_media": [
+        "活跃于LinkedIn和Instagram以进行专业网络交流",
+        "没有Facebook，偶尔使用Twitter"
+      ]
+    },
+    "budget_preferences": {
+      "spending_style": [
+        "愿意投资优质设备和旅行",
+        "日常物品注重成本"
+      ],
+      "splurge_areas": [
+        "高端耳机",
+        "海外语言课程",
+        "限量版黑胶唱片"
+      ],
+      "saving_areas": [
+        "服装（偏爱少量优质单品）",
+        "外出就餐（经常在家做饭）"
+      ]
+    },
+    "technology_preferences": {
+      "devices": [
+        "MacBook Pro",
+        "iPhone",
+        "用于剧本和笔记的iPad"
+      ],
+      "software": [
+        "用于音频编辑的Pro Tools",
+        "用于视频参考的Final Cut Pro",
+        "用于团队沟通的Slack"
+      ],
+      "ai_tools": [
+        "用于转录的Descript",
+        "用于语音原型的Sonantic（测试用）"
+      ]
+    },
+    "food_preferences": {
+      "cuisine": [
+        "意大利方言（尤其是伦巴第和西西里方言）",
+        "日本拉面和寿司",
+        "墨西哥街头小吃"
+      ],
+      "dietary_restrictions": [
+        "无"
+      ],
+      "dining": [
+        "偏爱休闲地道餐厅而非高级餐饮",
+        "喜欢在家烹饪意大利菜"
+      ]
+    },
+    "travel_preferences": {
+      "destinations": [
+        "非主流欧洲村庄",
+        "电影产业发达的亚洲城市（东京、首尔）",
+        "拉丁美洲用于发掘配音人才"
+      ],
+      "accommodation": [
+        "具有当地特色的精品酒店",
+        "工作空间良好的Airbnb"
+      ],
+      "activities": [
+        "参观当地电影制片厂",
+        "参加语言交流活动",
+        "文化沉浸之旅"
+      ]
+    },
+    "learning_preferences": {
+      "formats": [
+        "互动工作坊",
+        "带实践作业的在线课程",
+        "语言播客"
+      ],
+      "topics": [
+        "方言指导",
+        "音频工程基础",
+        "媒体中的文化敏感性"
+      ],
+      "platforms": [
+        "Coursera",
+        "MasterClass（例如沃纳·赫尔佐格）",
+        "Duolingo用于语言练习"
+      ]
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

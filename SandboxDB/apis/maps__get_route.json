@@ -1,0 +1,118 @@
+{
+  "api_name": "maps.get_route",
+  "category": "maps",
+  "action": "get_route",
+  "description": "Get a route between locations with transportation, timing, budget, safety, and accessibility constraints.",
+  "interface": {
+    "type": "function_call",
+    "function": "maps.get_route",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "origin",
+        "type": "string",
+        "required": true,
+        "description": "Starting location.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "destination",
+        "type": "string",
+        "required": true,
+        "description": "Destination.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "departure_time",
+        "type": "datetime",
+        "required": true,
+        "description": "Preferred departure time.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "mode",
+        "type": "string",
+        "required": true,
+        "description": "driving, walking, transit, cycling, rideshare, or multimodal.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "avoid",
+        "type": "array[string]",
+        "required": false,
+        "description": "Roads, zones, or route features to avoid.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "optimize_for",
+        "type": "string",
+        "required": true,
+        "description": "time, cost, safety, accessibility, comfort, or reliability.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "required": false,
+        "description": "Maximum transport cost.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "accessibility_needs",
+        "type": "array[string]",
+        "required": false,
+        "description": "Accessibility requirements.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "safety_preference",
+        "type": "string",
+        "required": false,
+        "description": "User risk tolerance for route choices.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "routes": "array",
+      "recommended_route": "object",
+      "risk_notes": "array"
+    },
+    "preference_sensitive_parameters": [
+      "origin",
+      "departure_time",
+      "optimize_for",
+      "accessibility_needs",
+      "safety_preference"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "origin",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "departure_time",
+        "type": "datetime",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "optimize_for",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "accessibility_needs",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "safety_preference",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

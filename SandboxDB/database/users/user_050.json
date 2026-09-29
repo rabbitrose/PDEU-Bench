@@ -1,0 +1,155 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_050",
+  "user_context": {
+    "fictional_name": "Mia Chen",
+    "age": 29,
+    "location": "美国旧金山",
+    "languages": [
+      "英语",
+      "普通话"
+    ],
+    "occupation": "VR内容创作者与开发者",
+    "industry": "科技/娱乐",
+    "household": "独居一居室公寓",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "data_sharing": "极简，尽可能选择退出",
+      "tracking": "使用广告拦截器，禁用跨应用跟踪",
+      "anonymity": "在线使用化名",
+      "preference_learning": "如果不出售数据，则接受个性化推荐"
+    },
+    "budget_preferences": {
+      "income_range": "每年$70k-$90k",
+      "spending_priorities": [
+        "VR硬件",
+        "软件订阅",
+        "高质量外设"
+      ],
+      "saving_goal": "应急基金和未来VR初创公司",
+      "financial_cautiousness": "中等，在技术上挥霍但在家做饭"
+    },
+    "technology_preferences": {
+      "os": [
+        "Windows",
+        "Android"
+      ],
+      "browser": "Firefox（注重隐私）",
+      "social_media": [
+        "Twitter",
+        "Reddit",
+        "Discord"
+      ],
+      "devices": [
+        "定制PC",
+        "Quest 3",
+        "Pixel phone"
+      ],
+      "privacy_tools": [
+        "VPN",
+        "Signal",
+        "ProtonMail"
+      ]
+    },
+    "food_preferences": {
+      "diet": "弹性素食，以植物为主，偶尔吃鱼",
+      "cuisine": [
+        "日本料理",
+        "意大利语",
+        "墨西哥料理"
+      ],
+      "cooking_at_home": "经常在周末准备餐食",
+      "eating_out": "每周一次，偏好安静的餐厅",
+      "avoid": [
+        "快餐连锁店",
+        "辣菜"
+      ]
+    },
+    "travel_preferences": {
+      "frequency": "很少，每年1-2次",
+      "type": [
+        "技术会议",
+        "自然静修"
+      ],
+      "destinations": [
+        "Tokyo",
+        "Reykjavik",
+        "偏远小屋"
+      ],
+      "accommodation": "有良好WiFi的Airbnb",
+      "activities": [
+        "参观VR游戏厅",
+        "远足",
+        "摄影"
+      ]
+    },
+    "learning_preferences": {
+      "style": [
+        "动手项目",
+        "视频教程",
+        "文档"
+      ],
+      "subjects": [
+        "VR优化",
+        "程序化生成",
+        "VR中的UI/UX"
+      ],
+      "pace": "自主节奏加里程碑",
+      "resources": [
+        "在线课程（Coursera, Udemy）",
+        "社区论坛"
+      ]
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

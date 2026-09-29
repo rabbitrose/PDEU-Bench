@@ -1,0 +1,99 @@
+{
+  "api_name": "food.create_meal_plan",
+  "category": "food",
+  "action": "create_meal_plan",
+  "description": "Create a meal plan balancing schedule, budget, diet, family preferences, and preparation effort.",
+  "interface": {
+    "type": "function_call",
+    "function": "food.create_meal_plan",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "date_range",
+        "type": "object",
+        "required": true,
+        "description": "Meal plan dates.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "household_size",
+        "type": "integer",
+        "required": true,
+        "description": "Number of eaters.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "dietary_constraints",
+        "type": "array[string]",
+        "required": true,
+        "description": "Diet and allergy constraints.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "cuisine_preferences",
+        "type": "array[string]",
+        "required": true,
+        "description": "Preferred cuisines.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "required": true,
+        "description": "Total budget.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "prep_time_limits",
+        "type": "object",
+        "required": true,
+        "description": "Time limits by day.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "leftover_policy",
+        "type": "string",
+        "required": true,
+        "description": "How leftovers should be handled.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "nutrition_goals",
+        "type": "array[string]",
+        "required": false,
+        "description": "Nutrition goals.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "meal_plan": "array",
+      "grocery_list": "array",
+      "budget_summary": "object"
+    },
+    "preference_sensitive_parameters": [
+      "dietary_constraints",
+      "budget_limit",
+      "prep_time_limits"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "dietary_constraints",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "prep_time_limits",
+        "type": "object",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

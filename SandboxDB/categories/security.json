@@ -1,0 +1,245 @@
+{
+  "schema_version": "SandboxDB.v1",
+  "category": "security",
+  "api_count": 3,
+  "apis": [
+    {
+      "api_name": "security.configure_2fa",
+      "category": "security",
+      "action": "configure_2fa",
+      "description": "Configure two-factor authentication recommendations for selected accounts.",
+      "interface": {
+        "type": "function_call",
+        "function": "security.configure_2fa",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "accounts",
+            "type": "array[string]",
+            "required": true,
+            "description": "Accounts to configure.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "preferred_2fa_methods",
+            "type": "array[string]",
+            "required": true,
+            "description": "Authenticator app, security key, passkey, SMS, email.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "backup_method_preference",
+            "type": "string",
+            "required": true,
+            "description": "Backup code or recovery preference.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "device_constraints",
+            "type": "array[string]",
+            "required": true,
+            "description": "Device constraints.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": true,
+            "description": "Privacy handling.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "setup_plan": "array",
+          "risk_reduction": "object",
+          "user_confirmation_required": "array"
+        },
+        "preference_sensitive_parameters": [
+          "backup_method_preference",
+          "device_constraints",
+          "privacy_mode"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "backup_method_preference",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "device_constraints",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "security.evaluate_tools",
+      "category": "security",
+      "action": "evaluate_tools",
+      "description": "Evaluate VPNs, password managers, encrypted email, secure messaging, backup, or privacy tools.",
+      "interface": {
+        "type": "function_call",
+        "function": "security.evaluate_tools",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "tool_type",
+            "type": "string",
+            "required": true,
+            "description": "Security or privacy tool category.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "candidate_tools",
+            "type": "array[string]",
+            "required": true,
+            "description": "Candidate tools or providers.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "threat_model",
+            "type": "array[string]",
+            "required": true,
+            "description": "Relevant threat model and privacy concerns.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "platforms",
+            "type": "array[string]",
+            "required": true,
+            "description": "Platforms that must be supported.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "budget_limit",
+            "type": "number",
+            "required": true,
+            "description": "Maximum budget.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "privacy_requirements",
+            "type": "array[string]",
+            "required": false,
+            "description": "Hard privacy requirements.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "security_comparison": "array",
+          "recommended_tool": "object",
+          "residual_risks": "array"
+        },
+        "preference_sensitive_parameters": [
+          "tool_type",
+          "threat_model",
+          "budget_limit",
+          "privacy_requirements"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "tool_type",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "threat_model",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "budget_limit",
+            "type": "number",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "privacy_requirements",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "security.password_audit",
+      "category": "security",
+      "action": "password_audit",
+      "description": "Audit account password health and recommend priority actions without exposing secrets.",
+      "interface": {
+        "type": "function_call",
+        "function": "security.password_audit",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "account_scope",
+            "type": "array[string]",
+            "required": true,
+            "description": "Accounts or categories to audit.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "include_breach_check",
+            "type": "boolean",
+            "required": true,
+            "description": "Whether to include breach checks.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "required": true,
+            "description": "User risk tolerance.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": true,
+            "description": "Privacy level; secrets are never returned.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "priority_categories",
+            "type": "array[string]",
+            "required": false,
+            "description": "Categories to prioritize, such as banking, work, family, health.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "audit_summary": "object",
+          "priority_actions": "array",
+          "never_exposed": "array"
+        },
+        "preference_sensitive_parameters": [
+          "risk_tolerance",
+          "privacy_mode"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    }
+  ]
+}

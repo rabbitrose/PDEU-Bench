@@ -1,0 +1,114 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_207",
+  "user_context": {
+    "fictional_name": "朴敏智",
+    "age": 24,
+    "location": "巴西圣保罗",
+    "languages": [
+      "葡萄牙语",
+      "英语"
+    ],
+    "occupation": "a British historian focusing on twentieth-century British civil servants",
+    "industry": "零售服务",
+    "household": "合租",
+    "accessibility_needs": "偏好低刺激空间",
+    "privacy_preferences": [
+      "只提供完成任务必要的信息。",
+      "涉及家庭、健康、财务时需要匿名化或概括处理。",
+      "对位置、联系人和敏感历史保持谨慎。"
+    ],
+    "budget_preferences": [
+      "默认使用保守预算。",
+      "需要区分必须花费和可推迟花费。",
+      "若超预算必须给出替代方案。"
+    ],
+    "technology_preferences": [
+      "偏好跨设备同步但能导出数据的工具。",
+      "默认开启隐私保护和最小权限。",
+      "不喜欢被锁定在单一平台。"
+    ],
+    "food_preferences": [
+      "偏好不过度油腻、能稳定执行当天安排的餐食。",
+      "预算敏感，愿意选择本地小店或自己做饭。",
+      "需要考虑同行者限制。"
+    ],
+    "travel_preferences": [
+      "路线要留出缓冲。",
+      "住宿和交通优先考虑安全、安静和可取消性。",
+      "避免把热门景点当作默认最佳。"
+    ],
+    "learning_preferences": [
+      "偏好短周期反馈。",
+      "需要示例和可复盘标准。",
+      "不喜欢只堆材料链接。"
+    ],
+    "communication_preferences": {
+      "tone": "创作者策展模式：审美明确、重视氛围和真实体验。",
+      "response_length": "中等偏短；主要工作语言：葡萄牙语。只展开影响决策的部分。",
+      "evidence_expectation": "真实样例、场景细节和本地语境比排行榜更有用。",
+      "formatting": "氛围 / 人群 / 成本 / 灵感价值 / 安静备选。",
+      "proactive_behavior": "仅在符合用户决策优先级时主动建议：质感、社区感和个人表达优先于规模或流量。",
+      "things_to_avoid": [
+        "营销腔",
+        "网红化表达",
+        "过度商业化",
+        "不要给出与用户画像无关的泛化建议。"
+      ],
+      "personalization_intensity": "高",
+      "nonstandard_assistant_behavior": "先指出边界和未确认点，再给推荐。",
+      "decision_priority_order": "质感、社区感和个人表达优先于规模或流量。",
+      "distinctive_response_contract": "氛围 / 人群 / 成本 / 灵感价值 / 安静备选。"
+    }
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "entertainment.recommend_media",
+    "entertainment.search_events",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.send_message",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "translation.translate_text",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_easy"
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "api_name": "education.build_study_plan",
+  "category": "education",
+  "action": "build_study_plan",
+  "description": "Build a personalized study plan with milestones, practice tasks, assessments, and time constraints.",
+  "interface": {
+    "type": "function_call",
+    "function": "education.build_study_plan",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "learning_goal",
+        "type": "string",
+        "required": true,
+        "description": "Learning goal.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "current_level",
+        "type": "string",
+        "required": true,
+        "description": "Current proficiency.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "target_level",
+        "type": "string",
+        "required": true,
+        "description": "Target proficiency.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "available_hours_per_week",
+        "type": "number",
+        "required": true,
+        "description": "Study time.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "deadline",
+        "type": "date",
+        "required": false,
+        "description": "Deadline.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "learning_preferences",
+        "type": "object",
+        "required": true,
+        "description": "Learning preferences.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "assessment_style",
+        "type": "string",
+        "required": false,
+        "description": "Preferred feedback or assessment style.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "constraints",
+        "type": "array[string]",
+        "required": false,
+        "description": "Time, budget, accessibility, family, or work constraints.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "study_plan": "array",
+      "milestones": "array",
+      "resource_plan": "array"
+    },
+    "preference_sensitive_parameters": [
+      "available_hours_per_week",
+      "learning_preferences",
+      "assessment_style",
+      "constraints"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "available_hours_per_week",
+        "type": "number",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "learning_preferences",
+        "type": "object",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "assessment_style",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "constraints",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

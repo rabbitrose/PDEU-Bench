@@ -1,0 +1,87 @@
+{
+  "api_name": "finance.create_budget_plan",
+  "category": "finance",
+  "action": "create_budget_plan",
+  "description": "Create a budget plan using income, expenses, savings targets, risk tolerance, and user priorities.",
+  "interface": {
+    "type": "function_call",
+    "function": "finance.create_budget_plan",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "monthly_income",
+        "type": "number",
+        "required": true,
+        "description": "Monthly income estimate.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "fixed_expenses",
+        "type": "array[object]",
+        "required": true,
+        "description": "Fixed expense categories and amounts.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "variable_expenses",
+        "type": "array[object]",
+        "required": true,
+        "description": "Variable expenses.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "savings_goals",
+        "type": "array[object]",
+        "required": true,
+        "description": "Savings or payoff goals.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "budget_preferences",
+        "type": "object",
+        "required": true,
+        "description": "User's budget style, buffers, and spending priorities.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "protected_categories",
+        "type": "array[string]",
+        "required": true,
+        "description": "Categories the user does not want cut.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "currency",
+        "type": "string",
+        "required": false,
+        "description": "Currency.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "planning_horizon_months",
+        "type": "integer",
+        "required": false,
+        "description": "Planning horizon.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "budget_plan": "object",
+      "monthly_targets": "array",
+      "tradeoffs": "array"
+    },
+    "preference_sensitive_parameters": [
+      "budget_preferences"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "budget_preferences",
+        "type": "object",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

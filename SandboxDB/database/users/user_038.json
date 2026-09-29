@@ -1,0 +1,131 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_038",
+  "user_context": {
+    "fictional_name": "Jasmine Browne",
+    "age": 42,
+    "location": "圣约翰，安提瓜和巴布达",
+    "languages": [
+      "英语（母语）",
+      "西班牙语（中级）"
+    ],
+    "occupation": "地理教师",
+    "industry": "教育",
+    "household": "已婚，有两个孩子（年龄10岁和14岁）",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "data_sharing": "最少化，不公开分享个人位置数据",
+      "contact": "专业询问偏好邮件而非电话"
+    },
+    "budget_preferences": {
+      "spending_style": "愿意花更多钱在优质教育资源和体验上；日常用品则预算有限",
+      "price_sensitivity": "高价值物品低价，不必要的奢侈品高价"
+    },
+    "technology_preferences": {
+      "devices": [
+        "拍照功能好的智能手机",
+        "用于备课的笔记本电脑",
+        "GPS手表"
+      ],
+      "software": [
+        "OpenStreetMap",
+        "Google Maps",
+        "GIS工具"
+      ],
+      "privacy": [
+        "在社交媒体上谨慎分享位置",
+        "在公共Wi-Fi上使用VPN"
+      ]
+    },
+    "food_preferences": {
+      "cuisine": [
+        "加勒比美食（尤其是安提瓜风格炖菜、木薯饺、玉米面包）",
+        "新鲜海鲜"
+      ],
+      "dietary_restrictions": "无",
+      "preferred_beverages": [
+        "新鲜椰子水",
+        "本地朗姆潘趣酒"
+      ]
+    },
+    "travel_preferences": {
+      "type": [
+        "探险旅行",
+        "文化沉浸"
+      ],
+      "accommodation": [
+        "环保住宿",
+        "本地酒店"
+      ],
+      "season": [
+        "非旺季（五月至六月或十一月）"
+      ]
+    },
+    "learning_preferences": {
+      "style": [
+        "动手实地考察",
+        "视觉辅助工具",
+        "加勒比案例研究"
+      ],
+      "tools": [
+        "Google Earth",
+        "ArcGIS",
+        "地球仪"
+      ]
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "education.search_courses",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

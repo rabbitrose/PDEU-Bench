@@ -1,0 +1,520 @@
+{
+  "schema_version": "SandboxDB.v1",
+  "category": "health",
+  "api_count": 6,
+  "apis": [
+    {
+      "api_name": "health.find_wellness_options",
+      "category": "health",
+      "action": "find_wellness_options",
+      "description": "Find low-risk wellness, exercise, nutrition, recovery, or self-care options matching constraints.",
+      "interface": {
+        "type": "function_call",
+        "function": "health.find_wellness_options",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "goal",
+            "type": "string",
+            "required": true,
+            "description": "Wellness or self-care goal.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "location",
+            "type": "string",
+            "required": true,
+            "description": "Location if relevant.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "constraints",
+            "type": "array[string]",
+            "required": true,
+            "description": "Schedule, accessibility, dietary, health, or safety constraints.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "preferences",
+            "type": "array[string]",
+            "required": true,
+            "description": "User preferences for activities or routines.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "required": true,
+            "description": "How conservative recommendations should be.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "budget_limit",
+            "type": "number",
+            "required": false,
+            "description": "Maximum cost.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "options": "array",
+          "safety_notes": "array",
+          "routine_suggestions": "array"
+        },
+        "preference_sensitive_parameters": [
+          "location",
+          "constraints",
+          "preferences"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "location",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "constraints",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "preferences",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "health.log_symptoms",
+      "category": "health",
+      "action": "log_symptoms",
+      "description": "Log symptoms, severity, triggers, and follow-up actions for non-emergency tracking.",
+      "interface": {
+        "type": "function_call",
+        "function": "health.log_symptoms",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "symptoms",
+            "type": "array[object]",
+            "required": true,
+            "description": "Symptoms and severity.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "started_at",
+            "type": "datetime",
+            "required": true,
+            "description": "When symptoms started.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "possible_triggers",
+            "type": "array[string]",
+            "required": false,
+            "description": "Potential triggers based on routine or diet.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "notes",
+            "type": "string",
+            "required": true,
+            "description": "User notes.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "share_with_provider",
+            "type": "boolean",
+            "required": true,
+            "description": "Whether to share with provider.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": true,
+            "description": "Privacy handling for health details.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "log_id": "string",
+          "triage_flags": "array",
+          "next_steps": "array"
+        },
+        "preference_sensitive_parameters": [
+          "possible_triggers",
+          "privacy_mode"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "possible_triggers",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "health.medication_lookup",
+      "category": "health",
+      "action": "medication_lookup",
+      "description": "Look up medication schedule, interaction warnings, refill status, and adherence notes.",
+      "interface": {
+        "type": "function_call",
+        "function": "health.medication_lookup",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "medication_names",
+            "type": "array[string]",
+            "required": true,
+            "description": "Medication names.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "include_interactions",
+            "type": "boolean",
+            "required": true,
+            "description": "Whether to include interaction checks.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "include_refill_status",
+            "type": "boolean",
+            "required": true,
+            "description": "Whether refill status is needed.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "dietary_constraints",
+            "type": "array[string]",
+            "required": false,
+            "description": "Diet-related constraints.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": false,
+            "description": "Redaction level.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "medications": "array",
+          "warnings": "array",
+          "refill_actions": "array"
+        },
+        "preference_sensitive_parameters": [
+          "dietary_constraints"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "dietary_constraints",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "health.review_guidelines",
+      "category": "health",
+      "action": "review_guidelines",
+      "description": "Review health guidelines and clinical recommendations with source quality, recency, and safety caveats.",
+      "interface": {
+        "type": "function_call",
+        "function": "health.review_guidelines",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "topic",
+            "type": "string",
+            "required": true,
+            "description": "Health topic or protocol area.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "source_requirements",
+            "type": "array[string]",
+            "required": true,
+            "description": "Required source types such as official bodies or peer-reviewed studies.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "recency_requirement",
+            "type": "string",
+            "required": true,
+            "description": "How current the guidance must be.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "audience",
+            "type": "string",
+            "required": true,
+            "description": "Audience for the summary.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "required": true,
+            "description": "Safety and caveat level.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "language",
+            "type": "string",
+            "required": false,
+            "description": "Preferred language.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "guideline_summary": "array",
+          "source_notes": "array",
+          "safety_caveats": "array"
+        },
+        "preference_sensitive_parameters": [
+          "source_requirements",
+          "risk_tolerance",
+          "language"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "source_requirements",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "language",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "health.schedule_appointment",
+      "category": "health",
+      "action": "schedule_appointment",
+      "description": "Schedule a health appointment with reminders, prep instructions, and privacy controls.",
+      "interface": {
+        "type": "function_call",
+        "function": "health.schedule_appointment",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "provider_id",
+            "type": "string",
+            "required": true,
+            "description": "Provider identifier.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "appointment_type",
+            "type": "string",
+            "required": true,
+            "description": "Visit type.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "preferred_slots",
+            "type": "array[string]",
+            "required": true,
+            "description": "Preferred time slots.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "patient_constraints",
+            "type": "array[string]",
+            "required": true,
+            "description": "Health, family, mobility, or work constraints.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "insurance",
+            "type": "string",
+            "required": false,
+            "description": "Insurance or payment mode.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "communication_preference",
+            "type": "string",
+            "required": false,
+            "description": "Reminder and contact preference.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": false,
+            "description": "Privacy level for appointment details.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "appointment_id": "string",
+          "confirmed_slot": "object",
+          "prep_instructions": "array"
+        },
+        "preference_sensitive_parameters": [
+          "preferred_slots",
+          "patient_constraints",
+          "communication_preference",
+          "privacy_mode"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "preferred_slots",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "patient_constraints",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "communication_preference",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "health.search_providers",
+      "category": "health",
+      "action": "search_providers",
+      "description": "Search clinicians, therapists, clinics, or labs by specialty, insurance, language, distance, and preferences.",
+      "interface": {
+        "type": "function_call",
+        "function": "health.search_providers",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "specialty",
+            "type": "string",
+            "required": true,
+            "description": "Medical or wellness specialty.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "location",
+            "type": "string",
+            "required": true,
+            "description": "Search area.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "insurance",
+            "type": "string",
+            "required": false,
+            "description": "Insurance plan or self-pay.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "languages",
+            "type": "array[string]",
+            "required": false,
+            "description": "Preferred provider languages.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "availability_window",
+            "type": "object",
+            "required": false,
+            "description": "Preferred appointment windows.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "gender_preference",
+            "type": "string",
+            "required": false,
+            "description": "Provider gender preference.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "telehealth_ok",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether telehealth is acceptable.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "accessibility_needs",
+            "type": "array[string]",
+            "required": false,
+            "description": "Accessibility constraints.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "max_distance_km",
+            "type": "number",
+            "required": false,
+            "description": "Maximum travel distance.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "providers": "array",
+          "recommended_provider": "object",
+          "coverage_notes": "array"
+        },
+        "preference_sensitive_parameters": [
+          "languages",
+          "gender_preference",
+          "accessibility_needs"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "languages",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "gender_preference",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "accessibility_needs",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    }
+  ]
+}

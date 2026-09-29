@@ -1,0 +1,151 @@
+{
+  "api_name": "maps.search_places",
+  "category": "maps",
+  "action": "search_places",
+  "description": "Search cached real-world place directories using location, category, budget, accessibility, language, and quality filters.",
+  "interface": {
+    "type": "function_call",
+    "function": "maps.search_places",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "query",
+        "type": "string",
+        "required": true,
+        "description": "Place search query.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "near",
+        "type": "string",
+        "required": true,
+        "description": "City, neighborhood, or coordinates.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "radius_km",
+        "type": "number",
+        "required": true,
+        "description": "Search radius.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "category",
+        "type": "string",
+        "required": true,
+        "description": "Place category.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "open_at",
+        "type": "datetime",
+        "required": false,
+        "description": "Required open time.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "budget_level",
+        "type": "string",
+        "required": false,
+        "description": "Budget preference.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "accessibility_needs",
+        "type": "array[string]",
+        "required": false,
+        "description": "Accessibility constraints.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "avoid_features",
+        "type": "array[string]",
+        "required": false,
+        "description": "Features to avoid based on preferences.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "language_support",
+        "type": "array[string]",
+        "required": false,
+        "description": "Preferred service languages.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "min_rating",
+        "type": "number",
+        "required": false,
+        "description": "Minimum rating threshold.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "evidence_preference",
+        "type": "string",
+        "required": false,
+        "description": "Whether to favor directory entries, official listings, high ratings, or proximity.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "places": "array",
+      "ranking_basis": "array",
+      "warnings": "array",
+      "source_info": "object"
+    },
+    "preference_sensitive_parameters": [
+      "radius_km",
+      "open_at",
+      "budget_level",
+      "accessibility_needs",
+      "avoid_features",
+      "language_support",
+      "min_rating",
+      "evidence_preference"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "radius_km",
+        "type": "number",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "open_at",
+        "type": "datetime",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "budget_level",
+        "type": "string",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "accessibility_needs",
+        "type": "array[string]",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "avoid_features",
+        "type": "array[string]",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "language_support",
+        "type": "array[string]",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "min_rating",
+        "type": "number",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "evidence_preference",
+        "type": "string",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

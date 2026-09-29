@@ -1,0 +1,124 @@
+{
+  "schema_version": "SandboxDB.v1",
+  "category": "weather",
+  "api_count": 1,
+  "apis": [
+    {
+      "api_name": "weather.get_forecast",
+      "category": "weather",
+      "action": "get_forecast",
+      "description": "Search cached real-world weather snapshots and forecasts for planning travel, events, clothing, health, or logistics.",
+      "interface": {
+        "type": "function_call",
+        "function": "weather.get_forecast",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "location",
+            "type": "string",
+            "required": true,
+            "description": "Forecast location, city, or coordinates.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "start_date",
+            "type": "date",
+            "required": true,
+            "description": "Start date for the forecast or snapshot lookup.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "days",
+            "type": "integer",
+            "required": true,
+            "description": "Number of forecast days to retrieve.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "units",
+            "type": "string",
+            "required": true,
+            "description": "metric or imperial.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "sensitivity_flags",
+            "type": "array[string]",
+            "required": false,
+            "description": "Weather factors the user cares about, such as heat, rain, wind, UV, humidity, pollen, or air quality.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "activity_context",
+            "type": "string",
+            "required": false,
+            "description": "Planned activity affected by weather, such as walking, travel, outdoor event, sports, caregiving, or commute.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "required": false,
+            "description": "Tolerance for uncertain or adverse weather.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "source_preference",
+            "type": "array[string]",
+            "required": false,
+            "description": "Preferred weather source families, such as Open-Meteo or ETApp WeatherAPI snapshot.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "forecast": "array",
+          "alerts": "array",
+          "planning_implications": "array",
+          "source_info": "object"
+        },
+        "preference_sensitive_parameters": [
+          "location",
+          "units",
+          "sensitivity_flags",
+          "activity_context",
+          "risk_tolerance",
+          "source_preference"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "location",
+            "type": "string",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "units",
+            "type": "string",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "sensitivity_flags",
+            "type": "array[string]",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "activity_context",
+            "type": "string",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "source_preference",
+            "type": "array[string]",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    }
+  ]
+}

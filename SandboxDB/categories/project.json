@@ -1,0 +1,377 @@
+{
+  "schema_version": "SandboxDB.v1",
+  "category": "project",
+  "api_count": 5,
+  "apis": [
+    {
+      "api_name": "project.assign_tasks",
+      "category": "project",
+      "action": "assign_tasks",
+      "description": "Assign tasks to people or roles using availability, workload, skill fit, and communication preferences.",
+      "interface": {
+        "type": "function_call",
+        "function": "project.assign_tasks",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "tasks",
+            "type": "array[object]",
+            "required": true,
+            "description": "Tasks to assign.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "assignees",
+            "type": "array[string]",
+            "required": true,
+            "description": "Candidate assignees or roles.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "availability_constraints",
+            "type": "array[string]",
+            "required": true,
+            "description": "Availability and schedule constraints.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "priority_rules",
+            "type": "array[string]",
+            "required": true,
+            "description": "How assignments should be prioritized.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "communication_style",
+            "type": "string",
+            "required": false,
+            "description": "Preferred style for task descriptions.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "assignments": "array",
+          "unassigned_tasks": "array",
+          "load_summary": "object"
+        },
+        "preference_sensitive_parameters": [
+          "availability_constraints",
+          "communication_style"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "availability_constraints",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "communication_style",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "project.create_task_list",
+      "category": "project",
+      "action": "create_task_list",
+      "description": "Create a project task list with owners, due dates, dependencies, priorities, and reminders.",
+      "interface": {
+        "type": "function_call",
+        "function": "project.create_task_list",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "project_name",
+            "type": "string",
+            "required": true,
+            "description": "Project name.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "goals",
+            "type": "array[string]",
+            "required": true,
+            "description": "Project goals.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "tasks",
+            "type": "array[object]",
+            "required": true,
+            "description": "Tasks to add.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "deadline",
+            "type": "datetime",
+            "required": false,
+            "description": "Overall deadline.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "priority_method",
+            "type": "string",
+            "required": true,
+            "description": "Preference-sensitive priority strategy.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "collaborators",
+            "type": "array[string]",
+            "required": false,
+            "description": "People or roles involved.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "reminder_preferences",
+            "type": "object",
+            "required": false,
+            "description": "Reminder style and timing.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "project_id": "string",
+          "task_list": "array",
+          "critical_path": "array"
+        },
+        "preference_sensitive_parameters": [
+          "priority_method",
+          "reminder_preferences"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "priority_method",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "reminder_preferences",
+            "type": "object",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "project.plan_milestones",
+      "category": "project",
+      "action": "plan_milestones",
+      "description": "Build a milestone plan with dependencies, owners, deadlines, deliverables, and risk controls.",
+      "interface": {
+        "type": "function_call",
+        "function": "project.plan_milestones",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "project_goal",
+            "type": "string",
+            "required": true,
+            "description": "Project goal.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "deadline",
+            "type": "date",
+            "required": true,
+            "description": "Final deadline or target date.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "workstreams",
+            "type": "array[string]",
+            "required": true,
+            "description": "Workstreams or major components.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "constraints",
+            "type": "array[string]",
+            "required": true,
+            "description": "Schedule, budget, staffing, or quality constraints.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "stakeholders",
+            "type": "array[string]",
+            "required": false,
+            "description": "People or roles involved.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "required": false,
+            "description": "How much buffer and escalation to include.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "milestones": "array",
+          "dependency_graph": "object",
+          "risk_register": "array"
+        },
+        "preference_sensitive_parameters": [
+          "constraints"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "constraints",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "project.track_risks",
+      "category": "project",
+      "action": "track_risks",
+      "description": "Create or update a risk register with mitigation actions, owners, triggers, and contingency plans.",
+      "interface": {
+        "type": "function_call",
+        "function": "project.track_risks",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "risks",
+            "type": "array[string]",
+            "required": true,
+            "description": "Risks to track.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "impact_scale",
+            "type": "string",
+            "required": true,
+            "description": "Impact and likelihood scale.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "mitigation_preferences",
+            "type": "array[string]",
+            "required": true,
+            "description": "Preferred mitigation strategies.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "review_frequency",
+            "type": "string",
+            "required": true,
+            "description": "How often risks should be reviewed.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": false,
+            "description": "How sensitive risk details should be handled.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "risk_register": "array",
+          "highest_priority_risks": "array",
+          "next_reviews": "array"
+        },
+        "preference_sensitive_parameters": [
+          "risks",
+          "review_frequency",
+          "privacy_mode"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "risks",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "review_frequency",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "project.update_status",
+      "category": "project",
+      "action": "update_status",
+      "description": "Update project task status, blockers, due dates, and ownership.",
+      "interface": {
+        "type": "function_call",
+        "function": "project.update_status",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "project_id",
+            "type": "string",
+            "required": true,
+            "description": "Project identifier.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "task_updates",
+            "type": "array[object]",
+            "required": true,
+            "description": "Task updates.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "blockers",
+            "type": "array[string]",
+            "required": false,
+            "description": "Current blockers.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "notify_collaborators",
+            "type": "boolean",
+            "required": true,
+            "description": "Whether to notify collaborators.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "status_summary_style",
+            "type": "string",
+            "required": false,
+            "description": "Preferred summary style.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "project_id": "string",
+          "updated_tasks": "array",
+          "notifications": "array"
+        },
+        "preference_sensitive_parameters": [
+          "status_summary_style"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "status_summary_style",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "api_name": "health.medication_lookup",
+  "category": "health",
+  "action": "medication_lookup",
+  "description": "Look up medication schedule, interaction warnings, refill status, and adherence notes.",
+  "interface": {
+    "type": "function_call",
+    "function": "health.medication_lookup",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "medication_names",
+        "type": "array[string]",
+        "required": true,
+        "description": "Medication names.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "include_interactions",
+        "type": "boolean",
+        "required": true,
+        "description": "Whether to include interaction checks.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "include_refill_status",
+        "type": "boolean",
+        "required": true,
+        "description": "Whether refill status is needed.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "dietary_constraints",
+        "type": "array[string]",
+        "required": false,
+        "description": "Diet-related constraints.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "required": false,
+        "description": "Redaction level.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "medications": "array",
+      "warnings": "array",
+      "refill_actions": "array"
+    },
+    "preference_sensitive_parameters": [
+      "dietary_constraints"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "dietary_constraints",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 1
+}

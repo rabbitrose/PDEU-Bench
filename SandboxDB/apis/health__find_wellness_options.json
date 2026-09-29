@@ -1,0 +1,85 @@
+{
+  "api_name": "health.find_wellness_options",
+  "category": "health",
+  "action": "find_wellness_options",
+  "description": "Find low-risk wellness, exercise, nutrition, recovery, or self-care options matching constraints.",
+  "interface": {
+    "type": "function_call",
+    "function": "health.find_wellness_options",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "goal",
+        "type": "string",
+        "required": true,
+        "description": "Wellness or self-care goal.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "location",
+        "type": "string",
+        "required": true,
+        "description": "Location if relevant.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "constraints",
+        "type": "array[string]",
+        "required": true,
+        "description": "Schedule, accessibility, dietary, health, or safety constraints.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "preferences",
+        "type": "array[string]",
+        "required": true,
+        "description": "User preferences for activities or routines.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "required": true,
+        "description": "How conservative recommendations should be.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "required": false,
+        "description": "Maximum cost.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "options": "array",
+      "safety_notes": "array",
+      "routine_suggestions": "array"
+    },
+    "preference_sensitive_parameters": [
+      "location",
+      "constraints",
+      "preferences"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "location",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "constraints",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "preferences",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

@@ -1,0 +1,146 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_108",
+  "user_context": {
+    "fictional_name": "Alex Morgan",
+    "age": 35,
+    "location": "Toronto, Ontario, Canada",
+    "languages": [
+      "英语",
+      "French (basic)"
+    ],
+    "occupation": "Advanced Care Paramedic",
+    "industry": "紧急医疗服务",
+    "household": "已婚有一个孩子（4岁）",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "sharing": [
+        "与调度中心和配偶共享位置。",
+        "限制社交媒体曝光。"
+      ],
+      "data_sensitivity": [
+        "关注健康数据隐私。",
+        "在公共Wi-Fi上使用VPN。"
+      ]
+    },
+    "budget_preferences": {
+      "spending_habits": [
+        "投资于耐用的优质装备。",
+        "为女儿教育储蓄。",
+        "设立应急基金。"
+      ],
+      "price_sensitivity": [
+        "愿意为可靠性支付更高价格。",
+        "大额购买前进行广泛调研。"
+      ]
+    },
+    "technology_preferences": {
+      "devices": [
+        "坚固耐用的智能手机（如三星Galaxy XCover）。",
+        "用于健康追踪的智能手表。",
+        "用于非工作出行的GPS设备。"
+      ],
+      "software": [
+        "天气应用（如Windy、WeatherCAN）。",
+        "导航（Google Maps、Waze）。",
+        "通讯（WhatsApp用于团队联系）。"
+      ],
+      "brands": [
+        "莱泽曼多功能工具。",
+        "巴塔哥尼亚休闲服饰。",
+        "丰田汽车（可靠性优先）。"
+      ]
+    },
+    "food_preferences": {
+      "cuisines": [
+        "瘦肉和蔬菜。",
+        "高蛋白沙拉。",
+        "偶尔的浓汤。"
+      ],
+      "meal_habits": [
+        "每周日备餐。",
+        "下午4点后避免咖啡因。"
+      ],
+      "dietary_restrictions": [
+        "轻度乳糖不耐受。"
+      ]
+    },
+    "travel_preferences": {
+      "destinations": [
+        "国内探亲旅行。",
+        "自然风光目的地（如阿冈昆公园）。"
+      ],
+      "mode": [
+        "自驾出行。",
+        "极少乘飞机，长途旅行偏好火车。"
+      ],
+      "accommodations": [
+        "小木屋租赁。",
+        "支持提前入住的高效酒店。"
+      ]
+    },
+    "learning_preferences": {
+      "methods": [
+        "实操模拟培训。",
+        "带案例研究的在线模块。",
+        "同行主导的工作坊。"
+      ],
+      "topics": [
+        "高级气道管理。",
+        "事件指挥系统。",
+        "心理韧性培养。"
+      ]
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

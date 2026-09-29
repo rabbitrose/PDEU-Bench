@@ -1,0 +1,149 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_026",
+  "user_context": {
+    "fictional_name": "Elena Martinez",
+    "age": 38,
+    "location": "美国华盛顿特区",
+    "languages": [
+      "英语",
+      "西班牙语"
+    ],
+    "occupation": "高级记者",
+    "industry": "新闻媒体",
+    "household": "独居",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "level": "非常高",
+      "practices": [
+        "使用加密邮件",
+        "极少使用社交媒体",
+        "避免被追踪"
+      ]
+    },
+    "budget_preferences": {
+      "spending_priority": [
+        "高质量工作工具",
+        "可靠的订阅服务"
+      ],
+      "splurge_on": [
+        "Good coffee",
+        "高品质耳机"
+      ],
+      "save_on": [
+        "时尚",
+        "豪华旅行"
+      ]
+    },
+    "technology_preferences": {
+      "devices": [
+        "MacBook Pro",
+        "强加密iPhone"
+      ],
+      "software": [
+        "安全通讯",
+        "VPN",
+        "广告拦截器"
+      ],
+      "innovation": [
+        "对AI研究感兴趣但怀疑偏见"
+      ]
+    },
+    "food_preferences": {
+      "cuisine": [
+        "健康、快食餐食",
+        "沙拉",
+        "咖啡馆"
+      ],
+      "dietary": [
+        "无饮食限制，但避免丰盛的午餐"
+      ],
+      "dining": [
+        "偏好安静的咖啡馆用于工作",
+        "商务晚餐"
+      ]
+    },
+    "travel_preferences": {
+      "purpose": [
+        "与工作相关的报道出差",
+        "新闻发布会"
+      ],
+      "style": [
+        "高效、不铺张",
+        "偏好直飞航班"
+      ],
+      "destinations": [
+        "华盛顿特区地区",
+        "进行政策报道的州首府"
+      ]
+    },
+    "learning_preferences": {
+      "formats": [
+        "工作坊",
+        "在线课程",
+        "参加会议"
+      ],
+      "subjects": [
+        "政策分析",
+        "数据新闻",
+        "媒体法律"
+      ]
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "education.build_study_plan",
+    "education.search_courses",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "entertainment.search_events",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

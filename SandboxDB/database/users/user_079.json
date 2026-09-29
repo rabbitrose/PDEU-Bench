@@ -1,0 +1,127 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_079",
+  "user_context": {
+    "fictional_name": "纳迪亚·哈基姆",
+    "age": 40,
+    "location": "美国密歇根州迪尔伯恩",
+    "languages": [
+      "英语",
+      "阿拉伯语"
+    ],
+    "occupation": "副教授",
+    "industry": "高等教育",
+    "household": "已婚，有两个孩子（10岁和7岁）",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "data_sharing": "最小化使用；使用VPN、定期清除缓存、退出数据收集",
+      "social_media": "有限使用（仅限职业LinkedIn，无个人Facebook或Instagram）"
+    },
+    "budget_preferences": {
+      "spending_behavior": "中等消费，投资于优质教育资源和旅行",
+      "splurge_categories": [
+        "有机食品杂货",
+        "旅行",
+        "书籍"
+      ],
+      "save_categories": [
+        "服装",
+        "娱乐（偏好免费博物馆日或图书馆活动）"
+      ]
+    },
+    "technology_preferences": {
+      "devices": "苹果生态系统（手机、笔记本、平板）",
+      "software": "Microsoft Office、Evernote、Zoom、Google日历",
+      "tech_traits": [
+        "可靠",
+        "用户友好",
+        "注重隐私"
+      ]
+    },
+    "food_preferences": {
+      "cuisines": [
+        "黎巴嫩（最爱）",
+        "地中海",
+        "意大利语"
+      ],
+      "ingredient_quality": "偏好有机、本地食材，避免加工和快餐",
+      "dietary_restrictions": "无禁忌，但减少红肉"
+    },
+    "travel_preferences": {
+      "destinations": [
+        "黎巴嫩（每两年一次探亲）",
+        "历史名城（如伊斯坦布尔、开罗、塞维利亚）",
+        "国家公园（如黄石、大峡谷）"
+      ],
+      "transport": "优先直飞航班；短途经济舱，长途商务舱",
+      "accommodation": "带厨房的精品酒店或度假租赁",
+      "activities": [
+        "参观博物馆",
+        "美食之旅",
+        "文化节庆"
+      ]
+    },
+    "learning_preferences": {
+      "format": "互动式工作坊和研讨会优于讲座",
+      "topics": [
+        "高等教育领导力",
+        "多元与包容",
+        "针对遗产学习者的阿拉伯语"
+      ]
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "education.search_courses",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

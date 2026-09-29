@@ -1,0 +1,497 @@
+{
+  "schema_version": "SandboxDB.v1",
+  "category": "finance",
+  "api_count": 6,
+  "apis": [
+    {
+      "api_name": "finance.compare_prices",
+      "category": "finance",
+      "action": "compare_prices",
+      "description": "Compare prices across vendors or service plans with taxes, fees, warranties, and preference filters.",
+      "interface": {
+        "type": "function_call",
+        "function": "finance.compare_prices",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "item_or_service",
+            "type": "string",
+            "required": true,
+            "description": "Item or service to compare.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "vendors",
+            "type": "array[string]",
+            "required": false,
+            "description": "Candidate vendors.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "required_features",
+            "type": "array[string]",
+            "required": true,
+            "description": "Features the user requires.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "nice_to_have_features",
+            "type": "array[string]",
+            "required": false,
+            "description": "Features influenced by preferences.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "max_budget",
+            "type": "number",
+            "required": true,
+            "description": "Maximum budget.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "quality_preference",
+            "type": "string",
+            "required": true,
+            "description": "Lowest cost, best value, premium, durable, ethical, or local.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "include_fees",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether to include taxes, shipping, or service fees.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "offers": "array",
+          "best_value": "object",
+          "cost_breakdown": "object"
+        },
+        "preference_sensitive_parameters": [
+          "nice_to_have_features",
+          "max_budget"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "nice_to_have_features",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "max_budget",
+            "type": "number",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "finance.compare_services",
+      "category": "finance",
+      "action": "compare_services",
+      "description": "Compare banks, insurance, subscriptions, payment methods, legal services, or financial products.",
+      "interface": {
+        "type": "function_call",
+        "function": "finance.compare_services",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "service_category",
+            "type": "string",
+            "required": true,
+            "description": "Financial service category.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "candidate_services",
+            "type": "array[string]",
+            "required": true,
+            "description": "Candidate services or providers.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "comparison_criteria",
+            "type": "array[string]",
+            "required": true,
+            "description": "Criteria such as fees, ethics, privacy, access, risk, and usability.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "budget_or_fee_limit",
+            "type": "number",
+            "required": true,
+            "description": "Maximum acceptable cost or fees.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "required": true,
+            "description": "Risk preference for financial decisions.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "privacy_or_ethics_requirements",
+            "type": "array[string]",
+            "required": false,
+            "description": "Privacy, ethics, or sustainability constraints.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "service_comparison": "array",
+          "recommendation": "object",
+          "fee_summary": "object"
+        },
+        "preference_sensitive_parameters": [
+          "comparison_criteria",
+          "risk_tolerance",
+          "privacy_or_ethics_requirements"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "comparison_criteria",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "privacy_or_ethics_requirements",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "finance.create_budget_plan",
+      "category": "finance",
+      "action": "create_budget_plan",
+      "description": "Create a budget plan using income, expenses, savings targets, risk tolerance, and user priorities.",
+      "interface": {
+        "type": "function_call",
+        "function": "finance.create_budget_plan",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "monthly_income",
+            "type": "number",
+            "required": true,
+            "description": "Monthly income estimate.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "fixed_expenses",
+            "type": "array[object]",
+            "required": true,
+            "description": "Fixed expense categories and amounts.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "variable_expenses",
+            "type": "array[object]",
+            "required": true,
+            "description": "Variable expenses.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "savings_goals",
+            "type": "array[object]",
+            "required": true,
+            "description": "Savings or payoff goals.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "budget_preferences",
+            "type": "object",
+            "required": true,
+            "description": "User's budget style, buffers, and spending priorities.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "protected_categories",
+            "type": "array[string]",
+            "required": true,
+            "description": "Categories the user does not want cut.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "currency",
+            "type": "string",
+            "required": false,
+            "description": "Currency.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "planning_horizon_months",
+            "type": "integer",
+            "required": false,
+            "description": "Planning horizon.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "budget_plan": "object",
+          "monthly_targets": "array",
+          "tradeoffs": "array"
+        },
+        "preference_sensitive_parameters": [
+          "budget_preferences"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "budget_preferences",
+            "type": "object",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "finance.get_accounts",
+      "category": "finance",
+      "action": "get_accounts",
+      "description": "Retrieve account balances and categories with privacy-aware redaction.",
+      "interface": {
+        "type": "function_call",
+        "function": "finance.get_accounts",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "account_types",
+            "type": "array[string]",
+            "required": true,
+            "description": "checking, savings, credit, loan, investment, or cash.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "include_balances",
+            "type": "boolean",
+            "required": true,
+            "description": "Whether balances should be returned.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "include_recent_activity",
+            "type": "boolean",
+            "required": true,
+            "description": "Whether recent activity should be returned.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": true,
+            "description": "Redaction level based on privacy preferences.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "currency",
+            "type": "string",
+            "required": false,
+            "description": "Preferred currency.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "accounts": "array",
+          "net_available_cash": "number",
+          "redactions": "array"
+        },
+        "preference_sensitive_parameters": [
+          "privacy_mode"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "finance.plan_payments",
+      "category": "finance",
+      "action": "plan_payments",
+      "description": "Plan payments, savings, subscriptions, debt, or staged expenses around income, deadlines, and risk constraints.",
+      "interface": {
+        "type": "function_call",
+        "function": "finance.plan_payments",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "payment_goal",
+            "type": "string",
+            "required": true,
+            "description": "Payment or savings goal.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "amounts_due",
+            "type": "array[object]",
+            "required": true,
+            "description": "Amounts, due dates, and priority details.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "income_or_cashflow",
+            "type": "object",
+            "required": true,
+            "description": "Income, balances, or cashflow context.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "constraints",
+            "type": "array[string]",
+            "required": true,
+            "description": "Budget, family, legal, or risk constraints.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "required": true,
+            "description": "Preference for cash buffer and risk exposure.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": false,
+            "description": "Sensitive detail handling.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "payment_plan": "array",
+          "cashflow_summary": "object",
+          "risk_flags": "array"
+        },
+        "preference_sensitive_parameters": [
+          "amounts_due",
+          "constraints",
+          "risk_tolerance"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "amounts_due",
+            "type": "array[object]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "constraints",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "finance.search_transactions",
+      "category": "finance",
+      "action": "search_transactions",
+      "description": "Search transactions by date, merchant, category, amount, and tags.",
+      "interface": {
+        "type": "function_call",
+        "function": "finance.search_transactions",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "date_start",
+            "type": "date",
+            "required": true,
+            "description": "Start date.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "date_end",
+            "type": "date",
+            "required": true,
+            "description": "End date.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "categories",
+            "type": "array[string]",
+            "required": false,
+            "description": "Spending or income categories.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "merchant_query",
+            "type": "string",
+            "required": false,
+            "description": "Merchant filter.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "min_amount",
+            "type": "number",
+            "required": false,
+            "description": "Minimum amount.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "max_amount",
+            "type": "number",
+            "required": false,
+            "description": "Maximum amount.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "tags",
+            "type": "array[string]",
+            "required": false,
+            "description": "Tags such as family, work, health, travel.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": false,
+            "description": "Controls sensitive transaction redaction.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "transactions": "array",
+          "category_totals": "object",
+          "anomalies": "array"
+        },
+        "preference_sensitive_parameters": [
+          "privacy_mode"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    }
+  ]
+}

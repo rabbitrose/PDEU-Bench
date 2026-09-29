@@ -1,0 +1,79 @@
+{
+  "api_name": "legal.review_requirements",
+  "category": "legal",
+  "action": "review_requirements",
+  "description": "Review legal, regulatory, contractual, compliance, or filing requirements with jurisdiction and professional-review caveats.",
+  "interface": {
+    "type": "function_call",
+    "function": "legal.review_requirements",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "topic",
+        "type": "string",
+        "required": true,
+        "description": "Legal or compliance topic.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "jurisdiction",
+        "type": "string",
+        "required": true,
+        "description": "Relevant jurisdiction.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "documents_or_facts",
+        "type": "array[string]",
+        "required": true,
+        "description": "Known documents, facts, or claims to check.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "required": true,
+        "description": "How conservative legal-risk handling should be.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "evidence_standard",
+        "type": "string",
+        "required": true,
+        "description": "Required source authority.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "requires_attorney_review",
+        "type": "boolean",
+        "required": false,
+        "description": "Whether to flag attorney review.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "requirements": "array",
+      "risk_flags": "array",
+      "review_caveats": "array"
+    },
+    "preference_sensitive_parameters": [
+      "risk_tolerance",
+      "evidence_standard"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "evidence_standard",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

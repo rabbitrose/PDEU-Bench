@@ -1,0 +1,104 @@
+{
+  "api_name": "education.find_learning_resources",
+  "category": "education",
+  "action": "find_learning_resources",
+  "description": "Find learning resources such as articles, courses, webinars, podcasts, books, exercises, or curricula.",
+  "interface": {
+    "type": "function_call",
+    "function": "education.find_learning_resources",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "topic",
+        "type": "string",
+        "required": true,
+        "description": "Learning topic.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "resource_types",
+        "type": "array[string]",
+        "required": true,
+        "description": "Preferred resource types.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "learning_preferences",
+        "type": "array[string]",
+        "required": true,
+        "description": "User learning preferences.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "time_budget",
+        "type": "string",
+        "required": true,
+        "description": "Available learning time.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "evidence_standard",
+        "type": "string",
+        "required": true,
+        "description": "Quality requirement for resources.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "language",
+        "type": "string",
+        "required": false,
+        "description": "Preferred language.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "required": false,
+        "description": "Maximum cost.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "resources": "array",
+      "curriculum_fit": "array",
+      "source_quality_summary": "object"
+    },
+    "preference_sensitive_parameters": [
+      "resource_types",
+      "learning_preferences",
+      "time_budget",
+      "evidence_standard",
+      "language"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "resource_types",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "learning_preferences",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "time_budget",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "evidence_standard",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "language",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

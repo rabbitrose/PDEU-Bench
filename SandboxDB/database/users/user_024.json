@@ -1,0 +1,125 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_024",
+  "user_context": {
+    "fictional_name": "Maya Chen",
+    "age": 28,
+    "location": "美国俄勒冈州波特兰",
+    "languages": [
+      "英语",
+      "西班牙语（会话水平）"
+    ],
+    "occupation": "临床社会工作者",
+    "industry": "非营利社会服务",
+    "household": "独居，租住一居室公寓",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "data_sharing": "非常谨慎，对客户相关通信使用VPN和加密消息",
+      "tracking": "屏蔽广告和跟踪器，使用DuckDuckGo"
+    },
+    "budget_preferences": {
+      "spending_priorities": [
+        "道德和可持续商品",
+        "书籍与教育",
+        "经历胜于物品"
+      ],
+      "saving_goals": "建立应急基金并为小房子的首付储蓄"
+    },
+    "technology_preferences": {
+      "devices": [
+        "笔记本电脑和智能手机，不喜欢智能音箱"
+      ],
+      "software": [
+        "开源替代品，注重隐私的应用程序"
+      ],
+      "social_media": [
+        "使用有限；偏爱Mastodon而非Twitter，用Reddit社区"
+      ]
+    },
+    "food_preferences": {
+      "diet": "素食（在家基本纯素）",
+      "cuisines": [
+        "埃塞俄比亚、印度、墨西哥",
+        "本地采购的农产品"
+      ],
+      "dining_out": [
+        "支持具有公平劳动实践的餐厅"
+      ]
+    },
+    "travel_preferences": {
+      "destinations": [
+        "以自然为焦点，价格实惠",
+        "国家公园，农村社区"
+      ],
+      "style": [
+        "背包旅行、露营、志愿者旅游"
+      ]
+    },
+    "learning_preferences": {
+      "format": [
+        "线下工作坊、会议和同伴学习小组"
+      ],
+      "topics": [
+        "创伤知情护理",
+        "文化谦逊",
+        "政策倡导"
+      ]
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "education.build_study_plan",
+    "education.search_courses",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "entertainment.search_events",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

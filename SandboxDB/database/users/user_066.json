@@ -1,0 +1,124 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_066",
+  "user_context": {
+    "fictional_name": "Dr. Michael Torres",
+    "age": 45,
+    "location": "美国科罗拉多州丹佛",
+    "languages": [
+      "英语",
+      "西班牙语"
+    ],
+    "occupation": "骨科医生",
+    "industry": "医疗保健",
+    "household": "已婚，有两个孩子（年龄14和16岁）",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "data_sharing": "仅在有明确同意的情况下；谨慎在公共论坛分享患者结果",
+      "social_media": "不使用个人社交媒体；仅使用专业LinkedIn",
+      "tracking": "接受匿名研究数据收集，但希望拥有控制权"
+    },
+    "budget_preferences": {
+      "spending_style": "愿意投资高质量的CME和设备；个人购买时注重价格",
+      "major_purchases": "购买前广泛研究",
+      "charity": "支持本地运动医学基金会和青少年体育项目"
+    },
+    "technology_preferences": {
+      "smartphone": "iPhone 15 Pro Max",
+      "computer": "MacBook Pro",
+      "wearable": "Apple Watch Ultra",
+      "smart_home": "极简；使用Nest恒温器",
+      "privacy": "重视数据安全，尤其是患者信息和个人健康数据"
+    },
+    "food_preferences": {
+      "diet": "均衡，无限制；喜欢牛排、沙拉和墨西哥菜",
+      "dining_out": "休闲但高质量；避免快餐",
+      "coffee": "黑咖啡、浓缩咖啡饮品",
+      "alcohol": "偶尔红葡萄酒或精酿啤酒"
+    },
+    "travel_preferences": {
+      "conference_travel": [
+        "目前仅限美国国内",
+        "偏好直飞航班",
+        "会议中心附近的酒店"
+      ],
+      "vacation": [
+        "山区目的地",
+        "国家公园",
+        "滑雪胜地"
+      ],
+      "airline": "联合航空（会员身份）",
+      "accommodation": "万豪或希尔顿"
+    },
+    "learning_preferences": {
+      "style": [
+        "视觉（观看手术）",
+        "基于案例",
+        "互动工作坊"
+      ],
+      "frequency": "每日期刊文章，每月课程",
+      "platforms": [
+        "VuMedi",
+        "YouTube（同行评审频道）",
+        "Orthobullets"
+      ],
+      "depth": "偏好高质量、循证资源；对轶事建议持怀疑态度"
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "education.build_study_plan",
+    "education.search_courses",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "entertainment.search_events",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

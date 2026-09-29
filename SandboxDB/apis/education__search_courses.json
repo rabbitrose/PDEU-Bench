@@ -1,0 +1,105 @@
+{
+  "api_name": "education.search_courses",
+  "category": "education",
+  "action": "search_courses",
+  "description": "Search courses, workshops, tutors, or learning resources by goals, schedule, budget, and learning style.",
+  "interface": {
+    "type": "function_call",
+    "function": "education.search_courses",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "topic",
+        "type": "string",
+        "required": true,
+        "description": "Learning topic.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "level",
+        "type": "string",
+        "required": true,
+        "description": "Beginner, intermediate, advanced, expert.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "format",
+        "type": "string",
+        "required": true,
+        "description": "Online, in-person, hybrid, self-paced, tutor, cohort.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "schedule_constraints",
+        "type": "object",
+        "required": true,
+        "description": "Available times.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "required": true,
+        "description": "Maximum budget.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "language",
+        "type": "string",
+        "required": true,
+        "description": "Preferred learning language.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "learning_preferences",
+        "type": "object",
+        "required": true,
+        "description": "Learning style preferences.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "credential_required",
+        "type": "boolean",
+        "required": false,
+        "description": "Whether certificate or credit matters.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "courses": "array",
+      "recommended_course": "object",
+      "fit_explanation": "array"
+    },
+    "preference_sensitive_parameters": [
+      "schedule_constraints",
+      "budget_limit",
+      "language",
+      "learning_preferences"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "schedule_constraints",
+        "type": "object",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "language",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "learning_preferences",
+        "type": "object",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_132",
+  "user_context": {
+    "fictional_name": "Margaret Chen",
+    "age": 52,
+    "location": "纽约州纽约市",
+    "languages": [
+      "英语",
+      "普通话（基础）"
+    ],
+    "occupation": "合伙人",
+    "industry": "法律服务",
+    "household": "已婚，有两个孩子（年龄18和21）",
+    "accessibility_needs": "无",
+    "privacy_preferences": "高度保护，避免分享个人信息",
+    "budget_preferences": "愿意为质量和便利花钱，在非必需品上注重成本",
+    "technology_preferences": [
+      "可靠性优先于新颖性",
+      "MacBook和iPhone",
+      "不喜欢不必要的应用程序"
+    ],
+    "food_preferences": [
+      "高级餐饮",
+      "低碳水选项",
+      "喜欢葡萄酒"
+    ],
+    "travel_preferences": [
+      "商务舱",
+      "有商务中心的酒店"
+    ],
+    "learning_preferences": [
+      "深度研讨会",
+      "继续法律教育课程"
+    ],
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

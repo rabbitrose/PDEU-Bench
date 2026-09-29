@@ -1,0 +1,790 @@
+{
+  "schema_version": "SandboxDB.v1",
+  "category": "travel",
+  "api_count": 7,
+  "apis": [
+    {
+      "api_name": "travel.book_flight_hold",
+      "category": "travel",
+      "action": "book_flight_hold",
+      "description": "Place a temporary hold on a flight itinerary without final payment.",
+      "interface": {
+        "type": "function_call",
+        "function": "travel.book_flight_hold",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "flight_option_id",
+            "type": "string",
+            "required": true,
+            "description": "Selected flight option.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "passenger_details",
+            "type": "array[object]",
+            "required": true,
+            "description": "Passenger details with minimal necessary personal data.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "seat_preferences",
+            "type": "object",
+            "required": true,
+            "description": "Seat preferences.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "baggage_selection",
+            "type": "object",
+            "required": true,
+            "description": "Baggage selection.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "payment_method_id",
+            "type": "string",
+            "required": false,
+            "description": "Payment method token.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "hold_duration_hours",
+            "type": "integer",
+            "required": false,
+            "description": "Requested hold duration.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": false,
+            "description": "Minimize exposure of personal data.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "hold_id": "string",
+          "expires_at": "datetime",
+          "price_lock": "object"
+        },
+        "preference_sensitive_parameters": [
+          "seat_preferences"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "seat_preferences",
+            "type": "object",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "travel.build_itinerary",
+      "category": "travel",
+      "action": "build_itinerary",
+      "description": "Build a multi-day itinerary that balances tasks, rest, travel, budget, risk, and preferences.",
+      "interface": {
+        "type": "function_call",
+        "function": "travel.build_itinerary",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "destination",
+            "type": "string",
+            "required": true,
+            "description": "Trip destination.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "date_range",
+            "type": "object",
+            "required": true,
+            "description": "Trip dates.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "anchors",
+            "type": "array[object]",
+            "required": true,
+            "description": "Fixed commitments or required stops.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "interests",
+            "type": "array[string]",
+            "required": true,
+            "description": "User interests to include.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "pace_preference",
+            "type": "string",
+            "required": true,
+            "description": "Slow, moderate, packed, or mixed.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "budget_limit",
+            "type": "number",
+            "required": true,
+            "description": "Total or daily budget.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "mobility_constraints",
+            "type": "array[string]",
+            "required": false,
+            "description": "Accessibility or mobility constraints.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "required": false,
+            "description": "Safety and uncertainty tolerance.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "meal_preferences",
+            "type": "object",
+            "required": false,
+            "description": "Food preferences and constraints.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "work_or_family_constraints",
+            "type": "array[string]",
+            "required": false,
+            "description": "Constraints affecting daily plan.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "itinerary": "array",
+          "budget_summary": "object",
+          "risk_notes": "array"
+        },
+        "preference_sensitive_parameters": [
+          "budget_limit",
+          "mobility_constraints",
+          "meal_preferences",
+          "work_or_family_constraints"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "budget_limit",
+            "type": "number",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "mobility_constraints",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "meal_preferences",
+            "type": "object",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "work_or_family_constraints",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "travel.check_requirements",
+      "category": "travel",
+      "action": "check_requirements",
+      "description": "Check travel documents, visa, health, customs, accessibility, and entry requirements for a trip.",
+      "interface": {
+        "type": "function_call",
+        "function": "travel.check_requirements",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "origin_country",
+            "type": "string",
+            "required": true,
+            "description": "Traveler origin or citizenship context.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "destination",
+            "type": "string",
+            "required": true,
+            "description": "Destination country or region.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "travel_dates",
+            "type": "object",
+            "required": true,
+            "description": "Travel date range.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "traveler_profile",
+            "type": "object",
+            "required": true,
+            "description": "Relevant traveler constraints and preferences.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "evidence_standard",
+            "type": "string",
+            "required": true,
+            "description": "Required authority level for requirements.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": false,
+            "description": "Sensitive detail handling.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "requirements": "array",
+          "official_sources": "array",
+          "risk_flags": "array"
+        },
+        "preference_sensitive_parameters": [
+          "traveler_profile"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "traveler_profile",
+            "type": "object",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "travel.optimize_itinerary",
+      "category": "travel",
+      "action": "optimize_itinerary",
+      "description": "Optimize trip schedule using constraints, routes, budget, pace, opening hours, and backup options.",
+      "interface": {
+        "type": "function_call",
+        "function": "travel.optimize_itinerary",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "candidate_activities",
+            "type": "array[object]",
+            "required": true,
+            "description": "Activities, appointments, or places to schedule.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "fixed_anchors",
+            "type": "array[object]",
+            "required": true,
+            "description": "Fixed commitments such as flights or meetings.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "traveler_preferences",
+            "type": "object",
+            "required": true,
+            "description": "Pace, food, accessibility, privacy, and lodging preferences.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "budget_limit",
+            "type": "number",
+            "required": true,
+            "description": "Maximum trip budget.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "required": true,
+            "description": "Contingency and buffer preference.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "output_format",
+            "type": "string",
+            "required": false,
+            "description": "Preferred itinerary format.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "optimized_itinerary": "array",
+          "budget_summary": "object",
+          "fallback_options": "array"
+        },
+        "preference_sensitive_parameters": [
+          "candidate_activities",
+          "traveler_preferences",
+          "budget_limit",
+          "risk_tolerance",
+          "output_format"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "candidate_activities",
+            "type": "array[object]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "traveler_preferences",
+            "type": "object",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "budget_limit",
+            "type": "number",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "output_format",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "travel.search_flights",
+      "category": "travel",
+      "action": "search_flights",
+      "description": "Search cached real-world flight snapshots by route, date, fare, timing, and traveler preferences.",
+      "interface": {
+        "type": "function_call",
+        "function": "travel.search_flights",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "origin_airport",
+            "type": "string",
+            "required": true,
+            "description": "Origin airport code or origin city.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "destination_airport",
+            "type": "string",
+            "required": true,
+            "description": "Destination airport code or destination city.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "departure_date",
+            "type": "date",
+            "required": true,
+            "description": "Departure date.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "return_date",
+            "type": "date",
+            "required": false,
+            "description": "Return date.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "passengers",
+            "type": "array[object]",
+            "required": true,
+            "description": "Passenger mix.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "cabin_class",
+            "type": "string",
+            "required": true,
+            "description": "Economy, premium, business, or first.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "max_price",
+            "type": "number",
+            "required": true,
+            "description": "Maximum acceptable fare.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "preferred_airlines",
+            "type": "array[string]",
+            "required": false,
+            "description": "Preferred airlines.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "avoid_airlines",
+            "type": "array[string]",
+            "required": false,
+            "description": "Airlines to avoid.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "baggage_needs",
+            "type": "object",
+            "required": false,
+            "description": "Baggage requirements.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "schedule_preferences",
+            "type": "object",
+            "required": false,
+            "description": "Preferred departure, arrival, and layover constraints.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "required": false,
+            "description": "Tolerance for delays, tight connections, or low-cost carriers.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "source_domains",
+            "type": "array[string]",
+            "required": false,
+            "description": "Preferred source_info domains, normally travel_flights and weather.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "flights": "array",
+          "recommended_itinerary": "object",
+          "tradeoffs": "array",
+          "source_info": "object"
+        },
+        "preference_sensitive_parameters": [
+          "cabin_class",
+          "max_price",
+          "preferred_airlines",
+          "avoid_airlines",
+          "baggage_needs",
+          "schedule_preferences",
+          "risk_tolerance",
+          "source_domains"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "cabin_class",
+            "type": "string",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "max_price",
+            "type": "number",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "preferred_airlines",
+            "type": "array[string]",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "avoid_airlines",
+            "type": "array[string]",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "baggage_needs",
+            "type": "object",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "schedule_preferences",
+            "type": "object",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "source_domains",
+            "type": "array[string]",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "travel.search_lodging",
+      "category": "travel",
+      "action": "search_lodging",
+      "description": "Search cached real-world lodging snapshots with budget, occupancy, neighborhood, house-rule, and safety filters.",
+      "interface": {
+        "type": "function_call",
+        "function": "travel.search_lodging",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "destination",
+            "type": "string",
+            "required": true,
+            "description": "Destination area.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "check_in",
+            "type": "date",
+            "required": true,
+            "description": "Check-in date.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "check_out",
+            "type": "date",
+            "required": true,
+            "description": "Check-out date.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "guests",
+            "type": "integer",
+            "required": true,
+            "description": "Number of guests.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "rooms",
+            "type": "integer",
+            "required": true,
+            "description": "Number of rooms.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "max_nightly_rate",
+            "type": "number",
+            "required": true,
+            "description": "Maximum nightly rate.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "preferred_neighborhoods",
+            "type": "array[string]",
+            "required": false,
+            "description": "Preferred neighborhoods or cities.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "amenities",
+            "type": "array[string]",
+            "required": false,
+            "description": "Required or preferred amenities.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "accessibility_needs",
+            "type": "array[string]",
+            "required": false,
+            "description": "Accessibility needs.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "safety_preference",
+            "type": "string",
+            "required": false,
+            "description": "Safety standard or risk tolerance.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "cancellation_preference",
+            "type": "string",
+            "required": false,
+            "description": "Flexible, moderate, strict, or no preference.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "house_rule_preferences",
+            "type": "array[string]",
+            "required": false,
+            "description": "House rules to require or avoid.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "lodging_options": "array",
+          "recommended_option": "object",
+          "policy_notes": "array",
+          "source_info": "object"
+        },
+        "preference_sensitive_parameters": [
+          "max_nightly_rate",
+          "preferred_neighborhoods",
+          "amenities",
+          "accessibility_needs",
+          "safety_preference",
+          "cancellation_preference",
+          "house_rule_preferences"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "max_nightly_rate",
+            "type": "number",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "preferred_neighborhoods",
+            "type": "array[string]",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "amenities",
+            "type": "array[string]",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "accessibility_needs",
+            "type": "array[string]",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "safety_preference",
+            "type": "string",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "cancellation_preference",
+            "type": "string",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "house_rule_preferences",
+            "type": "array[string]",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "travel.search_transportation",
+      "category": "travel",
+      "action": "search_transportation",
+      "description": "Search trains, buses, rideshare, car rentals, ferries, or local transportation options.",
+      "interface": {
+        "type": "function_call",
+        "function": "travel.search_transportation",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "origin",
+            "type": "string",
+            "required": true,
+            "description": "Origin location.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "destination",
+            "type": "string",
+            "required": true,
+            "description": "Destination location.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "date_or_window",
+            "type": "string",
+            "required": true,
+            "description": "Travel date or time window.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "modes",
+            "type": "array[string]",
+            "required": true,
+            "description": "Transportation modes to consider.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "budget_limit",
+            "type": "number",
+            "required": true,
+            "description": "Maximum acceptable cost.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "accessibility_needs",
+            "type": "array[string]",
+            "required": false,
+            "description": "Accessibility or luggage constraints.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "required": false,
+            "description": "Preference for reliability versus cost.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "transport_options": "array",
+          "recommended_option": "object",
+          "service_alerts": "array"
+        },
+        "preference_sensitive_parameters": [
+          "origin",
+          "destination",
+          "date_or_window",
+          "accessibility_needs",
+          "risk_tolerance"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "origin",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "destination",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "date_or_window",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "accessibility_needs",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    }
+  ]
+}

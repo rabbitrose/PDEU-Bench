@@ -1,0 +1,104 @@
+{
+  "api_name": "travel.search_transportation",
+  "category": "travel",
+  "action": "search_transportation",
+  "description": "Search trains, buses, rideshare, car rentals, ferries, or local transportation options.",
+  "interface": {
+    "type": "function_call",
+    "function": "travel.search_transportation",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "origin",
+        "type": "string",
+        "required": true,
+        "description": "Origin location.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "destination",
+        "type": "string",
+        "required": true,
+        "description": "Destination location.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "date_or_window",
+        "type": "string",
+        "required": true,
+        "description": "Travel date or time window.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "modes",
+        "type": "array[string]",
+        "required": true,
+        "description": "Transportation modes to consider.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "required": true,
+        "description": "Maximum acceptable cost.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "accessibility_needs",
+        "type": "array[string]",
+        "required": false,
+        "description": "Accessibility or luggage constraints.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "required": false,
+        "description": "Preference for reliability versus cost.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "transport_options": "array",
+      "recommended_option": "object",
+      "service_alerts": "array"
+    },
+    "preference_sensitive_parameters": [
+      "origin",
+      "destination",
+      "date_or_window",
+      "accessibility_needs",
+      "risk_tolerance"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "origin",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "destination",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "date_or_window",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "accessibility_needs",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

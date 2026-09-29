@@ -1,0 +1,161 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_014",
+  "user_context": {
+    "fictional_name": "Eleanor Hartley",
+    "age": 45,
+    "location": "美国伊利诺伊州米尔布鲁克",
+    "languages": [
+      "英语"
+    ],
+    "occupation": "艺术与文化记者",
+    "industry": "报社出版业",
+    "household": "已婚，有两个孩子（年龄12岁和9岁）",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "data_sharing": [
+        "谨慎对待个人数据",
+        "阅读隐私政策",
+        "在社交媒体上使用隐私设置"
+      ],
+      "tracking": [
+        "限制位置追踪",
+        "敏感话题使用隐私浏览"
+      ]
+    },
+    "budget_preferences": {
+      "spending": [
+        "优先体验（剧院票、美术用品）",
+        "为家庭旅行存钱",
+        "有预算意识但不节俭"
+      ],
+      "splurges": [
+        "精装书",
+        "现场表演",
+        "高质量相机设备"
+      ]
+    },
+    "technology_preferences": {
+      "devices": [
+        "MacBook",
+        "iPhone",
+        "用iPad阅读"
+      ],
+      "software": [
+        "Microsoft Word",
+        "轻量照片编辑应用",
+        "社交媒体（Facebook用于社区，Instagram用于艺术）"
+      ],
+      "privacy": [
+        "使用广告拦截器",
+        "小心分享个人信息",
+        "偏好加密消息用于消息源"
+      ]
+    },
+    "food_preferences": {
+      "cuisine": [
+        "美式家常菜",
+        "意大利语",
+        "农场新鲜农产品"
+      ],
+      "dining": [
+        "喜欢在家做饭",
+        "特殊场合外出就餐",
+        "偏好安静亲密的环境"
+      ],
+      "restrictions": [
+        "尽量吃有机食品",
+        "无极端饮食"
+      ]
+    },
+    "travel_preferences": {
+      "destinations": [
+        "有文化氛围的小镇",
+        "国家公园",
+        "历史遗迹"
+      ],
+      "accommodations": [
+        "住宿加早餐旅馆",
+        "家庭经营的小旅馆"
+      ],
+      "activities": [
+        "参观当地剧院",
+        "博物馆游览",
+        "风景自驾路线"
+      ]
+    },
+    "learning_preferences": {
+      "formats": [
+        "实践工作坊",
+        "长篇文章",
+        "纪录片"
+      ],
+      "topics": [
+        "新闻伦理",
+        "摄影",
+        "当地历史"
+      ],
+      "pace": [
+        "自定进度",
+        "反思性"
+      ]
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "education.build_study_plan",
+    "education.search_courses",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "entertainment.recommend_media",
+    "entertainment.search_events",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

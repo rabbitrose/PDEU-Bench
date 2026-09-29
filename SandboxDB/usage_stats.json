@@ -1,0 +1,173 @@
+{
+  "schema_version": "SandboxUsageStats.v1",
+  "generated_at": "2026-07-14T19:36:53+08:00",
+  "database_updated_at": "2026-07-14T14:52:45",
+  "api_count": 94,
+  "category_count": 29,
+  "user_count": 214,
+  "workflow_count": 214,
+  "api_categories": {
+    "calendar": 4,
+    "civic": 2,
+    "communications": 1,
+    "contacts": 3,
+    "documents": 8,
+    "education": 4,
+    "email": 3,
+    "entertainment": 2,
+    "events": 3,
+    "finance": 6,
+    "food": 4,
+    "health": 6,
+    "legal": 4,
+    "maps": 3,
+    "media": 1,
+    "messaging": 2,
+    "notes": 1,
+    "privacy": 1,
+    "procurement": 2,
+    "project": 5,
+    "reminders": 1,
+    "research": 8,
+    "security": 3,
+    "shopping": 3,
+    "smart_home": 2,
+    "technology": 3,
+    "translation": 1,
+    "travel": 7,
+    "weather": 1
+  },
+  "task_domain_usage": {
+    "civic": 9,
+    "entertainment": 17,
+    "family": 17,
+    "finance": 8,
+    "health": 12,
+    "home": 18,
+    "learning": 17,
+    "shopping": 17,
+    "social": 19,
+    "technology": 16,
+    "travel": 19,
+    "work": 45
+  },
+  "task_api_count_distribution": {
+    "2": 34,
+    "3": 34,
+    "45": 13,
+    "46": 21,
+    "47": 18,
+    "48": 19,
+    "49": 29,
+    "50": 28,
+    "51": 18
+  },
+  "top_20_api_usage": [
+    [
+      "shopping.search_products",
+      164
+    ],
+    [
+      "calendar.find_availability",
+      163
+    ],
+    [
+      "contacts.search",
+      155
+    ],
+    [
+      "shopping.check_inventory",
+      155
+    ],
+    [
+      "calendar.create_event",
+      154
+    ],
+    [
+      "calendar.search_events",
+      154
+    ],
+    [
+      "privacy.redact_data",
+      154
+    ],
+    [
+      "travel.book_flight_hold",
+      154
+    ],
+    [
+      "travel.search_flights",
+      154
+    ],
+    [
+      "messaging.create_group",
+      150
+    ],
+    [
+      "smart_home.get_devices",
+      148
+    ],
+    [
+      "calendar.update_event",
+      146
+    ],
+    [
+      "contacts.create_or_update",
+      146
+    ],
+    [
+      "documents.create",
+      146
+    ],
+    [
+      "documents.search",
+      146
+    ],
+    [
+      "documents.summarize",
+      146
+    ],
+    [
+      "documents.update",
+      146
+    ],
+    [
+      "email.draft_message",
+      146
+    ],
+    [
+      "email.search_messages",
+      146
+    ],
+    [
+      "email.send_message",
+      146
+    ]
+  ],
+  "category_usage_in_task_workflows": {
+    "calendar": 617,
+    "civic": 18,
+    "contacts": 301,
+    "documents": 584,
+    "education": 144,
+    "email": 438,
+    "entertainment": 85,
+    "finance": 584,
+    "food": 211,
+    "health": 584,
+    "legal": 17,
+    "maps": 438,
+    "messaging": 295,
+    "notes": 146,
+    "privacy": 154,
+    "project": 292,
+    "reminders": 146,
+    "research": 584,
+    "security": 32,
+    "shopping": 465,
+    "smart_home": 290,
+    "translation": 47,
+    "travel": 600,
+    "weather": 146
+  }
+}

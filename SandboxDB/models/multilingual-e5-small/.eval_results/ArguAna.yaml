@@ -1,0 +1,20 @@
+- dataset:
+    id: mteb/arguana
+    task_id: ArguAna_default_test
+    revision: c22ab2a51041ffd869aaddef7af8d8215647e41a
+  value: 39.088
+  notes: Obtained using MTEB v1.36.26
+  source:
+    url: https://github.com/embeddings-benchmark/mteb/
+    name: Obtained using MTEB v1.36.26
+    user: mteb
+- dataset:
+    id: mteb/arguana
+    task_id: ArguAna
+    revision: c22ab2a51041ffd869aaddef7af8d8215647e41a
+  value: 39.088
+  notes: Obtained using MTEB v1.36.26
+  source:
+    url: https://github.com/embeddings-benchmark/mteb/
+    name: Obtained using MTEB v1.36.26
+    user: mteb

@@ -1,0 +1,106 @@
+{
+  "api_name": "health.search_providers",
+  "category": "health",
+  "action": "search_providers",
+  "description": "Search clinicians, therapists, clinics, or labs by specialty, insurance, language, distance, and preferences.",
+  "interface": {
+    "type": "function_call",
+    "function": "health.search_providers",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "specialty",
+        "type": "string",
+        "required": true,
+        "description": "Medical or wellness specialty.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "location",
+        "type": "string",
+        "required": true,
+        "description": "Search area.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "insurance",
+        "type": "string",
+        "required": false,
+        "description": "Insurance plan or self-pay.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "languages",
+        "type": "array[string]",
+        "required": false,
+        "description": "Preferred provider languages.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "availability_window",
+        "type": "object",
+        "required": false,
+        "description": "Preferred appointment windows.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "gender_preference",
+        "type": "string",
+        "required": false,
+        "description": "Provider gender preference.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "telehealth_ok",
+        "type": "boolean",
+        "required": false,
+        "description": "Whether telehealth is acceptable.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "accessibility_needs",
+        "type": "array[string]",
+        "required": false,
+        "description": "Accessibility constraints.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "max_distance_km",
+        "type": "number",
+        "required": false,
+        "description": "Maximum travel distance.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "providers": "array",
+      "recommended_provider": "object",
+      "coverage_notes": "array"
+    },
+    "preference_sensitive_parameters": [
+      "languages",
+      "gender_preference",
+      "accessibility_needs"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "languages",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "gender_preference",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "accessibility_needs",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 1
+}

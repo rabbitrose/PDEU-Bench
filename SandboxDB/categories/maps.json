@@ -1,0 +1,352 @@
+{
+  "schema_version": "SandboxDB.v1",
+  "category": "maps",
+  "api_count": 3,
+  "apis": [
+    {
+      "api_name": "maps.estimate_travel_time",
+      "category": "maps",
+      "action": "estimate_travel_time",
+      "description": "Estimate travel times for multiple modes and departure windows.",
+      "interface": {
+        "type": "function_call",
+        "function": "maps.estimate_travel_time",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "origin",
+            "type": "string",
+            "required": true,
+            "description": "Starting location.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "destination",
+            "type": "string",
+            "required": true,
+            "description": "Destination.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "departure_windows",
+            "type": "array[string]",
+            "required": true,
+            "description": "Candidate departure windows.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "modes",
+            "type": "array[string]",
+            "required": true,
+            "description": "Transportation modes to compare.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "timezone",
+            "type": "string",
+            "required": false,
+            "description": "Timezone.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "reliability_preference",
+            "type": "string",
+            "required": false,
+            "description": "How much buffer the user prefers.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "estimates": "array",
+          "recommended_window": "object",
+          "confidence": "string"
+        },
+        "preference_sensitive_parameters": [
+          "origin",
+          "timezone"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "origin",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "timezone",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "maps.get_route",
+      "category": "maps",
+      "action": "get_route",
+      "description": "Get a route between locations with transportation, timing, budget, safety, and accessibility constraints.",
+      "interface": {
+        "type": "function_call",
+        "function": "maps.get_route",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "origin",
+            "type": "string",
+            "required": true,
+            "description": "Starting location.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "destination",
+            "type": "string",
+            "required": true,
+            "description": "Destination.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "departure_time",
+            "type": "datetime",
+            "required": true,
+            "description": "Preferred departure time.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "mode",
+            "type": "string",
+            "required": true,
+            "description": "driving, walking, transit, cycling, rideshare, or multimodal.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "avoid",
+            "type": "array[string]",
+            "required": false,
+            "description": "Roads, zones, or route features to avoid.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "optimize_for",
+            "type": "string",
+            "required": true,
+            "description": "time, cost, safety, accessibility, comfort, or reliability.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "budget_limit",
+            "type": "number",
+            "required": false,
+            "description": "Maximum transport cost.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "accessibility_needs",
+            "type": "array[string]",
+            "required": false,
+            "description": "Accessibility requirements.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "safety_preference",
+            "type": "string",
+            "required": false,
+            "description": "User risk tolerance for route choices.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "routes": "array",
+          "recommended_route": "object",
+          "risk_notes": "array"
+        },
+        "preference_sensitive_parameters": [
+          "origin",
+          "departure_time",
+          "optimize_for",
+          "accessibility_needs",
+          "safety_preference"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "origin",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "departure_time",
+            "type": "datetime",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "optimize_for",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "accessibility_needs",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "safety_preference",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "maps.search_places",
+      "category": "maps",
+      "action": "search_places",
+      "description": "Search cached real-world place directories using location, category, budget, accessibility, language, and quality filters.",
+      "interface": {
+        "type": "function_call",
+        "function": "maps.search_places",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "query",
+            "type": "string",
+            "required": true,
+            "description": "Place search query.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "near",
+            "type": "string",
+            "required": true,
+            "description": "City, neighborhood, or coordinates.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "radius_km",
+            "type": "number",
+            "required": true,
+            "description": "Search radius.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "category",
+            "type": "string",
+            "required": true,
+            "description": "Place category.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "open_at",
+            "type": "datetime",
+            "required": false,
+            "description": "Required open time.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "budget_level",
+            "type": "string",
+            "required": false,
+            "description": "Budget preference.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "accessibility_needs",
+            "type": "array[string]",
+            "required": false,
+            "description": "Accessibility constraints.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "avoid_features",
+            "type": "array[string]",
+            "required": false,
+            "description": "Features to avoid based on preferences.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "language_support",
+            "type": "array[string]",
+            "required": false,
+            "description": "Preferred service languages.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "min_rating",
+            "type": "number",
+            "required": false,
+            "description": "Minimum rating threshold.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "evidence_preference",
+            "type": "string",
+            "required": false,
+            "description": "Whether to favor directory entries, official listings, high ratings, or proximity.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "places": "array",
+          "ranking_basis": "array",
+          "warnings": "array",
+          "source_info": "object"
+        },
+        "preference_sensitive_parameters": [
+          "radius_km",
+          "open_at",
+          "budget_level",
+          "accessibility_needs",
+          "avoid_features",
+          "language_support",
+          "min_rating",
+          "evidence_preference"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "radius_km",
+            "type": "number",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "open_at",
+            "type": "datetime",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "budget_level",
+            "type": "string",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "accessibility_needs",
+            "type": "array[string]",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "avoid_features",
+            "type": "array[string]",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "language_support",
+            "type": "array[string]",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "min_rating",
+            "type": "number",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "evidence_preference",
+            "type": "string",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    }
+  ]
+}

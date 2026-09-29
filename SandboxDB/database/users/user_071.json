@@ -1,0 +1,118 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_071",
+  "user_context": {
+    "fictional_name": "Amelia Brooks",
+    "age": 31,
+    "location": "加拿大温哥华",
+    "languages": [
+      "英语",
+      "法语"
+    ],
+    "occupation": "A management professional focused on optimizing resources and implementing patient-centered care initiatives",
+    "industry": "教育培训",
+    "household": "与伴侣同住",
+    "accessibility_needs": "避免长时间站立",
+    "privacy_preferences": [
+      "只提供完成任务必要的信息。",
+      "涉及家庭、健康、财务时需要匿名化或概括处理。",
+      "对位置、联系人和敏感历史保持谨慎。"
+    ],
+    "budget_preferences": [
+      "默认使用保守预算。",
+      "需要区分必须花费和可推迟花费。",
+      "若超预算必须给出替代方案。"
+    ],
+    "technology_preferences": [
+      "偏好跨设备同步但能导出数据的工具。",
+      "默认开启隐私保护和最小权限。",
+      "不喜欢被锁定在单一平台。"
+    ],
+    "food_preferences": [
+      "偏好不过度油腻、能稳定执行当天安排的餐食。",
+      "预算敏感，愿意选择本地小店或自己做饭。",
+      "需要考虑同行者限制。"
+    ],
+    "travel_preferences": [
+      "路线要留出缓冲。",
+      "住宿和交通优先考虑安全、安静和可取消性。",
+      "避免把热门景点当作默认最佳。"
+    ],
+    "learning_preferences": [
+      "偏好短周期反馈。",
+      "需要示例和可复盘标准。",
+      "不喜欢只堆材料链接。"
+    ],
+    "communication_preferences": {
+      "tone": "学习教练模式：循序渐进、反馈明确、避免信息过载。",
+      "response_length": "中等偏短；主要工作语言：英语。只展开影响决策的部分。",
+      "evidence_expectation": "偏好例题、评分标准和可观察进步指标。",
+      "formatting": "学习目标 / 今日练习 / 反馈点 / 下一次复盘。",
+      "proactive_behavior": "仅在符合用户决策优先级时主动建议：练习质量、反馈循环和可坚持性优先于课程名气。",
+      "things_to_avoid": [
+        "堆资源",
+        "只给大道理",
+        "忽略当前水平",
+        "不要给出与用户画像无关的泛化建议。"
+      ],
+      "personalization_intensity": "高",
+      "nonstandard_assistant_behavior": "先指出边界和未确认点，再给推荐。",
+      "decision_priority_order": "练习质量、反馈循环和可坚持性优先于课程名气。",
+      "distinctive_response_contract": "学习目标 / 今日练习 / 反馈点 / 下一次复盘。"
+    }
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "education.search_courses",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "translation.translate_text",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

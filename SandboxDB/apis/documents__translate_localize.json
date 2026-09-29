@@ -1,0 +1,85 @@
+{
+  "api_name": "documents.translate_localize",
+  "category": "documents",
+  "action": "translate_localize",
+  "description": "Translate and localize documents while preserving tone, format, terminology, and privacy requirements.",
+  "interface": {
+    "type": "function_call",
+    "function": "documents.translate_localize",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "document_ids_or_text",
+        "type": "array[string]",
+        "required": true,
+        "description": "Documents or text to translate.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "source_language",
+        "type": "string",
+        "required": true,
+        "description": "Source language.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "target_language",
+        "type": "string",
+        "required": true,
+        "description": "Target language.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "localization_region",
+        "type": "string",
+        "required": true,
+        "description": "Region for terminology and cultural fit.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "tone",
+        "type": "string",
+        "required": true,
+        "description": "Preferred tone and style.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "required": false,
+        "description": "Sensitive detail handling.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "localized_documents": "array",
+      "terminology_notes": "array",
+      "quality_warnings": "array"
+    },
+    "preference_sensitive_parameters": [
+      "source_language",
+      "target_language",
+      "tone"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "source_language",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "target_language",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "tone",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

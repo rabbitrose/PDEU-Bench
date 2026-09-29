@@ -1,0 +1,165 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_114",
+  "user_context": {
+    "fictional_name": "Marcus Whitfield",
+    "age": 58,
+    "location": "New York, NY, USA",
+    "languages": [
+      "英语",
+      "法语"
+    ],
+    "occupation": "首席创意官",
+    "industry": "广告",
+    "household": "已婚，两个成年孩子（已离家），一只金毛猎犬",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "data_sharing": [
+        "极简，仅必要服务",
+        "不信任社交媒体公司"
+      ],
+      "tracking": [
+        "使用广告拦截器",
+        "选择退出定向广告",
+        "偏好无痕模式"
+      ],
+      "communication": [
+        "对敏感话题使用加密邮件",
+        "避免使用公共Wi-Fi工作"
+      ]
+    },
+    "budget_preferences": {
+      "spending_style": [
+        "投资经久耐用的优质物品",
+        "愿意为专业知识付费",
+        "避免浪费和过度消费"
+      ],
+      "splurge_categories": [
+        "旅行体验",
+        "高级餐饮",
+        "黑胶唱片",
+        "定制家具"
+      ],
+      "saving_categories": [
+        "名牌服装",
+        "改进不大的小玩意",
+        "时髦餐厅"
+      ]
+    },
+    "technology_preferences": {
+      "devices": [
+        "iPhone, MacBook, iPad",
+        "Sony 耳机",
+        "Fujifilm 相机"
+      ],
+      "software": [
+        "Adobe Creative Suite",
+        "Slack（不情愿地）",
+        "Spotify 听音乐"
+      ],
+      "attitude": [
+        "采用能节省时间或增强创造力的技术",
+        "对AI生成的创意作品持怀疑态度",
+        "比起数字沟通更偏好面对面"
+      ]
+    },
+    "food_preferences": {
+      "cuisine": [
+        "法语",
+        "意大利语",
+        "日本料理（尤其是omakase）",
+        "美式地方菜"
+      ],
+      "dining_style": [
+        "长时间的、以对话为主的餐食",
+        "知识渊博的服务员",
+        "避免自助餐和快餐休闲"
+      ],
+      "restrictions": [
+        "无，但偏好有机和可持续食材"
+      ]
+    },
+    "travel_preferences": {
+      "destination_type": [
+        "有历史和文化底蕴的城市",
+        "人迹罕至的地点",
+        "避免全包式度假村"
+      ],
+      "accommodation": [
+        "有特色的精品酒店",
+        "带书房的度假出租屋",
+        "偏好安静的社区"
+      ],
+      "activities": [
+        "参观博物馆",
+        "建筑之旅",
+        "当地爵士俱乐部",
+        "与当地人一起上烹饪课"
+      ]
+    },
+    "learning_preferences": {
+      "style": [
+        "阅读案例研究",
+        "动手实践工作坊",
+        "指导会议（给予和接受）"
+      ],
+      "format": [
+        "书籍和长文章",
+        "面对面讲座或小型研讨会",
+        "避免带有测验的电子学习模块"
+      ]
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "api_name": "entertainment.search_events",
+  "category": "entertainment",
+  "action": "search_events",
+  "description": "Search local or online events with date, budget, accessibility, crowd, and interest filters.",
+  "interface": {
+    "type": "function_call",
+    "function": "entertainment.search_events",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "location",
+        "type": "string",
+        "required": true,
+        "description": "Event location.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "date_range",
+        "type": "object",
+        "required": true,
+        "description": "Date range.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "interests",
+        "type": "array[string]",
+        "required": true,
+        "description": "User interests.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "max_price",
+        "type": "number",
+        "required": true,
+        "description": "Maximum ticket price.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "group_size",
+        "type": "integer",
+        "required": true,
+        "description": "Number of attendees.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "accessibility_needs",
+        "type": "array[string]",
+        "required": false,
+        "description": "Accessibility needs.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "crowd_preference",
+        "type": "string",
+        "required": false,
+        "description": "Quiet, moderate, lively, or no preference.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "language_preference",
+        "type": "string",
+        "required": false,
+        "description": "Preferred language.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "events": "array",
+      "recommended_event": "object",
+      "logistics_notes": "array"
+    },
+    "preference_sensitive_parameters": [
+      "location",
+      "accessibility_needs",
+      "crowd_preference",
+      "language_preference"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "location",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "accessibility_needs",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "crowd_preference",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "language_preference",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

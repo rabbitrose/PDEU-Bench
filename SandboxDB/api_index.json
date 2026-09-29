@@ -1,0 +1,472 @@
+{
+  "calendar.create_event": {
+    "category": "calendar",
+    "action": "create_event",
+    "definition_path": "apis/calendar__create_event.json"
+  },
+  "calendar.find_availability": {
+    "category": "calendar",
+    "action": "find_availability",
+    "definition_path": "apis/calendar__find_availability.json"
+  },
+  "calendar.search_events": {
+    "category": "calendar",
+    "action": "search_events",
+    "definition_path": "apis/calendar__search_events.json"
+  },
+  "calendar.update_event": {
+    "category": "calendar",
+    "action": "update_event",
+    "definition_path": "apis/calendar__update_event.json"
+  },
+  "civic.find_services": {
+    "category": "civic",
+    "action": "find_services",
+    "definition_path": "apis/civic__find_services.json"
+  },
+  "civic.submit_request": {
+    "category": "civic",
+    "action": "submit_request",
+    "definition_path": "apis/civic__submit_request.json"
+  },
+  "communications.plan_outreach": {
+    "category": "communications",
+    "action": "plan_outreach",
+    "definition_path": "apis/communications__plan_outreach.json"
+  },
+  "contacts.create_or_update": {
+    "category": "contacts",
+    "action": "create_or_update",
+    "definition_path": "apis/contacts__create_or_update.json"
+  },
+  "contacts.find_experts": {
+    "category": "contacts",
+    "action": "find_experts",
+    "definition_path": "apis/contacts__find_experts.json"
+  },
+  "contacts.search": {
+    "category": "contacts",
+    "action": "search",
+    "definition_path": "apis/contacts__search.json"
+  },
+  "documents.create": {
+    "category": "documents",
+    "action": "create",
+    "definition_path": "apis/documents__create.json"
+  },
+  "documents.create_checklist": {
+    "category": "documents",
+    "action": "create_checklist",
+    "definition_path": "apis/documents__create_checklist.json"
+  },
+  "documents.extract_requirements": {
+    "category": "documents",
+    "action": "extract_requirements",
+    "definition_path": "apis/documents__extract_requirements.json"
+  },
+  "documents.generate_presentation": {
+    "category": "documents",
+    "action": "generate_presentation",
+    "definition_path": "apis/documents__generate_presentation.json"
+  },
+  "documents.search": {
+    "category": "documents",
+    "action": "search",
+    "definition_path": "apis/documents__search.json"
+  },
+  "documents.summarize": {
+    "category": "documents",
+    "action": "summarize",
+    "definition_path": "apis/documents__summarize.json"
+  },
+  "documents.translate_localize": {
+    "category": "documents",
+    "action": "translate_localize",
+    "definition_path": "apis/documents__translate_localize.json"
+  },
+  "documents.update": {
+    "category": "documents",
+    "action": "update",
+    "definition_path": "apis/documents__update.json"
+  },
+  "education.build_study_plan": {
+    "category": "education",
+    "action": "build_study_plan",
+    "definition_path": "apis/education__build_study_plan.json"
+  },
+  "education.create_assessment": {
+    "category": "education",
+    "action": "create_assessment",
+    "definition_path": "apis/education__create_assessment.json"
+  },
+  "education.find_learning_resources": {
+    "category": "education",
+    "action": "find_learning_resources",
+    "definition_path": "apis/education__find_learning_resources.json"
+  },
+  "education.search_courses": {
+    "category": "education",
+    "action": "search_courses",
+    "definition_path": "apis/education__search_courses.json"
+  },
+  "email.draft_message": {
+    "category": "email",
+    "action": "draft_message",
+    "definition_path": "apis/email__draft_message.json"
+  },
+  "email.search_messages": {
+    "category": "email",
+    "action": "search_messages",
+    "definition_path": "apis/email__search_messages.json"
+  },
+  "email.send_message": {
+    "category": "email",
+    "action": "send_message",
+    "definition_path": "apis/email__send_message.json"
+  },
+  "entertainment.recommend_media": {
+    "category": "entertainment",
+    "action": "recommend_media",
+    "definition_path": "apis/entertainment__recommend_media.json"
+  },
+  "entertainment.search_events": {
+    "category": "entertainment",
+    "action": "search_events",
+    "definition_path": "apis/entertainment__search_events.json"
+  },
+  "events.manage_rsvp": {
+    "category": "events",
+    "action": "manage_rsvp",
+    "definition_path": "apis/events__manage_rsvp.json"
+  },
+  "events.plan_event": {
+    "category": "events",
+    "action": "plan_event",
+    "definition_path": "apis/events__plan_event.json"
+  },
+  "events.search_venues": {
+    "category": "events",
+    "action": "search_venues",
+    "definition_path": "apis/events__search_venues.json"
+  },
+  "finance.compare_prices": {
+    "category": "finance",
+    "action": "compare_prices",
+    "definition_path": "apis/finance__compare_prices.json"
+  },
+  "finance.compare_services": {
+    "category": "finance",
+    "action": "compare_services",
+    "definition_path": "apis/finance__compare_services.json"
+  },
+  "finance.create_budget_plan": {
+    "category": "finance",
+    "action": "create_budget_plan",
+    "definition_path": "apis/finance__create_budget_plan.json"
+  },
+  "finance.get_accounts": {
+    "category": "finance",
+    "action": "get_accounts",
+    "definition_path": "apis/finance__get_accounts.json"
+  },
+  "finance.plan_payments": {
+    "category": "finance",
+    "action": "plan_payments",
+    "definition_path": "apis/finance__plan_payments.json"
+  },
+  "finance.search_transactions": {
+    "category": "finance",
+    "action": "search_transactions",
+    "definition_path": "apis/finance__search_transactions.json"
+  },
+  "food.create_meal_plan": {
+    "category": "food",
+    "action": "create_meal_plan",
+    "definition_path": "apis/food__create_meal_plan.json"
+  },
+  "food.plan_catering": {
+    "category": "food",
+    "action": "plan_catering",
+    "definition_path": "apis/food__plan_catering.json"
+  },
+  "food.search_recipes": {
+    "category": "food",
+    "action": "search_recipes",
+    "definition_path": "apis/food__search_recipes.json"
+  },
+  "food.search_restaurants": {
+    "category": "food",
+    "action": "search_restaurants",
+    "definition_path": "apis/food__search_restaurants.json"
+  },
+  "health.find_wellness_options": {
+    "category": "health",
+    "action": "find_wellness_options",
+    "definition_path": "apis/health__find_wellness_options.json"
+  },
+  "health.log_symptoms": {
+    "category": "health",
+    "action": "log_symptoms",
+    "definition_path": "apis/health__log_symptoms.json"
+  },
+  "health.medication_lookup": {
+    "category": "health",
+    "action": "medication_lookup",
+    "definition_path": "apis/health__medication_lookup.json"
+  },
+  "health.review_guidelines": {
+    "category": "health",
+    "action": "review_guidelines",
+    "definition_path": "apis/health__review_guidelines.json"
+  },
+  "health.schedule_appointment": {
+    "category": "health",
+    "action": "schedule_appointment",
+    "definition_path": "apis/health__schedule_appointment.json"
+  },
+  "health.search_providers": {
+    "category": "health",
+    "action": "search_providers",
+    "definition_path": "apis/health__search_providers.json"
+  },
+  "legal.create_checklist": {
+    "category": "legal",
+    "action": "create_checklist",
+    "definition_path": "apis/legal__create_checklist.json"
+  },
+  "legal.prepare_forms": {
+    "category": "legal",
+    "action": "prepare_forms",
+    "definition_path": "apis/legal__prepare_forms.json"
+  },
+  "legal.review_requirements": {
+    "category": "legal",
+    "action": "review_requirements",
+    "definition_path": "apis/legal__review_requirements.json"
+  },
+  "legal.search_documents": {
+    "category": "legal",
+    "action": "search_documents",
+    "definition_path": "apis/legal__search_documents.json"
+  },
+  "maps.estimate_travel_time": {
+    "category": "maps",
+    "action": "estimate_travel_time",
+    "definition_path": "apis/maps__estimate_travel_time.json"
+  },
+  "maps.get_route": {
+    "category": "maps",
+    "action": "get_route",
+    "definition_path": "apis/maps__get_route.json"
+  },
+  "maps.search_places": {
+    "category": "maps",
+    "action": "search_places",
+    "definition_path": "apis/maps__search_places.json"
+  },
+  "media.search_assets": {
+    "category": "media",
+    "action": "search_assets",
+    "definition_path": "apis/media__search_assets.json"
+  },
+  "messaging.create_group": {
+    "category": "messaging",
+    "action": "create_group",
+    "definition_path": "apis/messaging__create_group.json"
+  },
+  "messaging.send_message": {
+    "category": "messaging",
+    "action": "send_message",
+    "definition_path": "apis/messaging__send_message.json"
+  },
+  "notes.create_note": {
+    "category": "notes",
+    "action": "create_note",
+    "definition_path": "apis/notes__create_note.json"
+  },
+  "privacy.redact_data": {
+    "category": "privacy",
+    "action": "redact_data",
+    "definition_path": "apis/privacy__redact_data.json"
+  },
+  "procurement.compare_vendor_quotes": {
+    "category": "procurement",
+    "action": "compare_vendor_quotes",
+    "definition_path": "apis/procurement__compare_vendor_quotes.json"
+  },
+  "procurement.search_vendors": {
+    "category": "procurement",
+    "action": "search_vendors",
+    "definition_path": "apis/procurement__search_vendors.json"
+  },
+  "project.assign_tasks": {
+    "category": "project",
+    "action": "assign_tasks",
+    "definition_path": "apis/project__assign_tasks.json"
+  },
+  "project.create_task_list": {
+    "category": "project",
+    "action": "create_task_list",
+    "definition_path": "apis/project__create_task_list.json"
+  },
+  "project.plan_milestones": {
+    "category": "project",
+    "action": "plan_milestones",
+    "definition_path": "apis/project__plan_milestones.json"
+  },
+  "project.track_risks": {
+    "category": "project",
+    "action": "track_risks",
+    "definition_path": "apis/project__track_risks.json"
+  },
+  "project.update_status": {
+    "category": "project",
+    "action": "update_status",
+    "definition_path": "apis/project__update_status.json"
+  },
+  "reminders.create": {
+    "category": "reminders",
+    "action": "create",
+    "definition_path": "apis/reminders__create.json"
+  },
+  "research.analyze_table": {
+    "category": "research",
+    "action": "analyze_table",
+    "definition_path": "apis/research__analyze_table.json"
+  },
+  "research.compare_options": {
+    "category": "research",
+    "action": "compare_options",
+    "definition_path": "apis/research__compare_options.json"
+  },
+  "research.fact_check": {
+    "category": "research",
+    "action": "fact_check",
+    "definition_path": "apis/research__fact_check.json"
+  },
+  "research.monitor_updates": {
+    "category": "research",
+    "action": "monitor_updates",
+    "definition_path": "apis/research__monitor_updates.json"
+  },
+  "research.retrieve_dataset": {
+    "category": "research",
+    "action": "retrieve_dataset",
+    "definition_path": "apis/research__retrieve_dataset.json"
+  },
+  "research.review_evidence": {
+    "category": "research",
+    "action": "review_evidence",
+    "definition_path": "apis/research__review_evidence.json"
+  },
+  "research.search_sources": {
+    "category": "research",
+    "action": "search_sources",
+    "definition_path": "apis/research__search_sources.json"
+  },
+  "research.web_search": {
+    "category": "research",
+    "action": "web_search",
+    "definition_path": "apis/research__web_search.json"
+  },
+  "security.configure_2fa": {
+    "category": "security",
+    "action": "configure_2fa",
+    "definition_path": "apis/security__configure_2fa.json"
+  },
+  "security.evaluate_tools": {
+    "category": "security",
+    "action": "evaluate_tools",
+    "definition_path": "apis/security__evaluate_tools.json"
+  },
+  "security.password_audit": {
+    "category": "security",
+    "action": "password_audit",
+    "definition_path": "apis/security__password_audit.json"
+  },
+  "shopping.check_inventory": {
+    "category": "shopping",
+    "action": "check_inventory",
+    "definition_path": "apis/shopping__check_inventory.json"
+  },
+  "shopping.create_cart": {
+    "category": "shopping",
+    "action": "create_cart",
+    "definition_path": "apis/shopping__create_cart.json"
+  },
+  "shopping.search_products": {
+    "category": "shopping",
+    "action": "search_products",
+    "definition_path": "apis/shopping__search_products.json"
+  },
+  "smart_home.get_devices": {
+    "category": "smart_home",
+    "action": "get_devices",
+    "definition_path": "apis/smart_home__get_devices.json"
+  },
+  "smart_home.set_device_state": {
+    "category": "smart_home",
+    "action": "set_device_state",
+    "definition_path": "apis/smart_home__set_device_state.json"
+  },
+  "technology.check_compatibility": {
+    "category": "technology",
+    "action": "check_compatibility",
+    "definition_path": "apis/technology__check_compatibility.json"
+  },
+  "technology.compare_tools": {
+    "category": "technology",
+    "action": "compare_tools",
+    "definition_path": "apis/technology__compare_tools.json"
+  },
+  "technology.plan_migration": {
+    "category": "technology",
+    "action": "plan_migration",
+    "definition_path": "apis/technology__plan_migration.json"
+  },
+  "translation.translate_text": {
+    "category": "translation",
+    "action": "translate_text",
+    "definition_path": "apis/translation__translate_text.json"
+  },
+  "travel.book_flight_hold": {
+    "category": "travel",
+    "action": "book_flight_hold",
+    "definition_path": "apis/travel__book_flight_hold.json"
+  },
+  "travel.build_itinerary": {
+    "category": "travel",
+    "action": "build_itinerary",
+    "definition_path": "apis/travel__build_itinerary.json"
+  },
+  "travel.check_requirements": {
+    "category": "travel",
+    "action": "check_requirements",
+    "definition_path": "apis/travel__check_requirements.json"
+  },
+  "travel.optimize_itinerary": {
+    "category": "travel",
+    "action": "optimize_itinerary",
+    "definition_path": "apis/travel__optimize_itinerary.json"
+  },
+  "travel.search_flights": {
+    "category": "travel",
+    "action": "search_flights",
+    "definition_path": "apis/travel__search_flights.json"
+  },
+  "travel.search_lodging": {
+    "category": "travel",
+    "action": "search_lodging",
+    "definition_path": "apis/travel__search_lodging.json"
+  },
+  "travel.search_transportation": {
+    "category": "travel",
+    "action": "search_transportation",
+    "definition_path": "apis/travel__search_transportation.json"
+  },
+  "weather.get_forecast": {
+    "category": "weather",
+    "action": "get_forecast",
+    "definition_path": "apis/weather__get_forecast.json"
+  }
+}

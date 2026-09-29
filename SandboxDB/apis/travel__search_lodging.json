@@ -1,0 +1,152 @@
+{
+  "api_name": "travel.search_lodging",
+  "category": "travel",
+  "action": "search_lodging",
+  "description": "Search cached real-world lodging snapshots with budget, occupancy, neighborhood, house-rule, and safety filters.",
+  "interface": {
+    "type": "function_call",
+    "function": "travel.search_lodging",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "destination",
+        "type": "string",
+        "required": true,
+        "description": "Destination area.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "check_in",
+        "type": "date",
+        "required": true,
+        "description": "Check-in date.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "check_out",
+        "type": "date",
+        "required": true,
+        "description": "Check-out date.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "guests",
+        "type": "integer",
+        "required": true,
+        "description": "Number of guests.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "rooms",
+        "type": "integer",
+        "required": true,
+        "description": "Number of rooms.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "max_nightly_rate",
+        "type": "number",
+        "required": true,
+        "description": "Maximum nightly rate.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "preferred_neighborhoods",
+        "type": "array[string]",
+        "required": false,
+        "description": "Preferred neighborhoods or cities.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "amenities",
+        "type": "array[string]",
+        "required": false,
+        "description": "Required or preferred amenities.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "accessibility_needs",
+        "type": "array[string]",
+        "required": false,
+        "description": "Accessibility needs.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "safety_preference",
+        "type": "string",
+        "required": false,
+        "description": "Safety standard or risk tolerance.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "cancellation_preference",
+        "type": "string",
+        "required": false,
+        "description": "Flexible, moderate, strict, or no preference.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "house_rule_preferences",
+        "type": "array[string]",
+        "required": false,
+        "description": "House rules to require or avoid.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "lodging_options": "array",
+      "recommended_option": "object",
+      "policy_notes": "array",
+      "source_info": "object"
+    },
+    "preference_sensitive_parameters": [
+      "max_nightly_rate",
+      "preferred_neighborhoods",
+      "amenities",
+      "accessibility_needs",
+      "safety_preference",
+      "cancellation_preference",
+      "house_rule_preferences"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "max_nightly_rate",
+        "type": "number",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "preferred_neighborhoods",
+        "type": "array[string]",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "amenities",
+        "type": "array[string]",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "accessibility_needs",
+        "type": "array[string]",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "safety_preference",
+        "type": "string",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "cancellation_preference",
+        "type": "string",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "house_rule_preferences",
+        "type": "array[string]",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

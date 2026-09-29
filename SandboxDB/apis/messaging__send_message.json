@@ -1,0 +1,92 @@
+{
+  "api_name": "messaging.send_message",
+  "category": "messaging",
+  "action": "send_message",
+  "description": "Send a direct or group message using preferred channel, tone, and privacy controls.",
+  "interface": {
+    "type": "function_call",
+    "function": "messaging.send_message",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "channel",
+        "type": "string",
+        "required": true,
+        "description": "SMS, chat app, secure messenger, workplace chat, or social app.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "recipients",
+        "type": "array[string]",
+        "required": true,
+        "description": "Recipients.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "required": true,
+        "description": "Message content.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "tone",
+        "type": "string",
+        "required": true,
+        "description": "Tone preference.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "send_at",
+        "type": "datetime",
+        "required": false,
+        "description": "Optional scheduled time.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "required": false,
+        "description": "Privacy and redaction mode.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "requires_confirmation",
+        "type": "boolean",
+        "required": false,
+        "description": "Whether user confirmation is required.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "message_id": "string",
+      "delivery_status": "string",
+      "requires_followup": "boolean"
+    },
+    "preference_sensitive_parameters": [
+      "tone",
+      "send_at",
+      "privacy_mode"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "tone",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "send_at",
+        "type": "datetime",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

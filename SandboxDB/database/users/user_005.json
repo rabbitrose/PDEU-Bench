@@ -1,0 +1,118 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_005",
+  "user_context": {
+    "fictional_name": "法蒂玛·阿里",
+    "age": 35,
+    "location": "巴基斯坦信德省海得拉巴",
+    "languages": [
+      "信德语",
+      "乌尔都语",
+      "基础英语"
+    ],
+    "occupation": "家庭主妇",
+    "industry": "家庭",
+    "household": "已婚，有两个孩子（8岁和12岁），与丈夫和公婆同住",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "sharing": "非常注重隐私；不在网上分享家庭事务，避免自拍，更喜欢语音通话",
+      "data_concerns": "担心诈骗和个人信息被滥用"
+    },
+    "budget_preferences": {
+      "spending_style": "谨慎且节俭，优先考虑孩子的需求和储蓄",
+      "payment_method": "偏好现金；避免使用信用卡",
+      "splurging_areas": "孩子活动、宗教节日（开斋节）和待客之道"
+    },
+    "technology_preferences": {
+      "devices": [
+        "基本智能手机（主要用于WhatsApp和YouTube）",
+        "偏好简单界面"
+      ],
+      "usage": [
+        "用手机打电话、发信息、看视频",
+        "除了 WhatsApp 之外不使用社交媒体"
+      ],
+      "willingness_to_adopt": "如果看到新科技如何帮助家庭（例如儿童教育应用），则愿意尝试"
+    },
+    "food_preferences": {
+      "cuisines": [
+        "信德语（sai bhaji, biryani, dhoodh）",
+        "Biryani",
+        "简单的家常菜"
+      ],
+      "dietary_restrictions": "本身没有禁忌，但因健康原因避免过多红肉，吃清真食品",
+      "flavors": [
+        "微辣、酸（罗望子、柠檬）",
+        "用传统甜点如khoya招待客人"
+      ]
+    },
+    "travel_preferences": [
+      "很少旅行",
+      "偏好短途回乡或前往宗教圣地（如塞赫万谢里夫）",
+      "避免乘飞机"
+    ],
+    "learning_preferences": {
+      "style": [
+        "视觉和动手型",
+        "更喜欢向信任的朋友或家人学习，而非正式课程"
+      ],
+      "subjects": [
+        "新食谱",
+        "古兰经学习",
+        "帮助孩子的基础英语"
+      ]
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "api_name": "reminders.create",
+  "category": "reminders",
+  "action": "create",
+  "description": "Create reminders based on user routine, urgency, and preferred channels.",
+  "interface": {
+    "type": "function_call",
+    "function": "reminders.create",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "title",
+        "type": "string",
+        "required": true,
+        "description": "Reminder title.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "due_at",
+        "type": "datetime",
+        "required": true,
+        "description": "Reminder due time.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "priority",
+        "type": "string",
+        "required": true,
+        "description": "Priority level.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "channel",
+        "type": "string",
+        "required": true,
+        "description": "Notification channel.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "repeat_rule",
+        "type": "string",
+        "required": false,
+        "description": "Repeat rule.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "context",
+        "type": "string",
+        "required": false,
+        "description": "Why the reminder matters.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "quiet_hours_policy",
+        "type": "string",
+        "required": false,
+        "description": "How to respect quiet hours.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "reminder_id": "string",
+      "status": "string",
+      "notification_plan": "object"
+    },
+    "preference_sensitive_parameters": [
+      "due_at",
+      "priority"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "due_at",
+        "type": "datetime",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "priority",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

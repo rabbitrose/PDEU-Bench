@@ -1,0 +1,98 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_078",
+  "user_context": {
+    "fictional_name": "Alex Chen",
+    "age": 34,
+    "location": "加利福尼亚州旧金山",
+    "languages": [
+      "英语",
+      "普通话（会话水平）"
+    ],
+    "occupation": "高级软件工程师",
+    "industry": "企业软件（文档管理）",
+    "household": "独自住在一间一居室公寓",
+    "accessibility_needs": "无",
+    "privacy_preferences": [
+      "使用VPN",
+      "偏好开源隐私工具",
+      "避免社交媒体分享"
+    ],
+    "budget_preferences": [
+      "愿意为优质工具和体验花钱",
+      "在基本开销上节俭"
+    ],
+    "technology_preferences": [
+      "开源爱好者",
+      "服务器用Linux",
+      "日常使用macOS"
+    ],
+    "food_preferences": [
+      "亚洲菜（拉面，点心）",
+      "偶尔素食选择"
+    ],
+    "travel_preferences": [
+      "城市目的地",
+      "美食和文化",
+      "避开拥挤的旅游景点"
+    ],
+    "learning_preferences": [
+      "动手教程",
+      "官方文档",
+      "LeetCode"
+    ],
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

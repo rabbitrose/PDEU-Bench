@@ -1,0 +1,79 @@
+{
+  "api_name": "documents.create_checklist",
+  "category": "documents",
+  "action": "create_checklist",
+  "description": "Create an actionable checklist from task goals, constraints, evidence, and user preferences.",
+  "interface": {
+    "type": "function_call",
+    "function": "documents.create_checklist",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "goal",
+        "type": "string",
+        "required": true,
+        "description": "Checklist goal.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "items_source",
+        "type": "array[string]",
+        "required": true,
+        "description": "Inputs to convert into checklist items.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "priority_rules",
+        "type": "array[string]",
+        "required": true,
+        "description": "Rules for ordering and grouping checklist items.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "format",
+        "type": "string",
+        "required": true,
+        "description": "Preferred checklist format.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "language",
+        "type": "string",
+        "required": false,
+        "description": "Checklist language.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "required": false,
+        "description": "Sensitive detail handling.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "checklist": "array",
+      "grouping": "object",
+      "open_questions": "array"
+    },
+    "preference_sensitive_parameters": [
+      "format",
+      "language"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "format",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "language",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

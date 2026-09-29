@@ -1,0 +1,86 @@
+{
+  "api_name": "documents.summarize",
+  "category": "documents",
+  "action": "summarize",
+  "description": "Summarize documents according to user detail, evidence, and formatting preferences.",
+  "interface": {
+    "type": "function_call",
+    "function": "documents.summarize",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "document_ids",
+        "type": "array[string]",
+        "required": true,
+        "description": "Documents to summarize.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "summary_goal",
+        "type": "string",
+        "required": true,
+        "description": "Purpose of summary.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "detail_level",
+        "type": "string",
+        "required": true,
+        "description": "Brief, standard, detailed, or exhaustive.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "format",
+        "type": "string",
+        "required": true,
+        "description": "Output format such as bullets, memo, table, checklist.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "citation_style",
+        "type": "string",
+        "required": false,
+        "description": "Citation or evidence style.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "focus_areas",
+        "type": "array[string]",
+        "required": true,
+        "description": "Topics to emphasize.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "required": false,
+        "description": "Sensitive data handling.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "summary": "object",
+      "citations": "array",
+      "open_questions": "array"
+    },
+    "preference_sensitive_parameters": [
+      "format",
+      "citation_style"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "format",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "citation_style",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

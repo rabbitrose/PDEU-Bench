@@ -1,0 +1,149 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_124",
+  "user_context": {
+    "fictional_name": "Elena Marchetti",
+    "age": 42,
+    "location": "美国俄勒冈州波特兰",
+    "languages": [
+      "英语",
+      "法语（会话水平）"
+    ],
+    "occupation": "博物馆教育者与工作坊主持人",
+    "industry": "艺术与文化",
+    "household": "与伴侣同住，无子女",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "sharing": [
+        "乐于公开分享职业生活和兴趣",
+        "私人信息（地址、家人）保密"
+      ],
+      "data_usage": [
+        "接受基于浏览历史的个性化推荐",
+        "退出第三方数据共享"
+      ]
+    },
+    "budget_preferences": {
+      "spending_priorities": [
+        "体验（旅行、餐饮、活动）",
+        "优质葡萄酒",
+        "艺术书籍和博物馆会员"
+      ],
+      "saving_on": [
+        "服装（个性单品除外）",
+        "小工具"
+      ],
+      "price_sensitivity": "体验类低，物质商品类中等"
+    },
+    "technology_preferences": {
+      "devices": [
+        "工作用笔记本电脑",
+        "演示用平板电脑",
+        "创意构思用模拟笔记本"
+      ],
+      "software": [
+        "Google Workspace",
+        "演示用PowerPoint",
+        "灵感的Instagram"
+      ],
+      "social_media": [
+        "活跃于Instagram上关注艺术与葡萄酒账号",
+        "职业社交的LinkedIn"
+      ]
+    },
+    "food_preferences": {
+      "cuisine": [
+        "意大利语",
+        "法语",
+        "从农场到餐桌的美国菜"
+      ],
+      "dietary": [
+        "杂食者偏好有机和本地食材"
+      ],
+      "favorite_foods": [
+        "奶酪与冷切拼盘",
+        "烤蔬菜",
+        "烤鱼"
+      ]
+    },
+    "travel_preferences": {
+      "destinations": [
+        "文化之都（巴黎、佛罗伦萨）",
+        "葡萄酒产区（波尔多、托斯卡纳、威拉米特）"
+      ],
+      "accommodation": [
+        "拥有艺术收藏的精品酒店",
+        "农庄度假"
+      ],
+      "activities": [
+        "参观博物馆",
+        "酒庄参观",
+        "烹饪课程"
+      ]
+    },
+    "learning_preferences": {
+      "style": [
+        "动手实践工作坊",
+        "多媒体演示",
+        "感官学习（品尝、闻香）"
+      ],
+      "topics": [
+        "艺术史深度探索",
+        "葡萄酒产区与葡萄品种",
+        "配对理论"
+      ]
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

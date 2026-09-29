@@ -1,0 +1,67 @@
+{
+  "schema_version": "SandboxDB.v2",
+  "purpose": "Global API contracts plus one stable offline database for all users and tasks.",
+  "design_contract": {
+    "single_source_of_truth": "All users must use API definitions from this folder.",
+    "interface_stability": "The same api_name always has the same function signature, parameter schema, return schema, and preference-sensitive parameter markers.",
+    "input_output_format": "All callable APIs use JSON object arguments and JSON object responses.",
+    "database_stability": "The offline database is shared globally. User-specific sandbox folders are not used.",
+    "runtime_personalization": "Personalization is applied by evaluator prompts and SandboxExecutor using user profile/history plus global database records, not by per-user API schemas."
+  },
+  "api_count": 94,
+  "categories": [
+    "calendar",
+    "civic",
+    "communications",
+    "contacts",
+    "documents",
+    "education",
+    "email",
+    "entertainment",
+    "events",
+    "finance",
+    "food",
+    "health",
+    "legal",
+    "maps",
+    "media",
+    "messaging",
+    "notes",
+    "privacy",
+    "procurement",
+    "project",
+    "reminders",
+    "research",
+    "security",
+    "shopping",
+    "smart_home",
+    "technology",
+    "translation",
+    "travel",
+    "weather"
+  ],
+  "files": {
+    "api_catalog": "api_catalog.json",
+    "api_index": "api_index.json",
+    "category_index": "category_index.json",
+    "usage_stats": "usage_stats.json",
+    "api_schema": "schemas/api_schema.json",
+    "function_call_schema": "schemas/function_call_schema.json",
+    "database_manifest": "database/manifest.json"
+  },
+  "database": {
+    "schema_version": "SandboxDatabase.v1",
+    "record_count": 10262,
+    "workflow_count": 214,
+    "user_count": 214,
+    "theme_count": 21
+  },
+  "updated_at": "2026-07-14T19:36:53+08:00",
+  "source_info": {
+    "schema_version": "SandboxSourceInfo.v2",
+    "record_count": 61722,
+    "domain_count": 6,
+    "manifest": "source_info/manifest.json",
+    "audit": "source_info/real_world_audit.json"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "api_name": "calendar.create_event",
+  "category": "calendar",
+  "action": "create_event",
+  "description": "Create a calendar event with reminders, attendees, conferencing, and privacy controls.",
+  "interface": {
+    "type": "function_call",
+    "function": "calendar.create_event",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "title",
+        "type": "string",
+        "required": true,
+        "description": "Event title.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "start_time",
+        "type": "datetime",
+        "required": true,
+        "description": "Event start time selected from user time preferences.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "end_time",
+        "type": "datetime",
+        "required": true,
+        "description": "Event end time.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "timezone",
+        "type": "string",
+        "required": true,
+        "description": "User's timezone.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "location",
+        "type": "string",
+        "required": false,
+        "description": "Physical or virtual location.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "attendees",
+        "type": "array[string]",
+        "required": false,
+        "description": "Attendee names or roles.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "reminders",
+        "type": "array[object]",
+        "required": false,
+        "description": "Reminder schedule based on the user's planning style.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "visibility",
+        "type": "string",
+        "required": false,
+        "description": "public, private, confidential, or default.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "notes",
+        "type": "string",
+        "required": false,
+        "description": "Context and preparation notes.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "event_id": "string",
+      "status": "string",
+      "created_event": "object"
+    },
+    "preference_sensitive_parameters": [
+      "start_time",
+      "end_time",
+      "timezone",
+      "location",
+      "reminders"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "start_time",
+        "type": "datetime",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "end_time",
+        "type": "datetime",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "timezone",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "location",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "reminders",
+        "type": "array[object]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

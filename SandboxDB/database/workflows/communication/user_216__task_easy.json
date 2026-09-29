@@ -1,0 +1,333 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_216",
+  "theme": "communication",
+  "task_doc": {
+    "user_id": "user_216",
+    "task": {
+      "task_id": "task_easy",
+      "difficulty": "easy",
+      "title": "为小范围线下聊天找一个不过度拥挤的位置",
+      "daily_life_domain": "social",
+      "scenario": "用户需要在周末前完成「为小范围线下聊天找一个不过度拥挤的位置」。请围绕人流可控、到达简单、适合低压力沟通的地点检索真实候选，核对会改变选择的关键信息，并给出可执行结论。",
+      "user_goal": "完成「为小范围线下聊天找一个不过度拥挤的位置」的候选筛选和关键核对，给出首选、一个备选、关键风险与下一步行动。",
+      "why_complex": "需要获取真实候选、核对影响选择的关键字段，并根据任务条件形成可执行结论。",
+      "constraints": [
+        "预算上限暂定为 360 本地货币单位，除非能明确说明超支收益。",
+        "时间窗口：周末前。",
+        "具体任务对象：小范围线下聊天的不过度拥挤位置。",
+        "候选范围限定：人流可控、到达简单、适合低压力沟通的地点。",
+        "不暴露不必要的联系人、精确住址、健康或财务细节；工具参数只填写完成任务所需信息。"
+      ],
+      "required_reasoning_steps": [
+        "识别任务对象「为小范围线下聊天找一个不过度拥挤的位置」、候选范围以及预算、时间和隐私约束。",
+        "检索人流可控、到达简单、适合低压力沟通的地点，并根据任务条件过滤明显不合格的候选。",
+        "核对会改变最终选择的关键信息，处理缺失字段或证据冲突后形成结论。"
+      ],
+      "decision_points": [
+        "哪些候选满足任务中的硬约束和交付要求。",
+        "哪些证据冲突或信息缺口会改变候选可行性。",
+        "是否需要补充核对、启用备选方案或触发回退条件。"
+      ],
+      "information_to_collect": [
+        "3-5 个人流可控、到达简单、适合低压力沟通的地点的候选名称和关键字段。",
+        "高峰时间、交通、消费门槛、噪声和隐私暴露中会改变最终选择的字段。",
+        "至少 1 条可用于支撑首选方案的 SandboxDB/source_info 或工具返回证据。"
+      ],
+      "expected_deliverable": "聊天地点首选、错峰备选、拥挤风险和确认动作",
+      "success_criteria": [
+        "结果满足任务给出的预算、时间、候选范围和隐私约束。",
+        "关键结论由可核验的工具返回或 SandboxDB/source_info 证据支持。",
+        "最终交付包含：聊天地点首选、错峰备选、拥挤风险和确认动作。"
+      ],
+      "potential_failure_modes": [
+        "只给泛化建议，没有围绕具体任务对象和候选范围展开。",
+        "推荐结果违反预算、时间、隐私或候选范围约束。",
+        "没有核对会改变最终选择的关键风险或缺失信息。"
+      ],
+      "difficulty_metadata": {
+        "expected_tool_calls": 2,
+        "expected_tool_call_range": "2-3",
+        "eval_max_tool_calls": 5,
+        "serial_update_note": "easy 任务已逐条压缩为 2-3 轮工具调用可完成。",
+        "human_verifier_estimated_work_rounds": 1,
+        "human_verifier_estimation_basis": [
+          "domain=social",
+          "expected_tool_calls=2",
+          "source_domains_capped=2",
+          "reasoning_steps_capped=4",
+          "constraints_capped=6",
+          "decision_points_capped=3",
+          "information_items_capped=3",
+          "easy_target_distribution=1:24,2:24,3:20",
+          "content_complexity_rank_score=10.8",
+          "easy_revision: 结构最轻，human verifier 预计 1 轮即可完成",
+          "serial_hardlike_revision: 小范围线下聊天的不过度拥挤位置"
+        ],
+        "human_verifier_estimation_note": "easy 难度已串行校准：human verifier 预计工作轮数覆盖 1-3 轮，按内容复杂度从轻到重分配；不改写任务正文或 workflow 示例调用。",
+        "domain_anchor_revision_note": "easy 任务已按 user_id 串行逐条审查修订为 hard 风格简略版；标题与场景不使用重复模板。"
+      },
+      "real_environment_grounding": {
+        "schema_version": "realEnvironmentGrounding.v1",
+        "source_info_dir": "SandboxDB/source_info/records",
+        "required_source_domains": [
+          "navigation",
+          "food"
+        ],
+        "domain_descriptions": {
+          "navigation": "真实地点目录：住宿、景点、地址、城市、坐标、房屋规则等字段",
+          "food": "真实餐馆目录：城市、菜系、人均/平均成本、评分等字段"
+        },
+        "retrieval_policy": "围绕「小范围线下聊天的不过度拥挤位置」仅检索少量真实候选；",
+        "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+      },
+      "user_basic_profile": {
+        "name": "Daniel Rivera",
+        "age": 45,
+        "gender": "非二元"
+      }
+    }
+  },
+  "workflow": {
+    "task_id": "task_easy",
+    "task_title": "为小范围线下聊天找一个不过度拥挤的位置",
+    "daily_life_domain": "social",
+    "task_complexity_score": 10,
+    "required_api_count_estimate": 2,
+    "available_api_names": [
+      "contacts.search",
+      "messaging.create_group"
+    ],
+    "coverage_ratio": {
+      "estimated_required_api_count": 2,
+      "task_available_api_count": 2,
+      "available_api_count": 2,
+      "note": "easy 任务已串行修订为 hard 风格简略版；oracle 工具集仍只保留 2-3 次轻量完成所需 API。"
+    },
+    "recommended_call_sequence": [
+      "task_easy_call_001",
+      "task_easy_call_002"
+    ],
+    "call_examples": [
+      {
+        "call_id": "task_easy_call_001",
+        "api_name": "contacts.search",
+        "function_call": {
+          "name": "contacts.search",
+          "arguments": {
+            "query": "为小范围线下聊天找一个不过度拥挤的位置",
+            "location": "美国奥斯汀"
+          }
+        },
+        "mock_response": {
+          "sandbox_status": "success",
+          "api_name": "contacts.search",
+          "action": "search",
+          "task_context": "task_easy",
+          "transport": {
+            "protocol": "https",
+            "method": "GET",
+            "endpoint": "/v1/contacts/search",
+            "http_status": 200,
+            "request_id": "req_contacts_search_task_easy_001",
+            "latency_ms": 127,
+            "rate_limit": {
+              "limit": 1000,
+              "remaining": 999,
+              "reset_at": "2026-07-02T00:00:00Z"
+            }
+          },
+          "request_echo": {
+            "function": "contacts.search",
+            "arguments": {
+              "query": "为小范围线下聊天找一个不过度拥挤的位置",
+              "location": "美国奥斯汀"
+            },
+            "idempotency_key": "idm_contacts_search_task_easy_001"
+          },
+          "preference_effects": [
+            "Arguments were selected using the user's budget, privacy, time, language, and style preferences where applicable.",
+            "Returned candidates are synthetic and shaped for planning-agent evaluation."
+          ],
+          "warnings": [],
+          "errors": [],
+          "response_body": {
+            "summary": "Communication/contact API returned a usable draft, message state, or matched contacts.",
+            "items": [
+              {
+                "id": "contacts_search_task_easy_msg_1",
+                "recipients": [
+                  "contact"
+                ],
+                "subject": "为小范围线下聊天找一个不过度拥挤的位置",
+                "body_preview": "Draft about 为小范围线下聊天找一个不过度拥挤的位置",
+                "tone_applied": "clear",
+                "delivery_status": "matched",
+                "privacy_redactions": []
+              },
+              {
+                "id": "contacts_search_task_easy_msg_2",
+                "recipients": [
+                  "contact"
+                ],
+                "body_preview": "Alternative concise version available for user review.",
+                "delivery_status": "alternative",
+                "preference_match_score": 0.79
+              }
+            ],
+            "thread_or_group": {
+              "id": "contacts_search_task_easy_thread",
+              "channel": "email",
+              "notification_policy": "default"
+            },
+            "pagination": {
+              "has_more": false,
+              "next_cursor": null,
+              "page_size": 2,
+              "total_estimated": 2
+            },
+            "missing_information": []
+          },
+          "feedback": {
+            "machine_readable_summary": "Communication/contact API returned a usable draft, message state, or matched contacts.",
+            "planner_relevance": "usable_for_next_step",
+            "requires_user_confirmation": false,
+            "missing_information": [],
+            "next_suggested_api_calls": [
+              "messaging.create_group",
+              "messaging.send_message",
+              "calendar.find_availability"
+            ]
+          },
+          "raw_response_shape": {
+            "contacts": "array",
+            "match_quality": "string",
+            "redactions": "array"
+          }
+        },
+        "preference_sensitive_parameters": [
+          "location"
+        ],
+        "task_id": "task_easy"
+      },
+      {
+        "call_id": "task_easy_call_002",
+        "api_name": "messaging.create_group",
+        "function_call": {
+          "name": "messaging.create_group",
+          "arguments": {
+            "channel": "chat",
+            "group_name": "为小范围线下聊天找一个不过度拥挤的位置",
+            "members": [
+              "user"
+            ],
+            "purpose": "purpose_for_item",
+            "privacy_mode": "strict",
+            "notification_policy": "important_updates_only"
+          }
+        },
+        "mock_response": {
+          "sandbox_status": "success",
+          "api_name": "messaging.create_group",
+          "action": "create_group",
+          "task_context": "task_easy",
+          "transport": {
+            "protocol": "https",
+            "method": "POST",
+            "endpoint": "/v1/messaging/create_group",
+            "http_status": 200,
+            "request_id": "req_messaging_create_group_task_easy_002",
+            "latency_ms": 164,
+            "rate_limit": {
+              "limit": 1000,
+              "remaining": 998,
+              "reset_at": "2026-07-02T00:00:00Z"
+            }
+          },
+          "request_echo": {
+            "function": "messaging.create_group",
+            "arguments": {
+              "channel": "chat",
+              "group_name": "为小范围线下聊天找一个不过度拥挤的位置",
+              "members": [
+                "user"
+              ],
+              "purpose": "purpose_for_item",
+              "privacy_mode": "strict",
+              "notification_policy": "important_updates_only"
+            },
+            "idempotency_key": "idm_messaging_create_group_task_easy_002"
+          },
+          "preference_effects": [
+            "Arguments were selected using the user's budget, privacy, time, language, and style preferences where applicable.",
+            "Returned candidates are synthetic and shaped for planning-agent evaluation."
+          ],
+          "warnings": [
+            "sensitive_fields_redacted"
+          ],
+          "errors": [],
+          "response_body": {
+            "summary": "Communication/contact API returned a usable draft, message state, or matched contacts.",
+            "items": [
+              {
+                "id": "messaging_create_group_task_easy_msg_1",
+                "recipients": [
+                  "user"
+                ],
+                "subject": "为小范围线下聊天找一个不过度拥挤的位置",
+                "body_preview": "Draft about 为小范围线下聊天找一个不过度拥挤的位置",
+                "tone_applied": "clear",
+                "delivery_status": "drafted",
+                "privacy_redactions": [
+                  "personal_contact_details"
+                ]
+              },
+              {
+                "id": "messaging_create_group_task_easy_msg_2",
+                "recipients": [
+                  "user"
+                ],
+                "body_preview": "Alternative concise version available for user review.",
+                "delivery_status": "alternative",
+                "preference_match_score": 0.79
+              }
+            ],
+            "thread_or_group": {
+              "id": "messaging_create_group_task_easy_thread",
+              "channel": "chat",
+              "notification_policy": "important_updates_only"
+            },
+            "pagination": {
+              "has_more": false,
+              "next_cursor": null,
+              "page_size": 2,
+              "total_estimated": 2
+            },
+            "missing_information": []
+          },
+          "feedback": {
+            "machine_readable_summary": "Communication/contact API returned a usable draft, message state, or matched contacts.",
+            "planner_relevance": "usable_for_next_step",
+            "requires_user_confirmation": false,
+            "missing_information": [],
+            "next_suggested_api_calls": [
+              "contacts.search",
+              "messaging.send_message",
+              "calendar.find_availability"
+            ]
+          },
+          "raw_response_shape": {
+            "group_id": "string",
+            "status": "string",
+            "member_statuses": "array"
+          }
+        },
+        "preference_sensitive_parameters": [
+          "privacy_mode",
+          "notification_policy"
+        ],
+        "task_id": "task_easy"
+      }
+    ]
+  }
+}

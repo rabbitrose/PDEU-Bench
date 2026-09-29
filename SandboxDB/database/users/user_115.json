@@ -1,0 +1,110 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_115",
+  "user_context": {
+    "fictional_name": "David Miller",
+    "age": 45,
+    "location": "美国伊利诺伊州芝加哥",
+    "languages": [
+      "英语"
+    ],
+    "occupation": "软件工程师",
+    "industry": "技术",
+    "household": "离异，三个孩子的父亲（年龄12、10、8），正在执行共同监护安排",
+    "accessibility_needs": "无",
+    "privacy_preferences": [
+      "对分享个人细节极其谨慎",
+      "使用隐身模式和加密消息",
+      "避免社交媒体，除了偶尔使用 LinkedIn",
+      "除非必要，从不启用位置服务"
+    ],
+    "budget_preferences": [
+      "谨慎消费，比较价格",
+      "愿意投资于孩子的教育和法律需求",
+      "偏好订阅模式而非一次性大额购买",
+      "追求价值而非品牌"
+    ],
+    "technology_preferences": [
+      "注重隐私的软件",
+      "尽可能使用开源工具",
+      "Android 生态系统",
+      "个人使用的广告拦截器和 VPN",
+      "生产力方面偏好笔记本电脑而非平板电脑"
+    ],
+    "food_preferences": [
+      "在家做饭而非外出就餐",
+      "健康但适合孩子的选择",
+      "意大利和墨西哥菜",
+      "因孩子偏好避免辛辣食物"
+    ],
+    "travel_preferences": [
+      "带孩子自驾游去国家公园",
+      "全包式家庭度假村（预算范围内）",
+      "偏好直飞以避免延误",
+      "携带最少行李以减少压力"
+    ],
+    "learning_preferences": [
+      "带有实际示例的自定进度在线课程",
+      "来自可信法律专家的网络研讨会",
+      "阅读带有可操作建议的文章",
+      "避免长时间视频讲座"
+    ],
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "education.build_study_plan",
+    "education.search_courses",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "entertainment.recommend_media",
+    "entertainment.search_events",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

@@ -1,0 +1,384 @@
+{
+  "schema_version": "SandboxDB.v1",
+  "category": "calendar",
+  "api_count": 4,
+  "apis": [
+    {
+      "api_name": "calendar.create_event",
+      "category": "calendar",
+      "action": "create_event",
+      "description": "Create a calendar event with reminders, attendees, conferencing, and privacy controls.",
+      "interface": {
+        "type": "function_call",
+        "function": "calendar.create_event",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "title",
+            "type": "string",
+            "required": true,
+            "description": "Event title.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "start_time",
+            "type": "datetime",
+            "required": true,
+            "description": "Event start time selected from user time preferences.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "end_time",
+            "type": "datetime",
+            "required": true,
+            "description": "Event end time.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "timezone",
+            "type": "string",
+            "required": true,
+            "description": "User's timezone.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "location",
+            "type": "string",
+            "required": false,
+            "description": "Physical or virtual location.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "attendees",
+            "type": "array[string]",
+            "required": false,
+            "description": "Attendee names or roles.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "reminders",
+            "type": "array[object]",
+            "required": false,
+            "description": "Reminder schedule based on the user's planning style.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "visibility",
+            "type": "string",
+            "required": false,
+            "description": "public, private, confidential, or default.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "notes",
+            "type": "string",
+            "required": false,
+            "description": "Context and preparation notes.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "event_id": "string",
+          "status": "string",
+          "created_event": "object"
+        },
+        "preference_sensitive_parameters": [
+          "start_time",
+          "end_time",
+          "timezone",
+          "location",
+          "reminders"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "start_time",
+            "type": "datetime",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "end_time",
+            "type": "datetime",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "timezone",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "location",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "reminders",
+            "type": "array[object]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "calendar.find_availability",
+      "category": "calendar",
+      "action": "find_availability",
+      "description": "Find available time slots across multiple calendars and constraints.",
+      "interface": {
+        "type": "function_call",
+        "function": "calendar.find_availability",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "participants",
+            "type": "array[string]",
+            "required": true,
+            "description": "People or roles whose availability matters.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "duration_minutes",
+            "type": "integer",
+            "required": true,
+            "description": "Required meeting or activity duration.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "date_range_start",
+            "type": "date",
+            "required": true,
+            "description": "Earliest acceptable date.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "date_range_end",
+            "type": "date",
+            "required": true,
+            "description": "Latest acceptable date.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "preferred_time_blocks",
+            "type": "array[string]",
+            "required": false,
+            "description": "Preferred blocks such as mornings, school hours, evenings.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "avoid_time_blocks",
+            "type": "array[string]",
+            "required": false,
+            "description": "Times to avoid based on user routines and constraints.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "timezone",
+            "type": "string",
+            "required": false,
+            "description": "Timezone for slot calculation.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "priority_rules",
+            "type": "array[string]",
+            "required": false,
+            "description": "Preference-sensitive ranking rules for candidate slots.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "available_slots": "array",
+          "ranked_recommendation": "object",
+          "unresolved_conflicts": "array"
+        },
+        "preference_sensitive_parameters": [
+          "avoid_time_blocks",
+          "timezone",
+          "priority_rules"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "avoid_time_blocks",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "timezone",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "priority_rules",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "calendar.search_events",
+      "category": "calendar",
+      "action": "search_events",
+      "description": "Search a user's calendar for events that match time, attendee, location, or keyword filters.",
+      "interface": {
+        "type": "function_call",
+        "function": "calendar.search_events",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "time_window_start",
+            "type": "datetime",
+            "required": true,
+            "description": "Start of the preferred time window.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "time_window_end",
+            "type": "datetime",
+            "required": true,
+            "description": "End of the preferred time window.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "query",
+            "type": "string",
+            "required": true,
+            "description": "Keyword query influenced by task context.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "calendar_ids",
+            "type": "array[string]",
+            "required": false,
+            "description": "Calendars to search, such as work, family, personal, or shared calendars.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "timezone",
+            "type": "string",
+            "required": false,
+            "description": "User's preferred timezone.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": false,
+            "description": "How much event detail can be exposed based on privacy preferences.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "include_declined",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether declined events should be included.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "events": "array",
+          "conflicts": "array",
+          "query_metadata": "object"
+        },
+        "preference_sensitive_parameters": [
+          "time_window_start",
+          "time_window_end",
+          "timezone",
+          "privacy_mode"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "time_window_start",
+            "type": "datetime",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "time_window_end",
+            "type": "datetime",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "timezone",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "calendar.update_event",
+      "category": "calendar",
+      "action": "update_event",
+      "description": "Update event time, title, attendees, location, reminders, or notes.",
+      "interface": {
+        "type": "function_call",
+        "function": "calendar.update_event",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "event_id",
+            "type": "string",
+            "required": true,
+            "description": "Existing event identifier.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "updates",
+            "type": "object",
+            "required": true,
+            "description": "Fields to update.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "notify_attendees",
+            "type": "boolean",
+            "required": true,
+            "description": "Whether participants should receive notifications.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "change_reason",
+            "type": "string",
+            "required": false,
+            "description": "Reason for the update.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": false,
+            "description": "Controls how much change detail is shared.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "event_id": "string",
+          "status": "string",
+          "updated_fields": "array"
+        },
+        "preference_sensitive_parameters": [
+          "privacy_mode"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    }
+  ]
+}

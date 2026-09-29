@@ -1,0 +1,78 @@
+{
+  "api_name": "education.create_assessment",
+  "category": "education",
+  "action": "create_assessment",
+  "description": "Create quizzes, reflection prompts, rubrics, practice tasks, or evaluation criteria.",
+  "interface": {
+    "type": "function_call",
+    "function": "education.create_assessment",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "learning_objectives",
+        "type": "array[string]",
+        "required": true,
+        "description": "Learning objectives to assess.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "assessment_style",
+        "type": "string",
+        "required": true,
+        "description": "Preferred assessment style.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "difficulty_level",
+        "type": "string",
+        "required": true,
+        "description": "Target difficulty.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "format",
+        "type": "string",
+        "required": true,
+        "description": "Output format.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "feedback_preferences",
+        "type": "array[string]",
+        "required": false,
+        "description": "Feedback style and constraints.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "assessment_items": "array",
+      "rubric": "object",
+      "feedback_plan": "array"
+    },
+    "preference_sensitive_parameters": [
+      "assessment_style",
+      "format",
+      "feedback_preferences"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "assessment_style",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "format",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "feedback_preferences",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

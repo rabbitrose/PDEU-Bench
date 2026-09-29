@@ -1,0 +1,81 @@
+{
+  "api_name": "research.analyze_table",
+  "category": "research",
+  "action": "analyze_table",
+  "description": "Analyze tabular data with filters, aggregations, comparisons, and uncertainty notes.",
+  "interface": {
+    "type": "function_call",
+    "function": "research.analyze_table",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "dataset_id",
+        "type": "string",
+        "required": true,
+        "description": "Dataset identifier.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "analysis_goal",
+        "type": "string",
+        "required": true,
+        "description": "Analysis objective.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "filters",
+        "type": "object",
+        "required": true,
+        "description": "Rows or groups to include.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "metrics",
+        "type": "array[string]",
+        "required": true,
+        "description": "Metrics to calculate.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "group_by",
+        "type": "array[string]",
+        "required": false,
+        "description": "Grouping fields.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "visualization_preference",
+        "type": "string",
+        "required": false,
+        "description": "Chart or table preference.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "uncertainty_handling",
+        "type": "string",
+        "required": false,
+        "description": "How to handle missing or uncertain data.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "analysis": "object",
+      "tables": "array",
+      "visualization_specs": "array",
+      "caveats": "array"
+    },
+    "preference_sensitive_parameters": [
+      "visualization_preference"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "visualization_preference",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 1
+}

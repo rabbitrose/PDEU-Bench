@@ -1,0 +1,106 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_131",
+  "user_context": {
+    "fictional_name": "田中健二",
+    "age": 35,
+    "location": "日本大阪",
+    "languages": [
+      "日语（母语）",
+      "英语（中级）"
+    ],
+    "occupation": "职业羽毛球教练",
+    "industry": "体育",
+    "household": "独自住在训练中心附近的公寓",
+    "accessibility_needs": "无",
+    "privacy_preferences": [
+      "对分享训练方法有所选择",
+      "使用加密消息进行策略沟通",
+      "社交媒体存在感极低"
+    ],
+    "budget_preferences": [
+      "愿意投资高质量设备",
+      "在非必需品上节省",
+      "追求服务的性价比"
+    ],
+    "technology_preferences": [
+      "最新款健身追踪器",
+      "安装教练应用的智能手机",
+      "用于分析的笔记本电脑",
+      "偏好有线耳机以确保可靠性"
+    ],
+    "food_preferences": [
+      "干净饮食",
+      "高蛋白、适量脂肪、低糖",
+      "日式与西式健康餐",
+      "避免垃圾食品和甜食"
+    ],
+    "travel_preferences": [
+      "国际赛事乘坐商务舱",
+      "入住训练设施附近的酒店",
+      "高效行程，最小化空闲时间"
+    ],
+    "learning_preferences": [
+      "带有详细分解的视频教程",
+      "精英选手案例研究",
+      "动手实践工作坊",
+      "循证方法"
+    ],
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "education.build_study_plan",
+    "education.search_courses",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "entertainment.search_events",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

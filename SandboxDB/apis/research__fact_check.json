@@ -1,0 +1,73 @@
+{
+  "api_name": "research.fact_check",
+  "category": "research",
+  "action": "fact_check",
+  "description": "Check claims against multiple sources with confidence ratings and uncertainty notes.",
+  "interface": {
+    "type": "function_call",
+    "function": "research.fact_check",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "claims",
+        "type": "array[string]",
+        "required": true,
+        "description": "Claims to verify.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "evidence_sources",
+        "type": "array[string]",
+        "required": false,
+        "description": "Candidate sources or documents.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "region",
+        "type": "string",
+        "required": false,
+        "description": "Relevant region.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "date_context",
+        "type": "date",
+        "required": false,
+        "description": "Date context for time-sensitive claims.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "evidence_standard",
+        "type": "string",
+        "required": true,
+        "description": "User's required evidence bar.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "output_format",
+        "type": "string",
+        "required": false,
+        "description": "Table, narrative, or annotated list.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "checked_claims": "array",
+      "overall_confidence": "string",
+      "uncertainties": "array"
+    },
+    "preference_sensitive_parameters": [
+      "date_context"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "date_context",
+        "type": "date",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 1
+}

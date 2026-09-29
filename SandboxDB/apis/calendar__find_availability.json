@@ -1,0 +1,99 @@
+{
+  "api_name": "calendar.find_availability",
+  "category": "calendar",
+  "action": "find_availability",
+  "description": "Find available time slots across multiple calendars and constraints.",
+  "interface": {
+    "type": "function_call",
+    "function": "calendar.find_availability",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "participants",
+        "type": "array[string]",
+        "required": true,
+        "description": "People or roles whose availability matters.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "duration_minutes",
+        "type": "integer",
+        "required": true,
+        "description": "Required meeting or activity duration.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "date_range_start",
+        "type": "date",
+        "required": true,
+        "description": "Earliest acceptable date.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "date_range_end",
+        "type": "date",
+        "required": true,
+        "description": "Latest acceptable date.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "preferred_time_blocks",
+        "type": "array[string]",
+        "required": false,
+        "description": "Preferred blocks such as mornings, school hours, evenings.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "avoid_time_blocks",
+        "type": "array[string]",
+        "required": false,
+        "description": "Times to avoid based on user routines and constraints.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "timezone",
+        "type": "string",
+        "required": false,
+        "description": "Timezone for slot calculation.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "priority_rules",
+        "type": "array[string]",
+        "required": false,
+        "description": "Preference-sensitive ranking rules for candidate slots.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "available_slots": "array",
+      "ranked_recommendation": "object",
+      "unresolved_conflicts": "array"
+    },
+    "preference_sensitive_parameters": [
+      "avoid_time_blocks",
+      "timezone",
+      "priority_rules"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "avoid_time_blocks",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "timezone",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "priority_rules",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 1
+}

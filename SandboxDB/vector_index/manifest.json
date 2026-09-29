@@ -1,0 +1,557 @@
+{
+  "schema_version": "SandboxE5VectorIndex.v1",
+  "created_at": "2026-07-14T11:48:45.423453+00:00",
+  "build_policy": "explicit_preencode_once_then_read_only_load_during_eval",
+  "model": {
+    "model_id": "intfloat/multilingual-e5-small",
+    "model_dir": "SandboxDB/models/multilingual-e5-small",
+    "embedding_dimension": 384,
+    "max_sequence_length": 512,
+    "document_prefix": "passage: ",
+    "query_prefix": "query: "
+  },
+  "api_records": {
+    "record_count": 10262,
+    "record_ids_hash": "5a99e3641c89e5403bb58620fef952f0c015b838e31cbb1ea0b4fb5ef54fc5d9",
+    "documents_hash": "ec13217d5a754b80ea794c43c4a73a90735954d7bb70c3096b2d187c227f98a7",
+    "vector_file": "api_records.npy",
+    "shape": [
+      10262,
+      384
+    ],
+    "dtype": "float32",
+    "entries": [
+      {
+        "record_count": 214,
+        "record_ids_hash": "0bea3b80008acdeaf7272ed59bec2426805d3266354f5925077a7fee3c9c3070",
+        "documents_hash": "40add6d42c1870a695eb4e403995ed62320583c9a9a7310b7d96db6ab135ba43",
+        "api_name": "calendar.create_event",
+        "start": 0,
+        "stop": 214
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "9e3c95b3e60cdf25b4354f14e2f770fe49eb6175b8219d0d50eed8eb3acc7c50",
+        "documents_hash": "3572fb9d03946cf69f5ed546c4445c9daa6f2975ca2ccbe9938296d3d7eb4973",
+        "api_name": "calendar.find_availability",
+        "start": 214,
+        "stop": 428
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "6b115092efa90ad8d823f250d42468b1c843265dbebf7d1373b6095eb9259624",
+        "documents_hash": "8df71182098f2a5d259d2e3fa369c7ce3842ce83876c39124785dc8bf96565f8",
+        "api_name": "calendar.search_events",
+        "start": 428,
+        "stop": 642
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "440e06536a6edae4ea173d9c7cfb7214b80283b0e2026033afe7e1e9017fc16a",
+        "documents_hash": "940813aadabdefaa6e27b9a7b3e43b8b7c0287e8886b045f7bce4a727f37252a",
+        "api_name": "calendar.update_event",
+        "start": 642,
+        "stop": 856
+      },
+      {
+        "record_count": 9,
+        "record_ids_hash": "2fb836c630dfdb183b40526f4f8e133a3397a7c580add766e86926b4e467ab1c",
+        "documents_hash": "79b9740f502a459031ce16a32df0c650379ba27691adc1999ca3654c3e78b8c5",
+        "api_name": "civic.find_services",
+        "start": 856,
+        "stop": 865
+      },
+      {
+        "record_count": 9,
+        "record_ids_hash": "4f91b61cc0c0b661bba9ae1cfa4bf007908877283b359eccfa0953ba3b81d392",
+        "documents_hash": "f0fa2bb12213e8b7f5f2386955de95e0faf11b5a0c4756cdce3996a12b9cdc1f",
+        "api_name": "civic.submit_request",
+        "start": 865,
+        "stop": 874
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "7c55477ea4a2a9b679d6d571c7d92aa327ce4f7bfd002c9dbf987a3f3971786c",
+        "documents_hash": "e9f1295d3da659715df7b471e23a89881949bce138a5b88922e0364871f2b6f3",
+        "api_name": "contacts.create_or_update",
+        "start": 874,
+        "stop": 1088
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "73a777f287d838a274775e9270af66e6f378a7dfc005dd32631a43ab21aba637",
+        "documents_hash": "ac1253bc8fbcbb1df3258f99085674b19182ddc6abecf8017a573bc181c18cb0",
+        "api_name": "contacts.search",
+        "start": 1088,
+        "stop": 1302
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "e6e94f5985c841e42515df5b542c2362451466da0140444cf91824a7b14d6238",
+        "documents_hash": "7001029b554ae0af0f9734ab83725f5116c25000b8449196c55da28ed1d0e2d7",
+        "api_name": "documents.create",
+        "start": 1302,
+        "stop": 1516
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "39724dc9125ed1d49e794ab4b0ee1dbb84a67d625864fe73db223baf036b7846",
+        "documents_hash": "a776e0177fed01b0fd8e1c59c5f23212555f8e734ee090a9f7977273e8ebed59",
+        "api_name": "documents.search",
+        "start": 1516,
+        "stop": 1730
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "5ff8b24bf764a8147257edc48f2ccbcc8d092ca063e7126cc627aeaa5647a873",
+        "documents_hash": "58d0bc40cbeed5a156eb29a9028afd7fa898ae8b2889e056bb7a9b71d5c6def8",
+        "api_name": "documents.summarize",
+        "start": 1730,
+        "stop": 1944
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "ea7ec59accfe4a6d6ca131d76076ff67f2c2353c2457b7656a4ee1250bdb45ea",
+        "documents_hash": "61d5f2a271dd400983060a01f17471899482bb7fce055a7ddff15d8945cb59b6",
+        "api_name": "documents.update",
+        "start": 1944,
+        "stop": 2158
+      },
+      {
+        "record_count": 79,
+        "record_ids_hash": "0f160a5a2ff413d5efa77d5fdb42c9752e39ddf0f9eaceb6291d3b5ccc526651",
+        "documents_hash": "b034f0291668ad67573a8789a65e8eb96ae00ecbd838e8e0e25d15edfee7de56",
+        "api_name": "education.build_study_plan",
+        "start": 2158,
+        "stop": 2237
+      },
+      {
+        "record_count": 106,
+        "record_ids_hash": "e09e05f3181c2f804d2124d2c81afff852f0a9ca43cf7d4c637eed1ddb77123a",
+        "documents_hash": "819d8d72c287acfcc6d2aeac7a4f83f3d0fe89190ce98a3f8fc8097e53240aac",
+        "api_name": "education.search_courses",
+        "start": 2237,
+        "stop": 2343
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "151a0471894397205d19594c2b3355b3d8f518ef7fc0bd2c007e393cc31c4ae4",
+        "documents_hash": "2d21c84df1262b41ecd8100de0b947479219226307754550f009fcebe68bb12c",
+        "api_name": "email.draft_message",
+        "start": 2343,
+        "stop": 2557
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "a8aa7f9bf5a7faa7cabfae5d0e6137f909ca8f78137bb86fb814729ae9e46ae7",
+        "documents_hash": "783f8fa5cd3073fe577dd9909fb9abb6d12d48542501fb05c038e596266cdd64",
+        "api_name": "email.search_messages",
+        "start": 2557,
+        "stop": 2771
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "1c5a42014db20c52bb761fc2685357fc59659e0dba39d6dbc6f6ca31a691ad84",
+        "documents_hash": "0308da0e3a85d0f165c015603e285169b5636b62188ba6895c9ebc1a25650b76",
+        "api_name": "email.send_message",
+        "start": 2771,
+        "stop": 2985
+      },
+      {
+        "record_count": 28,
+        "record_ids_hash": "2a9ff73597464644d8f95a6f47e4020a53e7820e2430c19ea86dbf06a3be1085",
+        "documents_hash": "980d56d8260609715d730deec42831992c5fe3fb7e5aea255f7948cdc3c57e39",
+        "api_name": "entertainment.recommend_media",
+        "start": 2985,
+        "stop": 3013
+      },
+      {
+        "record_count": 81,
+        "record_ids_hash": "3287f9ce224e345d178defef2c6e0b19bf1e5b7f3de68ff1d75c075e307bddaf",
+        "documents_hash": "43193b4edbf9220e7ba44751a5101d3dff7a58432f00833473776e9d70d0f4fc",
+        "api_name": "entertainment.search_events",
+        "start": 3013,
+        "stop": 3094
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "699397f718c142314bf3d44e57846696a51c33032ef4e468af8f5013ebd81ad7",
+        "documents_hash": "1d913d0bfc90fa9883022942782854ecf82699dabf90bdb74d22dfca6d7737d8",
+        "api_name": "finance.compare_prices",
+        "start": 3094,
+        "stop": 3308
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "121274e8b99dbd8bbaf422f836a9862e9577585893fe8bbdc6d356c7f8201c13",
+        "documents_hash": "adb874d73958743738f581f1961e32ed38bc8d3612464943a5eb58399e586df4",
+        "api_name": "finance.create_budget_plan",
+        "start": 3308,
+        "stop": 3522
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "335bd5ed2dbf5fdaf94336d2734caeafab72d1b287699f70d696727197e8a7dd",
+        "documents_hash": "3ad4b1e18d6ec1f490a9dac37df25cd5b0ccb6c178b9f26f450bb60f3df6245e",
+        "api_name": "finance.get_accounts",
+        "start": 3522,
+        "stop": 3736
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "113e25f42ef9f555e4fe079de3f962ff9fb33f58abbaa0229cde7ecbebe10ac4",
+        "documents_hash": "62860772c2f3b093e8a7a366ddf25f880d89951d1d74cb0a56f6b57ca2da42f1",
+        "api_name": "finance.search_transactions",
+        "start": 3736,
+        "stop": 3950
+      },
+      {
+        "record_count": 126,
+        "record_ids_hash": "95e9fe040e9b4263dc409fa7e2d228a20830c35480326fdc72bda6acc065a7a8",
+        "documents_hash": "6a51b625121365ad263530acabb7a2e3863991d6774bc62d387752603f0b4a52",
+        "api_name": "food.create_meal_plan",
+        "start": 3950,
+        "stop": 4076
+      },
+      {
+        "record_count": 156,
+        "record_ids_hash": "6dc7819a90bb51af595491ee66c2ba22828bd7cdaea91dfcbc6ec08605b4fcd2",
+        "documents_hash": "f4e7242ce20326b6abca4e33de3de60c5b6347523415ab5b1f5f46ebdbee357d",
+        "api_name": "food.search_recipes",
+        "start": 4076,
+        "stop": 4232
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "6477fe19d9f4421824e165486544cc4304d8e17a80605a477c7afc6b902c461c",
+        "documents_hash": "47bca30f98bd2ecd26c30a355d1ff6e8800948cc581a116396550df1eb4c4e50",
+        "api_name": "health.log_symptoms",
+        "start": 4232,
+        "stop": 4446
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "9ab0b705a929547a99d3b6442e000403e23429bb69047de8bea3aad5a4dedd41",
+        "documents_hash": "289af31d29c3c2b317e64151359d804a7089f269c50a98103d7c0b6f88a5d646",
+        "api_name": "health.medication_lookup",
+        "start": 4446,
+        "stop": 4660
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "4d772a75da39128823c1d18d43db60fd54876b8dbdcec345e8192640b604f0b5",
+        "documents_hash": "0c23e17c4b5960ddbe3720e36030634dbbe511fa247fb3824a0df63a8a9594cd",
+        "api_name": "health.schedule_appointment",
+        "start": 4660,
+        "stop": 4874
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "2f374f1e834f5dca573390036c3f5d6ef3a51f5763cbea46d4844528d8496dd9",
+        "documents_hash": "ba4cc7550dd83441888ff27d03558fab8451f4648b3cb792b299be46976acf25",
+        "api_name": "health.search_providers",
+        "start": 4874,
+        "stop": 5088
+      },
+      {
+        "record_count": 17,
+        "record_ids_hash": "f381e563d4b25c31aef28a9e6b12b0c6dfa2fd4e5316cb497e4d6dc55e42fa16",
+        "documents_hash": "038e36182195b2f524c638770f15dd94dcf2acd34cef4edf826cc809b9f29823",
+        "api_name": "legal.search_documents",
+        "start": 5088,
+        "stop": 5105
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "22c7ab11bdc825202ec7982bc8f905ed585edd02ad205ae10f7f6ccfcf913b05",
+        "documents_hash": "be4d8a500566fe3d61ddb5c0185dbc01966fdeb4dc87686cedebf9470274e937",
+        "api_name": "maps.estimate_travel_time",
+        "start": 5105,
+        "stop": 5319
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "384cbdcf892d4ff7c7419fa90716ad2fadad7e212231fc01ffebcf270fbf8220",
+        "documents_hash": "cd8f50755bee6a45ff863e59f1fcabc299b253cc209784be14f30e5a5c3177d4",
+        "api_name": "maps.get_route",
+        "start": 5319,
+        "stop": 5533
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "58e3e0b1d3f1e75a3711076992f52690e1e5a344848f01c3013a790a0fcfdf62",
+        "documents_hash": "29de63a6b3015868df51ca59d999b3387e77f52e6ad9646051c8af4f67f8da44",
+        "api_name": "maps.search_places",
+        "start": 5533,
+        "stop": 5747
+      },
+      {
+        "record_count": 197,
+        "record_ids_hash": "c7dbf702ed00c79c8cd8e633543d618d6b69e419789ed0a9cc773136b25d810d",
+        "documents_hash": "a4dbe2d497ff36d5b078a6b32a860679f499dd5fcbf9329e8cb2bd8f2aff9971",
+        "api_name": "messaging.create_group",
+        "start": 5747,
+        "stop": 5944
+      },
+      {
+        "record_count": 213,
+        "record_ids_hash": "65eefaa87d016fc70c60969a99029dbcc328a8cb5806f4fd9379a1a9227bc21c",
+        "documents_hash": "d1fa24cf1f8f6ffc6baed170d030d8f374182a5fe4f9ad45e3d4450e4b0bb031",
+        "api_name": "messaging.send_message",
+        "start": 5944,
+        "stop": 6157
+      },
+      {
+        "record_count": 205,
+        "record_ids_hash": "fe406b16dc0c457373fe8973fbb609c9f80998708feca7339776d642d875169c",
+        "documents_hash": "49eb5d579ea0bddb54e113c7644f2cf5e87114bc548d5596aced4bc2c720c8df",
+        "api_name": "notes.create_note",
+        "start": 6157,
+        "stop": 6362
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "a92686105d64cf10c71e9d0f2376c788098ee38136d3dad96042a53a5f8ea1ab",
+        "documents_hash": "920b72bb844f513548a0eff3db22c53ed7723dedc1823b214493873661b1789e",
+        "api_name": "privacy.redact_data",
+        "start": 6362,
+        "stop": 6576
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "4bebd8e75c39da7ae6532226ef83a62be468e7120fab7cf330bffdb23dfe03bb",
+        "documents_hash": "7782cb9e21a80bee3bf02431ab2a487104e1bda253ab267411492fb940b20bcd",
+        "api_name": "project.create_task_list",
+        "start": 6576,
+        "stop": 6790
+      },
+      {
+        "record_count": 211,
+        "record_ids_hash": "b291fcc3090f7216a3fd8026310ae02bc965c4f11f918d685d29c51fef07da96",
+        "documents_hash": "45fbe9cf2c386283b576a02a053e32d12088ba0e748f0fe5621d0173cdd816e4",
+        "api_name": "project.update_status",
+        "start": 6790,
+        "stop": 7001
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "9be429c415a532490a117c01b6a842656c3440ee76a188aa0816d304ae660d19",
+        "documents_hash": "c5130f52df92b29ee76529c1a7f1fe5735060adbbae7a0f7d131385a39bd644e",
+        "api_name": "reminders.create",
+        "start": 7001,
+        "stop": 7215
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "3e5e95e3633e6604ef8cf1ab86e51db9db5d727d70fdcd5f34fe605fddc98303",
+        "documents_hash": "bba7a85c3ce1dcf65c60f9c24209ee0f44e099a796f90ebc8bc52fa028dd8509",
+        "api_name": "research.analyze_table",
+        "start": 7215,
+        "stop": 7429
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "9bee78504d03682d557719310cbb48987bc6a25e1c9c5d6592db592002a14034",
+        "documents_hash": "46c79755b0675e66be46f6ce3b064933ee9e4b9ea07f6c7d35a6a5b77385343d",
+        "api_name": "research.fact_check",
+        "start": 7429,
+        "stop": 7643
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "e6296dfc42f13845378fe14b938b673bf3a35aed6e98b72932c5128f0b485040",
+        "documents_hash": "11ba6ed0d46dc4ce81f1bec3905c1405b68ebdfd9c75cf7fb975e970c9987280",
+        "api_name": "research.retrieve_dataset",
+        "start": 7643,
+        "stop": 7857
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "30685ae636cef89babf5928f3f80749ffbe44e8c84114a6f32c512aafad66231",
+        "documents_hash": "a0cab96c3faa101af495108ea2c36b8d6c9978f80c4ced23185bc4c5aeaee94e",
+        "api_name": "research.web_search",
+        "start": 7857,
+        "stop": 8071
+      },
+      {
+        "record_count": 16,
+        "record_ids_hash": "22f7b10286a391c888d40ed82ad38c387620f0d833524d7f3aa88f3e63079e0b",
+        "documents_hash": "69c4f7c01bb0c1bdaa8fe50b40cc51beca7acdec3457f6d6f9159e47dbbebbcd",
+        "api_name": "security.configure_2fa",
+        "start": 8071,
+        "stop": 8087
+      },
+      {
+        "record_count": 16,
+        "record_ids_hash": "58bd7f56965a0a1dd9b62e00c8cb6e54d049b596e6fc78d112acd45dc77e1cf3",
+        "documents_hash": "af40a4bd2199e9bbc47fa3e326f58807d27295a9eee799d9da7edb969c37e9f4",
+        "api_name": "security.password_audit",
+        "start": 8087,
+        "stop": 8103
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "9f6bf074a424e18b75daa47d48eb124ccfeb76bd594807026939ed210ef0ca48",
+        "documents_hash": "0e928bc18c71f8438e935ba21ba53ca8ec4721fc0006580db804751a2cbe72f2",
+        "api_name": "shopping.check_inventory",
+        "start": 8103,
+        "stop": 8317
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "f8d288726c1ac1b086c7eeeb91a6a66645e10149598fae70d75f10581e4fce61",
+        "documents_hash": "2572e896823940228807c6d3a7d305892d563aa8678753bf31b93be269b96723",
+        "api_name": "shopping.create_cart",
+        "start": 8317,
+        "stop": 8531
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "41cf2f62eb8f952dacb3548521548785246bc26d2bb14e164eabdeeee41452f5",
+        "documents_hash": "9ddc78ad2a561ee797dd01ad3b56f1d171cc024e3e24697a41d83b7441f4952e",
+        "api_name": "shopping.search_products",
+        "start": 8531,
+        "stop": 8745
+      },
+      {
+        "record_count": 192,
+        "record_ids_hash": "0f457da24d0997310af1f05121bf64ab50a5fad56078f27bbd1a300d8a1fb6b1",
+        "documents_hash": "1c44fa70f62837437f29458ed7a1fb13225dcbc6ae4659b59aafedc233c5563f",
+        "api_name": "smart_home.get_devices",
+        "start": 8745,
+        "stop": 8937
+      },
+      {
+        "record_count": 174,
+        "record_ids_hash": "96c557e503aaa4cdf35416890a8c7cbcf6fec999ad68325115c4271ea87c8892",
+        "documents_hash": "1f1c8be8984e7174b4256fd4789fb0ad55769926cd9d8bea7c104e023f031694",
+        "api_name": "smart_home.set_device_state",
+        "start": 8937,
+        "stop": 9111
+      },
+      {
+        "record_count": 81,
+        "record_ids_hash": "b7cdd41ca581139e2a0d5ee227bb94cad4c1506007bbf008b732003ed0317df3",
+        "documents_hash": "40dce853573758d74ce45c977c7d3347a04cd8f17b48fb4d23dcf6cdfe2bdc77",
+        "api_name": "translation.translate_text",
+        "start": 9111,
+        "stop": 9192
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "fef6a30eb869797ed4fa9243f4626a834f50b0b1a65a150b3fd956319c28073a",
+        "documents_hash": "0ce86dce7299c82ddfc8bc16ee41e6cadee79d2683bb512614ba017b3ad28466",
+        "api_name": "travel.book_flight_hold",
+        "start": 9192,
+        "stop": 9406
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "a528c1acc0bab33b9980c90f6b31d5f53a3f772a6b77672cfa3682d623f0e8a4",
+        "documents_hash": "105913cf5bc7111aba53dd6d1d051dd41f02ace6019eafb442679c84290c0c7a",
+        "api_name": "travel.build_itinerary",
+        "start": 9406,
+        "stop": 9620
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "a582cd731f216bf0271779c5f1f956eacd690ee48e2a7184a5eac0afd33fa3f4",
+        "documents_hash": "00c69f8e8a62a9b9b6442ffa9d54eb9d818974535d9f4a34de4e933dda6a4786",
+        "api_name": "travel.search_flights",
+        "start": 9620,
+        "stop": 9834
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "2b9baee9c32957ee38dcc60711764e3259dfde57b73b9c5afd8a75be42736919",
+        "documents_hash": "9800bb7ac2f3242e1ee1ae9c92962ffe52f3c2258af9fbe73087813b1a293c6d",
+        "api_name": "travel.search_lodging",
+        "start": 9834,
+        "stop": 10048
+      },
+      {
+        "record_count": 214,
+        "record_ids_hash": "33f5a5c6fdf0eab1772ab3816fe85c94946ff7cc3a3c5b6e639dd15f042c402f",
+        "documents_hash": "f06829ce0b5e0958765f838a8747691805d731d92101e297537993b26fab6717",
+        "api_name": "weather.get_forecast",
+        "start": 10048,
+        "stop": 10262
+      }
+    ]
+  },
+  "source_info": {
+    "record_count": 61722,
+    "domains": {
+      "food": {
+        "record_count": 9592,
+        "record_ids_hash": "a2fbf45dda7bc5b24c1865ddd59cd9a513172a280fe0aec0aa2ef0281e114684",
+        "documents_hash": "479b954b14d602bdd3b6dbb4ba977942f5f267046d28e2515d0171a05d7ff81d",
+        "vector_file": "source_info/food.npy",
+        "shape": [
+          9592,
+          384
+        ],
+        "dtype": "float32"
+      },
+      "music_media": {
+        "record_count": 12787,
+        "record_ids_hash": "909bfbc9130a0f328f33d2510a3aad68131dc511ca0c8f487ba03adb6d24e0ef",
+        "documents_hash": "44fd9edd0834b6b159e90ad4709074119e0e29287bb6aeb67e290ce6e2930951",
+        "vector_file": "source_info/music_media.npy",
+        "shape": [
+          12787,
+          384
+        ],
+        "dtype": "float32"
+      },
+      "navigation": {
+        "record_count": 10362,
+        "record_ids_hash": "f8b74caec977b9e33d4e25e3f31ccf72bb1df3c2eae8f0f2623925409a7ec33d",
+        "documents_hash": "17c7ba1f56da10cd4a76af5de6a972d244099c57d27f450dd27923d37908593c",
+        "vector_file": "source_info/navigation.npy",
+        "shape": [
+          10362,
+          384
+        ],
+        "dtype": "float32"
+      },
+      "shopping": {
+        "record_count": 20385,
+        "record_ids_hash": "c0b6957197b45c546c14dd1ae8fd6e2ae7bfc3db32c4cdbf573f6f1a5e0fda58",
+        "documents_hash": "09e5a7151d551dc4d93dab66d7d31ffce9084b95abdf64a51d549d83ee2b5a1b",
+        "vector_file": "source_info/shopping.npy",
+        "shape": [
+          20385,
+          384
+        ],
+        "dtype": "float32"
+      },
+      "travel_flights": {
+        "record_count": 8000,
+        "record_ids_hash": "6e8a55b38052382308060c6013aa627903ede31e9784d446dcb8f3d82a42cf7c",
+        "documents_hash": "76ac468b9966e6dd4de873ebcc620024fc06b0be51eea49f5945865c493abce7",
+        "vector_file": "source_info/travel_flights.npy",
+        "shape": [
+          8000,
+          384
+        ],
+        "dtype": "float32"
+      },
+      "weather": {
+        "record_count": 596,
+        "record_ids_hash": "79aa4210927cb1fca843fa82d56b38690bd4d3eab665f6fe2db10b90a88e018a",
+        "documents_hash": "3a493c45a67728f8bdf5235721823f334efc81cb52ea250257e31b9a4d0cf816",
+        "vector_file": "source_info/weather.npy",
+        "shape": [
+          596,
+          384
+        ],
+        "dtype": "float32"
+      }
+    }
+  },
+  "build": {
+    "device": "cuda:0",
+    "elapsed_seconds": 112.95
+  }
+}

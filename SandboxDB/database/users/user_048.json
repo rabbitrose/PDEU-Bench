@@ -1,0 +1,96 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_048",
+  "user_context": {
+    "fictional_name": "马库斯·约翰逊",
+    "age": 17,
+    "location": "美国伊利诺伊州芝加哥",
+    "languages": [
+      "英语",
+      "西班牙语（会话水平）"
+    ],
+    "occupation": "学生",
+    "industry": "教育",
+    "household": "与母亲和妹妹同住",
+    "accessibility_needs": "无",
+    "privacy_preferences": [
+      "仅与家人/团队共享位置",
+      "使用社交媒体但避免过度分享"
+    ],
+    "budget_preferences": [
+      "节俭：为篮球训练营和装备存钱",
+      "偏好折扣和促销"
+    ],
+    "technology_preferences": [
+      "智能手机（安卓）",
+      "用于学校的手提电脑",
+      "听音乐用的耳机"
+    ],
+    "food_preferences": [
+      "高蛋白餐食",
+      "训练后奶昔",
+      "喜欢意大利和墨西哥菜"
+    ],
+    "travel_preferences": [
+      "比赛日偏好国内旅行",
+      "预算友好的住宿",
+      "靠近体育设施"
+    ],
+    "learning_preferences": [
+      "动手训练",
+      "视频教程",
+      "带视觉元素的短文"
+    ],
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

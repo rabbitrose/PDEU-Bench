@@ -1,0 +1,133 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_077",
+  "user_context": {
+    "fictional_name": "Marinda van der Merwe",
+    "age": 29,
+    "location": "南非西开普省斯坦林布什",
+    "languages": [
+      "南非荷兰语",
+      "英语"
+    ],
+    "occupation": "数字营销经理",
+    "industry": "市场营销与广告",
+    "household": "单身，租住公寓独居",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "data_sharing": "有选择性；愿意分享位置以获取活动推荐，但不分享个人联系方式",
+      "tracking": "接受音乐推荐的cookies，屏蔽广告追踪器",
+      "social_media": "公开Instagram账号用于音乐内容，Facebook设为私密"
+    },
+    "budget_preferences": {
+      "monthly_entertainment": "1500-2000南非兰特用于音乐会、节日和周边商品",
+      "willing_to_splurge": "黑胶唱片、限量版乐队周边",
+      "savings_approach": "储蓄收入的10%，优先体验而非物品"
+    },
+    "technology_preferences": {
+      "devices": [
+        "iPhone",
+        "MacBook",
+        "Sony WH-1000XM4耳机"
+      ],
+      "apps": [
+        "Instagram",
+        "Apple Music",
+        "Notion（用于规划）"
+      ],
+      "brands": [
+        "Apple",
+        "Sony",
+        "Fender（吉他）"
+      ]
+    },
+    "food_preferences": {
+      "cuisines": [
+        "南非式（烧烤）",
+        "意大利语",
+        "泰国"
+      ],
+      "dietary": [
+        "杂食",
+        "喜欢精酿啤酒和葡萄酒"
+      ]
+    },
+    "travel_preferences": {
+      "destinations": [
+        "西开普省沿海城镇",
+        "纳米比亚的文化节",
+        "欧洲独立音乐节"
+      ],
+      "travel_style": [
+        "经济实惠",
+        "冒险专注",
+        "社交（与朋友）"
+      ]
+    },
+    "learning_preferences": {
+      "subjects": [
+        "音乐制作",
+        "摄影",
+        "社交媒体营销"
+      ],
+      "formats": [
+        "在线课程（Udemy）",
+        "工作坊",
+        "YouTube教程"
+      ]
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "translation.translate_text",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

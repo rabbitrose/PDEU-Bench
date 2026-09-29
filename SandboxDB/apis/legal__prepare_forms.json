@@ -1,0 +1,73 @@
+{
+  "api_name": "legal.prepare_forms",
+  "category": "legal",
+  "action": "prepare_forms",
+  "description": "Prepare drafts, checklists, or field requirements for legal, civic, school, tenant, or administrative forms.",
+  "interface": {
+    "type": "function_call",
+    "function": "legal.prepare_forms",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "form_or_process",
+        "type": "string",
+        "required": true,
+        "description": "Form or process name.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "jurisdiction",
+        "type": "string",
+        "required": true,
+        "description": "Relevant jurisdiction.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "known_information",
+        "type": "object",
+        "required": true,
+        "description": "Known facts and user-provided details.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "missing_information_policy",
+        "type": "string",
+        "required": true,
+        "description": "How to handle missing or uncertain fields.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "required": true,
+        "description": "Sensitive detail handling.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "requires_review",
+        "type": "boolean",
+        "required": false,
+        "description": "Whether professional or user review is required.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "draft_fields": "object",
+      "missing_fields": "array",
+      "review_steps": "array"
+    },
+    "preference_sensitive_parameters": [
+      "form_or_process"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "form_or_process",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

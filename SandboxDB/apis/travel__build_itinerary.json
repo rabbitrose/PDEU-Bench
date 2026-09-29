@@ -1,0 +1,119 @@
+{
+  "api_name": "travel.build_itinerary",
+  "category": "travel",
+  "action": "build_itinerary",
+  "description": "Build a multi-day itinerary that balances tasks, rest, travel, budget, risk, and preferences.",
+  "interface": {
+    "type": "function_call",
+    "function": "travel.build_itinerary",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "destination",
+        "type": "string",
+        "required": true,
+        "description": "Trip destination.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "date_range",
+        "type": "object",
+        "required": true,
+        "description": "Trip dates.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "anchors",
+        "type": "array[object]",
+        "required": true,
+        "description": "Fixed commitments or required stops.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "interests",
+        "type": "array[string]",
+        "required": true,
+        "description": "User interests to include.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "pace_preference",
+        "type": "string",
+        "required": true,
+        "description": "Slow, moderate, packed, or mixed.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "required": true,
+        "description": "Total or daily budget.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "mobility_constraints",
+        "type": "array[string]",
+        "required": false,
+        "description": "Accessibility or mobility constraints.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "required": false,
+        "description": "Safety and uncertainty tolerance.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "meal_preferences",
+        "type": "object",
+        "required": false,
+        "description": "Food preferences and constraints.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "work_or_family_constraints",
+        "type": "array[string]",
+        "required": false,
+        "description": "Constraints affecting daily plan.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "itinerary": "array",
+      "budget_summary": "object",
+      "risk_notes": "array"
+    },
+    "preference_sensitive_parameters": [
+      "budget_limit",
+      "mobility_constraints",
+      "meal_preferences",
+      "work_or_family_constraints"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "mobility_constraints",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "meal_preferences",
+        "type": "object",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "work_or_family_constraints",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

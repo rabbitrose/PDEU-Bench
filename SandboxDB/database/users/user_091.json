@@ -1,0 +1,119 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_091",
+  "user_context": {
+    "fictional_name": "Alex Chen",
+    "age": 32,
+    "location": "美国加利福尼亚州旧金山",
+    "languages": [
+      "英语",
+      "普通话"
+    ],
+    "occupation": "高级QA工程师",
+    "industry": "生物技术/基因组学",
+    "household": "独居",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "data_sharing": "保护个人数据，尽可能匿名使用",
+      "social_media": "维护匿名GitHub和LinkedIn账户，避免其他平台"
+    },
+    "budget_preferences": {
+      "spending_style": "价值驱动：愿意为质量和耐用性付费，但避免奢侈品牌",
+      "savings_goal": "将20%的收入储蓄用于最终提前退休或旅行",
+      "major_expenses": "旅行、高端电子产品、优质厨房工具"
+    },
+    "technology_preferences": {
+      "devices": "偏好苹果生态系统（iPhone、Mac、iPad），但愿意为测试使用安卓",
+      "smart_home": "极简：仅智能恒温器和灯光",
+      "privacy_tools": "个人浏览使用VPN（Mullvad），启用广告拦截器"
+    },
+    "food_preferences": {
+      "cuisines": [
+        "日本料理",
+        "意大利语",
+        "墨西哥料理",
+        "印度菜"
+      ],
+      "dietary_restrictions": "素食者",
+      "dining_out": "偏好休闲餐厅，避免快餐",
+      "snacks": [
+        "黑巧克力",
+        "混合坚果",
+        "抹茶"
+      ]
+    },
+    "travel_preferences": {
+      "destinations": [
+        "国家公园（优胜美地、大提顿）",
+        "拥有科技氛围的欧洲城市（柏林、阿姆斯特丹）"
+      ],
+      "accommodation": "爱彼迎或精品酒店",
+      "transport": "超过5小时航班选择商务舱，中距离偏好火车"
+    },
+    "learning_preferences": {
+      "style": [
+        "互动式动手课程",
+        "阅读文档和规格说明"
+      ],
+      "platforms": [
+        "Coursera",
+        "Udemy",
+        "系统设计面试（Alex Xu）"
+      ],
+      "frequency": "每周一次，通常在周末"
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

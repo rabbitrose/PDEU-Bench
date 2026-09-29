@@ -1,0 +1,177 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_142",
+  "user_context": {
+    "fictional_name": "Alexandra Chen",
+    "age": 42,
+    "location": "New York, NY, USA",
+    "languages": [
+      "英语",
+      "普通话"
+    ],
+    "occupation": "总法律顾问",
+    "industry": "工业制造（TurpCo Industries）",
+    "household": "已婚，有两个孩子（年龄10岁和13岁）",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "data_sharing": [
+        "偏好最小化共享",
+        "要求对外部服务签署NDA"
+      ],
+      "security": [
+        "使用VPN",
+        "所有账户启用双因素认证",
+        "避免使用公共Wi-Fi工作"
+      ],
+      "consent": [
+        "仅明确选择加入",
+        "阅读隐私政策"
+      ]
+    },
+    "budget_preferences": {
+      "spending_style": [
+        "价值高于奢华",
+        "愿意为长期使用投资质量",
+        "个人物品注重预算，专业工具较少"
+      ],
+      "splurge_areas": [
+        "高质量工作设备",
+        "跑鞋",
+        "法律会议"
+      ],
+      "save_areas": [
+        "服装（购买中档）",
+        "娱乐（流媒体而非影院）"
+      ]
+    },
+    "technology_preferences": {
+      "devices": [
+        "iPhone 15 Pro",
+        "MacBook Pro",
+        "iPad Pro"
+      ],
+      "software": [
+        "Microsoft Office 365",
+        "Zoom",
+        "Slack",
+        "DocuSign"
+      ],
+      "cutting_edge": [
+        "对AI合同审查工具感兴趣",
+        "使用区块链进行安全文档共享"
+      ],
+      "avoid": [
+        "未经证实的技术的早期采用者",
+        "用于工作的谷歌产品"
+      ]
+    },
+    "food_preferences": {
+      "cuisine": [
+        "意大利语",
+        "日本料理",
+        "现代美式"
+      ],
+      "dietary_restrictions": [
+        "低碳水",
+        "避免加工食品"
+      ],
+      "favorite_dishes": [
+        "烤三文鱼配芦笋",
+        "寿司",
+        "卡普里沙拉"
+      ],
+      "avoid": [
+        "辛辣食物",
+        "快餐"
+      ]
+    },
+    "travel_preferences": {
+      "business": [
+        "仅直飞航班",
+        "首选航空公司：达美航空",
+        "万豪酒店"
+      ],
+      "leisure": [
+        "文化目的地（博物馆、历史遗址）",
+        "适合家庭度假的度假村",
+        "美国公路旅行"
+      ],
+      "avoid": [
+        "邮轮",
+        "背包旅行",
+        "高风险目的地"
+      ]
+    },
+    "learning_preferences": {
+      "style": [
+        "阅读官方文件和判例法",
+        "带问答的互动网络研讨会",
+        "同行讨论组"
+      ],
+      "formats": [
+        "白皮书",
+        "视频讲座（1-2小时）",
+        "现场研讨会"
+      ],
+      "areas_of_interest": [
+        "人工智能与法律",
+        "国际贸易合规",
+        "ESG法规"
+      ]
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "education.search_courses",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "api_name": "email.search_messages",
+  "category": "email",
+  "action": "search_messages",
+  "description": "Search email by sender, keywords, date range, label, attachments, and privacy constraints.",
+  "interface": {
+    "type": "function_call",
+    "function": "email.search_messages",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "query",
+        "type": "string",
+        "required": true,
+        "description": "Search query built from the task.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "from_filter",
+        "type": "string",
+        "required": false,
+        "description": "Sender filter.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "to_filter",
+        "type": "string",
+        "required": false,
+        "description": "Recipient filter.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "date_start",
+        "type": "date",
+        "required": false,
+        "description": "Earliest date.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "date_end",
+        "type": "date",
+        "required": false,
+        "description": "Latest date.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "labels",
+        "type": "array[string]",
+        "required": false,
+        "description": "Labels such as work, family, finance, travel.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "has_attachment",
+        "type": "boolean",
+        "required": false,
+        "description": "Whether to require attachments.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "required": false,
+        "description": "Redaction level based on user privacy preferences.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "max_results",
+        "type": "integer",
+        "required": false,
+        "description": "Maximum result count.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "messages": "array",
+      "next_page_token": "string|null",
+      "search_summary": "object"
+    },
+    "preference_sensitive_parameters": [
+      "privacy_mode"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 1
+}

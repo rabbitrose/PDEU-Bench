@@ -1,0 +1,85 @@
+{
+  "api_name": "contacts.find_experts",
+  "category": "contacts",
+  "action": "find_experts",
+  "description": "Find experts, speakers, mentors, interviewees, panelists, service providers, or community contacts.",
+  "interface": {
+    "type": "function_call",
+    "function": "contacts.find_experts",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "expertise_needed",
+        "type": "string",
+        "required": true,
+        "description": "Expertise or role needed.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "location_or_region",
+        "type": "string",
+        "required": true,
+        "description": "Location or region.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "availability_window",
+        "type": "object",
+        "required": true,
+        "description": "Timing constraints.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "language_or_accessibility_needs",
+        "type": "array[string]",
+        "required": true,
+        "description": "Language or accessibility requirements.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "required": true,
+        "description": "Sensitive detail handling.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "max_results",
+        "type": "integer",
+        "required": false,
+        "description": "Maximum contacts to return.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "experts": "array",
+      "contact_risks": "array",
+      "outreach_suggestions": "array"
+    },
+    "preference_sensitive_parameters": [
+      "location_or_region",
+      "availability_window",
+      "language_or_accessibility_needs"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "location_or_region",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "availability_window",
+        "type": "object",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "language_or_accessibility_needs",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

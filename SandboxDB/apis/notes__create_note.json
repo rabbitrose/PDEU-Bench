@@ -1,0 +1,73 @@
+{
+  "api_name": "notes.create_note",
+  "category": "notes",
+  "action": "create_note",
+  "description": "Create a note with tags, links, reminders, and privacy controls.",
+  "interface": {
+    "type": "function_call",
+    "function": "notes.create_note",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "title",
+        "type": "string",
+        "required": true,
+        "description": "Note title.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "body",
+        "type": "string",
+        "required": true,
+        "description": "Note body.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "tags",
+        "type": "array[string]",
+        "required": true,
+        "description": "Tags.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "linked_entities",
+        "type": "array[string]",
+        "required": false,
+        "description": "Related contacts, documents, events, or tasks.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "required": false,
+        "description": "Note privacy level.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "reminder",
+        "type": "datetime",
+        "required": false,
+        "description": "Optional reminder.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "note_id": "string",
+      "status": "string",
+      "linked_entities": "array"
+    },
+    "preference_sensitive_parameters": [
+      "privacy_mode"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 1
+}

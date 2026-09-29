@@ -1,0 +1,684 @@
+{
+  "schema_version": "SandboxDB.v1",
+  "category": "documents",
+  "api_count": 8,
+  "apis": [
+    {
+      "api_name": "documents.create",
+      "category": "documents",
+      "action": "create",
+      "description": "Create a document, memo, checklist, report, itinerary, or plan.",
+      "interface": {
+        "type": "function_call",
+        "function": "documents.create",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "title",
+            "type": "string",
+            "required": true,
+            "description": "Document title.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "document_type",
+            "type": "string",
+            "required": true,
+            "description": "Report, memo, itinerary, budget, checklist, email brief, or plan.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "content_outline",
+            "type": "array[string]",
+            "required": true,
+            "description": "Sections or items to include.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "style",
+            "type": "string",
+            "required": true,
+            "description": "Writing style based on user preferences.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "detail_level",
+            "type": "string",
+            "required": true,
+            "description": "Desired detail level.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "language",
+            "type": "string",
+            "required": true,
+            "description": "Output language.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "include_tables",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether to include structured tables.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "include_citations",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether citations are required.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": false,
+            "description": "Privacy treatment for sensitive details.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "document_id": "string",
+          "document_preview": "object",
+          "quality_checks": "array"
+        },
+        "preference_sensitive_parameters": [
+          "document_type",
+          "style",
+          "language",
+          "privacy_mode"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "document_type",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "style",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "language",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "documents.create_checklist",
+      "category": "documents",
+      "action": "create_checklist",
+      "description": "Create an actionable checklist from task goals, constraints, evidence, and user preferences.",
+      "interface": {
+        "type": "function_call",
+        "function": "documents.create_checklist",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "goal",
+            "type": "string",
+            "required": true,
+            "description": "Checklist goal.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "items_source",
+            "type": "array[string]",
+            "required": true,
+            "description": "Inputs to convert into checklist items.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "priority_rules",
+            "type": "array[string]",
+            "required": true,
+            "description": "Rules for ordering and grouping checklist items.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "format",
+            "type": "string",
+            "required": true,
+            "description": "Preferred checklist format.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "language",
+            "type": "string",
+            "required": false,
+            "description": "Checklist language.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": false,
+            "description": "Sensitive detail handling.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "checklist": "array",
+          "grouping": "object",
+          "open_questions": "array"
+        },
+        "preference_sensitive_parameters": [
+          "format",
+          "language"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "format",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "language",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "documents.extract_requirements",
+      "category": "documents",
+      "action": "extract_requirements",
+      "description": "Extract requirements, constraints, deadlines, stakeholders, deliverables, and risks from documents or task text.",
+      "interface": {
+        "type": "function_call",
+        "function": "documents.extract_requirements",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "source_text_or_doc_ids",
+            "type": "array[string]",
+            "required": true,
+            "description": "Document ids or source text to analyze.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "requirement_types",
+            "type": "array[string]",
+            "required": true,
+            "description": "Types to extract, such as deadlines, budget, legal, safety, or format.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "strictness",
+            "type": "string",
+            "required": true,
+            "description": "How strictly implied requirements should be included.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "language",
+            "type": "string",
+            "required": false,
+            "description": "Language for extracted requirements.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": false,
+            "description": "Redaction or minimization level for sensitive content.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "requirements": "array",
+          "ambiguities": "array",
+          "risk_flags": "array"
+        },
+        "preference_sensitive_parameters": [
+          "source_text_or_doc_ids",
+          "requirement_types",
+          "language"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "source_text_or_doc_ids",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "requirement_types",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "language",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "documents.generate_presentation",
+      "category": "documents",
+      "action": "generate_presentation",
+      "description": "Generate a presentation, slide outline, speaker notes, handout, or workshop deck.",
+      "interface": {
+        "type": "function_call",
+        "function": "documents.generate_presentation",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "topic",
+            "type": "string",
+            "required": true,
+            "description": "Presentation topic.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "audience",
+            "type": "string",
+            "required": true,
+            "description": "Audience and expertise level.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "duration_minutes",
+            "type": "integer",
+            "required": true,
+            "description": "Presentation or workshop duration.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "source_materials",
+            "type": "array[string]",
+            "required": true,
+            "description": "Evidence or content to include.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "style",
+            "type": "string",
+            "required": true,
+            "description": "Tone, visual density, and communication style.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "language",
+            "type": "string",
+            "required": false,
+            "description": "Presentation language.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "include_citations",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether citations should be included.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "deck_outline": "array",
+          "speaker_notes": "array",
+          "handouts": "array"
+        },
+        "preference_sensitive_parameters": [
+          "source_materials",
+          "style",
+          "language"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "source_materials",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "style",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "language",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "documents.search",
+      "category": "documents",
+      "action": "search",
+      "description": "Search files, notes, PDFs, images, and documents by keyword, metadata, owner, or task context.",
+      "interface": {
+        "type": "function_call",
+        "function": "documents.search",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "query",
+            "type": "string",
+            "required": true,
+            "description": "Search query.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "file_types",
+            "type": "array[string]",
+            "required": false,
+            "description": "File type filters.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "date_start",
+            "type": "date",
+            "required": false,
+            "description": "Earliest modified or created date.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "date_end",
+            "type": "date",
+            "required": false,
+            "description": "Latest modified or created date.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "owner_filter",
+            "type": "string",
+            "required": false,
+            "description": "Owner or shared source.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "folder_hints",
+            "type": "array[string]",
+            "required": true,
+            "description": "Likely folders.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": false,
+            "description": "Controls redaction of sensitive filenames or snippets.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "max_results",
+            "type": "integer",
+            "required": false,
+            "description": "Maximum result count.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "documents": "array",
+          "top_matches": "array",
+          "redactions": "array"
+        },
+        "preference_sensitive_parameters": [
+          "privacy_mode"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "documents.summarize",
+      "category": "documents",
+      "action": "summarize",
+      "description": "Summarize documents according to user detail, evidence, and formatting preferences.",
+      "interface": {
+        "type": "function_call",
+        "function": "documents.summarize",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "document_ids",
+            "type": "array[string]",
+            "required": true,
+            "description": "Documents to summarize.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "summary_goal",
+            "type": "string",
+            "required": true,
+            "description": "Purpose of summary.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "detail_level",
+            "type": "string",
+            "required": true,
+            "description": "Brief, standard, detailed, or exhaustive.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "format",
+            "type": "string",
+            "required": true,
+            "description": "Output format such as bullets, memo, table, checklist.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "citation_style",
+            "type": "string",
+            "required": false,
+            "description": "Citation or evidence style.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "focus_areas",
+            "type": "array[string]",
+            "required": true,
+            "description": "Topics to emphasize.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": false,
+            "description": "Sensitive data handling.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "summary": "object",
+          "citations": "array",
+          "open_questions": "array"
+        },
+        "preference_sensitive_parameters": [
+          "format",
+          "citation_style"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "format",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "citation_style",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "documents.translate_localize",
+      "category": "documents",
+      "action": "translate_localize",
+      "description": "Translate and localize documents while preserving tone, format, terminology, and privacy requirements.",
+      "interface": {
+        "type": "function_call",
+        "function": "documents.translate_localize",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "document_ids_or_text",
+            "type": "array[string]",
+            "required": true,
+            "description": "Documents or text to translate.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "source_language",
+            "type": "string",
+            "required": true,
+            "description": "Source language.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "target_language",
+            "type": "string",
+            "required": true,
+            "description": "Target language.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "localization_region",
+            "type": "string",
+            "required": true,
+            "description": "Region for terminology and cultural fit.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "tone",
+            "type": "string",
+            "required": true,
+            "description": "Preferred tone and style.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": false,
+            "description": "Sensitive detail handling.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "localized_documents": "array",
+          "terminology_notes": "array",
+          "quality_warnings": "array"
+        },
+        "preference_sensitive_parameters": [
+          "source_language",
+          "target_language",
+          "tone"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "source_language",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "target_language",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "tone",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "documents.update",
+      "category": "documents",
+      "action": "update",
+      "description": "Update an existing document with revisions, formatting changes, or added sections.",
+      "interface": {
+        "type": "function_call",
+        "function": "documents.update",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "document_id",
+            "type": "string",
+            "required": true,
+            "description": "Document to update.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "updates",
+            "type": "array[object]",
+            "required": true,
+            "description": "Requested revisions.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "preserve_sections",
+            "type": "array[string]",
+            "required": false,
+            "description": "Sections that should not be changed.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "style",
+            "type": "string",
+            "required": false,
+            "description": "Updated style preference.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "track_changes",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether to keep revision markers.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "document_id": "string",
+          "updated_preview": "object",
+          "change_log": "array"
+        },
+        "preference_sensitive_parameters": [
+          "style"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "style",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    }
+  ]
+}

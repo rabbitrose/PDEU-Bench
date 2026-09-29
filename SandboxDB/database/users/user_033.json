@@ -1,0 +1,102 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_033",
+  "user_context": {
+    "fictional_name": "Lena Hartwell",
+    "age": 42,
+    "location": "纽约州纽约市",
+    "languages": [
+      "英语",
+      "法语"
+    ],
+    "occupation": "影评人",
+    "industry": "Media & Entertainment",
+    "household": "单身，独自居住",
+    "accessibility_needs": "无",
+    "privacy_preferences": [
+      "Keeps personal life separate from professional",
+      "Uses pseudonym online occasionally",
+      "Does not share location or screening schedule publicly"
+    ],
+    "budget_preferences": [
+      "Spends generously on film-related expenses",
+      "Budget-conscious on other items",
+      "Willing to pay for premium streaming services without ads"
+    ],
+    "technology_preferences": [
+      "Prefer minimal tech distractions",
+      "Uses a high-quality OLED TV and sound system",
+      "Prefers physical media (Blu-ray) over streaming for ownership",
+      "Uses a laptop for writing, not tablet"
+    ],
+    "food_preferences": [
+      "Vegetarian cuisine",
+      "Ethnic street food",
+      "Good coffee",
+      "Wine"
+    ],
+    "travel_preferences": [
+      "Film festivals (Cannes, TIFF, Sundance)",
+      "Culturally rich cities",
+      "Historic theaters"
+    ],
+    "learning_preferences": [
+      "In-depth film analysis courses",
+      "Documentary viewing",
+      "Reading film criticism",
+      "Participating in panel discussions"
+    ],
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

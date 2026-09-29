@@ -1,0 +1,698 @@
+{
+  "schema_version": "SandboxDB.v1",
+  "category": "research",
+  "api_count": 8,
+  "apis": [
+    {
+      "api_name": "research.analyze_table",
+      "category": "research",
+      "action": "analyze_table",
+      "description": "Analyze tabular data with filters, aggregations, comparisons, and uncertainty notes.",
+      "interface": {
+        "type": "function_call",
+        "function": "research.analyze_table",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "dataset_id",
+            "type": "string",
+            "required": true,
+            "description": "Dataset identifier.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "analysis_goal",
+            "type": "string",
+            "required": true,
+            "description": "Analysis objective.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "filters",
+            "type": "object",
+            "required": true,
+            "description": "Rows or groups to include.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "metrics",
+            "type": "array[string]",
+            "required": true,
+            "description": "Metrics to calculate.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "group_by",
+            "type": "array[string]",
+            "required": false,
+            "description": "Grouping fields.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "visualization_preference",
+            "type": "string",
+            "required": false,
+            "description": "Chart or table preference.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "uncertainty_handling",
+            "type": "string",
+            "required": false,
+            "description": "How to handle missing or uncertain data.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "analysis": "object",
+          "tables": "array",
+          "visualization_specs": "array",
+          "caveats": "array"
+        },
+        "preference_sensitive_parameters": [
+          "visualization_preference"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "visualization_preference",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "research.compare_options",
+      "category": "research",
+      "action": "compare_options",
+      "description": "Compare options against weighted criteria, user preferences, constraints, risks, and evidence quality.",
+      "interface": {
+        "type": "function_call",
+        "function": "research.compare_options",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "options",
+            "type": "array[object]",
+            "required": true,
+            "description": "Candidate options to compare.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "criteria",
+            "type": "array[string]",
+            "required": true,
+            "description": "Comparison criteria from the task and user preferences.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "weights",
+            "type": "object",
+            "required": true,
+            "description": "Relative importance of criteria.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "constraints",
+            "type": "array[string]",
+            "required": true,
+            "description": "Hard constraints that options must satisfy.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "required": true,
+            "description": "Risk handling preference for ranking.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "output_format",
+            "type": "string",
+            "required": false,
+            "description": "Preferred output format for downstream planning.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "ranked_options": "array",
+          "tradeoff_summary": "object",
+          "disqualified_options": "array"
+        },
+        "preference_sensitive_parameters": [
+          "criteria",
+          "constraints",
+          "risk_tolerance",
+          "output_format"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "criteria",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "constraints",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "output_format",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "research.fact_check",
+      "category": "research",
+      "action": "fact_check",
+      "description": "Check claims against multiple sources with confidence ratings and uncertainty notes.",
+      "interface": {
+        "type": "function_call",
+        "function": "research.fact_check",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "claims",
+            "type": "array[string]",
+            "required": true,
+            "description": "Claims to verify.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "evidence_sources",
+            "type": "array[string]",
+            "required": false,
+            "description": "Candidate sources or documents.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "region",
+            "type": "string",
+            "required": false,
+            "description": "Relevant region.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "date_context",
+            "type": "date",
+            "required": false,
+            "description": "Date context for time-sensitive claims.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "evidence_standard",
+            "type": "string",
+            "required": true,
+            "description": "User's required evidence bar.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "output_format",
+            "type": "string",
+            "required": false,
+            "description": "Table, narrative, or annotated list.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "checked_claims": "array",
+          "overall_confidence": "string",
+          "uncertainties": "array"
+        },
+        "preference_sensitive_parameters": [
+          "date_context"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "date_context",
+            "type": "date",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "research.monitor_updates",
+      "category": "research",
+      "action": "monitor_updates",
+      "description": "Create a monitoring plan for changing information such as prices, schedules, regulations, weather, or research updates.",
+      "interface": {
+        "type": "function_call",
+        "function": "research.monitor_updates",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "topics",
+            "type": "array[string]",
+            "required": true,
+            "description": "Topics or entities to monitor.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "sources",
+            "type": "array[string]",
+            "required": true,
+            "description": "Sources or channels to monitor.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "frequency",
+            "type": "string",
+            "required": true,
+            "description": "Update frequency aligned to task urgency.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "alert_thresholds",
+            "type": "array[string]",
+            "required": true,
+            "description": "Changes that should trigger attention.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": false,
+            "description": "How much user context may be shared with monitoring sources.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "monitoring_plan": "object",
+          "alerts": "array",
+          "next_check": "datetime"
+        },
+        "preference_sensitive_parameters": [
+          "sources",
+          "privacy_mode"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "sources",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "research.retrieve_dataset",
+      "category": "research",
+      "action": "retrieve_dataset",
+      "description": "Retrieve structured datasets by topic, geography, date range, and licensing constraints.",
+      "interface": {
+        "type": "function_call",
+        "function": "research.retrieve_dataset",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "topic",
+            "type": "string",
+            "required": true,
+            "description": "Dataset topic.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "geography",
+            "type": "string",
+            "required": true,
+            "description": "Geographic scope.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "date_range",
+            "type": "object",
+            "required": true,
+            "description": "Temporal coverage.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "format_preference",
+            "type": "string",
+            "required": true,
+            "description": "CSV, JSON, spreadsheet, API, or database.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "license_constraints",
+            "type": "array[string]",
+            "required": true,
+            "description": "Acceptable licenses.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "quality_threshold",
+            "type": "string",
+            "required": true,
+            "description": "Data quality standard.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "privacy_constraints",
+            "type": "array[string]",
+            "required": false,
+            "description": "Privacy or sensitivity constraints.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "datasets": "array",
+          "recommended_dataset": "object",
+          "license_notes": "array"
+        },
+        "preference_sensitive_parameters": [
+          "privacy_constraints"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "privacy_constraints",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "research.review_evidence",
+      "category": "research",
+      "action": "review_evidence",
+      "description": "Evaluate evidence quality, citation strength, recency, conflicts, and uncertainty for a set of claims or sources.",
+      "interface": {
+        "type": "function_call",
+        "function": "research.review_evidence",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "claims_or_questions",
+            "type": "array[string]",
+            "required": true,
+            "description": "Claims, questions, or decision points to verify.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "candidate_sources",
+            "type": "array[object]",
+            "required": true,
+            "description": "Sources or search results to review.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "evidence_standard",
+            "type": "string",
+            "required": true,
+            "description": "Evidence bar, such as official, peer-reviewed, primary, or corroborated.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "required": true,
+            "description": "How conservative the review should be for user safety and task risk.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "citation_style",
+            "type": "string",
+            "required": false,
+            "description": "Preferred citation format.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "uncertainty_handling",
+            "type": "string",
+            "required": false,
+            "description": "How uncertainty and caveats should be represented.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "evidence_matrix": "array",
+          "recommended_sources": "array",
+          "uncertainties": "array"
+        },
+        "preference_sensitive_parameters": [
+          "candidate_sources",
+          "evidence_standard",
+          "risk_tolerance",
+          "citation_style"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "candidate_sources",
+            "type": "array[object]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "evidence_standard",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "citation_style",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "research.search_sources",
+      "category": "research",
+      "action": "search_sources",
+      "description": "Search cached real-world source_info directories, official-style source snapshots, local listings, weather, flight, shopping, and media records with quality filters.",
+      "interface": {
+        "type": "function_call",
+        "function": "research.search_sources",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "query",
+            "type": "string",
+            "required": true,
+            "description": "Search query derived from the task.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "source_domains",
+            "type": "array[string]",
+            "required": true,
+            "description": "Preferred source_info domains or source categories, such as shopping, food, navigation, travel_flights, weather, or music_media.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "evidence_standard",
+            "type": "string",
+            "required": true,
+            "description": "Required source quality and verification threshold.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "recency_requirement",
+            "type": "string",
+            "required": false,
+            "description": "How current the source must be for this task.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "language",
+            "type": "string",
+            "required": false,
+            "description": "Preferred language for sources.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "region",
+            "type": "string",
+            "required": false,
+            "description": "Location or jurisdiction constraint.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "max_results",
+            "type": "integer",
+            "required": false,
+            "description": "Maximum number of candidate sources.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "personalization_focus",
+            "type": "array[string]",
+            "required": false,
+            "description": "Preference dimensions that should affect ranking, such as budget, privacy, accessibility, safety, language, or evidence quality.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "sources": "array",
+          "quality_summary": "object",
+          "coverage_gaps": "array",
+          "source_info": "object"
+        },
+        "preference_sensitive_parameters": [
+          "source_domains",
+          "evidence_standard",
+          "recency_requirement",
+          "language",
+          "region",
+          "max_results",
+          "personalization_focus"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "source_domains",
+            "type": "array[string]",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "evidence_standard",
+            "type": "string",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "recency_requirement",
+            "type": "string",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "language",
+            "type": "string",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "region",
+            "type": "string",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "max_results",
+            "type": "integer",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "personalization_focus",
+            "type": "array[string]",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "research.web_search",
+      "category": "research",
+      "action": "web_search",
+      "description": "Search the web or trusted corpora with source quality, recency, language, and evidence constraints.",
+      "interface": {
+        "type": "function_call",
+        "function": "research.web_search",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "query",
+            "type": "string",
+            "required": true,
+            "description": "Search query.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "source_types",
+            "type": "array[string]",
+            "required": true,
+            "description": "News, academic, official, local, legal, forum, review, or market.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "date_range",
+            "type": "object",
+            "required": false,
+            "description": "Recency window.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "languages",
+            "type": "array[string]",
+            "required": false,
+            "description": "Preferred languages.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "region",
+            "type": "string",
+            "required": false,
+            "description": "Geographic region.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "evidence_standard",
+            "type": "string",
+            "required": true,
+            "description": "Source quality threshold.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "max_results",
+            "type": "integer",
+            "required": false,
+            "description": "Maximum result count.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "blocked_sources",
+            "type": "array[string]",
+            "required": false,
+            "description": "Sources to avoid.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "results": "array",
+          "source_quality_summary": "object",
+          "gaps": "array"
+        },
+        "preference_sensitive_parameters": [
+          "languages"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "languages",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    }
+  ]
+}

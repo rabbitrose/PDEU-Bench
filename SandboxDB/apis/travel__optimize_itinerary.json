@@ -1,0 +1,97 @@
+{
+  "api_name": "travel.optimize_itinerary",
+  "category": "travel",
+  "action": "optimize_itinerary",
+  "description": "Optimize trip schedule using constraints, routes, budget, pace, opening hours, and backup options.",
+  "interface": {
+    "type": "function_call",
+    "function": "travel.optimize_itinerary",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "candidate_activities",
+        "type": "array[object]",
+        "required": true,
+        "description": "Activities, appointments, or places to schedule.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "fixed_anchors",
+        "type": "array[object]",
+        "required": true,
+        "description": "Fixed commitments such as flights or meetings.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "traveler_preferences",
+        "type": "object",
+        "required": true,
+        "description": "Pace, food, accessibility, privacy, and lodging preferences.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "required": true,
+        "description": "Maximum trip budget.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "required": true,
+        "description": "Contingency and buffer preference.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "output_format",
+        "type": "string",
+        "required": false,
+        "description": "Preferred itinerary format.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "optimized_itinerary": "array",
+      "budget_summary": "object",
+      "fallback_options": "array"
+    },
+    "preference_sensitive_parameters": [
+      "candidate_activities",
+      "traveler_preferences",
+      "budget_limit",
+      "risk_tolerance",
+      "output_format"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "candidate_activities",
+        "type": "array[object]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "traveler_preferences",
+        "type": "object",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "output_format",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

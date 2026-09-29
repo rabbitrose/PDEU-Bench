@@ -1,0 +1,73 @@
+{
+  "api_name": "legal.search_documents",
+  "category": "legal",
+  "action": "search_documents",
+  "description": "Search legal documents, policies, contracts, or case files with jurisdiction and privacy constraints.",
+  "interface": {
+    "type": "function_call",
+    "function": "legal.search_documents",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "query",
+        "type": "string",
+        "required": true,
+        "description": "Legal search query.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "jurisdiction",
+        "type": "string",
+        "required": true,
+        "description": "Relevant jurisdiction.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "document_types",
+        "type": "array[string]",
+        "required": true,
+        "description": "Contracts, statutes, regulations, filings, correspondence, or notes.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "date_range",
+        "type": "object",
+        "required": false,
+        "description": "Date range.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "required": true,
+        "description": "Redaction and privilege protection.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "evidence_standard",
+        "type": "string",
+        "required": false,
+        "description": "Required evidence standard.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "documents": "array",
+      "relevance_notes": "array",
+      "privilege_warnings": "array"
+    },
+    "preference_sensitive_parameters": [
+      "privacy_mode"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

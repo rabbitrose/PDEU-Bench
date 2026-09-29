@@ -1,0 +1,22 @@
+- dataset:
+    id: mteb/BRIGHT
+    task_id: BrightSustainableLivingLongRetrieval_default_long
+    revision: c26703e6600d97c579ee2985f16cf307db13ed85
+  value: 10.417
+  date: '2026-03-31'
+  notes: Obtained using MTEB v2.10.12
+  source:
+    url: https://github.com/embeddings-benchmark/mteb/
+    name: Obtained using MTEB v2.10.12
+    user: mteb
+- dataset:
+    id: mteb/BRIGHT
+    task_id: BrightSustainableLivingLongRetrieval
+    revision: c26703e6600d97c579ee2985f16cf307db13ed85
+  value: 10.417
+  date: '2026-03-31'
+  notes: Obtained using MTEB v2.10.12
+  source:
+    url: https://github.com/embeddings-benchmark/mteb/
+    name: Obtained using MTEB v2.10.12
+    user: mteb

@@ -1,0 +1,104 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_122",
+  "user_context": {
+    "fictional_name": "法比安·范德默维",
+    "age": 42,
+    "location": "南非约翰内斯堡",
+    "languages": [
+      "英语",
+      "南非荷兰语",
+      "基础祖鲁语"
+    ],
+    "occupation": "合伙人",
+    "industry": "法律服务",
+    "household": "已婚，有两个孩子（年龄8岁和12岁）",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "data_sharing": "最小化，通信首选端到端加密",
+      "ad_tracking": "拒绝所有非必要cookies",
+      "social_media_presence": "仅使用LinkedIn，很少发布"
+    },
+    "budget_preferences": {
+      "spending_style": "重质不重量，愿意为可靠性支付溢价",
+      "saving_goals": "子女大学基金、退休",
+      "financial_products": "带奖励的信用卡、旅行保险"
+    },
+    "technology_preferences": {
+      "devices": "最新款iPhone、iPad Pro、MacBook",
+      "software": "Microsoft Office, LexisNexis, Westlaw",
+      "platforms": "苹果生态系统，云存储"
+    },
+    "food_preferences": {
+      "cuisine": "法国菜、意大利菜、南非烤肉",
+      "dietary_restrictions": "无",
+      "preferred_beverages": "红葡萄酒（波尔多、皮诺塔吉）、单一麦芽威士忌"
+    },
+    "travel_preferences": {
+      "destinations": "伦敦、纽约、开普敦",
+      "accommodation": "豪华酒店或服务式公寓",
+      "activities": "品酒、历史之旅"
+    },
+    "learning_preferences": {
+      "format": "在线课程、网络研讨会、专业研讨会",
+      "topics": "领导力、谈判、新法律技术"
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "education.build_study_plan",
+    "education.search_courses",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "entertainment.recommend_media",
+    "entertainment.search_events",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

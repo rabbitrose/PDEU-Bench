@@ -1,0 +1,66 @@
+{
+  "api_name": "documents.update",
+  "category": "documents",
+  "action": "update",
+  "description": "Update an existing document with revisions, formatting changes, or added sections.",
+  "interface": {
+    "type": "function_call",
+    "function": "documents.update",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "document_id",
+        "type": "string",
+        "required": true,
+        "description": "Document to update.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "updates",
+        "type": "array[object]",
+        "required": true,
+        "description": "Requested revisions.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "preserve_sections",
+        "type": "array[string]",
+        "required": false,
+        "description": "Sections that should not be changed.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "style",
+        "type": "string",
+        "required": false,
+        "description": "Updated style preference.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "track_changes",
+        "type": "boolean",
+        "required": false,
+        "description": "Whether to keep revision markers.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "document_id": "string",
+      "updated_preview": "object",
+      "change_log": "array"
+    },
+    "preference_sensitive_parameters": [
+      "style"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "style",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 1
+}

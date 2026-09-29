@@ -1,0 +1,91 @@
+{
+  "api_name": "security.evaluate_tools",
+  "category": "security",
+  "action": "evaluate_tools",
+  "description": "Evaluate VPNs, password managers, encrypted email, secure messaging, backup, or privacy tools.",
+  "interface": {
+    "type": "function_call",
+    "function": "security.evaluate_tools",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "tool_type",
+        "type": "string",
+        "required": true,
+        "description": "Security or privacy tool category.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "candidate_tools",
+        "type": "array[string]",
+        "required": true,
+        "description": "Candidate tools or providers.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "threat_model",
+        "type": "array[string]",
+        "required": true,
+        "description": "Relevant threat model and privacy concerns.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "platforms",
+        "type": "array[string]",
+        "required": true,
+        "description": "Platforms that must be supported.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "required": true,
+        "description": "Maximum budget.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "privacy_requirements",
+        "type": "array[string]",
+        "required": false,
+        "description": "Hard privacy requirements.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "security_comparison": "array",
+      "recommended_tool": "object",
+      "residual_risks": "array"
+    },
+    "preference_sensitive_parameters": [
+      "tool_type",
+      "threat_model",
+      "budget_limit",
+      "privacy_requirements"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "tool_type",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "threat_model",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "privacy_requirements",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

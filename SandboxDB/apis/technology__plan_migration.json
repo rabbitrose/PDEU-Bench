@@ -1,0 +1,79 @@
+{
+  "api_name": "technology.plan_migration",
+  "category": "technology",
+  "action": "plan_migration",
+  "description": "Plan a migration between tools, accounts, devices, hosting environments, or communication systems.",
+  "interface": {
+    "type": "function_call",
+    "function": "technology.plan_migration",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "source_system",
+        "type": "string",
+        "required": true,
+        "description": "Current system or tool.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "target_system",
+        "type": "string",
+        "required": true,
+        "description": "Target system or tool.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "data_to_migrate",
+        "type": "array[string]",
+        "required": true,
+        "description": "Data, contacts, files, accounts, or settings to migrate.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "privacy_security_requirements",
+        "type": "array[string]",
+        "required": true,
+        "description": "Security and privacy constraints.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "downtime_tolerance",
+        "type": "string",
+        "required": true,
+        "description": "Acceptable downtime or disruption.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "rollback_requirements",
+        "type": "array[string]",
+        "required": false,
+        "description": "Rollback or backup requirements.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "migration_plan": "array",
+      "rollback_plan": "array",
+      "risk_checks": "array"
+    },
+    "preference_sensitive_parameters": [
+      "privacy_security_requirements",
+      "downtime_tolerance"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "privacy_security_requirements",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "downtime_tolerance",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

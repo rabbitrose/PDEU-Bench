@@ -1,0 +1,139 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_032",
+  "user_context": {
+    "fictional_name": "Amina Kiprop",
+    "age": 24,
+    "location": "肯尼亚内罗毕",
+    "languages": [
+      "英语",
+      "斯瓦希里语"
+    ],
+    "occupation": "职业短跑运动员",
+    "industry": "专业体育",
+    "household": "单身，独自居住",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "data_sharing": "愿意与信任的教练分享训练数据，但对公开分享位置信息谨慎",
+      "social_media": "大部分内容与工作相关；极少发布个人帖子",
+      "ad_tracking": "屏蔽不必要的追踪器"
+    },
+    "budget_preferences": {
+      "spending_priorities": [
+        "训练装备",
+        "比赛报名费",
+        "国际赛事差旅费",
+        "营养"
+      ],
+      "savings_goal": "建立自费参加高水平赛事的专项资金",
+      "splurge_items": [
+        "偶尔购买高端跑鞋",
+        "按摩理疗服务"
+      ]
+    },
+    "technology_preferences": {
+      "devices": [
+        "智能手机（安卓）",
+        "GPS跑步手表（佳明Forerunner）",
+        "用于学习的笔记本电脑"
+      ],
+      "software": [
+        "训练计划应用（TrainingPeaks）",
+        "视频分析工具（Hudl）",
+        "社交媒体（Instagram、YouTube）"
+      ],
+      "preferences": [
+        "用户友好界面",
+        "网络不佳区域的离线模式"
+      ]
+    },
+    "food_preferences": {
+      "diet": "高碳水、适量蛋白质、低脂肪；喜欢乌伽黎和苏库玛维基等本地肯尼亚菜肴，但也愿意尝试国际美食换口味",
+      "restrictions": "无乳制品（乳糖不耐受）",
+      "snacks": [
+        "水果（香蕉、芒果）",
+        "坚果酱",
+        "成分天然的能量棒"
+      ]
+    },
+    "travel_preferences": {
+      "destinations": [
+        "田径项目强大的国家（美国、牙买加、英国）",
+        "拥有高原训练营的城市"
+      ],
+      "accommodation": [
+        "经济实惠、干净且靠近训练跑道的住所",
+        "偏好青旅或运动员宿舍"
+      ],
+      "transportation": [
+        "可靠的公共交通或拼车"
+      ]
+    },
+    "learning_preferences": {
+      "subjects": [
+        "高级短跑技术",
+        "运动心理学",
+        "反兴奋剂教育"
+      ],
+      "methods": [
+        "带视频反馈的互动在线课程",
+        "一对一指导",
+        "包含实操训练的研讨会"
+      ]
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "education.search_courses",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

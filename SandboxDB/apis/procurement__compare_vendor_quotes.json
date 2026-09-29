@@ -1,0 +1,78 @@
+{
+  "api_name": "procurement.compare_vendor_quotes",
+  "category": "procurement",
+  "action": "compare_vendor_quotes",
+  "description": "Compare vendor quotes, fees, contract terms, availability, references, and risk tradeoffs.",
+  "interface": {
+    "type": "function_call",
+    "function": "procurement.compare_vendor_quotes",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "vendor_quotes",
+        "type": "array[object]",
+        "required": true,
+        "description": "Quotes or proposal details to compare.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "comparison_criteria",
+        "type": "array[string]",
+        "required": true,
+        "description": "Criteria such as cost, quality, availability, and risk.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "required": true,
+        "description": "Maximum acceptable spend.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "required": true,
+        "description": "Risk preference for final selection.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "contract_constraints",
+        "type": "array[string]",
+        "required": false,
+        "description": "Contract or policy constraints.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "comparison_table": "array",
+      "recommended_vendor": "object",
+      "negotiation_points": "array"
+    },
+    "preference_sensitive_parameters": [
+      "comparison_criteria",
+      "risk_tolerance",
+      "contract_constraints"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "comparison_criteria",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "contract_constraints",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

@@ -1,0 +1,78 @@
+{
+  "api_name": "shopping.check_inventory",
+  "category": "shopping",
+  "action": "check_inventory",
+  "description": "Check local and online inventory availability for selected products.",
+  "interface": {
+    "type": "function_call",
+    "function": "shopping.check_inventory",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "product_ids",
+        "type": "array[string]",
+        "required": true,
+        "description": "Product IDs.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "location",
+        "type": "string",
+        "required": true,
+        "description": "Search location.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "pickup_or_delivery",
+        "type": "string",
+        "required": true,
+        "description": "Pickup, delivery, or either.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "delivery_deadline",
+        "type": "datetime",
+        "required": false,
+        "description": "Latest acceptable delivery or pickup time.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "substitution_policy",
+        "type": "string",
+        "required": false,
+        "description": "How substitutions should follow user preferences.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "availability": "array",
+      "substitutions": "array",
+      "fulfillment_recommendation": "object"
+    },
+    "preference_sensitive_parameters": [
+      "location",
+      "delivery_deadline",
+      "substitution_policy"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "location",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "delivery_deadline",
+        "type": "datetime",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "substitution_policy",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

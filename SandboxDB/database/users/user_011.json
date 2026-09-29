@@ -1,0 +1,123 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_011",
+  "user_context": {
+    "fictional_name": "Amara Osei",
+    "age": 34,
+    "location": "肯尼亚卡库马难民营",
+    "languages": [
+      "英语",
+      "斯瓦希里语",
+      "丁卡语"
+    ],
+    "occupation": "现场协调员",
+    "industry": "人道主义援助/非营利组织",
+    "household": "单身，独自住在营地内的小型预制住房单元",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "data_sharing": "高度敏感：谨慎分享位置和人物照片",
+      "communication": "工作中偏爱加密渠道；个人博客使用化名",
+      "surveillance": "个人生活避免社交媒体；使用Signal和ProtonMail"
+    },
+    "budget_preferences": {
+      "spending_style": "个人节俭但主张为项目提供充足资金",
+      "major_expenses": "回加纳旅行，给家人汇款",
+      "splurge_items": "优质徒步靴，休假时每月在内罗毕餐厅吃一顿"
+    },
+    "technology_preferences": {
+      "devices": [
+        "坚固型智能手机（CAT或类似）",
+        "长续航笔记本电脑",
+        "便携太阳能板"
+      ],
+      "software": [
+        "支持离线使用的应用",
+        "开放数据工具如ODK",
+        "注重安全（VPN，加密存储）"
+      ],
+      "attitude": "精通技术但务实；偏好能在低资源环境下工作的工具"
+    },
+    "food_preferences": {
+      "cuisine": [
+        "西非菜（乔洛夫饭、福福）",
+        "东非菜（烤肉、查帕蒂）",
+        "简单沙拉"
+      ],
+      "dislikes": "非常辣的食物，高乳制品",
+      "dietary_restrictions": "因成本和可持续性尽量少吃肉"
+    },
+    "travel_preferences": {
+      "style": "极简主义，优先考虑安全和必需品而非舒适",
+      "destinations": [
+        "其他人道主义枢纽（内罗毕、日内瓦参加会议）",
+        "休假回加纳的家"
+      ],
+      "accommodation": "简单的旅馆或非政府组织招待所"
+    },
+    "learning_preferences": {
+      "formats": [
+        "短期在线课程（Coursera）",
+        "带问答的网络研讨会",
+        "实践工作坊"
+      ],
+      "topics": [
+        "项目管理",
+        "社区参与",
+        "非营利组织的数据分析"
+      ]
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

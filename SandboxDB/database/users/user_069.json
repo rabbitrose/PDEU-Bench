@@ -1,0 +1,109 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_069",
+  "user_context": {
+    "fictional_name": "Elena Vasquez",
+    "age": 45,
+    "location": "美国德克萨斯州奥斯汀",
+    "languages": [
+      "英语",
+      "西班牙语"
+    ],
+    "occupation": "小说家和独立出版商。",
+    "industry": "出版",
+    "household": "已婚，有两个孩子（12岁和15岁）",
+    "accessibility_needs": "无",
+    "privacy_preferences": [
+      "中等隐私顾虑；避免分享个人地址",
+      "能接受定向图书广告",
+      "偶尔使用 VPN",
+      "偏好清晰的数据政策"
+    ],
+    "budget_preferences": [
+      "愿意投资优质工具",
+      "权衡成本与收益",
+      "对于小众工具偏好一次性购买而非经常性",
+      "有预算意识但不吝啬"
+    ],
+    "technology_preferences": [
+      "稳健、稳定的工具",
+      "可能时使用开源",
+      "基于云的协作（Google Docs、Dropbox）",
+      "极简网站设计"
+    ],
+    "food_preferences": [
+      "地中海菜系",
+      "健康选择",
+      "浓缩咖啡",
+      "黑巧克力"
+    ],
+    "travel_preferences": [
+      "文学 retreat",
+      "作家驻地",
+      "有活力的文学城市",
+      "网络好的地方"
+    ],
+    "learning_preferences": [
+      "视频教程（YouTube）",
+      "互动工作坊（Zoom）",
+      "带截图的书面指南",
+      "简洁的博客文章"
+    ],
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "education.build_study_plan",
+    "education.search_courses",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "entertainment.search_events",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

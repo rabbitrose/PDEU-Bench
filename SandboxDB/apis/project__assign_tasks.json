@@ -1,0 +1,72 @@
+{
+  "api_name": "project.assign_tasks",
+  "category": "project",
+  "action": "assign_tasks",
+  "description": "Assign tasks to people or roles using availability, workload, skill fit, and communication preferences.",
+  "interface": {
+    "type": "function_call",
+    "function": "project.assign_tasks",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "tasks",
+        "type": "array[object]",
+        "required": true,
+        "description": "Tasks to assign.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "assignees",
+        "type": "array[string]",
+        "required": true,
+        "description": "Candidate assignees or roles.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "availability_constraints",
+        "type": "array[string]",
+        "required": true,
+        "description": "Availability and schedule constraints.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "priority_rules",
+        "type": "array[string]",
+        "required": true,
+        "description": "How assignments should be prioritized.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "communication_style",
+        "type": "string",
+        "required": false,
+        "description": "Preferred style for task descriptions.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "assignments": "array",
+      "unassigned_tasks": "array",
+      "load_summary": "object"
+    },
+    "preference_sensitive_parameters": [
+      "availability_constraints",
+      "communication_style"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "availability_constraints",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "communication_style",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

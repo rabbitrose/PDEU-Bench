@@ -1,0 +1,66 @@
+{
+  "api_name": "smart_home.set_device_state",
+  "category": "smart_home",
+  "action": "set_device_state",
+  "description": "Set device state with schedule, comfort, energy, and safety preferences.",
+  "interface": {
+    "type": "function_call",
+    "function": "smart_home.set_device_state",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "device_id",
+        "type": "string",
+        "required": true,
+        "description": "Device identifier.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "state",
+        "type": "object",
+        "required": true,
+        "description": "Target state.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "schedule",
+        "type": "object",
+        "required": true,
+        "description": "Optional schedule.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "priority",
+        "type": "string",
+        "required": true,
+        "description": "Comfort, energy_saving, safety, or convenience.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "requires_confirmation",
+        "type": "boolean",
+        "required": true,
+        "description": "Whether confirmation is required.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "device_id": "string",
+      "status": "string",
+      "applied_state": "object"
+    },
+    "preference_sensitive_parameters": [
+      "priority"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "priority",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

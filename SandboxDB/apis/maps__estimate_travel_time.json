@@ -1,0 +1,79 @@
+{
+  "api_name": "maps.estimate_travel_time",
+  "category": "maps",
+  "action": "estimate_travel_time",
+  "description": "Estimate travel times for multiple modes and departure windows.",
+  "interface": {
+    "type": "function_call",
+    "function": "maps.estimate_travel_time",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "origin",
+        "type": "string",
+        "required": true,
+        "description": "Starting location.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "destination",
+        "type": "string",
+        "required": true,
+        "description": "Destination.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "departure_windows",
+        "type": "array[string]",
+        "required": true,
+        "description": "Candidate departure windows.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "modes",
+        "type": "array[string]",
+        "required": true,
+        "description": "Transportation modes to compare.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "timezone",
+        "type": "string",
+        "required": false,
+        "description": "Timezone.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "reliability_preference",
+        "type": "string",
+        "required": false,
+        "description": "How much buffer the user prefers.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "estimates": "array",
+      "recommended_window": "object",
+      "confidence": "string"
+    },
+    "preference_sensitive_parameters": [
+      "origin",
+      "timezone"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "origin",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "timezone",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

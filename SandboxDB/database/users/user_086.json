@@ -1,0 +1,103 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_086",
+  "user_context": {
+    "fictional_name": "Gordon MacLellan",
+    "age": 52,
+    "location": "夏洛特敦，爱德华王子岛",
+    "languages": [
+      "英语"
+    ],
+    "occupation": "汽车销售员",
+    "industry": "汽车销售",
+    "household": "已婚，有两个十几岁的孩子（14岁和16岁）",
+    "accessibility_needs": "无",
+    "privacy_preferences": [
+      "警惕数据收集：选择退出追踪",
+      "许多购买使用现金",
+      "避免社交媒体"
+    ],
+    "budget_preferences": [
+      "价格敏感：寻找优惠和返利",
+      "看重品质但不愿为品牌支付溢价",
+      "偏好二手或去年款车型"
+    ],
+    "technology_preferences": [
+      "简单智能手机（iPhone SE或基础版安卓）",
+      "更喜欢打电话而非发短信",
+      "不喜欢智能家居设备"
+    ],
+    "food_preferences": [
+      "家常菜：肉和土豆",
+      "本地海鲜（龙虾、贻贝）",
+      "舒适食物如杂烩汤、甜甜圈"
+    ],
+    "travel_preferences": [
+      "加拿大境内公路旅行（海洋省份、纽芬兰）",
+      "露营和钓鱼小屋",
+      "避开拥挤的旅游景点"
+    ],
+    "learning_preferences": [
+      "动手演示",
+      "5分钟以内的短文或视频",
+      "偏好案例研究而非理论"
+    ],
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "education.build_study_plan",
+    "education.search_courses",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "entertainment.recommend_media",
+    "entertainment.search_events",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

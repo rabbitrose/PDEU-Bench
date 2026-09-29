@@ -1,0 +1,72 @@
+{
+  "schema_version": "SandboxDB.v1",
+  "category": "privacy",
+  "api_count": 1,
+  "apis": [
+    {
+      "api_name": "privacy.redact_data",
+      "category": "privacy",
+      "action": "redact_data",
+      "description": "Redact sensitive data from text, documents, messages, or structured records.",
+      "interface": {
+        "type": "function_call",
+        "function": "privacy.redact_data",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "content",
+            "type": "string",
+            "required": true,
+            "description": "Content to redact.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "redaction_level",
+            "type": "string",
+            "required": true,
+            "description": "Low, medium, high, strict, or custom.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "sensitive_categories",
+            "type": "array[string]",
+            "required": true,
+            "description": "Sensitive data categories.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "preserve_utility",
+            "type": "string",
+            "required": true,
+            "description": "How much analytical utility to preserve.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "output_format",
+            "type": "string",
+            "required": true,
+            "description": "Text, JSON, annotated, or diff.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "redacted_content": "string",
+          "redaction_report": "object",
+          "residual_risk": "string"
+        },
+        "preference_sensitive_parameters": [
+          "content"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "content",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    }
+  ]
+}

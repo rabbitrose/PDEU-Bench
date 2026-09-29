@@ -1,0 +1,98 @@
+{
+  "api_name": "calendar.search_events",
+  "category": "calendar",
+  "action": "search_events",
+  "description": "Search a user's calendar for events that match time, attendee, location, or keyword filters.",
+  "interface": {
+    "type": "function_call",
+    "function": "calendar.search_events",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "time_window_start",
+        "type": "datetime",
+        "required": true,
+        "description": "Start of the preferred time window.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "time_window_end",
+        "type": "datetime",
+        "required": true,
+        "description": "End of the preferred time window.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "query",
+        "type": "string",
+        "required": true,
+        "description": "Keyword query influenced by task context.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "calendar_ids",
+        "type": "array[string]",
+        "required": false,
+        "description": "Calendars to search, such as work, family, personal, or shared calendars.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "timezone",
+        "type": "string",
+        "required": false,
+        "description": "User's preferred timezone.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "required": false,
+        "description": "How much event detail can be exposed based on privacy preferences.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "include_declined",
+        "type": "boolean",
+        "required": false,
+        "description": "Whether declined events should be included.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "events": "array",
+      "conflicts": "array",
+      "query_metadata": "object"
+    },
+    "preference_sensitive_parameters": [
+      "time_window_start",
+      "time_window_end",
+      "timezone",
+      "privacy_mode"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "time_window_start",
+        "type": "datetime",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "time_window_end",
+        "type": "datetime",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "timezone",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

@@ -1,0 +1,157 @@
+{
+  "api_name": "shopping.search_products",
+  "category": "shopping",
+  "action": "search_products",
+  "description": "Search cached real-world product catalog records using price, ratings, delivery, brand, sustainability, and user-quality preferences.",
+  "interface": {
+    "type": "function_call",
+    "function": "shopping.search_products",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "query",
+        "type": "string",
+        "required": true,
+        "description": "Product search query.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "category",
+        "type": "string",
+        "required": false,
+        "description": "Product category.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "max_price",
+        "type": "number",
+        "required": true,
+        "description": "Maximum price.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "must_have_features",
+        "type": "array[string]",
+        "required": true,
+        "description": "Required features.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "nice_to_have_features",
+        "type": "array[string]",
+        "required": false,
+        "description": "Preference-driven features.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "avoid_features",
+        "type": "array[string]",
+        "required": true,
+        "description": "Features to avoid.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "preferred_brands",
+        "type": "array[string]",
+        "required": false,
+        "description": "Preferred brands.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "delivery_deadline",
+        "type": "datetime",
+        "required": false,
+        "description": "Needed-by time.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "quality_preference",
+        "type": "string",
+        "required": true,
+        "description": "Best value, durable, premium, local, eco-friendly, or budget.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "minimum_rating",
+        "type": "number",
+        "required": false,
+        "description": "Minimum product star rating.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "minimum_review_count",
+        "type": "integer",
+        "required": false,
+        "description": "Minimum number of reviews.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "products": "array",
+      "recommended_product": "object",
+      "comparison_notes": "array",
+      "source_info": "object"
+    },
+    "preference_sensitive_parameters": [
+      "max_price",
+      "must_have_features",
+      "nice_to_have_features",
+      "avoid_features",
+      "preferred_brands",
+      "delivery_deadline",
+      "quality_preference",
+      "minimum_rating",
+      "minimum_review_count"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "max_price",
+        "type": "number",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "must_have_features",
+        "type": "array[string]",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "nice_to_have_features",
+        "type": "array[string]",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "avoid_features",
+        "type": "array[string]",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "preferred_brands",
+        "type": "array[string]",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "delivery_deadline",
+        "type": "datetime",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "quality_preference",
+        "type": "string",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "minimum_rating",
+        "type": "number",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "minimum_review_count",
+        "type": "integer",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

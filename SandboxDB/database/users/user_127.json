@@ -1,0 +1,103 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_127",
+  "user_context": {
+    "fictional_name": "Marco Delgado",
+    "age": 28,
+    "location": {
+      "city": "Barcelona",
+      "country": "Spain"
+    },
+    "languages": [
+      "西班牙语",
+      "英语",
+      "Catalan"
+    ],
+    "occupation": "职业足球运动员（前锋）",
+    "industry": "体育",
+    "household": "单身，独自居住",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "data_sharing": "有选择性地，只与团队工作人员和个人教练分享健康数据",
+      "social_media": "活跃于Twitter讨论足球话题，个人帖子有限",
+      "content_restrictions": "避免公开分享具体的训练计划"
+    },
+    "budget_preferences": {
+      "spending_style": "必需品（装备、营养）追求优质，但对奢侈品注重性价比",
+      "savings_goal": "职业生涯后的财务安全，投资房地产"
+    },
+    "technology_preferences": {
+      "devices": "最新款iPhone、MacBook、iPad用于视频分析",
+      "apps": "Hudl、Strava、Headspace",
+      "smart_home": "极简，使用智能灯和恒温器"
+    },
+    "food_preferences": {
+      "cuisine": "西班牙语、意大利语、日语",
+      "diet": "高蛋白质、适量碳水化合物、健康脂肪，避免油炸食品",
+      "restrictions": "乳糖不耐受（避免乳制品）"
+    },
+    "travel_preferences": {
+      "purpose": "主要随队旅行，偶尔独自静修以调整心态",
+      "destinations": "安静的山间度假村或海滨小镇，偏好温暖气候"
+    },
+    "learning_preferences": {
+      "topics": [
+        "战术意识",
+        "运动心理学",
+        "损伤预防"
+      ],
+      "style": "观看教练主导的视频课程、互动模拟、一对一指导"
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

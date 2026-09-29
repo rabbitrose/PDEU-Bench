@@ -1,0 +1,91 @@
+{
+  "api_name": "research.review_evidence",
+  "category": "research",
+  "action": "review_evidence",
+  "description": "Evaluate evidence quality, citation strength, recency, conflicts, and uncertainty for a set of claims or sources.",
+  "interface": {
+    "type": "function_call",
+    "function": "research.review_evidence",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "claims_or_questions",
+        "type": "array[string]",
+        "required": true,
+        "description": "Claims, questions, or decision points to verify.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "candidate_sources",
+        "type": "array[object]",
+        "required": true,
+        "description": "Sources or search results to review.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "evidence_standard",
+        "type": "string",
+        "required": true,
+        "description": "Evidence bar, such as official, peer-reviewed, primary, or corroborated.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "required": true,
+        "description": "How conservative the review should be for user safety and task risk.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "citation_style",
+        "type": "string",
+        "required": false,
+        "description": "Preferred citation format.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "uncertainty_handling",
+        "type": "string",
+        "required": false,
+        "description": "How uncertainty and caveats should be represented.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "evidence_matrix": "array",
+      "recommended_sources": "array",
+      "uncertainties": "array"
+    },
+    "preference_sensitive_parameters": [
+      "candidate_sources",
+      "evidence_standard",
+      "risk_tolerance",
+      "citation_style"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "candidate_sources",
+        "type": "array[object]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "evidence_standard",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "citation_style",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

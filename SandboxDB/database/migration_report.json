@@ -1,0 +1,126 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "created_at": "2026-07-07T18:06:12",
+  "user_count": 214,
+  "workflow_count": 214,
+  "api_record_count": 10262,
+  "theme_count": 21,
+  "top_20_api_usage": [
+    [
+      "calendar.find_availability",
+      214
+    ],
+    [
+      "calendar.create_event",
+      214
+    ],
+    [
+      "calendar.search_events",
+      214
+    ],
+    [
+      "reminders.create",
+      214
+    ],
+    [
+      "calendar.update_event",
+      214
+    ],
+    [
+      "contacts.search",
+      214
+    ],
+    [
+      "contacts.create_or_update",
+      214
+    ],
+    [
+      "documents.search",
+      214
+    ],
+    [
+      "documents.summarize",
+      214
+    ],
+    [
+      "documents.create",
+      214
+    ],
+    [
+      "documents.update",
+      214
+    ],
+    [
+      "email.search_messages",
+      214
+    ],
+    [
+      "email.draft_message",
+      214
+    ],
+    [
+      "email.send_message",
+      214
+    ],
+    [
+      "finance.get_accounts",
+      214
+    ],
+    [
+      "finance.search_transactions",
+      214
+    ],
+    [
+      "finance.create_budget_plan",
+      214
+    ],
+    [
+      "finance.compare_prices",
+      214
+    ],
+    [
+      "health.search_providers",
+      214
+    ],
+    [
+      "health.schedule_appointment",
+      214
+    ]
+  ],
+  "removed_legacy_paths": 267,
+  "removed_legacy_path_examples": [
+    "data/user_001/sandboxDB.json",
+    "data/user_002/sandboxDB.json",
+    "data/user_003/sandboxDB.json",
+    "data/user_004/sandboxDB.json",
+    "data/user_005/sandboxDB.json",
+    "data/user_006/sandboxDB.json",
+    "data/user_007/sandboxDB.json",
+    "data/user_008/sandboxDB.json",
+    "data/user_009/sandboxDB.json",
+    "data/user_010/sandboxDB.json",
+    "data/user_011/sandboxDB.json",
+    "data/user_012/sandboxDB.json",
+    "data/user_013/sandboxDB.json",
+    "data/user_014/sandboxDB.json",
+    "data/user_015/sandboxDB.json",
+    "data/user_016/sandboxDB.json",
+    "data/user_017/sandboxDB.json",
+    "data/user_018/sandboxDB.json",
+    "data/user_019/sandboxDB.json",
+    "data/user_020/sandboxDB.json"
+  ],
+  "database_dir": "SandboxDB/database",
+  "updated_at": "2026-07-14T14:52:45",
+  "difficulty_migration": {
+    "removed_user_range": "user_147-user_199",
+    "removed_user_count": 53,
+    "migrated_user_range": "user_001-user_146",
+    "migrated_user_count": 146,
+    "old_task_id": "task_mid",
+    "new_task_id": "task_hard",
+    "original_api_record_count": 12749,
+    "removed_api_record_count": 2487,
+    "final_api_record_count": 10262
+  }
+}

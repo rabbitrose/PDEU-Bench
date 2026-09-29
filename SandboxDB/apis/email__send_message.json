@@ -1,0 +1,106 @@
+{
+  "api_name": "email.send_message",
+  "category": "email",
+  "action": "send_message",
+  "description": "Send a personalized email with optional attachments, scheduling, and tone controls.",
+  "interface": {
+    "type": "function_call",
+    "function": "email.send_message",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "to",
+        "type": "array[string]",
+        "required": true,
+        "description": "Recipients.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "cc",
+        "type": "array[string]",
+        "required": false,
+        "description": "CC recipients.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "bcc",
+        "type": "array[string]",
+        "required": false,
+        "description": "BCC recipients.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "subject",
+        "type": "string",
+        "required": true,
+        "description": "Email subject.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "body",
+        "type": "string",
+        "required": true,
+        "description": "Email body adapted to the user's communication style.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "tone",
+        "type": "string",
+        "required": false,
+        "description": "Tone preference such as concise, formal, warm, or direct.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "attachments",
+        "type": "array[string]",
+        "required": false,
+        "description": "Attachment identifiers.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "send_at",
+        "type": "datetime",
+        "required": false,
+        "description": "Optional scheduled send time.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "required": false,
+        "description": "Whether sensitive details should be minimized.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "message_id": "string",
+      "delivery_status": "string",
+      "scheduled_for": "datetime|null"
+    },
+    "preference_sensitive_parameters": [
+      "body",
+      "tone",
+      "send_at"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "body",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "tone",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "send_at",
+        "type": "datetime",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

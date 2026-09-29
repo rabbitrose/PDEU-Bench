@@ -1,0 +1,124 @@
+{
+  "api_name": "entertainment.recommend_media",
+  "category": "entertainment",
+  "action": "recommend_media",
+  "description": "Recommend media using cached real-world music/media catalog records plus mood, time, language, and content preferences.",
+  "interface": {
+    "type": "function_call",
+    "function": "entertainment.recommend_media",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "media_type",
+        "type": "string",
+        "required": true,
+        "description": "Book, movie, show, podcast, game, music, or mixed.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "mood",
+        "type": "string",
+        "required": true,
+        "description": "Current mood or desired tone.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "available_time_minutes",
+        "type": "integer",
+        "required": true,
+        "description": "Available time.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "languages",
+        "type": "array[string]",
+        "required": true,
+        "description": "Preferred languages.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "content_preferences",
+        "type": "array[string]",
+        "required": true,
+        "description": "Topics and styles the user likes.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "avoid_content",
+        "type": "array[string]",
+        "required": true,
+        "description": "Topics or formats to avoid.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "platforms",
+        "type": "array[string]",
+        "required": false,
+        "description": "Available platforms.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "release_or_recency_preference",
+        "type": "string",
+        "required": false,
+        "description": "Classic, recent, evergreen, or no preference.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "recommendations": "array",
+      "ranked_top_pick": "object",
+      "why_matches": "array",
+      "source_info": "object"
+    },
+    "preference_sensitive_parameters": [
+      "mood",
+      "available_time_minutes",
+      "languages",
+      "content_preferences",
+      "avoid_content",
+      "platforms",
+      "release_or_recency_preference"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "mood",
+        "type": "string",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "available_time_minutes",
+        "type": "integer",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "languages",
+        "type": "array[string]",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "content_preferences",
+        "type": "array[string]",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "avoid_content",
+        "type": "array[string]",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "platforms",
+        "type": "array[string]",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "release_or_recency_preference",
+        "type": "string",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

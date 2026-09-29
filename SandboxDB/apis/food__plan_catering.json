@@ -1,0 +1,91 @@
+{
+  "api_name": "food.plan_catering",
+  "category": "food",
+  "action": "plan_catering",
+  "description": "Plan catering, potluck, snacks, drinks, or meal logistics for an event or group.",
+  "interface": {
+    "type": "function_call",
+    "function": "food.plan_catering",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "event_type",
+        "type": "string",
+        "required": true,
+        "description": "Event or meal context.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "guest_count",
+        "type": "integer",
+        "required": true,
+        "description": "Expected number of guests.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "dietary_constraints",
+        "type": "array[string]",
+        "required": true,
+        "description": "Dietary needs and allergies.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "required": true,
+        "description": "Maximum food budget.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "serving_style",
+        "type": "string",
+        "required": true,
+        "description": "Buffet, boxed, family-style, potluck, or other style.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "cleanup_or_storage_constraints",
+        "type": "array[string]",
+        "required": false,
+        "description": "Logistics constraints.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "catering_plan": "object",
+      "shopping_or_vendor_list": "array",
+      "risk_notes": "array"
+    },
+    "preference_sensitive_parameters": [
+      "dietary_constraints",
+      "budget_limit",
+      "serving_style",
+      "cleanup_or_storage_constraints"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "dietary_constraints",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "serving_style",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "cleanup_or_storage_constraints",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

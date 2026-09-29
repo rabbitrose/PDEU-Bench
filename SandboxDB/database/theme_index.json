@@ -1,0 +1,442 @@
+{
+  "calendar": {
+    "workflow_count": 17,
+    "api_record_count": 1070,
+    "top_apis": [
+      [
+        "calendar.find_availability",
+        214
+      ],
+      [
+        "calendar.create_event",
+        214
+      ],
+      [
+        "calendar.search_events",
+        214
+      ],
+      [
+        "reminders.create",
+        214
+      ],
+      [
+        "calendar.update_event",
+        214
+      ]
+    ],
+    "domains": {
+      "family": 17
+    },
+    "theme_records_path": "database/themes/calendar.jsonl",
+    "api_records_path": "database/api_records/calendar.jsonl"
+  },
+  "civic": {
+    "workflow_count": 9,
+    "api_record_count": 18,
+    "top_apis": [
+      [
+        "civic.find_services",
+        9
+      ],
+      [
+        "civic.submit_request",
+        9
+      ]
+    ],
+    "domains": {
+      "civic": 9
+    },
+    "theme_records_path": "database/themes/civic.jsonl",
+    "api_records_path": "database/api_records/civic.jsonl"
+  },
+  "communication": {
+    "workflow_count": 19,
+    "api_record_count": 838,
+    "top_apis": [
+      [
+        "contacts.search",
+        214
+      ],
+      [
+        "contacts.create_or_update",
+        214
+      ],
+      [
+        "messaging.send_message",
+        213
+      ],
+      [
+        "messaging.create_group",
+        197
+      ]
+    ],
+    "domains": {
+      "social": 19
+    },
+    "theme_records_path": "database/themes/communication.jsonl",
+    "api_records_path": "database/api_records/communication.jsonl"
+  },
+  "documents": {
+    "workflow_count": 0,
+    "api_record_count": 1061,
+    "top_apis": [
+      [
+        "documents.search",
+        214
+      ],
+      [
+        "documents.summarize",
+        214
+      ],
+      [
+        "documents.create",
+        214
+      ],
+      [
+        "documents.update",
+        214
+      ],
+      [
+        "notes.create_note",
+        205
+      ]
+    ],
+    "domains": {},
+    "theme_records_path": "database/themes/documents.jsonl",
+    "api_records_path": "database/api_records/documents.jsonl"
+  },
+  "education": {
+    "workflow_count": 17,
+    "api_record_count": 185,
+    "top_apis": [
+      [
+        "education.search_courses",
+        106
+      ],
+      [
+        "education.build_study_plan",
+        79
+      ]
+    ],
+    "domains": {
+      "learning": 17
+    },
+    "theme_records_path": "database/themes/education.jsonl",
+    "api_records_path": "database/api_records/education.jsonl"
+  },
+  "email": {
+    "workflow_count": 0,
+    "api_record_count": 642,
+    "top_apis": [
+      [
+        "email.search_messages",
+        214
+      ],
+      [
+        "email.draft_message",
+        214
+      ],
+      [
+        "email.send_message",
+        214
+      ]
+    ],
+    "domains": {},
+    "theme_records_path": "database/themes/email.jsonl",
+    "api_records_path": "database/api_records/email.jsonl"
+  },
+  "finance": {
+    "workflow_count": 8,
+    "api_record_count": 856,
+    "top_apis": [
+      [
+        "finance.get_accounts",
+        214
+      ],
+      [
+        "finance.search_transactions",
+        214
+      ],
+      [
+        "finance.create_budget_plan",
+        214
+      ],
+      [
+        "finance.compare_prices",
+        214
+      ]
+    ],
+    "domains": {
+      "finance": 8
+    },
+    "theme_records_path": "database/themes/finance.jsonl",
+    "api_records_path": "database/api_records/finance.jsonl"
+  },
+  "food": {
+    "workflow_count": 0,
+    "api_record_count": 282,
+    "top_apis": [
+      [
+        "food.search_recipes",
+        156
+      ],
+      [
+        "food.create_meal_plan",
+        126
+      ]
+    ],
+    "domains": {},
+    "theme_records_path": "database/themes/food.jsonl",
+    "api_records_path": "database/api_records/food.jsonl"
+  },
+  "health": {
+    "workflow_count": 12,
+    "api_record_count": 856,
+    "top_apis": [
+      [
+        "health.search_providers",
+        214
+      ],
+      [
+        "health.schedule_appointment",
+        214
+      ],
+      [
+        "health.medication_lookup",
+        214
+      ],
+      [
+        "health.log_symptoms",
+        214
+      ]
+    ],
+    "domains": {
+      "health": 12
+    },
+    "theme_records_path": "database/themes/health.jsonl",
+    "api_records_path": "database/api_records/health.jsonl"
+  },
+  "home": {
+    "workflow_count": 18,
+    "api_record_count": 366,
+    "top_apis": [
+      [
+        "smart_home.get_devices",
+        192
+      ],
+      [
+        "smart_home.set_device_state",
+        174
+      ]
+    ],
+    "domains": {
+      "home": 18
+    },
+    "theme_records_path": "database/themes/home.jsonl",
+    "api_records_path": "database/api_records/home.jsonl"
+  },
+  "legal": {
+    "workflow_count": 0,
+    "api_record_count": 17,
+    "top_apis": [
+      [
+        "legal.search_documents",
+        17
+      ]
+    ],
+    "domains": {},
+    "theme_records_path": "database/themes/legal.jsonl",
+    "api_records_path": "database/api_records/legal.jsonl"
+  },
+  "music_media": {
+    "workflow_count": 17,
+    "api_record_count": 109,
+    "top_apis": [
+      [
+        "entertainment.search_events",
+        81
+      ],
+      [
+        "entertainment.recommend_media",
+        28
+      ]
+    ],
+    "domains": {
+      "entertainment": 17
+    },
+    "theme_records_path": "database/themes/music_media.jsonl",
+    "api_records_path": "database/api_records/music_media.jsonl"
+  },
+  "navigation": {
+    "workflow_count": 19,
+    "api_record_count": 1498,
+    "top_apis": [
+      [
+        "maps.search_places",
+        214
+      ],
+      [
+        "maps.get_route",
+        214
+      ],
+      [
+        "maps.estimate_travel_time",
+        214
+      ],
+      [
+        "travel.search_flights",
+        214
+      ],
+      [
+        "travel.book_flight_hold",
+        214
+      ],
+      [
+        "travel.search_lodging",
+        214
+      ],
+      [
+        "travel.build_itinerary",
+        214
+      ]
+    ],
+    "domains": {
+      "travel": 19
+    },
+    "theme_records_path": "database/themes/navigation.jsonl",
+    "api_records_path": "database/api_records/navigation.jsonl"
+  },
+  "privacy": {
+    "workflow_count": 0,
+    "api_record_count": 214,
+    "top_apis": [
+      [
+        "privacy.redact_data",
+        214
+      ]
+    ],
+    "domains": {},
+    "theme_records_path": "database/themes/privacy.jsonl",
+    "api_records_path": "database/api_records/privacy.jsonl"
+  },
+  "project": {
+    "workflow_count": 45,
+    "api_record_count": 425,
+    "top_apis": [
+      [
+        "project.create_task_list",
+        214
+      ],
+      [
+        "project.update_status",
+        211
+      ]
+    ],
+    "domains": {
+      "work": 45
+    },
+    "theme_records_path": "database/themes/project.jsonl",
+    "api_records_path": "database/api_records/project.jsonl"
+  },
+  "security": {
+    "workflow_count": 0,
+    "api_record_count": 32,
+    "top_apis": [
+      [
+        "security.password_audit",
+        16
+      ],
+      [
+        "security.configure_2fa",
+        16
+      ]
+    ],
+    "domains": {},
+    "theme_records_path": "database/themes/security.jsonl",
+    "api_records_path": "database/api_records/security.jsonl"
+  },
+  "shopping": {
+    "workflow_count": 17,
+    "api_record_count": 642,
+    "top_apis": [
+      [
+        "shopping.search_products",
+        214
+      ],
+      [
+        "shopping.check_inventory",
+        214
+      ],
+      [
+        "shopping.create_cart",
+        214
+      ]
+    ],
+    "domains": {
+      "shopping": 17
+    },
+    "theme_records_path": "database/themes/shopping.jsonl",
+    "api_records_path": "database/api_records/shopping.jsonl"
+  },
+  "technology": {
+    "workflow_count": 16,
+    "api_record_count": 0,
+    "top_apis": [],
+    "domains": {
+      "technology": 16
+    },
+    "theme_records_path": "database/themes/technology.jsonl",
+    "api_records_path": "database/api_records/technology.jsonl"
+  },
+  "translation": {
+    "workflow_count": 0,
+    "api_record_count": 81,
+    "top_apis": [
+      [
+        "translation.translate_text",
+        81
+      ]
+    ],
+    "domains": {},
+    "theme_records_path": "database/themes/translation.jsonl",
+    "api_records_path": "database/api_records/translation.jsonl"
+  },
+  "weather": {
+    "workflow_count": 0,
+    "api_record_count": 214,
+    "top_apis": [
+      [
+        "weather.get_forecast",
+        214
+      ]
+    ],
+    "domains": {},
+    "theme_records_path": "database/themes/weather.jsonl",
+    "api_records_path": "database/api_records/weather.jsonl"
+  },
+  "web_browsing": {
+    "workflow_count": 0,
+    "api_record_count": 856,
+    "top_apis": [
+      [
+        "research.web_search",
+        214
+      ],
+      [
+        "research.fact_check",
+        214
+      ],
+      [
+        "research.retrieve_dataset",
+        214
+      ],
+      [
+        "research.analyze_table",
+        214
+      ]
+    ],
+    "domains": {},
+    "theme_records_path": "database/themes/web_browsing.jsonl",
+    "api_records_path": "database/api_records/web_browsing.jsonl"
+  }
+}

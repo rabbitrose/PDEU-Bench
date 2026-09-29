@@ -1,0 +1,78 @@
+{
+  "api_name": "security.configure_2fa",
+  "category": "security",
+  "action": "configure_2fa",
+  "description": "Configure two-factor authentication recommendations for selected accounts.",
+  "interface": {
+    "type": "function_call",
+    "function": "security.configure_2fa",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "accounts",
+        "type": "array[string]",
+        "required": true,
+        "description": "Accounts to configure.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "preferred_2fa_methods",
+        "type": "array[string]",
+        "required": true,
+        "description": "Authenticator app, security key, passkey, SMS, email.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "backup_method_preference",
+        "type": "string",
+        "required": true,
+        "description": "Backup code or recovery preference.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "device_constraints",
+        "type": "array[string]",
+        "required": true,
+        "description": "Device constraints.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "required": true,
+        "description": "Privacy handling.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "setup_plan": "array",
+      "risk_reduction": "object",
+      "user_confirmation_required": "array"
+    },
+    "preference_sensitive_parameters": [
+      "backup_method_preference",
+      "device_constraints",
+      "privacy_mode"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "backup_method_preference",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "device_constraints",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

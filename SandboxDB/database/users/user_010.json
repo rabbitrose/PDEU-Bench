@@ -1,0 +1,102 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_010",
+  "user_context": {
+    "fictional_name": "Eleanor Vance",
+    "age": 58,
+    "location": "美国华盛顿特区",
+    "languages": [
+      "英语",
+      "法语",
+      "德语"
+    ],
+    "occupation": "高级调查记者",
+    "industry": "媒体与新闻业",
+    "household": "独自住在公寓里",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "highest_priority": true,
+      "prefers_anonymous_communication": true,
+      "avoid_social_media": true
+    },
+    "budget_preferences": {
+      "spending_on_what_matters": true,
+      "willing_to_pay_premium_for_privacy_tools": true
+    },
+    "technology_preferences": {
+      "mark": "苹果笔记本电脑，搭载隐私工具的安卓手机",
+      "software": "Otter.ai用于转录，Tails OS用于安全浏览"
+    },
+    "food_preferences": [
+      "健康、简单的餐食",
+      "咖啡店用于会面",
+      "偶尔的精致餐饮"
+    ],
+    "travel_preferences": {
+      "destinations": [
+        "城市中心用于故事调研",
+        "安静的写作隐居地"
+      ],
+      "preferred_accommodation": [
+        "精品酒店",
+        "带办公空间的Airbnb公寓"
+      ]
+    },
+    "learning_preferences": [
+      "研讨会",
+      "数据新闻工作坊",
+      "统计学在线课程"
+    ],
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

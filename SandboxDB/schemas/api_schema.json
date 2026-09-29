@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sandboxdb:api-schema:v1",
+  "schema_version": "SandboxDB.v1",
+  "title": "SandboxDB API Definition",
+  "description": "Normative schema for one callable API definition in SandboxDB.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "api_name",
+    "category",
+    "action",
+    "description",
+    "interface"
+  ],
+  "properties": {
+    "api_name": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*\\.[a-z][a-z0-9_]*$",
+      "description": "Stable callable name in category.action form."
+    },
+    "category": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "action": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "interface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "function",
+        "version",
+        "input_format",
+        "output_format",
+        "parameters",
+        "returns",
+        "preference_sensitive_parameters",
+        "preference_sensitive_parameter_details"
+      ],
+      "properties": {
+        "type": {
+          "const": "function_call"
+        },
+        "function": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*\\.[a-z][a-z0-9_]*$",
+          "description": "Must equal api_name."
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+$"
+        },
+        "input_format": {
+          "const": "json_object"
+        },
+        "output_format": {
+          "const": "json_object"
+        },
+        "parameters": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/parameter"
+          }
+        },
+        "returns": {
+          "type": "object",
+          "minProperties": 1,
+          "propertyNames": {
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/return_type_descriptor"
+          }
+        },
+        "preference_sensitive_parameters": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          }
+        },
+        "preference_sensitive_parameter_details": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/preference_sensitive_parameter_detail"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "parameter_type_descriptor": {
+      "type": "string",
+      "enum": [
+        "string",
+        "integer",
+        "number",
+        "boolean",
+        "date",
+        "datetime",
+        "object",
+        "array[string]",
+        "array[object]"
+      ]
+    },
+    "return_type_descriptor": {
+      "type": "string",
+      "enum": [
+        "string",
+        "number",
+        "boolean",
+        "datetime",
+        "object",
+        "array",
+        "string|null",
+        "datetime|null"
+      ]
+    },
+    "parameter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "type",
+        "required",
+        "description",
+        "preference_sensitive"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "type": {
+          "$ref": "#/$defs/parameter_type_descriptor"
+        },
+        "required": {
+          "type": "boolean"
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "preference_sensitive": {
+          "type": "boolean"
+        }
+      }
+    },
+    "preference_sensitive_parameter_detail": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "type",
+        "why_sensitive"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "type": {
+          "$ref": "#/$defs/parameter_type_descriptor"
+        },
+        "why_sensitive": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,429 @@
+{
+  "schema_version": "SandboxDB.v1",
+  "category": "food",
+  "api_count": 4,
+  "apis": [
+    {
+      "api_name": "food.create_meal_plan",
+      "category": "food",
+      "action": "create_meal_plan",
+      "description": "Create a meal plan balancing schedule, budget, diet, family preferences, and preparation effort.",
+      "interface": {
+        "type": "function_call",
+        "function": "food.create_meal_plan",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "date_range",
+            "type": "object",
+            "required": true,
+            "description": "Meal plan dates.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "household_size",
+            "type": "integer",
+            "required": true,
+            "description": "Number of eaters.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "dietary_constraints",
+            "type": "array[string]",
+            "required": true,
+            "description": "Diet and allergy constraints.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "cuisine_preferences",
+            "type": "array[string]",
+            "required": true,
+            "description": "Preferred cuisines.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "budget_limit",
+            "type": "number",
+            "required": true,
+            "description": "Total budget.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "prep_time_limits",
+            "type": "object",
+            "required": true,
+            "description": "Time limits by day.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "leftover_policy",
+            "type": "string",
+            "required": true,
+            "description": "How leftovers should be handled.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "nutrition_goals",
+            "type": "array[string]",
+            "required": false,
+            "description": "Nutrition goals.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "meal_plan": "array",
+          "grocery_list": "array",
+          "budget_summary": "object"
+        },
+        "preference_sensitive_parameters": [
+          "dietary_constraints",
+          "budget_limit",
+          "prep_time_limits"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "dietary_constraints",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "budget_limit",
+            "type": "number",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "prep_time_limits",
+            "type": "object",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "food.plan_catering",
+      "category": "food",
+      "action": "plan_catering",
+      "description": "Plan catering, potluck, snacks, drinks, or meal logistics for an event or group.",
+      "interface": {
+        "type": "function_call",
+        "function": "food.plan_catering",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "event_type",
+            "type": "string",
+            "required": true,
+            "description": "Event or meal context.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "guest_count",
+            "type": "integer",
+            "required": true,
+            "description": "Expected number of guests.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "dietary_constraints",
+            "type": "array[string]",
+            "required": true,
+            "description": "Dietary needs and allergies.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "budget_limit",
+            "type": "number",
+            "required": true,
+            "description": "Maximum food budget.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "serving_style",
+            "type": "string",
+            "required": true,
+            "description": "Buffet, boxed, family-style, potluck, or other style.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "cleanup_or_storage_constraints",
+            "type": "array[string]",
+            "required": false,
+            "description": "Logistics constraints.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "catering_plan": "object",
+          "shopping_or_vendor_list": "array",
+          "risk_notes": "array"
+        },
+        "preference_sensitive_parameters": [
+          "dietary_constraints",
+          "budget_limit",
+          "serving_style",
+          "cleanup_or_storage_constraints"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "dietary_constraints",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "budget_limit",
+            "type": "number",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "serving_style",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "cleanup_or_storage_constraints",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "food.search_recipes",
+      "category": "food",
+      "action": "search_recipes",
+      "description": "Search recipes by diet, cuisine, time, cost, nutrition, skill, and household preferences.",
+      "interface": {
+        "type": "function_call",
+        "function": "food.search_recipes",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "query",
+            "type": "string",
+            "required": true,
+            "description": "Recipe query.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "dietary_constraints",
+            "type": "array[string]",
+            "required": true,
+            "description": "Dietary rules or allergies.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "cuisine_preferences",
+            "type": "array[string]",
+            "required": true,
+            "description": "Preferred cuisines.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "max_prep_minutes",
+            "type": "integer",
+            "required": true,
+            "description": "Maximum prep time.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "budget_per_serving",
+            "type": "number",
+            "required": true,
+            "description": "Budget per serving.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "servings",
+            "type": "integer",
+            "required": true,
+            "description": "Number of servings.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "nutrition_goals",
+            "type": "array[string]",
+            "required": false,
+            "description": "Nutrition goals.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "avoid_ingredients",
+            "type": "array[string]",
+            "required": true,
+            "description": "Ingredients to avoid.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "recipes": "array",
+          "recommended_recipe": "object",
+          "shopping_list": "array"
+        },
+        "preference_sensitive_parameters": [
+          "dietary_constraints",
+          "max_prep_minutes",
+          "budget_per_serving"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "dietary_constraints",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "max_prep_minutes",
+            "type": "integer",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "budget_per_serving",
+            "type": "number",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "food.search_restaurants",
+      "category": "food",
+      "action": "search_restaurants",
+      "description": "Search cached real-world restaurant directory records using location, cuisine, budget, dietary, accessibility, and privacy preferences.",
+      "interface": {
+        "type": "function_call",
+        "function": "food.search_restaurants",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "location",
+            "type": "string",
+            "required": true,
+            "description": "Search location.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "party_size",
+            "type": "integer",
+            "required": true,
+            "description": "Number of people.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "cuisine_preferences",
+            "type": "array[string]",
+            "required": true,
+            "description": "Cuisine preferences.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "dietary_constraints",
+            "type": "array[string]",
+            "required": true,
+            "description": "Dietary restrictions or allergies.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "budget_limit",
+            "type": "number",
+            "required": true,
+            "description": "Maximum cost.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "accessibility_needs",
+            "type": "array[string]",
+            "required": false,
+            "description": "Accessibility requirements.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": false,
+            "description": "Sensitive detail handling.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "rating_threshold",
+            "type": "number",
+            "required": false,
+            "description": "Minimum acceptable aggregate rating.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "atmosphere_preferences",
+            "type": "array[string]",
+            "required": false,
+            "description": "Desired dining atmosphere or constraints, such as quiet, family-friendly, quick, local, or non-touristy.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "restaurants": "array",
+          "dietary_fit_summary": "object",
+          "booking_notes": "array",
+          "source_info": "object"
+        },
+        "preference_sensitive_parameters": [
+          "location",
+          "cuisine_preferences",
+          "dietary_constraints",
+          "budget_limit",
+          "accessibility_needs",
+          "privacy_mode",
+          "rating_threshold",
+          "atmosphere_preferences"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "location",
+            "type": "string",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "cuisine_preferences",
+            "type": "array[string]",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "dietary_constraints",
+            "type": "array[string]",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "budget_limit",
+            "type": "number",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "accessibility_needs",
+            "type": "array[string]",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "rating_threshold",
+            "type": "number",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "atmosphere_preferences",
+            "type": "array[string]",
+            "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    }
+  ]
+}

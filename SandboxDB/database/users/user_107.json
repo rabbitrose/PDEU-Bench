@@ -1,0 +1,103 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_107",
+  "user_context": {
+    "fictional_name": "Marcus Chen",
+    "age": 34,
+    "location": "美国纽约州纽约市",
+    "languages": [
+      "英语",
+      "普通话"
+    ],
+    "occupation": "独立创新顾问",
+    "industry": "管理咨询/科技",
+    "household": "单身，独居一居室公寓",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "data_sharing": "不愿与大科技公司分享个人数据；使用VPN和广告拦截器。在职业社交中愿意分享专业数据。",
+      "social_media": "存在感极低：领英用于职业场合，没有个人Instagram/Facebook。匿名使用推特跟踪行业新闻。"
+    },
+    "budget_preferences": {
+      "spending_priorities": "投资优质拳击装备、健康食品、职业发展以及比赛旅行。积极储蓄以提前退休。",
+      "splurge_categories": "度假时选择配备良好健身设施的地点、顶级咨询会议和好咖啡。",
+      "frugal_categories": "服装（运动服除外）、频繁外出就餐和奢侈电子产品。"
+    },
+    "technology_preferences": {
+      "brands": "苹果生态（iPhone、MacBook、iPad），但开放使用任何平台的生产力工具。",
+      "trends": "对AI在咨询和拳击训练（如可穿戴设备）中的应用感兴趣。",
+      "avoidance": "不需要的智能家居小工具；重视简单和功能性。"
+    },
+    "food_preferences": {
+      "diet": "高蛋白、低加工食品；遵循灵活的饮食计划。喜欢亚洲菜（日式、中式）和健康碗。",
+      "dislikes": "油炸食品、浓奶油酱、含糖甜点。",
+      "eateries": "偏好快速休闲健康连锁店（Sweetgreen、Chipotle）或提供明确营养信息的坐下餐厅。"
+    },
+    "travel_preferences": {
+      "purpose": "咨询业务出差（国内/国际）和偶尔的拳击比赛。",
+      "style": "高效且精简：偏好直飞航班、有良好健身房的酒店（凯悦或万豪）、当地健康食品选择。",
+      "destinations": "创新中心（旧金山、东京、伦敦）或拳击文化浓厚的地方（费城、墨西哥城）。"
+    },
+    "learning_preferences": {
+      "learning_style": "动手实践和案例研究为基础；喜欢带有实际项目的互动课程。",
+      "preferred_platforms": "Coursera（用于结构化课程）、YouTube用于拳击训练、阅读研究论文。",
+      "topics": "创新框架、拳击技术、谈判、行为经济学。"
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "education.build_study_plan",
+    "education.search_courses",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "entertainment.recommend_media",
+    "entertainment.search_events",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

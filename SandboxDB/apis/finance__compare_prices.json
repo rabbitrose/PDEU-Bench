@@ -1,0 +1,86 @@
+{
+  "api_name": "finance.compare_prices",
+  "category": "finance",
+  "action": "compare_prices",
+  "description": "Compare prices across vendors or service plans with taxes, fees, warranties, and preference filters.",
+  "interface": {
+    "type": "function_call",
+    "function": "finance.compare_prices",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "item_or_service",
+        "type": "string",
+        "required": true,
+        "description": "Item or service to compare.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "vendors",
+        "type": "array[string]",
+        "required": false,
+        "description": "Candidate vendors.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "required_features",
+        "type": "array[string]",
+        "required": true,
+        "description": "Features the user requires.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "nice_to_have_features",
+        "type": "array[string]",
+        "required": false,
+        "description": "Features influenced by preferences.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "max_budget",
+        "type": "number",
+        "required": true,
+        "description": "Maximum budget.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "quality_preference",
+        "type": "string",
+        "required": true,
+        "description": "Lowest cost, best value, premium, durable, ethical, or local.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "include_fees",
+        "type": "boolean",
+        "required": false,
+        "description": "Whether to include taxes, shipping, or service fees.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "offers": "array",
+      "best_value": "object",
+      "cost_breakdown": "object"
+    },
+    "preference_sensitive_parameters": [
+      "nice_to_have_features",
+      "max_budget"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "nice_to_have_features",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "max_budget",
+        "type": "number",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

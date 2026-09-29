@@ -1,0 +1,100 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_070",
+  "user_context": {
+    "fictional_name": "马库斯·约翰逊",
+    "age": 17,
+    "location": "美国俄亥俄州代顿市",
+    "languages": [
+      "英语"
+    ],
+    "occupation": "学生",
+    "industry": "教育",
+    "household": "与父母和妹妹同住",
+    "accessibility_needs": "无",
+    "privacy_preferences": [
+      "不介意分享一般信息，但会保密个人数据和比赛视频"
+    ],
+    "budget_preferences": [
+      "愿意在优质运动装备上花钱",
+      "在非运动物品上节俭",
+      "为大学存钱"
+    ],
+    "technology_preferences": [
+      "健身可穿戴设备（Fitbit、Garmin）",
+      "游戏主机（PlayStation）",
+      "篮球训练应用"
+    ],
+    "food_preferences": [
+      "高蛋白餐食",
+      "冰沙",
+      "烤鸡",
+      "比赛前避免快餐"
+    ],
+    "travel_preferences": [
+      "锦标赛旅行",
+      "活跃假期（徒步、体育训练营）",
+      "偏好有良好篮球场的目的地"
+    ],
+    "learning_preferences": [
+      "动手训练",
+      "视觉演示",
+      "教练反馈"
+    ],
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "education.build_study_plan",
+    "education.search_courses",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

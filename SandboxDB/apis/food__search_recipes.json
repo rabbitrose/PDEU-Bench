@@ -1,0 +1,99 @@
+{
+  "api_name": "food.search_recipes",
+  "category": "food",
+  "action": "search_recipes",
+  "description": "Search recipes by diet, cuisine, time, cost, nutrition, skill, and household preferences.",
+  "interface": {
+    "type": "function_call",
+    "function": "food.search_recipes",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "query",
+        "type": "string",
+        "required": true,
+        "description": "Recipe query.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "dietary_constraints",
+        "type": "array[string]",
+        "required": true,
+        "description": "Dietary rules or allergies.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "cuisine_preferences",
+        "type": "array[string]",
+        "required": true,
+        "description": "Preferred cuisines.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "max_prep_minutes",
+        "type": "integer",
+        "required": true,
+        "description": "Maximum prep time.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "budget_per_serving",
+        "type": "number",
+        "required": true,
+        "description": "Budget per serving.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "servings",
+        "type": "integer",
+        "required": true,
+        "description": "Number of servings.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "nutrition_goals",
+        "type": "array[string]",
+        "required": false,
+        "description": "Nutrition goals.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "avoid_ingredients",
+        "type": "array[string]",
+        "required": true,
+        "description": "Ingredients to avoid.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "recipes": "array",
+      "recommended_recipe": "object",
+      "shopping_list": "array"
+    },
+    "preference_sensitive_parameters": [
+      "dietary_constraints",
+      "max_prep_minutes",
+      "budget_per_serving"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "dietary_constraints",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "max_prep_minutes",
+        "type": "integer",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "budget_per_serving",
+        "type": "number",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

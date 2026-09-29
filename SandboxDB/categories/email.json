@@ -1,0 +1,284 @@
+{
+  "schema_version": "SandboxDB.v1",
+  "category": "email",
+  "api_count": 3,
+  "apis": [
+    {
+      "api_name": "email.draft_message",
+      "category": "email",
+      "action": "draft_message",
+      "description": "Create a draft email for user review before sending.",
+      "interface": {
+        "type": "function_call",
+        "function": "email.draft_message",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "to",
+            "type": "array[string]",
+            "required": true,
+            "description": "Recipients.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "subject",
+            "type": "string",
+            "required": true,
+            "description": "Draft subject.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "body_outline",
+            "type": "array[string]",
+            "required": true,
+            "description": "Points to include in the draft.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "tone",
+            "type": "string",
+            "required": true,
+            "description": "Tone adapted to the user's communication preference.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "length_preference",
+            "type": "string",
+            "required": true,
+            "description": "Preferred length or level of detail.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "include_evidence",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether to include evidence or citations.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": false,
+            "description": "Redaction level for sensitive details.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "draft_id": "string",
+          "draft_preview": "object",
+          "review_flags": "array"
+        },
+        "preference_sensitive_parameters": [
+          "tone"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "tone",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "email.search_messages",
+      "category": "email",
+      "action": "search_messages",
+      "description": "Search email by sender, keywords, date range, label, attachments, and privacy constraints.",
+      "interface": {
+        "type": "function_call",
+        "function": "email.search_messages",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "query",
+            "type": "string",
+            "required": true,
+            "description": "Search query built from the task.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "from_filter",
+            "type": "string",
+            "required": false,
+            "description": "Sender filter.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "to_filter",
+            "type": "string",
+            "required": false,
+            "description": "Recipient filter.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "date_start",
+            "type": "date",
+            "required": false,
+            "description": "Earliest date.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "date_end",
+            "type": "date",
+            "required": false,
+            "description": "Latest date.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "labels",
+            "type": "array[string]",
+            "required": false,
+            "description": "Labels such as work, family, finance, travel.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "has_attachment",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether to require attachments.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": false,
+            "description": "Redaction level based on user privacy preferences.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "max_results",
+            "type": "integer",
+            "required": false,
+            "description": "Maximum result count.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "messages": "array",
+          "next_page_token": "string|null",
+          "search_summary": "object"
+        },
+        "preference_sensitive_parameters": [
+          "privacy_mode"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "email.send_message",
+      "category": "email",
+      "action": "send_message",
+      "description": "Send a personalized email with optional attachments, scheduling, and tone controls.",
+      "interface": {
+        "type": "function_call",
+        "function": "email.send_message",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "to",
+            "type": "array[string]",
+            "required": true,
+            "description": "Recipients.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "cc",
+            "type": "array[string]",
+            "required": false,
+            "description": "CC recipients.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "bcc",
+            "type": "array[string]",
+            "required": false,
+            "description": "BCC recipients.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "subject",
+            "type": "string",
+            "required": true,
+            "description": "Email subject.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "body",
+            "type": "string",
+            "required": true,
+            "description": "Email body adapted to the user's communication style.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "tone",
+            "type": "string",
+            "required": false,
+            "description": "Tone preference such as concise, formal, warm, or direct.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "attachments",
+            "type": "array[string]",
+            "required": false,
+            "description": "Attachment identifiers.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "send_at",
+            "type": "datetime",
+            "required": false,
+            "description": "Optional scheduled send time.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": false,
+            "description": "Whether sensitive details should be minimized.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "message_id": "string",
+          "delivery_status": "string",
+          "scheduled_for": "datetime|null"
+        },
+        "preference_sensitive_parameters": [
+          "body",
+          "tone",
+          "send_at"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "body",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "tone",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "send_at",
+            "type": "datetime",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "api_name": "travel.search_flights",
+  "category": "travel",
+  "action": "search_flights",
+  "description": "Search cached real-world flight snapshots by route, date, fare, timing, and traveler preferences.",
+  "interface": {
+    "type": "function_call",
+    "function": "travel.search_flights",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "origin_airport",
+        "type": "string",
+        "required": true,
+        "description": "Origin airport code or origin city.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "destination_airport",
+        "type": "string",
+        "required": true,
+        "description": "Destination airport code or destination city.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "departure_date",
+        "type": "date",
+        "required": true,
+        "description": "Departure date.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "return_date",
+        "type": "date",
+        "required": false,
+        "description": "Return date.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "passengers",
+        "type": "array[object]",
+        "required": true,
+        "description": "Passenger mix.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "cabin_class",
+        "type": "string",
+        "required": true,
+        "description": "Economy, premium, business, or first.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "max_price",
+        "type": "number",
+        "required": true,
+        "description": "Maximum acceptable fare.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "preferred_airlines",
+        "type": "array[string]",
+        "required": false,
+        "description": "Preferred airlines.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "avoid_airlines",
+        "type": "array[string]",
+        "required": false,
+        "description": "Airlines to avoid.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "baggage_needs",
+        "type": "object",
+        "required": false,
+        "description": "Baggage requirements.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "schedule_preferences",
+        "type": "object",
+        "required": false,
+        "description": "Preferred departure, arrival, and layover constraints.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "required": false,
+        "description": "Tolerance for delays, tight connections, or low-cost carriers.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "source_domains",
+        "type": "array[string]",
+        "required": false,
+        "description": "Preferred source_info domains, normally travel_flights and weather.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "flights": "array",
+      "recommended_itinerary": "object",
+      "tradeoffs": "array",
+      "source_info": "object"
+    },
+    "preference_sensitive_parameters": [
+      "cabin_class",
+      "max_price",
+      "preferred_airlines",
+      "avoid_airlines",
+      "baggage_needs",
+      "schedule_preferences",
+      "risk_tolerance",
+      "source_domains"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "cabin_class",
+        "type": "string",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "max_price",
+        "type": "number",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "preferred_airlines",
+        "type": "array[string]",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "avoid_airlines",
+        "type": "array[string]",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "baggage_needs",
+        "type": "object",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "schedule_preferences",
+        "type": "object",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "source_domains",
+        "type": "array[string]",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

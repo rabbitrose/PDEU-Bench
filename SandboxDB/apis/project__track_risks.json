@@ -1,0 +1,78 @@
+{
+  "api_name": "project.track_risks",
+  "category": "project",
+  "action": "track_risks",
+  "description": "Create or update a risk register with mitigation actions, owners, triggers, and contingency plans.",
+  "interface": {
+    "type": "function_call",
+    "function": "project.track_risks",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "risks",
+        "type": "array[string]",
+        "required": true,
+        "description": "Risks to track.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "impact_scale",
+        "type": "string",
+        "required": true,
+        "description": "Impact and likelihood scale.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "mitigation_preferences",
+        "type": "array[string]",
+        "required": true,
+        "description": "Preferred mitigation strategies.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "review_frequency",
+        "type": "string",
+        "required": true,
+        "description": "How often risks should be reviewed.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "required": false,
+        "description": "How sensitive risk details should be handled.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "risk_register": "array",
+      "highest_priority_risks": "array",
+      "next_reviews": "array"
+    },
+    "preference_sensitive_parameters": [
+      "risks",
+      "review_frequency",
+      "privacy_mode"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "risks",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "review_frequency",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

@@ -1,0 +1,98 @@
+{
+  "api_name": "health.schedule_appointment",
+  "category": "health",
+  "action": "schedule_appointment",
+  "description": "Schedule a health appointment with reminders, prep instructions, and privacy controls.",
+  "interface": {
+    "type": "function_call",
+    "function": "health.schedule_appointment",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "provider_id",
+        "type": "string",
+        "required": true,
+        "description": "Provider identifier.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "appointment_type",
+        "type": "string",
+        "required": true,
+        "description": "Visit type.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "preferred_slots",
+        "type": "array[string]",
+        "required": true,
+        "description": "Preferred time slots.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "patient_constraints",
+        "type": "array[string]",
+        "required": true,
+        "description": "Health, family, mobility, or work constraints.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "insurance",
+        "type": "string",
+        "required": false,
+        "description": "Insurance or payment mode.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "communication_preference",
+        "type": "string",
+        "required": false,
+        "description": "Reminder and contact preference.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "required": false,
+        "description": "Privacy level for appointment details.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "appointment_id": "string",
+      "confirmed_slot": "object",
+      "prep_instructions": "array"
+    },
+    "preference_sensitive_parameters": [
+      "preferred_slots",
+      "patient_constraints",
+      "communication_preference",
+      "privacy_mode"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "preferred_slots",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "patient_constraints",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "communication_preference",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

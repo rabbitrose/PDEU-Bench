@@ -1,0 +1,86 @@
+{
+  "api_name": "project.create_task_list",
+  "category": "project",
+  "action": "create_task_list",
+  "description": "Create a project task list with owners, due dates, dependencies, priorities, and reminders.",
+  "interface": {
+    "type": "function_call",
+    "function": "project.create_task_list",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "project_name",
+        "type": "string",
+        "required": true,
+        "description": "Project name.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "goals",
+        "type": "array[string]",
+        "required": true,
+        "description": "Project goals.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "tasks",
+        "type": "array[object]",
+        "required": true,
+        "description": "Tasks to add.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "deadline",
+        "type": "datetime",
+        "required": false,
+        "description": "Overall deadline.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "priority_method",
+        "type": "string",
+        "required": true,
+        "description": "Preference-sensitive priority strategy.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "collaborators",
+        "type": "array[string]",
+        "required": false,
+        "description": "People or roles involved.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "reminder_preferences",
+        "type": "object",
+        "required": false,
+        "description": "Reminder style and timing.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "project_id": "string",
+      "task_list": "array",
+      "critical_path": "array"
+    },
+    "preference_sensitive_parameters": [
+      "priority_method",
+      "reminder_preferences"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "priority_method",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "reminder_preferences",
+        "type": "object",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

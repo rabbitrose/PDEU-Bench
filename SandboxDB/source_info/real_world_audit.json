@@ -1,0 +1,69 @@
+{
+  "schema_version": "SandboxDBRealWorldAudit.v1",
+  "generated_at": "2026-07-14T19:36:53+08:00",
+  "input_state": {
+    "source_info_manifest_created_at": "2026-06-30T00:11:16",
+    "database_manifest_updated_at": "2026-07-14T14:52:45",
+    "source_info_records_dir": "SandboxDB/source_info/records",
+    "api_records_dir": "SandboxDB/database/api_records"
+  },
+  "metric_policy": {
+    "primary_metric": "BM25-retrievable record count",
+    "target_real_world_ratio": 0.9,
+    "target_met": false,
+    "reason": "BM25 personalization depends on retrieved source_info records; file-size ratio would reward long JSON padding instead of retrieval coverage.",
+    "secondary_size_metric": "Source-info record bytes divided by source-info plus api-record bytes; model artifacts and indexes are excluded."
+  },
+  "counts": {
+    "real_world_source_info_records": 61722,
+    "synthetic_api_records": 10262,
+    "bm25_retrievable_records_total": 71984,
+    "real_world_bm25_record_ratio": 0.8574405423427428,
+    "source_info_size_bytes": 68540770,
+    "synthetic_api_records_size_bytes": 50700300,
+    "retrievable_records_size_bytes_total": 119241070,
+    "real_world_retrievable_file_size_ratio": 0.574808411229453
+  },
+  "source_info_domain_counts": {
+    "food": 9592,
+    "music_media": 12787,
+    "navigation": 10362,
+    "shopping": 20385,
+    "travel_flights": 8000,
+    "weather": 596
+  },
+  "source_info_source_counts": {
+    "ETApp Music music_all.csv": 12787,
+    "ETApp Navigation accommodations": 5060,
+    "ETApp Navigation attractions": 5302,
+    "ETApp Navigation flights": 8000,
+    "ETApp Navigation restaurants": 9592,
+    "ETApp Shopping product.csv": 20385,
+    "ETApp Weather weather_new.pkl": 84,
+    "Open-Meteo Forecast API": 512
+  },
+  "source_policy": {
+    "primary_sources": [
+      "ETApp local repository clone",
+      "Open-Meteo public Forecast API snapshot"
+    ],
+    "included_data": [
+      "ETApp Shopping/product.csv",
+      "ETApp Music/music_all.csv",
+      "ETApp Navigation/restaurants/clean_restaurant_2022_revise.csv",
+      "ETApp Navigation/accommodations/clean_accommodations_2022_revise.csv",
+      "ETApp Navigation/attractions/attractions.csv",
+      "ETApp Navigation/flights/clean_Flights_revise.csv",
+      "ETApp Weather/weather_new.pkl",
+      "Open-Meteo /v1/forecast daily forecast snapshots for configured world cities"
+    ],
+    "excluded_data": [
+      "personal email",
+      "calendar alarms/events tied to synthetic persons",
+      "health records",
+      "shopping carts",
+      "music favorites tied to synthetic persons"
+    ],
+    "reason": "Included sources are public/catalog/weather/transport snapshots suitable for offline retrieval. Excluded sources are personal, sensitive, or tied to individual synthetic accounts."
+  }
+}

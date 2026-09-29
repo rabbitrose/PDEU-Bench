@@ -1,0 +1,80 @@
+{
+  "api_name": "email.draft_message",
+  "category": "email",
+  "action": "draft_message",
+  "description": "Create a draft email for user review before sending.",
+  "interface": {
+    "type": "function_call",
+    "function": "email.draft_message",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "to",
+        "type": "array[string]",
+        "required": true,
+        "description": "Recipients.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "subject",
+        "type": "string",
+        "required": true,
+        "description": "Draft subject.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "body_outline",
+        "type": "array[string]",
+        "required": true,
+        "description": "Points to include in the draft.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "tone",
+        "type": "string",
+        "required": true,
+        "description": "Tone adapted to the user's communication preference.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "length_preference",
+        "type": "string",
+        "required": true,
+        "description": "Preferred length or level of detail.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "include_evidence",
+        "type": "boolean",
+        "required": false,
+        "description": "Whether to include evidence or citations.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "required": false,
+        "description": "Redaction level for sensitive details.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "draft_id": "string",
+      "draft_preview": "object",
+      "review_flags": "array"
+    },
+    "preference_sensitive_parameters": [
+      "tone"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "tone",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

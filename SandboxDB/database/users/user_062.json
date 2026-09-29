@@ -1,0 +1,110 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_062",
+  "user_context": {
+    "fictional_name": "Julian Marchetti",
+    "age": 68,
+    "location": "Boston, Massachusetts, USA",
+    "languages": [
+      "英语",
+      "法语",
+      "意大利语"
+    ],
+    "occupation": "退休戏剧导演",
+    "industry": "表演艺术",
+    "household": "独居在灯塔山翻新的褐石建筑中",
+    "accessibility_needs": "无重大疾病，但阅读剧本和细字时使用老花镜",
+    "privacy_preferences": [
+      "非常私密：不分享位置或在线个人照片",
+      "偏好加密通信",
+      "避免社交媒体"
+    ],
+    "budget_preferences": [
+      "愿意在优质体验和耐用商品上挥霍",
+      "优先考虑价值而非潮流",
+      "投资能带来长期满足感的物品"
+    ],
+    "technology_preferences": [
+      "极简主义：为了方便使用电子阅读器，但更喜欢实体书",
+      "警惕算法驱动的流媒体推荐",
+      "欣赏高端音频设备",
+      "使用最少应用的智能手机"
+    ],
+    "food_preferences": [
+      "意大利菜（尤其是地方特色）",
+      "法式小馆菜肴",
+      "从农场到餐桌的餐厅",
+      "享受葡萄酒搭配",
+      "不喜欢过于辛辣或融合的食物"
+    ],
+    "travel_preferences": [
+      "伦敦、巴黎、维也纳等文化之都",
+      "历史剧院和博物馆的导览游",
+      "避免大型团体游",
+      "偏爱有特色的精品酒店"
+    ],
+    "learning_preferences": [
+      "与大师导演的深度工作坊",
+      "带问答环节的大师班",
+      "有引导讨论的小型阅读小组",
+      "原始资料优先于摘要"
+    ],
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "education.build_study_plan",
+    "education.search_courses",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "entertainment.search_events",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "translation.translate_text",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

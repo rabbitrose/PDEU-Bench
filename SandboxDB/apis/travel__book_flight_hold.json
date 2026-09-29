@@ -1,0 +1,80 @@
+{
+  "api_name": "travel.book_flight_hold",
+  "category": "travel",
+  "action": "book_flight_hold",
+  "description": "Place a temporary hold on a flight itinerary without final payment.",
+  "interface": {
+    "type": "function_call",
+    "function": "travel.book_flight_hold",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "flight_option_id",
+        "type": "string",
+        "required": true,
+        "description": "Selected flight option.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "passenger_details",
+        "type": "array[object]",
+        "required": true,
+        "description": "Passenger details with minimal necessary personal data.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "seat_preferences",
+        "type": "object",
+        "required": true,
+        "description": "Seat preferences.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "baggage_selection",
+        "type": "object",
+        "required": true,
+        "description": "Baggage selection.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "payment_method_id",
+        "type": "string",
+        "required": false,
+        "description": "Payment method token.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "hold_duration_hours",
+        "type": "integer",
+        "required": false,
+        "description": "Requested hold duration.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "required": false,
+        "description": "Minimize exposure of personal data.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "hold_id": "string",
+      "expires_at": "datetime",
+      "price_lock": "object"
+    },
+    "preference_sensitive_parameters": [
+      "seat_preferences"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "seat_preferences",
+        "type": "object",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

@@ -1,0 +1,79 @@
+{
+  "api_name": "events.manage_rsvp",
+  "category": "events",
+  "action": "manage_rsvp",
+  "description": "Create or update an RSVP tracker with guest constraints, dietary needs, reminders, and privacy controls.",
+  "interface": {
+    "type": "function_call",
+    "function": "events.manage_rsvp",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "event_id_or_title",
+        "type": "string",
+        "required": true,
+        "description": "Event identifier or title.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "invitees",
+        "type": "array[string]",
+        "required": true,
+        "description": "Invitees or guest groups.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "rsvp_deadline",
+        "type": "date",
+        "required": true,
+        "description": "Deadline for responses.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "dietary_or_accessibility_fields",
+        "type": "array[string]",
+        "required": true,
+        "description": "Fields to collect from guests.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "reminder_policy",
+        "type": "string",
+        "required": false,
+        "description": "Reminder timing and tone preference.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "required": false,
+        "description": "How guest information should be protected.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "rsvp_tracker": "object",
+      "pending_invitees": "array",
+      "reminder_plan": "array"
+    },
+    "preference_sensitive_parameters": [
+      "reminder_policy",
+      "privacy_mode"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "reminder_policy",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 1
+}

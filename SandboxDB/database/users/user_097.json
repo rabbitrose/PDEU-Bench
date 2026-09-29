@@ -1,0 +1,100 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_097",
+  "user_context": {
+    "fictional_name": "里卡多·门德斯",
+    "age": 45,
+    "location": "萨尔瓦多圣萨尔瓦多",
+    "languages": [
+      "西班牙语",
+      "英语"
+    ],
+    "occupation": "政治分析师",
+    "industry": "政治分析 / 咨询",
+    "household": "已婚，有两个孩子（12岁和15岁）",
+    "accessibility_needs": "无",
+    "privacy_preferences": [
+      "注重隐私：使用 VPN、广告拦截器、社交媒体存在感极低",
+      "避免收集生物特征数据",
+      "偏好有明确数据政策的服务"
+    ],
+    "budget_preferences": [
+      "愿意投资可靠的硬件和软件",
+      "个人使用偏好免费或低成本工具，但愿意为优质数据源付费",
+      "餐饮娱乐支出适中，为家庭旅行储蓄"
+    ],
+    "technology_preferences": [
+      "使用基于Linux的操作系统以确保安全",
+      "尽可能使用开源软件",
+      "使用加密通信工具（Signal、ProtonMail）"
+    ],
+    "food_preferences": [
+      "喜欢普普萨（萨尔瓦多传统菜肴），但工作前避免油腻餐食",
+      "偏好家常菜，旅行时喜欢探索当地餐馆",
+      "适量饮用咖啡"
+    ],
+    "travel_preferences": [
+      "追求舒适但不奢华；偏好本地交通以融入当地",
+      "选择政治敏感区域的非旅游型住宿",
+      "短期出差专注于采访或活动"
+    ],
+    "learning_preferences": [
+      "参与带有互动问答环节的研讨会和工作坊",
+      "偏好学术论文和报告而非视频内容",
+      "参加有证书的结构化课程"
+    ],
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "api_name": "research.search_sources",
+  "category": "research",
+  "action": "search_sources",
+  "description": "Search cached real-world source_info directories, official-style source snapshots, local listings, weather, flight, shopping, and media records with quality filters.",
+  "interface": {
+    "type": "function_call",
+    "function": "research.search_sources",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "query",
+        "type": "string",
+        "required": true,
+        "description": "Search query derived from the task.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "source_domains",
+        "type": "array[string]",
+        "required": true,
+        "description": "Preferred source_info domains or source categories, such as shopping, food, navigation, travel_flights, weather, or music_media.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "evidence_standard",
+        "type": "string",
+        "required": true,
+        "description": "Required source quality and verification threshold.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "recency_requirement",
+        "type": "string",
+        "required": false,
+        "description": "How current the source must be for this task.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "language",
+        "type": "string",
+        "required": false,
+        "description": "Preferred language for sources.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "region",
+        "type": "string",
+        "required": false,
+        "description": "Location or jurisdiction constraint.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "max_results",
+        "type": "integer",
+        "required": false,
+        "description": "Maximum number of candidate sources.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "personalization_focus",
+        "type": "array[string]",
+        "required": false,
+        "description": "Preference dimensions that should affect ranking, such as budget, privacy, accessibility, safety, language, or evidence quality.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "sources": "array",
+      "quality_summary": "object",
+      "coverage_gaps": "array",
+      "source_info": "object"
+    },
+    "preference_sensitive_parameters": [
+      "source_domains",
+      "evidence_standard",
+      "recency_requirement",
+      "language",
+      "region",
+      "max_results",
+      "personalization_focus"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "source_domains",
+        "type": "array[string]",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "evidence_standard",
+        "type": "string",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "recency_requirement",
+        "type": "string",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "language",
+        "type": "string",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "region",
+        "type": "string",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "max_results",
+        "type": "integer",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "personalization_focus",
+        "type": "array[string]",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

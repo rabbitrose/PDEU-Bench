@@ -1,0 +1,107 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_072",
+  "user_context": {
+    "fictional_name": "Alex Thompson",
+    "age": 38,
+    "location": "San Francisco, CA, USA",
+    "languages": [
+      "英语",
+      "西班牙语"
+    ],
+    "occupation": "IT项目经理",
+    "industry": "软件开发",
+    "household": "已婚，一个孩子（6岁）",
+    "accessibility_needs": "无",
+    "privacy_preferences": [
+      "使用VPN进行个人浏览",
+      "小心社交媒体分享",
+      "偏好加密通讯应用",
+      "尽可能选择退出数据收集"
+    ],
+    "budget_preferences": [
+      "愿意投资优质工具和教育",
+      "中等休闲支出，优先体验而非物品",
+      "积极为退休储蓄",
+      "有持续学习的预算"
+    ],
+    "technology_preferences": [
+      "最新高性能笔记本电脑",
+      "智能家居设备",
+      "降噪耳机",
+      "电子书阅读器"
+    ],
+    "food_preferences": [
+      "喜欢意大利和墨西哥菜",
+      "偏好有机和本地采购食材",
+      "避免加工食品",
+      "喜欢在家做饭"
+    ],
+    "travel_preferences": [
+      "偏好直飞航班",
+      "使用万豪酒店",
+      "喜欢徒步旅行目的地",
+      "轻装旅行，只带登机箱"
+    ],
+    "learning_preferences": [
+      "互动在线课程（Coursera, Pluralsight）",
+      "动手实践工作坊",
+      "阅读书籍和文章",
+      "参加会议（Agile Alliance）"
+    ],
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "education.search_courses",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

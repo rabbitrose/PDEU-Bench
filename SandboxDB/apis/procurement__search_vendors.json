@@ -1,0 +1,92 @@
+{
+  "api_name": "procurement.search_vendors",
+  "category": "procurement",
+  "action": "search_vendors",
+  "description": "Search vendors, venues, service providers, tools, or contractors with budget, location, quality, and ethics filters.",
+  "interface": {
+    "type": "function_call",
+    "function": "procurement.search_vendors",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "service_needed",
+        "type": "string",
+        "required": true,
+        "description": "Vendor or service category needed.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "location",
+        "type": "string",
+        "required": true,
+        "description": "Location or service area.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "required": true,
+        "description": "Maximum budget or price cap.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "must_have_requirements",
+        "type": "array[string]",
+        "required": true,
+        "description": "Hard requirements.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "nice_to_have_requirements",
+        "type": "array[string]",
+        "required": true,
+        "description": "Preferred attributes.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "privacy_or_ethics_filters",
+        "type": "array[string]",
+        "required": false,
+        "description": "Privacy, sustainability, accessibility, or ethics requirements.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "max_results",
+        "type": "integer",
+        "required": false,
+        "description": "Maximum candidate count.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "vendors": "array",
+      "shortlist": "array",
+      "gaps": "array"
+    },
+    "preference_sensitive_parameters": [
+      "location",
+      "budget_limit",
+      "privacy_or_ethics_filters"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "location",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "privacy_or_ethics_filters",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

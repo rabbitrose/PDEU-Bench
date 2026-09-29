@@ -1,0 +1,137 @@
+{
+  "api_name": "food.search_restaurants",
+  "category": "food",
+  "action": "search_restaurants",
+  "description": "Search cached real-world restaurant directory records using location, cuisine, budget, dietary, accessibility, and privacy preferences.",
+  "interface": {
+    "type": "function_call",
+    "function": "food.search_restaurants",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "location",
+        "type": "string",
+        "required": true,
+        "description": "Search location.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "party_size",
+        "type": "integer",
+        "required": true,
+        "description": "Number of people.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "cuisine_preferences",
+        "type": "array[string]",
+        "required": true,
+        "description": "Cuisine preferences.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "dietary_constraints",
+        "type": "array[string]",
+        "required": true,
+        "description": "Dietary restrictions or allergies.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "required": true,
+        "description": "Maximum cost.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "accessibility_needs",
+        "type": "array[string]",
+        "required": false,
+        "description": "Accessibility requirements.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "required": false,
+        "description": "Sensitive detail handling.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "rating_threshold",
+        "type": "number",
+        "required": false,
+        "description": "Minimum acceptable aggregate rating.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "atmosphere_preferences",
+        "type": "array[string]",
+        "required": false,
+        "description": "Desired dining atmosphere or constraints, such as quiet, family-friendly, quick, local, or non-touristy.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "restaurants": "array",
+      "dietary_fit_summary": "object",
+      "booking_notes": "array",
+      "source_info": "object"
+    },
+    "preference_sensitive_parameters": [
+      "location",
+      "cuisine_preferences",
+      "dietary_constraints",
+      "budget_limit",
+      "accessibility_needs",
+      "privacy_mode",
+      "rating_threshold",
+      "atmosphere_preferences"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "location",
+        "type": "string",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "cuisine_preferences",
+        "type": "array[string]",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "dietary_constraints",
+        "type": "array[string]",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "accessibility_needs",
+        "type": "array[string]",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "rating_threshold",
+        "type": "number",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "atmosphere_preferences",
+        "type": "array[string]",
+        "why_sensitive": "This parameter changes retrieval/ranking based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

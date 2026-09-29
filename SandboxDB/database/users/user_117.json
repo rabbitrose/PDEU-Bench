@@ -1,0 +1,128 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_117",
+  "user_context": {
+    "fictional_name": "Alex Chen",
+    "age": 28,
+    "location": "美国华盛顿州西雅图",
+    "languages": [
+      "英语",
+      "普通话（会话水平）"
+    ],
+    "occupation": "软件工程师",
+    "industry": "技术",
+    "household": "单身，独居一室公寓",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "data_sharing": [
+        "严格最小化",
+        "仅限选择加入"
+      ],
+      "surveillance": [
+        "避免人脸识别和公共Wi-Fi",
+        "用现金或加密货币支付"
+      ],
+      "online_tracking": [
+        "拦截所有第三方Cookie",
+        "敏感浏览时使用Tor"
+      ]
+    },
+    "budget_preferences": [
+      "中等预算但愿意在隐私和可持续性上花钱",
+      "优先体验而非拥有"
+    ],
+    "technology_preferences": [
+      "开源操作系统",
+      "自由开源生产力工具",
+      "不记录日志的VPN",
+      "广告和跟踪拦截器"
+    ],
+    "food_preferences": [
+      "素食料理",
+      "本地和有机",
+      "食材透明的街头小吃"
+    ],
+    "travel_preferences": {
+      "destination_type": [
+        "自然保护区",
+        "历史小镇",
+        "隐私法律严格的国家"
+      ],
+      "accommodation": [
+        "生态旅馆",
+        "注重隐私的青年旅舍",
+        "数据政策清晰的公寓出租"
+      ],
+      "activities": [
+        "本地旅行团",
+        "远足",
+        "烹饪课程",
+        "志愿服务"
+      ],
+      "booking": [
+        "直接预订而非通过在线旅行社",
+        "使用隐私浏览器"
+      ]
+    },
+    "learning_preferences": [
+      "互动教程",
+      "动手实践工作坊",
+      "自定进度在线课程",
+      "小组同伴学习"
+    ],
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "translation.translate_text",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

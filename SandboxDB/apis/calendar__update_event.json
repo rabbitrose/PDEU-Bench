@@ -1,0 +1,66 @@
+{
+  "api_name": "calendar.update_event",
+  "category": "calendar",
+  "action": "update_event",
+  "description": "Update event time, title, attendees, location, reminders, or notes.",
+  "interface": {
+    "type": "function_call",
+    "function": "calendar.update_event",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "event_id",
+        "type": "string",
+        "required": true,
+        "description": "Existing event identifier.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "updates",
+        "type": "object",
+        "required": true,
+        "description": "Fields to update.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "notify_attendees",
+        "type": "boolean",
+        "required": true,
+        "description": "Whether participants should receive notifications.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "change_reason",
+        "type": "string",
+        "required": false,
+        "description": "Reason for the update.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "required": false,
+        "description": "Controls how much change detail is shared.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "event_id": "string",
+      "status": "string",
+      "updated_fields": "array"
+    },
+    "preference_sensitive_parameters": [
+      "privacy_mode"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 1
+}

@@ -1,0 +1,242 @@
+{
+  "schema_version": "SandboxDB.v1",
+  "category": "contacts",
+  "api_count": 3,
+  "apis": [
+    {
+      "api_name": "contacts.create_or_update",
+      "category": "contacts",
+      "action": "create_or_update",
+      "description": "Create or update a contact record with consent-aware notes.",
+      "interface": {
+        "type": "function_call",
+        "function": "contacts.create_or_update",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "contact_id",
+            "type": "string",
+            "required": false,
+            "description": "Existing contact identifier if updating.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "required": true,
+            "description": "Contact display name.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "role",
+            "type": "string",
+            "required": true,
+            "description": "Contact role.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "organization",
+            "type": "string",
+            "required": false,
+            "description": "Organization.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "preferred_channel",
+            "type": "string",
+            "required": true,
+            "description": "Preferred communication channel.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "notes",
+            "type": "string",
+            "required": false,
+            "description": "Notes constrained by privacy preferences.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "tags",
+            "type": "array[string]",
+            "required": false,
+            "description": "Contact tags.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "contact_id": "string",
+          "status": "string",
+          "updated_fields": "array"
+        },
+        "preference_sensitive_parameters": [
+          "notes"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "notes",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "contacts.find_experts",
+      "category": "contacts",
+      "action": "find_experts",
+      "description": "Find experts, speakers, mentors, interviewees, panelists, service providers, or community contacts.",
+      "interface": {
+        "type": "function_call",
+        "function": "contacts.find_experts",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "expertise_needed",
+            "type": "string",
+            "required": true,
+            "description": "Expertise or role needed.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "location_or_region",
+            "type": "string",
+            "required": true,
+            "description": "Location or region.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "availability_window",
+            "type": "object",
+            "required": true,
+            "description": "Timing constraints.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "language_or_accessibility_needs",
+            "type": "array[string]",
+            "required": true,
+            "description": "Language or accessibility requirements.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": true,
+            "description": "Sensitive detail handling.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "max_results",
+            "type": "integer",
+            "required": false,
+            "description": "Maximum contacts to return.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "experts": "array",
+          "contact_risks": "array",
+          "outreach_suggestions": "array"
+        },
+        "preference_sensitive_parameters": [
+          "location_or_region",
+          "availability_window",
+          "language_or_accessibility_needs"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "location_or_region",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "availability_window",
+            "type": "object",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "language_or_accessibility_needs",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "contacts.search",
+      "category": "contacts",
+      "action": "search",
+      "description": "Search contacts by name, role, organization, relationship, or location.",
+      "interface": {
+        "type": "function_call",
+        "function": "contacts.search",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "query",
+            "type": "string",
+            "required": true,
+            "description": "Contact search query.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "relationship_type",
+            "type": "string",
+            "required": false,
+            "description": "work, family, friend, vendor, clinician, advisor, or other.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "organization",
+            "type": "string",
+            "required": false,
+            "description": "Organization filter.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "location",
+            "type": "string",
+            "required": false,
+            "description": "Location filter.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": false,
+            "description": "Controls how much contact detail can be returned.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "max_results",
+            "type": "integer",
+            "required": false,
+            "description": "Maximum result count.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "contacts": "array",
+          "match_quality": "string",
+          "redactions": "array"
+        },
+        "preference_sensitive_parameters": [
+          "location"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "location",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    }
+  ]
+}

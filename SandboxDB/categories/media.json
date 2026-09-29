@@ -1,0 +1,91 @@
+{
+  "schema_version": "SandboxDB.v1",
+  "category": "media",
+  "api_count": 1,
+  "apis": [
+    {
+      "api_name": "media.search_assets",
+      "category": "media",
+      "action": "search_assets",
+      "description": "Search images, audio, video, readings, scripts, datasets, or creative assets with licensing and content filters.",
+      "interface": {
+        "type": "function_call",
+        "function": "media.search_assets",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "asset_type",
+            "type": "string",
+            "required": true,
+            "description": "Asset type needed.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "query",
+            "type": "string",
+            "required": true,
+            "description": "Search query.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "license_constraints",
+            "type": "array[string]",
+            "required": true,
+            "description": "Licensing and attribution constraints.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "content_constraints",
+            "type": "array[string]",
+            "required": true,
+            "description": "Content, tone, safety, or age constraints.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "language",
+            "type": "string",
+            "required": false,
+            "description": "Preferred language.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "max_results",
+            "type": "integer",
+            "required": false,
+            "description": "Maximum results.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "assets": "array",
+          "license_notes": "array",
+          "content_warnings": "array"
+        },
+        "preference_sensitive_parameters": [
+          "license_constraints",
+          "content_constraints",
+          "language"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "license_constraints",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "content_constraints",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "language",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    }
+  ]
+}

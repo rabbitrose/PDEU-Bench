@@ -1,0 +1,99 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_143",
+  "user_context": {
+    "fictional_name": "Alex Rivera",
+    "age": 32,
+    "location": "美国华盛顿特区",
+    "languages": [
+      "英语",
+      "西班牙语"
+    ],
+    "occupation": "政策分析师",
+    "industry": "智库 / 公共政策",
+    "household": "独居",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "data_sharing": "非常谨慎；最小化个人数据的共享。",
+      "tracking": "使用广告拦截器、VPN和注重隐私的DNS。"
+    },
+    "budget_preferences": {
+      "spending_habits": "愿意投资高质量的研究工具和书籍；在非必需品上节约。",
+      "typical_monthly": "分配约200美元用于订阅/服务，100美元用于书籍，400美元用于外出就餐（适合素食）。"
+    },
+    "technology_preferences": {
+      "os": "Linux (Ubuntu)",
+      "browser": "带有隐私扩展的Firefox。",
+      "communication": "Signal用于安全消息，ProtonMail用于电子邮件。"
+    },
+    "food_preferences": {
+      "diet": "素食（蛋奶素食）。",
+      "cuisines": "地中海、印度、墨西哥。",
+      "avoid": "快餐、过度加工的餐食。"
+    },
+    "travel_preferences": {
+      "destinations": "历史法律遗址（例如最高法院、老贝利），学术会议。",
+      "accommodation": "有工作空间的安静酒店。",
+      "activities": "访问法院、档案室和讲座。"
+    },
+    "learning_preferences": {
+      "style": "具有明确学习目标的结构化课程或研讨会。",
+      "format": "如果可能的话面对面，否则带有文字记录的录制讲座。"
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "education.build_study_plan",
+    "education.search_courses",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "api_name": "civic.find_services",
+  "category": "civic",
+  "action": "find_services",
+  "description": "Find government, nonprofit, school, community, or municipal services.",
+  "interface": {
+    "type": "function_call",
+    "function": "civic.find_services",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "service_type",
+        "type": "string",
+        "required": true,
+        "description": "Service type.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "location",
+        "type": "string",
+        "required": true,
+        "description": "Service area.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "eligibility_factors",
+        "type": "object",
+        "required": true,
+        "description": "Eligibility factors.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "languages",
+        "type": "array[string]",
+        "required": false,
+        "description": "Language preferences.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "accessibility_needs",
+        "type": "array[string]",
+        "required": false,
+        "description": "Accessibility needs.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "urgency",
+        "type": "string",
+        "required": false,
+        "description": "Urgency level.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "required": false,
+        "description": "Privacy handling for sensitive eligibility data.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "services": "array",
+      "eligibility_notes": "array",
+      "next_steps": "array"
+    },
+    "preference_sensitive_parameters": [
+      "languages",
+      "accessibility_needs",
+      "privacy_mode"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "languages",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "accessibility_needs",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "privacy_mode",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 1
+}

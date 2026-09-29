@@ -1,0 +1,100 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_064",
+  "user_context": {
+    "fictional_name": "Alexandra Marchetti",
+    "age": 42,
+    "location": "美国华盛顿特区",
+    "languages": [
+      "英语",
+      "意大利语"
+    ],
+    "occupation": "法律顾问",
+    "industry": "法律服务/合规",
+    "household": "已婚有两个孩子",
+    "accessibility_needs": "无",
+    "privacy_preferences": [
+      "非常高的隐私期望",
+      "使用VPN和加密电子邮件",
+      "最小化社交媒体存在"
+    ],
+    "budget_preferences": [
+      "愿意投资于质量和可靠性",
+      "个人物品注重预算",
+      "偏好价值而非奢华"
+    ],
+    "technology_preferences": [
+      "苹果生态系统（iPhone、iPad、Mac）",
+      "Microsoft Office套件",
+      "VPN和加密工具",
+      "双因素认证"
+    ],
+    "food_preferences": [
+      "意大利菜",
+      "有机和本地采购食材",
+      "避免过度加工食品"
+    ],
+    "travel_preferences": [
+      "偏好直飞航班",
+      "具有良好工作空间的住宿",
+      "参加欧洲城市的法律会议"
+    ],
+    "learning_preferences": [
+      "数据隐私法在线课程",
+      "合同管理研讨会",
+      "带有问答环节的现场研讨会"
+    ],
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": "SandboxDB.v1",
+  "category": "communications",
+  "api_count": 1,
+  "apis": [
+    {
+      "api_name": "communications.plan_outreach",
+      "category": "communications",
+      "action": "plan_outreach",
+      "description": "Plan outreach messaging, channel strategy, cadence, audience segmentation, and follow-up actions.",
+      "interface": {
+        "type": "function_call",
+        "function": "communications.plan_outreach",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "audience_segments",
+            "type": "array[string]",
+            "required": true,
+            "description": "Audience groups to reach.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "goal",
+            "type": "string",
+            "required": true,
+            "description": "Outreach goal.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "channels",
+            "type": "array[string]",
+            "required": true,
+            "description": "Channels such as email, messaging, flyers, social, or calls.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "tone",
+            "type": "string",
+            "required": true,
+            "description": "Communication tone.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": true,
+            "description": "Sensitive detail handling.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "schedule_constraints",
+            "type": "array[string]",
+            "required": false,
+            "description": "Timing constraints.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "outreach_plan": "array",
+          "message_briefs": "array",
+          "follow_up_schedule": "array"
+        },
+        "preference_sensitive_parameters": [
+          "tone",
+          "schedule_constraints"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "tone",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "schedule_constraints",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    }
+  ]
+}

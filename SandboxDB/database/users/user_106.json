@@ -1,0 +1,134 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_106",
+  "user_context": {
+    "fictional_name": "Elena Morozova",
+    "age": 34,
+    "location": "San Francisco, CA, USA",
+    "languages": [
+      "英语（母语）",
+      "俄语（母语）",
+      "西班牙语（中级）"
+    ],
+    "occupation": "科学博主和内容创作者",
+    "industry": "媒体与出版",
+    "household": "独自居住在一居室公寓，没有宠物",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "level": "高级用户；使用VPN，避免社交媒体追踪，偏好匿名浏览用于研究",
+      "data_sharing": "愿意为科学研究分享匿名数据，但不用于商业目的",
+      "social_media": "专业使用Twitter，但限制个人分享；避免使用Facebook和Instagram"
+    },
+    "budget_preferences": {
+      "spending_style": "在基本生活上节俭，但愿意为工作和教育投资优质工具",
+      "savings": "储蓄收入的20%，有预算意识但不过分限制",
+      "priorities": "将预算分配给软件订阅、艺术用品和旅行体验"
+    },
+    "technology_preferences": {
+      "devices": [
+        "苹果产品（追求一致性）",
+        "Kindle阅读器",
+        "Fitbit活动追踪器"
+      ],
+      "software": [
+        "开源工具如Inkscape用于基础编辑",
+        "Procreate用于数字艺术",
+        "Zotero用于参考文献"
+      ],
+      "innovations": [
+        "对VR用于科学教育感兴趣",
+        "智能家居设备追求便利，但担心隐私"
+      ]
+    },
+    "food_preferences": {
+      "diet": "弹性素食者；大多素食，偶尔吃鱼",
+      "cuisines": [
+        "日本料理",
+        "意大利语",
+        "墨西哥料理",
+        "中东菜"
+      ],
+      "dislikes": "辛辣食物、加工零食、含糖早餐麦片",
+      "cooking_style": "喜欢从零开始烹饪，使用餐包服务方便"
+    },
+    "travel_preferences": {
+      "type": "教育型和自然导向；偏好有自然历史博物馆、水族馆或国家公园的目的地",
+      "destinations": [
+        "加拉帕戈斯群岛",
+        "日本（科学博物馆）",
+        "挪威（极光和地质）",
+        "哥斯达黎加（生物多样性）"
+      ],
+      "accommodation": "精品酒店或Airbnb，有良好写生光线；避免大型连锁酒店"
+    },
+    "learning_preferences": {
+      "style": "视觉和互动型；偏好包含图表、视频和动手项目的课程",
+      "platforms": [
+        "Coursera（旁听课程）",
+        "Skillshare（用于插画技巧）",
+        "Khan Academy（用于复习基础知识）"
+      ],
+      "topics": [
+        "数据可视化",
+        "科学插画",
+        "科学写作",
+        "统计学"
+      ]
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "education.build_study_plan",
+    "education.search_courses",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "api_name": "shopping.create_cart",
+  "category": "shopping",
+  "action": "create_cart",
+  "description": "Create a cart from selected items with substitution, coupon, and delivery preferences.",
+  "interface": {
+    "type": "function_call",
+    "function": "shopping.create_cart",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "items",
+        "type": "array[object]",
+        "required": true,
+        "description": "Items and quantities.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "vendor",
+        "type": "string",
+        "required": true,
+        "description": "Vendor or marketplace.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "delivery_method",
+        "type": "string",
+        "required": true,
+        "description": "Pickup, delivery, shipping, or digital.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "delivery_window",
+        "type": "string",
+        "required": false,
+        "description": "Preferred fulfillment window.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "max_total",
+        "type": "number",
+        "required": true,
+        "description": "Maximum total budget.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "substitution_preferences",
+        "type": "object",
+        "required": true,
+        "description": "Allowed substitutions.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "coupon_policy",
+        "type": "string",
+        "required": false,
+        "description": "Coupon or deal preference.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "cart_id": "string",
+      "estimated_total": "number",
+      "warnings": "array"
+    },
+    "preference_sensitive_parameters": [
+      "max_total",
+      "coupon_policy"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "max_total",
+        "type": "number",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      },
+      {
+        "name": "coupon_policy",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

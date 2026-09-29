@@ -1,0 +1,320 @@
+{
+  "schema_version": "SandboxDB.v1",
+  "category": "legal",
+  "api_count": 4,
+  "apis": [
+    {
+      "api_name": "legal.create_checklist",
+      "category": "legal",
+      "action": "create_checklist",
+      "description": "Create a legal or compliance checklist without giving legal advice.",
+      "interface": {
+        "type": "function_call",
+        "function": "legal.create_checklist",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "matter_type",
+            "type": "string",
+            "required": true,
+            "description": "Type of matter.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "jurisdiction",
+            "type": "string",
+            "required": true,
+            "description": "Jurisdiction.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "goal",
+            "type": "string",
+            "required": true,
+            "description": "Checklist goal.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "known_constraints",
+            "type": "array[string]",
+            "required": true,
+            "description": "Known constraints.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "required": true,
+            "description": "Risk tolerance.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "requires_attorney_review",
+            "type": "boolean",
+            "required": true,
+            "description": "Whether attorney review should be flagged.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "format",
+            "type": "string",
+            "required": true,
+            "description": "Checklist format.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "checklist": "array",
+          "risk_flags": "array",
+          "attorney_review_notes": "array"
+        },
+        "preference_sensitive_parameters": [
+          "known_constraints",
+          "risk_tolerance",
+          "format"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "known_constraints",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "format",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "legal.prepare_forms",
+      "category": "legal",
+      "action": "prepare_forms",
+      "description": "Prepare drafts, checklists, or field requirements for legal, civic, school, tenant, or administrative forms.",
+      "interface": {
+        "type": "function_call",
+        "function": "legal.prepare_forms",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "form_or_process",
+            "type": "string",
+            "required": true,
+            "description": "Form or process name.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "jurisdiction",
+            "type": "string",
+            "required": true,
+            "description": "Relevant jurisdiction.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "known_information",
+            "type": "object",
+            "required": true,
+            "description": "Known facts and user-provided details.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "missing_information_policy",
+            "type": "string",
+            "required": true,
+            "description": "How to handle missing or uncertain fields.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": true,
+            "description": "Sensitive detail handling.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "requires_review",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether professional or user review is required.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "draft_fields": "object",
+          "missing_fields": "array",
+          "review_steps": "array"
+        },
+        "preference_sensitive_parameters": [
+          "form_or_process"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "form_or_process",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "legal.review_requirements",
+      "category": "legal",
+      "action": "review_requirements",
+      "description": "Review legal, regulatory, contractual, compliance, or filing requirements with jurisdiction and professional-review caveats.",
+      "interface": {
+        "type": "function_call",
+        "function": "legal.review_requirements",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "topic",
+            "type": "string",
+            "required": true,
+            "description": "Legal or compliance topic.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "jurisdiction",
+            "type": "string",
+            "required": true,
+            "description": "Relevant jurisdiction.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "documents_or_facts",
+            "type": "array[string]",
+            "required": true,
+            "description": "Known documents, facts, or claims to check.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "required": true,
+            "description": "How conservative legal-risk handling should be.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "evidence_standard",
+            "type": "string",
+            "required": true,
+            "description": "Required source authority.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "requires_attorney_review",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether to flag attorney review.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "requirements": "array",
+          "risk_flags": "array",
+          "review_caveats": "array"
+        },
+        "preference_sensitive_parameters": [
+          "risk_tolerance",
+          "evidence_standard"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "evidence_standard",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "legal.search_documents",
+      "category": "legal",
+      "action": "search_documents",
+      "description": "Search legal documents, policies, contracts, or case files with jurisdiction and privacy constraints.",
+      "interface": {
+        "type": "function_call",
+        "function": "legal.search_documents",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "query",
+            "type": "string",
+            "required": true,
+            "description": "Legal search query.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "jurisdiction",
+            "type": "string",
+            "required": true,
+            "description": "Relevant jurisdiction.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "document_types",
+            "type": "array[string]",
+            "required": true,
+            "description": "Contracts, statutes, regulations, filings, correspondence, or notes.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "date_range",
+            "type": "object",
+            "required": false,
+            "description": "Date range.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": true,
+            "description": "Redaction and privilege protection.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "evidence_standard",
+            "type": "string",
+            "required": false,
+            "description": "Required evidence standard.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "documents": "array",
+          "relevance_notes": "array",
+          "privilege_warnings": "array"
+        },
+        "preference_sensitive_parameters": [
+          "privacy_mode"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    }
+  ]
+}

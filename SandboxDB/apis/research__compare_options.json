@@ -1,0 +1,91 @@
+{
+  "api_name": "research.compare_options",
+  "category": "research",
+  "action": "compare_options",
+  "description": "Compare options against weighted criteria, user preferences, constraints, risks, and evidence quality.",
+  "interface": {
+    "type": "function_call",
+    "function": "research.compare_options",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "options",
+        "type": "array[object]",
+        "required": true,
+        "description": "Candidate options to compare.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "criteria",
+        "type": "array[string]",
+        "required": true,
+        "description": "Comparison criteria from the task and user preferences.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "weights",
+        "type": "object",
+        "required": true,
+        "description": "Relative importance of criteria.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "constraints",
+        "type": "array[string]",
+        "required": true,
+        "description": "Hard constraints that options must satisfy.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "required": true,
+        "description": "Risk handling preference for ranking.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "output_format",
+        "type": "string",
+        "required": false,
+        "description": "Preferred output format for downstream planning.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "ranked_options": "array",
+      "tradeoff_summary": "object",
+      "disqualified_options": "array"
+    },
+    "preference_sensitive_parameters": [
+      "criteria",
+      "constraints",
+      "risk_tolerance",
+      "output_format"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "criteria",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "constraints",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "output_format",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

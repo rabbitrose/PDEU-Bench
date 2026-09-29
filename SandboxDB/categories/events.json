@@ -1,0 +1,280 @@
+{
+  "schema_version": "SandboxDB.v1",
+  "category": "events",
+  "api_count": 3,
+  "apis": [
+    {
+      "api_name": "events.manage_rsvp",
+      "category": "events",
+      "action": "manage_rsvp",
+      "description": "Create or update an RSVP tracker with guest constraints, dietary needs, reminders, and privacy controls.",
+      "interface": {
+        "type": "function_call",
+        "function": "events.manage_rsvp",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "event_id_or_title",
+            "type": "string",
+            "required": true,
+            "description": "Event identifier or title.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "invitees",
+            "type": "array[string]",
+            "required": true,
+            "description": "Invitees or guest groups.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "rsvp_deadline",
+            "type": "date",
+            "required": true,
+            "description": "Deadline for responses.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "dietary_or_accessibility_fields",
+            "type": "array[string]",
+            "required": true,
+            "description": "Fields to collect from guests.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "reminder_policy",
+            "type": "string",
+            "required": false,
+            "description": "Reminder timing and tone preference.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": false,
+            "description": "How guest information should be protected.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "rsvp_tracker": "object",
+          "pending_invitees": "array",
+          "reminder_plan": "array"
+        },
+        "preference_sensitive_parameters": [
+          "reminder_policy",
+          "privacy_mode"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "reminder_policy",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "events.plan_event",
+      "category": "events",
+      "action": "plan_event",
+      "description": "Plan event agenda, logistics, staffing, materials, budget, and contingency steps.",
+      "interface": {
+        "type": "function_call",
+        "function": "events.plan_event",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "event_goal",
+            "type": "string",
+            "required": true,
+            "description": "Event goal.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "audience",
+            "type": "string",
+            "required": true,
+            "description": "Audience or participant profile.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "date_or_window",
+            "type": "string",
+            "required": true,
+            "description": "Date or acceptable scheduling window.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "budget_limit",
+            "type": "number",
+            "required": true,
+            "description": "Maximum total budget.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "logistics_requirements",
+            "type": "array[string]",
+            "required": true,
+            "description": "Venue, food, accessibility, equipment, and safety needs.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "communication_preferences",
+            "type": "string",
+            "required": false,
+            "description": "Preferred tone and outreach style.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "required": false,
+            "description": "Contingency and safety planning preference.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "event_plan": "object",
+          "timeline": "array",
+          "contingencies": "array"
+        },
+        "preference_sensitive_parameters": [
+          "budget_limit",
+          "logistics_requirements",
+          "communication_preferences",
+          "risk_tolerance"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "budget_limit",
+            "type": "number",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "logistics_requirements",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "communication_preferences",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "risk_tolerance",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "events.search_venues",
+      "category": "events",
+      "action": "search_venues",
+      "description": "Search venues for meetings, workshops, celebrations, community events, or performances.",
+      "interface": {
+        "type": "function_call",
+        "function": "events.search_venues",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "event_type",
+            "type": "string",
+            "required": true,
+            "description": "Type of event.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "location",
+            "type": "string",
+            "required": true,
+            "description": "Target location or neighborhood.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "date_range",
+            "type": "object",
+            "required": true,
+            "description": "Acceptable date range.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "capacity",
+            "type": "integer",
+            "required": true,
+            "description": "Expected attendance.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "budget_limit",
+            "type": "number",
+            "required": true,
+            "description": "Maximum venue cost.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "accessibility_needs",
+            "type": "array[string]",
+            "required": false,
+            "description": "Accessibility and mobility requirements.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "amenities",
+            "type": "array[string]",
+            "required": false,
+            "description": "Needed venue features.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": false,
+            "description": "Privacy handling for attendee or organizer details.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "venues": "array",
+          "availability_summary": "object",
+          "booking_risks": "array"
+        },
+        "preference_sensitive_parameters": [
+          "location",
+          "accessibility_needs",
+          "privacy_mode"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "location",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "accessibility_needs",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    }
+  ]
+}

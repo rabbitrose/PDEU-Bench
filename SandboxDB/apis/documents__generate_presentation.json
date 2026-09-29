@@ -1,0 +1,92 @@
+{
+  "api_name": "documents.generate_presentation",
+  "category": "documents",
+  "action": "generate_presentation",
+  "description": "Generate a presentation, slide outline, speaker notes, handout, or workshop deck.",
+  "interface": {
+    "type": "function_call",
+    "function": "documents.generate_presentation",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "topic",
+        "type": "string",
+        "required": true,
+        "description": "Presentation topic.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "audience",
+        "type": "string",
+        "required": true,
+        "description": "Audience and expertise level.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "duration_minutes",
+        "type": "integer",
+        "required": true,
+        "description": "Presentation or workshop duration.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "source_materials",
+        "type": "array[string]",
+        "required": true,
+        "description": "Evidence or content to include.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "style",
+        "type": "string",
+        "required": true,
+        "description": "Tone, visual density, and communication style.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "language",
+        "type": "string",
+        "required": false,
+        "description": "Presentation language.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "include_citations",
+        "type": "boolean",
+        "required": false,
+        "description": "Whether citations should be included.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "deck_outline": "array",
+      "speaker_notes": "array",
+      "handouts": "array"
+    },
+    "preference_sensitive_parameters": [
+      "source_materials",
+      "style",
+      "language"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "source_materials",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "style",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "language",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

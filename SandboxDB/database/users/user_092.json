@@ -1,0 +1,108 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_092",
+  "user_context": {
+    "fictional_name": "迈克·科瓦尔斯基",
+    "age": 45,
+    "location": "美国印第安纳州曼西市",
+    "languages": [
+      "英语"
+    ],
+    "occupation": "流水线工人",
+    "industry": "汽车制造业",
+    "household": "已婚，两个孩子（12岁和9岁）",
+    "accessibility_needs": "无",
+    "privacy_preferences": [
+      "极度保护个人数据，尤其是医疗数据",
+      "偏好现金交易",
+      "避免社交媒体，除非是私人群组",
+      "在使用服务前仔细阅读隐私政策"
+    ],
+    "budget_preferences": [
+      "在可自由支配开支上节俭",
+      "投资耐用商品而非一次性商品",
+      "更看重每次使用成本而非前期价格",
+      "避免自动续订的订阅服务"
+    ],
+    "technology_preferences": [
+      "使用智能手机但不信任收集数据的应用",
+      "偏好台式电脑进行研究",
+      "避免智能家居设备（隐私风险）",
+      "与亲密朋友使用Signal或其他加密消息"
+    ],
+    "food_preferences": [
+      "肉和土豆，烤或炸",
+      "舒适食物：汉堡、牛排、辣椒",
+      "避免有机或健康食品，认为它们时髦且昂贵",
+      "更喜欢家常菜而不是餐馆"
+    ],
+    "travel_preferences": [
+      "自驾游去国家公园或狩猎场",
+      "住小木屋或房车公园",
+      "避免航空旅行和大型旅游目的地",
+      "偏好国内旅行，不信任国际卫生法规"
+    ],
+    "learning_preferences": [
+      "动手学习（学徒、试错）",
+      "更喜欢简短实用的视频而非长文章",
+      "更信任同行的推荐而非专家意见",
+      "避免来自机构的在线课程"
+    ],
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "education.build_study_plan",
+    "education.search_courses",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "entertainment.search_events",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

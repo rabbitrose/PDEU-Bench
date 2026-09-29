@@ -1,0 +1,124 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_110",
+  "user_context": {
+    "fictional_name": "Maria Rodriguez",
+    "age": 45,
+    "location": "德克萨斯州奥斯汀",
+    "languages": [
+      "英语",
+      "西班牙语"
+    ],
+    "occupation": "支持小组协调员",
+    "industry": "非营利/医疗保健",
+    "household": "已婚并育有两子",
+    "accessibility_needs": [],
+    "privacy_preferences": {
+      "sharing": "愿意分享个人故事但尊重他人隐私",
+      "data": "谨慎分享个人数据，使用双重验证"
+    },
+    "budget_preferences": {
+      "spending": "适度，重视品质和道德生产",
+      "saving": "优先考虑体验而非物质商品",
+      "charity": "向当地非营利组织和互助团体捐款"
+    },
+    "technology_preferences": {
+      "devices": [
+        "笔记本电脑、智能手机、电子阅读器"
+      ],
+      "software": [
+        "特雷洛、谷歌工作空间、平静应用"
+      ],
+      "attitude": "注重隐私，尽可能偏好开源软件"
+    },
+    "food_preferences": {
+      "diet": "素食，偶尔纯素",
+      "cuisines": [
+        "墨西哥料理",
+        "地中海",
+        "印度菜"
+      ],
+      "avoid": [
+        "高度加工食品、大型连锁餐厅"
+      ]
+    },
+    "travel_preferences": {
+      "destinations": [
+        "自然疗养地、国家公园"
+      ],
+      "style": [
+        "环保的",
+        "国内的",
+        "慢旅行"
+      ],
+      "activities": [
+        "徒步、文化交流、独自反思"
+      ]
+    },
+    "learning_preferences": {
+      "methods": [
+        "同伴间学习",
+        "实践工作坊",
+        "叙事和基于故事的培训"
+      ],
+      "subjects": [
+        "团体引导",
+        "危机干预",
+        "自我关怀"
+      ]
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

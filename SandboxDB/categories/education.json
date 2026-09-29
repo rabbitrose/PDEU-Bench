@@ -1,0 +1,395 @@
+{
+  "schema_version": "SandboxDB.v1",
+  "category": "education",
+  "api_count": 4,
+  "apis": [
+    {
+      "api_name": "education.build_study_plan",
+      "category": "education",
+      "action": "build_study_plan",
+      "description": "Build a personalized study plan with milestones, practice tasks, assessments, and time constraints.",
+      "interface": {
+        "type": "function_call",
+        "function": "education.build_study_plan",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "learning_goal",
+            "type": "string",
+            "required": true,
+            "description": "Learning goal.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "current_level",
+            "type": "string",
+            "required": true,
+            "description": "Current proficiency.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "target_level",
+            "type": "string",
+            "required": true,
+            "description": "Target proficiency.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "available_hours_per_week",
+            "type": "number",
+            "required": true,
+            "description": "Study time.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "deadline",
+            "type": "date",
+            "required": false,
+            "description": "Deadline.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "learning_preferences",
+            "type": "object",
+            "required": true,
+            "description": "Learning preferences.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "assessment_style",
+            "type": "string",
+            "required": false,
+            "description": "Preferred feedback or assessment style.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "constraints",
+            "type": "array[string]",
+            "required": false,
+            "description": "Time, budget, accessibility, family, or work constraints.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "study_plan": "array",
+          "milestones": "array",
+          "resource_plan": "array"
+        },
+        "preference_sensitive_parameters": [
+          "available_hours_per_week",
+          "learning_preferences",
+          "assessment_style",
+          "constraints"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "available_hours_per_week",
+            "type": "number",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "learning_preferences",
+            "type": "object",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "assessment_style",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "constraints",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "education.create_assessment",
+      "category": "education",
+      "action": "create_assessment",
+      "description": "Create quizzes, reflection prompts, rubrics, practice tasks, or evaluation criteria.",
+      "interface": {
+        "type": "function_call",
+        "function": "education.create_assessment",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "learning_objectives",
+            "type": "array[string]",
+            "required": true,
+            "description": "Learning objectives to assess.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "assessment_style",
+            "type": "string",
+            "required": true,
+            "description": "Preferred assessment style.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "difficulty_level",
+            "type": "string",
+            "required": true,
+            "description": "Target difficulty.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "format",
+            "type": "string",
+            "required": true,
+            "description": "Output format.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "feedback_preferences",
+            "type": "array[string]",
+            "required": false,
+            "description": "Feedback style and constraints.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "assessment_items": "array",
+          "rubric": "object",
+          "feedback_plan": "array"
+        },
+        "preference_sensitive_parameters": [
+          "assessment_style",
+          "format",
+          "feedback_preferences"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "assessment_style",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "format",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "feedback_preferences",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "education.find_learning_resources",
+      "category": "education",
+      "action": "find_learning_resources",
+      "description": "Find learning resources such as articles, courses, webinars, podcasts, books, exercises, or curricula.",
+      "interface": {
+        "type": "function_call",
+        "function": "education.find_learning_resources",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "topic",
+            "type": "string",
+            "required": true,
+            "description": "Learning topic.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "resource_types",
+            "type": "array[string]",
+            "required": true,
+            "description": "Preferred resource types.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "learning_preferences",
+            "type": "array[string]",
+            "required": true,
+            "description": "User learning preferences.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "time_budget",
+            "type": "string",
+            "required": true,
+            "description": "Available learning time.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "evidence_standard",
+            "type": "string",
+            "required": true,
+            "description": "Quality requirement for resources.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "language",
+            "type": "string",
+            "required": false,
+            "description": "Preferred language.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "budget_limit",
+            "type": "number",
+            "required": false,
+            "description": "Maximum cost.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "resources": "array",
+          "curriculum_fit": "array",
+          "source_quality_summary": "object"
+        },
+        "preference_sensitive_parameters": [
+          "resource_types",
+          "learning_preferences",
+          "time_budget",
+          "evidence_standard",
+          "language"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "resource_types",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "learning_preferences",
+            "type": "array[string]",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "time_budget",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "evidence_standard",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          },
+          {
+            "name": "language",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "education.search_courses",
+      "category": "education",
+      "action": "search_courses",
+      "description": "Search courses, workshops, tutors, or learning resources by goals, schedule, budget, and learning style.",
+      "interface": {
+        "type": "function_call",
+        "function": "education.search_courses",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "topic",
+            "type": "string",
+            "required": true,
+            "description": "Learning topic.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "level",
+            "type": "string",
+            "required": true,
+            "description": "Beginner, intermediate, advanced, expert.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "format",
+            "type": "string",
+            "required": true,
+            "description": "Online, in-person, hybrid, self-paced, tutor, cohort.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "schedule_constraints",
+            "type": "object",
+            "required": true,
+            "description": "Available times.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "budget_limit",
+            "type": "number",
+            "required": true,
+            "description": "Maximum budget.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "language",
+            "type": "string",
+            "required": true,
+            "description": "Preferred learning language.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "learning_preferences",
+            "type": "object",
+            "required": true,
+            "description": "Learning style preferences.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "credential_required",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether certificate or credit matters.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "courses": "array",
+          "recommended_course": "object",
+          "fit_explanation": "array"
+        },
+        "preference_sensitive_parameters": [
+          "schedule_constraints",
+          "budget_limit",
+          "language",
+          "learning_preferences"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "schedule_constraints",
+            "type": "object",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "budget_limit",
+            "type": "number",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "language",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "learning_preferences",
+            "type": "object",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    }
+  ]
+}

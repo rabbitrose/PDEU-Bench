@@ -1,0 +1,98 @@
+{
+  "api_name": "events.plan_event",
+  "category": "events",
+  "action": "plan_event",
+  "description": "Plan event agenda, logistics, staffing, materials, budget, and contingency steps.",
+  "interface": {
+    "type": "function_call",
+    "function": "events.plan_event",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "event_goal",
+        "type": "string",
+        "required": true,
+        "description": "Event goal.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "audience",
+        "type": "string",
+        "required": true,
+        "description": "Audience or participant profile.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "date_or_window",
+        "type": "string",
+        "required": true,
+        "description": "Date or acceptable scheduling window.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "required": true,
+        "description": "Maximum total budget.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "logistics_requirements",
+        "type": "array[string]",
+        "required": true,
+        "description": "Venue, food, accessibility, equipment, and safety needs.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "communication_preferences",
+        "type": "string",
+        "required": false,
+        "description": "Preferred tone and outreach style.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "required": false,
+        "description": "Contingency and safety planning preference.",
+        "preference_sensitive": true
+      }
+    ],
+    "returns": {
+      "event_plan": "object",
+      "timeline": "array",
+      "contingencies": "array"
+    },
+    "preference_sensitive_parameters": [
+      "budget_limit",
+      "logistics_requirements",
+      "communication_preferences",
+      "risk_tolerance"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "budget_limit",
+        "type": "number",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "logistics_requirements",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "communication_preferences",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      },
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

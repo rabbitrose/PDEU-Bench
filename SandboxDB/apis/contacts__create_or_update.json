@@ -1,0 +1,80 @@
+{
+  "api_name": "contacts.create_or_update",
+  "category": "contacts",
+  "action": "create_or_update",
+  "description": "Create or update a contact record with consent-aware notes.",
+  "interface": {
+    "type": "function_call",
+    "function": "contacts.create_or_update",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "contact_id",
+        "type": "string",
+        "required": false,
+        "description": "Existing contact identifier if updating.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "Contact display name.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "role",
+        "type": "string",
+        "required": true,
+        "description": "Contact role.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "organization",
+        "type": "string",
+        "required": false,
+        "description": "Organization.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "preferred_channel",
+        "type": "string",
+        "required": true,
+        "description": "Preferred communication channel.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "notes",
+        "type": "string",
+        "required": false,
+        "description": "Notes constrained by privacy preferences.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "tags",
+        "type": "array[string]",
+        "required": false,
+        "description": "Contact tags.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "contact_id": "string",
+      "status": "string",
+      "updated_fields": "array"
+    },
+    "preference_sensitive_parameters": [
+      "notes"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "notes",
+        "type": "string",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 1
+}

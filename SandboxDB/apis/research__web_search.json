@@ -1,0 +1,87 @@
+{
+  "api_name": "research.web_search",
+  "category": "research",
+  "action": "web_search",
+  "description": "Search the web or trusted corpora with source quality, recency, language, and evidence constraints.",
+  "interface": {
+    "type": "function_call",
+    "function": "research.web_search",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "query",
+        "type": "string",
+        "required": true,
+        "description": "Search query.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "source_types",
+        "type": "array[string]",
+        "required": true,
+        "description": "News, academic, official, local, legal, forum, review, or market.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "date_range",
+        "type": "object",
+        "required": false,
+        "description": "Recency window.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "languages",
+        "type": "array[string]",
+        "required": false,
+        "description": "Preferred languages.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "region",
+        "type": "string",
+        "required": false,
+        "description": "Geographic region.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "evidence_standard",
+        "type": "string",
+        "required": true,
+        "description": "Source quality threshold.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "max_results",
+        "type": "integer",
+        "required": false,
+        "description": "Maximum result count.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "blocked_sources",
+        "type": "array[string]",
+        "required": false,
+        "description": "Sources to avoid.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "results": "array",
+      "source_quality_summary": "object",
+      "gaps": "array"
+    },
+    "preference_sensitive_parameters": [
+      "languages"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "languages",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 1
+}

@@ -1,0 +1,139 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_045",
+  "user_context": {
+    "fictional_name": "Dr. Elena Vasquez",
+    "age": 48,
+    "location": "Ann Arbor, Michigan, USA",
+    "languages": [
+      "英语",
+      "西班牙语"
+    ],
+    "occupation": "机器人学正教授",
+    "industry": "学术界",
+    "household": "已婚，有两个孩子（14 岁和 17 岁）",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "data_sharing": [
+        "倾向于限制个人数据分享",
+        "为敏感工作使用VPN"
+      ],
+      "social_media": [
+        "专业使用LinkedIn",
+        "避免使用个人社交媒体"
+      ]
+    },
+    "budget_preferences": {
+      "spending": [
+        "愿意为工作投资高质量工具",
+        "个人奢侈品消费节俭"
+      ],
+      "priorities": [
+        "为孩子的教育储蓄",
+        "出差参加学术会议",
+        "升级家庭机器人工作室"
+      ]
+    },
+    "technology_preferences": {
+      "brands": [
+        "苹果手机和平板",
+        "联想笔记本电脑",
+        "谷歌生产力工具"
+      ],
+      "trends": [
+        "对人工智能伦理工具感兴趣",
+        "谨慎采用新的仿真软件"
+      ]
+    },
+    "food_preferences": {
+      "cuisine": [
+        "地中海",
+        "墨西哥料理",
+        "日本料理"
+      ],
+      "diet": [
+        "不吃红肉，偶尔吃鱼",
+        "避免含糖饮料"
+      ],
+      "dining": [
+        "堂食餐厅、小咖啡馆"
+      ]
+    },
+    "travel_preferences": {
+      "destinations": [
+        "东京（机器人会议）",
+        "苏黎世（研究合作）"
+      ],
+      "accommodation": [
+        "会议中心附近的商务酒店"
+      ],
+      "transport": [
+        "直飞航班、可靠的租车服务"
+      ]
+    },
+    "learning_preferences": {
+      "format": [
+        "带证书的在线课程",
+        "动手实践工作坊",
+        "同行评审期刊"
+      ],
+      "topics": [
+        "控制理论",
+        "机器学习",
+        "竞赛设计"
+      ]
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

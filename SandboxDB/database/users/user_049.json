@@ -1,0 +1,102 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_049",
+  "user_context": {
+    "fictional_name": "Jordan Chen",
+    "age": 34,
+    "location": "美国加利福尼亚州旧金山",
+    "languages": [
+      "英语",
+      "普通话"
+    ],
+    "occupation": "行政助理",
+    "industry": "技术",
+    "household": "单身，独居一室公寓",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "data_sharing": "非常谨慎，偏好分享最少个人数据",
+      "online_activity": "使用隐私浏览模式，屏蔽跟踪器",
+      "social_media": "有限在线存在：仅用LinkedIn，个人生活保持离线"
+    },
+    "budget_preferences": {
+      "spending_priority": "投资节省时间的工具和服务",
+      "monthly_budget": "每月分配500美元用于外出就餐，200美元用于订阅（软件、流媒体等）",
+      "savings_habit": "储蓄收入的20%，投资指数基金"
+    },
+    "technology_preferences": {
+      "devices": "苹果生态系统（iPhone、MacBook、iPad、AirPods）",
+      "software": "Google Workspace、Slack、Zoom、Notion、Todoist、1Password",
+      "privacy_tools": "VPN（ProtonVPN）、加密通讯（Signal）、广告拦截器"
+    },
+    "food_preferences": {
+      "cuisine": "健康多样饮食：地中海菜、亚洲菜、沙拉",
+      "dining_out": "偏好口碑好的餐厅就餐，避免快餐",
+      "cooking_at_home": "喜欢30分钟以内的简单食谱"
+    },
+    "travel_preferences": {
+      "accommodation": "设有商务中心且位置便利的酒店",
+      "transportation": "短途飞行为经济舱，提前预订",
+      "packing": "轻装出行，携带商务休闲装和运动服"
+    },
+    "learning_preferences": {
+      "online_courses": "Coursera 或 LinkedIn Learning 上关于领导力和项目管理的课程",
+      "reading_material": "短文章、案例研究和摘要"
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "education.build_study_plan",
+    "education.search_courses",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "entertainment.search_events",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

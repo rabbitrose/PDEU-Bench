@@ -1,0 +1,176 @@
+{
+  "schema_version": "SandboxDB.v1",
+  "category": "messaging",
+  "api_count": 2,
+  "apis": [
+    {
+      "api_name": "messaging.create_group",
+      "category": "messaging",
+      "action": "create_group",
+      "description": "Create a group conversation for coordination.",
+      "interface": {
+        "type": "function_call",
+        "function": "messaging.create_group",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "channel",
+            "type": "string",
+            "required": true,
+            "description": "Messaging channel.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "group_name",
+            "type": "string",
+            "required": true,
+            "description": "Group name.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "members",
+            "type": "array[string]",
+            "required": true,
+            "description": "Group members.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "purpose",
+            "type": "string",
+            "required": true,
+            "description": "Group purpose.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": true,
+            "description": "Privacy level.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "notification_policy",
+            "type": "string",
+            "required": false,
+            "description": "Notification policy based on user preferences.",
+            "preference_sensitive": true
+          }
+        ],
+        "returns": {
+          "group_id": "string",
+          "status": "string",
+          "member_statuses": "array"
+        },
+        "preference_sensitive_parameters": [
+          "privacy_mode",
+          "notification_policy"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "notification_policy",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    },
+    {
+      "api_name": "messaging.send_message",
+      "category": "messaging",
+      "action": "send_message",
+      "description": "Send a direct or group message using preferred channel, tone, and privacy controls.",
+      "interface": {
+        "type": "function_call",
+        "function": "messaging.send_message",
+        "version": "1.0",
+        "input_format": "json_object",
+        "output_format": "json_object",
+        "parameters": [
+          {
+            "name": "channel",
+            "type": "string",
+            "required": true,
+            "description": "SMS, chat app, secure messenger, workplace chat, or social app.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "recipients",
+            "type": "array[string]",
+            "required": true,
+            "description": "Recipients.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "message",
+            "type": "string",
+            "required": true,
+            "description": "Message content.",
+            "preference_sensitive": false
+          },
+          {
+            "name": "tone",
+            "type": "string",
+            "required": true,
+            "description": "Tone preference.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "send_at",
+            "type": "datetime",
+            "required": false,
+            "description": "Optional scheduled time.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "required": false,
+            "description": "Privacy and redaction mode.",
+            "preference_sensitive": true
+          },
+          {
+            "name": "requires_confirmation",
+            "type": "boolean",
+            "required": false,
+            "description": "Whether user confirmation is required.",
+            "preference_sensitive": false
+          }
+        ],
+        "returns": {
+          "message_id": "string",
+          "delivery_status": "string",
+          "requires_followup": "boolean"
+        },
+        "preference_sensitive_parameters": [
+          "tone",
+          "send_at",
+          "privacy_mode"
+        ],
+        "preference_sensitive_parameter_details": [
+          {
+            "name": "tone",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "send_at",
+            "type": "datetime",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          },
+          {
+            "name": "privacy_mode",
+            "type": "string",
+            "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, or communication style."
+          }
+        ]
+      }
+    }
+  ]
+}

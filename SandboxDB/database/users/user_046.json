@@ -1,0 +1,92 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_046",
+  "user_context": {
+    "fictional_name": "莱拉·阿尔-哈桑",
+    "age": 22,
+    "location": "德国柏林",
+    "languages": [
+      "阿拉伯语",
+      "英语",
+      "德语"
+    ],
+    "occupation": "诗人（兼职）、书商（兼职）",
+    "industry": "艺术与文化",
+    "household": "独居于一间单间公寓",
+    "accessibility_needs": "无",
+    "privacy_preferences": "高：偏好不公开分享确切位置或个人创伤细节；在信任的场合中舒适地讨论",
+    "budget_preferences": "紧凑：优先花钱在书籍、写作材料和文化活动上；使用公共交通；在家做饭",
+    "technology_preferences": {
+      "devices": "智能手机（安卓系统）和轻便笔记本电脑用于写作；无平板或智能手表",
+      "software": "极简写作应用（如FocusWriter）、社交媒体（推特用于文学社群，Instagram用于诗歌片段）",
+      "privacy_tools": "在网上使用笔名发表作品；对敏感对话使用加密通讯"
+    },
+    "food_preferences": {
+      "cuisine": "叙利亚、黎巴嫩和其他中东菜；适合素食的菜肴（喜欢法拉费、法图什、鹰嘴豆泥）",
+      "dining": "偏好家常菜或小型家庭经营餐厅；避免快餐",
+      "restrictions": "尽量避免过量肉类；无过敏"
+    },
+    "travel_preferences": {
+      "destinations": "其他拥有活跃艺术场景的欧洲城市（例如Leipzig, Amsterdam, Paris）；因预算限制很少旅行。",
+      "accommodation": "经济型旅馆或与朋友同住",
+      "activities": "参观文学地标、参加朗诵会、探索当地市场"
+    },
+    "learning_preferences": {
+      "style": "实践工作坊和讨论式学习；喜欢同伴反馈",
+      "formats": "偏好线下活动，但可接受在线课程"
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "entertainment.search_events",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.create_meal_plan",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "translation.translate_text",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

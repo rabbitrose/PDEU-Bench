@@ -1,0 +1,73 @@
+{
+  "api_name": "project.plan_milestones",
+  "category": "project",
+  "action": "plan_milestones",
+  "description": "Build a milestone plan with dependencies, owners, deadlines, deliverables, and risk controls.",
+  "interface": {
+    "type": "function_call",
+    "function": "project.plan_milestones",
+    "version": "1.0",
+    "input_format": "json_object",
+    "output_format": "json_object",
+    "parameters": [
+      {
+        "name": "project_goal",
+        "type": "string",
+        "required": true,
+        "description": "Project goal.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "deadline",
+        "type": "date",
+        "required": true,
+        "description": "Final deadline or target date.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "workstreams",
+        "type": "array[string]",
+        "required": true,
+        "description": "Workstreams or major components.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "constraints",
+        "type": "array[string]",
+        "required": true,
+        "description": "Schedule, budget, staffing, or quality constraints.",
+        "preference_sensitive": true
+      },
+      {
+        "name": "stakeholders",
+        "type": "array[string]",
+        "required": false,
+        "description": "People or roles involved.",
+        "preference_sensitive": false
+      },
+      {
+        "name": "risk_tolerance",
+        "type": "string",
+        "required": false,
+        "description": "How much buffer and escalation to include.",
+        "preference_sensitive": false
+      }
+    ],
+    "returns": {
+      "milestones": "array",
+      "dependency_graph": "object",
+      "risk_register": "array"
+    },
+    "preference_sensitive_parameters": [
+      "constraints"
+    ],
+    "preference_sensitive_parameter_details": [
+      {
+        "name": "constraints",
+        "type": "array[string]",
+        "why_sensitive": "This parameter can change based on the user's explicit preferences, constraints, budget, privacy stance, language, risk tolerance, schedule, accessibility needs, evidence standards, or communication style."
+      }
+    ]
+  },
+  "NoRelation": 0
+}

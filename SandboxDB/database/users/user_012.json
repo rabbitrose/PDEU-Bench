@@ -1,0 +1,130 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_012",
+  "user_context": {
+    "fictional_name": "Elena Vasquez",
+    "age": 29,
+    "location": "New York, NY, USA",
+    "languages": [
+      "英语",
+      "西班牙语"
+    ],
+    "occupation": "多媒体记者",
+    "industry": "新闻媒体",
+    "household": "单身，独居一室公寓",
+    "accessibility_needs": "无",
+    "privacy_preferences": {
+      "data_sharing": "谨慎；使用VPN、加密消息、限制应用权限",
+      "social_media_visibility": "个人账户保密，工作账户公开但有策划"
+    },
+    "budget_preferences": {
+      "spending_style": "适度；在优质鞋子和科技产品上挥霍，为旅行存钱",
+      "financial_goals": "建立应急基金，投资退休，为未来购房储蓄"
+    },
+    "technology_preferences": {
+      "devices": [
+        "苹果生态系统（iPhone、Mac、iPad、Apple Watch）"
+      ],
+      "software": [
+        "Adobe Premiere Pro",
+        "Final Cut Pro",
+        "Slack",
+        "Trello",
+        "Notion"
+      ],
+      "social_media": [
+        "Twitter用于突发新闻",
+        "Instagram用于幕后内容",
+        "职业社交的LinkedIn"
+      ]
+    },
+    "food_preferences": {
+      "cuisine": [
+        "墨西哥料理",
+        "泰国",
+        "意大利语",
+        "从农场到餐桌的美国菜"
+      ],
+      "dietary_restrictions": "无",
+      "dining_out": "偏好氛围好的休闲场所，愿意尝试新地方"
+    },
+    "travel_preferences": {
+      "destinations": [
+        "文化丰富的城市中心",
+        "冲突地区或有未讲述故事的区域"
+      ],
+      "accommodation": [
+        "中档酒店或Airbnb",
+        "偏好靠近新闻中心"
+      ],
+      "travel_style": [
+        "高效、专注于工作，但努力探索当地美食和文化"
+      ]
+    },
+    "learning_preferences": {
+      "formats": [
+        "在线课程（Coursera、LinkedIn Learning）",
+        "工作坊",
+        "导师指导"
+      ],
+      "topics": [
+        "数据新闻",
+        "视频剪辑",
+        "调查技巧",
+        "外交政策"
+      ]
+    },
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}

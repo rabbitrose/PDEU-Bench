@@ -1,0 +1,384 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_235",
+  "theme": "education",
+  "task_doc": {
+    "user_id": "user_235",
+    "task": {
+      "task_id": "task_easy",
+      "difficulty": "easy",
+      "title": "为近期补强目标选一个可坚持练习包",
+      "daily_life_domain": "learning",
+      "scenario": "用户需要在周末前完成「为近期补强目标选一个可坚持练习包」。请围绕练习粒度小、反馈明确、不会制造信息过载的资源检索真实候选，核对会改变选择的关键信息，并给出可执行结论。",
+      "user_goal": "完成「为近期补强目标选一个可坚持练习包」的候选筛选和关键核对，给出首选、一个备选、关键风险与下一步行动。",
+      "why_complex": "需要获取真实候选、核对影响选择的关键字段，并根据任务条件形成可执行结论。",
+      "constraints": [
+        "预算上限暂定为 150 本地货币单位，除非能明确说明超支收益。",
+        "时间窗口：周末前。",
+        "具体任务对象：近期补强目标的可坚持练习包。",
+        "候选范围限定：练习粒度小、反馈明确、不会制造信息过载的资源。",
+        "不暴露不必要的联系人、精确住址、健康或财务细节；工具参数只填写完成任务所需信息。"
+      ],
+      "required_reasoning_steps": [
+        "识别任务对象「为近期补强目标选一个可坚持练习包」、候选范围以及预算、时间和隐私约束。",
+        "检索练习粒度小、反馈明确、不会制造信息过载的资源，并根据任务条件过滤明显不合格的候选。",
+        "核对会改变最终选择的关键信息，处理缺失字段或证据冲突后形成结论。"
+      ],
+      "decision_points": [
+        "哪些候选满足任务中的硬约束和交付要求。",
+        "哪些证据冲突或信息缺口会改变候选可行性。",
+        "是否需要补充核对、启用备选方案或触发回退条件。"
+      ],
+      "information_to_collect": [
+        "3-5 个练习粒度小、反馈明确、不会制造信息过载的资源的候选名称和关键字段。",
+        "练习量、反馈点、价格、时长和复盘方式中会改变最终选择的字段。",
+        "至少 1 条可用于支撑首选方案的 SandboxDB/source_info 或工具返回证据。"
+      ],
+      "expected_deliverable": "练习包首选、短材料备选、今天动作和复盘节点",
+      "success_criteria": [
+        "结果满足任务给出的预算、时间、候选范围和隐私约束。",
+        "关键结论由可核验的工具返回或 SandboxDB/source_info 证据支持。",
+        "最终交付包含：练习包首选、短材料备选、今天动作和复盘节点。"
+      ],
+      "potential_failure_modes": [
+        "只给泛化建议，没有围绕具体任务对象和候选范围展开。",
+        "推荐结果违反预算、时间、隐私或候选范围约束。",
+        "没有核对会改变最终选择的关键风险或缺失信息。"
+      ],
+      "difficulty_metadata": {
+        "expected_tool_calls": 2,
+        "expected_tool_call_range": "2-3",
+        "eval_max_tool_calls": 5,
+        "serial_update_note": "easy 任务已逐条压缩为 2-3 轮工具调用可完成。",
+        "human_verifier_estimated_work_rounds": 1,
+        "human_verifier_estimation_basis": [
+          "domain=learning",
+          "expected_tool_calls=2",
+          "source_domains_capped=2",
+          "reasoning_steps_capped=4",
+          "constraints_capped=6",
+          "decision_points_capped=3",
+          "information_items_capped=3",
+          "easy_target_distribution=1:24,2:24,3:20",
+          "content_complexity_rank_score=10.8",
+          "easy_revision: 结构最轻，human verifier 预计 1 轮即可完成",
+          "serial_hardlike_revision: 近期补强目标的可坚持练习包"
+        ],
+        "human_verifier_estimation_note": "easy 难度已串行校准：human verifier 预计工作轮数覆盖 1-3 轮，按内容复杂度从轻到重分配；不改写任务正文或 workflow 示例调用。",
+        "domain_anchor_revision_note": "easy 任务已按 user_id 串行逐条审查修订为 hard 风格简略版；标题与场景不使用重复模板。"
+      },
+      "real_environment_grounding": {
+        "schema_version": "realEnvironmentGrounding.v1",
+        "source_info_dir": "SandboxDB/source_info/records",
+        "required_source_domains": [
+          "music_media",
+          "shopping"
+        ],
+        "domain_descriptions": {
+          "music_media": "真实音乐/媒体目录：曲目、作者、类型、发布时间、统计字段等",
+          "shopping": "真实商品目录：价格、评分、评论数、配送、Prime/Best Seller 等字段"
+        },
+        "retrieval_policy": "围绕「近期补强目标的可坚持练习包」仅检索少量真实候选；",
+        "anti_synthetic_policy": "不得把 workflow/mock_response 中的合成文本当作事实来源；真实候选事实优先来自 source_info hits。"
+      },
+      "user_basic_profile": {
+        "name": "Lucas Martin",
+        "age": 38,
+        "gender": "男性"
+      }
+    }
+  },
+  "workflow": {
+    "task_id": "task_easy",
+    "task_title": "为近期补强目标选一个可坚持练习包",
+    "daily_life_domain": "learning",
+    "task_complexity_score": 10,
+    "required_api_count_estimate": 2,
+    "available_api_names": [
+      "education.search_courses",
+      "education.build_study_plan"
+    ],
+    "coverage_ratio": {
+      "estimated_required_api_count": 2,
+      "task_available_api_count": 2,
+      "available_api_count": 2,
+      "note": "easy 任务已串行修订为 hard 风格简略版；oracle 工具集仍只保留 2-3 次轻量完成所需 API。"
+    },
+    "recommended_call_sequence": [
+      "task_easy_call_001",
+      "task_easy_call_002"
+    ],
+    "call_examples": [
+      {
+        "call_id": "task_easy_call_001",
+        "api_name": "education.search_courses",
+        "function_call": {
+          "name": "education.search_courses",
+          "arguments": {
+            "topic": "topic_for_item",
+            "level": "level_for_item",
+            "format": "structured JSON plus human-readable summary",
+            "schedule_constraints": {
+              "task_context": "为近期补强目标选一个可坚持练习包",
+              "user_preference_basis": [
+                "默认使用保守预算。",
+                "需要区分必须花费和可推迟花费。",
+                "若超预算必须给出替代方案。"
+              ]
+            },
+            "budget_limit": 800,
+            "language": "西班牙语",
+            "learning_preferences": {
+              "value": [
+                "偏好短周期反馈。",
+                "需要示例和可复盘标准。",
+                "不喜欢只堆材料链接。"
+              ]
+            }
+          }
+        },
+        "mock_response": {
+          "sandbox_status": "success",
+          "api_name": "education.search_courses",
+          "action": "search_courses",
+          "task_context": "task_easy",
+          "transport": {
+            "protocol": "https",
+            "method": "GET",
+            "endpoint": "/v1/education/search_courses",
+            "http_status": 200,
+            "request_id": "req_education_search_courses_task_easy_001",
+            "latency_ms": 127,
+            "rate_limit": {
+              "limit": 1000,
+              "remaining": 999,
+              "reset_at": "2026-07-02T00:00:00Z"
+            }
+          },
+          "request_echo": {
+            "function": "education.search_courses",
+            "arguments": {
+              "topic": "topic_for_item",
+              "level": "level_for_item",
+              "format": "structured JSON plus human-readable summary",
+              "schedule_constraints": {
+                "task_context": "为近期补强目标选一个可坚持练习包",
+                "user_preference_basis": [
+                  "默认使用保守预算。",
+                  "需要区分必须花费和可推迟花费。",
+                  "若超预算必须给出替代方案。"
+                ]
+              },
+              "budget_limit": 800,
+              "language": "西班牙语",
+              "learning_preferences": {
+                "value": [
+                  "偏好短周期反馈。",
+                  "需要示例和可复盘标准。",
+                  "不喜欢只堆材料链接。"
+                ]
+              }
+            },
+            "idempotency_key": "idm_education_search_courses_task_easy_001"
+          },
+          "preference_effects": [
+            "Arguments were selected using the user's budget, privacy, time, language, and style preferences where applicable.",
+            "Returned candidates are synthetic and shaped for planning-agent evaluation."
+          ],
+          "warnings": [],
+          "errors": [],
+          "response_body": {
+            "summary": "Knowledge-work API returned structured artifacts, source metadata, or project planning feedback.",
+            "items": [
+              {
+                "id": "education_search_courses_task_easy_artifact_1",
+                "title": "为近期补强目标选一个可坚持练习包",
+                "type": "structured JSON plus human-readable summary",
+                "status": "created_or_ranked",
+                "confidence": 0.82,
+                "citations_or_sources": [
+                  {
+                    "source_id": "education_search_courses_task_easy_source_1",
+                    "source_type": "synthetic_reference",
+                    "quality": "medium_high"
+                  }
+                ]
+              }
+            ],
+            "quality_checks": [
+              "schema_valid",
+              "preference_context_applied",
+              "uncertainty_or_caveat_included"
+            ],
+            "pagination": {
+              "has_more": false,
+              "next_cursor": null,
+              "page_size": 1,
+              "total_estimated": 1
+            },
+            "missing_information": []
+          },
+          "feedback": {
+            "machine_readable_summary": "Knowledge-work API returned structured artifacts, source metadata, or project planning feedback.",
+            "planner_relevance": "usable_for_next_step",
+            "requires_user_confirmation": false,
+            "missing_information": [],
+            "next_suggested_api_calls": [
+              "education.build_study_plan",
+              "calendar.find_availability",
+              "calendar.create_event"
+            ]
+          },
+          "raw_response_shape": {
+            "courses": "array",
+            "recommended_course": "object",
+            "fit_explanation": "array"
+          }
+        },
+        "preference_sensitive_parameters": [
+          "schedule_constraints",
+          "budget_limit",
+          "language",
+          "learning_preferences"
+        ],
+        "task_id": "task_easy"
+      },
+      {
+        "call_id": "task_easy_call_002",
+        "api_name": "education.build_study_plan",
+        "function_call": {
+          "name": "education.build_study_plan",
+          "arguments": {
+            "learning_goal": "[\"偏好短周期反馈。\", \"需要示例和可复盘标准。\", \"不喜欢只堆材料链接。\"]",
+            "current_level": "current_level_for_item",
+            "target_level": "target_level_for_item",
+            "available_hours_per_week": 5,
+            "deadline": "deadline_for_item",
+            "learning_preferences": {
+              "value": [
+                "偏好短周期反馈。",
+                "需要示例和可复盘标准。",
+                "不喜欢只堆材料链接。"
+              ]
+            },
+            "assessment_style": "milestone_based_with_practical_feedback",
+            "constraints": [
+              "形成一个可执行的学习计划，明确首选方案、备选方案、成本、风险和下一步行动。",
+              "需要 10-15 次工具调用完成：候选多但步骤清楚，重点考查稳定执行和偏好排序。",
+              "预算上限暂定为 150 本地货币单位，除非能明确说明超支收益。",
+              "时间窗口：周末前。",
+              "不暴露不必要的联系人、精确住址、健康或财务细节。",
+              "输出必须符合用户格式偏好：最佳选择 / 为什么省心 / 备选 / 到场注意。。"
+            ]
+          }
+        },
+        "mock_response": {
+          "sandbox_status": "success",
+          "api_name": "education.build_study_plan",
+          "action": "build_study_plan",
+          "task_context": "task_easy",
+          "transport": {
+            "protocol": "https",
+            "method": "POST",
+            "endpoint": "/v1/education/build_study_plan",
+            "http_status": 200,
+            "request_id": "req_education_build_study_plan_task_easy_002",
+            "latency_ms": 164,
+            "rate_limit": {
+              "limit": 1000,
+              "remaining": 998,
+              "reset_at": "2026-07-02T00:00:00Z"
+            }
+          },
+          "request_echo": {
+            "function": "education.build_study_plan",
+            "arguments": {
+              "learning_goal": "[\"偏好短周期反馈。\", \"需要示例和可复盘标准。\", \"不喜欢只堆材料链接。\"]",
+              "current_level": "current_level_for_item",
+              "target_level": "target_level_for_item",
+              "available_hours_per_week": 5,
+              "deadline": "deadline_for_item",
+              "learning_preferences": {
+                "value": [
+                  "偏好短周期反馈。",
+                  "需要示例和可复盘标准。",
+                  "不喜欢只堆材料链接。"
+                ]
+              },
+              "assessment_style": "milestone_based_with_practical_feedback",
+              "constraints": [
+                "形成一个可执行的学习计划，明确首选方案、备选方案、成本、风险和下一步行动。",
+                "需要 10-15 次工具调用完成：候选多但步骤清楚，重点考查稳定执行和偏好排序。",
+                "预算上限暂定为 150 本地货币单位，除非能明确说明超支收益。",
+                "时间窗口：周末前。",
+                "不暴露不必要的联系人、精确住址、健康或财务细节。",
+                "输出必须符合用户格式偏好：最佳选择 / 为什么省心 / 备选 / 到场注意。。"
+              ]
+            },
+            "idempotency_key": "idm_education_build_study_plan_task_easy_002"
+          },
+          "preference_effects": [
+            "Arguments were selected using the user's budget, privacy, time, language, and style preferences where applicable.",
+            "Returned candidates are synthetic and shaped for planning-agent evaluation."
+          ],
+          "warnings": [],
+          "errors": [],
+          "response_body": {
+            "summary": "Knowledge-work API returned structured artifacts, source metadata, or project planning feedback.",
+            "items": [
+              {
+                "id": "education_build_study_plan_task_easy_artifact_1",
+                "title": "为近期补强目标选一个可坚持练习包",
+                "type": "structured_result",
+                "status": "created_or_ranked",
+                "confidence": 0.82,
+                "citations_or_sources": [
+                  {
+                    "source_id": "education_build_study_plan_task_easy_source_1",
+                    "source_type": "synthetic_reference",
+                    "quality": "medium_high"
+                  }
+                ]
+              }
+            ],
+            "quality_checks": [
+              "schema_valid",
+              "preference_context_applied",
+              "uncertainty_or_caveat_included"
+            ],
+            "pagination": {
+              "has_more": false,
+              "next_cursor": null,
+              "page_size": 1,
+              "total_estimated": 1
+            },
+            "missing_information": []
+          },
+          "feedback": {
+            "machine_readable_summary": "Knowledge-work API returned structured artifacts, source metadata, or project planning feedback.",
+            "planner_relevance": "usable_for_next_step",
+            "requires_user_confirmation": false,
+            "missing_information": [],
+            "next_suggested_api_calls": [
+              "education.search_courses",
+              "calendar.find_availability",
+              "calendar.create_event"
+            ]
+          },
+          "raw_response_shape": {
+            "study_plan": "array",
+            "milestones": "array",
+            "resource_plan": "array"
+          }
+        },
+        "preference_sensitive_parameters": [
+          "available_hours_per_week",
+          "learning_preferences",
+          "assessment_style",
+          "constraints"
+        ],
+        "task_id": "task_easy"
+      }
+    ]
+  }
+}

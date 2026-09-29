@@ -1,0 +1,102 @@
+{
+  "schema_version": "SandboxDatabase.v1",
+  "user_id": "user_035",
+  "user_context": {
+    "fictional_name": "Alex Chen",
+    "age": 35,
+    "location": "San Francisco, CA, USA",
+    "languages": [
+      "英语（母语）",
+      "普通话（会话水平）"
+    ],
+    "occupation": "高级软件工程师",
+    "industry": "技术（AI初创公司）",
+    "household": "独居一居室公寓，无宠物",
+    "accessibility_needs": "无",
+    "privacy_preferences": [
+      "谨慎但不偏执",
+      "除非必要，避免分享个人信息",
+      "公共Wi-Fi使用VPN"
+    ],
+    "budget_preferences": [
+      "中等支出者",
+      "愿意在优质体验上挥霍",
+      "追求价值，不一定是便宜"
+    ],
+    "technology_preferences": [
+      "开源软件",
+      "注重隐私的工具",
+      "对权衡务实",
+      "偏好Linux服务器但日常使用macOS"
+    ],
+    "food_preferences": [
+      "亚洲菜（日式拉面、泰国菜）",
+      "汉堡和精酿啤酒",
+      "在家用新鲜食材烹饪"
+    ],
+    "travel_preferences": [
+      "冒险旅行（徒步、文化）",
+      "拜访不同城市的朋友",
+      "避免豪华度假村",
+      "偏好Airbnb以获得本地体验"
+    ],
+    "learning_preferences": [
+      "动手学习",
+      "在线课程（Udacity, Coursera）",
+      "通过实践学习（副项目）"
+    ],
+    "communication_preferences": {}
+  },
+  "accessible_api_names": [
+    "calendar.create_event",
+    "calendar.find_availability",
+    "calendar.search_events",
+    "calendar.update_event",
+    "contacts.create_or_update",
+    "contacts.search",
+    "documents.create",
+    "documents.search",
+    "documents.summarize",
+    "documents.update",
+    "email.draft_message",
+    "email.search_messages",
+    "email.send_message",
+    "finance.compare_prices",
+    "finance.create_budget_plan",
+    "finance.get_accounts",
+    "finance.search_transactions",
+    "food.search_recipes",
+    "health.log_symptoms",
+    "health.medication_lookup",
+    "health.schedule_appointment",
+    "health.search_providers",
+    "maps.estimate_travel_time",
+    "maps.get_route",
+    "maps.search_places",
+    "messaging.create_group",
+    "messaging.send_message",
+    "notes.create_note",
+    "privacy.redact_data",
+    "project.create_task_list",
+    "project.update_status",
+    "reminders.create",
+    "research.analyze_table",
+    "research.fact_check",
+    "research.retrieve_dataset",
+    "research.web_search",
+    "shopping.check_inventory",
+    "shopping.create_cart",
+    "shopping.search_products",
+    "smart_home.get_devices",
+    "smart_home.set_device_state",
+    "translation.translate_text",
+    "travel.book_flight_hold",
+    "travel.build_itinerary",
+    "travel.search_flights",
+    "travel.search_lodging",
+    "weather.get_forecast"
+  ],
+  "task_ids": [
+    "task_hard"
+  ]
+}
