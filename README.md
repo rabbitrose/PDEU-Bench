@@ -16,12 +16,6 @@ PDEU-Bench evaluates personalized planning along **three sequential capabilities
 2. **Instantiation (Planning Instantiation)** — Each time the agent instantiates a JSON object against an API schema, we measure how well it respects the user's preferences (*Instantiation Acc*).
 3. **Update Plan (Planning Update)** — After every tool call the agent marks the executed step as done and decides whether to replan; *Update Acc* measures preference adherence during replanning.
 
-Each stage reports **Pref Acc**, **Quality Acc**, and **Joint Acc** (both correct simultaneously). A per-difficulty **Pref Score** aggregates the three stages:
-
-```
-Pref Score = (First Plan Pref Acc + Update Plan Pref Acc + Instantiation Pref Acc) / 3
-```
-
 Preferences are injected in three ways, so an agent can be probed for explicit *and* latent personalization:
 
 - **direct** — explicit user profile is provided.
