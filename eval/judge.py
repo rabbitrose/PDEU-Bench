@@ -66,7 +66,7 @@ TASK_ID_BY_DIFFICULTY = {
 # Judge 模型参数。
 JUDGE_TEMPERATURE = 0.0
 JUDGE_MAX_TOKENS = 8192
-REQUEST_TIMEOUT_SECONDS = 120
+REQUEST_TIMEOUT_SECONDS = int(os.environ.get("PPEVAL_JUDGE_REQUEST_TIMEOUT_SECONDS", "120"))
 API_RETRY_ATTEMPTS = 1
 API_RETRY_BASE_SLEEP_SECONDS = 2.0
 JSON_REPAIR_ATTEMPTS = 1
@@ -375,7 +375,17 @@ def judge_result_dir_for_model(
     long_context_component = long_context_result_component(mode)
     if long_context_component:
         base = base / long_context_component
-    return base / f"pass_{resolved_pass_n}"
+    base = base / f"pass_{resolved_pass_n}"
+    return _apply_judge_tag(base)
+
+
+def _apply_judge_tag(base: Path) -> Path:
+    """按判分模型区分输出目录，避免同一组生成结果被不同 judge 覆盖。"""
+    judge_tag = os.environ.get("PPEVAL_JUDGE_TAG", "").strip()
+    if judge_tag:
+        return base / f"judge_{safe_model_dir_name(judge_tag)}"
+    return base
+
 
 
 def html_dir_for_model(
@@ -389,7 +399,8 @@ def html_dir_for_model(
     long_context_component = long_context_result_component(mode)
     if long_context_component:
         base = base / long_context_component
-    return base / f"pass_{resolved_pass_n}"
+    base = base / f"pass_{resolved_pass_n}"
+    return _apply_judge_tag(base)
 
 
 def configure_model_dirs(
@@ -404,6 +415,10 @@ def configure_model_dirs(
     return EVAL_RESULT_DIR, JUDGE_RESULT_DIR, HTML_DIR
 
 
+# 由 eval/local/judge_local_hidden.py 注入，用于把判分请求分发到多个本地 vLLM 副本。
+JUDGE_CLIENT_FACTORY: Callable[[Any, logging.Logger], Any] | None = None
+
+
 def load_api_config() -> Any:
     api_path = PROJECT_ROOT / "api.py"
     spec = importlib.util.spec_from_file_location("ppeval_api_config", api_path)
@@ -415,6 +430,10 @@ def load_api_config() -> Any:
         module.JUDGE_URL = os.environ["PPEVAL_JUDGE_URL"]
     if os.environ.get("PPEVAL_JUDGE_MODEL"):
         module.JUDGE_MODEL = os.environ["PPEVAL_JUDGE_MODEL"]
+    if os.environ.get("PPEVAL_JUDGE_KEY"):
+        module.JUDGE_KEY = os.environ["PPEVAL_JUDGE_KEY"]
+    if os.environ.get("PPEVAL_GEN_MODEL"):
+        module.GEN_MODEL = os.environ["PPEVAL_GEN_MODEL"]
     return module
 
 
@@ -2094,6 +2113,96 @@ def pct(count: int, total: int) -> float:
     return round(count * 100.0 / total, 2)
 
 
+def pct_float(numerator: float, denom: int) -> float:
+    """macro 平均用：分子是各轨迹比例之和（浮点），分母是轨迹条数。"""
+    if denom <= 0:
+        return 0.0
+    return round(numerator * 100.0 / denom, 2)
+
+
+def _observation_status_by_iteration(eval_result_dir: Path, result: dict[str, Any]) -> dict[int, str]:
+    """从 runresult 读取该 case 每一轮工具观测的 sandbox_status，按 iteration 索引。"""
+    user_id = str(result.get("user_id") or "")
+    task_id = str(result.get("task_id") or "")
+    pass_index = result.get("pass_index")
+    path = Path(eval_result_dir) / f"{user_id}.jsonl"
+    if not path.exists():
+        return {}
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        try:
+            rec = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if str(rec.get("task_id")) != task_id:
+            continue
+        if pass_index is not None and rec.get("pass_index") not in (None, pass_index):
+            continue
+        status: dict[int, str] = {}
+        for tc in rec.get("tool_calls") or []:
+            obs = tc.get("sandbox_observation") or {}
+            if isinstance(obs, str):
+                try:
+                    obs = json.loads(obs)
+                except json.JSONDecodeError:
+                    obs = {}
+            it = tc.get("iteration")
+            if isinstance(it, int):
+                status[it] = str(obs.get("sandbox_status") or "")
+        return status
+    return {}
+
+
+def compute_recovery_metrics(results: list[dict[str, Any]], eval_result_dir: Path) -> dict[str, Any]:
+    """审稿意见(2)：对"观测导致当前计划失效"的轮次，专门报告恢复准确率。
+
+    锚点（分母）= 失效观测（sandbox_status == 'error'）。对每个失效观测 iter=k：
+      - replan 口径：下一轮 update_plan[k] 正确吸收观测（observation_integration=True）
+      - 执行口径：在 replan 正确的前提下，基于新计划的再执行 tool_call[k+1] 也通过
+    失效观测后若没有对应的有效 update 判定，计入分母、不计入分子（即“该恢复却没恢复”记为失败）。
+    """
+    replan_denom = 0
+    replan_ok = 0
+    exec_denom = 0
+    exec_ok = 0
+    for item in results:
+        obs_status = _observation_status_by_iteration(eval_result_dir, item)
+        if not obs_status:
+            continue
+        updates = (((item.get("update_judge") or {}).get("parsed") or {}).get("update_plan_judgements") or [])
+        update_by_iter = {u.get("iteration"): u for u in updates if isinstance(u, dict)}
+        inst = (((item.get("instantiation_judge") or {}).get("parsed") or {}).get("instantiation_judgements") or [])
+        if not isinstance(inst, list) or not inst:
+            inst = (((item.get("instantiation_judge") or {}).get("parsed") or {}).get("tool_call_judgements") or [])
+        inst_by_iter = {t.get("iteration"): t for t in inst if isinstance(t, dict)}
+
+        for it, status in obs_status.items():
+            if status != "error":
+                continue
+            # replan 口径
+            replan_denom += 1
+            u = update_by_iter.get(it)
+            replanned = bool(u and u.get("observation_integration"))
+            if replanned:
+                replan_ok += 1
+            # 执行口径：需要存在下一轮再执行
+            nxt = inst_by_iter.get(it + 1)
+            if nxt is not None:
+                exec_denom += 1
+                nxt_ok = bool(nxt.get("json_object_preference_following", nxt.get("input_preference_following")))
+                if replanned and nxt_ok:
+                    exec_ok += 1
+    return {
+        "recovery_replan_accuracy_ratio": pct(replan_ok, replan_denom),
+        "recovery_replan_case_count": replan_denom,
+        "recovery_replan_ok_count": replan_ok,
+        "recovery_execution_accuracy_ratio": pct(exec_ok, exec_denom),
+        "recovery_execution_case_count": exec_denom,
+        "recovery_execution_ok_count": exec_ok,
+    }
+
+
 def pass_k_summary(results: list[dict[str, Any]]) -> dict[str, Any]:
     pass_values = sorted({int(item.get("pass_n") or PASS_N) for item in results})
     pass_n = max(pass_values) if pass_values else normalize_pass_n(PASS_N)
@@ -2169,6 +2278,15 @@ def aggregate_results(results: list[dict[str, Any]]) -> dict[str, Any]:
     zero_update_cases = 0
     zero_tool_cases = 0
     api_counts: dict[str, Counter[str]] = defaultdict(Counter)
+    # 审稿意见(1)：按轨迹长度归一化（macro 平均）——先在每条轨迹内部算通过比例，
+    # 再对所有轨迹等权平均，避免长轨迹（hard）因严格全有或全无指标被系统性压分。
+    traj_update_frac_sum = 0.0
+    traj_update_frac_denom = 0
+    traj_inst_frac_sum = 0.0
+    traj_inst_frac_denom = 0
+    traj_combined_frac_sum = 0.0
+    traj_combined_frac_denom = 0
+
 
     for item in results:
         task_counts[str(item.get("task_id"))]["total"] += 1
@@ -2197,10 +2315,13 @@ def aggregate_results(results: list[dict[str, Any]]) -> dict[str, Any]:
             tool_items = inst_parsed.get("tool_call_judgements") or []
         if not tool_items:
             zero_tool_cases += 1
+        tool_total_i = 0
+        tool_ok_i = 0
         for tool in tool_items:
             if not isinstance(tool, dict):
                 continue
             tool_total += 1
+            tool_total_i += 1
             instantiation_score_sum += float(tool.get("instantiation_score") or 0.0)
             if int(tool.get("NoRelation") or 0) == 1:
                 no_relation_tool_total += 1
@@ -2209,16 +2330,21 @@ def aggregate_results(results: list[dict[str, Any]]) -> dict[str, Any]:
             api_name = str(tool.get("api_name") or "unknown")
             if tool.get("json_object_preference_following", tool.get("input_preference_following")):
                 tool_ok += 1
+                tool_ok_i += 1
                 api_counts[api_name]["ok"] += 1
             else:
                 api_counts[api_name]["fail"] += 1
         update_items = (((item.get("update_judge") or {}).get("parsed") or {}).get("update_plan_judgements") or [])
         if not update_items:
             zero_update_cases += 1
+        update_total_i = 0
+        update_ok_i = 0
         for update in update_items:
             update_total += 1
+            update_total_i += 1
             if update.get("update_correct"):
                 update_item_ok += 1
+                update_ok_i += 1
             if update.get("update_quality_correct"):
                 update_quality_item_ok += 1
             if update.get("update_plan_quality_correct"):
@@ -2230,6 +2356,19 @@ def aggregate_results(results: list[dict[str, Any]]) -> dict[str, Any]:
             )
             for key in UPDATE_PLAN_QUALITY_KEYS:
                 update_plan_quality_check_counts[key] += int(update.get(key) is True)
+
+        # 轨迹长度归一化：每条轨迹内部的通过比例（无对应步骤时记为 1.0，与"无违规"口径一致）。
+        if update_total_i:
+            traj_update_frac_sum += update_ok_i / update_total_i
+            traj_update_frac_denom += 1
+        if tool_total_i:
+            traj_inst_frac_sum += tool_ok_i / tool_total_i
+            traj_inst_frac_denom += 1
+        combined_total_i = tool_total_i + update_total_i
+        if combined_total_i:
+            traj_combined_frac_sum += (tool_ok_i + update_ok_i) / combined_total_i
+            traj_combined_frac_denom += 1
+
 
     aggregate = {
         "total_cases": total,
@@ -2257,6 +2396,22 @@ def aggregate_results(results: list[dict[str, Any]]) -> dict[str, Any]:
         "instantiation_llm_judged_step_count": judged_relation_tool_total,
         "trajectory_preference_following_count": trajectory_ok,
         "trajectory_preference_following_ratio": pct(trajectory_ok, total),
+        # 审稿意见(1) 新增：按轨迹长度归一化的 macro 平均指标（每条轨迹等权）。
+        # 与 *_step_* 的 micro 口径互补：micro 把所有步骤汇总（长轨迹权重大），
+        # macro 先在轨迹内归一再跨轨迹平均（长短轨迹等权），缓解严格全有或全无指标对长轨迹的惩罚。
+        "trajectory_update_lengthnorm_ratio": pct_float(
+            traj_update_frac_sum, traj_update_frac_denom
+        ),
+        "trajectory_update_lengthnorm_denom": traj_update_frac_denom,
+        "trajectory_instantiation_lengthnorm_ratio": pct_float(
+            traj_inst_frac_sum, traj_inst_frac_denom
+        ),
+        "trajectory_instantiation_lengthnorm_denom": traj_inst_frac_denom,
+        "trajectory_combined_lengthnorm_ratio": pct_float(
+            traj_combined_frac_sum, traj_combined_frac_denom
+        ),
+        "trajectory_combined_lengthnorm_denom": traj_combined_frac_denom,
+
         "tool_call_input_case_following_count": instantiation_ok,
         "tool_call_input_case_following_ratio": pct(instantiation_ok, total),
         "update_plan_correct_count": update_ok,
@@ -2733,6 +2888,11 @@ def render_html_report(
       {render_metric_card("Instantiation Acc", f"{aggregate['instantiation_acc_percent']}%", f"步骤均分={aggregate['instantiation_score_sum']}/{aggregate['instantiation_step_count']}，NoRelation={aggregate['instantiation_no_relation_step_count']}")}
       {render_metric_card("Instantiation Case 通过比例", f"{aggregate['instantiation_case_correct_ratio']}%", f"{aggregate['instantiation_case_correct_count']}/{aggregate['total_cases']}")}
       {render_metric_card("轨迹正确比例", f"{aggregate['trajectory_preference_following_ratio']}%", f"{aggregate['trajectory_preference_following_count']}/{aggregate['total_cases']}，Instantiation 与 update_plan 均通过")}
+      {render_metric_card("轨迹长度归一 Update（macro）", f"{aggregate['trajectory_update_lengthnorm_ratio']}%", f"每条轨迹内 update 通过比例的均值，n={aggregate['trajectory_update_lengthnorm_denom']} 条含 update 的轨迹")}
+      {render_metric_card("轨迹长度归一 Instantiation（macro）", f"{aggregate['trajectory_instantiation_lengthnorm_ratio']}%", f"每条轨迹内工具调用通过比例的均值，n={aggregate['trajectory_instantiation_lengthnorm_denom']} 条含工具调用的轨迹")}
+      {render_metric_card("轨迹长度归一 综合（macro）", f"{aggregate['trajectory_combined_lengthnorm_ratio']}%", f"工具+update 合并后每条轨迹通过比例的均值，n={aggregate['trajectory_combined_lengthnorm_denom']} 条轨迹")}
+      {render_metric_card("恢复准确率 Replan", f"{aggregate.get('recovery_replan_accuracy_ratio', 0)}%", f"失效观测后正确吸收并重规划：{aggregate.get('recovery_replan_ok_count', 0)}/{aggregate.get('recovery_replan_case_count', 0)} 个失效观测")}
+      {render_metric_card("恢复准确率 Execution", f"{aggregate.get('recovery_execution_accuracy_ratio', 0)}%", f"重规划正确且基于新计划再执行通过：{aggregate.get('recovery_execution_ok_count', 0)}/{aggregate.get('recovery_execution_case_count', 0)} 个可观测再执行的失效观测")}
       {render_metric_card("偏好相关工具 LLM Judge 数", aggregate["instantiation_llm_judged_step_count"], "NoRelation API 不进入 LLM-as-judge")}
       {render_metric_card("Instantiation Step 偏好通过比例", f"{aggregate['instantiation_step_preference_following_ratio']}%", f"{aggregate['instantiation_step_preference_following_count']}/{aggregate['instantiation_step_count']}")}
       {render_metric_card("Update Joint Acc", f"{aggregate['update_joint_correct_ratio']}%", f"{aggregate['update_joint_correct_count']}/{aggregate['total_cases']}，状态、计划质量与偏好均通过")}
@@ -2815,11 +2975,15 @@ def main() -> None:
     judge_result_dir.mkdir(parents=True, exist_ok=True)
     html_dir.mkdir(parents=True, exist_ok=True)
 
-    client = LLMClient(
-        api_key=getattr(api_config, "JUDGE_KEY"),
-        base_url=getattr(api_config, "JUDGE_URL"),
-        model=getattr(api_config, "JUDGE_MODEL"),
-        logger=logger,
+    client = (
+        JUDGE_CLIENT_FACTORY(api_config, logger)
+        if JUDGE_CLIENT_FACTORY is not None
+        else LLMClient(
+            api_key=getattr(api_config, "JUDGE_KEY"),
+            base_url=getattr(api_config, "JUDGE_URL"),
+            model=getattr(api_config, "JUDGE_MODEL"),
+            logger=logger,
+        )
     )
     logger.info(
         "开始 judge：run_id=%s model=%s base_url=%s key=%s",
@@ -2895,6 +3059,7 @@ def main() -> None:
     )
     elapsed = time.perf_counter() - started
     aggregate = aggregate_results(results)
+    aggregate.update(compute_recovery_metrics(results, EVAL_RESULT_DIR))
     summary_record = {
         "judge_run_id": run_id,
         "created_at": utc_now_iso(),

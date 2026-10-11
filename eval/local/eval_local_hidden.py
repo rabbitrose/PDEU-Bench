@@ -10,10 +10,6 @@ import signal
 import subprocess
 import sys
 import threading
-import time
-import urllib.error
-import urllib.request
-from datetime import datetime
 from pathlib import Path
 from typing import Any
 
@@ -26,14 +22,24 @@ if str(Path(__file__).resolve().parent) not in sys.path:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import eval_core
-from local_model import USEABLE_LOCAL_MODEL_PATHS
+import vllm_runtime
+from vllm_runtime import (
+    env_bool,
+    env_float,
+    env_int,
+    env_list,
+    stop_server as stop_vllm_server,
+)
 
 
 # =========================
 # 用户长期可调评估超参数
 # =========================
 
-LOCAL_MODEL_NAME = "Qwen3-4B-Instruct-2507"
+LOCAL_MODEL_NAME = "Qwen3-8B"
+
+# 偏好注入模式：hidden 仅给历史交互，mix 同时给显式画像与隐式偏好。
+PREFERENCE_INJECTION_MODE = "hidden"
 
 # 旧 mid 数据已迁移为当前 hard；保留 mid 作为本地入口的兼容名称。
 TASK_DIFFICULTY = "mid"
@@ -55,7 +61,7 @@ VLLM_HOST = "127.0.0.1"
 VLLM_PORT = 8100
 VLLM_API_KEY = "local-vllm"
 VLLM_ENV_DIR = PROJECT_ROOT / ".venv-vllm"
-VLLM_GPU_IDS = "0,1"
+VLLM_GPU_IDS = "0,1,2,3,4,5,6,7"
 TENSOR_PARALLEL_SIZE = 1
 DTYPE = "auto"
 KV_CACHE_DTYPE = "auto"
@@ -63,55 +69,32 @@ GPU_MEMORY_UTILIZATION = 0.94
 GPU_MEMORY_RESERVE_GIB = 1.0
 MIN_FREE_GPU_MEMORY_GIB = 12.0
 AUTO_ADJUST_FOR_FREE_GPU_MEMORY = True
-MAX_MODEL_LEN = 65_536
+MAX_MODEL_LEN = 81_920
 MIN_MODEL_LEN_FOR_CURRENT_PROMPTS = 49_152
-MAX_NUM_SEQS = 2
+# 原生上下文不足时用静态 YaRN 外推，而不是把 max_model_len 压到原生上限。
+ALLOW_ROPE_SCALING = True
+MAX_NUM_SEQS = 8
 MAX_NUM_BATCHED_TOKENS = 16_384
 CPU_OFFLOAD_GB = 0
 SAFETENSORS_LOAD_STRATEGY = "prefetch"
 ENABLE_PREFIX_CACHING = True
 ENABLE_CHUNKED_PREFILL = True
-EVAL_CONCURRENCY = 4
+EVAL_CONCURRENCY = 24
 LOCAL_REQUEST_TIMEOUT_SECONDS = 900
 SANDBOX_E5_DEVICE = "cpu"
 VLLM_STARTUP_TIMEOUT_SECONDS = 900
-VLLM_HEALTH_POLL_SECONDS = 2.0
 REUSE_RUNNING_VLLM_SERVER = False
 
 
+# Qwen3 等思考型模型默认会把 8192 输出预算全部用于 <think>，导致结构化 JSON 被截断。
+# auto 表示采用模型自带 generation_config.json 的推荐采样参数（Qwen3 的 top_k=20/top_p=0.95），
+# vllm 则会丢弃厂商推荐值，低温下容易出现重复退化。
+GENERATION_CONFIG_SOURCE = "auto"
+
+DEFAULT_CHAT_TEMPLATE_KWARGS = {"enable_thinking": False}
+
+
 LEGACY_DIFFICULTY_ALIASES = {"mid": "hard"}
-PROXY_ENV_NAMES = (
-    "HTTP_PROXY",
-    "HTTPS_PROXY",
-    "ALL_PROXY",
-    "NO_PROXY",
-    "http_proxy",
-    "https_proxy",
-    "all_proxy",
-    "no_proxy",
-)
-
-
-def env_bool(name: str, default: bool) -> bool:
-    value = os.environ.get(name)
-    return default if value is None else value.strip().lower() in {"1", "true", "yes", "on"}
-
-
-def env_int(name: str, default: int) -> int:
-    value = os.environ.get(name)
-    return default if value is None else int(value)
-
-
-def env_float(name: str, default: float) -> float:
-    value = os.environ.get(name)
-    return default if value is None else float(value)
-
-
-def env_list(name: str, default: list[str]) -> list[str]:
-    value = os.environ.get(name)
-    if value is None:
-        return list(default)
-    return [item.strip() for item in value.split(",") if item.strip()]
 
 
 def normalize_local_difficulty(value: str) -> tuple[str, str]:
@@ -120,33 +103,9 @@ def normalize_local_difficulty(value: str) -> tuple[str, str]:
     return requested, eval_core.normalize_task_difficulty(normalized)
 
 
-def query_gpu_memory_mib(gpu_id: str) -> tuple[int, int]:
-    completed = subprocess.run(
-        [
-            "nvidia-smi",
-            f"--id={gpu_id}",
-            "--query-gpu=memory.total,memory.free",
-            "--format=csv,noheader,nounits",
-        ],
-        check=True,
-        capture_output=True,
-        text=True,
-        timeout=15,
-    )
-    first_line = completed.stdout.strip().splitlines()[0]
-    total_text, free_text = (part.strip() for part in first_line.split(",", 1))
-    return int(total_text), int(free_text)
-
-
 def resolve_runtime_config() -> dict[str, Any]:
     model_name = os.environ.get("PPEVAL_LOCAL_MODEL", LOCAL_MODEL_NAME)
-    if model_name not in USEABLE_LOCAL_MODEL_PATHS:
-        raise ValueError(
-            f"未知本地模型 {model_name!r}；可用模型为 {sorted(USEABLE_LOCAL_MODEL_PATHS)}"
-        )
-    model_path = Path(USEABLE_LOCAL_MODEL_PATHS[model_name]).resolve()
-    if not model_path.is_dir() or not (model_path / "config.json").is_file():
-        raise FileNotFoundError(f"本地模型目录不完整: {model_path}")
+    model_path = vllm_runtime.resolve_model_path(model_name)
 
     gpu_ids_text = os.environ.get("PPEVAL_VLLM_GPU_IDS", VLLM_GPU_IDS)
     gpu_ids = [item.strip() for item in gpu_ids_text.split(",") if item.strip()]
@@ -168,52 +127,45 @@ def resolve_runtime_config() -> dict[str, Any]:
     )
     if max_num_batched_tokens <= 0 or max_model_len <= 0:
         raise ValueError("vLLM token 上限必须为正整数")
-    if max_model_len < MIN_MODEL_LEN_FOR_CURRENT_PROMPTS:
+    max_model_len, model_path = vllm_runtime.resolve_context_length(
+        model_name,
+        model_path,
+        max_model_len,
+        allow_rope_scaling=env_bool(
+            "PPEVAL_VLLM_ALLOW_ROPE_SCALING", ALLOW_ROPE_SCALING
+        ),
+    )
+    min_model_len = env_int(
+        "PPEVAL_VLLM_MIN_MODEL_LEN", MIN_MODEL_LEN_FOR_CURRENT_PROMPTS
+    )
+    if max_model_len < min_model_len:
         raise ValueError(
-            f"max_model_len={max_model_len} 无法容纳当前约 37k token prompt 与最多 "
-            f"{eval_core.MODEL_MAX_TOKENS} token 输出；不得低于 {MIN_MODEL_LEN_FOR_CURRENT_PROMPTS}"
+            f"max_model_len={max_model_len} 无法容纳当前 prompt 与最多 "
+            f"{eval_core.MODEL_MAX_TOKENS} token 输出；不得低于 {min_model_len}。"
+            "若当前难度 prompt 更短，可显式设置 PPEVAL_VLLM_MIN_MODEL_LEN"
         )
-    replicas: list[dict[str, Any]] = []
     host = os.environ.get("PPEVAL_VLLM_HOST", VLLM_HOST)
-    for replica_index, gpu_id in enumerate(gpu_ids):
-        total_mib, free_mib = query_gpu_memory_mib(gpu_id)
-        free_gib = free_mib / 1024
-        if free_gib < minimum_free:
-            raise RuntimeError(
-                f"GPU {gpu_id} 仅剩 {free_gib:.2f} GiB，低于启动阈值 {minimum_free:.2f} GiB"
-            )
-        safe_utilization = max(
-            0.1,
-            min(0.99, (free_mib - reserve_gib * 1024) / total_mib),
+    tp = env_int("PPEVAL_VLLM_TENSOR_PARALLEL_SIZE", TENSOR_PARALLEL_SIZE)
+    if tp > 1:
+        # 单卡放不下的大模型（如 32B+长上下文）：按 tp 分组，多个张量并行副本。
+        replicas = vllm_runtime.plan_tp_replicas(
+            gpu_ids=gpu_ids,
+            tp=tp,
+            host=host,
+            port=port,
+            requested_utilization=requested_utilization,
+            requested_max_num_seqs=requested_max_num_seqs,
         )
-        resolved_utilization = (
-            min(requested_utilization, safe_utilization)
-            if auto_adjust
-            else requested_utilization
-        )
-        if not 0 < resolved_utilization < 1:
-            raise ValueError(
-                f"GPU {gpu_id} 的 gpu_memory_utilization 必须在 (0, 1) 内，"
-                f"当前为 {resolved_utilization}"
-            )
-        free_ratio = max(0.1, min(1.0, free_mib / total_mib))
-        resolved_max_num_seqs = (
-            max(1, round(requested_max_num_seqs * free_ratio))
-            if auto_adjust
-            else requested_max_num_seqs
-        )
-        replica_port = port + replica_index
-        replicas.append(
-            {
-                "replica_index": replica_index,
-                "gpu_ids": gpu_id,
-                "port": replica_port,
-                "base_url": f"http://{host}:{replica_port}/v1",
-                "gpu_memory_total_mib": total_mib,
-                "gpu_memory_free_before_start_mib": free_mib,
-                "gpu_memory_utilization": round(resolved_utilization, 4),
-                "max_num_seqs": resolved_max_num_seqs,
-            }
+    else:
+        replicas = vllm_runtime.plan_replicas(
+            gpu_ids=gpu_ids,
+            host=host,
+            port=port,
+            minimum_free_gib=minimum_free,
+            requested_utilization=requested_utilization,
+            reserve_gib=reserve_gib,
+            auto_adjust=auto_adjust,
+            requested_max_num_seqs=requested_max_num_seqs,
         )
 
     return {
@@ -236,6 +188,12 @@ def resolve_runtime_config() -> dict[str, Any]:
         "dtype": os.environ.get("PPEVAL_VLLM_DTYPE", DTYPE),
         "kv_cache_dtype": os.environ.get("PPEVAL_VLLM_KV_CACHE_DTYPE", KV_CACHE_DTYPE),
         "max_model_len": max_model_len,
+        "generation_config": os.environ.get(
+            "PPEVAL_VLLM_GENERATION_CONFIG", GENERATION_CONFIG_SOURCE
+        ),
+        "default_chat_template_kwargs": json.loads(
+            os.environ.get("PPEVAL_VLLM_CHAT_TEMPLATE_KWARGS", json.dumps(DEFAULT_CHAT_TEMPLATE_KWARGS))
+        ),
         "max_num_seqs_requested": requested_max_num_seqs,
         "max_num_batched_tokens": max_num_batched_tokens,
         "cpu_offload_gb": env_int("PPEVAL_VLLM_CPU_OFFLOAD_GB", CPU_OFFLOAD_GB),
@@ -252,158 +210,15 @@ def resolve_runtime_config() -> dict[str, Any]:
     }
 
 
-def build_vllm_command(config: dict[str, Any]) -> list[str]:
-    executable = Path(str(config["vllm_executable"]))
-    if not executable.is_file():
-        raise FileNotFoundError(
-            f"找不到 vLLM 可执行文件 {executable}；请先用项目 uv 环境安装 local-inference 依赖"
-        )
-    command = [
-        str(executable),
-        "serve",
-        str(config["model_path"]),
-        "--served-model-name",
-        str(config["model_name"]),
-        "--host",
-        str(config["host"]),
-        "--port",
-        str(config["port"]),
-        "--api-key",
-        str(config["api_key"]),
-        "--tensor-parallel-size",
-        str(config["tensor_parallel_size"]),
-        "--dtype",
-        str(config["dtype"]),
-        "--kv-cache-dtype",
-        str(config["kv_cache_dtype"]),
-        "--gpu-memory-utilization",
-        str(config["gpu_memory_utilization"]),
-        "--max-model-len",
-        str(config["max_model_len"]),
-        "--max-num-seqs",
-        str(config["max_num_seqs"]),
-        "--max-num-batched-tokens",
-        str(config["max_num_batched_tokens"]),
-        "--cpu-offload-gb",
-        str(config["cpu_offload_gb"]),
-        "--generation-config",
-        "vllm",
-        "--safetensors-load-strategy",
-        str(config["safetensors_load_strategy"]),
-    ]
-    if config["enable_prefix_caching"]:
-        command.append("--enable-prefix-caching")
-    if config["enable_chunked_prefill"]:
-        command.append("--enable-chunked-prefill")
-    return command
-
-
-def server_opener() -> urllib.request.OpenerDirector:
-    return urllib.request.build_opener(urllib.request.ProxyHandler({}))
-
-
-def server_is_ready(config: dict[str, Any]) -> bool:
-    request = urllib.request.Request(
-        f"{config['base_url']}/models",
-        headers={"Authorization": f"Bearer {config['api_key']}"},
-    )
-    try:
-        with server_opener().open(request, timeout=5) as response:
-            payload = json.loads(response.read().decode("utf-8"))
-    except (OSError, urllib.error.URLError, json.JSONDecodeError):
-        return False
-    model_ids = {
-        str(item.get("id"))
-        for item in payload.get("data", [])
-        if isinstance(item, dict)
-    }
-    return str(config["model_name"]) in model_ids
-
-
-def wait_for_server(process: subprocess.Popen[Any], config: dict[str, Any]) -> None:
-    deadline = time.monotonic() + env_int(
-        "PPEVAL_VLLM_STARTUP_TIMEOUT_SECONDS", VLLM_STARTUP_TIMEOUT_SECONDS
-    )
-    while time.monotonic() < deadline:
-        return_code = process.poll()
-        if return_code is not None:
-            raise RuntimeError(f"vLLM 服务启动失败，退出码 {return_code}")
-        if server_is_ready(config):
-            return
-        time.sleep(VLLM_HEALTH_POLL_SECONDS)
-    raise TimeoutError("等待 vLLM 服务启动超时")
-
-
 def start_vllm_server(config: dict[str, Any]) -> tuple[subprocess.Popen[Any] | None, Any]:
-    if server_is_ready(config):
-        if env_bool("PPEVAL_VLLM_REUSE_RUNNING", REUSE_RUNNING_VLLM_SERVER):
-            print(f"复用已运行的 vLLM 服务: {config['base_url']}", flush=True)
-            return None, None
-        raise RuntimeError(f"端口上已有同名 vLLM 服务: {config['base_url']}")
-
-    log_dir = PROJECT_ROOT / "logs"
-    log_dir.mkdir(parents=True, exist_ok=True)
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    log_path = log_dir / (
-        f"vllm_{config['model_name']}_gpu{config['gpu_ids']}_{timestamp}.log"
+    return vllm_runtime.start_server(
+        config,
+        role="gen",
+        startup_timeout_seconds=env_int(
+            "PPEVAL_VLLM_STARTUP_TIMEOUT_SECONDS", VLLM_STARTUP_TIMEOUT_SECONDS
+        ),
+        reuse_running=env_bool("PPEVAL_VLLM_REUSE_RUNNING", REUSE_RUNNING_VLLM_SERVER),
     )
-    log_handle = log_path.open("a", encoding="utf-8")
-    environment = os.environ.copy()
-    for name in PROXY_ENV_NAMES:
-        environment.pop(name, None)
-    environment.update(
-        {
-            "PATH": f"{VLLM_ENV_DIR / 'bin'}:{environment.get('PATH', '')}",
-            "CUDA_VISIBLE_DEVICES": str(config["gpu_ids"]),
-            "HF_HUB_OFFLINE": "1",
-            "TRANSFORMERS_OFFLINE": "1",
-            "HF_DATASETS_OFFLINE": "1",
-            "TOKENIZERS_PARALLELISM": "true",
-            "VLLM_WORKER_MULTIPROC_METHOD": "spawn",
-        }
-    )
-    command = build_vllm_command(config)
-    printable_command = list(command)
-    api_key_index = printable_command.index("--api-key") + 1
-    printable_command[api_key_index] = "***"
-    print(
-        "启动本地 vLLM 副本："
-        f"replica={config['replica_index']} gpu={config['gpu_ids']} "
-        f"model={config['model_name']} path={config['model_path']} "
-        f"gpu_free={config['gpu_memory_free_before_start_mib']}MiB "
-        f"gpu_util={config['gpu_memory_utilization']} max_model_len={config['max_model_len']} "
-        f"max_num_seqs={config['max_num_seqs']} eval_concurrency={config['eval_concurrency']} "
-        f"log={log_path}",
-        flush=True,
-    )
-    print(f"vLLM command: {' '.join(printable_command)}", flush=True)
-    process = subprocess.Popen(
-        command,
-        cwd=PROJECT_ROOT,
-        env=environment,
-        stdout=log_handle,
-        stderr=subprocess.STDOUT,
-        start_new_session=True,
-    )
-    try:
-        wait_for_server(process, config)
-    except BaseException as exc:
-        stop_vllm_server(process)
-        log_handle.close()
-        raise RuntimeError(f"vLLM 未成功就绪，请检查 {log_path}") from exc
-    print(f"vLLM 已就绪: {config['base_url']}", flush=True)
-    return process, log_handle
-
-
-def stop_vllm_server(process: subprocess.Popen[Any] | None) -> None:
-    if process is None or process.poll() is not None:
-        return
-    try:
-        os.killpg(process.pid, signal.SIGTERM)
-        process.wait(timeout=30)
-    except subprocess.TimeoutExpired:
-        os.killpg(process.pid, signal.SIGKILL)
-        process.wait(timeout=10)
 
 
 class StickyReplicaLLMClient:
@@ -470,7 +285,9 @@ def configure_eval(config: dict[str, Any]) -> tuple[str, str]:
     os.environ["PPEVAL_GEN_URL"] = str(config["base_url"])
     os.environ["PPEVAL_GEN_KEY"] = str(config["api_key"])
 
-    eval_core.PREFERENCE_INJECTION_MODE = "hidden"
+    eval_core.PREFERENCE_INJECTION_MODE = eval_core.normalize_preference_injection_mode(
+        os.environ.get("PPEVAL_PREFERENCE_MODE", PREFERENCE_INJECTION_MODE)
+    )
     eval_core.USER_ID_FILTER = env_list("PPEVAL_USER_ID_FILTER", USER_ID_FILTER)
     eval_core.TASK_ID_FILTER = env_list("PPEVAL_TASK_ID_FILTER", TASK_ID_FILTER)
     eval_core.TASK_DIFFICULTY = normalized
